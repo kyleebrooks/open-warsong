@@ -403,9 +403,18 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
             reg = op & 0x7
             targets: list[int] = []
             if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
-                targets = [_be16(data, addr + 2)]
+                target = _be16(data, addr + 2)
+                targets = [target]
+                ea_text = f"loc_{target:06X}"
             if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
-                targets = [_be32(data, addr + 2)]
+                target = _be32(data, addr + 2)
+                targets = [target]
+                ea_text = f"loc_{target:06X}"
+            if mode == 7 and reg == 2 and _in_rom(addr, 4, len(data)):
+                disp = _signed_word(_be16(data, addr + 2))
+                target = (addr + 2 + disp) & 0xFFFFFFFF
+                targets = [target]
+                ea_text = f"loc_{target:06X}"
             return Instruction(addr, ins_size, f"jsr {ea_text}", targets)
 
     if (op & 0xFFC0) == 0x4EC0:
@@ -416,9 +425,18 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
             reg = op & 0x7
             targets: list[int] = []
             if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
-                targets = [_be16(data, addr + 2)]
+                target = _be16(data, addr + 2)
+                targets = [target]
+                ea_text = f"loc_{target:06X}"
             if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
-                targets = [_be32(data, addr + 2)]
+                target = _be32(data, addr + 2)
+                targets = [target]
+                ea_text = f"loc_{target:06X}"
+            if mode == 7 and reg == 2 and _in_rom(addr, 4, len(data)):
+                disp = _signed_word(_be16(data, addr + 2))
+                target = (addr + 2 + disp) & 0xFFFFFFFF
+                targets = [target]
+                ea_text = f"loc_{target:06X}"
             return Instruction(addr, ins_size, f"jmp {ea_text}", targets, True)
 
     # LEA control-addressing forms.
