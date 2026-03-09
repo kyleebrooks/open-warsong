@@ -15,27 +15,6 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(ins.text, "rts")
         self.assertTrue(ins.terminal)
 
-    def test_decode_misc_control_instructions(self) -> None:
-        reset = decode_instruction(bytes.fromhex("4E70"), 0)
-        stop = decode_instruction(bytes.fromhex("4E721234"), 0)
-        trap = decode_instruction(bytes.fromhex("4E4A"), 0)
-        self.assertEqual(reset.text, "reset")
-        self.assertEqual(stop.text, "stop #$1234")
-        self.assertTrue(stop.terminal)
-        self.assertEqual(trap.text, "trap #$A")
-        self.assertTrue(trap.terminal)
-
-    def test_decode_rte_rtr_trapv(self) -> None:
-        rte = decode_instruction(bytes.fromhex("4E73"), 0)
-        rtr = decode_instruction(bytes.fromhex("4E77"), 0)
-        trapv = decode_instruction(bytes.fromhex("4E76"), 0)
-        self.assertEqual(rte.text, "rte")
-        self.assertTrue(rte.terminal)
-        self.assertEqual(rtr.text, "rtr")
-        self.assertTrue(rtr.terminal)
-        self.assertEqual(trapv.text, "trapv")
-        self.assertTrue(trapv.terminal)
-
     def test_decode_jsr_abs_long(self) -> None:
         data = bytes.fromhex("4EB900001234")
         ins = decode_instruction(data, 0)
@@ -320,12 +299,6 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(cmpm_b.text, "cmpm.b (a5)+,(a3)+")
         self.assertEqual(cmpm_w.text, "cmpm.w (a4)+,(a2)+")
         self.assertEqual(cmpm_l.text, "cmpm.l (a6)+,(a4)+")
-
-    def test_decode_link_unlk_any_register(self) -> None:
-        link = decode_instruction(bytes.fromhex("4E521234"), 0)
-        unlk = decode_instruction(bytes.fromhex("4E5F"), 0)
-        self.assertEqual(link.text, "link a2,#$1234")
-        self.assertEqual(unlk.text, "unlk a7")
 
     def test_decode_or_and_ea_and_memory_destination_forms(self) -> None:
         or_w_from_ea = decode_instruction(bytes.fromhex("8650"), 0)

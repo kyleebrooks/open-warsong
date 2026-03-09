@@ -181,22 +181,8 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
 
     if op == 0x4E75:
         return Instruction(addr, 2, "rts", [], True)
-    if op == 0x4E73:
-        return Instruction(addr, 2, "rte", [], True)
-    if op == 0x4E77:
-        return Instruction(addr, 2, "rtr", [], True)
-    if op == 0x4E76:
-        return Instruction(addr, 2, "trapv", [], True)
     if op == 0x4E71:
         return Instruction(addr, 2, "nop", [])
-    if op == 0x4E70:
-        return Instruction(addr, 2, "reset", [])
-    if op == 0x4E72 and _in_rom(addr, 4, len(data)):
-        imm = _be16(data, addr + 2)
-        return Instruction(addr, 4, f"stop #${imm:04X}", [], True)
-    if (op & 0xFFF0) == 0x4E40:
-        vector = op & 0xF
-        return Instruction(addr, 2, f"trap #${vector:X}", [], True)
 
     # MOVE immediate to data register.
     if (op & 0xF1FF) == 0x303C and _in_rom(addr, 4, len(data)):
@@ -546,13 +532,11 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 mnemonic = "sub" if op_class == 0x9000 else "add"
                 return Instruction(addr, ins_size, f"{mnemonic}.{size} {ea_text},d{dst}", [])
 
-    if (op & 0xFFF8) == 0x4E50 and _in_rom(addr, 4, len(data)):
-        reg = op & 0x7
+    if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
-        return Instruction(addr, 4, f"link a{reg},#${imm:04X}", [])
-    if (op & 0xFFF8) == 0x4E58:
-        reg = op & 0x7
-        return Instruction(addr, 2, f"unlk a{reg}", [])
+        return Instruction(addr, 4, f"link a6,#${imm:04X}", [])
+    if op == 0x4E5E:
+        return Instruction(addr, 2, "unlk a6", [])
 
     # OR/AND Dn,<ea> and <ea>,Dn subsets over decoded EA families.
     if op_class in (0x8000, 0xC000):
