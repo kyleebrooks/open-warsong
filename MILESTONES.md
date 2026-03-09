@@ -63,19 +63,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added `nbcd`/`tas` and `swap`/`ext`/`pea` decoding coverage plus refreshed full-pass metrics against the root ROM (`known_instructions`: 18,482 / `unknown_words`: 19,666 @ 38,148 decoded); next focus is additional flow/control families and stack/return-adjacent opcodes to further lower fallback words.
+- **Notes / Next action:** Added privileged/control flow coverage (`reset`/`stop`/`trap`/`rte`/`rtr`/`trapv`) and broadened stack-frame decoding (`link`/`unlk` across all address registers), then refreshed full-pass metrics against the root ROM (`known_instructions`: 17,733 / `unknown_words`: 18,522 @ 36,255 decoded); next focus is high-frequency unknown opcode families and deeper addressing-mode expansion to continue reducing fallback words.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 84%
+- **% Complete:** 87%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for `nbcd`/`tas` and `swap`/`ext`/`pea`, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 18,482 / `unknown_words`: 19,666 @ 38,148 decoded); next focus is remaining control/dataflow opcode families and broader derivable target annotation coverage.
+- **Notes / Next action:** Added deterministic tests for privileged/control instructions (`reset`/`stop`/`trap`/`rte`/`rtr`/`trapv`) and generalized `link`/`unlk` register forms, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,733 / `unknown_words`: 18,522 @ 36,255 decoded); next focus is remaining high-frequency opcode families and additional flow-target derivation.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
