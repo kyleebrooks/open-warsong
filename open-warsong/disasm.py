@@ -248,6 +248,21 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
             reg = op & 0x7
             return Instruction(addr, 2, f"tst.{sz} d{reg}", [])
 
+    # NEGX/NEG/NOT <ea> over data-alterable effective-address forms.
+    unary_family = {
+        0x4000: "negx",
+        0x4400: "neg",
+        0x4600: "not",
+    }.get(op & 0xFF00)
+    if unary_family is not None:
+        size_bits = (op >> 6) & 0x3
+        size = {0: "b", 1: "w", 2: "l"}.get(size_bits)
+        if size is not None:
+            decoded = _decode_data_alterable_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"{unary_family}.{size} {ea_text}", [])
+
     # ADDI/SUBI/CMPI #imm,<ea> subset across data-alterable EA families.
     imm_arith_family = {
         0x0400: "subi",
