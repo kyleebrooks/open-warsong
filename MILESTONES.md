@@ -63,19 +63,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added `nbcd`/`tas` and `swap`/`ext`/`pea` decoding coverage plus refreshed full-pass metrics against the root ROM (`known_instructions`: 18,161 / `unknown_words`: 21,839 @ 40,000 decoded); next focus is remaining control/compare families and richer non-speculative target annotation paths.
+- **Notes / Next action:** Added `nbcd`/`tas` and `swap`/`ext`/`pea` decoding coverage plus refreshed full-pass metrics against the root ROM (`known_instructions`: 18,482 / `unknown_words`: 19,666 @ 38,148 decoded); next focus is additional flow/control families and stack/return-adjacent opcodes to further lower fallback words.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 81%
+- **% Complete:** 84%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for `nbcd`/`tas` and `swap`/`ext`/`pea`, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 18,161 / `unknown_words`: 21,839 @ 40,000 decoded); next focus is remaining control/dataflow opcode families and broader derivable target annotation coverage.
+- **Notes / Next action:** Added deterministic tests for `nbcd`/`tas` and `swap`/`ext`/`pea`, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 18,482 / `unknown_words`: 19,666 @ 38,148 decoded); next focus is remaining control/dataflow opcode families and broader derivable target annotation coverage.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -469,6 +469,22 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   2. Extend derivable control-transfer target annotation for more non-speculative forms.
   3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
 
+
+
+### Update 2026-03-09 (iteration 24)
+
+- **Summary:** Added `movem` register-list decoding for register↔memory transfer forms across valid addressing modes, including predecrement mask ordering, plus focused tests and refreshed ROM pass metrics.
+- **Milestones advanced:**
+  - M4: from 99% → 99%
+  - M5: from 81% → 84%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`, `open/disasm/code_pass1.asm`, `open/disasm/summary.json`
+  - Tests/checks run: `pytest -q` (44 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 18,482 / `unknown_words`: 19,666 @ 38,148 decoded)
+- **Risks / blockers:** Decoder coverage remains incomplete for several branch/flow and system-control families, so fallback words are still significant despite this larger step forward.
+- **Next planned actions (ordered):**
+  1. Add additional high-frequency flow/control families visible in remaining fallback-heavy regions.
+  2. Expand target annotation for more derivable non-speculative transfer forms.
+  3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
 ### Update 2026-03-09 (iteration 23)
 
 - **Summary:** Added `nbcd`/`tas` data-alterable decoding and `swap`/`ext`/`pea` instruction families, expanded targeted decoder tests, and refreshed full-pass ROM metrics with another meaningful unknown-word reduction.

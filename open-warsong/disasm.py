@@ -113,6 +113,53 @@ def _decode_data_alterable_ea(op: int, data: bytes, addr: int, ext_offset: int =
     return _decode_memory_ea(op, data, addr, ext_offset)
 
 
+def _format_movem_reg_list(mask: int, predecrement: bool = False) -> str:
+    names = [f"d{i}" for i in range(8)] + [f"a{i}" for i in range(8)]
+    bits = range(15, -1, -1) if predecrement else range(16)
+    regs = [names[b] for b in bits if mask & (1 << b)]
+    if not regs:
+        return ""
+
+    chunks: list[str] = []
+    i = 0
+    while i < len(regs):
+        j = i
+        while j + 1 < len(regs):
+            cur_kind, cur_idx = regs[j][0], int(regs[j][1:])
+            nxt_kind, nxt_idx = regs[j + 1][0], int(regs[j + 1][1:])
+            if nxt_kind == cur_kind and nxt_idx == cur_idx + 1:
+                j += 1
+            else:
+                break
+        chunks.append(regs[i] if i == j else f"{regs[i]}-{regs[j]}")
+        i = j + 1
+    return "/".join(chunks)
+
+
+def _decode_movem_ea(op: int, data: bytes, addr: int, mem_to_regs: bool) -> tuple[str, int] | None:
+    mode = (op >> 3) & 0x7
+    reg = op & 0x7
+    if mode == 2:
+        return f"(a{reg})", 4
+    if mode == 3 and mem_to_regs:
+        return f"(a{reg})+", 4
+    if mode == 4 and not mem_to_regs:
+        return f"-(a{reg})", 4
+    if mode == 5 and _in_rom(addr, 6, len(data)):
+        disp = _signed_word(_be16(data, addr + 4))
+        return f"({disp},a{reg})", 6
+    if mode == 6 and _in_rom(addr, 6, len(data)):
+        ext = _be16(data, addr + 4)
+        return _decode_indexed_brief(ext, f"a{reg}"), 6
+    if mode == 7 and reg == 0 and _in_rom(addr, 6, len(data)):
+        abs_word = _be16(data, addr + 4)
+        return f"(${abs_word:04X}).w", 6
+    if mode == 7 and reg == 1 and _in_rom(addr, 8, len(data)):
+        abs_long = _be32(data, addr + 4)
+        return f"(${abs_long:08X}).l", 8
+    return None
+
+
 @dataclass
 class Instruction:
     addr: int
@@ -292,6 +339,24 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         if decoded is not None:
             ea_text, ins_size = decoded
             return Instruction(addr, ins_size, f"pea {ea_text}", [])
+
+    # MOVEM register-list transfer forms.
+    if (op & 0xFB80) in (0x4880, 0x4C80) and _in_rom(addr, 4, len(data)):
+        mem_to_regs = bool(op & 0x0400)
+        size = "l" if (op & 0x0040) else "w"
+        reg_mask = _be16(data, addr + 2)
+        decoded = _decode_movem_ea(op, data, addr, mem_to_regs)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            if mem_to_regs:
+                reg_list = _format_movem_reg_list(reg_mask)
+                if reg_list:
+                    return Instruction(addr, ins_size, f"movem.{size} {ea_text},{reg_list}", [])
+            else:
+                predec = ((op >> 3) & 0x7) == 4
+                reg_list = _format_movem_reg_list(reg_mask, predecrement=predec)
+                if reg_list:
+                    return Instruction(addr, ins_size, f"movem.{size} {reg_list},{ea_text}", [])
 
     # ADDI/SUBI/CMPI #imm,<ea> subset across data-alterable EA families.
     imm_arith_family = {

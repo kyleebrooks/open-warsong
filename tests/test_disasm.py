@@ -123,6 +123,21 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(ext_l.text, "ext.l d6")
         self.assertEqual(pea_pc.text, "pea (16,pc)")
 
+
+    def test_decode_movem_register_transfer_forms(self) -> None:
+        regs_to_mem = decode_instruction(bytes.fromhex("4892000F"), 0)
+        regs_to_predec = decode_instruction(bytes.fromhex("48E70007"), 0)
+        mem_to_regs_postinc = decode_instruction(bytes.fromhex("4CD80081"), 0)
+        mem_to_regs_abs = decode_instruction(bytes.fromhex("4CF9120000112233"), 0)
+        self.assertEqual(regs_to_mem.text, "movem.w d0-d3,(a2)")
+        self.assertEqual(regs_to_mem.size, 4)
+        self.assertEqual(regs_to_predec.text, "movem.l d2/d1/d0,-(a7)")
+        self.assertEqual(regs_to_predec.size, 4)
+        self.assertEqual(mem_to_regs_postinc.text, "movem.l (a0)+,d0/d7")
+        self.assertEqual(mem_to_regs_postinc.size, 4)
+        self.assertEqual(mem_to_regs_abs.text, "movem.l ($00112233).l,a1/a4")
+        self.assertEqual(mem_to_regs_abs.size, 8)
+
     def test_decode_cmpi_dn(self) -> None:
         b = decode_instruction(bytes.fromhex("0C02007F"), 0)
         w = decode_instruction(bytes.fromhex("0C430123"), 0)
