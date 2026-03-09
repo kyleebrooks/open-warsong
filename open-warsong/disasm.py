@@ -17,6 +17,19 @@ def _signed_word(value: int) -> int:
     return value - 0x10000 if value & 0x8000 else value
 
 
+def _decode_an_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
+    mode = (op >> 3) & 0x7
+    reg = op & 0x7
+    if mode == 2:
+        return f"(a{reg})", 2
+    if mode == 3:
+        return f"(a{reg})+", 2
+    if mode == 5 and _in_rom(addr, 4, len(data)):
+        disp = _signed_word(_be16(data, addr + 2))
+        return f"({disp},a{reg})", 4
+    return None
+
+
 @dataclass
 class Instruction:
     addr: int
@@ -82,6 +95,15 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         src = op & 0x7
         disp = _signed_word(_be16(data, addr + 2))
         return Instruction(addr, 4, f"move.l ({disp},a{src}),d{dst}", [])
+
+    # MOVE data register to memory destination.
+    if (op & 0xF1C0) in (0x3080, 0x2080):
+        src = (op >> 9) & 0x7
+        size = "w" if (op & 0xF1C0) == 0x3080 else "l"
+        decoded = _decode_an_memory_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"move.{size} d{src},{ea_text}", [])
 
     # MOVEQ #imm,Dn
     if (op & 0xF100) == 0x7000:
@@ -164,6 +186,19 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         src = op & 0x7
         disp = _signed_word(_be16(data, addr + 2))
         return Instruction(addr, 4, f"cmp.w ({disp},a{src}),d{dst}", [])
+
+    # ADD/SUB Dn,<ea> subset for common memory destinations.
+    op_class = op & 0xF000
+    if op_class in (0x9000, 0xD000):
+        opmode = (op >> 6) & 0x7
+        size = {4: "b", 5: "w", 6: "l"}.get(opmode)
+        if size is not None:
+            src = (op >> 9) & 0x7
+            decoded = _decode_an_memory_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                mnemonic = "sub" if op_class == 0x9000 else "add"
+                return Instruction(addr, ins_size, f"{mnemonic}.{size} d{src},{ea_text}", [])
 
     if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
