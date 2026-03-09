@@ -268,6 +268,21 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 ea_text, ins_size = decoded
                 return Instruction(addr, max(ins_size, 6), f"{imm_arith_family}.l #${imm:08X},{ea_text}", [])
 
+    # ORI/ANDI/EORI to CCR/SR control variants.
+    imm_control_family = {
+        0x003C: ("ori", "ccr"),
+        0x007C: ("ori", "sr"),
+        0x023C: ("andi", "ccr"),
+        0x027C: ("andi", "sr"),
+        0x0A3C: ("eori", "ccr"),
+        0x0A7C: ("eori", "sr"),
+    }.get(op)
+    if imm_control_family is not None and _in_rom(addr, 4, len(data)):
+        mnemonic, dst = imm_control_family
+        imm = _be16(data, addr + 2)
+        imm_text = f"#${imm & 0x00FF:02X}" if dst == "ccr" else f"#${imm:04X}"
+        return Instruction(addr, 4, f"{mnemonic}.w {imm_text},{dst}", [])
+
     # ORI/ANDI/EORI #imm,<ea> subset across data-alterable EA families.
     imm_family = {
         0x0000: "ori",

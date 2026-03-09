@@ -188,6 +188,21 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(eori_l_abs.size, 10)
 
 
+
+    def test_decode_immediate_logic_control_register_forms(self) -> None:
+        ori_ccr = decode_instruction(bytes.fromhex("003C00F0"), 0)
+        ori_sr = decode_instruction(bytes.fromhex("007C2700"), 0)
+        andi_ccr = decode_instruction(bytes.fromhex("023C0007"), 0)
+        andi_sr = decode_instruction(bytes.fromhex("027CFF00"), 0)
+        eori_ccr = decode_instruction(bytes.fromhex("0A3C001F"), 0)
+        eori_sr = decode_instruction(bytes.fromhex("0A7C2000"), 0)
+        self.assertEqual(ori_ccr.text, "ori.w #$F0,ccr")
+        self.assertEqual(ori_sr.text, "ori.w #$2700,sr")
+        self.assertEqual(andi_ccr.text, "andi.w #$07,ccr")
+        self.assertEqual(andi_sr.text, "andi.w #$FF00,sr")
+        self.assertEqual(eori_ccr.text, "eori.w #$1F,ccr")
+        self.assertEqual(eori_sr.text, "eori.w #$2000,sr")
+
     def test_decode_bit_manipulation_register_forms(self) -> None:
         btst_dn = decode_instruction(bytes.fromhex("0102"), 0)
         bchg_mem = decode_instruction(bytes.fromhex("0750"), 0)
