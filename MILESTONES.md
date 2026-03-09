@@ -57,25 +57,25 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 55%
+- **% Complete:** 61%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Expanded memory effective-address decoding shared by `move`/`cmp`/`add`/`sub` to include `-(An)`, absolute word, and absolute long forms; next focus is adding indexed/PC-relative families and refreshing unknown-word trend once ROM is available.
+- **Notes / Next action:** Added indexed and PC-relative effective-address decoding (`(d8,An,Xn)`, `(d16,PC)`, `(d8,PC,Xn)`) and wired it into common decode paths; next focus is extending arithmetic/control families that consume these modes and refreshing unknown-word trend once ROM is available.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 28%
+- **% Complete:** 31%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for pre-decrement and absolute destination/source memory forms across `move`/`cmp`/`add`/`sub`; continue expanding addressing coverage and then group opcode tests into subsystem behavior suites.
+- **Notes / Next action:** Added deterministic tests for indexed and PC-relative source addressing forms across `move`/`cmp`; continue expanding arithmetic/control coverage for these addressing families and then group opcode tests into subsystem behavior suites.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -228,6 +228,22 @@ Use this checklist on every project update to track progress from tooling to ful
   - Tests/checks run: `pytest -q` (24 passed)
 - **Risks / blockers:** Full-pass unknown-word trend refresh remains blocked until a local ROM image is available for `scripts/disasm_pass.py`.
 - **Next planned actions (ordered):**
-  1. Add indexed and PC-relative effective-address decoding for frequently observed instruction families.
+ 1. Add indexed and PC-relative effective-address decoding for frequently observed instruction families.
   2. Extend arithmetic/control families that consume those addressing modes.
   3. Re-run `scripts/disasm_pass.py` once ROM path is available and capture updated unknown-word deltas.
+
+
+### Update 2026-03-09 (iteration 9)
+
+- **Summary:** Added indexed and PC-relative effective-address decoding (`(d8,An,Xn)`, `(d16,PC)`, `(d8,PC,Xn)`) and integrated these forms into `move`/`cmp` decoding, with targeted unit tests.
+- **Milestones advanced:**
+  - M4: from 55% → 61%
+  - M5: from 28% → 31%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (26 passed)
+- **Risks / blockers:** Full-pass unknown-word trend refresh is still blocked until a local ROM image is available for `scripts/disasm_pass.py`.
+- **Next planned actions (ordered):**
+  1. Extend `add`/`sub` and related arithmetic/control families to consume indexed and PC-relative effective-address forms where valid.
+  2. Add `lea` and additional control/data-movement forms that use indexed/PC-relative addressing.
+  3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.

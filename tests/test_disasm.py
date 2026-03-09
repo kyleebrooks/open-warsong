@@ -71,6 +71,14 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(move_w_pos.text, "move.w (16,a2),d1")
         self.assertEqual(move_l_neg.text, "move.l (-8,a3),d2")
 
+    def test_decode_move_indexed_and_pc_relative_to_dn(self) -> None:
+        move_w_idx = decode_instruction(bytes.fromhex("343010F8"), 0)
+        move_l_pc = decode_instruction(bytes.fromhex("263A0012"), 0)
+        move_w_pc_idx = decode_instruction(bytes.fromhex("343BA801"), 0)
+        self.assertEqual(move_w_idx.text, "move.w (-8,a0,d1.w),d2")
+        self.assertEqual(move_l_pc.text, "move.l (18,pc),d3")
+        self.assertEqual(move_w_pc_idx.text, "move.w (1,pc,a2.l),d2")
+
     def test_decode_move_dn_to_memory_destination(self) -> None:
         move_w_ind = decode_instruction(bytes.fromhex("3490"), 0)
         move_l_post = decode_instruction(bytes.fromhex("2699"), 0)
@@ -121,6 +129,14 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(cmp_w_pre.text, "cmp.w -(a1),d2")
         self.assertEqual(cmp_l_abs_w.text, "cmp.l ($1234).w,d3")
         self.assertEqual(cmp_w_abs_l.text, "cmp.w ($12345678).l,d2")
+
+    def test_decode_cmp_indexed_and_pc_relative_to_dn(self) -> None:
+        cmp_w_idx = decode_instruction(bytes.fromhex("B47010FC"), 0)
+        cmp_l_pc = decode_instruction(bytes.fromhex("B6BA000A"), 0)
+        cmp_w_pc_idx = decode_instruction(bytes.fromhex("B47B0802"), 0)
+        self.assertEqual(cmp_w_idx.text, "cmp.w (-4,a0,d1.w),d2")
+        self.assertEqual(cmp_l_pc.text, "cmp.l (10,pc),d3")
+        self.assertEqual(cmp_w_pc_idx.text, "cmp.w (2,pc,d0.l),d2")
 
     def test_decode_add_sub_dn_to_memory_destination(self) -> None:
         add_w_ind = decode_instruction(bytes.fromhex("D350"), 0)
