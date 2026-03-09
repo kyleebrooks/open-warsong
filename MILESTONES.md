@@ -9,7 +9,7 @@ Use this checklist on every project update to track progress from tooling to ful
 - If a milestone is blocked, mark it `⚠️ Blocked` and add what is needed to unblock it.
 - Do not delete completed milestones—mark them `✅ Done` and keep a short completion note.
 
----
+IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).md
 
 ## Milestone 0 — Baseline tooling health
 
