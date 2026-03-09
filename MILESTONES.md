@@ -57,25 +57,25 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 61%
+- **% Complete:** 67%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added indexed and PC-relative effective-address decoding (`(d8,An,Xn)`, `(d16,PC)`, `(d8,PC,Xn)`) and wired it into common decode paths; next focus is extending arithmetic/control families that consume these modes and refreshing unknown-word trend once ROM is available.
+- **Notes / Next action:** Added `add/sub <ea>,Dn` coverage for indexed and PC-relative source forms and expanded `lea` control-addressing decoding (displacement/indexed + PC-relative); next focus is broadening remaining arithmetic/control families and refreshing unknown-word trend once ROM is available.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 31%
+- **% Complete:** 35%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for indexed and PC-relative source addressing forms across `move`/`cmp`; continue expanding arithmetic/control coverage for these addressing families and then group opcode tests into subsystem behavior suites.
+- **Notes / Next action:** Added deterministic tests for indexed/PC-relative `add/sub <ea>,Dn` and `lea` control-addressing forms; continue expanding arithmetic/control coverage and then group opcode tests into subsystem behavior suites.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -246,4 +246,20 @@ Use this checklist on every project update to track progress from tooling to ful
 - **Next planned actions (ordered):**
   1. Extend `add`/`sub` and related arithmetic/control families to consume indexed and PC-relative effective-address forms where valid.
   2. Add `lea` and additional control/data-movement forms that use indexed/PC-relative addressing.
+  3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.
+
+
+### Update 2026-03-09 (iteration 10)
+
+- **Summary:** Extended arithmetic decoding with `add/sub <ea>,Dn` source forms (including indexed and PC-relative addressing) and generalized `lea` control-addressing decode support, with targeted unit tests.
+- **Milestones advanced:**
+  - M4: from 61% → 67%
+  - M5: from 31% → 35%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (28 passed)
+- **Risks / blockers:** Full-pass unknown-word trend refresh is still blocked until a local ROM image is available for `scripts/disasm_pass.py`.
+- **Next planned actions (ordered):**
+  1. Extend additional arithmetic/control families (`and/or/eor`, condition-focused control idioms) across indexed/PC-relative effective addresses where valid.
+  2. Expand branch/jump decoding forms to reduce fallback words in startup and engine loops.
   3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.

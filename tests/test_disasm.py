@@ -152,6 +152,17 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(add_l_abs_w.text, "add.l d3,($1234).w")
         self.assertEqual(sub_b_abs_l.text, "sub.b d3,($12345678).l")
 
+
+    def test_decode_add_sub_ea_to_dn(self) -> None:
+        add_w_ind = decode_instruction(bytes.fromhex("D450"), 0)
+        sub_l_disp = decode_instruction(bytes.fromhex("98A8FFF8"), 0)
+        add_w_pc = decode_instruction(bytes.fromhex("D87A0010"), 0)
+        sub_b_idx = decode_instruction(bytes.fromhex("98301004"), 0)
+        self.assertEqual(add_w_ind.text, "add.w (a0),d2")
+        self.assertEqual(sub_l_disp.text, "sub.l (-8,a0),d4")
+        self.assertEqual(add_w_pc.text, "add.w (16,pc),d4")
+        self.assertEqual(sub_b_idx.text, "sub.b (4,a0,d1.w),d4")
+
     def test_decode_dbcc(self) -> None:
         dbne = decode_instruction(bytes.fromhex("56CBFFFC"), 0)
         dbra = decode_instruction(bytes.fromhex("51C80006"), 0)
@@ -167,6 +178,17 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(jsr.flow_targets, [0x1234])
         self.assertEqual(jmp.text, "jmp loc_000040")
         self.assertTrue(jmp.terminal)
+
+
+    def test_decode_lea_control_forms(self) -> None:
+        lea_disp = decode_instruction(bytes.fromhex("43E8FFF0"), 0)
+        lea_idx = decode_instruction(bytes.fromhex("45F01008"), 0)
+        lea_pc = decode_instruction(bytes.fromhex("47FA0012"), 0)
+        lea_pc_idx = decode_instruction(bytes.fromhex("49FB2801"), 0)
+        self.assertEqual(lea_disp.text, "lea (-16,a0),a1")
+        self.assertEqual(lea_idx.text, "lea (8,a0,d1.w),a2")
+        self.assertEqual(lea_pc.text, "lea (18,pc),a3")
+        self.assertEqual(lea_pc_idx.text, "lea (1,pc,d2.l),a4")
 
     def test_decode_lea_abs_and_movea_immediate(self) -> None:
         lea_w = decode_instruction(bytes.fromhex("45F80080"), 0)
