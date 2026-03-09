@@ -183,6 +183,16 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(and_w_to_abs.text, "and.w d3,($1234).w")
 
 
+
+
+    def test_decode_eor_dn_to_memory_destination_forms(self) -> None:
+        eor_b_ind = decode_instruction(bytes.fromhex("B710"), 0)
+        eor_w_disp = decode_instruction(bytes.fromhex("B768FFF8"), 0)
+        eor_l_abs_l = decode_instruction(bytes.fromhex("B7B912345678"), 0)
+        self.assertEqual(eor_b_ind.text, "eor.b d3,(a0)")
+        self.assertEqual(eor_w_disp.text, "eor.w d3,(-8,a0)")
+        self.assertEqual(eor_l_abs_l.text, "eor.l d3,($12345678).l")
+
     def test_decode_jsr_jmp_control_forms(self) -> None:
         jsr_pc = decode_instruction(bytes.fromhex("4EBA0010"), 0)
         jmp_idx = decode_instruction(bytes.fromhex("4EF02804"), 0)
