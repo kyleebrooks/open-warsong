@@ -57,7 +57,7 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 67%
+- **% Complete:** 73%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
@@ -68,14 +68,14 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 35%
+- **% Complete:** 39%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for indexed/PC-relative `add/sub <ea>,Dn` and `lea` control-addressing forms; continue expanding arithmetic/control coverage and then group opcode tests into subsystem behavior suites.
+- **Notes / Next action:** Added deterministic tests for indexed/PC-relative `add/sub <ea>,Dn`, `lea` control-addressing, and new `and/or` plus control-form `jsr/jmp` decoding; continue expanding arithmetic/control coverage and then group opcode tests into subsystem behavior suites.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -262,4 +262,20 @@ Use this checklist on every project update to track progress from tooling to ful
 - **Next planned actions (ordered):**
   1. Extend additional arithmetic/control families (`and/or/eor`, condition-focused control idioms) across indexed/PC-relative effective addresses where valid.
   2. Expand branch/jump decoding forms to reduce fallback words in startup and engine loops.
+  3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.
+
+
+### Update 2026-03-09 (iteration 11)
+
+- **Summary:** Added `and/or` decoding for both `<ea>,Dn` and `Dn,<ea>` forms across supported effective-address families, and generalized `jsr/jmp` decoding to full control-addressing forms with tests.
+- **Milestones advanced:**
+  - M4: from 67% → 73%
+  - M5: from 35% → 39%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (30 passed)
+- **Risks / blockers:** Full-pass unknown-word trend refresh is still blocked until a local ROM image is available for `scripts/disasm_pass.py`.
+- **Next planned actions (ordered):**
+  1. Add `eor` and remaining ALU/control forms that share memory and PC-relative addressing helpers.
+  2. Expand branch/jump/call formatting so more control-transfer targets can be labeled directly when derivable.
   3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.

@@ -297,19 +297,52 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
     if op == 0x4E5E:
         return Instruction(addr, 2, "unlk a6", [])
 
-    if op == 0x4EB9 and _in_rom(addr, 6, len(data)):
-        target = _be32(data, addr + 2)
-        return Instruction(addr, 6, f"jsr loc_{target:06X}", [target])
-    if op == 0x4EB8 and _in_rom(addr, 4, len(data)):
-        target = _be16(data, addr + 2)
-        return Instruction(addr, 4, f"jsr loc_{target:06X}", [target])
+    # OR/AND Dn,<ea> and <ea>,Dn subsets over decoded EA families.
+    if op_class in (0x8000, 0xC000):
+        mnemonic = "or" if op_class == 0x8000 else "and"
+        opmode = (op >> 6) & 0x7
+        src_or_dst = (op >> 9) & 0x7
 
-    if op == 0x4EF9 and _in_rom(addr, 6, len(data)):
-        target = _be32(data, addr + 2)
-        return Instruction(addr, 6, f"jmp loc_{target:06X}", [target], True)
-    if op == 0x4EF8 and _in_rom(addr, 4, len(data)):
-        target = _be16(data, addr + 2)
-        return Instruction(addr, 4, f"jmp loc_{target:06X}", [target], True)
+        size_from_ea = {0: "b", 1: "w", 2: "l"}.get(opmode)
+        if size_from_ea is not None:
+            decoded = _decode_data_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"{mnemonic}.{size_from_ea} {ea_text},d{src_or_dst}", [])
+
+        size_to_ea = {4: "b", 5: "w", 6: "l"}.get(opmode)
+        if size_to_ea is not None:
+            decoded = _decode_memory_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"{mnemonic}.{size_to_ea} d{src_or_dst},{ea_text}", [])
+
+    # JSR/JMP control-addressing forms.
+    if (op & 0xFFC0) == 0x4E80:
+        decoded = _decode_control_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            mode = (op >> 3) & 0x7
+            reg = op & 0x7
+            targets: list[int] = []
+            if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
+                targets = [_be16(data, addr + 2)]
+            if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
+                targets = [_be32(data, addr + 2)]
+            return Instruction(addr, ins_size, f"jsr {ea_text}", targets)
+
+    if (op & 0xFFC0) == 0x4EC0:
+        decoded = _decode_control_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            mode = (op >> 3) & 0x7
+            reg = op & 0x7
+            targets: list[int] = []
+            if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
+                targets = [_be16(data, addr + 2)]
+            if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
+                targets = [_be32(data, addr + 2)]
+            return Instruction(addr, ins_size, f"jmp {ea_text}", targets, True)
 
     # LEA control-addressing forms.
     if (op & 0xF1C0) == 0x41C0:

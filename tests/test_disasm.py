@@ -171,6 +171,26 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(dbra.text, "dbra d0,loc_00000A")
 
 
+
+    def test_decode_or_and_ea_and_memory_destination_forms(self) -> None:
+        or_w_from_ea = decode_instruction(bytes.fromhex("8650"), 0)
+        and_l_from_ea = decode_instruction(bytes.fromhex("CAAAFFF8"), 0)
+        or_b_to_ea = decode_instruction(bytes.fromhex("8710"), 0)
+        and_w_to_abs = decode_instruction(bytes.fromhex("C7781234"), 0)
+        self.assertEqual(or_w_from_ea.text, "or.w (a0),d3")
+        self.assertEqual(and_l_from_ea.text, "and.l (-8,a2),d5")
+        self.assertEqual(or_b_to_ea.text, "or.b d3,(a0)")
+        self.assertEqual(and_w_to_abs.text, "and.w d3,($1234).w")
+
+
+    def test_decode_jsr_jmp_control_forms(self) -> None:
+        jsr_pc = decode_instruction(bytes.fromhex("4EBA0010"), 0)
+        jmp_idx = decode_instruction(bytes.fromhex("4EF02804"), 0)
+        self.assertEqual(jsr_pc.text, "jsr (16,pc)")
+        self.assertEqual(jsr_pc.flow_targets, [])
+        self.assertEqual(jmp_idx.text, "jmp (4,a0,d2.l)")
+        self.assertTrue(jmp_idx.terminal)
+
     def test_decode_jsr_jmp_abs_word(self) -> None:
         jsr = decode_instruction(bytes.fromhex("4EB81234"), 0)
         jmp = decode_instruction(bytes.fromhex("4EF80040"), 0)
