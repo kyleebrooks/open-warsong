@@ -10,9 +10,9 @@ This plan turns current milestone status into a focused two-week implementation 
 
 ## Goal by end of week 2
 
-- Improve pass-1 disassembly quality by expanding high-frequency opcode coverage and running full-pass trend checks.
-- Convert initial vector handlers from placeholder ownership to validated ownership.
-- Start symbol promotion for decoded routines and establish subsystem test scaffolding.
+- Reduce pass-1 fallback unknowns with targeted high-frequency family coverage and a stable weekly trend table (`known`, `unknown`, `% unknown`).
+- Convert initial vector handlers from placeholder ownership to validated ownership (first concrete M1 movement).
+- Land first true subsystem correctness fixtures (battle/map/script behavior) so M5 progress reflects gameplay logic rather than decoder-only tests.
 
 ## Current baseline snapshot
 
@@ -20,11 +20,11 @@ This plan turns current milestone status into a focused two-week implementation 
 - M1 (vector ownership): 0%
 - M2 (code/data separation): 0%
 - M3 (symbol map growth): 0%
-- M4 (disasm hardening): 43%
-- M5 (subsystem tests): 22%
+- M4 (disasm hardening): 66%
+- M5 (subsystem tests): 34%
 - M6 (parity): 0%
 
-Approximate weighted project completion baseline: ~24%.
+Approximate weighted project completion baseline: ~33% (recalibrated).
 
 ---
 
@@ -50,12 +50,13 @@ Approximate weighted project completion baseline: ~24%.
 - Refreshed `open/disasm/summary.json` and/or disassembly outputs.
 - Milestone note update with unknown-word delta.
 
-### Priority 3 — Early symbol promotion pass
+### Priority 3 — Metrics discipline + symbol promotion
 
-1. Promote a first batch of temporary labels to semantic names based on newly decoded routines.
-2. Keep naming conventions stable and subsystem-oriented.
+1. Record one canonical trend snapshot per day (`known`, `unknown`, `% unknown`, decoded count) to avoid progress-percent drift.
+2. Promote a first batch of temporary labels to semantic names based on newly decoded routines.
 
 **Deliverables**
+- Short trend table entry in `MILESTONES.md` updates.
 - Initial updates to `open/symbols.csv` with evidence-backed naming.
 
 ### Week 1 exit criteria
@@ -106,11 +107,11 @@ Approximate weighted project completion baseline: ~24%.
 - M1: 0% → 10–20%
 - M2: 0% → 8–15%
 - M3: 0% → 8–12%
-- M4: 43% → 52–60%
-- M5: 22% → 28–35%
+- M4: 66% → 72–78%
+- M5: 34% → 42–50%
 - M6: 0% (define parity scenarios but no completion claim yet)
 
-Expected overall project completion after this plan: ~31–36% (conservative).
+Expected overall project completion after this plan: ~38–45% (conservative).
 
 ## Risk management
 
