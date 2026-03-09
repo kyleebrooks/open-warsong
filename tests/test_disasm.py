@@ -221,6 +221,16 @@ class DisasmTests(unittest.TestCase):
 
 
 
+
+
+    def test_decode_exg_register_forms(self) -> None:
+        exg_dd = decode_instruction(bytes.fromhex("C745"), 0)
+        exg_aa = decode_instruction(bytes.fromhex("C94E"), 0)
+        exg_da = decode_instruction(bytes.fromhex("CB8D"), 0)
+        self.assertEqual(exg_dd.text, "exg d3,d5")
+        self.assertEqual(exg_aa.text, "exg a4,a6")
+        self.assertEqual(exg_da.text, "exg d5,a5")
+
     def test_decode_eor_dn_to_memory_destination_forms(self) -> None:
         eor_b_ind = decode_instruction(bytes.fromhex("B710"), 0)
         eor_w_disp = decode_instruction(bytes.fromhex("B768FFF8"), 0)
