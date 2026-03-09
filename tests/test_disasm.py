@@ -5,7 +5,7 @@ import unittest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "open-warsong"))
 
-from disasm import decode_instruction, walk_code
+from disasm import decode_instruction, walk_code, disasm_stats
 
 
 class DisasmTests(unittest.TestCase):
@@ -37,6 +37,23 @@ class DisasmTests(unittest.TestCase):
         self.assertIn(4, labels)
         self.assertIn(4, visited)
 
+    def test_decode_moveq(self) -> None:
+        data = bytes.fromhex("7010")
+        ins = decode_instruction(data, 0)
+        self.assertEqual(ins.text, "moveq #16,d0")
+
+    def test_decode_addq_subq_dn(self) -> None:
+        add = decode_instruction(bytes.fromhex("5281"), 0)
+        sub = decode_instruction(bytes.fromhex("5102"), 0)
+        self.assertEqual(add.text, "addq.l #1,d1")
+        self.assertEqual(sub.text, "subq.b #8,d2")
+
+    def test_disasm_stats_counts_unknown(self) -> None:
+        visited, _ = walk_code(bytes.fromhex("4E714E754AFC"), [0, 4])
+        stats = disasm_stats(visited)
+        self.assertEqual(stats["decoded_instructions"], 3)
+        self.assertEqual(stats["unknown_words"], 1)
+        self.assertEqual(stats["known_instructions"], 2)
 
 if __name__ == "__main__":
     unittest.main()

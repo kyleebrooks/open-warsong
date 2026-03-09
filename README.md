@@ -49,6 +49,11 @@ python scripts/run_on_pc.py --rom "Warsong (USA).md"
 5. Add tests for each decoded subsystem (battle calc, map scripts, AI).
 
 
+
+## Project tracking
+
+- Maintain progress in `MILESTONES.md` and update it with each project change.
+
 ## Reliability improvements
 
 - Patch specs can include `expect` bytes for safe fail-fast editing.

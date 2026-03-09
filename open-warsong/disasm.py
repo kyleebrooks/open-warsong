@@ -29,6 +29,24 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         return Instruction(addr, 2, "rts", [], True)
     if op == 0x4E71:
         return Instruction(addr, 2, "nop", [])
+
+    # MOVEQ #imm,Dn
+    if (op & 0xF100) == 0x7000:
+        reg = (op >> 9) & 0x7
+        imm8 = op & 0xFF
+        imm = imm8 - 0x100 if imm8 & 0x80 else imm8
+        return Instruction(addr, 2, f"moveq #{imm},d{reg}", [])
+
+    # ADDQ/SUBQ <ea> (subset: Dn direct)
+    if (op & 0xF000) == 0x5000 and (op & 0x0038) == 0x0000:
+        val = (op >> 9) & 0x7
+        val = 8 if val == 0 else val
+        size_bits = (op >> 6) & 0x3
+        sz = {0: 'b', 1: 'w', 2: 'l'}.get(size_bits)
+        if sz is not None:
+            reg = op & 0x7
+            mn = "subq" if (op & 0x0100) else "addq"
+            return Instruction(addr, 2, f"{mn}.{sz} #{val},d{reg}", [])
     if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
         return Instruction(addr, 4, f"link a6,#${imm:04X}", [])
@@ -112,3 +130,15 @@ def render_asm(path: Path, visited: dict[int, Instruction], labels: set[int]) ->
             lines.append(f"loc_{addr:06X}:")
         lines.append(f"    {visited[addr].text}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def disasm_stats(visited: dict[int, Instruction]) -> dict[str, int]:
+    unknown = sum(1 for ins in visited.values() if ins.text.startswith("dc.w"))
+    terminal = sum(1 for ins in visited.values() if ins.terminal)
+    known = len(visited) - unknown
+    return {
+        "decoded_instructions": len(visited),
+        "known_instructions": known,
+        "unknown_words": unknown,
+        "terminal_instructions": terminal,
+    }
