@@ -333,6 +333,14 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 ea_text, ins_size = decoded
                 return Instruction(addr, ins_size, f"cmp.{size} {ea_text},d{dst}", [])
 
+    # CMPM (Ay)+,(Ax)+ forms.
+    if (op & 0xF138) == 0xB108:
+        size = {4: "b", 5: "w", 6: "l"}.get((op >> 6) & 0x7)
+        if size is not None:
+            dst = (op >> 9) & 0x7
+            src = op & 0x7
+            return Instruction(addr, 2, f"cmpm.{size} (a{src})+,(a{dst})+", [])
+
     # ADD/SUB Dn,<ea> subset for common memory destinations.
     op_class = op & 0xF000
     if op_class in (0x9000, 0xD000):

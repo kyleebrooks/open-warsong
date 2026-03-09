@@ -208,6 +208,15 @@ class DisasmTests(unittest.TestCase):
 
 
 
+
+    def test_decode_cmpm_postincrement_forms(self) -> None:
+        cmpm_b = decode_instruction(bytes.fromhex("B70D"), 0)
+        cmpm_w = decode_instruction(bytes.fromhex("B54C"), 0)
+        cmpm_l = decode_instruction(bytes.fromhex("B98E"), 0)
+        self.assertEqual(cmpm_b.text, "cmpm.b (a5)+,(a3)+")
+        self.assertEqual(cmpm_w.text, "cmpm.w (a4)+,(a2)+")
+        self.assertEqual(cmpm_l.text, "cmpm.l (a6)+,(a4)+")
+
     def test_decode_or_and_ea_and_memory_destination_forms(self) -> None:
         or_w_from_ea = decode_instruction(bytes.fromhex("8650"), 0)
         and_l_from_ea = decode_instruction(bytes.fromhex("CAAAFFF8"), 0)

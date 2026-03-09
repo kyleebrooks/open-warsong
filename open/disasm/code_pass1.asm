@@ -9090,7 +9090,7 @@ loc_004918:
     ori.b #$00,(78,a2,a3.l)
     move.w #$00BF,d1
 loc_004931:
-    dc.w $BF4E
+    cmpm.w (a6)+,(a7)+
     nop
     dc.w $7151
 loc_004934:
@@ -41404,7 +41404,7 @@ loc_02341E:
     dc.w $D0C7
     dc.w $226E
     ori.b #$0F,-(a0)
-    dc.w $B149
+    cmpm.w (a1)+,(a0)+
 loc_02343E:
     bne.s loc_023456
     dbra d0,loc_02343E
@@ -41534,7 +41534,7 @@ loc_0235A8:
     rts
 loc_0235AC:
     dc.w $31FC
-    dc.w $B10A
+    cmpm.b (a2)+,(a0)+
     dc.w $B106
     rts
 loc_0235B4:
@@ -41559,7 +41559,7 @@ loc_0235E6:
     dc.w $1100
     bne.s loc_0235E6
     dc.w $BCFC
-    dc.w $B10A
+    cmpm.b (a2)+,(a0)+
     bhi.s loc_02361C
     beq.s loc_0235FA
 loc_0235F8:
@@ -41567,7 +41567,7 @@ loc_0235F8:
 loc_0235FA:
     dc.w $4279
     ori.l #$110031FC,-(a1)
-    dc.w $B10A
+    cmpm.b (a2)+,(a0)+
     dc.w $B106
     move.w #$8100,d0
     dc.w $1038
@@ -41643,7 +41643,7 @@ loc_023990:
     andi.b #$75,d0
     dc.w $48E7
     ori.w #$307C,d0
-    dc.w $BD0C
+    cmpm.b (a4)+,(a6)+
     move.w #$0009,d0
     dc.w $4A50
     beq.s loc_0239B2
