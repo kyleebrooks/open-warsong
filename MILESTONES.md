@@ -57,25 +57,25 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 93%
+- **% Complete:** 95%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added PC-relative `jsr`/`jmp` target annotation when derivable and refreshed full-pass metrics against the root ROM (`known_instructions`: 16,270 / `unknown_words`: 23,730 @ 40,000 decoded); next focus is extending remaining ALU/control families that can reuse current EA helpers.
+- **Notes / Next action:** Added PC-relative `jsr`/`jmp` target annotation when derivable plus `exg` register exchange decoding, then refreshed full-pass metrics against the root ROM (`known_instructions`: 16,298 / `unknown_words`: 23,702 @ 40,000 decoded); next focus is extending remaining ALU/control families that can reuse current EA helpers.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 59%
+- **% Complete:** 63%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for PC-relative control-transfer annotation (`jsr`/`jmp`) while preserving indexed-form behavior, and validated suite stability with a fresh root-ROM disassembly pass; continue expanding ALU/control coverage and grouping opcode tests into subsystem behavior suites.
+- **Notes / Next action:** Added deterministic tests for PC-relative control-transfer annotation (`jsr`/`jmp`) and new `exg` register exchange decoding, then validated suite stability with a fresh root-ROM disassembly pass; continue expanding ALU/control coverage and grouping opcode tests into subsystem behavior suites.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -356,6 +356,21 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 - **Risks / blockers:** Decoder coverage remains incomplete across several opcode families, so fallback words remain substantial despite incremental improvements.
 - **Next planned actions (ordered):**
   1. Extend remaining ALU/control families that can reuse shared EA decode helpers (`cmpm`, `exg`, additional immediate/control variants).
+  2. Improve control-transfer annotation for additional derivable forms while avoiding speculative targets for indexed addressing.
+  3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
+
+### Update 2026-03-09 (iteration 17)
+
+- **Summary:** Added `exg` register exchange decoding for data/data, address/address, and data/address forms with targeted tests, then refreshed full-pass ROM metrics with a small additional unknown-word reduction.
+- **Milestones advanced:**
+  - M4: from 93% → 95%
+  - M5: from 59% → 63%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`, `open/disasm/code_pass1.asm`, `open/disasm/summary.json`
+  - Tests/checks run: `pytest -q` (35 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 16,298 / `unknown_words`: 23,702)
+- **Risks / blockers:** Decoder coverage remains incomplete across several opcode/control families, so fallback words remain substantial despite incremental progress.
+- **Next planned actions (ordered):**
+  1. Add remaining ALU/control families that can reuse shared EA decode helpers (`cmpm`, additional immediate/control variants).
   2. Improve control-transfer annotation for additional derivable forms while avoiding speculative targets for indexed addressing.
   3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
 

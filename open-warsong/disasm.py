@@ -384,6 +384,20 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 ea_text, ins_size = decoded
                 return Instruction(addr, ins_size, f"{mnemonic}.{size_to_ea} d{src_or_dst},{ea_text}", [])
 
+    # EXG register exchange forms.
+    if (op & 0xF1F8) == 0xC140:
+        rx = (op >> 9) & 0x7
+        ry = op & 0x7
+        return Instruction(addr, 2, f"exg d{rx},d{ry}", [])
+    if (op & 0xF1F8) == 0xC148:
+        rx = (op >> 9) & 0x7
+        ry = op & 0x7
+        return Instruction(addr, 2, f"exg a{rx},a{ry}", [])
+    if (op & 0xF1F8) == 0xC188:
+        rx = (op >> 9) & 0x7
+        ry = op & 0x7
+        return Instruction(addr, 2, f"exg d{rx},a{ry}", [])
+
     # EOR Dn,<ea> subset over decoded memory EA families.
     if (op & 0xF100) == 0xB100:
         reg = (op >> 9) & 0x7
