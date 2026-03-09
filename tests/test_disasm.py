@@ -63,6 +63,17 @@ class DisasmTests(unittest.TestCase):
         ins = decode_instruction(data, 0)
         self.assertEqual(ins.text, "moveq #16,d0")
 
+
+    def test_decode_shift_rotate_register_and_memory_forms(self) -> None:
+        asr_b_imm = decode_instruction(bytes.fromhex("E200"), 0)
+        lsl_w_reg = decode_instruction(bytes.fromhex("E56B"), 0)
+        roxl_l_imm = decode_instruction(bytes.fromhex("E590"), 0)
+        ror_w_mem = decode_instruction(bytes.fromhex("E6D8"), 0)
+        self.assertEqual(asr_b_imm.text, "asr.b #1,d0")
+        self.assertEqual(lsl_w_reg.text, "lsl.w d2,d3")
+        self.assertEqual(roxl_l_imm.text, "roxl.l #2,d0")
+        self.assertEqual(ror_w_mem.text, "ror.w (a0)+")
+
     def test_decode_addq_subq_dn(self) -> None:
         add = decode_instruction(bytes.fromhex("5281"), 0)
         sub = decode_instruction(bytes.fromhex("5102"), 0)

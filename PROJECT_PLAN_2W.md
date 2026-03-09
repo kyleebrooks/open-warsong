@@ -128,3 +128,12 @@ Expected overall project completion after this plan: ~38–45% (conservative).
 2. Run targeted tests + full `pytest -q`.
 3. If ROM available, run disasm pass and note unknown trend.
 4. Update `MILESTONES.md` with evidence and next ordered actions.
+
+
+## Execution progress updates
+
+### 2026-03-09 (iteration 25)
+
+- Completed another Week 1 decoder-throughput slice by adding shift/rotate instruction-family coverage in `open-warsong/disasm.py` with deterministic tests.
+- Refreshed full-pass quality metrics: `known_instructions` improved to `19,147` and `unknown_words` reduced to `17,072` (`max_instructions: 40,000`).
+- Next in plan order: begin Week 2 Priority 1 by validating and claiming the first vector handlers, then add the first true subsystem fixture to unblock meaningful M5 movement.

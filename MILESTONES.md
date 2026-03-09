@@ -57,13 +57,13 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 66%
+- **% Complete:** 70%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Recalibrated completion scoring to reduce percentage oscillation: M4 is now tied to measurable pass output and hand-verified coverage, not just count of merged decoder PRs. Current baseline from latest full run is `known_instructions: 17,733`, `unknown_words: 18,522`, `decoded_instructions: 36,255` (`max_instructions: 40,000`); next focus is reducing the highest-frequency unknown opcode families and converting fallback-heavy regions into validated instruction blocks.
+- **Notes / Next action:** Added shift/rotate decoder coverage (`as/ls/rox/ro` register + memory forms), reducing full-pass fallback words to `unknown_words: 17,072` with `known_instructions: 19,147` (`decoded_instructions: 36,219` at `max_instructions: 40,000`). Next focus is using the updated unknown-opcode histogram to target the next highest-frequency control/ALU families and begin M1 vector handler ownership slices.
 
 ## Milestone 5 — Subsystem correctness tests
 
@@ -515,3 +515,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   1. Add remaining control/compare and unary/bit-adjacent families that can reuse shared effective-address helpers.
   2. Expand derivable control-transfer target annotation for non-speculative indexed/PC-relative forms where possible.
   3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
+
+
+### Update 2026-03-09 (iteration 25)
+
+- **Summary:** Added 68k shift/rotate decoding coverage for register and memory forms (`asr/asl`, `lsr/lsl`, `roxr/roxl`, `ror/rol`), expanded tests, and refreshed full ROM disassembly metrics with a substantial unknown-word reduction.
+- **Milestones advanced:**
+  - M4: from 66% → 70%
+  - M5: from 34% → 34%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`, `open/disasm/code_pass1.asm`, `open/disasm/summary.json`
+  - Tests/checks run: `pytest -q` (48 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 19,147 / `unknown_words`: 17,072)
+- **Risks / blockers:** Milestone 5 remains constrained because decoder-unit growth does not yet equal subsystem-behavior coverage; dedicated battle/map/script fixtures are still needed.
+- **Next planned actions (ordered):**
+  1. Use the refreshed unknown-opcode histogram to prioritize the next highest-frequency undecoded families.
+  2. Start Milestone 1 vector ownership by validating and labeling the first reset/exception handlers in `open/vectors_68k.asm`.
+  3. Land first subsystem-level deterministic fixture so M5 can move on gameplay-logic evidence.
