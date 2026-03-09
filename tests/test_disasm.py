@@ -74,10 +74,16 @@ class DisasmTests(unittest.TestCase):
     def test_decode_move_dn_to_memory_destination(self) -> None:
         move_w_ind = decode_instruction(bytes.fromhex("3490"), 0)
         move_l_post = decode_instruction(bytes.fromhex("2699"), 0)
+        move_w_pre = decode_instruction(bytes.fromhex("36A4"), 0)
         move_w_disp = decode_instruction(bytes.fromhex("32A8000C"), 0)
+        move_l_abs_w = decode_instruction(bytes.fromhex("22B81234"), 0)
+        move_w_abs_l = decode_instruction(bytes.fromhex("32B912345678"), 0)
         self.assertEqual(move_w_ind.text, "move.w d2,(a0)")
         self.assertEqual(move_l_post.text, "move.l d3,(a1)+")
+        self.assertEqual(move_w_pre.text, "move.w d3,-(a4)")
         self.assertEqual(move_w_disp.text, "move.w d1,(12,a0)")
+        self.assertEqual(move_l_abs_w.text, "move.l d1,($1234).w")
+        self.assertEqual(move_w_abs_l.text, "move.w d1,($12345678).l")
 
     def test_decode_clr_tst_dn(self) -> None:
         clr = decode_instruction(bytes.fromhex("4282"), 0)
@@ -107,16 +113,28 @@ class DisasmTests(unittest.TestCase):
     def test_decode_cmp_displacement_address_indirect_to_dn(self) -> None:
         cmp_w_pos = decode_instruction(bytes.fromhex("B4680012"), 0)
         cmp_l_neg = decode_instruction(bytes.fromhex("B6A9FFF0"), 0)
+        cmp_w_pre = decode_instruction(bytes.fromhex("B461"), 0)
+        cmp_l_abs_w = decode_instruction(bytes.fromhex("B6B81234"), 0)
+        cmp_w_abs_l = decode_instruction(bytes.fromhex("B47912345678"), 0)
         self.assertEqual(cmp_w_pos.text, "cmp.w (18,a0),d2")
         self.assertEqual(cmp_l_neg.text, "cmp.l (-16,a1),d3")
+        self.assertEqual(cmp_w_pre.text, "cmp.w -(a1),d2")
+        self.assertEqual(cmp_l_abs_w.text, "cmp.l ($1234).w,d3")
+        self.assertEqual(cmp_w_abs_l.text, "cmp.w ($12345678).l,d2")
 
     def test_decode_add_sub_dn_to_memory_destination(self) -> None:
         add_w_ind = decode_instruction(bytes.fromhex("D350"), 0)
         sub_l_post = decode_instruction(bytes.fromhex("9799"), 0)
+        sub_w_pre = decode_instruction(bytes.fromhex("9764"), 0)
         add_b_disp = decode_instruction(bytes.fromhex("D728FFF8"), 0)
+        add_l_abs_w = decode_instruction(bytes.fromhex("D7B81234"), 0)
+        sub_b_abs_l = decode_instruction(bytes.fromhex("973912345678"), 0)
         self.assertEqual(add_w_ind.text, "add.w d1,(a0)")
         self.assertEqual(sub_l_post.text, "sub.l d3,(a1)+")
+        self.assertEqual(sub_w_pre.text, "sub.w d3,-(a4)")
         self.assertEqual(add_b_disp.text, "add.b d3,(-8,a0)")
+        self.assertEqual(add_l_abs_w.text, "add.l d3,($1234).w")
+        self.assertEqual(sub_b_abs_l.text, "sub.b d3,($12345678).l")
 
     def test_decode_dbcc(self) -> None:
         dbne = decode_instruction(bytes.fromhex("56CBFFFC"), 0)
