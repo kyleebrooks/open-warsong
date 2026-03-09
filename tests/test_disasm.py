@@ -209,6 +209,15 @@ class DisasmTests(unittest.TestCase):
 
 
 
+
+    def test_decode_cmpa_forms(self) -> None:
+        cmpa_w = decode_instruction(bytes.fromhex("B4E8FFF0"), 0)
+        cmpa_l = decode_instruction(bytes.fromhex("B7FB2802"), 0)
+        cmpa_imm = decode_instruction(bytes.fromhex("B6FC12345678"), 0)
+        self.assertEqual(cmpa_w.text, "cmpa.w (-16,a0),a2")
+        self.assertEqual(cmpa_l.text, "cmpa.l (2,pc,d2.l),a3")
+        self.assertEqual(cmpa_imm.text, "cmpa.w #$1234,a3")
+
     def test_decode_cmpm_postincrement_forms(self) -> None:
         cmpm_b = decode_instruction(bytes.fromhex("B70D"), 0)
         cmpm_w = decode_instruction(bytes.fromhex("B54C"), 0)

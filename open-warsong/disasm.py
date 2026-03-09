@@ -322,6 +322,18 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         target = (addr + 4 + disp) & 0xFFFFFFFF
         mnemonic = DBCC_MNEMONICS[cond]
         return Instruction(addr, 4, f"{mnemonic} d{reg},loc_{target:06X}", [target])
+
+    # CMPA <ea>,An forms.
+    if (op & 0xF000) == 0xB000:
+        opmode = (op >> 6) & 0x7
+        size = {3: "w", 7: "l"}.get(opmode)
+        if size is not None:
+            dst = (op >> 9) & 0x7
+            decoded = _decode_data_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"cmpa.{size} {ea_text},a{dst}", [])
+
     # CMP (An)/(An)+,Dn subset.
     if (op & 0xF000) == 0xB000:
         opmode = (op >> 6) & 0x7
