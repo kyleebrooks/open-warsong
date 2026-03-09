@@ -1,0 +1,145 @@
+{
+  "rom": {
+    "path": "Warsong (USA).md",
+    "size": 524288,
+    "sha256": "ce761cd9a714f59ee535bdedfc5503e536d23f16011a91fc738abaee8a4c17af",
+    "header_checksum": "0x7E15",
+    "computed_checksum": "0x7E15",
+    "rom_start": "0x00000000",
+    "rom_end": "0x0007FFFF"
+  },
+  "stats": {
+    "ascii_string_count": 5441,
+    "control_flow_hit_count": 2549,
+    "top_control_flow_targets": [
+      {
+        "target": "0x0000485E",
+        "count": 417
+      },
+      {
+        "target": "0x00004878",
+        "count": 119
+      },
+      {
+        "target": "0x0000B5C8",
+        "count": 106
+      },
+      {
+        "target": "0x00006544",
+        "count": 89
+      },
+      {
+        "target": "0x0000658C",
+        "count": 87
+      },
+      {
+        "target": "0x0000B550",
+        "count": 86
+      },
+      {
+        "target": "0x0000B61E",
+        "count": 76
+      },
+      {
+        "target": "0x00005F60",
+        "count": 66
+      },
+      {
+        "target": "0x00005CDC",
+        "count": 59
+      },
+      {
+        "target": "0x0000EBD6",
+        "count": 58
+      },
+      {
+        "target": "0x00006672",
+        "count": 51
+      },
+      {
+        "target": "0x000053B4",
+        "count": 49
+      },
+      {
+        "target": "0x00006156",
+        "count": 46
+      },
+      {
+        "target": "0x00006722",
+        "count": 43
+      },
+      {
+        "target": "0x00004F86",
+        "count": 40
+      },
+      {
+        "target": "0x0000F4C2",
+        "count": 35
+      },
+      {
+        "target": "0x0000963A",
+        "count": 29
+      },
+      {
+        "target": "0x0000646C",
+        "count": 27
+      },
+      {
+        "target": "0x00006432",
+        "count": 26
+      },
+      {
+        "target": "0x000065AE",
+        "count": 26
+      },
+      {
+        "target": "0x00004FDA",
+        "count": 25
+      },
+      {
+        "target": "0x000064FC",
+        "count": 25
+      },
+      {
+        "target": "0x00006200",
+        "count": 23
+      },
+      {
+        "target": "0x00004A74",
+        "count": 22
+      },
+      {
+        "target": "0x00004A6C",
+        "count": 21
+      },
+      {
+        "target": "0x00005F7C",
+        "count": 21
+      },
+      {
+        "target": "0x0000EA7A",
+        "count": 19
+      },
+      {
+        "target": "0x00008F22",
+        "count": 19
+      },
+      {
+        "target": "0x000064B4",
+        "count": 17
+      },
+      {
+        "target": "0x00007766",
+        "count": 17
+      },
+      {
+        "target": "0x00005E70",
+        "count": 17
+      },
+      {
+        "target": "0x00005696",
+        "count": 15
+      }
+    ]
+  }
+}

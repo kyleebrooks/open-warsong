@@ -1,0 +1,10 @@
+{
+  "name": "Header title tweak (safe metadata change)",
+  "patches": [
+    {
+      "offset": "0x150",
+      "expect": "57 41 52 53 4F 4E 47",
+      "bytes": "4F 50 45 4E 20 57 41 52 53 4F 4E 47 20 50 52 4F 4A 45 43 54"
+    }
+  ]
+}
