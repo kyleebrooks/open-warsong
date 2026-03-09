@@ -282,6 +282,38 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 ea_text, ins_size = decoded
                 return Instruction(addr, max(ins_size, 6), f"{imm_family}.l #${imm:08X},{ea_text}", [])
 
+    # BTST/BCHG/BCLR/BSET bit-manipulation families.
+    bitop_reg_family = {
+        0x0100: ("btst", _decode_data_ea),
+        0x0140: ("bchg", _decode_data_alterable_ea),
+        0x0180: ("bclr", _decode_data_alterable_ea),
+        0x01C0: ("bset", _decode_data_alterable_ea),
+    }.get(op & 0xF1C0)
+    if bitop_reg_family is not None:
+        mnemonic, ea_decoder = bitop_reg_family
+        bit_reg = (op >> 9) & 0x7
+        decoded = ea_decoder(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"{mnemonic} d{bit_reg},{ea_text}", [])
+
+    bitop_imm_family = {
+        0x0800: ("btst", _decode_data_ea),
+        0x0840: ("bchg", _decode_data_alterable_ea),
+        0x0880: ("bclr", _decode_data_alterable_ea),
+        0x08C0: ("bset", _decode_data_alterable_ea),
+    }.get(op & 0xFFC0)
+    if bitop_imm_family is not None and _in_rom(addr, 4, len(data)):
+        mnemonic, ea_decoder = bitop_imm_family
+        bit_imm = _be16(data, addr + 2) & 0x00FF
+        if ea_decoder is _decode_data_ea:
+            decoded = ea_decoder(op, data, addr)
+        else:
+            decoded = ea_decoder(op, data, addr, ext_offset=4)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, max(ins_size, 4), f"{mnemonic} #${bit_imm:02X},{ea_text}", [])
+
     # DBcc Dn,<disp16>
     if (op & 0xF0F8) == 0x50C8 and _in_rom(addr, 4, len(data)):
         cond = (op >> 8) & 0xF

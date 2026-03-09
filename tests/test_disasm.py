@@ -175,6 +175,30 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(eori_l_abs.text, "eori.l #$00001122,($12345678).l")
         self.assertEqual(eori_l_abs.size, 10)
 
+
+    def test_decode_bit_manipulation_register_forms(self) -> None:
+        btst_dn = decode_instruction(bytes.fromhex("0102"), 0)
+        bchg_mem = decode_instruction(bytes.fromhex("0750"), 0)
+        bclr_abs = decode_instruction(bytes.fromhex("09B81234"), 0)
+        bset_pre = decode_instruction(bytes.fromhex("0BE4"), 0)
+        self.assertEqual(btst_dn.text, "btst d0,d2")
+        self.assertEqual(bchg_mem.text, "bchg d3,(a0)")
+        self.assertEqual(bclr_abs.text, "bclr d4,($1234).w")
+        self.assertEqual(bset_pre.text, "bset d5,-(a4)")
+
+    def test_decode_bit_manipulation_immediate_forms(self) -> None:
+        btst_imm_dn = decode_instruction(bytes.fromhex("08020007"), 0)
+        bchg_imm_mem = decode_instruction(bytes.fromhex("08500003"), 0)
+        bclr_imm_disp = decode_instruction(bytes.fromhex("08A8001FFFF8"), 0)
+        bset_imm_abs = decode_instruction(bytes.fromhex("08F9000500123456"), 0)
+        self.assertEqual(btst_imm_dn.text, "btst #$07,d2")
+        self.assertEqual(btst_imm_dn.size, 4)
+        self.assertEqual(bchg_imm_mem.text, "bchg #$03,(a0)")
+        self.assertEqual(bchg_imm_mem.size, 4)
+        self.assertEqual(bclr_imm_disp.text, "bclr #$1F,(-8,a0)")
+        self.assertEqual(bclr_imm_disp.size, 6)
+        self.assertEqual(bset_imm_abs.text, "bset #$05,($00123456).l")
+        self.assertEqual(bset_imm_abs.size, 8)
     def test_decode_dbcc(self) -> None:
         dbne = decode_instruction(bytes.fromhex("56CBFFFC"), 0)
         dbra = decode_instruction(bytes.fromhex("51C80006"), 0)
