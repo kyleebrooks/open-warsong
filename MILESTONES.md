@@ -22,7 +22,7 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 
 ## Milestone 1 — Vector table ownership
 
-- **Status:** ⬜ Not started / 🔄 In progress / ✅ Done
+- **Status:** ⬜ Not started
 - **% Complete:** 0%
 - **Last Updated:** _YYYY-MM-DD_
 - **Definition of done:** Replace placeholder vector stubs in `open/vectors_68k.asm` with validated handlers and labels.
@@ -33,7 +33,7 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 
 ## Milestone 2 — Progressive code/data separation
 
-- **Status:** ⬜ Not started / 🔄 In progress / ✅ Done
+- **Status:** ⬜ Not started
 - **% Complete:** 0%
 - **Last Updated:** _YYYY-MM-DD_
 - **Definition of done:** Replace generic binary includes/fallback data blocks with identified code/data regions and labels.
@@ -44,7 +44,7 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 
 ## Milestone 3 — Symbol map growth
 
-- **Status:** ⬜ Not started / 🔄 In progress / ✅ Done
+- **Status:** ⬜ Not started
 - **% Complete:** 0%
 - **Last Updated:** _YYYY-MM-DD_
 - **Definition of done:** `open/symbols.csv` contains robust subsystem labels (engine init, battle, map scripts, AI, UI, etc.).
@@ -57,29 +57,29 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 99%
+- **% Complete:** 66%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added privileged/control flow coverage (`reset`/`stop`/`trap`/`rte`/`rtr`/`trapv`) and broadened stack-frame decoding (`link`/`unlk` across all address registers), then refreshed full-pass metrics against the root ROM (`known_instructions`: 17,733 / `unknown_words`: 18,522 @ 36,255 decoded); next focus is high-frequency unknown opcode families and deeper addressing-mode expansion to continue reducing fallback words.
+- **Notes / Next action:** Recalibrated completion scoring to reduce percentage oscillation: M4 is now tied to measurable pass output and hand-verified coverage, not just count of merged decoder PRs. Current baseline from latest full run is `known_instructions: 17,733`, `unknown_words: 18,522`, `decoded_instructions: 36,255` (`max_instructions: 40,000`); next focus is reducing the highest-frequency unknown opcode families and converting fallback-heavy regions into validated instruction blocks.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 87%
+- **% Complete:** 34%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for privileged/control instructions (`reset`/`stop`/`trap`/`rte`/`rtr`/`trapv`) and generalized `link`/`unlk` register forms, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,733 / `unknown_words`: 18,522 @ 36,255 decoded); next focus is remaining high-frequency opcode families and additional flow-target derivation.
+- **Notes / Next action:** Re-scoped to true subsystem correctness (battle/map/AI/script behavior) rather than decoder-opcode unit tests alone. Decoder tests remain valuable but are now treated as prerequisite infrastructure; next focus is adding deterministic subsystem fixtures and assertions tied to real gameplay logic.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
-- **Status:** ⬜ Not started / 🔄 In progress / ✅ Done
+- **Status:** ⬜ Not started
 - **% Complete:** 0%
 - **Last Updated:** _YYYY-MM-DD_
 - **Definition of done:** Rebuilt output and/or execution behavior matches original ROM expectations for defined scenarios.
@@ -105,6 +105,22 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 - **Next planned actions (ordered):**
 
 
+
+
+### Update 2026-03-09 (progress calibration)
+
+- **Summary:** Reviewed milestone drift and normalized completion percentages to a stable evidence-based rubric so progress no longer swings with each decoder-only PR.
+- **Milestones advanced:**
+  - M4: from 99% → 66% (rebaselined to measurable decoded/unknown output and validated block replacement work still remaining)
+  - M5: from 87% → 34% (rebaselined to subsystem-level behavior coverage, not opcode-family unit test count)
+- **Evidence produced:**
+  - Files changed: `MILESTONES.md`, `PROJECT_PLAN_2W.md`
+  - Tests/checks run: `pytest -q` (47 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 17,733 / `unknown_words`: 18,522 / `decoded_instructions`: 36,255)
+- **Risks / blockers:** Historical update log entries include out-of-order iteration labels, which can make trend interpretation noisy.
+- **Next planned actions (ordered):**
+  1. Start a compact weekly metrics table (single source of truth) for `known_instructions`, `unknown_words`, and `% unknown`.
+  2. Add first subsystem-level correctness fixtures (battle/map/script) to move M5 with direct behavioral evidence.
+  3. Begin M1/M2 execution slices (vector ownership + first code/data separation region) so progress is not concentrated only in M4.
 ### Update 2026-03-09
 
 - **Summary:** Advanced disassembly hardening by decoding additional common 68k instruction families and adding disassembly quality metrics.
