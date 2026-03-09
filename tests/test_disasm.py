@@ -65,6 +65,12 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(move_w_post.text, "move.w (a0)+,d1")
         self.assertEqual(move_l_post.text, "move.l (a1)+,d2")
 
+    def test_decode_move_displacement_address_indirect_to_dn(self) -> None:
+        move_w_pos = decode_instruction(bytes.fromhex("322A0010"), 0)
+        move_l_neg = decode_instruction(bytes.fromhex("242BFFF8"), 0)
+        self.assertEqual(move_w_pos.text, "move.w (16,a2),d1")
+        self.assertEqual(move_l_neg.text, "move.l (-8,a3),d2")
+
     def test_decode_clr_tst_dn(self) -> None:
         clr = decode_instruction(bytes.fromhex("4282"), 0)
         tst = decode_instruction(bytes.fromhex("4A40"), 0)
@@ -89,6 +95,12 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(cmp_l.text, "cmp.l (a6),d3")
         self.assertEqual(cmp_w_post.text, "cmp.w (a0)+,d1")
         self.assertEqual(cmp_l_post.text, "cmp.l (a1)+,d2")
+
+    def test_decode_cmp_displacement_address_indirect_to_dn(self) -> None:
+        cmp_w_pos = decode_instruction(bytes.fromhex("B4680012"), 0)
+        cmp_l_neg = decode_instruction(bytes.fromhex("B6A9FFF0"), 0)
+        self.assertEqual(cmp_w_pos.text, "cmp.w (18,a0),d2")
+        self.assertEqual(cmp_l_neg.text, "cmp.l (-16,a1),d3")
 
     def test_decode_dbcc(self) -> None:
         dbne = decode_instruction(bytes.fromhex("56CBFFFC"), 0)

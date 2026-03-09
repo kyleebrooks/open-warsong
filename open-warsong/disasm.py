@@ -13,6 +13,10 @@ DBCC_MNEMONICS = (
 )
 
 
+def _signed_word(value: int) -> int:
+    return value - 0x10000 if value & 0x8000 else value
+
+
 @dataclass
 class Instruction:
     addr: int
@@ -67,6 +71,18 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         src = op & 0x7
         return Instruction(addr, 2, f"move.l (a{src})+,d{dst}", [])
 
+    # MOVE displacement address-register indirect to data register.
+    if (op & 0xF1F8) == 0x3028 and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        disp = _signed_word(_be16(data, addr + 2))
+        return Instruction(addr, 4, f"move.w ({disp},a{src}),d{dst}", [])
+    if (op & 0xF1F8) == 0x2028 and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        disp = _signed_word(_be16(data, addr + 2))
+        return Instruction(addr, 4, f"move.l ({disp},a{src}),d{dst}", [])
+
     # MOVEQ #imm,Dn
     if (op & 0xF100) == 0x7000:
         reg = (op >> 9) & 0x7
@@ -117,9 +133,7 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
     if (op & 0xF0F8) == 0x50C8 and _in_rom(addr, 4, len(data)):
         cond = (op >> 8) & 0xF
         reg = op & 0x7
-        disp = _be16(data, addr + 2)
-        if disp & 0x8000:
-            disp -= 0x10000
+        disp = _signed_word(_be16(data, addr + 2))
         target = (addr + 4 + disp) & 0xFFFFFFFF
         mnemonic = DBCC_MNEMONICS[cond]
         return Instruction(addr, 4, f"{mnemonic} d{reg},loc_{target:06X}", [target])
@@ -140,6 +154,16 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         dst = (op >> 9) & 0x7
         src = op & 0x7
         return Instruction(addr, 2, f"cmp.l (a{src})+,d{dst}", [])
+    if (op & 0xF1F8) == 0xB0A8 and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        disp = _signed_word(_be16(data, addr + 2))
+        return Instruction(addr, 4, f"cmp.l ({disp},a{src}),d{dst}", [])
+    if (op & 0xF1F8) == 0xB068 and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        disp = _signed_word(_be16(data, addr + 2))
+        return Instruction(addr, 4, f"cmp.w ({disp},a{src}),d{dst}", [])
 
     if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
@@ -188,9 +212,7 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         mnemonic = ["bra", "bsr", "bhi", "bls", "bcc", "bcs", "bne", "beq", "bvc", "bvs", "bpl", "bmi", "bge", "blt", "bgt", "ble"][cond]
 
         if disp8 == 0 and _in_rom(addr, 4, len(data)):
-            disp = _be16(data, addr + 2)
-            if disp & 0x8000:
-                disp -= 0x10000
+            disp = _signed_word(_be16(data, addr + 2))
             target = (addr + 2 + disp) & 0xFFFFFFFF
             terminal = mnemonic == "bra"
             return Instruction(addr, 4, f"{mnemonic}.w loc_{target:06X}", [target], terminal)

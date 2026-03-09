@@ -57,7 +57,7 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 37%
+- **% Complete:** 43%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
@@ -68,7 +68,7 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 19%
+- **% Complete:** 22%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
@@ -183,3 +183,19 @@ Use this checklist on every project update to track progress from tooling to ful
   1. Add `cmp`/ALU destination forms that target memory addressing modes beyond `(An)` and `(An)+`.
   2. Expand branch/loop decoding fidelity for additional control-flow idioms found in startup and engine routines.
   3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.
+
+
+### Update 2026-03-09 (iteration 6)
+
+- **Summary:** Expanded decoder coverage for displacement-based address-register indirect `move`/`cmp` forms and refactored signed word displacement decoding helper, with matching unit tests.
+- **Milestones advanced:**
+  - M4: from 37% → 43%
+  - M5: from 19% → 22%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (22 passed)
+- **Risks / blockers:** Full-pass unknown-word trend refresh remains blocked until a local ROM image is available for `scripts/disasm_pass.py`.
+- **Next planned actions (ordered):**
+  1. Add destination-memory `move` forms to reduce fallback output in data movement heavy regions.
+  2. Expand ALU coverage (`add/sub/cmp` memory destinations) for common engine loops.
+  3. Re-run `scripts/disasm_pass.py` once ROM is available and capture unknown-word deltas.
