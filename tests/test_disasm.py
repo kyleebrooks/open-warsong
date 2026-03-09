@@ -69,6 +69,25 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(w.text, "cmpi.w #$0123,d3")
         self.assertEqual(l.text, "cmpi.l #$DEADBEEF,d4")
 
+
+    def test_decode_jsr_jmp_abs_word(self) -> None:
+        jsr = decode_instruction(bytes.fromhex("4EB81234"), 0)
+        jmp = decode_instruction(bytes.fromhex("4EF80040"), 0)
+        self.assertEqual(jsr.text, "jsr loc_001234")
+        self.assertEqual(jsr.flow_targets, [0x1234])
+        self.assertEqual(jmp.text, "jmp loc_000040")
+        self.assertTrue(jmp.terminal)
+
+    def test_decode_lea_abs_and_movea_immediate(self) -> None:
+        lea_w = decode_instruction(bytes.fromhex("45F80080"), 0)
+        lea_l = decode_instruction(bytes.fromhex("47F900123456"), 0)
+        movea_w = decode_instruction(bytes.fromhex("347C1234"), 0)
+        movea_l = decode_instruction(bytes.fromhex("267C89ABCDEF"), 0)
+        self.assertEqual(lea_w.text, "lea loc_000080,a2")
+        self.assertEqual(lea_l.text, "lea loc_123456,a3")
+        self.assertEqual(movea_w.text, "movea.w #$1234,a2")
+        self.assertEqual(movea_l.text, "movea.l #$89ABCDEF,a3")
+
     def test_disasm_stats_counts_unknown(self) -> None:
         visited, _ = walk_code(bytes.fromhex("4E714E754AFC"), [0, 4])
         stats = disasm_stats(visited)

@@ -94,10 +94,36 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
     if op == 0x4EB9 and _in_rom(addr, 6, len(data)):
         target = _be32(data, addr + 2)
         return Instruction(addr, 6, f"jsr loc_{target:06X}", [target])
+    if op == 0x4EB8 and _in_rom(addr, 4, len(data)):
+        target = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"jsr loc_{target:06X}", [target])
 
     if op == 0x4EF9 and _in_rom(addr, 6, len(data)):
         target = _be32(data, addr + 2)
         return Instruction(addr, 6, f"jmp loc_{target:06X}", [target], True)
+    if op == 0x4EF8 and _in_rom(addr, 4, len(data)):
+        target = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"jmp loc_{target:06X}", [target], True)
+
+    # LEA absolute forms.
+    if (op & 0xF1FF) == 0x41F9 and _in_rom(addr, 6, len(data)):
+        reg = (op >> 9) & 0x7
+        ea = _be32(data, addr + 2)
+        return Instruction(addr, 6, f"lea loc_{ea:06X},a{reg}", [])
+    if (op & 0xF1FF) == 0x41F8 and _in_rom(addr, 4, len(data)):
+        reg = (op >> 9) & 0x7
+        ea = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"lea loc_{ea:06X},a{reg}", [])
+
+    # MOVEA immediate forms.
+    if (op & 0xF1FF) == 0x307C and _in_rom(addr, 4, len(data)):
+        reg = (op >> 9) & 0x7
+        imm = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"movea.w #${imm:04X},a{reg}", [])
+    if (op & 0xF1FF) == 0x207C and _in_rom(addr, 6, len(data)):
+        reg = (op >> 9) & 0x7
+        imm = _be32(data, addr + 2)
+        return Instruction(addr, 6, f"movea.l #${imm:08X},a{reg}", [])
 
     # Bcc/BRA/BSR handling for 68000 short/word forms.
     if (op & 0xF000) == 0x6000:
