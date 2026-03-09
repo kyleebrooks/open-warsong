@@ -13,6 +13,13 @@ DBCC_MNEMONICS = (
 )
 
 
+# Scc condition mnemonic lookup indexed by condition field.
+SCC_MNEMONICS = (
+    "st", "sf", "shi", "sls", "scc", "scs", "sne", "seq",
+    "svc", "svs", "spl", "smi", "sge", "slt", "sgt", "sle",
+)
+
+
 def _signed_word(value: int) -> int:
     return value - 0x10000 if value & 0x8000 else value
 
@@ -350,6 +357,15 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         target = (addr + 4 + disp) & 0xFFFFFFFF
         mnemonic = DBCC_MNEMONICS[cond]
         return Instruction(addr, 4, f"{mnemonic} d{reg},loc_{target:06X}", [target])
+
+    # Scc <ea> over data-alterable effective-address forms.
+    if (op & 0xF0C0) == 0x50C0:
+        cond = (op >> 8) & 0xF
+        mnemonic = SCC_MNEMONICS[cond]
+        decoded = _decode_data_alterable_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"{mnemonic}.b {ea_text}", [])
 
     # CMPA <ea>,An forms.
     if (op & 0xF000) == 0xB000:

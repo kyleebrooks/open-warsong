@@ -233,6 +233,14 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(dbne.flow_targets, [0])
         self.assertEqual(dbra.text, "dbra d0,loc_00000A")
 
+    def test_decode_scc_data_alterable_forms(self) -> None:
+        sne_dn = decode_instruction(bytes.fromhex("56C2"), 0)
+        seq_indirect = decode_instruction(bytes.fromhex("57D0"), 0)
+        sls_disp = decode_instruction(bytes.fromhex("53E8FFF8"), 0)
+        self.assertEqual(sne_dn.text, "sne.b d2")
+        self.assertEqual(seq_indirect.text, "seq.b (a0)")
+        self.assertEqual(sls_disp.text, "sls.b (-8,a0)")
+
 
 
 
