@@ -231,9 +231,12 @@ class DisasmTests(unittest.TestCase):
 
     def test_decode_jsr_jmp_control_forms(self) -> None:
         jsr_pc = decode_instruction(bytes.fromhex("4EBA0010"), 0)
+        jmp_pc = decode_instruction(bytes.fromhex("4EFAFFFE"), 0)
         jmp_idx = decode_instruction(bytes.fromhex("4EF02804"), 0)
-        self.assertEqual(jsr_pc.text, "jsr (16,pc)")
-        self.assertEqual(jsr_pc.flow_targets, [])
+        self.assertEqual(jsr_pc.text, "jsr loc_000012")
+        self.assertEqual(jsr_pc.flow_targets, [0x12])
+        self.assertEqual(jmp_pc.text, "jmp loc_000000")
+        self.assertEqual(jmp_pc.flow_targets, [0])
         self.assertEqual(jmp_idx.text, "jmp (4,a0,d2.l)")
         self.assertTrue(jmp_idx.terminal)
 
