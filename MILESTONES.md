@@ -63,19 +63,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added `ori/andi/eori` control-register variants (`ccr`/`sr`) plus `scc` condition-code byte forms (`st`/`sf`/etc.) and refreshed full-pass metrics against the root ROM (`known_instructions`: 17,395 / `unknown_words`: 22,605 @ 40,000 decoded); next focus is additional control/data-movement opcode families and richer target annotation paths.
+- **Notes / Next action:** Added unary `negx`/`neg`/`not` data-alterable decoding forms and refreshed full-pass metrics against the root ROM (`known_instructions`: 17,970 / `unknown_words`: 22,030 @ 40,000 decoded); next focus is additional control/data-movement opcode families and richer target annotation paths.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 75%
+- **% Complete:** 78%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added `ori/andi/eori` control-register variants and `scc` forms with deterministic tests, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,395 / `unknown_words`: 22,605 @ 40,000 decoded); next focus is remaining control/dataflow opcode families and more derivable target annotation coverage.
+- **Notes / Next action:** Added unary `negx`/`neg`/`not` forms with deterministic tests, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,970 / `unknown_words`: 22,030 @ 40,000 decoded); next focus is remaining control/dataflow opcode families and more derivable target annotation coverage.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -452,3 +452,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   1. Add additional single-byte condition/control instruction families and coverage tests.
   2. Expand move/control-transfer opcode handling that appears frequently in pass-1 unknown output.
   3. Continue symbol promotion for newly stabilized routines.
+
+
+### Update 2026-03-09 (iteration 22)
+
+- **Summary:** Added unary `negx`/`neg`/`not` decoding across data-alterable effective-address forms, expanded tests for direct and memory targets, and refreshed full-pass ROM metrics with a notable unknown-word reduction.
+- **Milestones advanced:**
+  - M4: from 99% → 99%
+  - M5: from 75% → 78%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`, `open/disasm/code_pass1.asm`, `open/disasm/summary.json`
+  - Tests/checks run: `pytest -q` (41 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 17,970 / `unknown_words`: 22,030)
+- **Risks / blockers:** Decoder coverage is still incomplete for several remaining opcode/control families, so fallback words remain substantial despite improved trend results.
+- **Next planned actions (ordered):**
+  1. Add remaining control/compare unary and bit/control variants that can reuse shared data-alterable EA decode helpers.
+  2. Extend derivable control-transfer target annotation for more non-speculative forms.
+  3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.

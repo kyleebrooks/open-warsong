@@ -99,6 +99,14 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(clr.text, "clr.l d2")
         self.assertEqual(tst.text, "tst.w d0")
 
+    def test_decode_negx_neg_not_data_alterable_forms(self) -> None:
+        negx_dn = decode_instruction(bytes.fromhex("4002"), 0)
+        neg_mem = decode_instruction(bytes.fromhex("4450"), 0)
+        not_abs = decode_instruction(bytes.fromhex("46B81234"), 0)
+        self.assertEqual(negx_dn.text, "negx.b d2")
+        self.assertEqual(neg_mem.text, "neg.w (a0)")
+        self.assertEqual(not_abs.text, "not.l ($1234).w")
+
     def test_decode_cmpi_dn(self) -> None:
         b = decode_instruction(bytes.fromhex("0C02007F"), 0)
         w = decode_instruction(bytes.fromhex("0C430123"), 0)
