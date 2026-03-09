@@ -57,7 +57,7 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 10%
+- **% Complete:** 18%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
@@ -68,7 +68,7 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 5%
+- **% Complete:** 9%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
@@ -119,3 +119,19 @@ Use this checklist on every project update to track progress from tooling to ful
   1. Add more 68k decoder coverage for common move/arithmetic/control instructions.
   2. Run disasm pass on ROM and track unknown-word trend over time.
   3. Start pinning decoded routines to subsystem labels for symbol growth.
+
+
+### Update 2026-03-09 (iteration 2)
+
+- **Summary:** Added decoding support for additional immediate/register operations (`move`, `clr`, `tst`, `cmpi`) and expanded unit tests to lock in behavior.
+- **Milestones advanced:**
+  - M4: from 10% → 18%
+  - M5: from 5% → 9%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (15 passed)
+- **Risks / blockers:** Decoder still lacks many addressing modes and ALU/memory opcodes, so pass output will continue to contain fallback words.
+- **Next planned actions (ordered):**
+  1. Add `movea`, `lea`, and more branch/control-flow patterns used in startup code.
+  2. Expand decoding for memory-targeting `move`/`cmp` forms likely to appear in core loops.
+  3. Re-run `scripts/disasm_pass.py` against the ROM and record unknown-word trend in milestone updates.

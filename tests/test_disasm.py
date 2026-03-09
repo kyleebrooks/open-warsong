@@ -48,6 +48,27 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(add.text, "addq.l #1,d1")
         self.assertEqual(sub.text, "subq.b #8,d2")
 
+
+    def test_decode_move_immediate_dn(self) -> None:
+        word = decode_instruction(bytes.fromhex("323C1234"), 0)
+        longw = decode_instruction(bytes.fromhex("243C89ABCDEF"), 0)
+        self.assertEqual(word.text, "move.w #$1234,d1")
+        self.assertEqual(longw.text, "move.l #$89ABCDEF,d2")
+
+    def test_decode_clr_tst_dn(self) -> None:
+        clr = decode_instruction(bytes.fromhex("4282"), 0)
+        tst = decode_instruction(bytes.fromhex("4A40"), 0)
+        self.assertEqual(clr.text, "clr.l d2")
+        self.assertEqual(tst.text, "tst.w d0")
+
+    def test_decode_cmpi_dn(self) -> None:
+        b = decode_instruction(bytes.fromhex("0C02007F"), 0)
+        w = decode_instruction(bytes.fromhex("0C430123"), 0)
+        l = decode_instruction(bytes.fromhex("0C84DEADBEEF"), 0)
+        self.assertEqual(b.text, "cmpi.b #$7F,d2")
+        self.assertEqual(w.text, "cmpi.w #$0123,d3")
+        self.assertEqual(l.text, "cmpi.l #$DEADBEEF,d4")
+
     def test_disasm_stats_counts_unknown(self) -> None:
         visited, _ = walk_code(bytes.fromhex("4E714E754AFC"), [0, 4])
         stats = disasm_stats(visited)
