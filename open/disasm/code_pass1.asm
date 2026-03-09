@@ -1,133 +1,70 @@
 loc_000000:
     dc.w $00FF
     dc.w $FE00
-    dc.w $0000
-    dc.w $450A
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $483E
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $482E
+    ori.b #$0A,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$3E,d0
+    ori.b #$00,d0
+    ori.b #$2E,d0
 loc_00007C:
-    dc.w $0000
-    dc.w $4500
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
     subq.w #1,d5
     dc.w $4741
     dc.w $204D
@@ -206,20 +143,15 @@ loc_00007C:
     dc.w $2020
     dc.w $2020
     dc.w $2020
-    dc.w $0000
-    dc.w $0000
-    dc.w $0007
-    dc.w $FFFF
+    ori.b #$00,d0
+    ori.b #$FF,d7
     dc.w $00FF
-    dc.w $0000
-    dc.w $00FF
+    ori.b #$FF,d0
     dc.w $FFFF
     addq.w #1,d1
     dc.w $F820
-    dc.w $0020
-    dc.w $0001
-    dc.w $0020
-    dc.w $3FFF
+    ori.b #$01,-(a0)
+    ori.b #$FF,-(a0)
     dc.w $2020
     dc.w $2020
     dc.w $2020
@@ -317,123 +249,114 @@ loc_00026E:
     dc.w $204E
     jmp loc_005ACC
     dc.w $F900
-    dc.w $005A
-    and.w a6,d6
+    ori.w #$CC4E,(a2)+
 loc_000277:
     dc.w $F900
-    dc.w $006F
+    ori.w #$F24E,(-1792,a7)
 loc_00027A:
     ble.s loc_00026E
-    dc.w $F24E
     jmp loc_0071DE
-    dc.w $F900
-    dc.w $0071
-    add.w a6,d7
-    dc.w $F900
-    dc.w $0085
-    and.b d0,d6
-    dc.w $0100
+    ori.w #$DE4E,(0,a1,a7.l)
+    ori.l #$CC000100,d5
     dc.w $0100
     dc.w $0300
     dc.w $0100
     dc.w $0100
     dc.w $0100
 loc_000294:
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
+    ori.b #$02,d2
+    andi.b #$00,d0
 loc_000297:
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0003
+    andi.b #$00,d0
+    ori.b #$02,d2
+    andi.b #$00,d0
+    andi.b #$00,d0
+    ori.b #$03,d2
+    andi.b #$00,d0
     dc.w $0300
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
+    ori.b #$02,d2
+    andi.b #$00,d0
 loc_0002A3:
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
+    andi.b #$00,d0
+    ori.b #$02,d2
+    andi.b #$00,d0
+    andi.b #$00,d0
+    ori.b #$02,d2
+    andi.b #$00,d0
+    andi.b #$00,d0
+    ori.b #$02,d2
+    andi.b #$4E,d0
     dc.w $024E
 loc_0002B0:
     jmp loc_0091DA
 loc_0002B1:
     dc.w $F900
-    dc.w $0091
+    ori.l #$DA4EF900,(a1)
 loc_0002B4:
     dc.w $91DA
-    add.w a6,d5
     jmp loc_0092B4
-    dc.w $F900
-    dc.w $0092
-    dc.w $B44E
-    dc.w $F900
-    dc.w $00A0
+    ori.l #$B44EF900,(a2)
+    ori.l #$4E4EF900,-(a0)
 loc_0002C0:
     dc.w $A04E
-    dc.w $4E4E
     jmp loc_00A184
-    dc.w $F900
-    dc.w $00A1
-    or.w a6,d2
-    dc.w $F900
-    dc.w $00A2
-    dc.w $AE4E
-    dc.w $F900
-    dc.w $00AA
-    dc.w $F648
-    dc.w $E770
-    bra.s loc_00032B
-loc_00032B:
-    dc.w $0000
+    ori.l #$844EF900,-(a1)
+    ori.l #$AE4EF900,-(a2)
+    ori.l #$F648E770,(24658,a2)
+    bgt.w loc_002D0D
+    dc.w $2E00
+    dc.w $1034
+    dc.w $2E00
+    dc.w $0C76
+    ori.b #$00,(-26,a6,d2.l)
+    dc.w $4B0C
+    dc.w $4300
+    dc.w $036F
+    move.w (0,a2,d2.l),d6
+    move.l (0,a4,d2.l),d6
+    dc.w $2E4E
+    dc.w $B900
+    ori.l #$5008E800,(0,a5,d0.w)
+    andi.w #$F900,d3
+    dc.w $FF5E
+    dc.w $9CD6
+    dc.w $4353
+    dc.w $7130
+    ori.w #$F900,d3
+    dc.w $FF5E
+    cmp.w (a2),d6
+    dc.w $7130
+    ori.b #$00,(a6)
+    dc.w $FF18
+    dc.w $034E
+    dc.w $B900
+    ori.l #$00425660,(0,a6,d0.w)
     dc.w $540C
     dc.w $4300
-    dc.w $0266
-    dc.w $2E4A
+    andi.w #$2E4A,-(a6)
     bgt.w loc_00339D
     dc.w $283D
     moveq #0,d6
     dc.w $0100
     dc.w $3048
     dc.w $E778
-    dc.w $0032
+    ori.b #$00,(52,a2,d2.l)
     dc.w $2E00
-    move.l (0,a4,d2.l),d6
     dc.w $2E4E
     dc.w $B900
-    dc.w $00B5
-    dc.w $5008
-    dc.w $E800
-    dc.w $0600
+    ori.l #$5008E800,(0,a5,d0.w)
     dc.w $024C
     dc.w $DF00
     dc.w $1E4E
     dc.w $B900
-    dc.w $0096
-    dc.w $3AE5
-    dc.w $4B30
+    ori.l #$3AE54B30,(a6)
     dc.w $03D6
     dc.w $40D6
     dc.w $4006
     dc.w $4301
     sub.w d3,d0
     dc.w $F900
-    dc.w $0003
-    or.w a2,d3
+    ori.b #$4A,d3
     bgt.w loc_0035DE
     dc.w $064E
     dc.w $B900
@@ -445,16 +368,10 @@ loc_00032B:
     dc.w $0EF8
     dc.w $004E
     dc.w $F900
-    dc.w $00AF
-    dc.w $BA4E
-    dc.w $F900
-    dc.w $00B1
+    ori.l #$BA4EF900,(177,a7)
     dc.w $E64E
     dc.w $F900
-    dc.w $00BB
-    dc.w $E04E
-    dc.w $F900
-    dc.w $00C1
+    ori.l #$E04EF900,(-63,pc,d0.w)
     dc.w $1A4E
     dc.w $F900
     dc.w $00C3
@@ -469,8 +386,7 @@ loc_00032B:
     dc.w $BC09
     add.b a0,d0
     dc.w $EE00
-    dc.w $0200
-    dc.w $234E
+    andi.b #$4E,d0
     dc.w $752D
     moveq #0,d6
     dc.w $00FC
@@ -483,13 +399,11 @@ loc_00032B:
     dc.w $E77F
     moveq #83,d7
     bgt.w loc_003A47
-    dc.w $0000
-    dc.w $A23D
+    ori.b #$3D,d0
     moveq #0,d6
     eori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     dc.w $BC05
     bhi.s loc_000428
@@ -519,85 +433,63 @@ loc_00032B:
     dc.w $122D
     tst.b d0
 loc_000428:
-    dc.w $003A
+    ori.b #$3C,(3,pc)
     dc.w $3A22
-    move.l #$00030000,d1
     dc.w $3C00
     dc.w $0300
+    ori.b #$B9,d0
     dc.w $004E
-    jsr loc_006722
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
-    dc.w $0280
+    ori.b #$22,d0
+    ori.w #$2202,-(a7)
+    andi.l #$0000FFFF,d0
     or.b d0,d0
-    dc.w $0000
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF92
     sub.l d0,d1
     or.b -(a3),d0
     dc.w $2341
     dc.w $4100
-    dc.w $0016
+    ori.b #$7C,(a6)
     dc.w $1623
-    dc.w $237C
     moveq #0,d6
-    dc.w $0002
-    dc.w $0200
-    dc.w $0000
-    dc.w $0000
-    dc.w $001A
+    ori.b #$00,d2
+    andi.b #$00,d0
+    ori.b #$69,(a2)+
     dc.w $1A42
-    dc.w $4269
     bvs.w loc_002C8F
-    dc.w $0028
-    dc.w $4269
+    ori.b #$69,(34,a0)
     bvs.w loc_002661
-    dc.w $0022
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$69,-(a2)
     dc.w $2242
-    dc.w $4269
     bvs.w loc_002494
-    dc.w $0020
-    dc.w $337C
+    ori.b #$7C,-(a0)
     moveq #0,d6
-    dc.w $0014
+    ori.b #$2A,(a4)
     dc.w $1400
-    dc.w $002A
     move.l (-1,a3,d7.l),d5
     dc.w $337C
     dc.w $FFF8
     dc.w $F800
-    dc.w $0024
+    ori.b #$7C,-(a4)
     move.l (0,a3,d7.l),d2
-    dc.w $337C
     dc.w $0008
     dc.w $0800
-    dc.w $0026
+    ori.b #$6E,-(a6)
     move.l (0,a3,d6.l),d3
-    dc.w $336E
-    dc.w $0030
+    ori.b #$30,(110,a0,d5.w)
     dc.w $3000
-    dc.w $0030
     dc.w $3053
-    dc.w $536E
     bgt.w loc_0030EB
-    dc.w $002C
-    bgt.s loc_000482
-    dc.w $0242
-    dc.w $4256
-    dc.w $564C
-loc_000482:
+    ori.b #$02,(16982,a4)
+    andi.w #$564C,d2
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -611,8 +503,7 @@ loc_000482:
     dc.w $BC0A
     dc.w $AE08
     dc.w $EE00
-    dc.w $0200
-    dc.w $234E
+    andi.b #$4E,d0
     dc.w $752D
     moveq #0,d6
     dc.w $00FC
@@ -625,13 +516,11 @@ loc_000482:
     dc.w $E77F
     moveq #83,d7
     bgt.w loc_003B21
-    dc.w $0000
-    dc.w $A23D
+    ori.b #$3D,d0
     moveq #0,d6
     eori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     dc.w $BC05
     bhi.s loc_000502
@@ -660,84 +549,62 @@ loc_000482:
     dc.w $122D
     tst.b d0
 loc_000502:
-    dc.w $003A
+    ori.b #$3C,(3,pc)
     dc.w $3A22
-    move.l #$00030000,d1
     dc.w $3C00
     dc.w $0300
+    ori.b #$B9,d0
     dc.w $004E
-    jsr loc_006722
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
-    dc.w $0280
+    ori.b #$22,d0
+    ori.w #$2202,-(a7)
+    andi.l #$0000FFFF,d0
     or.b d0,d0
-    dc.w $0000
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF92
     sub.l d0,d1
     or.b -(a3),d0
     dc.w $2341
     dc.w $4100
-    dc.w $0016
+    ori.b #$7C,(a6)
     dc.w $1623
-    dc.w $237C
     moveq #0,d6
-    dc.w $0002
-    dc.w $0200
-    dc.w $0000
-    dc.w $0000
-    dc.w $001A
+    ori.b #$00,d2
+    andi.b #$00,d0
+    ori.b #$69,(a2)+
     dc.w $1A42
-    dc.w $4269
     bvs.w loc_002D69
-    dc.w $0028
-    dc.w $4269
+    ori.b #$69,(34,a0)
     bvs.w loc_00273B
-    dc.w $0022
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$69,-(a2)
     dc.w $2242
-    dc.w $4269
     bvs.w loc_00256E
-    dc.w $0020
-    dc.w $337C
+    ori.b #$7C,-(a0)
     moveq #0,d6
-    dc.w $0014
+    ori.b #$2A,(a4)
     dc.w $1400
-    dc.w $002A
     move.l (-1,a3,d7.l),d5
     dc.w $337C
     dc.w $FFF4
     dc.w $F400
-    dc.w $0024
+    ori.b #$7C,-(a4)
     move.l (0,a3,d7.l),d2
-    dc.w $337C
     dc.w $000C
     cmpi.b #$33,d0
-    dc.w $0026
-    dc.w $336E
+    ori.b #$6E,-(a6)
     bgt.w loc_003551
-    dc.w $0030
-    dc.w $0030
+    ori.b #$30,(110,a0,d5.w)
     dc.w $3053
-    dc.w $536E
     bgt.w loc_0031C5
-    dc.w $002C
-    bgt.s loc_00055C
-    dc.w $0242
-    dc.w $4256
-    dc.w $564C
-loc_00055C:
+    ori.b #$02,(16982,a4)
+    andi.w #$564C,d2
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -811,16 +678,13 @@ loc_00055C:
     bgt.w loc_00246E
     dc.w $0853
     bgt.w loc_00246D
-    dc.w $0000
-    dc.w $264E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     dc.w $5630
     bgt.w loc_003C4D
     dc.w $2800
-    dc.w $0034
-    dc.w $3CFF
-    dc.w $FF4E
+    ori.b #$FF,(78,a4,a7.l)
     dc.w $B900
     dc.w $00EA
     dc.w $304E
@@ -910,31 +774,25 @@ loc_00055C:
     dc.w $00EF
     dc.w $484E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF06
     or.b d0,d0
-    dc.w $0080
-    dc.w $0008
-    dc.w $2E00
+    ori.l #$00082E00,d0
     dc.w $0600
     dc.w $2266
-    dc.w $0244
-    or.b (16384,a5),d0
+    andi.w #$802D,d4
+    dc.w $4000
     dc.w $164E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF06
     dc.w $80FF
     dc.w $FC80
-    dc.w $002D
-    dc.w $4000
-    dc.w $1A42
+    ori.b #$00,(6722,a5)
     dc.w $AE00
     dc.w $1E3C
     dc.w $BC07
@@ -943,8 +801,7 @@ loc_00055C:
     moveq #82,d7
     bgt.w loc_00273D
     dc.w $AE00
-    dc.w $0020
-    dc.w $0000
+    ori.b #$00,-(a0)
     dc.w $1A20
     dc.w $2E00
     dc.w $16D1
@@ -1004,19 +861,15 @@ loc_000769:
     dc.w $00F3
     and.w d2,d1
     dc.w $5660
-    dc.w $0000
-    moveq #50,d4
+    ori.b #$32,d0
     dc.w $3880
     dc.w $0402
     dc.w $4100
     dc.w $0766
-    dc.w $0000
-    bne.s loc_000821
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4466
-    dc.w $0000
-    dc.w $5C22
+    ori.w #$4466,-(a5)
+    ori.b #$22,d0
     dc.w $4832
     cmp.b (11342,a4),d6
     dc.w $B900
@@ -1027,16 +880,14 @@ loc_000769:
     bgt.w loc_0019F3
     dc.w $124E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $1F04
     dc.w $4000
     dc.w $10D1
     bvs.w loc_001655
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $1F04
     dc.w $4000
@@ -1045,7 +896,6 @@ loc_000769:
     moveq #0,d6
     dc.w $0100
     dc.w $3C42
-loc_000821:
     bvs.w loc_002A2B
     dc.w $E900
     dc.w $0300
@@ -1080,17 +930,14 @@ loc_000821:
     dc.w $B900
     dc.w $00F3
     and.w -(a0),d1
-    dc.w $0000
-    dc.w $1A30
+    ori.b #$30,d0
     dc.w $2E00
     dc.w $1E0C
     dc.w $4000
     dc.w $1E6E
     dc.w $0808
     dc.w $3800
-    dc.w $0080
-    dc.w $0566
-    dc.w $064E
+    ori.l #$0566064E,d0
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
@@ -1196,9 +1043,8 @@ loc_00091F:
     dc.w $20E4
     dc.w $E448
     dc.w $4802
-    dc.w $0240
+    andi.w #$0003,d0
     dc.w $4000
-    dc.w $0003
     dc.w $030C
     cmpi.w #$0003,d0
     dc.w $4000
@@ -1220,8 +1066,7 @@ loc_000930:
     dc.w $004E
     rts
     dc.w $7500
-    dc.w $0000
-    dc.w $0400
+    ori.b #$00,d0
     eori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
@@ -1239,20 +1084,15 @@ loc_00094D:
     dc.w $124E
     dc.w $75F0
     dc.w $05F8
-    dc.w $0005
-    bhi.s loc_000972
+    ori.b #$09,d5
     sub.b a1,d6
     and.b d5,d6
     bhi.s loc_000978
 loc_00096F:
     sub.b a1,d6
     and.b d5,d6
-loc_000972:
-    dc.w $05D2
     add.b a1,d1
-    dc.w $099C
     sub.b a1,d6
-    dc.w $09CC
     and.b d6,d6
 loc_000978:
     dc.w $069E
@@ -1295,9 +1135,8 @@ loc_000978:
     dc.w $20E4
     dc.w $E448
     dc.w $4802
-    dc.w $0240
+    andi.w #$0003,d0
     dc.w $4000
-    dc.w $0003
     dc.w $030C
     cmpi.w #$0003,d0
     dc.w $4000
@@ -1324,9 +1163,7 @@ loc_0009B0:
     eori.b #$00,(78,a0,d2.l)
     dc.w $75E8
     dc.w $0AF4
-    dc.w $002D
-    moveq #0,d6
-    dc.w $00FC
+    ori.b #$00,(252,a5)
     sub.b d0,d3
     dc.w $3A42
     bgt.w loc_00401D
@@ -1336,13 +1173,11 @@ loc_0009B0:
     dc.w $E77F
     moveq #83,d7
     bgt.w loc_004055
-    dc.w $0000
-    dc.w $BA3D
+    ori.b #$3D,d0
     moveq #0,d6
     eori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     dc.w $BC0B
     or.b (14,a3,d7.l),d6
@@ -1375,8 +1210,7 @@ loc_0009B0:
     dc.w $0600
     dc.w $004E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF92
@@ -1384,8 +1218,7 @@ loc_0009B0:
     dc.w $4100
     dc.w $1623
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_00328E
     moveq #0,d6
@@ -1394,8 +1227,7 @@ loc_0009B0:
     bvs.w loc_002C75
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
@@ -1403,8 +1235,7 @@ loc_0009B0:
     move.l (a0),d1
     dc.w $2E00
     dc.w $2302
-    dc.w $0000
-    dc.w $0481
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2342
     bvs.w loc_002ABA
@@ -1418,8 +1249,7 @@ loc_0009B0:
     dc.w $3000
     dc.w $3053
     bgt.w loc_003711
-    dc.w $0242
-    dc.w $564C
+    andi.w #$564C,d2
     dc.w $DF7E
     dc.w $FE4E
     dc.w $752D
@@ -1434,13 +1264,11 @@ loc_0009B0:
     dc.w $E77F
     moveq #83,d7
     bgt.w loc_004133
-    dc.w $0000
-    dc.w $BA3D
+    ori.b #$3D,d0
     moveq #0,d6
     eori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     dc.w $BC0B
     or.b (15,a3,d7.l),d6
@@ -1473,8 +1301,7 @@ loc_0009B0:
     dc.w $0600
     dc.w $004E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF92
@@ -1482,8 +1309,7 @@ loc_0009B0:
     dc.w $4100
     dc.w $1623
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_00336C
     moveq #0,d6
@@ -1492,8 +1318,7 @@ loc_0009B0:
     bvs.w loc_002D53
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
@@ -1501,8 +1326,7 @@ loc_0009B0:
     move.l (a0),d1
     dc.w $2E00
     dc.w $2302
-    dc.w $0000
-    dc.w $0481
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2342
     bvs.w loc_002B98
@@ -1515,8 +1339,7 @@ loc_0009B0:
     bgt.w loc_003B7B
     dc.w $3053
     bgt.w loc_0037EF
-    dc.w $0242
-    dc.w $564C
+    andi.w #$564C,d2
     dc.w $DF7E
     dc.w $FE4E
     dc.w $7530
@@ -1528,8 +1351,7 @@ loc_0009B0:
     dc.w $BC0B
     dc.w $B008
     dc.w $2E00
-    dc.w $0200
-    dc.w $2367
+    andi.b #$67,d0
     dc.w $08E2
     dc.w $EE00
     dc.w $16E2
@@ -1554,8 +1376,7 @@ loc_0009B0:
     dc.w $00E4
     moveq #8,d6
     dc.w $2E00
-    dc.w $0200
-    dc.w $2366
+    andi.b #$66,d0
     dc.w $204A
     bgt.w loc_003A52
     dc.w $320C
@@ -1568,15 +1389,13 @@ loc_000BF2:
     dc.w $2A0C
     dc.w $0C6E
     bgt.w loc_002BF9
-    dc.w $0020
-    dc.w $000E
+    ori.b #$0E,-(a0)
     dc.w $0E6D
     blt.s loc_000C20
     move.l (0,a0,d6.l),d1
     dc.w $306E
-    dc.w $0036
+    ori.b #$A8,(6,a6,d0.w)
     move.w #$A800,d3
-    move.w d6,(6,a0)
     dc.w $0660
     bra.s loc_000C3E
     dc.w $364A
@@ -1625,11 +1444,9 @@ loc_000BF2:
     bgt.w loc_002AD6
     dc.w $0853
     bgt.w loc_002AD5
-    dc.w $0000
-    moveq #78,d4
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $484E
     dc.w $B900
     dc.w $00E6
@@ -1654,13 +1471,11 @@ loc_000CAD:
     bvs.w loc_002EC3
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0113
+    ori.b #$13,d0
     dc.w $4000
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2308
+    ori.b #$08,d0
     dc.w $E900
     dc.w $0500
     move.l (-1,a3,d7.l),d1
@@ -1714,8 +1529,7 @@ loc_000CAD:
     bgt.w loc_0035A8
     dc.w $4653
     bgt.w loc_002BAD
-    dc.w $0000
-    bne.s loc_000D9B
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00ED
     dc.w $5430
@@ -1736,11 +1550,11 @@ loc_000CAD:
     bgt.w loc_003D79
     dc.w $3242
     dc.w $5660
-    dc.w $0000
-    move.w #$BC0D,d3
+    ori.b #$3C,d0
+    dc.w $BC0D
     cmp.w -(a0),d6
-    dc.w $0000
-    move.l (0,a2,d2.l),d4
+    ori.b #$32,d0
+    dc.w $2E00
     dc.w $0E4E
     dc.w $B900
     dc.w $00EA
@@ -1748,7 +1562,6 @@ loc_000D93:
     moveq #-80,d5
     bgt.w loc_002006
     dc.w $084E
-loc_000D9B:
     dc.w $B900
     dc.w $00E5
     dc.w $0E67
@@ -1773,8 +1586,7 @@ loc_000D9B:
     dc.w $16E6
     dc.w $814E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FFD2
@@ -1782,49 +1594,40 @@ loc_000D9B:
     or.b d0,(16640,a5)
     dc.w $164E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF06
     dc.w $80FF
     dc.w $FC80
-    dc.w $002D
-    dc.w $4000
-    dc.w $1A42
+    ori.b #$00,(6722,a5)
     dc.w $AE00
     dc.w $1E4A
     dc.w $79FF
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $2800
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $003C
     dc.w $BC0E
     dc.w $3248
     dc.w $E77F
     moveq #6,d7
     dc.w $AE00
-    dc.w $0020
-    dc.w $0000
+    ori.b #$00,-(a0)
     dc.w $1A20
     dc.w $2E00
     dc.w $16D1
@@ -1848,8 +1651,7 @@ loc_000D9B:
     dc.w $0E67
     dc.w $0642
     dc.w $5660
-    dc.w $0000
-    dc.w $084E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
     add.w a4,d3
@@ -1876,16 +1678,13 @@ loc_000D9B:
     bgt.w loc_002D18
     dc.w $0853
     bgt.w loc_002D17
-    dc.w $0000
-    dc.w $204E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     dc.w $5630
     bgt.w loc_0044F7
     dc.w $2800
-    dc.w $0034
-    dc.w $3CFF
-    dc.w $FF4E
+    ori.b #$FF,(78,a4,a7.l)
     dc.w $B900
     dc.w $00EA
     dc.w $304E
@@ -1949,15 +1748,13 @@ loc_000F1F:
     dc.w $004E
     dc.w $7500
 loc_000F3E:
-    dc.w $0000
-    dc.w $0000
-    dc.w $0004
-    dc.w $0400
+    ori.b #$04,d0
+    ori.b #$00,d0
     dc.w $000A
     eori.b #$4E,d0
-    dc.w $0004
-    jsr loc_00EB2A
+    ori.b #$B9,d4
     dc.w $B900
+    ori.b #$2A,d0
     dc.w $00EB
     dc.w $2A66
     bne.s loc_000F52
@@ -1977,9 +1774,7 @@ loc_000F52:
     dc.w $124E
     dc.w $75F0
     dc.w $05F8
-    dc.w $0030
-    dc.w $3C00
-    dc.w $084E
+    ori.b #$00,(78,a0,d0.l)
     dc.w $75F4
     dc.w $04F8
     dc.w $000B
@@ -2034,14 +1829,10 @@ loc_000F99:
     dc.w $2E4E
     dc.w $75E8
     dc.w $0AF4
-    dc.w $0030
-    dc.w $3C00
-    dc.w $084E
+    ori.b #$00,(78,a0,d0.l)
     dc.w $75F4
     dc.w $04F8
-    dc.w $002D
-    moveq #0,d6
-    dc.w $00FC
+    ori.b #$00,(252,a5)
     sub.b d0,d3
     dc.w $3A42
     bgt.w loc_004631
@@ -2052,19 +1843,16 @@ loc_000F99:
     moveq #83,d7
     bgt.w loc_004669
 loc_000FFE:
-    dc.w $0036
-    bpl.w loc_0010B0
-    dc.w $0000
-    dc.w $AE3D
+    ori.b #$00,(-82,a6,d0.w)
+    ori.b #$3D,d0
     dc.w $3D7C
     moveq #0,d6
     dc.w $000A
     eori.b #$4E,d0
-    dc.w $0036
-    jsr loc_006544
+    ori.b #$B9,(0,a6,d0.w)
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
+    bcs.s loc_001054
     dc.w $2248
     dc.w $4832
     dc.w $32BC
@@ -2074,11 +1862,9 @@ loc_000FFE:
     dc.w $337C
     dc.w $1472
     moveq #0,d1
-    dc.w $0036
+    ori.b #$6E,(58,a6,d0.w)
     dc.w $3624
-    dc.w $246E
     bgt.w loc_004A51
-    dc.w $003A
     move.w (a2)+,d1
     dc.w $1A34
     move.w #$009F,d2
@@ -2094,17 +1880,14 @@ loc_000FFE:
     and.b d6,d0
     dc.w $0641
     dc.w $4100
-    dc.w $00A0
+    ori.l #$064200A0,-(a0)
     dc.w $A006
-    dc.w $0642
     clr.b d0
-    dc.w $00A0
     dc.w $A033
     dc.w $3341
     dc.w $4100
-    dc.w $0006
+    ori.b #$42,d6
     dc.w $0633
-    dc.w $3342
     clr.b d0
     dc.w $000E
     dc.w $0E30
@@ -2112,103 +1895,77 @@ loc_000FFE:
     dc.w $1A06
     dc.w $0640
     dc.w $4000
-    dc.w $0040
+    ori.w #$3340,d0
     dc.w $4033
-    dc.w $3340
     dc.w $4000
     dc.w $0008
     dc.w $0833
     dc.w $3340
     dc.w $4000
-    dc.w $0012
+    ori.b #$4A,(a2)
     dc.w $122D
-    dc.w $2D4A
     tst.b d0
-    dc.w $003A
+    ori.b #$3C,(6,pc)
     dc.w $3A22
-    move.l #$00060000,d1
     dc.w $3C00
     dc.w $0600
+    ori.b #$B9,d0
     dc.w $004E
-    jsr loc_006722
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
-    dc.w $0280
+    ori.b #$22,d0
+    ori.w #$2202,-(a7)
+    andi.l #$0000FFFF,d0
     or.b d0,d0
-    dc.w $0000
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF92
     sub.l d0,d1
     or.b -(a3),d0
     dc.w $2341
     dc.w $4100
-    dc.w $0016
+    ori.b #$7C,(a6)
     dc.w $1623
-    dc.w $237C
     moveq #0,d6
-    dc.w $0002
-    dc.w $0200
-    dc.w $0000
-    dc.w $0000
-    dc.w $001A
+    ori.b #$00,d2
+    andi.b #$00,d0
+    ori.b #$69,(a2)+
     dc.w $1A42
-    dc.w $4269
     bvs.w loc_0038B7
-    dc.w $0028
-    dc.w $4269
+    ori.b #$69,(34,a0)
     bvs.w loc_003289
-    dc.w $0022
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$E9,-(a2)
     dc.w $2208
-    dc.w $08E9
     dc.w $E900
-    dc.w $0000
-    dc.w $0000
-    dc.w $0023
-    dc.w $2342
+    ori.b #$23,d0
+    ori.b #$42,d0
     dc.w $4269
     bvs.w loc_0030C2
-    dc.w $0020
-    dc.w $337C
+    ori.b #$7C,-(a0)
     moveq #0,d6
-    dc.w $0014
+    ori.b #$2A,(a4)
     dc.w $1400
-    dc.w $002A
     move.l (-1,a3,d7.l),d5
     dc.w $337C
     dc.w $FFF8
     dc.w $F800
-    dc.w $0024
+    ori.b #$7C,-(a4)
     move.l (0,a3,d7.l),d2
-    dc.w $337C
     dc.w $0008
     dc.w $0800
-    dc.w $0026
+    ori.b #$6E,-(a6)
     move.l (0,a3,d6.l),d3
-    dc.w $336E
-    dc.w $0030
+    ori.b #$30,(110,a0,d5.w)
     dc.w $3000
-    dc.w $0030
     dc.w $3053
-    dc.w $536E
     bgt.w loc_003D19
-    dc.w $002C
-    bgt.s loc_0010B0
-    dc.w $0242
-    dc.w $4256
-    dc.w $564C
-loc_0010B0:
+    ori.b #$02,(16982,a4)
+    andi.w #$564C,d2
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -2226,13 +1983,11 @@ loc_0010B0:
     dc.w $E77F
     moveq #83,d7
     bgt.w loc_00473B
-    dc.w $0000
-    dc.w $AE3D
+    ori.b #$3D,d0
     moveq #0,d6
     eori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a1),d6
     or.b (20,a3,d7.l),d4
@@ -2268,8 +2023,7 @@ loc_0010B0:
     dc.w $0480
     dc.w $004E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF92
@@ -2277,21 +2031,18 @@ loc_0010B0:
     dc.w $4100
     dc.w $1623
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_003989
 loc_001149:
     bvs.w loc_00335B
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2342
+    ori.b #$42,d0
     bvs.w loc_003194
     moveq #0,d6
     dc.w $1400
@@ -2302,8 +2053,7 @@ loc_001149:
     bgt.w loc_004177
     dc.w $3053
     bgt.w loc_003DEB
-    dc.w $0242
-    dc.w $564C
+    andi.w #$564C,d2
     dc.w $DF7E
     dc.w $FE4E
     dc.w $7530
@@ -2314,12 +2064,10 @@ loc_001149:
     dc.w $042D
     moveq #0,d6
     dc.w $0500
-    dc.w $0000
-    dc.w $162D
+    ori.b #$2D,d0
     moveq #0,d6
     dc.w $0500
-    dc.w $0000
-    dc.w $1A3C
+    ori.b #$3C,d0
     cmp.b (a1),d6
     dc.w $AC48
     dc.w $E77F
@@ -2364,8 +2112,7 @@ loc_0011E9:
     bgt.w loc_004845
     dc.w $A800
     dc.w $0660
-    dc.w $0000
-    dc.w $1A4E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E9
     add.w -(a7),d0
@@ -2406,9 +2153,7 @@ loc_0011E9:
     dc.w $00E5
     and.b (0,a0,d6.l),d2
     move.w (0,a2,d2.l),d3
-    dc.w $0034
-    dc.w $3CFF
-    dc.w $FF4E
+    ori.b #$FF,(78,a4,a7.l)
     dc.w $B900
     dc.w $00EA
     dc.w $304E
@@ -2444,16 +2189,13 @@ loc_0011E9:
     bgt.w loc_003130
     dc.w $0853
     bgt.w loc_00312F
-    dc.w $0000
-    dc.w $264E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     dc.w $5630
     bgt.w loc_00490F
     dc.w $2800
-    dc.w $0034
-    dc.w $3CFF
-    dc.w $FF4E
+    ori.b #$FF,(78,a4,a7.l)
     dc.w $B900
     dc.w $00EA
     dc.w $304E
@@ -2515,41 +2257,33 @@ loc_0011E9:
     dc.w $00EF
     dc.w $484E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
 loc_00137D:
     dc.w $00FF
     dc.w $FF06
     or.b d0,d0
-    dc.w $0080
-    dc.w $0008
-    dc.w $2E00
+    ori.l #$00082E00,d0
     dc.w $0600
     dc.w $2266
-    dc.w $0244
-loc_00138F:
-    or.b (16384,a5),d0
+    andi.w #$802D,d4
+    dc.w $4000
     dc.w $164E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF06
     dc.w $80FF
     dc.w $FC80
-    dc.w $002D
-    dc.w $4000
-    dc.w $1A3C
+    ori.b #$00,(6716,a5)
     cmp.b (a3),d6
     dc.w $AE48
     dc.w $E77F
     moveq #82,d7
     bgt.w loc_0033BB
     dc.w $AE00
-    dc.w $0020
-    dc.w $0000
+    ori.b #$00,-(a0)
     dc.w $1A20
     dc.w $2E00
     dc.w $16D1
@@ -2568,9 +2302,7 @@ loc_0013D9:
     dc.w $B900
     dc.w $00EA
     moveq #50,d5
-    dc.w $00B2
-    bgt.w loc_002651
-    dc.w $0830
+    ori.l #$6E00126E,(48,a2,d0.l)
     bgt.w loc_004A25
     dc.w $A800
     dc.w $2A4E
@@ -2598,17 +2330,14 @@ loc_0013D9:
     dc.w $B900
     dc.w $00F3
     and.w -(a0),d1
-    dc.w $0000
-    dc.w $1A30
+    ori.b #$30,d0
     dc.w $2E00
     dc.w $1E0C
     dc.w $4000
     dc.w $1E6E
     dc.w $0808
     dc.w $3800
-    dc.w $0080
-    dc.w $0566
-    dc.w $064E
+    ori.l #$0566064E,d0
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
@@ -2672,15 +2401,13 @@ loc_0014B9:
     dc.w $3C00
     dc.w $0141
     dc.w $F900
-    dc.w $0014
-    dc.w $CAD0
+    ori.b #$D0,(a4)
     dc.w $4030
 loc_0014C5:
     dc.w $3000
     dc.w $004E
     dc.w $7500
-    dc.w $0000
-    dc.w $0400
+    ori.b #$00,d0
     eori.b #$30,d0
     dc.w $3C00
     dc.w $004E
@@ -2700,8 +2427,7 @@ loc_0014C5:
     dc.w $124E
     dc.w $75F0
     dc.w $05F8
-    dc.w $0011
-    or.b (a5),d4
+    ori.b #$15,(a1)
     move.l (a5),d7
     bpl.s loc_001511
     move.w (a5),d3
@@ -2748,13 +2474,14 @@ loc_00152E:
     dc.w $20E4
     dc.w $E448
     dc.w $4802
-    dc.w $0240
+    andi.w #$0003,d0
     dc.w $4000
 loc_001536:
-    dc.w $0003
+    ori.b #$40,d3
     dc.w $030C
     cmpi.w #$0003,d0
     dc.w $4000
+    ori.b #$04,d3
     dc.w $0366
 loc_00153C:
     bne.s loc_001542
@@ -2766,8 +2493,7 @@ loc_00153D:
 loc_001542:
     lea loc_001550,a0
     dc.w $F900
-    dc.w $0015
-    dc.w $50D0
+    ori.b #$D0,(a5)
     add.w d0,d0
     dc.w $4030
     move.w (0,a0,d0.w),d0
@@ -2793,8 +2519,7 @@ loc_00155F:
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a6),d6
     and.b (27,a3,d7.l),d5
@@ -2821,11 +2546,9 @@ loc_001597:
     dc.w $1223
     moveq #0,d6
     dc.w $0300
-    dc.w $0000
-    dc.w $1623
+    ori.b #$23,d0
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_003DEB
     dc.w $2E00
@@ -2839,14 +2562,12 @@ loc_001597:
     bvs.w loc_0037E1
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
 loc_0015DF:
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -2875,8 +2596,7 @@ loc_0015ED:
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a6),d6
     and.b (28,a3,d7.l),d5
@@ -2904,11 +2624,9 @@ loc_001655:
 loc_001657:
     moveq #0,d6
     dc.w $0300
-    dc.w $0000
-    dc.w $1623
+    ori.b #$23,d0
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_003E99
     dc.w $2E00
@@ -2922,13 +2640,11 @@ loc_001657:
     bvs.w loc_00388F
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -2990,8 +2706,7 @@ loc_001657:
     bgt.w loc_004D69
     dc.w $A800
     dc.w $0660
-    dc.w $0000
-    dc.w $284E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     add.w -(a6),d5
@@ -3033,75 +2748,52 @@ loc_001783:
     bgt.w loc_0035F4
     dc.w $0853
     bgt.w loc_0035F3
-    dc.w $0000
-    dc.w $BE4A
+    ori.b #$4A,d0
     dc.w $79FF
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $3200
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $004E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a0)+,d6
     bra.s loc_00180A
 loc_00180A:
-    dc.w $0000
-    dc.w $F4C2
+    ori.b #$C2,d0
     dc.w $C1FC
     dc.w $FFFD
     dc.w $4269
-    dc.w $0018
-    dc.w $3340
-    dc.w $0016
-    dc.w $336E
-    dc.w $002E
-    dc.w $002E
-    dc.w $426E
-    dc.w $002E
-    dc.w $4269
-    dc.w $0022
+    ori.b #$40,(a0)+
+    ori.b #$6E,(a6)
+    ori.b #$2E,(17006,a6)
+    ori.b #$69,(34,a6)
     dc.w $102E
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $1340
-    dc.w $0022
-    dc.w $08E9
-    dc.w $0005
-    dc.w $0022
+    ori.b #$00,-(a2)
+    ori.b #$40,d1
+    ori.b #$E9,-(a2)
+    ori.b #$22,d5
     dc.w $337C
     dc.w $FFF4
-    dc.w $0024
-    dc.w $337C
+    ori.b #$7C,-(a4)
     dc.w $000C
-    dc.w $0026
-    dc.w $336E
-    dc.w $0030
-    dc.w $0030
-    dc.w $306E
-    dc.w $0036
-    move.w d6,(0,a0)
+    ori.b #$6E,-(a6)
+    ori.b #$30,(110,a0,d3.w)
+    ori.b #$A8,(0,a6,d0.w)
     jsr loc_00EBD6
     dc.w $4CDF
     moveq #-2,d7
@@ -3124,8 +2816,7 @@ loc_0018D1:
     dc.w $0366
     dc.w $384E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a1)+,d6
     dc.w $5433
@@ -3143,8 +2834,7 @@ loc_0018D1:
     dc.w $2310
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $220C
     bgt.w loc_002933
@@ -3153,8 +2843,7 @@ loc_0018D1:
     bgt.s loc_00193C
     dc.w $3000
     dc.w $0E6E
-    dc.w $0260
-    dc.w $0C32
+    andi.w #$0C32,-(a0)
     bgt.w loc_004D4D
     dc.w $E900
     dc.w $0400
@@ -3186,8 +2875,7 @@ loc_0018D1:
     bgt.w loc_004FC1
     dc.w $A800
     dc.w $1E60
-    dc.w $0000
-    dc.w $563C
+    ori.b #$3C,d0
     cmp.b (a1)+,d6
     dc.w $EA30
     bgt.w loc_004FD2
@@ -3196,36 +2884,28 @@ loc_0018D1:
     bvc.w loc_00359F
     dc.w $0408
     dc.w $EE00
-    dc.w $0200
-    dc.w $224E
+    andi.b #$4E,d0
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF06
     or.b d0,d0
-    dc.w $0080
-    dc.w $0008
-    dc.w $2E00
+    ori.l #$00082E00,d0
     dc.w $0600
     dc.w $2266
-    dc.w $0244
-    or.b (16384,a5),d0
+    andi.w #$802D,d4
 loc_0019C5:
     dc.w $4000
     dc.w $164E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     or.b d0,d0
     dc.w $00FF
     dc.w $FF06
     dc.w $80FF
     dc.w $FC80
-    dc.w $002D
-    dc.w $4000
-    dc.w $1A42
+    ori.b #$00,(6722,a5)
     dc.w $AE00
     dc.w $1E4E
     dc.w $B900
@@ -3237,8 +2917,7 @@ loc_0019C5:
     bgt.w loc_0039F7
 loc_0019F3:
     dc.w $AE00
-    dc.w $0020
-    dc.w $0000
+    ori.b #$00,-(a0)
     dc.w $1A20
     dc.w $2E00
     dc.w $16D1
@@ -3279,23 +2958,18 @@ loc_001A3D:
     dc.w $4853
     bgt.w loc_0046B4
 loc_001A4C:
-    dc.w $002C
-    beq.s loc_001A5C
+    ori.b #$0C,(12398,a4)
     dc.w $0C30
-    dc.w $306E
     bgt.w loc_00508F
-    dc.w $0036
-    move.w d6,(30,a0)
+    ori.b #$A8,(30,a6,d0.w)
     dc.w $A800
     dc.w $1E60
     bra.w loc_001A66
-    dc.w $0000
-    dc.w $0C3C
+    ori.b #$3C,d0
     cmp.b (a2)+,d6
     bgt.s loc_001A69
     dc.w $EE00
-    dc.w $0200
-    dc.w $224E
+    andi.b #$4E,d0
     dc.w $B900
 loc_001A69:
     dc.w $00EB
@@ -3325,19 +2999,15 @@ loc_001A9F:
     and.w d2,d1
     dc.w $5660
 loc_001AA5:
-    dc.w $0000
-    moveq #50,d4
+    ori.b #$32,d0
     dc.w $3880
     dc.w $0402
     dc.w $4100
     dc.w $0766
-    dc.w $0000
-    bne.s loc_001B03
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4466
-    dc.w $0000
-    dc.w $5C22
+    ori.w #$4466,-(a5)
+    ori.b #$22,d0
     dc.w $4832
     cmp.b (11342,a4),d6
     dc.w $B900
@@ -3349,16 +3019,14 @@ loc_001AA5:
 loc_001AD7:
     dc.w $124E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $1F04
     dc.w $4000
     dc.w $10D1
     bvs.w loc_002937
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $1F04
     dc.w $4000
@@ -3367,7 +3035,6 @@ loc_001AD7:
     moveq #0,d6
     dc.w $0100
     dc.w $3C42
-loc_001B03:
     bvs.w loc_003D0D
     dc.w $E900
     dc.w $0300
@@ -3405,17 +3072,14 @@ loc_001B29:
     dc.w $B900
     dc.w $00F3
     and.w -(a0),d1
-    dc.w $0000
-    dc.w $1A30
+    ori.b #$30,d0
     dc.w $2E00
     dc.w $1E0C
     dc.w $4000
     dc.w $1E6E
     dc.w $0808
     dc.w $3800
-    dc.w $0080
-    dc.w $0566
-    dc.w $064E
+    ori.l #$0566064E,d0
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
@@ -3450,8 +3114,7 @@ loc_001B29:
     add.b (a4)+,d4
     dc.w $1E19
     moveq #28,d3
-    dc.w $021C
-    dc.w $1E06
+    andi.b #$06,(a4)+
     dc.w $421B
     add.b (a4)+,d4
     dc.w $1E16
@@ -3479,10 +3142,9 @@ loc_001BC6:
     dc.w $20E4
     dc.w $E448
     dc.w $4802
-    dc.w $0240
+    andi.w #$0003,d0
 loc_001BDF:
     dc.w $4000
-    dc.w $0003
     dc.w $030C
     cmpi.w #$0003,d0
     dc.w $4000
@@ -3495,8 +3157,7 @@ loc_001BDF:
 loc_001BEC:
     lea loc_001BFA,a0
     dc.w $F900
-    dc.w $001B
-    dc.w $FAD0
+    ori.b #$D0,(a3)+
     add.w d0,d0
     dc.w $4030
     move.w (0,a0,d0.w),d0
@@ -3504,8 +3165,7 @@ loc_001BEC:
     dc.w $004E
     rts
     dc.w $7500
-    dc.w $0000
-    dc.w $0400
+    ori.b #$00,d0
     eori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
@@ -3522,8 +3182,7 @@ loc_001BEC:
     dc.w $124E
     dc.w $75F0
     dc.w $05F8
-    dc.w $0016
-    and.b (a4)+,d5
+    ori.b #$1C,(a6)
     dc.w $581C
     or.b (a7),d4
     bvc.s loc_001C47
@@ -3562,8 +3221,7 @@ loc_001C47:
     dc.w $3C00
     dc.w $0141
     dc.w $F900
-    dc.w $001C
-    moveq #-48,d5
+    ori.b #$D0,(a4)+
     dc.w $4030
     dc.w $3000
     dc.w $004E
@@ -3578,25 +3236,21 @@ loc_001C83:
     dc.w $0AF4
     dc.w $0048
     dc.w $E740
-    dc.w $0030
-    dc.w $2E00
-    dc.w $2002
+    ori.b #$00,(2,a0,d2.w)
     dc.w $40FF
     dc.w $FE41
     dc.w $F900
-    dc.w $001C
-    dc.w $BC3D
+    ori.b #$3D,(a4)+
     moveq #0,d0
-    dc.w $0000
-    dc.w $0430
+    ori.b #$30,d0
     dc.w $2E00
     dc.w $2002
     dc.w $40FF
 loc_001CAB:
     dc.w $FE41
     dc.w $F900
-    dc.w $001C
-    add.b (0,a0,d3.w),d4
+    ori.b #$30,(a4)+
+    dc.w $3000
     dc.w $004C
     dc.w $DF00
     dc.w $024E
@@ -3645,8 +3299,7 @@ loc_001CF5:
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a6)+,d6
     dc.w $5833
@@ -3672,11 +3325,9 @@ loc_001D25:
     dc.w $1223
     moveq #0,d6
     dc.w $0300
-    dc.w $0000
-    dc.w $1623
+    ori.b #$23,d0
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_00457C
     bgt.w loc_00494D
@@ -3689,13 +3340,11 @@ loc_001D25:
     bvs.w loc_003F6F
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -3723,8 +3372,7 @@ loc_001D25:
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a6)+,d6
     dc.w $5833
@@ -3752,11 +3400,9 @@ loc_001DD3:
     dc.w $1223
     moveq #0,d6
     dc.w $0300
-    dc.w $0000
-    dc.w $1623
+    ori.b #$23,d0
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_00462A
     bgt.w loc_0049FB
@@ -3769,13 +3415,11 @@ loc_001DD3:
     bvs.w loc_00401D
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -3830,8 +3474,7 @@ loc_001E89:
     bgt.w loc_0054E1
     dc.w $A800
     dc.w $0660
-    dc.w $0000
-    dc.w $284E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     add.w -(a6),d5
@@ -3872,11 +3515,9 @@ loc_001EB5:
     bgt.w loc_003D6C
     dc.w $0853
     bgt.w loc_003D6B
-    dc.w $0000
-    or.w a6,d1
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $484E
     dc.w $B900
     dc.w $00E7
@@ -3901,13 +3542,11 @@ loc_001F2F:
     bvs.w loc_004159
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0113
+    ori.b #$13,d0
     dc.w $4000
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2308
+    ori.b #$08,d0
     dc.w $E900
     dc.w $0500
     move.l (-1,a3,d7.l),d1
@@ -3922,10 +3561,9 @@ loc_001F6F:
     bgt.w loc_004F77
     move.w (0,a0,d6.l),d0
     move.w #$A800,d3
-    dc.w $0053
-    bgt.w loc_004DEB
-    dc.w $0000
-    dc.w $0808
+    ori.w #$6E00,(a3)
+    dc.w $2E66
+    ori.b #$08,d0
     dc.w $EE00
     dc.w $0400
     dc.w $224E
@@ -4003,7 +3641,6 @@ loc_002006:
     bpl.s loc_002047
     or.b d6,d3
     dc.w $4220
-loc_00202B:
     dc.w $4020
     or.b (a6)+,d3
     dc.w $5820
@@ -4026,15 +3663,13 @@ loc_002047:
     dc.w $3C00
     dc.w $0141
     dc.w $F900
-    dc.w $0020
-    bhi.s loc_00202B
+    ori.b #$D0,-(a0)
     dc.w $4030
     dc.w $3000
 loc_00205F:
     dc.w $004E
     dc.w $7500
-    dc.w $0000
-    dc.w $0400
+    ori.b #$00,d0
     eori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
@@ -4051,13 +3686,10 @@ loc_00205F:
     dc.w $124E
     dc.w $75F0
     dc.w $05F8
-    dc.w $0030
-    dc.w $3C00
-    dc.w $084E
+    ori.b #$00,(78,a0,d0.l)
     dc.w $75F4
     dc.w $04F8
-    dc.w $001E
-    dc.w $5820
+    ori.b #$20,(a6)+
     and.b -(a0),d5
     dc.w $FA1E
 loc_00209B:
@@ -4096,7 +3728,7 @@ loc_00209B:
     dc.w $3C00
     dc.w $0141
     dc.w $F900
-    dc.w $0020
+    ori.b #$D0,-(a0)
 loc_0020E3:
     dc.w $ECD0
     dc.w $4030
@@ -4110,17 +3742,14 @@ loc_0020E3:
     dc.w $2E4E
     dc.w $75E8
     dc.w $0AF4
-    dc.w $0030
-    dc.w $3C00
-    dc.w $084E
+    ori.b #$00,(78,a0,d0.l)
     dc.w $75F4
     dc.w $04F8
     dc.w $0048
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b -(a1),d6
     dc.w $F633
@@ -4146,11 +3775,9 @@ loc_002131:
     dc.w $1223
     moveq #0,d6
     dc.w $0300
-    dc.w $0000
-    dc.w $1623
+    ori.b #$23,d0
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_004985
     dc.w $2E00
@@ -4164,14 +3791,12 @@ loc_002131:
     bvs.w loc_00437B
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
 loc_002175:
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
 loc_002181:
     dc.w $E900
@@ -4195,8 +3820,7 @@ loc_002181:
     dc.w $3024
     dc.w $494E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b ($2E33).w,d6
     tst.b d0
@@ -4209,16 +3833,14 @@ loc_002181:
     bvs.w loc_0043DF
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
     dc.w $0500
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2333
+    ori.b #$33,d0
     bgt.w loc_0051EB
     dc.w $3042
     dc.w $564C
@@ -4310,14 +3932,12 @@ loc_0022A1:
     dc.w $3C00
     dc.w $0141
     dc.w $F900
-    dc.w $0022
-    dc.w $BCD0
+    ori.b #$D0,-(a2)
     dc.w $4030
     dc.w $3000
     dc.w $004E
     dc.w $7500
-    dc.w $0000
-    dc.w $0400
+    ori.b #$00,d0
     eori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
@@ -4339,8 +3959,7 @@ loc_0022A1:
     moveq #78,d7
 loc_0022E9:
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (a6),d6
     and.b (38,a3,d7.l),d5
@@ -4366,11 +3985,9 @@ loc_00230D:
     dc.w $1223
     moveq #0,d6
     dc.w $0300
-    dc.w $0000
-    dc.w $1623
+    ori.b #$23,d0
     moveq #0,d6
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $1A42
     bvs.w loc_004B61
     dc.w $2E00
@@ -4384,13 +4001,11 @@ loc_00230D:
     bvs.w loc_004557
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -4432,35 +4047,28 @@ loc_002387:
     bgt.w loc_00421E
     dc.w $0853
     bgt.w loc_00421D
-    dc.w $0001
-    or.w a2,d7
+    ori.b #$4A,d1
     dc.w $79FF
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $3200
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $004E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
 loc_0023FD:
     cmp.b -(a5),d6
@@ -4469,42 +4077,28 @@ loc_002434:
     dc.w $4840
     clr.w d0
     dc.w $2340
-    dc.w $0016
-    dc.w $42A9
-    dc.w $001A
-    dc.w $336E
-    dc.w $002E
-    dc.w $002E
-    dc.w $426E
-    dc.w $002E
-    dc.w $4269
-    dc.w $0022
+    ori.b #$A9,(a6)
+    ori.b #$6E,(a2)+
+    ori.b #$2E,(17006,a6)
+    ori.b #$69,(34,a6)
     dc.w $102E
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $1340
-    dc.w $0022
-    dc.w $08E9
-    dc.w $0005
-    dc.w $0022
+    ori.b #$00,-(a2)
+    ori.b #$40,d1
+    ori.b #$E9,-(a2)
+    ori.b #$22,d5
     dc.w $337C
     dc.w $FFF4
-    dc.w $0024
-    dc.w $337C
+    ori.b #$7C,-(a4)
     dc.w $000C
-    dc.w $0026
-    dc.w $336E
+    ori.b #$6E,-(a6)
 loc_00246D:
     bgt.w loc_00546F
 loc_00246E:
-    dc.w $0030
-    dc.w $0030
+    ori.b #$30,(-71,a0,d4.l)
     dc.w $304E
-    jsr loc_006544
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.b #$44,d0
+    ori.w #$4422,-(a5)
     dc.w $2248
     dc.w $4832
     dc.w $32BC
@@ -4513,28 +4107,24 @@ loc_00246E:
     dc.w $5433
     dc.w $3344
     dc.w $4400
-    dc.w $0006
+    ori.b #$44,d6
     dc.w $0633
-    dc.w $3344
     dc.w $4400
     dc.w $000E
     dc.w $0E33
     dc.w $336E
     bgt.w loc_003689
-    dc.w $0012
-    dc.w $0008
+    ori.b #$08,(a2)
     dc.w $0833
     dc.w $336E
     bgt.w loc_00368F
-    dc.w $0012
-    dc.w $0012
+    ori.b #$12,(a2)
     dc.w $124E
     jsr loc_00F4C2
     dc.w $B900
 loc_002494:
-    dc.w $0000
+    ori.b #$C2,d0
     dc.w $00F4
-    dc.w $F4C2
     dc.w $C2C1
     dc.w $C1FC
     dc.w $FCFF
@@ -4546,69 +4136,51 @@ loc_002494:
     dc.w $4023
     dc.w $2340
     dc.w $4000
-    dc.w $0016
+    ori.b #$A9,(a6)
     dc.w $1642
-    dc.w $42A9
     dc.w $A900
-    dc.w $001A
+    ori.b #$7C,(a2)+
     dc.w $1A33
-    dc.w $337C
     moveq #39,d6
     dc.w $2708
     dc.w $0800
-    dc.w $0002
-    dc.w $0233
-    dc.w $337C
-    moveq #39,d6
+    ori.b #$7C,d2
+    andi.b #$27,(0,a3,d1.l)
     dc.w $271A
-    dc.w $1A00
-    dc.w $0004
+    ori.b #$69,d4
     dc.w $0442
-    dc.w $4269
     bvs.w loc_0044F9
-    dc.w $0020
-    dc.w $4269
+    ori.b #$69,-(a0)
     bvs.w loc_0046C3
-    dc.w $0022
-    dc.w $08E9
+    ori.b #$E9,-(a2)
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0003
+    ori.b #$23,d3
     dc.w $0300
-    dc.w $0023
     dc.w $2310
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$2E,-(a2)
     move.l (0,a2,d2.l),d1
-    move.w (14,a6),d1
+    dc.w $000E
     dc.w $0E36
     move.w #$0002,d3
     dc.w $3C00
-    dc.w $0245
+    andi.w #$F900,d5
     lea loc_00255A,a2
-    dc.w $F900
-    dc.w $0025
-    dc.w $5A4E
+    ori.b #$4E,-(a5)
     jsr loc_006544
     dc.w $B900
-loc_0024E4:
-    dc.w $0000
-    dc.w $0065
-    bcs.s loc_00252C
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $2248
     dc.w $4832
     dc.w $32BC
@@ -4618,21 +4190,18 @@ loc_0024ED:
     dc.w $5433
     dc.w $3344
     dc.w $4400
-    dc.w $0006
+    ori.b #$44,d6
     dc.w $0633
-    dc.w $3344
     dc.w $4400
     dc.w $000E
     dc.w $0E33
     dc.w $336E
     bgt.w loc_0036F9
-    dc.w $0012
-    dc.w $0008
+    ori.b #$08,(a2)
     dc.w $0833
     dc.w $336E
     bgt.w loc_0036FF
-    dc.w $0012
-    dc.w $0012
+    ori.b #$12,(a2)
     dc.w $124E
     jsr loc_00F4C2
 loc_002503:
@@ -4649,61 +4218,47 @@ loc_002503:
     dc.w $4023
     dc.w $2340
     dc.w $4000
-    dc.w $0016
+    ori.b #$A9,(a6)
     dc.w $1642
-    dc.w $42A9
     dc.w $A900
-    dc.w $001A
+    ori.b #$7C,(a2)+
     dc.w $1A33
-    dc.w $337C
     moveq #39,d6
     dc.w $271E
     dc.w $1E00
-    dc.w $0002
-    dc.w $0233
-    dc.w $335A
-    addq.b #5,d0
-    dc.w $0004
-    dc.w $0442
-    dc.w $4269
+    ori.b #$5A,d2
+    andi.b #$00,(66,a3,d0.w)
+    ori.b #$69,d4
     bvs.w loc_004567
-    dc.w $0020
-    dc.w $4269
+    ori.b #$69,-(a0)
     bvs.w loc_004731
-    dc.w $0022
+    ori.b #$E9,-(a2)
 loc_002529:
     dc.w $2208
-    dc.w $08E9
     dc.w $E900
-loc_00252C:
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0003
+    ori.b #$23,d3
     dc.w $0300
-    dc.w $0023
     dc.w $2310
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$CB,-(a2)
     dc.w $2251
-    dbra d3,loc_0024E4
     dc.w $CBFF
+    dc.w $FF9E
     sub.b (0,a0,d6.l),d7
     dc.w $306E
-    dc.w $0036
+    ori.b #$A8,(0,a6,d0.w)
     move.w #$A800,d3
-    move.w d6,(0,a0)
     dc.w $004E
     jsr loc_00EBD6
     dc.w $B900
@@ -4729,8 +4284,7 @@ loc_00256E:
     dc.w $0A3D
     dc.w $3D6E
     bgt.w loc_003775
-    dc.w $0012
-    dc.w $000C
+    ori.b #$0C,(a2)
     dc.w $0C20
 loc_002578:
     move.l (22,a6),d0
@@ -4753,20 +4307,17 @@ loc_00258B:
     dc.w $EA08
     dc.w $0838
     dc.w $3800
-    dc.w $0000
-    dc.w $0080
-    or.b d5,d0
-    dc.w $0567
+    ori.b #$05,d0
+    ori.l #$0567584A,d0
     beq.s loc_0025EE
-    dc.w $584A
     dc.w $4A6E
     bgt.w loc_005400
-    dc.w $002E
-    beq.s loc_0025EE
+    ori.b #$52,(17401,a6)
     addq.w #1,d3
-    lea loc_FFFFE6E0,a1
     dc.w $F9FF
+    dc.w $FFFF
     dc.w $FFE6
+    dc.w $E6E0
     dc.w $E04E
     jsr loc_00E7CC
     dc.w $B900
@@ -4790,20 +4341,20 @@ loc_0025AE:
     dc.w $363D
     dc.w $3D49
     dc.w $4900
-    dc.w $0028
+    ori.b #$B9,(0,a0)
     dc.w $284E
-    jsr loc_00E87A
     dc.w $B900
     dc.w $00E8
+    dc.w $E87A
     moveq #103,d5
     beq.s loc_0025AE
     dc.w $EA53
     dc.w $536E
     bgt.w loc_005415
-    dc.w $002E
-    jsr loc_00ED54
+    ori.b #$B9,(0,a6)
     dc.w $B900
     dc.w $00ED
+    dc.w $ED54
     dc.w $544A
     tst.w d2
     dc.w $4267
@@ -4811,11 +4362,9 @@ loc_0025AE:
     dc.w $1C32
     dc.w $326E
     bgt.w loc_004E05
-    dc.w $0028
-    dc.w $3069
+    ori.b #$69,(54,a0)
 loc_0025D7:
     bvs.w loc_005C0B
-    dc.w $0036
     move.w d1,(24,a0)
     dc.w $A800
     dc.w $18C3
@@ -4829,22 +4378,21 @@ loc_0025D7:
     dc.w $4E33
     dc.w $336E
     bgt.w loc_0055EB
-    dc.w $0030
-    dc.w $0032
+    ori.b #$32,(46,a0,d3.w)
     move.w (0,a0,d2.l),d1
 loc_0025EE:
     move.w (32,a6),d0
+    ori.b #$40,-(a0)
     dc.w $2002
-    dc.w $0240
+    andi.w #$0003,d0
     dc.w $4000
-    dc.w $0003
+    ori.b #$38,d3
     dc.w $0366
     bne.s loc_002630
     dc.w $384E
     jsr loc_006544
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $2248
     dc.w $4832
     dc.w $32BC
@@ -4859,44 +4407,34 @@ loc_002603:
     dc.w $0E33
     dc.w $336E
     bgt.w loc_00380D
-    dc.w $0012
-    dc.w $0012
+    ori.b #$12,(a2)
     dc.w $1242
     dc.w $4269
     bvs.w loc_004655
-    dc.w $0020
-    dc.w $4269
+    ori.b #$69,-(a0)
     bvs.w loc_00481F
-    dc.w $0022
-    dc.w $08E9
+    ori.b #$E9,-(a2)
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0003
+    ori.b #$23,d3
 loc_002621:
     dc.w $0300
-    dc.w $0023
     dc.w $2310
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$6E,-(a2)
     dc.w $220C
-loc_002630:
-    dc.w $0C6E
     bgt.w loc_003633
-    dc.w $0010
-    dc.w $000E
+    ori.b #$0E,(a0)
     dc.w $0E6D
     blt.s loc_002642
     dc.w $0A0C
@@ -4908,28 +4446,23 @@ loc_00263C:
     dc.w $000E
     dc.w $0E6E
     bgt.s loc_002642
-    dc.w $0260
+    andi.w #$0C32,-(a0)
     bra.s loc_00264E
-    dc.w $0C32
 loc_002642:
     dc.w $326E
     bgt.w loc_005A4D
-    dc.w $0034
-    dc.w $08E9
+    ori.b #$E9,(4,a4,d0.w)
     dc.w $E900
-    dc.w $0004
 loc_002649:
     dc.w $0400
-    dc.w $0022
+    ori.b #$56,-(a2)
     dc.w $2242
-    dc.w $4256
 loc_00264D:
     dc.w $564C
 loc_00264E:
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
-loc_002651:
     dc.w $FE4E
     rts
     dc.w $7520
@@ -4954,14 +4487,20 @@ loc_002676:
     dc.w $000E
     dc.w $0E6E
     bgt.s loc_00267C
-    dc.w $0260
+    andi.w #$0442,-(a0)
     bra.s loc_002680
-    dc.w $0442
+loc_00267C:
+    dc.w $4256
     dc.w $5660
+    bra.s loc_002686
     dc.w $064E
+loc_002680:
+    jsr loc_00EBD6
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
+loc_002686:
+    rts
     dc.w $7516
     and.b -(a6),d5
     cmp.b -(a7),d7
@@ -5003,14 +4542,12 @@ loc_0026CB:
     dc.w $3C00
     dc.w $0141
     dc.w $F900
-    dc.w $0026
-    dc.w $E0D0
+    ori.b #$D0,-(a6)
     dc.w $4030
     dc.w $3000
     dc.w $004E
     dc.w $7500
-    dc.w $0000
-    dc.w $0400
+    ori.b #$00,d0
     eori.b #$4E,d0
 loc_0026E7:
     dc.w $044E
@@ -5030,40 +4567,28 @@ loc_0026E7:
     dc.w $75F0
     dc.w $05F8
 loc_002707:
-    dc.w $0030
-    dc.w $3C02
-    or.b a0,d7
+    ori.b #$02,(8,a0,a0.l)
     dc.w $3800
-    dc.w $0280
-    dc.w $0567
-    dc.w $040A
+    andi.l #$0567040A,d0
     dc.w $4008
     dc.w $004E
     dc.w $75F8
     dc.w $00FC
-    dc.w $0030
-    dc.w $3C02
-    or.b a0,d5
+    ori.b #$02,(8,a0,a0.l)
     dc.w $3800
-    dc.w $0280
-    dc.w $0567
-    dc.w $040A
+    andi.l #$0567040A,d0
     dc.w $4008
     dc.w $004E
     dc.w $75D8
     dc.w $03FC
-    dc.w $00B8
-    dc.w $03FC
-    dc.w $0098
-    dc.w $03FC
+    ori.l #$03FC0098,($03FC).w
 loc_00273B:
     dc.w $0048
 loc_00273D:
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b -(a7),d6
     dc.w $EA33
@@ -5099,13 +4624,11 @@ loc_00273D:
     bvs.w loc_00499F
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -5131,9 +4654,8 @@ loc_00273D:
     bvs.w loc_00680E
     moveq #0,d6
 loc_0027DE:
-    dc.w $001E
+    ori.b #$3E,(a6)+
     dc.w $1E00
-    dc.w $003E
     dc.w $3E42
     dc.w $4256
     dc.w $564C
@@ -5161,28 +4683,24 @@ loc_002806:
     dc.w $003E
     dc.w $546E
     bgt.w loc_00486F
-    dc.w $0020
-    bra.w loc_00284E
-    dc.w $0000
-    dc.w $3C08
+    ori.b #$00,-(a0)
+    ori.b #$08,d0
+    dc.w $003C
 loc_002814:
     dc.w $082E
     dc.w $2E00
-    dc.w $0004
+    ori.b #$22,d4
     dc.w $0400
-    dc.w $0022
     dc.w $2266
     bne.s loc_002828
     dc.w $0C30
     dc.w $306E
     bgt.w loc_005E5B
-    dc.w $0036
-    move.w d6,(6,a0)
+    ori.b #$A8,(6,a6,d0.w)
     dc.w $A800
     dc.w $0660
     bra.w loc_00284E
-    dc.w $0000
-    dc.w $284E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     add.w -(a6),d5
@@ -5201,17 +4719,12 @@ loc_002814:
     dc.w $EE00
     dc.w $0100
     dc.w $224E
-loc_00284E:
-    jsr loc_00EBD6
 loc_00284F:
     dc.w $B900
     dc.w $00EB
     add.w a4,d3
-    dc.w $4CDF
     dc.w $DF7E
-    moveq #-2,d7
     dc.w $FE4E
-    rts
     dc.w $7530
     bgt.w loc_005E9A
     bvc.w loc_003061
@@ -5234,40 +4747,31 @@ loc_00284F:
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $3200
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
-    dc.w $0030
-    bgt.w loc_005EF9
+    ori.b #$11,d0
+    ori.b #$00,(60,a0,d3.w)
     dc.w $A800
-    dc.w $0060
-    dc.w $0000
+    ori.w #$0000,-(a0)
     and.b (-128,a2,d3.l),d4
     dc.w $0402
     dc.w $4100
     dc.w $0166
 loc_0028CF:
-    dc.w $0000
-    dc.w $BC4E
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4833
     dc.w $4900
     dc.w $4232
@@ -5291,7 +4795,7 @@ loc_0028F3:
     dc.w $00F4
     and.b (68,a2,d0.w),d1
 loc_002909:
-    dc.w $0044
+    ori.w #$41C2,d4
     dc.w $41C2
     dc.w $FC00
     dc.w $10D3
@@ -5337,16 +4841,14 @@ loc_002937:
     bvs.w loc_004B77
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
     dc.w $0500
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2308
+    ori.b #$08,d0
     dc.w $E900
     dc.w $0300
     dc.w $2333
@@ -5373,8 +4875,7 @@ loc_002937:
     dc.w $0C30
     bgt.w loc_005FFB
     dc.w $A800
-    dc.w $0060
-    dc.w $0000
+    ori.w #$0000,-(a0)
     eori.w #$6E00,(a3)
     dc.w $1E58
     bgt.w loc_004A1D
@@ -5398,12 +4899,10 @@ loc_0029F1:
     bgt.w loc_006037
     dc.w $A800
     dc.w $1E60
-    dc.w $0000
-    dc.w $0C3C
+    ori.b #$3C,d0
     cmp.b (5640,a2),d6
     dc.w $EE00
-    dc.w $0200
-    dc.w $224E
+    andi.b #$4E,d0
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
@@ -5424,13 +4923,10 @@ loc_002A2B:
     dc.w $0402
     dc.w $4000
     dc.w $0366
-    dc.w $0000
-    bcc.s loc_002A8F
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4466
-    dc.w $0000
-    dc.w $5A22
+    ori.w #$4466,-(a5)
+    ori.b #$22,d0
     dc.w $4832
     cmp.b (11342,a4),d6
     dc.w $B900
@@ -5441,15 +4937,13 @@ loc_002A2B:
     bgt.w loc_003C61
     dc.w $124E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $3FC1
     dc.w $C1D1
     bvs.w loc_0038C1
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $1F06
     dc.w $4000
@@ -5459,8 +4953,6 @@ loc_002A2B:
     dc.w $0100
     dc.w $3C42
     bvs.w loc_004C97
-loc_002A8F:
-    dc.w $2208
     dc.w $E900
     dc.w $0300
     dc.w $2308
@@ -5481,14 +4973,12 @@ loc_002A8F:
     dc.w $023D
     bvc.w loc_005EBB
 loc_002ABA:
-    dc.w $0034
-    dc.w $0004
+    ori.b #$04,(110,a4,d4.w)
     dc.w $0442
-    dc.w $426E
     bgt.w loc_004B0F
-    dc.w $0020
-    jsr loc_00E864
+    ori.b #$B9,-(a0)
     dc.w $B900
+    ori.b #$64,d0
     dc.w $00E8
     bcc.s loc_002B17
     jsr loc_00F3DC
@@ -5513,8 +5003,8 @@ loc_002AD6:
     dc.w $753D
     moveq #43,d6
     dc.w $BC00
-    dc.w $0242
-    bgt.w loc_004B28
+    andi.w #$6E00,d2
+    dc.w $203D
     moveq #0,d6
     dc.w $1E00
     dc.w $1E3C
@@ -5523,8 +5013,7 @@ loc_002AD6:
     moveq #83,d7
     bgt.w loc_004968
     dc.w $0460
-    dc.w $0000
-    cmp.w (a2),d2
+    ori.b #$52,d0
     bgt.w loc_004B27
     dc.w $2E00
     dc.w $16D1
@@ -5555,8 +5044,7 @@ loc_002B17:
     dc.w $0E67
     dc.w $0642
     dc.w $5660
-    dc.w $0000
-    moveq #74,d1
+    ori.b #$4A,d0
     bgt.w loc_0059B0
     bcc.s loc_002B7F
     bgt.w loc_005F99
@@ -5596,8 +5084,7 @@ loc_002B98:
     dc.w $3069
 loc_002B99:
     bvs.w loc_0061CD
-    dc.w $0036
-    move.w d1,(24,a0)
+    ori.b #$A8,(24,a6,d0.w)
     dc.w $A800
 loc_002B9F:
     dc.w $18C3
@@ -5611,13 +5098,12 @@ loc_002B9F:
     dc.w $4E33
     dc.w $336E
     bgt.w loc_005BAD
-    dc.w $0030
+    ori.b #$32,(-71,a0,d4.l)
 loc_002BAD:
     dc.w $3000
-    dc.w $0032
     dc.w $324E
-    jsr loc_00EBD6
     dc.w $B900
+    ori.b #$D6,d0
     dc.w $00EB
     add.w a4,d3
     dc.w $4CDF
@@ -5627,9 +5113,7 @@ loc_002BAD:
     rts
     dc.w $7548
     dc.w $E760
-    dc.w $0032
-    dc.w $2E00
-    dc.w $20E4
+    ori.b #$00,(-28,a2,d2.w)
     dc.w $490C
     dc.w $4100
     dc.w $076F
@@ -5641,99 +5125,141 @@ loc_002BAD:
     dc.w $036F
     dc.w $0C4E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4018
-    dc.w $0034
-    dc.w $00D2
-    dc.w $4141
+    ori.b #$D2,(65,a4,d4.w)
     dc.w $F900
-    dc.w $002C
-    dc.w $143D
-    moveq #16,d0
-    dc.w $0000
-    dc.w $0441
+    ori.b #$3D,(28688,a4)
+    ori.b #$41,d0
     dc.w $F900
-    dc.w $002C
+    ori.b #$30,(12304,a4)
 loc_002BF7:
     dc.w $0430
 loc_002BF9:
     move.w (a0),d0
-    dc.w $0080
-    dc.w $424C
+    ori.l #$424CDF00,d0
 loc_002BFE:
     dc.w $4CDF
-    dc.w $DF00
-    dc.w $0006
+    ori.b #$75,d6
     dc.w $064E
-    rts
     dc.w $7502
+    andi.w #$026B,-(a7)
     beq.s loc_002C09
     bmi.s loc_002C0B
+    andi.w #$0273,(633,a7)
 loc_002C09:
     ble.s loc_002C0D
 loc_002C0B:
     dc.w $7302
 loc_002C0D:
     dc.w $7902
+    dc.w $023C
     dc.w $3C02
+    andi.w #$024E,d5
     dc.w $4502
     dc.w $4E2C
+    dc.w $2C24
     move.l (9260,a4),d2
+    dc.w $2C24
+    dc.w $2C24
     move.l (9260,a4),d2
+    dc.w $2C24
+    dc.w $2C24
     move.l (10284,a4),d2
+    move.l (11304,a0),d6
     move.l (10488,a4),d4
+    move.l (-2043,a0),d6
     dc.w $05F8
+    dc.w $F800
     dc.w $00F4
+    dc.w $F40A
     dc.w $0AF4
+    dc.w $F400
     dc.w $003D
+    dc.w $3D7C
     moveq #44,d6
+    dc.w $2CBC
     dc.w $BC00
-    dc.w $0242
-    bgt.w loc_004C71
-    cmp.b (14930,a4),d6
+    ori.b #$6E,d2
+    andi.w #$6E00,d2
+    ori.b #$BC,-(a0)
+    move.l #$BC2C3A52,d0
+    move.l (21102,pc),d6
     bgt.w loc_004C49
+    ori.b #$6E,-(a0)
     bgt.w loc_004441
+    ori.b #$20,(a0)+
     dc.w $206D
+    blt.s loc_002CA4
     dc.w $5E53
+    dc.w $536E
     bgt.w loc_0068B8
+    dc.w $003C
+    ble.s loc_002CA0
     addq.w #2,d5
+    lea loc_002CAC,a2
     dc.w $F900
-    dc.w $002C
-    dc.w $AC0C
-    dc.w $92FF
+    ori.b #$0C,(-27905,a4)
+loc_002C52:
+    dc.w $0C92
+    dc.w $FFFF
+    dc.w $FFFF
     dc.w $FFFF
     dc.w $FF67
+    beq.s loc_002CA0
     dc.w $464E
+    jsr loc_006544
     dc.w $B900
-    dc.w $0065
-    dc.w $4466
+    ori.w #$4466,-(a5)
+    bne.s loc_002CA0
     dc.w $3E22
+    dc.w $2248
     dc.w $4832
+    dc.w $32BC
     cmp.b (11315,a4),d6
+    move.l (13166,a4),d6
     bgt.w loc_003A6B
+    dc.w $000E
+    dc.w $000E
     dc.w $0E33
+    dc.w $336E
     bgt.w loc_003E71
+    ori.b #$12,(a2)
     dc.w $1230
+    move.w (a2)+,d0
 loc_002C75:
     dc.w $1AD1
+    add.w d0,(14,a1)
     bvs.w loc_003AA9
+    move.w (a2)+,d0
     dc.w $1AD1
+    add.w d0,(18,a1)
     bvs.w loc_003EB2
+    dc.w $336E
 loc_002C81:
     bgt.w loc_006883
+    dc.w $003C
+    dc.w $003C
     dc.w $3C42
+    dc.w $4269
     bvs.w loc_004E91
+    ori.b #$E9,-(a2)
     dc.w $E900
+    ori.b #$23,d3
     dc.w $0300
 loc_002C8F:
     dc.w $2308
+    dc.w $08E9
     dc.w $E900
+    ori.b #$22,d5
     dc.w $0500
     dc.w $2208
+    dc.w $08E9
     dc.w $E900
+    ori.b #$23,d5
     dc.w $0500
     dc.w $2360
+    bra.w loc_002C52
     dc.w $00FF
     dc.w $B442
     dc.w $5660
@@ -5752,9 +5278,7 @@ loc_002CB5:
     dc.w $FFFF
     dc.w $FF48
     dc.w $E740
-    dc.w $0072
-    dc.w $0032
-    dc.w $2E00
+    ori.w #$0032,(0,a2,d2.l)
     dc.w $2082
     dc.w $FC00
     dc.w $0602
@@ -5768,23 +5292,15 @@ loc_002CD5:
     dc.w $03D2
     dc.w $4141
     dc.w $F900
-    dc.w $002D
-    dc.w $0A3D
-    moveq #16,d0
-    dc.w $0000
-    dc.w $0441
+    ori.b #$3D,(28688,a5)
+    ori.b #$41,d0
     dc.w $F900
-    dc.w $002D
-    dc.w $0232
-    move.w (a0),d0
+    ori.b #$32,(12304,a5)
     dc.w $004E
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4018
-    dc.w $0080
-    dc.w $414C
-    dc.w $DF00
+    ori.l #$414CDF00,d0
     dc.w $024E
     dc.w $7502
     dc.w $7902
@@ -5792,6 +5308,7 @@ loc_002CD5:
     dc.w $4502
     dc.w $4E2D
     dc.w $122D
+loc_002D0D:
     dc.w $162D
     dc.w $162D
     dc.w $16F8
@@ -5799,8 +5316,7 @@ loc_002CD5:
     dc.w $00F4
 loc_002D17:
     dc.w $0AF4
-    dc.w $0027
-    dc.w $EA2D
+    ori.b #$2D,-(a7)
     dc.w $502D
     and.b (23085,a0),d4
     dc.w $502D
@@ -5849,12 +5365,10 @@ loc_002D53:
     move.w (-9650,a2),d6
     jsr loc_00658C
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     jsr loc_006544
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $2248
 loc_002D65:
     dc.w $4832
@@ -5871,78 +5385,58 @@ loc_002D69:
     dc.w $0E33
     dc.w $336E
     bgt.w loc_003F73
-    dc.w $0012
-    dc.w $0012
+    ori.b #$12,(a2)
     dc.w $1242
     dc.w $4269
     bvs.w loc_004F81
-    dc.w $0022
-    dc.w $08E9
+    ori.b #$E9,-(a2)
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     move.l (a0),d1
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$2E,-(a2)
     move.l (a0),d1
-    dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0040
-    dc.w $4081
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.w #$8129,d0
     dc.w $2900
+    ori.b #$00,-(a2)
     dc.w $2272
-    moveq #0,d1
-    dc.w $0032
+    ori.b #$00,(-30,a2,d2.w)
     move.w (32,a6),d1
-    dc.w $2E00
-    dc.w $20E2
     dc.w $E249
 loc_002D9F:
     dc.w $4902
-    dc.w $0241
+    andi.w #$0007,d1
     dc.w $4100
-    dc.w $0007
     dc.w $07D2
     add.w d1,d1
 loc_002DA5:
     dc.w $4145
     lea loc_002DF4,a2
     dc.w $F900
-    dc.w $002D
-    dc.w $F447
+    ori.b #$47,(-1792,a5)
     lea loc_002E16,a3
-    dc.w $F900
-    dc.w $002E
-    dc.w $1633
+    ori.b #$33,(29200,a6)
     dc.w $3372
-loc_002DB3:
-    moveq #16,d1
     dc.w $1000
-    dc.w $0000
-    dc.w $0002
-    dc.w $0233
-    dc.w $3373
+    ori.b #$33,d0
+    ori.b #$73,d2
     dc.w $7310
     dc.w $1000
-    dc.w $0000
-    dc.w $0004
-    dc.w $0430
-    move.w #$0008,d0
+    ori.b #$30,d0
+    ori.b #$3C,d4
     dc.w $3C00
+    dc.w $0008
     dc.w $084C
     dc.w $4CDF
     dc.w $DF0E
@@ -5971,9 +5465,7 @@ loc_002DB3:
     dc.w $0DB0
     dc.w $01F0
     dc.w $0D90
-    dc.w $002E
-    dc.w $102E
-    dc.w $102E
+    ori.b #$2E,(4142,a6)
     dc.w $102E
     dc.w $102E
     eori.b #$2E,(2606,a6)
@@ -6018,153 +5510,114 @@ loc_002DB3:
     dc.w $0DC0
     dc.w $01A8
     dc.w $01E0
-    dc.w $0000
-    dc.w $01F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$F8,d0
+    ori.b #$00,d5
     dc.w $08F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$00,d5
     dc.w $08F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$00,d5
     dc.w $04F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$00,d5
     dc.w $01F8
-    dc.w $0004
-    or.b d0,d0
+    ori.b #$00,d4
     dc.w $01F8
-    dc.w $0004
-    dc.w $0000
+    ori.b #$00,d4
     dc.w $01F8
-    dc.w $0003
-    or.b d0,d0
+    ori.b #$00,d3
     dc.w $01F8
-    dc.w $0003
-    dc.w $0000
+    ori.b #$00,d3
     dc.w $01F8
-    dc.w $0002
-    or.b d0,d0
+    ori.b #$00,d2
 loc_002E95:
     dc.w $01F8
-    dc.w $0002
-    dc.w $0000
+    ori.b #$00,d2
     dc.w $01F8
-    dc.w $0001
-    or.b d0,d0
+    ori.b #$00,d1
     dc.w $01F8
-    dc.w $0001
-    dc.w $0000
+    ori.b #$00,d1
     dc.w $01F8
-    dc.w $0000
-    or.b d0,d0
+    ori.b #$00,d0
     dc.w $01F8
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $01F8
     dc.w $00FF
     or.b d0,d0
     dc.w $01F8
     dc.w $00FF
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FE
 loc_002EC3:
     or.b d0,d0
     dc.w $01F8
     dc.w $00FE
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FD
     or.b d0,d0
     dc.w $01F8
     dc.w $00FD
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FC
     or.b d0,d0
     dc.w $01F8
     dc.w $00FC
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FB
     or.b d0,d0
     dc.w $01F8
     dc.w $00FC
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FD
     or.b d0,d0
     dc.w $01F8
 loc_002EF7:
     dc.w $00FD
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FE
     or.b d0,d0
     dc.w $01F8
     dc.w $00FE
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FF
     or.b d0,d0
     dc.w $01F8
     dc.w $00FF
-    dc.w $0000
-    dc.w $01F8
+    ori.b #$F8,d0
     dc.w $00FF
     or.b d0,d0
     dc.w $01F8
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $01F8
-    dc.w $0000
-    or.b d0,d0
+    ori.b #$00,d0
     dc.w $01F8
-    dc.w $0001
-    dc.w $0000
+    ori.b #$00,d1
     dc.w $01F8
-    dc.w $0001
-    or.b d0,d0
+    ori.b #$00,d1
     dc.w $01F8
-    dc.w $0002
-    dc.w $0000
+    ori.b #$00,d2
     dc.w $01F8
-    dc.w $0002
-    or.b d0,d0
+    ori.b #$00,d2
     dc.w $01F8
-    dc.w $0003
-    dc.w $0000
+    ori.b #$00,d3
     dc.w $01F8
-    dc.w $0003
-    or.b d0,d0
+    ori.b #$00,d3
     dc.w $01F8
-    dc.w $0004
-    dc.w $0000
+    ori.b #$00,d4
     dc.w $01F8
-    dc.w $0004
-    or.b d0,d0
+    ori.b #$00,d4
     dc.w $08F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$00,d5
     dc.w $08F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$00,d5
     dc.w $08F8
-    dc.w $0005
-    dc.w $0000
+    ori.b #$00,d5
     dc.w $08F8
-    dc.w $0005
-loc_002F6B:
-    dc.w $00FF
+    ori.b #$FF,d5
     dc.w $FFFF
     dc.w $FF48
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (51,a0,a0.l),d6
     moveq #51,d6
@@ -6189,8 +5642,7 @@ loc_002F99:
     dc.w $1623
     moveq #0,d6
     dc.w $00C0
-    dc.w $0000
-    dc.w $1A42
+    ori.b #$42,d0
     bvs.w loc_0057E9
     dc.w $2E00
     dc.w $2CE2
@@ -6204,12 +5656,11 @@ loc_002F99:
     bvs.w loc_0051E3
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
+    ori.b #$66,d0
 loc_002FE5:
     dc.w $2266
     dc.w $0608
@@ -6248,8 +5699,7 @@ loc_00301F:
     dc.w $3C00
     dc.w $034E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (51,a2,a2.l),d6
     dc.w $4100
@@ -6267,8 +5717,7 @@ loc_00301F:
 loc_003061:
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
@@ -6299,20 +5748,17 @@ loc_00309B:
     cmp.b (72,a0,a2.w),d6
     dc.w $E77F
     moveq #97,d7
-    dc.w $0003
-    dc.w $264A
+    ori.b #$4A,d3
     bgt.w loc_006F14
     dc.w $0853
     bgt.w loc_006F13
-    dc.w $0000
-    dc.w $324A
+    ori.b #$4A,d0
     bgt.w loc_005F22
     dc.w $0C30
     bgt.w loc_0066FD
     dc.w $A800
     dc.w $0660
-    dc.w $0000
-    dc.w $204E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00E5
     add.w -(a6),d5
@@ -6347,19 +5793,16 @@ loc_0030F5:
     cmp.b (72,a1,d0.l),d6
     dc.w $E77F
     moveq #97,d7
-    dc.w $0002
-    cmp.w (a4),d5
+    ori.b #$54,d2
     bgt.w loc_005163
     bgt.w loc_004F84
     dc.w $0853
     bgt.w loc_004F83
-    dc.w $0000
-    sub.w (a3),d4
+    ori.b #$53,d0
     bgt.w loc_005F79
     dc.w $B900
 loc_00312F:
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $484E
     dc.w $B900
     dc.w $00E6
@@ -6384,13 +5827,11 @@ loc_00312F:
     bvs.w loc_005379
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0113
+    ori.b #$13,d0
     dc.w $4000
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2308
+    ori.b #$08,d0
     dc.w $E900
     dc.w $0500
     move.l (-1,a3,d7.l),d1
@@ -6449,8 +5890,7 @@ loc_0031C5:
     bgt.w loc_005A60
     dc.w $3253
     bgt.w loc_005065
-    dc.w $0000
-    sub.w a6,d6
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00ED
     dc.w $544A
@@ -6466,8 +5906,7 @@ loc_0031C5:
     dc.w $4E33
     bgt.w loc_006227
     dc.w $3260
-    dc.w $0000
-    dc.w $1E32
+    ori.b #$32,d0
     dc.w $2E00
     dc.w $0E4E
     dc.w $B900
@@ -6479,8 +5918,7 @@ loc_0031C5:
     dc.w $00E5
     dc.w $0E66
     dc.w $0460
-    dc.w $0000
-    dc.w $5632
+    ori.b #$32,d0
     bgt.w loc_0066A0
     bvs.w loc_006EB7
     dc.w $0608
@@ -6488,8 +5926,7 @@ loc_0031C5:
     dc.w $0400
     dc.w $224E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (11314,a4),d6
 loc_003267:
@@ -6506,7 +5943,7 @@ loc_003267:
     dc.w $4100
     dc.w $1233
     moveq #0,d6
-    dc.w $0200
+    andi.b #$42,d0
 loc_003283:
     dc.w $3C42
     bvs.w loc_00548F
@@ -6517,16 +5954,14 @@ loc_003289:
 loc_00328E:
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
 loc_003295:
     dc.w $E900
-    dc.w $0005
+    ori.b #$23,d5
     dc.w $0500
-    dc.w $0023
     dc.w $2342
     dc.w $4256
     dc.w $5660
@@ -6568,14 +6003,11 @@ loc_0032A5:
     bgt.w loc_006929
     dc.w $A800
     dc.w $1E60
-    dc.w $0000
-    dc.w $0C3C
+    ori.b #$3C,d0
     cmp.b (8,a3,d0.l),d6
     dc.w $EE00
-    dc.w $0200
-    dc.w $2261
-    dc.w $0000
-    and.w a6,d6
+    andi.b #$61,d0
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
@@ -6592,17 +6024,14 @@ loc_00330B:
     dc.w $2648
     dc.w $E77F
     moveq #97,d7
-    dc.w $0000
-    dc.w $A230
+    ori.b #$30,d0
     dc.w $3880
     dc.w $0402
     dc.w $4000
     dc.w $0366
-    dc.w $0000
-    dc.w $5A4E
+    ori.b #$4E,d0
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (11342,a4),d6
     dc.w $B900
@@ -6615,51 +6044,42 @@ loc_003355:
     dc.w $124E
 loc_00335B:
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
     dc.w $3FC1
     dc.w $C1D1
     bvs.w loc_0041B7
     dc.w $B900
 loc_00336C:
-    dc.w $0000
-    dc.w $0067
-    beq.s loc_003392
+    ori.b #$22,d0
+    ori.w #$2202,-(a7)
 loc_00336F:
     dc.w $2202
-    dc.w $0240
+    andi.w #$001F,d0
     dc.w $4000
-    dc.w $001F
     dc.w $1F06
     dc.w $0640
     dc.w $4000
-    dc.w $0010
+    ori.b #$69,(a0)
     dc.w $1091
-    sub.w d0,(18,a1)
     bvs.w loc_0045BD
-    dc.w $4269
+    ori.b #$69,(a2)
     bvs.w loc_005587
-    dc.w $0022
-    dc.w $08E9
+    ori.b #$E9,-(a2)
     dc.w $E900
-    dc.w $0003
+    ori.b #$23,d3
     dc.w $0300
-    dc.w $0023
     dc.w $2308
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$23,d5
     dc.w $0500
-    dc.w $0023
     dc.w $234E
-loc_003392:
     jsr loc_00EBD6
     dc.w $B900
     dc.w $00EB
@@ -6686,21 +6106,18 @@ loc_0033BB:
     dc.w $00F3
     add.b #$BC33,d6
     and.w -(a1),d1
-    dc.w $0000
-    dc.w $0A4E
+    ori.b #$4E,d0
     dc.w $B900
     dc.w $00EB
     add.w a6,d3
     dc.w $7522
     dc.w $3C00
-    dc.w $0010
-    dc.w $0030
+    ori.b #$30,(a0)
     dc.w $2E00
     dc.w $12B0
     bgt.w loc_003C48
 loc_0033DD:
-    dc.w $0244
-    dc.w $81D3
+    andi.w #$81D3,d4
     dc.w $AE00
     dc.w $1A20
     dc.w $2E00
@@ -6746,14 +6163,10 @@ loc_00343B:
 loc_003449:
     dc.w $01D0
     dc.w $0108
-    dc.w $0030
-    dc.w $3C01
-    add.w a6,d0
+    ori.b #$01,(78,a0,a5.w)
     dc.w $75F8
     dc.w $05F8
-    dc.w $0030
-    dc.w $2E00
-    dc.w $20E4
+    ori.b #$00,(-28,a0,d2.w)
     dc.w $4802
     dc.w $4000
     dc.w $030C
@@ -6772,8 +6185,7 @@ loc_003475:
     dc.w $E77F
     moveq #78,d7
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b (51,a6,d7.w),d6
     moveq #57,d6
@@ -6802,13 +6214,11 @@ loc_00349B:
 loc_0034B7:
     dc.w $0823
     moveq #0,d6
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $1623
     moveq #0,d6
     dc.w $0100
-    dc.w $0000
-    dc.w $1A42
+    ori.b #$42,d0
     bvs.w loc_005CFE
     bgt.w loc_0060CF
     move.l (0,a0,d2.l),d6
@@ -6820,13 +6230,11 @@ loc_0034B7:
     bvs.w loc_0056F1
     dc.w $2E00
     dc.w $2202
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $2E00
-    dc.w $0000
-    dc.w $2266
+    ori.b #$66,d0
     dc.w $0608
     dc.w $E900
     dc.w $0600
@@ -6838,8 +6246,7 @@ loc_0034B7:
     dc.w $0400
     dc.w $2308
     dc.w $E900
-    dc.w $0000
-    dc.w $2342
+    ori.b #$42,d0
     bvs.w loc_005544
     moveq #-1,d6
     dc.w $F800
@@ -6849,14 +6256,11 @@ loc_0034B7:
     dc.w $494E
 loc_003521:
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4833
     moveq #58,d6
     dc.w $4400
-    dc.w $0233
-    moveq #58,d6
-    tst.b d0
+    andi.b #$3A,(0,a3,d4.l)
     dc.w $0432
     cmp.b ($084E).w,d6
     dc.w $B900
@@ -6873,9 +6277,8 @@ loc_003521:
 loc_003551:
     dc.w $B900
 loc_003552:
-    dc.w $0000
+    ori.b #$7A,d0
     dc.w $00EA
-    dc.w $EA7A
     moveq #6,d5
     dc.w $0640
     dc.w $4000
@@ -6883,89 +6286,70 @@ loc_003552:
     dc.w $4833
     dc.w $3340
     dc.w $4000
-    dc.w $0012
+    ori.b #$40,(a2)
     dc.w $1233
-    dc.w $3340
     dc.w $4000
     dc.w $0008
     dc.w $0823
     dc.w $237C
     moveq #0,d6
-    dc.w $0000
+    ori.b #$00,d0
 loc_003565:
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0016
+    ori.b #$00,d0
+    ori.b #$7C,(a6)
     dc.w $1623
-    dc.w $237C
     moveq #0,d6
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $00C0
-    and.b d0,d0
-    dc.w $0000
-    dc.w $001A
-    dc.w $1A42
-    dc.w $4269
+    ori.b #$42,d0
+    ori.b #$69,(a2)+
     bvs.w loc_005785
-    dc.w $0022
-    dc.w $102E
+    ori.b #$2E,-(a2)
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$2E,-(a2)
     dc.w $2208
-    dc.w $082E
     dc.w $2E00
-    dc.w $0000
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
+    ori.b #$66,d0
 loc_003587:
     dc.w $2266
     bne.s loc_003590
     dc.w $0608
     dc.w $08E9
     dc.w $E900
-    dc.w $0006
+    ori.b #$22,d6
     dc.w $0600
-    dc.w $0022
     dc.w $2208
 loc_003590:
     dc.w $08E9
     dc.w $E900
-    dc.w $0007
+    ori.b #$22,d7
     dc.w $0700
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0004
+    ori.b #$23,d4
     dc.w $0400
-    dc.w $0023
     dc.w $2308
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
 loc_00359F:
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0000
-    dc.w $0000
-    dc.w $0023
-    dc.w $234E
+    ori.b #$23,d0
+    ori.b #$4E,d0
 loc_0035A8:
     jsr loc_006544
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $2248
     dc.w $4832
     dc.w $32BC
@@ -6975,32 +6359,26 @@ loc_0035A8:
     moveq #58,d6
     dc.w $3A52
     addq.b #1,d0
-    dc.w $0002
-    dc.w $0233
-    dc.w $337C
-    moveq #58,d6
+    ori.b #$7C,d2
+    andi.b #$3A,(0,a3,d5.l)
     dc.w $3A58
-    addq.b #4,d0
-    dc.w $0004
+    ori.b #$B9,d4
     dc.w $044E
-    jsr loc_00F4C2
     dc.w $B900
+    ori.b #$C2,d0
     dc.w $00F4
     and.b (-61,a2,d0.w),d1
     dc.w $3200
     dc.w $C3FC
     dc.w $FC00
-    dc.w $0028
+    ori.b #$41,(160,a0)
     dc.w $2806
-    dc.w $0641
     dc.w $4100
-    dc.w $00A0
     dc.w $A033
     dc.w $3341
     dc.w $4100
-    dc.w $0006
+    ori.b #$41,d6
     dc.w $0633
-    dc.w $3341
     dc.w $4100
     dc.w $000E
     dc.w $0E4E
@@ -7015,98 +6393,80 @@ loc_0035DE:
     dc.w $A833
     dc.w $3340
     dc.w $4000
-    dc.w $0012
+    ori.b #$40,(a2)
     dc.w $1233
-    dc.w $3340
     dc.w $4000
     dc.w $0008
     dc.w $0823
     dc.w $237C
     moveq #0,d6
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0016
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$7C,(a6)
     dc.w $1623
-    dc.w $237C
 loc_0035F3:
     moveq #-1,d6
 loc_0035F4:
     dc.w $FFFF
     dc.w $FFC0
     and.b d0,d0
-    dc.w $0000
-    dc.w $001A
-    dc.w $1A42
-    dc.w $4269
+    ori.b #$42,d0
+    ori.b #$69,(a2)+
     bvs.w loc_00580D
-    dc.w $0022
-    dc.w $102E
+    ori.b #$2E,-(a2)
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$2E,-(a2)
     dc.w $2208
-    dc.w $082E
     dc.w $2E00
-    dc.w $0000
-    dc.w $0000
-    dc.w $0022
-    dc.w $2266
+    ori.b #$22,d0
+    ori.b #$66,d0
     bne.s loc_003618
     dc.w $0608
     dc.w $08E9
     dc.w $E900
-    dc.w $0006
+    ori.b #$22,d6
     dc.w $0600
-    dc.w $0022
     dc.w $2208
 loc_003618:
     dc.w $08E9
     dc.w $E900
-    dc.w $0007
+    ori.b #$22,d7
     dc.w $0700
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0004
+    ori.b #$23,d4
     dc.w $0400
-    dc.w $0023
     dc.w $2308
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0000
-    dc.w $0000
+    ori.b #$23,d0
+    ori.b #$4E,d0
 loc_00362E:
-    dc.w $0023
-    dc.w $234E
+    ori.b #$B9,-(a3)
     jsr loc_006544
     dc.w $B900
+    ori.b #$44,d0
 loc_003633:
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $2248
     dc.w $4832
     dc.w $32BC
     cmp.b ($2E33).w,d6
     move.w (13130,a6),d4
     tst.b d0
-    dc.w $0034
+    ori.b #$2E,(44,a4,d0.w)
     move.w (0,a0,d2.l),d2
-    move.w (44,a6),d0
     dc.w $2CE2
     dc.w $E248
     dc.w $485A
@@ -7114,43 +6474,33 @@ loc_003633:
     dc.w $4033
     dc.w $3340
     dc.w $4000
-    dc.w $002E
+    ori.b #$69,(34,a6)
     dc.w $2E42
-    dc.w $4269
     bvs.w loc_00585F
-    dc.w $0022
 loc_00364F:
     move.l (a0),d1
     dc.w $102E
     dc.w $2E00
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $2202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0001
-    dc.w $0181
-    or.b d0,(34,a1)
+    ori.b #$81,d0
+    ori.b #$29,d1
     dc.w $2900
+    ori.b #$E9,-(a2)
     dc.w $2208
-    dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0000
-    dc.w $0000
-    dc.w $0023
-    dc.w $2333
+    ori.b #$23,d0
+    ori.b #$33,d0
     dc.w $336E
     bgt.w loc_00666B
-    dc.w $0030
-    dc.w $0030
+    ori.b #$30,(86,a0,d4.w)
 loc_00366D:
     dc.w $3042
-    dc.w $4256
     dc.w $564C
     dc.w $4CDF
     dc.w $DF7E
@@ -7171,13 +6521,11 @@ loc_003689:
     moveq #34,d7
 loc_00368F:
     dc.w $3C00
-    dc.w $0010
-    dc.w $0030
+    ori.b #$30,(a0)
     dc.w $2E00
     dc.w $12B0
     bgt.w loc_003F08
-    dc.w $0244
-    dc.w $81D3
+    andi.w #$81D3,d4
     dc.w $AE00
     dc.w $1A20
     dc.w $2E00
@@ -7208,16 +6556,12 @@ loc_00368F:
     moveq #48,d7
     bgt.w loc_006D1A
 loc_0036DC:
-    dc.w $0036
-    dc.w $3D68
+    ori.b #$68,(26,a6,d0.w)
     bvc.w loc_0050E1
-    dc.w $001A
-    dc.w $0002
+    ori.b #$68,d2
     dc.w $023D
-    dc.w $3D68
     bvc.w loc_0052E7
-    dc.w $001C
-    dc.w $0004
+    ori.b #$04,(a4)+
     dc.w $044E
     jsr loc_00EF48
     dc.w $B900
@@ -7225,25 +6569,20 @@ loc_0036DC:
     dc.w $4853
     dc.w $536E
     bgt.w loc_00635A
-    dc.w $002C
-    beq.s loc_003702
+    ori.b #$0C,(12398,a4)
     dc.w $0C30
-    dc.w $306E
     bgt.w loc_006D35
-    dc.w $0036
+    ori.b #$A8,(30,a6,d0.w)
 loc_0036F9:
     move.w #$A800,d3
-    move.w d6,(30,a0)
     dc.w $A800
     dc.w $1E60
     bra.w loc_00370C
 loc_0036FF:
-    dc.w $0000
-    dc.w $0C3C
+    ori.b #$3C,d0
     cmp.b (8,a7,d1.l),d6
     dc.w $EE00
-    dc.w $0200
-    dc.w $224E
+    andi.b #$4E,d0
     dc.w $B900
     dc.w $00EB
 loc_003711:
@@ -7267,42 +6606,48 @@ loc_003719:
     dc.w $0402
     dc.w $4000
 loc_00373C:
-    dc.w $0003
+    ori.b #$00,d3
     dc.w $0366
-    bne.w loc_0037AA
-    dc.w $0000
-    bpl.s loc_003791
-    jsr loc_006544
+    ori.b #$4E,d0
+    ori.w #$4EB9,(0,a2)
     dc.w $B900
-    dc.w $0065
-    dc.w $4466
+    ori.w #$4466,-(a5)
+    bcs.s loc_00378C
     bne.w loc_0037AA
-    dc.w $0000
-    bra.s loc_00376F
+    ori.b #$22,d0
     dc.w $2248
+    dc.w $4832
     dc.w $32BC
+    cmp.b (11342,a4),d6
     move.l (20153,a4),d6
-    dc.w $0000
-    dc.w $F4C2
+    dc.w $B900
+    ori.b #$C2,d0
+    dc.w $00F4
+    and.b (50,a4,d0.w),d1
     dc.w $3400
     move.w (14,a6),d1
+    dc.w $2E00
+    dc.w $0E33
     dc.w $3341
+    dc.w $4100
     dc.w $000E
+    dc.w $0E33
     dc.w $336E
-    dc.w $0012
-    dc.w $0012
+    bgt.w loc_004965
+    ori.b #$12,(a2)
+    dc.w $124E
     jsr loc_00EA7A
+    dc.w $B900
+    dc.w $00EA
+    moveq #-111,d5
     sub.w d0,(18,a1)
-loc_00376F:
     bvs.w loc_0049BF
     jsr loc_006722
     dc.w $B900
 loc_003775:
-    dc.w $0067
-    dc.w $2202
-    dc.w $0240
+    ori.w #$2202,-(a7)
+    andi.w #$003F,d0
     dc.w $4000
-    dc.w $003F
     dc.w $3FC1
     dc.w $C1C2
     dc.w $C2D1
@@ -7310,39 +6655,32 @@ loc_003775:
     bvs.w loc_0045CF
     jsr loc_006722
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
-    dc.w $0240
+    ori.w #$2202,-(a7)
+    andi.w #$001F,d0
     dc.w $4000
-    dc.w $001F
     dc.w $1F06
+loc_00378C:
     dc.w $0640
     dc.w $4000
-    dc.w $0010
+    ori.b #$69,(a0)
     dc.w $1091
-    sub.w d0,(18,a1)
-loc_003791:
     bvs.w loc_0049D5
-    dc.w $4269
+    ori.b #$69,(a2)
     bvs.w loc_00599F
-    dc.w $0022
-    dc.w $08E9
+    ori.b #$E9,-(a2)
     dc.w $E900
-    dc.w $0003
+    ori.b #$23,d3
     dc.w $0300
-    dc.w $0023
     dc.w $2308
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$22,d5
     dc.w $0500
-    dc.w $0022
     dc.w $2208
     dc.w $08E9
     dc.w $E900
-    dc.w $0005
+    ori.b #$23,d5
     dc.w $0500
-    dc.w $0023
     dc.w $234E
 loc_0037AA:
     jsr loc_00EBD6
@@ -7370,15 +6708,13 @@ loc_0037D3:
     add.b #$BC37,d6
     add.w a0,d5
     dc.w $E740
-    dc.w $0022
-    dc.w $3C00
+    ori.b #$00,-(a2)
 loc_0037E1:
-    dc.w $0010
-    dc.w $0030
+    ori.b #$30,(a0)
     dc.w $2E00
     dc.w $12B0
     bgt.w loc_004058
-    dc.w $0244
+    andi.w #$81D3,d4
 loc_0037EF:
     dc.w $81D3
     dc.w $AE00
@@ -7394,14 +6730,13 @@ loc_0037EF:
     dc.w $024E
     dc.w $7522
     dc.w $3C00
-    dc.w $0014
+    ori.b #$30,(a4)
 loc_00380D:
-    dc.w $0030
+    ori.b #$00,(-80,a0,d1.w)
     dc.w $2E00
     dc.w $12B0
     bgt.w loc_004082
-    dc.w $0244
-    dc.w $81D3
+    andi.w #$81D3,d4
     dc.w $AE00
     dc.w $1A20
 loc_00381F:
@@ -7414,22 +6749,19 @@ loc_00381F:
     add.w a6,d3
     dc.w $753D
     moveq #0,d6
-    dc.w $0000
-    dc.w $1E3C
+    ori.b #$3C,d0
     cmp.b ($3848).w,d6
     dc.w $E77F
     moveq #74,d7
     bgt.w loc_0056AE
     dc.w $0853
     bgt.w loc_0056A5
-    dc.w $0000
-    dc.w $9A3D
+    ori.b #$3D,d0
     moveq #0,d6
     dc.w $0F00
     dc.w $1E4E
     dc.w $B900
-    dc.w $0065
-    dc.w $4422
+    ori.w #$4422,-(a5)
     dc.w $4832
     cmp.b ($E833).w,d6
 loc_00385B:
@@ -7441,9 +6773,8 @@ loc_00385B:
     dc.w $E800
     dc.w $124E
     dc.w $B900
-    dc.w $0067
-    move.l (2,a2,d0.w),d1
-    dc.w $4100
+    ori.w #$2232,-(a7)
+    ori.b #$00,d2
     dc.w $3F06
     dc.w $4100
     dc.w $184E
@@ -7455,8 +6786,7 @@ loc_00387D:
     dc.w $C0D3
     bvs.w loc_0046D3
     dc.w $B900
-    dc.w $0067
-    dc.w $2202
+    ori.w #$2202,-(a7)
     dc.w $4000
 loc_00388F:
     dc.w $1F44
@@ -7484,21 +6814,18 @@ loc_0038B7:
     dc.w $2E00
     dc.w $2202
 loc_0038C1:
-    dc.w $0000
-    dc.w $0181
+    ori.b #$81,d0
     dc.w $2900
     dc.w $2208
     dc.w $E900
-    dc.w $0000
-    dc.w $2308
+    ori.b #$08,d0
     dc.w $E900
     dc.w $0300
     dc.w $2333
     bgt.w loc_0068D7
     dc.w $3053
     bgt.w loc_006743
-    dc.w $0242
-    dc.w $564C
+    andi.w #$564C,d2
     dc.w $DF7E
     dc.w $FE4E
     dc.w $753D
@@ -7522,38 +6849,30 @@ loc_003903:
     moveq #-48,d5
     bgt.w loc_0041C9
     bgt.w loc_004B8B
-    dc.w $0000
-    and.w a2,d0
+    ori.b #$4A,d0
     dc.w $79FF
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $3A00
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $004E
 loc_003955:
     dc.w $B900
-    dc.w $0065
-    dc.w $4466
-    dc.w $0000
-    dc.w $3C22
+    ori.w #$4466,-(a5)
+    ori.b #$22,d0
     dc.w $4832
     cmp.b (11314,a4),d6
     dc.w $2E00
@@ -7571,8 +6890,7 @@ loc_00396D:
     dc.w $1233
     moveq #0,d6
 loc_00397F:
-    dc.w $0200
-    dc.w $3C42
+    andi.b #$42,d0
     bvs.w loc_005B8D
     dc.w $E900
 loc_003989:
@@ -7587,8 +6905,7 @@ loc_003989:
     dc.w $B900
     dc.w $00E7
     dc.w $4867
-    dc.w $0000
-    dc.w $2C3D
+    ori.b #$3D,d0
     dc.w $4800
     dc.w $284E
     dc.w $B900
@@ -7658,27 +6975,22 @@ loc_003A0F:
     dc.w $07F0
     dc.w $01F0
     dc.w $05F0
-    dc.w $0030
-    dc.w $3C00
+    ori.b #$00,(78,a0,d4.l)
 loc_003A47:
     dc.w $4C4E
     dc.w $75A0
     dc.w $0FD8
     dc.w $01A0
     dc.w $07F8
-    dc.w $0030
+    ori.b #$00,(78,a0,d6.w)
 loc_003A52:
     move.w #$0064,d0
-    dc.w $3C00
-    bcc.s loc_003AA5
     rts
     dc.w $7528
     dc.w $0ED8
     dc.w $0128
     dc.w $06F8
-    dc.w $0030
-    dc.w $3C01
-    add.w a6,d0
+    ori.b #$01,(78,a0,a5.w)
     dc.w $75F8
     dc.w $05F8
     dc.w $00EC
@@ -7715,7 +7027,6 @@ loc_003A83:
     dc.w $0117
     bhi.s loc_003AF1
     dc.w $F900
-loc_003AA5:
     dc.w $0117
     or.w a6,d7
 loc_003AA9:
@@ -7784,15 +7095,19 @@ loc_003B17:
     dc.w $2E00
     dc.w $0C76
 loc_003B1F:
-    dc.w $0036
+    ori.b #$00,(-26,a6,d2.l)
 loc_003B21:
     dc.w $2E00
     dc.w $2AE6
     dc.w $4B0C
     dc.w $4300
     dc.w $046D
+loc_003B2A:
+    blt.s loc_003B30
     dc.w $0442
+    dc.w $4256
     dc.w $5660
+    bra.s loc_003B4E
     dc.w $1E0C
     dc.w $4300
     dc.w $036E
@@ -7816,9 +7131,7 @@ loc_003B21:
 loc_003B57:
     bra.s loc_003BAB
 loc_003B65:
-    dc.w $0036
-    dc.w $2E00
-    dc.w $2AE6
+    ori.b #$00,(-26,a6,d2.l)
     dc.w $4B0C
 loc_003B6D:
     dc.w $4300
@@ -7854,19 +7167,16 @@ loc_003BA2:
     moveq #96,d0
     bra.s loc_003BFB
     dc.w $526E
-    dc.w $002A
+    ori.b #$2E,(16,a2)
 loc_003BAB:
     move.l (0,a2,d2.l),d5
-    move.w (16,a6),d1
     dc.w $1034
     move.w (12,a6),d2
     dc.w $2E00
     dc.w $0C76
     moveq #0,d3
-    dc.w $0036
+    ori.b #$00,(-26,a6,d2.l)
     move.w (42,a6),d3
-    dc.w $2E00
-    dc.w $2AE6
     dc.w $E64B
     dc.w $4B0C
     cmpi.w #$0005,d3
@@ -7877,8 +7187,7 @@ loc_003BAB:
     dc.w $4256
     dc.w $5660
     bra.w loc_003C98
-    dc.w $0000
-    add.w a2,d1
+    ori.b #$4A,d0
 loc_003BC8:
     tst.w d3
     dc.w $4366
@@ -7900,8 +7209,7 @@ loc_003BD7:
     dc.w $004F
     add.w -(a0),d5
     bra.w loc_003C98
-    dc.w $0000
-    dc.w $B60C
+    ori.b #$0C,d0
     dc.w $4300
     dc.w $0166
     dc.w $2C43
@@ -7929,11 +7237,9 @@ loc_003C0D:
     add.w -(a0),d5
 loc_003C12:
     bra.w loc_003C98
-    dc.w $0000
-    or.b a4,d2
+    ori.b #$0C,d0
     dc.w $4300
-    dc.w $0266
-    dc.w $4043
+    andi.w #$4043,-(a6)
     dc.w $F900
     dc.w $003C
     dc.w $AE36
@@ -7973,15 +7279,12 @@ loc_003C4D:
     dc.w $004F
     add.w -(a0),d5
     bra.w loc_003C98
-    dc.w $0000
-loc_003C5B:
-    dc.w $3E43
+    ori.b #$43,d0
     dc.w $F900
     dc.w $003C
 loc_003C61:
     cmp.b (0,a6,d3.l),d5
-    dc.w $0006
-    dc.w $4305
+    ori.b #$05,d6
     bne.s loc_003CB9
     dc.w $B900
     dc.w $004F
@@ -8024,18 +7327,14 @@ loc_003C98:
     dc.w $00F8
 loc_003CA1:
     dc.w $0008
-    dc.w $0000
-    dc.w $0008
+    ori.b #$08,d0
 loc_003CA7:
     dc.w $0008
     dc.w $0008
-    dc.w $0010
-    dc.w $0000
+    ori.b #$00,(a0)
     dc.w $01F8
-    dc.w $0000
-    dc.w $0100
-    dc.w $0000
-    dc.w $0108
+    ori.b #$00,d0
+    ori.b #$08,d0
 loc_003CB8:
     dc.w $0800
 loc_003CB9:
@@ -8049,8 +7348,7 @@ loc_003CB9:
     moveq #96,d0
     bra.s loc_003D15
     dc.w $526E
-    dc.w $002A
-    move.w (16,a6),d1
+    ori.b #$2E,(16,a2)
 loc_003CC7:
     dc.w $2E00
 loc_003CC9:
@@ -8060,10 +7358,8 @@ loc_003CC9:
 loc_003CCD:
     dc.w $0C76
     moveq #0,d3
-    dc.w $0036
+    ori.b #$00,(-26,a6,d2.l)
     move.w (42,a6),d3
-    dc.w $2E00
-    dc.w $2AE6
     dc.w $E64B
     dc.w $4B0C
     cmpi.w #$0005,d3
@@ -8075,19 +7371,28 @@ loc_003CCD:
     dc.w $5660
 loc_003CDE:
     bra.w loc_003CFC
-    dc.w $0000
+    ori.b #$0C,d0
 loc_003CE1:
     dc.w $1C0C
+loc_003CE2:
+    cmpi.w #$0003,d3
     dc.w $4300
     dc.w $036E
+    bgt.s loc_003CFC
 loc_003CE7:
     dc.w $14C6
+    dc.w $C6FC
     dc.w $FC00
+    dc.w $000C
     cmpi.b #$01,d6
+    dc.w $0643
+    dc.w $0190
     sub.w d3,d0
+    lea loc_01BE34,a1
     dc.w $F900
     dc.w $01BE
     dc.w $344E
+    jsr loc_004FDA
     dc.w $B900
     dc.w $004F
     add.w a4,d5
@@ -8113,11 +7418,9 @@ loc_003D19:
     dc.w $0C30
     dc.w $2E00
 loc_003D1C:
-    dc.w $0030
+    ori.b #$F8,(-96,a0,a3.w)
     dc.w $30C0
-    dc.w $C0F8
     dc.w $F8B0
-    cmp.l -(a0),d0
     dc.w $A0D1
     add.w d0,(16,a6)
     bgt.w loc_004D55
@@ -8139,8 +7442,7 @@ loc_003D1C:
     moveq #96,d0
     bra.s loc_003D8D
     dc.w $526E
-    dc.w $002A
-    move.w (16,a6),d1
+    ori.b #$2E,(16,a2)
     move.w (12,a6),d2
     moveq #0,d3
     move.w (42,a6),d3
@@ -8164,9 +7466,8 @@ loc_003D6C:
     dc.w $344E
     jsr loc_004FDA
     dc.w $B900
-    dc.w $0000
+    ori.b #$DA,d0
     dc.w $004F
-    dc.w $4FDA
     add.w a4,d5
 loc_003D74:
     dc.w $4CDF
@@ -8217,107 +7518,137 @@ loc_003DBE:
     add.w d2,d0
     dc.w $42AE
     dc.w $AE00
-    dc.w $002C
+    ori.b #$6E,(56,a4)
     dc.w $2C42
-    dc.w $426E
     bgt.w loc_007606
-    dc.w $0038
     dc.w $3D6E
     bgt.w loc_0045CD
     dc.w $0008
-    dc.w $003A
+    ori.b #$E7,(24672,pc)
 loc_003DCF:
     dc.w $3A48
-    dc.w $48E7
     dc.w $E760
-    bra.s loc_003E34
     bra.s loc_003E05
+    move.w (44,a6),d0
+    dc.w $48E7
+    or.b d0,d0
+    andi.w #$0001,d0
+    bne.s loc_003DF0
+    move.w (16,a6),d1
+    move.w (12,a6),d2
+    jsr loc_01E19A
 loc_003DEB:
     dc.w $B900
     dc.w $01E1
     sub.w a4,d5
+loc_003DF0:
+    dc.w $4CDF
     dc.w $DF00
+    ori.b #$6E,d1
     dc.w $0152
     bgt.w loc_0069F9
+    ori.b #$40,(15,a4)
     dc.w $4000
     dc.w $0F66
-    dc.w $0000
-    moveq #48,d6
+    bne.w loc_003E7A
+    ori.b #$30,d0
+    move.w (46,a6),d0
     dc.w $2E00
     dc.w $2E54
+    dc.w $546E
 loc_003E05:
     bgt.w loc_006C27
+    ori.b #$6E,(48,a6)
     bgt.w loc_006E7D
-    dc.w $0074
-    dc.w $0012
-    dc.w $3000
-    dc.w $0014
-    dc.w $3000
+    moveq #0,d1
+    ori.w #$0012,(0,a4,d3.w)
+    moveq #0,d2
+    dc.w $1230
+    ori.b #$30,d0
+    ori.b #$00,(a4)
+    ori.b #$81,d1
     dc.w $0148
     dc.w $8148
+    dc.w $4882
     or.b a4,d1
+    cmpi.w #$0041,d1
     dc.w $4100
     dc.w $4167
-    dc.w $0000
-    sub.l (a2),d7
+    beq.w loc_003EC0
+    ori.b #$92,d0
+    sub.w ($B0B8).w,d1
     moveq #-80,d4
     cmp.l (a4),d4
+    sub.w ($B0BA).w,d2
     moveq #-80,d4
     dc.w $BAC2
+    dc.w $C2F8
     dc.w $F8B0
+    cmp.l -(a0),d0
 loc_003E2F:
     dc.w $A048
+    dc.w $4841
     dc.w $4192
+    sub.l (16,a6),d1
     dc.w $AE00
     dc.w $10E8
+    dc.w $E881
 loc_003E37:
     or.b d0,(16640,a5)
+    dc.w $2D41
+    ori.b #$F8,(a0)+
     dc.w $18C4
     dc.w $F8B0
+    cmp.l -(a0),d0
     dc.w $A048
+    dc.w $4842
     dc.w $4294
+    sub.l (12,a6),d2
     dc.w $AE00
     dc.w $0CE8
+    dc.w $E882
     or.b (16896,a5),d1
+    dc.w $2D42
+    ori.b #$3C,(a4)
     dc.w $1430
     dc.w $3C08
-    dc.w $0046
-    dc.w $40C1
+    dc.w $0800
+    ori.w #$40C1,d6
+    dc.w $4640
+    and.w d0,(8,a6)
     bgt.w loc_004716
+    and.w d0,(58,a6)
     bgt.w loc_007889
+    move.w #$1000,d0
     move.w (a0),d6
-    dc.w $0046
-    dc.w $40C1
+    ori.w #$40C1,d6
+    dc.w $4640
+    and.w d0,(8,a6)
     bgt.w loc_004724
+    and.w d0,(58,a6)
     bgt.w loc_0078B1
+    dc.w $4A6E
     bgt.w loc_0056D6
 loc_003E6A:
-    dc.w $0018
-    bmi.s loc_003E7A
+    ori.b #$0C,(a0)+
     cmpi.b #$08,d0
-    dc.w $006E
-    dc.w $0800
+    ori.w #$0800,(8,a6)
 loc_003E71:
-    dc.w $0000
-    dc.w $0008
-    dc.w $0800
-    dc.w $006E
+    ori.b #$00,d0
+    ori.w #$0800,(58,a6)
     bgt.s loc_003E7F
-    dc.w $0800
-    dc.w $0000
-    dc.w $003A
-    move.w (0,a0,d2.l),d5
+    ori.b #$30,d0
 loc_003E7A:
     move.w (56,a6),d0
+    dc.w $2E00
     dc.w $3852
     dc.w $526E
 loc_003E7F:
     bgt.w loc_007683
-    dc.w $0038
+    ori.b #$40,($0003).w
 loc_003E82:
-    dc.w $0240
+    andi.w #$0003,d0
     dc.w $4000
-    dc.w $0003
     dc.w $0366
     bne.s loc_003EA4
     dc.w $1C30
@@ -8327,16 +7658,13 @@ loc_003E82:
     add.w d0,(60,a6)
     bgt.w loc_007AFF
     moveq #0,d0
-    dc.w $0030
+    ori.b #$00,(-128,a0,d3.l)
     move.w (60,a6),d0
-    dc.w $2E00
-    dc.w $3C80
     dc.w $80FC
     dc.w $FC00
-    dc.w $0010
+    ori.b #$40,(a0)
 loc_003E99:
     dc.w $1048
-    dc.w $4840
     dc.w $40D0
     add.w (58,a6),d0
     bgt.w loc_0078DC
@@ -8356,6 +7684,8 @@ loc_003EA4:
     dc.w $14D1
     add.l d0,(12,a6)
     dc.w $AE00
+loc_003EB2:
+    dc.w $000C
     dc.w $0C4E
     jsr loc_004F86
     dc.w $B900
@@ -8422,19 +7752,15 @@ loc_003F4B:
     bgt.w loc_006FC3
 loc_003F51:
     dc.w $3072
-    dc.w $0074
-    dc.w $0012
-    dc.w $3000
-    dc.w $0014
-    dc.w $3000
+    ori.w #$0012,(0,a4,d3.w)
+    ori.b #$00,(a4)
     dc.w $0148
     dc.w $8148
     or.b a4,d1
     dc.w $4100
     dc.w $4167
 loc_003F67:
-    dc.w $0000
-    sub.l (a2),d7
+    ori.b #$92,d0
     moveq #-80,d4
     cmp.l (a4),d4
 loc_003F6F:
@@ -8456,22 +7782,19 @@ loc_003F73:
     or.b (16896,a5),d1
     dc.w $1430
     dc.w $3C08
-    dc.w $0046
-    dc.w $40C1
+    ori.w #$40C1,d6
     bgt.w loc_00485C
     bgt.w loc_0079CF
     move.w (a0),d6
-    dc.w $0046
-    dc.w $40C1
+    ori.w #$40C1,d6
     bgt.w loc_00486A
     bgt.w loc_0079F7
     bgt.w loc_00581C
     cmpi.b #$08,d0
-    dc.w $0000
-    dc.w $0800
+    ori.b #$00,d0
     bgt.s loc_003FC5
-    dc.w $0000
-    move.w (0,a0,d2.l),d5
+    ori.b #$30,d0
+    dc.w $2E00
     dc.w $3852
 loc_003FC5:
     bgt.w loc_0077C9
@@ -8481,9 +7804,7 @@ loc_003FC5:
     dc.w $2E00
     dc.w $36D1
     bgt.w loc_007C45
-    dc.w $0030
-    dc.w $2E00
-    dc.w $3C80
+    ori.b #$00,(-128,a0,d3.l)
     dc.w $FC00
     dc.w $1048
 loc_003FE1:
@@ -8523,17 +7844,13 @@ loc_00401D:
     dc.w $103D
     bvc.w loc_004C29
     dc.w $0C70
-    dc.w $0030
-    dc.w $2E00
-    dc.w $3EC0
+    ori.b #$00,(-64,a0,d3.l)
     dc.w $F8B0
     dc.w $A0E8
     dc.w $803D
     dc.w $4000
     dc.w $1870
-    dc.w $0030
-    dc.w $2E00
-    dc.w $40C0
+    ori.b #$00,(-64,a0,d4.w)
     dc.w $F8B0
     dc.w $A0E8
     dc.w $803D
@@ -8544,10 +7861,97 @@ loc_00401D:
     bgt.w loc_006C95
 loc_004055:
     bgt.w loc_006E94
+loc_004058:
+    dc.w $3D6E
     bgt.w loc_00485B
+    dc.w $0008
+    ori.b #$E7,(24672,pc)
     dc.w $3A48
     dc.w $E760
     bra.s loc_004093
+    move.w #$0800,d0
+    dc.w $4640
+    and.w d0,(8,a6)
+    and.w d0,(58,a6)
+    move.w #$1000,d0
+    dc.w $4640
+    and.w d0,(8,a6)
+    and.w d0,(58,a6)
+    dc.w $4A6E
+    ori.b #$0C,(a0)+
+loc_004082:
+    bmi.s loc_004090
+    ori.w #$0800,(8,a6)
+    ori.w #$0800,(58,a6)
+loc_004090:
+    move.w (56,a6),d0
+loc_004093:
+    dc.w $3852
+    dc.w $526E
+    bgt.w loc_007899
+    ori.b #$40,($0003).w
+    dc.w $4000
+    dc.w $0366
+    bne.s loc_0040BA
+    dc.w $1C30
+    move.w (54,a6),d0
+    dc.w $2E00
+    dc.w $36D1
+    add.w d0,(60,a6)
+    bgt.w loc_007D15
+    moveq #0,d0
+    ori.b #$00,(-128,a0,d3.l)
+    move.w (60,a6),d0
+    dc.w $80FC
+    dc.w $FC00
+    ori.b #$40,(a0)
+    dc.w $1048
+    dc.w $40D0
+    add.w (58,a6),d0
+    bgt.w loc_007AF2
+    dc.w $3D40
+    dc.w $4000
+    dc.w $0008
+    dc.w $0853
+loc_0040BA:
+    dc.w $536E
+    bgt.w loc_006B28
+    ori.b #$1C,(8238,a2)
+    dc.w $1C20
+    dc.w $2E00
+    ori.b #$AE,(a0)+
+    dc.w $18D1
+    dc.w $AE00
+    ori.b #$2E,(a0)
+    dc.w $1020
+    dc.w $2E00
+    ori.b #$AE,(a4)
+    dc.w $14D1
+    dc.w $AE00
+    dc.w $000C
+    dc.w $0C4E
+    jsr loc_004F86
+    dc.w $B900
+    dc.w $004F
+    or.w a4,d3
+    dc.w $4CDF
+    dc.w $DF06
+    dc.w $0606
+    dc.w $064E
+    rts
+    dc.w $7542
+    dc.w $564C
+    dc.w $DF06
+    dc.w $064E
+    dc.w $7553
+    bgt.w loc_007552
+    dc.w $024E
+    dc.w $753C
+    dc.w $BC40
+    dc.w $FA42
+    bgt.w loc_006D30
+    bgt.w loc_0048F7
+    dc.w $3A48
 loc_0040FB:
     dc.w $E760
     bra.s loc_00412F
@@ -8563,8 +7967,7 @@ loc_004133:
     dc.w $2E00
     dc.w $36D1
     bgt.w loc_007DBB
-    dc.w $0030
-    dc.w $2E00
+    ori.b #$00,(-128,a0,d3.l)
 loc_004151:
     dc.w $3C80
     dc.w $FC00
@@ -8602,9 +8005,7 @@ loc_004177:
     dc.w $E760
     bra.s loc_0041C5
 loc_0041AD:
-    dc.w $0030
-    dc.w $2E00
-    dc.w $3652
+    ori.b #$00,(82,a0,d3.w)
     bgt.w loc_0077B7
 loc_0041B7:
     dc.w $4000
@@ -8619,13 +8020,12 @@ loc_0041C8:
     dc.w $0008
 loc_0041C9:
     dc.w $0800
-    dc.w $006E
+    ori.w #$0800,(8,a6)
     bgt.s loc_0041D5
 loc_0041CC:
     dc.w $0800
-    dc.w $0000
+    ori.b #$4E,d0
     dc.w $0008
-    dc.w $084E
     jsr loc_004F86
     dc.w $B900
     dc.w $004F
@@ -8657,18 +8057,15 @@ loc_004207:
     dc.w $2E54
     bgt.w loc_007031
     bgt.w loc_007287
-    dc.w $0074
-    dc.w $0012
+    ori.w #$0012,(0,a4,d3.w)
 loc_00421B:
     dc.w $3000
 loc_00421D:
-    dc.w $0014
+    ori.b #$00,(a4)
 loc_00421E:
     dc.w $1430
-    dc.w $3000
-    dc.w $0001
+    ori.b #$81,d1
     dc.w $0148
-    dc.w $4881
     dc.w $8148
     dc.w $4882
     dc.w $823D
@@ -8684,39 +8081,32 @@ loc_00422D:
     dc.w $48E7
     dc.w $E7E0
     dc.w $E000
-    dc.w $0055
+    ori.w #$4012,(a5)
     subq.w #2,d0
-    dc.w $4012
     dc.w $1230
     dc.w $3000
-    dc.w $0000
-    dc.w $0014
-    dc.w $1430
-    dc.w $3000
-    dc.w $0001
+    ori.b #$30,d0
+    ori.b #$00,(a4)
+    ori.b #$81,d1
     dc.w $0148
-    dc.w $4881
     dc.w $8148
     dc.w $4882
     dc.w $823D
     dc.w $3D41
     dc.w $4100
-    dc.w $0038
+    ori.b #$42,($003A).w
     dc.w $383D
-    dc.w $3D42
     clr.b d0
-    dc.w $003A
     dc.w $3A4C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0007
+    ori.b #$41,d7
     dc.w $070C
-    cmpi.w #$0041,d1
     dc.w $4100
+    ori.w #$6700,d1
     dc.w $4167
-    beq.w loc_0042DE
-    dc.w $0000
-    or.l (a2),d6
+    ori.b #$92,d0
+    dc.w $008C
     sub.w ($B0B8).w,d1
     moveq #-80,d4
     cmp.l (a4),d4
@@ -8736,9 +8126,8 @@ loc_004258:
     dc.w $EC81
     or.b d0,(16640,a5)
     dc.w $2D41
-    dc.w $0018
+    ori.b #$F8,(a0)+
     dc.w $18C4
-    dc.w $C4F8
     dc.w $F8B0
     cmp.l -(a0),d0
 loc_00426F:
@@ -8751,30 +8140,26 @@ loc_00426F:
     dc.w $EC82
     or.b (16896,a5),d1
     dc.w $2D42
-    dc.w $0014
+    ori.b #$2E,(a4)
     dc.w $1430
-    move.w (66,a6),d0
     dc.w $2E00
+    ori.w #$0240,d2
     clr.b d2
-    dc.w $0240
     dc.w $4000
-    dc.w $0003
+    ori.b #$3C,d3
     dc.w $0366
-    bne.s loc_0042C2
     dc.w $3C70
     moveq #0,d0
-    dc.w $0030
+    ori.b #$00,(82,a0,d3.w)
     move.w (54,a6),d0
-    dc.w $2E00
 loc_00428A:
-    dc.w $0036
-    dc.w $3652
+    ori.b #$6E,(54,a6,d0.w)
     dc.w $526E
     bgt.w loc_00790F
-    dc.w $0036
+    ori.b #$FC,(3,a6,d0.w)
     dc.w $80FC
     dc.w $FC00
-    dc.w $0003
+    ori.b #$40,d3
     dc.w $0348
     dc.w $4840
     dc.w $404A
@@ -8784,8 +8169,7 @@ loc_00428A:
     dc.w $083D
     dc.w $3D6E
     bgt.w loc_00829D
-    dc.w $0040
-    dc.w $0008
+    ori.w #$0008,d0
     dc.w $0860
     bra.s loc_0042C2
     dc.w $200C
@@ -8800,8 +8184,7 @@ loc_00428A:
     bgt.w loc_0082B9
     dc.w $0800
     bgt.s loc_0042C7
-    dc.w $0000
-    dc.w $0820
+    ori.b #$20,d0
     dc.w $2E00
     dc.w $18D1
 loc_0042C7:
@@ -8827,9 +8210,7 @@ loc_0042F9:
     dc.w $4000
     dc.w $0366
     dc.w $3C70
-    dc.w $0030
-    dc.w $2E00
-    dc.w $3652
+    ori.b #$00,(82,a0,d3.w)
     bgt.w loc_007987
     dc.w $FC00
     dc.w $0348
@@ -8852,17 +8233,14 @@ loc_004327:
     bgt.w loc_008331
     dc.w $0800
     bgt.s loc_00433F
-    dc.w $0000
-    dc.w $0822
+    ori.b #$22,d0
     dc.w $2800
     dc.w $1024
 loc_00433F:
     dc.w $2800
     cmpi.b #$00,d4
     dc.w $2000
-    dc.w $002D
-    dc.w $4100
-    dc.w $102D
+    ori.b #$00,(4141,a5)
     clr.b d0
     dc.w $0C4E
     dc.w $B900
@@ -8879,9 +8257,7 @@ loc_00433F:
     bra.s loc_004399
 loc_00437B:
     dc.w $3C70
-    dc.w $0030
-    dc.w $2E00
-    dc.w $3652
+    ori.b #$00,(82,a0,d3.w)
     bgt.w loc_007A05
     dc.w $FC00
     dc.w $0348
@@ -8900,32 +8276,41 @@ loc_004399:
 loc_0043A4:
     dc.w $066E
     bgt.w loc_0073A7
-    dc.w $0030
-    dc.w $0008
+    ori.b #$08,(12,a0,d6.w)
     dc.w $0860
-    bra.s loc_0043B8
     dc.w $0C3D
+    dc.w $3D6E
     bgt.w loc_0083AF
+    ori.w #$0008,d0
     dc.w $0800
+    ori.w #$0800,(8,a6)
     bgt.s loc_0043BD
-    dc.w $0000
-    dc.w $0822
+    ori.b #$22,d0
+    move.l (16,a0),d1
     dc.w $2800
     dc.w $1024
+    move.l (12,a0),d2
 loc_0043BD:
     dc.w $2800
     cmpi.b #$00,d4
+    dc.w $0482
+    ori.b #$00,-(a0)
     dc.w $2000
-    dc.w $002D
-    dc.w $4100
-    dc.w $102D
+    ori.b #$00,(4141,a5)
+    dc.w $2D41
+    ori.b #$42,(a0)
     clr.b d0
+    dc.w $000C
     dc.w $0C4E
+    jsr loc_004F86
     dc.w $B900
     dc.w $004F
     or.w a4,d3
+    dc.w $4CDF
     dc.w $DF06
+    dc.w $0606
     dc.w $064E
+    rts
     dc.w $7542
     dc.w $564C
     dc.w $DF06
@@ -8934,91 +8319,106 @@ loc_0043DF:
     dc.w $754E
 loc_0043E3:
     dc.w $F900
-    dc.w $0200
+    andi.b #$4E,d0
 loc_0043E7:
     add.w a6,d3
     dc.w $F900
-    dc.w $0200
-    dc.w $F44E
+    andi.b #$4E,d0
     dc.w $F900
-    dc.w $0201
-    dc.w $544E
+    andi.b #$4E,d1
     dc.w $F900
-    dc.w $0201
-    moveq #78,d1
+    andi.b #$4E,d1
     dc.w $F900
 loc_0043FD:
-    dc.w $0201
-    dc.w $F24E
+    andi.b #$4E,d1
     dc.w $F900
-    dc.w $0202
-    dc.w $124E
+    andi.b #$4E,d2
     dc.w $F900
-    dc.w $0202
-    dc.w $3A4E
+    andi.b #$4E,d2
     dc.w $F900
-    dc.w $0203
-    and.w a6,d6
+    andi.b #$4E,d3
     dc.w $F900
-    dc.w $0203
-    dc.w $E64E
+    andi.b #$4E,d3
     dc.w $F900
-    dc.w $0203
+    andi.b #$4E,d3
 loc_00441D:
     dc.w $F64E
     dc.w $F900
-    dc.w $0204
-    dc.w $1C4E
+    andi.b #$4E,d4
     dc.w $F900
-    dc.w $0204
-    dc.w $3E4E
+    andi.b #$4E,d4
     dc.w $F900
-    dc.w $0204
-    dc.w $4E4E
+    andi.b #$4E,d4
     dc.w $F900
-    dc.w $0204
-    moveq #78,d6
+    andi.b #$4E,d4
     dc.w $F900
-    dc.w $0228
-    bpl.s loc_00448B
+    andi.b #$4E,(-1792,a0)
 loc_00443D:
     dc.w $F900
-    dc.w $022B
+    andi.b #$4E,(-1792,a3)
 loc_004441:
     dc.w $064E
 loc_004442:
     jmp loc_022B38
     dc.w $F900
-    dc.w $022B
-    dc.w $384E
-    dc.w $F900
-    dc.w $022B
-    add.w a6,d0
-    dc.w $F900
-    dc.w $022D
-    add.w a6,d3
-    dc.w $F900
-    dc.w $0231
-    moveq #78,d0
-    dc.w $F900
-    dc.w $0231
-    moveq #78,d6
-    dc.w $F900
-    dc.w $0231
-    and.w a6,d2
-    dc.w $F900
-    dc.w $0231
-    dc.w $E820
-    bgt.w loc_00469D
-    dc.w $1867
-    dc.w $2A23
+    andi.b #$4E,(-1792,a3)
+    andi.b #$4E,(-1792,a3)
+    andi.b #$4E,(-1792,a5)
+    andi.b #$4E,(0,a1,a7.l)
+    andi.b #$4E,(0,a1,a7.l)
+    andi.b #$4E,(0,a1,a7.l)
+    andi.b #$20,(0,a1,d6.l)
+    andi.b #$67,(10787,a6)
     dc.w $D8FF
     dc.w $FFC3
     dc.w $1A4E
     bra.s loc_0044AC
 loc_0044AA:
     jmp loc_02355A
+loc_0044AC:
+    ori.b #$5A,d2
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+loc_0044BC:
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
 loc_0044F9:
+    dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFFF
     dc.w $FFFF
     dc.w $FFFF
     dc.w $FFFF
@@ -9026,31 +8426,23 @@ loc_0044F9:
 loc_004500:
     lea loc_000000,a1
     dc.w $F800
-    dc.w $002E
+    ori.b #$22,(20814,a6)
     dc.w $2E59
-    dc.w $5922
     dc.w $2251
-    dc.w $514E
     jmp (a1)
     dc.w $D14A
 loc_00450A:
     dc.w $4AB9
     dc.w $B900
-    dc.w $00A1
+    ori.l #$00086606,-(a1)
     dc.w $A100
-    dc.w $0008
     dc.w $0866
-    bne.s loc_004518
     dc.w $064A
     dc.w $4A79
     dc.w $7900
-    dc.w $00A1
+    ori.l #$000C667C,-(a1)
     dc.w $A100
-    dc.w $000C
     dc.w $0C66
-loc_004518:
-    bne.s loc_004596
-loc_004519:
     moveq #75,d6
     lea (124,pc),a5
 loc_00451B:
@@ -9063,15 +8455,12 @@ loc_00451B:
     dc.w $4CDD
     add.b d6,(a7)+
     dc.w $1F00
-    dc.w $0010
+    ori.b #$EF,(a0)
     dc.w $1029
-    dc.w $29EF
     dc.w $EF01
     dc.w $0102
-    dc.w $0200
-    dc.w $0000
-    dc.w $000F
-    dc.w $0F67
+    andi.b #$0F,d0
+    ori.b #$67,d0
     beq.s loc_004538
     dc.w $0823
     dc.w $237C
@@ -9081,12 +8470,10 @@ loc_00451B:
     dc.w $4741
     dc.w $412F
     dc.w $2F00
-    dc.w $0030
+    ori.b #$70,(44,a0,d0.w)
 loc_004538:
     move.w (a4),d0
-    dc.w $1470
     moveq #0,d0
-    dc.w $002C
     dc.w $2C40
     dc.w $404E
     dc.w $4E66
@@ -9130,7 +8517,7 @@ loc_00455C:
     or.b d3,(81,a5)
     dc.w $2D00
 loc_004567:
-    dc.w $0051
+    ori.w #$CEFF,(a1)
 loc_004568:
     dbra d6,loc_004568
     dc.w $CEFF
@@ -9160,11 +8547,10 @@ loc_00457E:
     dc.w $0317
     dc.w $175D
     subq.b #6,d0
-loc_004586:
-    dc.w $0011
+    ori.b #$CD,(a1)
     dc.w $1151
-    dbra d5,loc_004586
     dc.w $CDFF
+    dc.w $FFFA
     dc.w $FA34
     dc.w $3480
     or.w a4,d0
@@ -9176,65 +8562,50 @@ loc_00458E:
     dc.w $46FC
     dc.w $FC27
     dc.w $2700
-    dc.w $0060
-loc_004596:
+    ori.w #$6C80,-(a0)
     bra.s loc_004604
-    bge.s loc_004519
     dc.w $003F
     dc.w $FF01
-    dc.w $0000
-    dc.w $A000
-    dc.w $0000
-    dc.w $A111
-    dc.w $0000
-    dc.w $A112
+    ori.b #$00,d0
+    ori.b #$11,d0
+    ori.b #$12,d0
 loc_0045A8:
     dc.w $1200
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $00C0
-    and.b d0,d0
-    dc.w $0000
-    dc.w $0000
-    dc.w $00C0
-    and.b d0,d0
-    dc.w $0004
+    ori.b #$C0,d0
+    ori.b #$00,d0
+    ori.b #$14,d4
     dc.w $0404
-    dc.w $0414
 loc_0045B3:
     dc.w $1430
     move.w #$076C,d0
     dc.w $3C07
     bge.w loc_0045B9
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $00FF
     dc.w $FF00
 loc_0045BD:
-    dc.w $0081
+    ori.l #$37000101,d1
     or.b d0,(1,a7,d0.w)
-    dc.w $3700
-    dc.w $0101
     dc.w $0100
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF00
-    dc.w $0000
-    dc.w $0080
-    or.w d0,d0
-    dc.w $4000
-    dc.w $0000
-    dc.w $0080
+    ori.b #$40,d0
+    ori.l #$40000080,d0
+    ori.b #$AF,d0
 loc_0045CD:
     or.l (473,a7),d0
     dc.w $AF01
+loc_0045CF:
+    dc.w $01D9
     add.b d4,(a7)+
     dc.w $1F11
     dc.w $1127
     dc.w $2700
-    dc.w $0021
+    ori.b #$00,-(a1)
     dc.w $2126
-    dc.w $2600
     dc.w $00F9
     dc.w $F977
     dc.w $77ED
@@ -9270,14 +8641,10 @@ loc_0045E9:
     dc.w $8F02
     dc.w $02C0
     and.b d0,d0
-    dc.w $0000
-    dc.w $0000
-    dc.w $0040
-    dc.w $4000
-    dc.w $0000
-    dc.w $0010
-    dc.w $109F
-    dc.w $9FBF
+    ori.b #$40,d0
+    ori.b #$00,d0
+    ori.b #$9F,d0
+    ori.b #$BF,(a0)
     dc.w $BFDF
     dc.w $DFFF
     dc.w $FF4A
@@ -9286,20 +8653,15 @@ loc_004604:
     dc.w $7900
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$39,d4
     dc.w $0430
-loc_00460A:
-    dc.w $3039
     dc.w $3900
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$00,d4
     dc.w $0408
-    dc.w $0800
-    dc.w $0000
-    dc.w $0001
-    dc.w $0166
-    bne.s loc_00460A
+    ori.b #$66,d0
+    ori.b #$F4,d1
     dc.w $F446
     dc.w $46FC
     dc.w $FC27
@@ -9315,9 +8677,8 @@ loc_00460A:
     dc.w $FFFE
     dc.w $FE00
 loc_004623:
-    dc.w $0067
+    ori.w #$0000,-(a7)
     beq.w loc_004678
-    dc.w $0000
     addq.w #1,d1
     lea loc_0001A4,a0
     dc.w $F801
@@ -9331,14 +8692,12 @@ loc_00462A:
     lea loc_000200,a0
 loc_004631:
     dc.w $F802
-    dc.w $0090
+    ori.l #$88E28034,(a0)
     sub.l a0,d0
-    dc.w $88E2
     dc.w $E280
-    or.b (83,a4,d0.w),d0
     dc.w $3400
+    ori.w #$4248,(a3)
     subq.w #1,d2
-    dc.w $4248
     dc.w $4840
     dc.w $4072
     moveq #0,d1
@@ -9365,16 +8724,13 @@ loc_00464D:
 loc_004655:
     dc.w $5066
     bne.w loc_004840
-    dc.w $0001
-    dc.w $E843
+    ori.b #$43,d1
 loc_00465A:
     lea loc_FFFE00,a1
     dc.w $F900
     dc.w $FFFE
-    dc.w $0032
+    ori.b #$00,(66,a2,d7.l)
     move.w #$007F,d1
-    dc.w $3C00
-    dc.w $7F42
     dc.w $4299
     sub.w d4,(a1)
 loc_004666:
@@ -9391,22 +8747,17 @@ loc_004669:
     dc.w $FFFF
     dc.w $FFFE
     dc.w $FE00
-    dc.w $0060
+    ori.w #$0000,-(a0)
     bra.w loc_004678
-    dc.w $0000
-    dc.w $0246
+    andi.w #$FC27,d6
 loc_004678:
     dc.w $46FC
-    dc.w $FC27
     dc.w $2700
-    dc.w $0043
+    ori.w #$F900,d3
     lea loc_FF0000,a1
-    dc.w $F900
     dc.w $FF00
-    dc.w $0032
+    ori.b #$3F,(66,a2,d7.l)
     move.w #$3F7F,d1
-    dc.w $3C3F
-    dc.w $7F42
     dc.w $4299
     sub.w d4,(a1)
 loc_004688:
@@ -9414,36 +8765,27 @@ loc_004688:
     dc.w $C9FF
     dc.w $FC61
     bsr.w loc_004A60
-    dc.w $0003
-    add.w -(a1),d1
+    ori.b #$61,d3
     bsr.w loc_0048F0
-    dc.w $0002
-    dc.w $5E61
+    ori.b #$61,d2
     bsr.w loc_00488C
-    dc.w $0001
-    dc.w $F661
+    ori.b #$61,d1
     bsr.w loc_0058F2
-    dc.w $0012
-    dc.w $5861
+    ori.b #$61,(a2)
     bsr.w loc_004F36
-loc_00469D:
     dc.w $0008
     sub.w -(a1),d4
     bsr.w loc_0048D6
-    dc.w $0002
-    dc.w $3461
+    ori.b #$61,d2
     bsr.w loc_004946
-    dc.w $0002
-    dc.w $A061
+    ori.b #$61,d2
     bsr.w loc_005330
     dc.w $000C
     or.w -(a1),d3
     bsr.w loc_004AB6
-    dc.w $0004
-    dc.w $0861
+    ori.b #$61,d4
     bsr.w loc_006416
-    dc.w $001D
-    bcc.s loc_0046D8
+    ori.b #$23,(a5)+
 loc_0046B4:
     dc.w $23FC
     dc.w $FCFF
@@ -9458,9 +8800,8 @@ loc_0046B4:
     dc.w $23FC
 loc_0046BF:
     dc.w $FC00
-    dc.w $0000
-    dc.w $0068
-    bvc.s loc_0046EC
+    ori.b #$28,d0
+    ori.w #$28FF,(-128,a0)
 loc_0046C3:
     dc.w $28FF
     dc.w $FFFF
@@ -9469,8 +8810,7 @@ loc_0046C3:
     dc.w $1020
     move.l #$00006754,d0
     dc.w $3C00
-    dc.w $0067
-    dc.w $544E
+    ori.w #$544E,-(a7)
     jsr loc_00485E
     dc.w $B900
     dc.w $0048
@@ -9481,68 +8821,61 @@ loc_0046D4:
     dc.w $FC27
     dc.w $2700
     dc.w $004A
-loc_0046D8:
     dc.w $4A79
     dc.w $79FF
     dc.w $FFFF
     dc.w $FF80
     or.b d2,d0
-    dc.w $0267
+    andi.w #$2423,-(a7)
     beq.s loc_004704
-    dc.w $2423
     dc.w $23FC
     dc.w $FCC0
     and.w a6,d0
     dc.w $4E00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00C0
-    and.b d0,d0
-    dc.w $0004
+    ori.b #$C0,d0
+    ori.b #$00,d0
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC08
-loc_0046EC:
     dc.w $0888
     or.b d0,d4
     dc.w $00C0
     and.b d0,d0
-    dc.w $0000
-    dc.w $0023
-    dc.w $23FC
-    dc.w $FCC0
+    ori.b #$FC,d0
+    ori.b #$C0,-(a3)
     and.w (0,a6),d0
     bgt.w loc_0046F7
+loc_0046F7:
+    ori.b #$00,d0
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC08
     dc.w $0888
     or.b d0,d4
     dc.w $00C0
     and.b d0,d0
-    dc.w $0000
+    ori.b #$20,d0
 loc_004703:
-    dc.w $0060
+    ori.w #$2008,-(a0)
 loc_004704:
     bra.s loc_004726
-    dc.w $2008
+    dc.w $0838
     dc.w $3800
-    dc.w $0280
-    sub.w -(a7),d2
-    dc.w $1808
+    ori.b #$94,d2
+    andi.l #$94671808,d0
+    beq.s loc_004726
+    dc.w $0838
     dc.w $3800
-    dc.w $0080
-    sub.w -(a7),d2
-    dc.w $1008
+    ori.b #$94,d0
+    ori.l #$94671008,d0
+    beq.s loc_004726
 loc_004716:
     dc.w $0838
     dc.w $3800
-    dc.w $0007
+    ori.b #$95,d7
     dc.w $0780
-    or.l (a5),d0
     sub.w d2,-(a7)
     beq.s loc_004726
     dc.w $080A
@@ -9568,8 +8901,7 @@ loc_00472F:
 loc_004731:
     dc.w $3061
     bsr.w loc_005B62
-    dc.w $0014
-    dc.w $2E61
+    ori.b #$61,(a4)
     bsr.w loc_004F50
     dc.w $0008
     dc.w $1842
@@ -9595,14 +8927,11 @@ loc_004748:
     dc.w $4E32
     move.w #$0000,d1
     dc.w $3C00
-    dc.w $0034
+    ori.b #$00,(78,a4,d1.w)
     move.w #$0010,d2
-    dc.w $3C00
-    dc.w $104E
     jsr loc_006432
     dc.w $B900
-    dc.w $0064
-    dc.w $3222
+    ori.w #$3222,-(a4)
     dc.w $2279
     dc.w $79FF
     dc.w $FFFF
@@ -9618,16 +8947,15 @@ loc_004748:
     dc.w $104E
     jsr loc_006432
     dc.w $B900
-    dc.w $0064
-    move.w (0,a2,d3.l),d1
+    ori.w #$3232,-(a4)
     move.w #$0020,d1
+    dc.w $3C00
     move.l (0,a4,d3.l),d0
     move.w #$0008,d2
     dc.w $084E
     jsr loc_006432
     dc.w $B900
-    dc.w $0064
-    dc.w $3261
+    ori.w #$3261,-(a4)
     bsr.w loc_0052E8
     dc.w $000B
     bvc.s loc_0047CD
@@ -9653,10 +8981,8 @@ loc_00478E:
     dc.w $100C
     cmpi.l #$00006BEA,d1
     dc.w $8100
-    dc.w $006B
-    dc.w $EA67
+    ori.w #$EA67,(2126,a3)
     beq.s loc_0047A4
-    dc.w $084E
     jsr loc_004878
     dc.w $B900
     dc.w $0048
@@ -9665,106 +8991,83 @@ loc_00478E:
     dc.w $EA61
 loc_0047A4:
     bsr.w loc_00496E
-    dc.w $0001
-    and.w a2,d4
+    ori.b #$4A,d1
     dc.w $4A79
     dc.w $79FF
     dc.w $FFFF
     dc.w $FF80
     or.b d2,d0
-    dc.w $0267
+    andi.w #$2423,-(a7)
     beq.s loc_0047D4
-    dc.w $2423
     dc.w $23FC
     dc.w $FCC0
     and.w a6,d0
     dc.w $4E00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00C0
-    and.b d0,d0
-    dc.w $0004
+    ori.b #$C0,d0
+    ori.b #$00,d0
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00C0
-    and.b d0,d0
-    dc.w $0000
-    dc.w $0023
-    dc.w $23FC
-    dc.w $FCC0
+    ori.b #$C0,d0
+    ori.b #$00,d0
+    ori.b #$FC,d0
+    ori.b #$C0,-(a3)
     and.w (0,a6),d0
     bgt.w loc_0047C7
+loc_0047C7:
+    ori.b #$00,d0
 loc_0047C8:
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
 loc_0047CD:
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00C0
-    and.b d0,d0
-    dc.w $0000
-    dc.w $0061
-loc_0047D4:
-    bsr.w loc_004816
-    dc.w $0000
+    ori.b #$C0,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.w #$0000,-(a1)
+    ori.w #$4A79,d0
     dc.w $404A
-    dc.w $4A79
     dc.w $79FF
     dc.w $FFFF
     dc.w $FF80
     or.b d2,d0
-    dc.w $0267
+    andi.w #$2423,-(a7)
     beq.s loc_004804
-    dc.w $2423
     dc.w $23FC
     dc.w $FCC0
     and.w a6,d0
     dc.w $4E00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00C0
-    and.b d0,d0
-    dc.w $0004
+    ori.b #$C0,d0
+    ori.b #$00,d0
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC08
 loc_0047EC:
     dc.w $0800
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $00C0
-    and.b d0,d0
-    dc.w $0000
-    dc.w $0023
-    dc.w $23FC
-    dc.w $FCC0
+    ori.b #$FC,d0
+    ori.b #$C0,-(a3)
     and.w (0,a6),d0
     bgt.w loc_0047F7
+loc_0047F7:
+    ori.b #$00,d0
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC08
     dc.w $0800
-    dc.w $0000
+    ori.b #$00,d0
     dc.w $00C0
-    and.b d0,d0
-    dc.w $0000
-    dc.w $0061
-loc_004804:
-    bsr.w loc_00534A
-    dc.w $000B
+    ori.b #$00,d0
+    ori.w #$000B,-(a1)
+    dc.w $0B44
     dc.w $4461
     bsr.w loc_004AB6
-    dc.w $0002
-    dc.w $AC52
+    ori.b #$52,d2
     dc.w $5279
     dc.w $79FF
     dc.w $FFFF
@@ -9776,16 +9079,14 @@ loc_004811:
     dc.w $00FE
     and.w d6,d0
     dc.w $FC20
-    dc.w $0042
-    dc.w $79FF
+    ori.w #$79FF,d2
     dc.w $FF80
 loc_00481F:
-    dc.w $0052
-    cmp.l (28234,a6),d4
+    ori.w #$B8AE,(a2)
+    bgt.s loc_00486F
     dc.w $79FF
     dc.w $FF80
-    dc.w $0067
-    dc.w $F44E
+    ori.w #$F44E,-(a7)
     dc.w $754A
 loc_00482E:
     dc.w $4A79
@@ -9794,13 +9095,11 @@ loc_00482F:
     dc.w $00C0
     and.b d0,d0
 loc_004832:
-    dc.w $0004
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FF80
     or.b d0,d0
     dc.w $004E
@@ -9813,29 +9112,24 @@ loc_004840:
     dc.w $23FC
     dc.w $FCC0
     and.b d0,d0
-    dc.w $0000
-    dc.w $0000
-loc_004845:
-    dc.w $0000
-    dc.w $00C0
+    ori.b #$00,d0
+    ori.b #$C0,d0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$3C,d4
     dc.w $0432
-    move.w #$003F,d1
     dc.w $3C00
+    dc.w $003F
     dc.w $3F33
     dc.w $33FC
     dc.w $FC00
-loc_004850:
     dc.w $000E
     dc.w $0E00
     dc.w $00C0
 loc_004853:
     and.b d0,d0
-    dc.w $0000
-    dc.w $0051
-    dbra d1,loc_004850
-    dc.w $C9FF
+    ori.b #$C9,d0
+    ori.w #$C9FF,(a1)
+    dc.w $FFF6
     dc.w $F64E
 loc_00485A:
     nop
@@ -9906,16 +9200,13 @@ loc_00488C:
     dc.w $0048
     cmp.b (0,a2,d3.l),d0
     move.w #$0000,d1
-    dc.w $0036
+    ori.b #$00,(52,a6,d1.w)
     move.w #$0012,d3
-    dc.w $3C00
-    dc.w $1234
     move.w (a1)+,d2
     dc.w $1961
 loc_0048A0:
     bsr.w loc_004A18
-    dc.w $0001
-    moveq #82,d3
+    ori.b #$52,d1
     addq.w #1,d1
     dc.w $4151
     dbra d3,loc_0048A0
@@ -9934,41 +9225,34 @@ loc_0048A9:
     dc.w $3400
     dc.w $0700
     moveq #0,d4
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
     dc.w $8100
     dc.w $3E00
-    dc.w $0000
-    dc.w $0200
+    ori.b #$00,d0
     dc.w $0100
     sub.b d0,d2
     sub.b (a3),d6
 loc_0048D6:
     dc.w $13FC
     dc.w $FC00
-    dc.w $0040
+    ori.w #$00A1,d0
     dc.w $4000
-    dc.w $00A1
     dc.w $A100
     dc.w $0009
     dc.w $0913
     dc.w $13FC
     dc.w $FC00
-    dc.w $0040
+    ori.w #$00A1,d0
     dc.w $4000
-    dc.w $00A1
     dc.w $A100
     dc.w $000B
     dc.w $0B13
     dc.w $13FC
     dc.w $FC00
-    dc.w $0040
+    ori.w #$00A1,d0
     dc.w $4000
-    dc.w $00A1
 loc_0048EB:
     dc.w $A100
     dc.w $000D
@@ -9981,36 +9265,24 @@ loc_0048F0:
     dc.w $46FC
     dc.w $FC27
     dc.w $2700
-    dc.w $0033
+    ori.b #$01,(0,a3,d0.w)
     dc.w $33FC
-    dc.w $FC01
     dc.w $0100
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$110033FC,-(a1)
     dc.w $A111
-    dc.w $1100
-    dc.w $0033
-    dc.w $33FC
-    dc.w $FC01
+    ori.b #$01,(0,a3,d0.w)
     dc.w $0100
-loc_004901:
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$120043F9,-(a1)
     dc.w $A112
-    dc.w $1200
-    dc.w $0043
-    lea loc_A00000,a1
-    dc.w $F900
+    ori.w #$F900,d3
+    ori.l #$000041F9,-(a0)
     dc.w $A000
-    dc.w $0041
-    lea loc_07E400,a0
-    dc.w $F900
+    ori.w #$F900,d1
+    ori.b #$00,d7
 loc_00490F:
     dc.w $07E4
-    dc.w $0030
+    ori.b #$1B,(30,a0,a7.l)
     move.w #$1BFE,d0
-    move.w (a3)+,d6
-    dc.w $FE1E
     dc.w $1E18
 loc_004917:
     dc.w $1812
@@ -10030,14 +9302,11 @@ loc_004918:
     dc.w $F233
     dc.w $33FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A112
+    ori.b #$A1,d0
+    ori.b #$12,d0
     dc.w $1200
-    dc.w $0032
+    ori.b #$00,(78,a2,a3.l)
     move.w #$00BF,d1
-    dc.w $3C00
 loc_004931:
     dc.w $BF4E
     nop
@@ -10049,13 +9318,10 @@ loc_004934:
     dc.w $33FC
     dc.w $FC01
     dc.w $0100
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A112
-    dc.w $1200
-    dc.w $0061
-    bsr.w loc_004A0E
-    dc.w $0000
+    ori.b #$12,d0
+    ori.l #$12006100,-(a1)
+    ori.w #$0000,-(a1)
+    dc.w $00CC
     and.w a6,d6
 loc_004944:
     dc.w $4E73
@@ -10066,7 +9332,7 @@ loc_004946:
     dc.w $00C0
     and.w -(a1),d0
     bsr.w loc_004A6C
-    dc.w $0001
+    ori.b #$22,d1
 loc_00494D:
     dc.w $2022
     dc.w $2248
@@ -10077,23 +9343,19 @@ loc_00494D:
     dc.w $FC32
     dc.w $32FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0032
-    dc.w $32FC
-    dc.w $FC00
-    dc.w $0000
-    dc.w $0032
-    dc.w $32FC
+    ori.b #$FC,d0
+    ori.b #$00,(50,a2,d0.w)
+    ori.b #$FC,d0
     dc.w $FCFF
     dc.w $FFFF
     dc.w $FF32
     dc.w $32FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$00,d1
     dc.w $0161
-    bsr.w loc_004A74
-    dc.w $0001
-    dc.w $0E4C
+loc_004965:
+    ori.b #$4C,d1
+    dc.w $010E
 loc_004968:
     dc.w $4CDF
     dc.w $DF03
@@ -10142,8 +9404,7 @@ loc_004989:
     or.l (a3)+,d0
     sub.w d5,-(a1)
     bsr.w loc_0049F6
-    dc.w $0000
-    addq.w #5,d3
+    ori.b #$43,d0
 loc_00499E:
     lea loc_FFFF8094,a1
 loc_00499F:
@@ -10179,9 +9440,8 @@ loc_0049BF:
 loc_0049C4:
     dc.w $14BC
     dc.w $BC00
-    dc.w $0000
+    ori.b #$71,d0
     dc.w $004E
-    nop
     dc.w $714E
     nop
     dc.w $7112
@@ -10189,30 +9449,25 @@ loc_0049C4:
     dc.w $12E5
     dc.w $E509
     dc.w $0902
-    dc.w $0201
+    andi.b #$C0,d1
     dc.w $0100
-    dc.w $00C0
     and.b (a4),d0
     dc.w $14BC
 loc_0049D5:
     dc.w $BC00
-    dc.w $0040
+    ori.w #$4E71,d0
     dc.w $404E
-    nop
     dc.w $714E
     nop
     dc.w $7114
 loc_0049DC:
     dc.w $1412
     dc.w $1202
-    dc.w $0202
-    dc.w $0200
-    dc.w $003F
-    dc.w $3F82
+    andi.b #$3F,d2
+    andi.b #$82,d0
     or.b d2,d1
-    dc.w $0246
+    andi.w #$0114,d6
     dc.w $4601
-    dc.w $0114
     dc.w $1401
     dc.w $0116
     dc.w $1611
@@ -10222,47 +9477,39 @@ loc_0049DC:
     dc.w $1282
     dc.w $82C2
     and.b d2,d1
-    dc.w $0213
+    andi.b #$00,(a3)
     dc.w $1341
-    dc.w $4100
-    dc.w $0001
+    ori.b #$75,d1
     dc.w $014E
-    rts
     dc.w $7546
 loc_0049F6:
     dc.w $46FC
     dc.w $FC27
     dc.w $2700
-    dc.w $0033
+    ori.b #$01,(0,a3,d0.w)
     dc.w $33FC
 loc_0049FB:
     dc.w $FC01
     dc.w $0100
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$11,d0
+    ori.l #$11000839,-(a1)
     dc.w $A111
-    dc.w $1100
     dc.w $0008
 loc_004A02:
     dc.w $0839
     dc.w $3900
-    dc.w $0000
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A111
+    ori.b #$A1,d0
+    ori.b #$11,d0
     dc.w $1100
-    dc.w $0066
+    ori.w #$F64E,-(a6)
     bne.s loc_004A02
-    dc.w $F64E
     rts
     dc.w $7533
 loc_004A0E:
     dc.w $33FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A111
+    ori.b #$A1,d0
+    ori.b #$11,d0
     dc.w $1100
     dc.w $004E
     rts
@@ -10278,12 +9525,10 @@ loc_004A1D:
     sub.b (a3),d6
     or.b (a0),d1
 loc_004A25:
-    dc.w $0006
-    dc.w $4100
+    ori.b #$00,d6
     dc.w $80E1
     dc.w $4912
-    dc.w $0261
-    dc.w $0000
+    andi.w #$0000,-(a1)
     dc.w $3C22
     dc.w $4832
     dc.w $FCFF
@@ -10291,8 +9536,7 @@ loc_004A25:
     and.w d0,-(a1)
 loc_004A3A:
     bsr.w loc_004A74
-    dc.w $0000
-    dc.w $384C
+    ori.b #$4C,d0
     dc.w $4CDF
     dc.w $DF03
     dc.w $0306
@@ -10302,20 +9546,19 @@ loc_004A3A:
 loc_004A44:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$3001,d0
     dc.w $4030
-    dc.w $3001
     dc.w $0106
     dc.w $0640
     dc.w $4000
-    dc.w $0080
+    ori.l #$E14843F9,d0
     dc.w $80E1
-    dc.w $E148
     dc.w $4843
-    lea loc_FFFF809C,a1
 loc_004A51:
     dc.w $F9FF
+    dc.w $FFFF
     dc.w $FF80
+    or.l (a4)+,d0
     sub.b (a0),d6
     dc.w $1031
     dc.w $3110
@@ -10323,9 +9566,8 @@ loc_004A51:
     dc.w $004C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7523
 loc_004A60:
     dc.w $23FC
@@ -10381,9 +9623,7 @@ loc_004A86:
     moveq #1,d0
     dc.w $0160
     bra.s loc_004A9C
-    dc.w $0270
-    dc.w $004E
-    dc.w $7548
+    andi.w #$004E,(72,a0,d7.w)
     dc.w $E700
     and.w -(a1),d0
     dc.w $00FF
@@ -10405,9 +9645,8 @@ loc_004AB6:
     dc.w $46FC
     dc.w $FC27
     dc.w $2700
-    dc.w $0043
+    ori.w #$F9FF,d3
     lea loc_FFFF80BE,a1
-    dc.w $F9FF
     dc.w $FF80
     cmp.b -(a4),d7
     dc.w $2479
@@ -10419,15 +9658,15 @@ loc_004AB6:
     dc.w $F900
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$F9,d4
     dc.w $0449
-    lea loc_C00000,a4
     dc.w $F900
+    dc.w $00C0
     and.b d0,d0
-    dc.w $0022
-    dc.w $220A
-    eori.b #$FF,d4
+    ori.b #$0A,d0
+    ori.b #$04,-(a2)
     dc.w $0481
+    dc.w $81FF
     dc.w $FFFF
     dc.w $FF80
     dc.w $80BE
@@ -10446,12 +9685,11 @@ loc_004AB6:
 loc_004AEE:
     dc.w $B5C9
     bcs.w loc_004EAE
-    dc.w $0003
-    cmp.w -(a7),d6
+    ori.b #$67,d3
     beq.w loc_004EAE
-    dc.w $0003
-    cmp.b (12,a2,d1.l),d4
+    ori.b #$32,d3
     move.w (a1)+,d1
+    dc.w $190C
     cmpi.w #$FFF7,d1
     dc.w $41FF
     dc.w $F764
@@ -10459,21 +9697,17 @@ loc_004AEE:
     dc.w $1A3A
     dc.w $3A01
     dc.w $0102
-    dc.w $0245
+    andi.w #$3FFF,d5
     dc.w $453F
-    dc.w $3FFF
     dc.w $FF00
-    dc.w $0045
+    ori.w #$4000,d5
     dc.w $4540
-    dc.w $4000
-    dc.w $0036
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $3685
-    or.b d2,(258,pc)
     dc.w $3A01
-    dc.w $0245
+    andi.w #$C000,d5
 loc_004B0F:
     dc.w $45C0
-    and.b d0,d0
     dc.w $00E5
     dc.w $E55D
     dc.w $5D36
@@ -10485,10 +9719,8 @@ loc_004B0F:
 loc_004B1A:
     lea loc_023B00,a5
     dc.w $F900
-    dc.w $023B
-    dc.w $0004
+    andi.b #$04,(-1,pc,d4.w)
     dc.w $0441
-    dc.w $41FF
     dc.w $FFF7
 loc_004B23:
     dc.w $F7E5
@@ -10497,15 +9729,14 @@ loc_004B23:
     dc.w $2A75
 loc_004B27:
     dc.w $7510
-loc_004B28:
     dc.w $1000
     dc.w $004E
     jmp (a5)
     add.b d2,(42,a2,d1.l)
     dc.w $5936
     dc.w $1961
-    dc.w $0003
-    and.b (258,pc),d2
+    ori.b #$3A,d3
+    dc.w $0102
     dc.w $453F
     dc.w $FF36
     or.b d2,(258,pc)
@@ -10520,50 +9751,41 @@ loc_004B28:
     dc.w $00FF
     sub.b (54,a2,d1.l),d6
     dc.w $1961
-    dc.w $0003
-    cmp.w -(a1),d4
-    dc.w $0003
-    dc.w $5C61
+    ori.b #$61,d3
+    ori.b #$61,d3
 loc_004B61:
-    dc.w $0003
-    sub.b (770,pc),d3
+    ori.b #$3A,d3
+    dc.w $0302
     dc.w $4500
     dc.w $FF00
     dc.w $4593
-    dc.w $0036
-    or.b d2,(992,pc)
+    ori.b #$3A,(-32,a6,d0.w)
     dc.w $4D00
     dc.w $4594
 loc_004B77:
-    dc.w $0036
-    or.b d2,(2530,a2)
+    ori.b #$2A,(-30,a6,d0.l)
     dc.w $8D3C
     dc.w $0502
     dc.w $4600
     dc.w $FF00
     dc.w $4695
-    dc.w $0036
-    dc.w $86E0
+    ori.b #$E0,(60,a6,a0.l)
 loc_004B8B:
     dc.w $8D3C
     dc.w $0502
     dc.w $4600
     dc.w $FF00
     dc.w $4696
-    dc.w $0036
-    dc.w $86E0
-    dc.w $8D3C
+    ori.b #$E0,(60,a6,a0.l)
     dc.w $0502
     dc.w $4600
     dc.w $7F00
     dc.w $4697
-    dc.w $0036
-    or.b (258,pc),d3
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $453F
     dc.w $FF00
     dc.w $4540
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $45C0
     dc.w $00E5
     subq.b #6,d0
@@ -10573,18 +9795,14 @@ loc_004B8B:
     cmp.b (-1,a6,a3.l),d2
     dc.w $FF80
     cmp.w -(a1),d2
-    dc.w $0003
-    dc.w $2261
-    dc.w $0003
-    dc.w $0461
-    dc.w $0003
-    dc.w $583A
+    ori.b #$61,d3
+    ori.b #$61,d3
+    ori.b #$3A,d3
     dc.w $0102
     dc.w $453F
     dc.w $FF00
     dc.w $4540
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $45C0
     dc.w $00E5
     dc.w $5D36
@@ -10597,50 +9815,39 @@ loc_004B8B:
     dc.w $1924
     dc.w $1936
     dc.w $1961
-    dc.w $0003
-    dc.w $1061
-    dc.w $0002
-    cmp.w -(a1),d2
-    dc.w $0002
-    dc.w $EE3A
+    ori.b #$61,d3
+    ori.b #$61,d2
+    ori.b #$3A,d2
     dc.w $0302
     dc.w $4500
     dc.w $FF00
     dc.w $4593
-    dc.w $0036
-    or.b d2,(992,pc)
+    ori.b #$3A,(-32,a6,d0.w)
     dc.w $4D00
     dc.w $4594
-    dc.w $0036
-    or.b d2,(738,a2)
+    ori.b #$2A,(-30,a6,d0.w)
     dc.w $8D3C
     dc.w $0502
 loc_004C29:
     dc.w $4600
     dc.w $FF00
     dc.w $4695
-    dc.w $0036
-    dc.w $86E0
-    dc.w $8D3C
+    ori.b #$E0,(60,a6,a0.l)
     dc.w $0502
     dc.w $4600
     dc.w $FF00
     dc.w $4696
-    dc.w $0036
-    dc.w $86E0
-    dc.w $8D3C
+    ori.b #$E0,(60,a6,a0.l)
     dc.w $0502
     dc.w $4600
     dc.w $7F00
 loc_004C49:
     dc.w $4697
-    dc.w $0036
-    or.b (258,pc),d3
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $453F
     dc.w $FF00
     dc.w $4540
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $45C0
     dc.w $00E5
     subq.b #6,d0
@@ -10649,19 +9856,15 @@ loc_004C49:
     dc.w $FF80
     cmp.b (-1,a6,a3.l),d2
     dc.w $FF80
-loc_004C71:
     cmp.w -(a1),d2
-    dc.w $0002
-    moveq #97,d5
-    dc.w $0002
-    dc.w $5C61
-    dc.w $0002
-    cmp.b (258,pc),d0
+    ori.b #$61,d2
+    ori.b #$61,d2
+    ori.b #$3A,d2
+    dc.w $0102
     dc.w $453F
     dc.w $FF00
     dc.w $4540
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $45C0
     dc.w $00E5
     dc.w $5D36
@@ -10673,47 +9876,37 @@ loc_004C97:
     dc.w $1924
     dc.w $1936
     dc.w $1961
-    dc.w $0002
-    bgt.s loc_004D08
-    dc.w $0002
-    dc.w $1261
-    dc.w $0002
-    dc.w $4C3A
+    ori.b #$61,d2
+    ori.b #$61,d2
+    ori.b #$3A,d2
     dc.w $0302
     dc.w $4500
     dc.w $FF00
     dc.w $4593
-    dc.w $0036
-    or.b d2,(992,pc)
+    ori.b #$3A,(-32,a6,d0.w)
     dc.w $4D00
     dc.w $4594
-    dc.w $0036
-    or.b d2,(738,a2)
+    ori.b #$2A,(-30,a6,d0.w)
     dc.w $8D3C
     dc.w $0502
     dc.w $4600
     dc.w $FF00
     dc.w $4695
-    dc.w $0036
-    dc.w $86E0
+    ori.b #$E0,(60,a6,a0.l)
 loc_004CD5:
     dc.w $8D3C
     dc.w $0502
     dc.w $4600
     dc.w $FF00
     dc.w $4696
-    dc.w $0036
-    dc.w $86E0
-    dc.w $8D3C
+    ori.b #$E0,(60,a6,a0.l)
     dc.w $0502
     dc.w $4600
     dc.w $7F00
     dc.w $4697
-    dc.w $0036
-    or.b (256,pc),d3
+    ori.b #$3A,(0,a6,d0.w)
     dc.w $45C0
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $45C0
     dc.w $00E5
     subq.b #6,d0
@@ -10722,7 +9915,6 @@ loc_004CD5:
 loc_004D06:
     dc.w $FFFF
     dc.w $FF80
-loc_004D08:
     or.l (-71,a4,d3.w),d0
     cmp.b (-1,a6,a3.l),d2
 loc_004D0A:
@@ -10733,30 +9925,25 @@ loc_004D0A:
     cmp.w -(a1),d2
     bsr.w loc_004EEE
 loc_004D11:
-    dc.w $0001
+    ori.b #$61,d1
     dc.w $01DC
 loc_004D13:
     add.w -(a1),d6
     bsr.w loc_004ED4
-    dc.w $0001
-    cmp.w -(a1),d7
+    ori.b #$61,d1
     bsr.w loc_004F2C
-    dc.w $0002
-    dc.w $124E
+    ori.b #$4E,d2
     nop
     dc.w $713A
     dc.w $3A01
     dc.w $0100
-    dc.w $0045
+    ori.w #$C000,d5
     dc.w $45C0
-    and.b d0,d0
-    dc.w $0036
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $3685
-    or.b d2,(258,pc)
     dc.w $3A01
-    dc.w $0245
+    andi.w #$C000,d5
     dc.w $45C0
-    and.b d0,d0
     dc.w $00E5
     dc.w $E55D
     dc.w $5D36
@@ -10770,37 +9957,32 @@ loc_004D13:
     cmp.b (36,a2,d1.l),d4
     dc.w $1936
     dc.w $1961
-    dc.w $0001
-    add.w -(a1),d1
-    dc.w $0001
-    moveq #97,d3
-    dc.w $0001
-    cmp.b (770,pc),d0
+    ori.b #$61,d1
+    ori.b #$61,d1
+    ori.b #$3A,d1
+    dc.w $0302
 loc_004D4D:
     dc.w $4500
     dc.w $FF00
     dc.w $4593
-    dc.w $0036
+    ori.b #$3A,(-32,a6,d0.w)
 loc_004D55:
     or.b d2,(992,pc)
     dc.w $4D00
     dc.w $4594
-    dc.w $0036
-    or.b d2,(738,a2)
+    ori.b #$2A,(-30,a6,d0.w)
     dc.w $8D3C
     dc.w $0502
     dc.w $4600
 loc_004D69:
     dc.w $FF00
     dc.w $4695
-    dc.w $0036
-    dc.w $86E0
-    dc.w $8D3C
+    ori.b #$E0,(60,a6,a0.l)
     dc.w $0502
     dc.w $4600
     dc.w $FF00
     dc.w $4696
-    dc.w $0036
+    ori.b #$E0,(60,a6,a0.l)
 loc_004D7D:
     dc.w $86E0
     dc.w $8D3C
@@ -10808,15 +9990,13 @@ loc_004D7D:
     dc.w $4600
     dc.w $7F00
     dc.w $4697
-    dc.w $0036
-    or.b (258,pc),d3
+    ori.b #$3A,(2,a6,d0.w)
 loc_004D8D:
     dc.w $0102
     dc.w $453F
     dc.w $FF00
     dc.w $4540
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $45C0
     dc.w $00E5
     subq.b #6,d0
@@ -10830,37 +10010,29 @@ loc_004DA8:
     dc.w $FF80
     or.l (0,a4,d6.w),d0
     cmp.w -(a1),d2
-    dc.w $0001
+    ori.b #$61,d1
     dc.w $013C
-    dc.w $3C61
     bsr.w loc_004ED4
-    dc.w $0001
-    dc.w $1E61
+    ori.b #$61,d1
     bsr.w loc_004F2C
-    dc.w $0001
-    moveq #58,d1
+    ori.b #$3A,d1
     dc.w $3A01
     dc.w $0102
-    dc.w $0245
+    andi.w #$3FFF,d5
     dc.w $453F
-    dc.w $3FFF
     dc.w $FF00
-    dc.w $0045
+    ori.w #$4000,d5
     dc.w $4540
-    dc.w $4000
-    dc.w $0036
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $3685
-    or.b d2,(258,pc)
     dc.w $3A01
-    dc.w $0245
+    andi.w #$C000,d5
     dc.w $45C0
-    and.b d0,d0
     dc.w $00E5
     dc.w $E55D
     subq.b #6,d0
-    dc.w $0045
+    ori.w #$0010,d5
     dc.w $4500
-    dc.w $0010
     dc.w $1036
     dc.w $3685
     or.b d2,(16952,a2)
@@ -10874,40 +10046,57 @@ loc_004DA8:
     dc.w $1936
     dc.w $1938
     dc.w $1961
-    dc.w $0000
-    add.b (1024,pc),d1
+    ori.b #$3A,d0
+    dc.w $0400
     dc.w $458F
-    dc.w $0036
-    or.b d2,(770,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $4500
     dc.w $FF00
     dc.w $4593
-    dc.w $0036
-    or.b d2,(992,pc)
+    ori.b #$3A,(-32,a6,d0.w)
     dc.w $4D00
     dc.w $4594
 loc_004E05:
-    dc.w $0036
+    ori.b #$36,(-105,a6,a3.l)
+    or.b (258,pc),d0
+    dc.w $453F
+    dc.w $FF00
+    dc.w $4540
+    ori.b #$3A,(2,a6,d0.w)
+    dc.w $45C0
+    dc.w $00E5
+    subq.b #6,d0
+    dc.w $4500
+    or.b (56,a6,a0.w),d0
+    or.w -(a1),d1
+    ori.b #$61,d0
+    ori.b #$61,d0
+    ori.b #$60,d0
+    dc.w $00FC
+    cmp.b (52,a2,d1.l),d4
+    dc.w $1936
+    dc.w $1938
+    dc.w $1961
+    ori.b #$3A,d0
+    dc.w $0400
+    dc.w $458F
+    ori.b #$3A,(2,a6,d0.w)
 loc_004E4D:
     dc.w $0302
     dc.w $4500
     dc.w $FF00
     dc.w $4593
-    dc.w $0036
-    or.b d2,(992,pc)
+    ori.b #$3A,(-32,a6,d0.w)
     dc.w $4D00
     dc.w $4594
-    dc.w $0036
-    or.b d2,(258,pc)
+    ori.b #$3A,(2,a6,d0.w)
     dc.w $4500
     dc.w $FF00
     dc.w $4595
-    dc.w $0036
-    or.b d2,(480,pc)
+    ori.b #$3A,(-32,a6,d0.w)
     dc.w $4D00
     dc.w $4596
-    dc.w $0036
-    or.b d2,(-105,a6,a3.l)
+    ori.b #$36,(-105,a6,a3.l)
     and.b (514,pc),d0
     dc.w $453F
     dc.w $FF36
@@ -10917,12 +10106,11 @@ loc_004E4D:
     subq.b #6,d0
     dc.w $4500
     and.b (97,a6,a0.w),d0
-    dc.w $0000
-    dc.w $5A61
-    dc.w $0000
-    bne.s loc_004EFC
-    dc.w $0000
-    dc.w $3860
+loc_004E91:
+    or.w d2,-(a1)
+    ori.b #$61,d0
+    ori.b #$61,d0
+    ori.b #$60,d0
     dc.w $00FC
     dc.w $4E36
     sub.w d4,-(a0)
@@ -10944,9 +10132,7 @@ loc_004EAE:
     rts
     dc.w $7548
     dc.w $E740
-    dc.w $0032
-    dc.w $3C00
-    dc.w $0161
+    ori.b #$00,(97,a2,d0.w)
     dc.w $00FB
     or.b (0,a2,d0.w),d0
     dc.w $4100
@@ -10956,31 +10142,26 @@ loc_004EAE:
     dc.w $024E
     dc.w $7548
     dc.w $E740
-    dc.w $0032
-    dc.w $3C00
+    ori.b #$00,(97,a2,d0.w)
 loc_004EDB:
     dc.w $0161
     dc.w $00FB
     bne.s loc_004F13
-    dc.w $0002
-    dc.w $41FF
+    ori.b #$FF,d2
     dc.w $EF36
     dc.w $814C
     dc.w $DF00
     dc.w $024E
     dc.w $7530
     dc.w $1308
-    dc.w $0000
-    dc.w $0166
+    ori.b #$66,d0
     dc.w $F84E
     dc.w $7536
     dc.w $BC8F
     dc.w $024E
     dc.w $7548
     dc.w $E740
-    dc.w $0032
-    dc.w $3C00
-    dc.w $0F61
+    ori.b #$00,(97,a2,d0.l)
     dc.w $00FB
     move.w (76,a6,a0.w),d6
     dc.w $DF00
@@ -10988,22 +10169,17 @@ loc_004EDB:
     dc.w $7546
 loc_004F13:
     dc.w $FC27
-    dc.w $0033
-    dc.w $FC01
+    ori.b #$01,(0,a3,d0.w)
 loc_004F19:
-    dc.w $0000
+    ori.b #$11,d0
     dc.w $A111
-    dc.w $0030
-    dc.w $3900
-    dc.w $A111
+    ori.b #$00,(17,a0,a2.w)
     dc.w $0008
-    dc.w $0000
-    dc.w $0866
+    ori.b #$66,d0
     dc.w $F44E
     dc.w $7533
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $004E
     dc.w $7548
 loc_004F36:
@@ -11025,9 +10201,8 @@ loc_004F46:
     dc.w $FC4C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0202
+    andi.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7548
 loc_004F50:
     dc.w $48E7
@@ -11046,9 +10221,8 @@ loc_004F50:
     dc.w $32FC
     dc.w $FCF0
     dc.w $F000
-    dc.w $0022
+    ori.b #$FF,-(a2)
     dc.w $22FC
-    dc.w $FCFF
     dc.w $FFFF
     dc.w $FF8C
     dc.w $8CC4
@@ -11081,9 +10255,9 @@ loc_004F84:
 loc_004F86:
     dc.w $226E
     bgt.w loc_0053BB
-    dc.w $0004
-    move.w (8,a6),d1
+    ori.b #$2E,d4
     dc.w $2E00
+    dc.w $0008
     dc.w $0834
     dc.w $3479
     dc.w $79FF
@@ -11098,13 +10272,12 @@ loc_004F86:
     bcs.s loc_004FA2
     dc.w $0861
     bsr.w loc_00525E
-    dc.w $0002
-    and.w -(a0),d1
+    ori.b #$60,d2
     bra.w loc_004FD8
-    dc.w $0000
-    move.w (0,a4,d2.l),d4
+    ori.b #$34,d0
 loc_004FA2:
     move.w (12,a6),d2
+    dc.w $2E00
     dc.w $0C10
     dc.w $1019
     dc.w $1948
@@ -11115,10 +10288,8 @@ loc_004FA9:
     dc.w $4006
     dc.w $0642
     clr.b d0
-    dc.w $0080
+    ori.l #$34C214D9,d0
     or.b (20,a4,a4.w),d0
-    dc.w $34C2
-    dc.w $14D9
     add.w d4,(a2)
     dc.w $5239
     dc.w $39FF
@@ -11145,11 +10316,8 @@ loc_004FC1:
     dc.w $4006
     dc.w $0642
     clr.b d0
-    dc.w $0080
+    ori.l #$34C233CA,d0
     or.b (51,a4,a4.w),d0
-    dc.w $34C2
-loc_004FD2:
-    dc.w $33CA
     dc.w $CAFF
     dc.w $FFFF
     dc.w $FF8F
@@ -11172,11 +10340,9 @@ loc_004FDA:
     bcs.s loc_004FEE
     dc.w $0861
     bsr.w loc_00525E
-    dc.w $0002
-    moveq #96,d3
+    ori.b #$60,d2
     bra.w loc_005028
-    dc.w $0000
-    move.w (a0),d6
+    ori.b #$10,d0
 loc_004FEE:
     dc.w $1019
     dc.w $1948
@@ -11191,10 +10357,8 @@ loc_004FF7:
     and.b d6,d0
     dc.w $0640
     dc.w $4000
-    dc.w $0080
+    ori.l #$30C010D9,d0
     or.b (16,a0,a4.w),d0
-    dc.w $30C0
-    dc.w $10D9
     add.w d4,(a2)
     dc.w $5239
     dc.w $39FF
@@ -11222,10 +10386,8 @@ loc_004FF7:
     dc.w $BE06
     dc.w $0640
     dc.w $4000
-    dc.w $0080
+    ori.l #$30C033C8,d0
     or.b (51,a0,a4.w),d0
-    dc.w $30C0
-    dc.w $33C8
 loc_005023:
     dc.w $C8FF
     dc.w $FFFF
@@ -11238,8 +10400,7 @@ loc_005028:
 loc_00502A:
     dc.w $226E
     bgt.w loc_00545F
-    dc.w $0004
-    move.w (8,a6),d1
+    ori.b #$2E,d4
     dc.w $2E00
 loc_005030:
     dc.w $0008
@@ -11252,8 +10413,7 @@ loc_005030:
     dc.w $4647
     lea loc_023B24,a3
     dc.w $F900
-    dc.w $023B
-    move.l d2,(-113,a4,a7.l)
+    andi.b #$B4,(-113,pc,a7.l)
 loc_00503E:
     dc.w $B4FC
     dc.w $8F44
@@ -11261,20 +10421,17 @@ loc_00503E:
     bcs.s loc_00504C
     dc.w $0861
     bsr.w loc_00525E
-    dc.w $0002
-    dc.w $1860
+    ori.b #$60,d2
     bra.w loc_0050C8
-    dc.w $0000
-    moveq #126,d7
+    ori.b #$7E,d0
 loc_00504C:
     moveq #0,d7
-    dc.w $001E
+    ori.b #$00,(a6)+
     dc.w $1E29
-    dc.w $2900
-    dc.w $0001
+    ori.b #$2E,d1
     dc.w $0136
-    move.w (10,a6),d3
     dc.w $2E00
+    dc.w $000A
     eori.b #$48,(a2)+
     dc.w $1A19
     dc.w $4885
@@ -11290,10 +10447,9 @@ loc_005059:
     dc.w $451C
     dc.w $1C07
     dc.w $0702
-    dc.w $0206
+    andi.b #$03,d6
 loc_005065:
     dc.w $0600
-    dc.w $0003
     dc.w $0352
     addq.b #1,d6
     dc.w $06E7
@@ -11304,9 +10460,8 @@ loc_005065:
 loc_00506E:
     dc.w $0645
     dc.w $4500
-    dc.w $0080
+    ori.l #$DA6E000C,d0
     dc.w $80DA
-    add.w (12,a6),d5
     bgt.w loc_005CA9
     dc.w $34C5
     and.b d2,(a4)
@@ -11345,9 +10500,8 @@ loc_00508F:
     dc.w $451C
     dc.w $1C07
     dc.w $0702
-    dc.w $0206
+    andi.b #$0C,d6
     dc.w $0600
-    dc.w $000C
     dc.w $0C58
     addq.b #4,d6
     dc.w $06E3
@@ -11358,9 +10512,8 @@ loc_00508F:
 loc_0050A4:
     dc.w $0645
     dc.w $4500
-    dc.w $0080
+    ori.l #$DA6E0010,d0
     dc.w $80DA
-    add.w (16,a6),d5
     bgt.w loc_0060DF
     dc.w $34C5
     dc.w $C54A
@@ -11369,9 +10522,8 @@ loc_0050AE:
     dc.w $1967
     beq.s loc_0050C2
     dc.w $1002
-    dc.w $0247
+    andi.w #$000F,d7
     dc.w $4700
-    dc.w $000F
     dc.w $0FE3
     dc.w $E34F
     dc.w $4F3E
@@ -11406,8 +10558,7 @@ loc_0050CA:
     dc.w $4647
     lea loc_023B24,a3
     dc.w $F900
-    dc.w $023B
-    move.l d2,(-113,a4,a7.l)
+    andi.b #$B4,(-113,pc,a7.l)
 loc_0050DA:
     dc.w $B4FC
     dc.w $8F44
@@ -11416,19 +10567,15 @@ loc_0050DA:
     dc.w $0861
     bsr.w loc_00525E
 loc_0050E1:
-    dc.w $0001
-    moveq #96,d6
+    ori.b #$60,d1
     bra.w loc_00515C
-    dc.w $0000
-    moveq #126,d3
+    ori.b #$7E,d0
 loc_0050E8:
     moveq #0,d7
-    dc.w $001E
+    ori.b #$00,(a6)+
     dc.w $1E29
-    dc.w $2900
-    dc.w $0001
+    ori.b #$19,d1
     dc.w $011A
-    dc.w $1A19
     dc.w $1948
     dc.w $4885
     dc.w $8508
@@ -11442,9 +10589,8 @@ loc_0050E8:
     dc.w $451C
     dc.w $1C07
     dc.w $0702
-    dc.w $0206
+    andi.b #$03,d6
     dc.w $0600
-    dc.w $0003
     dc.w $0352
     addq.b #1,d6
     dc.w $06E7
@@ -11455,11 +10601,9 @@ loc_0050E8:
 loc_005106:
     dc.w $0645
     dc.w $4500
-    dc.w $0080
+    ori.l #$DA4234C5,d0
     dc.w $80DA
-    add.w d2,d5
     dc.w $4234
-    dc.w $34C5
     and.b d2,(a4)
     dc.w $14D9
     add.w d4,(a2)
@@ -11496,9 +10640,8 @@ loc_00511F:
     dc.w $451C
     dc.w $1C07
     dc.w $0702
-    dc.w $0206
+    andi.b #$0C,d6
     dc.w $0600
-    dc.w $000C
     dc.w $0C58
     addq.b #4,d6
     dc.w $06E3
@@ -11509,19 +10652,16 @@ loc_00511F:
 loc_00513A:
     dc.w $0645
     dc.w $4500
-    dc.w $0080
+    ori.l #$DA4134C5,d0
     dc.w $80DA
-    add.w d1,d5
     dc.w $4134
-    dc.w $34C5
     dc.w $C54A
     dc.w $4A19
     dc.w $1967
     beq.s loc_005156
     dc.w $1002
-    dc.w $0247
+    andi.w #$000F,d7
     dc.w $4700
-    dc.w $000F
     dc.w $0FE3
     dc.w $E34F
     dc.w $4F3E
@@ -11562,29 +10702,26 @@ loc_005164:
     dc.w $143D
     dc.w $3D7C
     moveq #0,d6
-    dc.w $0001
+    ori.b #$3C,d1
     dc.w $0100
-    dc.w $003C
     dc.w $3C24
     dc.w $246E
     bgt.w loc_00879B
-    dc.w $0036
-    dc.w $2452
+    ori.b #$52,(90,a6,d3.l)
     dc.w $523D
-    dc.w $3D5A
     addq.b #5,d0
     dc.w $0008
     dc.w $082D
     dc.w $2D4A
     tst.b d0
-    dc.w $0004
+    ori.b #$6E,d4
     dc.w $0422
 loc_005182:
     dc.w $226E
     bgt.w loc_0055B7
-    dc.w $0004
-    move.w (8,a6),d1
+    ori.b #$2E,d4
     dc.w $2E00
+    dc.w $0008
     dc.w $0834
     dc.w $3479
     dc.w $79FF
@@ -11594,8 +10731,7 @@ loc_005182:
     dc.w $4647
     lea loc_023B24,a3
     dc.w $F900
-    dc.w $023B
-    move.l (-1,a4,d7.l),d2
+    andi.b #$34,(-1,pc,d7.l)
 loc_005196:
     dc.w $3479
     dc.w $FFFF
@@ -11609,17 +10745,14 @@ loc_005196:
     bcs.s loc_0051AA
     dc.w $0861
     bsr.w loc_00525E
-    dc.w $0000
-    cmp.w -(a0),d5
+    ori.b #$60,d0
     bra.w loc_005256
-    dc.w $0000
-    dc.w $AE14
+    ori.b #$14,d0
 loc_0051AA:
     dc.w $1429
     dc.w $2900
-    dc.w $0001
+    ori.b #$01,d1
     dc.w $013C
-    dc.w $3C01
     dc.w $0136
     move.w (10,a6),d3
     dc.w $2E00
@@ -11637,10 +10770,8 @@ loc_0051B6:
     dc.w $4444
     dc.w $441A
     dc.w $1A02
-    dc.w $0202
-    dc.w $0205
-    dc.w $0500
-    dc.w $0003
+    andi.b #$00,d2
+    andi.b #$03,d5
     dc.w $0352
     addq.b #1,d5
     dc.w $05E7
@@ -11651,9 +10782,8 @@ loc_0051B6:
 loc_0051CC:
     dc.w $0644
     dc.w $4400
-    dc.w $0080
+    ori.l #$D86E000C,d0
     dc.w $80D8
-    add.w (12,a6),d4
     bgt.w loc_005E07
     dc.w $34C4
     and.b (a4),d2
@@ -11692,10 +10822,8 @@ loc_0051EB:
     dc.w $4444
     dc.w $441A
     dc.w $1A02
-    dc.w $0202
-    dc.w $0205
-    dc.w $0500
-    dc.w $000C
+    andi.b #$00,d2
+    andi.b #$0C,d5
     dc.w $0C58
     addq.b #4,d5
     dc.w $05E3
@@ -11706,9 +10834,8 @@ loc_0051EB:
 loc_005202:
     dc.w $0644
     dc.w $4400
-    dc.w $0080
+    ori.l #$D86E0010,d0
     dc.w $80D8
-    add.w (16,a6),d4
     bgt.w loc_00623D
     dc.w $34C4
     and.w a2,d2
@@ -11716,9 +10843,8 @@ loc_005202:
     dc.w $1967
     beq.s loc_005220
     dc.w $1002
-    dc.w $0242
+    andi.w #$000F,d2
     clr.b d0
-    dc.w $000F
     dc.w $0FE3
     dc.w $E34A
     dc.w $4A34
@@ -11739,48 +10865,39 @@ loc_005220:
     dc.w $4653
     dc.w $536E
     bgt.w loc_008C93
-    dc.w $003A
-    bpl.s loc_005256
+    ori.b #$2A,(9326,pc)
     dc.w $2A24
-    dc.w $246E
     bgt.w loc_00888B
-    dc.w $0036
-    dc.w $5C4A
+    ori.b #$4A,(82,a6,d4.l)
     dc.w $4A4A
-    dc.w $4A52
     dc.w $526A
     bpl.s loc_005242
     dc.w $0C33
     dc.w $33FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FF8F
     dc.w $8F4A
     dc.w $4A24
     dc.w $246A
     bpl.w loc_00546E
-    dc.w $0002
+    ori.b #$4A,d2
 loc_005242:
     dc.w $2D4A
     tst.b d0
-    dc.w $0036
+    ori.b #$6A,(4,a6,d0.w)
     dc.w $363D
-    dc.w $3D6A
     bpl.w loc_005649
-    dc.w $0004
-    dc.w $003A
+    ori.b #$52,(15706,pc)
     dc.w $3A24
-    dc.w $2452
     dc.w $523D
-    dc.w $3D5A
     addq.b #5,d0
     dc.w $0008
     dc.w $082D
     dc.w $2D4A
     tst.b d0
-    dc.w $0004
+    ori.b #$39,d4
     dc.w $0430
 loc_005256:
     dc.w $3039
@@ -11810,9 +10927,8 @@ loc_005260:
 loc_00526F:
     dc.w $4670
     moveq #0,d0
-    dc.w $0030
+    ori.b #$30,(19,a0,a4.w)
     dc.w $30C0
-    and.b (19,a0,a4.w),d0
     dc.w $30C0
     dc.w $13C0
     dc.w $C0FF
@@ -11862,28 +10978,24 @@ loc_00526F:
     dc.w $034E
     dc.w $7501
     dc.w $2F8F
-    dc.w $0200
-    dc.w $0000
+    andi.b #$00,d0
     dc.w $0101
     dc.w $2F8F
     dc.w $0300
-    dc.w $0000
-    dc.w $0001
+    ori.b #$01,d0
     dc.w $4F8F
     dc.w $0400
-    dc.w $0000
-    dc.w $0101
+    ori.b #$01,d0
     dc.w $4F8F
     dc.w $0500
-    dc.w $0000
+    ori.b #$48,d0
 loc_0052E7:
     dc.w $0048
 loc_0052E8:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$3279,d0
     dc.w $4032
-    dc.w $3279
     dc.w $79FF
     dc.w $FFFF
     dc.w $FF8F
@@ -11891,30 +11003,50 @@ loc_0052E8:
     dc.w $4613
     dc.w $137C
     moveq #0,d6
-    dc.w $0000
+    ori.b #$FB,d0
     dc.w $00FF
-    dc.w $FFFB
     dc.w $FB4C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
+    dc.w $48E7
     dc.w $E7C0
+    dc.w $C0C0
     and.b (-116,a0,d7.l),d0
+    movea.w #$8CC4,a0
     and.b (-1,a2,d7.l),d2
+    dc.w $3279
+    dc.w $FFFF
     dc.w $FF8F
+    dc.w $8F46
     dc.w $4630
+    dc.w $3038
     dc.w $388F
+    or.w d7,-(a0)
 loc_00530F:
     bra.s loc_005343
+    dc.w $3238
+    or.w d7,-(a2)
+loc_005314:
+    dc.w $B3C8
+    beq.s loc_00532A
+    dc.w $4A28
+    ori.b #$08,d2
+    sub.w d0,(6,a0)
+    sub.w d1,(0,a0)
 loc_005325:
-    dc.w $0050
-    or.w -(a0),d4
+    ori.w #$8860,(a0)
+    dc.w $5088
+    bra.s loc_005314
     dc.w $EA4C
+loc_00532A:
+    dc.w $4CDF
     dc.w $DF03
+    dc.w $0303
     dc.w $034E
+    rts
     dc.w $7542
 loc_005330:
     dc.w $4279
@@ -11948,9 +11080,7 @@ loc_005343:
     and.w d0,d0
     dc.w $E746
     dc.w $FC27
-    dc.w $0030
-    dc.w $39FF
-    dc.w $FF8F
+    ori.b #$FF,(-113,a0,a7.l)
     dc.w $4CD0
     dc.w $79FF
     dc.w $FF8F
@@ -11965,60 +11095,66 @@ loc_005343:
     addq.w #6,d4
     dc.w $4023
     dc.w $FC78
-    dc.w $0000
-    dc.w $0300
+    ori.b #$00,d0
 loc_005379:
     and.b d0,d0
     dc.w $0423
     and.b d0,d0
     and.b d0,d0
-    dc.w $0030
-    dc.w $39FF
-    dc.w $FF8F
+    ori.b #$FF,(-113,a0,a7.l)
     jmp (a0)
 loc_0053B4:
     dc.w $48E7
     bra.s loc_0053F8
+loc_0053BB:
+    ori.w #$E222,(a0)+
+    dc.w $4832
+    dc.w $020C
+    subq.b #4,d0
+    dc.w $0166
+loc_0053C7:
+    dc.w $0661
+    ori.b #$60,d0
+    dc.w $0461
+    ori.b #$4C,d0
+    dc.w $DF02
+    dc.w $064E
+    dc.w $7548
+    dc.w $E7FF
+    bra.s loc_00541D
 loc_0053F8:
     dc.w $23C0
     dc.w $00C0
-    dc.w $0004
-    moveq #0,d0
+    ori.b #$00,d4
 loc_0053FF:
-    dc.w $0076
+    ori.w #$0016,(0,a6,d3.l)
 loc_005400:
     moveq #0,d3
-    dc.w $0016
     dc.w $163C
-    dc.w $3C00
     dc.w $00FF
     dc.w $FF78
     moveq #0,d4
-    dc.w $007A
+    ori.w #$017C,(126,pc)
     moveq #1,d5
-    dc.w $017C
     moveq #0,d6
-    dc.w $007E
     moveq #0,d7
-    dc.w $0024
+    ori.b #$43,-(a4)
     dc.w $2449
-    dc.w $4943
     lea loc_C00000,a1
     dc.w $F900
     and.b d0,d0
 loc_005415:
-    dc.w $001C
+    ori.b #$16,(a4)+
     dc.w $1C1A
-    dc.w $1A16
     dc.w $161A
     dc.w $1A4A
     tst.b d3
     dc.w $0366
     bne.s loc_005424
+loc_00541D:
     dc.w $0661
     bsr.w loc_005494
-    dc.w $0000
-    moveq #96,d2
+    ori.b #$60,d0
     bra.s loc_00548C
     bvc.s loc_00546F
 loc_005424:
@@ -12039,10 +11175,8 @@ loc_00542C:
     addq.b #1,d0
     dc.w $0008
     dc.w $0800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0067
-    beq.s loc_005440
+    ori.b #$67,d0
+    ori.b #$06,d0
     dc.w $0618
     dc.w $1812
     dc.w $12E8
@@ -12050,12 +11184,8 @@ loc_00542C:
     dc.w $0C60
     bra.s loc_005446
     dc.w $0618
-loc_005440:
-    dc.w $181A
     dc.w $1A02
-    dc.w $0204
     dc.w $0400
-    dc.w $000F
     dc.w $0FB8
 loc_005446:
     dc.w $B803
@@ -12065,10 +11195,8 @@ loc_005446:
     addq.b #1,d0
     dc.w $0008
     dc.w $0800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0067
-    beq.s loc_005458
+    ori.b #$67,d0
+    ori.b #$06,d0
     dc.w $0618
     dc.w $1812
     dc.w $12E8
@@ -12076,41 +11204,30 @@ loc_005446:
     dc.w $0C60
     bra.s loc_00545E
     dc.w $0618
-loc_005458:
-    dc.w $181A
     dc.w $1A02
-    dc.w $0204
     dc.w $0400
-    dc.w $000F
     dc.w $0FE9
-loc_00545E:
-    dc.w $E94D
 loc_00545F:
     dc.w $4D65
-    bcs.s loc_005466
     dc.w $048A
-    or.b d3,d5
     dc.w $0360
-    bra.s loc_00546E
     dc.w $088A
     dc.w $0332
     or.w d2,(340,pc)
     dc.w $4751
+loc_00546E:
+    dbra d4,loc_005460
 loc_00546F:
     dc.w $CCFF
     dc.w $EE38
-    dc.w $0360
-    dc.w $1216
-loc_005476:
-    dc.w $1604
-    dc.w $04E9
-    dc.w $E94D
-    dc.w $4D65
-    bcs.s loc_005480
-    dc.w $048A
-    or.b d3,d5
+    dc.w $3803
     dc.w $0360
     bra.s loc_005488
+    dc.w $1216
+    dc.w $04E9
+    dc.w $4D65
+    dc.w $048A
+    dc.w $0360
     dc.w $088A
     dc.w $0332
     or.w d2,(340,pc)
@@ -12156,9 +11273,7 @@ loc_005498:
     dc.w $FE40
     dc.w $E746
     dc.w $FC27
-    dc.w $0030
-    dc.w $0102
-    dc.w $403F
+    ori.b #$02,(63,a0,d4.w)
     dc.w $FF00
     dc.w $4040
     dc.w $0048
@@ -12174,42 +11289,49 @@ loc_005498:
     dc.w $494D
     dc.w $F900
     and.b d0,d0
-    dc.w $0047
-    dc.w $F9FF
+    ori.w #$F9FF,d7
     dc.w $FF8F
     bcc.s loc_00552B
 loc_0054E1:
     dc.w $186A
     dc.w $0861
-    dc.w $0000
-    and.w -(a0),d6
-    dc.w $0000
-    and.w (16,a0,d0.w),d0
-    dc.w $1838
-    dc.w $0053
-    dc.w $441A
+    ori.b #$60,d0
+    ori.b #$70,d0
+    ori.b #$38,(a0)
+    ori.w #$441A,(a3)
     dc.w $18E1
     dc.w $4D1A
     dc.w $1843
     dc.w $F050
-    dc.w $0024
-    dc.w $493A
+    ori.b #$3A,-(a4)
     dc.w $000C
     dc.w $4500
 loc_005505:
-    dc.w $0267
-    dc.w $040A
+    andi.w #$040A,-(a7)
     dc.w $4500
     dc.w $0553
     dc.w $4532
+loc_00550E:
+    dc.w $3205
     dc.w $0528
+    dc.w $284B
     dc.w $4B1C
+    dc.w $1C18
     dc.w $1874
+loc_005514:
+    moveq #7,d2
     dc.w $0736
+    dc.w $3604
     dc.w $04E3
+loc_005518:
+    dc.w $E306
     dc.w $0664
+    bcc.s loc_00552C
     dc.w $1018
+    dc.w $18D9
     add.w d4,(a1)
+loc_00551E:
+    dbra d3,loc_00551E
     dc.w $CBFF
 loc_005520:
     dc.w $FFFC
@@ -12232,7 +11354,11 @@ loc_00552B:
     add.b (19316,a0),d5
     dc.w $0372
     dc.w $03E1
+loc_005540:
+    dc.w $E1EC
     dc.w $EC00
+loc_005542:
+    ori.b #$53,(a0)+
     dc.w $18E3
 loc_005544:
     dc.w $E353
@@ -12245,9 +11371,8 @@ loc_005544:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12255,9 +11380,8 @@ loc_005544:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12267,9 +11391,8 @@ loc_005544:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12277,9 +11400,8 @@ loc_005544:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12289,9 +11411,8 @@ loc_005544:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12299,9 +11420,8 @@ loc_005544:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
 loc_005587:
     dc.w $53E1
     dc.w $E1EC
@@ -12312,9 +11432,8 @@ loc_005587:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12342,11 +11461,9 @@ loc_005587:
     dc.w $FF4E
     rts
     dc.w $7570
-    dc.w $0010
-    dc.w $1838
+    ori.b #$38,(a0)
 loc_0055B7:
-    dc.w $0053
-    dc.w $442A
+    ori.w #$442A,(a3)
     dc.w $4841
     dc.w $E800
     dc.w $101A
@@ -12354,31 +11471,45 @@ loc_0055B7:
     dc.w $4D1A
     dc.w $1843
     dc.w $F050
-    dc.w $0024
-    dc.w $493A
+    ori.b #$3A,-(a4)
     dc.w $000C
     dc.w $4500
-    dc.w $0267
-    dc.w $040A
+    andi.w #$040A,-(a7)
     dc.w $4500
     dc.w $0553
     dc.w $4532
+loc_0055DA:
+    dc.w $3205
     dc.w $0528
+    dc.w $284B
     dc.w $4B1C
+    dc.w $1C18
     dc.w $1874
+loc_0055E0:
+    moveq #7,d2
     dc.w $0736
+    dc.w $3604
     dc.w $04E3
+loc_0055E4:
+    dc.w $E306
     dc.w $0664
+    bcc.s loc_0055F8
     dc.w $1018
+    dc.w $18D9
     add.w d4,(a1)
+loc_0055EA:
+    dbra d3,loc_0055EA
 loc_0055EB:
     dc.w $CBFF
     dc.w $FC51
+    dbra d2,loc_0055E4
     dc.w $CAFF
 loc_0055F1:
     dc.w $F251
+    dbra d1,loc_0055E0
     dc.w $C9FF
     dc.w $EA60
+    bra.s loc_005606
     dc.w $0E42
     dc.w $1C51
     dc.w $CBFF
@@ -12389,46 +11520,81 @@ loc_0055F1:
     add.b (19316,a0),d5
     dc.w $0372
     dc.w $0342
+loc_00560C:
+    clr.w d3
     dc.w $43E1
+loc_00560E:
+    dc.w $E1EC
     dc.w $EC00
+    ori.b #$53,(a0)+
     dc.w $18E3
     dc.w $53E1
+    dc.w $E1EC
     dc.w $EC00
+    dc.w $0008
 loc_005617:
     dc.w $08E3
+    dc.w $E353
     dc.w $53E1
+    dc.w $E1EC
     dc.w $EC00
+    ori.b #$53,(a0)
     dc.w $10E3
     dc.w $53E1
+    dc.w $E1D4
     dc.w $D4E3
+    dc.w $E353
     dc.w $531E
+    dc.w $1E35
     dc.w $3530
+    dc.w $3000
     dc.w $00E9
+    dc.w $E94F
     dc.w $4F42
+    clr.w d3
     dc.w $43E1
+    dc.w $E1EC
     dc.w $EC00
+    ori.b #$53,(a0)+
     dc.w $18E3
     dc.w $53E1
+    dc.w $E1EC
     dc.w $EC00
+    dc.w $0008
     dc.w $08E3
+    dc.w $E353
     dc.w $53E1
+    dc.w $E1EC
     dc.w $EC00
+    ori.b #$53,(a0)
     dc.w $10E3
     dc.w $53E1
+    dc.w $E1D4
     dc.w $D4E3
+    dc.w $E353
     dc.w $538E
+    or.b (0,a5,d3.w),d7
     dc.w $3530
     dc.w $00E9
+    dc.w $E94F
     dc.w $4F42
+    clr.w d3
 loc_005649:
     dc.w $43E1
+    dc.w $E1EC
     dc.w $EC00
+    ori.b #$53,(a0)+
     dc.w $18E3
     dc.w $53E1
+    dc.w $E1EC
     dc.w $EC00
+    dc.w $0008
     dc.w $08E3
+    dc.w $E353
     dc.w $53E1
+    dc.w $E1EC
     dc.w $EC00
+    ori.b #$53,(a0)
     dc.w $10E3
     dc.w $53E1
 loc_00565C:
@@ -12445,9 +11611,8 @@ loc_00565C:
     dc.w $43E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12457,9 +11622,8 @@ loc_00565C:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12517,40 +11681,32 @@ loc_0056AE:
     dc.w $E74E
     jsr loc_0058E2
     dc.w $B900
-    dc.w $0058
-    dc.w $E222
+    ori.w #$E222,(a0)+
     dc.w $2248
     dc.w $4854
     dc.w $5449
     dc.w $4932
     dc.w $3202
-    dc.w $0234
+    andi.b #$36,(70,a4,d0.w)
     dc.w $3403
-    dc.w $0336
     dc.w $3604
-    dc.w $0446
     dc.w $46FC
     dc.w $FC27
     dc.w $2700
-    dc.w $0030
+    ori.b #$02,(63,a0,d4.w)
     dc.w $3001
-    dc.w $0102
-    dc.w $0240
-    dc.w $403F
-    dc.w $3FFF
+    andi.w #$3FFF,d0
     dc.w $FF00
-    dc.w $0040
+    ori.w #$4000,d0
     dc.w $4040
-    dc.w $4000
     dc.w $0048
     dc.w $4840
     dc.w $4030
     dc.w $3001
     dc.w $0102
 loc_0056D6:
-    dc.w $0240
+    andi.w #$C000,d0
     dc.w $40C0
-    and.b d0,d0
     dc.w $00E0
     dc.w $E048
     dc.w $48EC
@@ -12560,16 +11716,14 @@ loc_0056D6:
     and.b d0,d0
     dc.w $00C0
     and.b d0,d0
-    dc.w $0004
+    ori.b #$49,d4
     dc.w $0420
-    dc.w $2049
     dc.w $494D
     lea loc_C00000,a6
     dc.w $F900
     and.b d0,d0
-    dc.w $0047
+    ori.w #$F88F,d7
     lea loc_008F64,a3
-    dc.w $F88F
     bcc.s loc_00573F
     dc.w $4E63
 loc_0056F1:
@@ -12587,15 +11741,13 @@ loc_0056F1:
     bpl.s loc_005706
     dc.w $0861
     bsr.w loc_0057DA
-    dc.w $0000
-    add.w -(a0),d5
+    ori.b #$60,d0
     bra.w loc_0057D2
-    dc.w $0000
-    and.w (16,a0,d0.w),d7
+    ori.b #$70,d0
 loc_005706:
     moveq #0,d0
+    ori.b #$36,(a0)
     dc.w $1018
-    dc.w $1836
     dc.w $3640
     dc.w $4053
     dc.w $534B
@@ -12608,16 +11760,14 @@ loc_005706:
     dc.w $1843
     lea (0,a0,d5.w),a1
     dc.w $F050
-    dc.w $0024
+    ori.b #$3A,-(a4)
     dc.w $2449
-    dc.w $493A
     dc.w $3A00
     dc.w $000C
     cmpi.w #$0002,d5
     dc.w $4500
-    dc.w $0267
+    andi.w #$040A,-(a7)
     beq.s loc_005726
-    dc.w $040A
     eori.w #$0005,d5
     dc.w $4500
     dc.w $0553
@@ -12695,10 +11845,9 @@ loc_005768:
     dc.w $E1EC
     dc.w $EC00
 loc_00576A:
-    dc.w $0018
+    ori.b #$53,(a0)+
 loc_00576B:
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
 loc_00576F:
@@ -12709,9 +11858,8 @@ loc_00576F:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12719,9 +11867,8 @@ loc_00576F:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
 loc_005785:
@@ -12732,9 +11879,8 @@ loc_005785:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12742,9 +11888,8 @@ loc_005785:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12754,9 +11899,8 @@ loc_005785:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12764,9 +11908,8 @@ loc_005785:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12776,9 +11919,8 @@ loc_005785:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12811,9 +11953,8 @@ loc_0057D9:
     dc.w $7570
 loc_0057DA:
     moveq #0,d0
-    dc.w $0010
+    ori.b #$36,(a0)
     dc.w $1018
-    dc.w $1836
     dc.w $3640
     dc.w $4053
     dc.w $534B
@@ -12832,16 +11973,14 @@ loc_0057E9:
     dc.w $1843
     lea (0,a0,d5.w),a1
     dc.w $F050
-    dc.w $0024
+    ori.b #$3A,-(a4)
     dc.w $2449
-    dc.w $493A
     dc.w $3A00
     dc.w $000C
     cmpi.w #$0002,d5
     dc.w $4500
-    dc.w $0267
+    andi.w #$040A,-(a7)
     beq.s loc_005800
-    dc.w $040A
     eori.w #$0005,d5
     dc.w $4500
     dc.w $0553
@@ -12870,53 +12009,61 @@ loc_00580E:
     bcc.s loc_005828
     dc.w $1618
     dc.w $18D9
+    add.w d4,(a1)
 loc_005814:
     dbra d3,loc_005814
+    dc.w $CBFF
+loc_005817:
+    dc.w $FC51
     dbra d2,loc_00580E
+    dc.w $CAFF
+    dc.w $F251
 loc_00581C:
     dbra d1,loc_00580A
+    dc.w $C9FF
+    dc.w $EA4A
     tst.w d4
+    dc.w $4457
     dbeq d4,loc_005806
+    dc.w $CCFF
+loc_005825:
+    dc.w $E060
     bra.s loc_00583C
+    dc.w $1442
 loc_005828:
     dc.w $421C
+    dc.w $1C51
 loc_00582A:
     dbra d3,loc_00582A
+    dc.w $CBFF
+    dc.w $FC51
     dbra d2,loc_00580E
+    dc.w $CAFF
+    add.w (a1),d6
     dbra d1,loc_00580A
+    dc.w $C9FF
+    add.w a2,d2
 loc_005836:
     tst.w d4
+    dc.w $4457
     dbeq d4,loc_005806
+    dc.w $CCFF
+    and.w a6,d5
 loc_00583C:
     dc.w $4E6C
+    bge.s loc_0058B3
     moveq #3,d2
+    dc.w $0372
     moveq #3,d1
+    dc.w $0342
 loc_005842:
     clr.w d3
+    dc.w $43E1
 loc_005844:
     dc.w $E1EC
-    dc.w $0018
-    dc.w $E353
-    dc.w $E1EC
-    dc.w $0008
-    dc.w $E353
-    dc.w $E1EC
-    dc.w $0010
-    dc.w $E353
-    dc.w $E1D4
-    dc.w $E353
-    dc.w $1E35
-    dc.w $3000
-    dc.w $E94F
-loc_00585F:
-    dc.w $4F42
-    clr.w d3
-    dc.w $43E1
-    dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12926,9 +12073,37 @@ loc_00585F:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
+    dc.w $53E1
+    dc.w $E1D4
+    dc.w $D4E3
     dc.w $E353
+    dc.w $531E
+    dc.w $1E35
+    dc.w $3530
+    dc.w $3000
+    dc.w $00E9
+    dc.w $E94F
+loc_00585F:
+    dc.w $4F42
+    clr.w d3
+    dc.w $43E1
+    dc.w $E1EC
+    dc.w $EC00
+    ori.b #$53,(a0)+
+    dc.w $18E3
+    dc.w $53E1
+    dc.w $E1EC
+    dc.w $EC00
+    dc.w $0008
+    dc.w $08E3
+    dc.w $E353
+    dc.w $53E1
+    dc.w $E1EC
+    dc.w $EC00
+    ori.b #$53,(a0)
+    dc.w $10E3
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12943,9 +12118,8 @@ loc_00585F:
     dc.w $43E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12956,9 +12130,8 @@ loc_005889:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
@@ -12974,9 +12147,8 @@ loc_00589D:
     dc.w $43E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0018
+    ori.b #$53,(a0)+
     dc.w $18E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
@@ -12986,13 +12158,13 @@ loc_00589D:
     dc.w $53E1
     dc.w $E1EC
     dc.w $EC00
-    dc.w $0010
+    ori.b #$53,(a0)
     dc.w $10E3
-    dc.w $E353
     dc.w $53E1
     dc.w $E1D4
     dc.w $D4E3
     dc.w $E353
+loc_0058B3:
     dc.w $538E
     or.b (0,a5,d3.w),d7
     dc.w $3530
@@ -13032,16 +12204,13 @@ loc_0058E2:
     lea loc_03BA00,a0
     dc.w $F900
     dc.w $03BA
-    dc.w $0030
+    ori.b #$E5,(32,a0,d4.l)
     dc.w $3001
-    dc.w $01E5
     dc.w $E548
-    dc.w $4820
     dc.w $2070
     moveq #0,d0
-    dc.w $0000
+    ori.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
 loc_0058F2:
     dc.w $48E7
@@ -13062,9 +12231,8 @@ loc_005902:
     dc.w $FC4C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0202
+    andi.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7548
 loc_00590C:
     dc.w $48E7
@@ -13149,53 +12317,112 @@ loc_00598C:
     dc.w $33C2
     dc.w $FFFF
     dc.w $8F8C
+loc_00599F:
+    or.w d2,d6
     clr.w d0
+    dc.w $4032
     move.w #$000F,d1
+    dc.w $3C00
+    dc.w $0FE2
     dc.w $E248
+    dc.w $48E2
 loc_0059A8:
     dc.w $E2F9
+    dc.w $F9FF
     dc.w $FFFF
+    dc.w $FF8F
     dc.w $8F8C
+    or.w -(a4),d6
     bcc.s loc_0059E6
+    dc.w $363E
 loc_0059B0:
     move.w #$0002,d7
+    dc.w $3C00
+loc_0059B3:
+    andi.b #$36,(66,a4,d1.w)
     move.w (a1),d2
     move.w (a2),d3
     clr.w d6
+    dc.w $4638
 loc_0059BA:
     dc.w $3802
+    andi.b #$02,(17423,pc)
 loc_0059BC:
     dc.w $3A03
-    dc.w $0244
-    dc.w $0F00
-    dc.w $0245
-    dc.w $0F00
+    andi.w #$0F00,d4
+    ori.b #$0F,d2
+    andi.w #$0F00,d5
+    dc.w $00E0
     dc.w $E04C
+    dc.w $4CE0
     dc.w $E04D
+    lea (19177,a1),a6
     dc.w $E94A
     dc.w $E94B
+    lea (20154,a1),a5
     dc.w $E94E
     dc.w $BA44
+    dc.w $4467
 loc_0059D2:
     beq.s loc_0059DE
+    eori.w #$0255,(17746,a5)
     blt.s loc_0059D8
 loc_0059D6:
     subq.w #2,d5
+loc_0059D7:
+    dc.w $4552
 loc_0059D8:
     addq.w #1,d5
+    dc.w $4508
     dc.w $08C0
+    and.b d0,d0
     dc.w $000F
+    dc.w $0F8C
 loc_0059DE:
     or.w d5,d6
+    dc.w $4551
     dbra d7,loc_0059BC
+    dc.w $CFFF
+    add.b (84,a4,a0.w),d4
     dc.w $3486
 loc_0059E6:
     dc.w $5449
+    dc.w $4954
     dc.w $544A
+    dc.w $4A51
     dbra d1,loc_0059A8
+    dc.w $C9FF
+    dc.w $BA4C
     dc.w $4CDF
+    dc.w $DF06
     dc.w $06FE
+    dc.w $FE4E
     rts
+    dc.w $7548
+    dc.w $E7FC
+    bra.s loc_005A1D
+loc_005A1D:
+    or.b (628,pc),d7
+    dc.w $000B
+    and.w -(a1),d1
+    dc.w $00FF
+    bne.s loc_005A34
+    ori.w #$08DD,-(a6)
+    dc.w $2A00
+    dc.w $0108
+    addq.b #1,d0
+    dc.w $004C
+    dc.w $DF06
+    dc.w $3F4E
+    dc.w $7533
+    dc.w $F9FF
+    dc.w $FF91
+    dc.w $16FF
+    dc.w $FF8F
+    sub.b -(a3),d0
+    dc.w $FC00
+    ori.w #$4EFF,(a2)+
+    dc.w $FF80
 loc_005A4D:
     dc.w $1053
     dc.w $79FF
@@ -13223,16 +12450,15 @@ loc_005A60:
 loc_005A70:
     dc.w $2279
     dc.w $79FF
+loc_005A72:
     dc.w $FFFF
     dc.w $FF91
     sub.b d0,(a2)
     dc.w $1232
     move.w #$0000,d1
     dc.w $3C00
-    dc.w $0034
+    ori.b #$FF,(54,a4,a7.l)
     move.w #$FFFF,d2
-    dc.w $3CFF
-    dc.w $FF36
     dc.w $3639
     dc.w $39FF
     dc.w $FFFF
@@ -13246,7 +12472,6 @@ loc_005A70:
     dc.w $03E2
     dc.w $E24B
     dc.w $4B64
-loc_005A8C:
     bcc.s loc_005A94
     dc.w $0661
     bsr.w loc_00598C
@@ -13259,10 +12484,10 @@ loc_005A94:
     lea (a2),a0
     dc.w $D2FC
     dc.w $FC00
-    dc.w $0020
+    ori.b #$CD,-(a0)
     dc.w $2051
-    dbra d5,loc_005A8C
     dc.w $CDFF
+    dc.w $FFEE
     dc.w $EE4A
     tst.w d4
     dc.w $4466
@@ -13274,35 +12499,34 @@ loc_005A94:
     moveq #96,d4
     bra.s loc_005AAE
     dc.w $0451
+loc_005AAA:
+    dbra d6,loc_005A72
     dc.w $CEFF
     and.w a6,d2
+loc_005AAE:
+    rts
     dc.w $7548
 loc_005AB0:
     dc.w $48E7
     dc.w $E740
     dc.w $4000
-    dc.w $0032
+    ori.b #$02,(78,a2,d7.w)
     move.w #$0270,d1
-    dc.w $3C02
-    moveq #78,d0
     jsr loc_00658C
     dc.w $B900
-    dc.w $0065
+    ori.w #$8C61,-(a5)
 loc_005ABD:
     or.w -(a1),d6
     bsr.w loc_0064B4
     dc.w $0009
     dc.w $F466
     bne.s loc_005AC6
-    dc.w $0230
+    andi.b #$4C,(0,a0,a5.l)
     dc.w $3081
-    dc.w $814C
 loc_005AC6:
     dc.w $4CDF
-    dc.w $DF00
-    dc.w $0002
+    ori.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7548
 loc_005ACC:
     dc.w $48E7
@@ -13311,18 +12535,15 @@ loc_005ACC:
     moveq #83,d7
     dc.w $536E
     bgt.w loc_008541
-    dc.w $002A
-    bgt.s loc_005B34
+    ori.b #$5E,(15737,a2)
     dc.w $5E3D
-    dc.w $3D79
     dc.w $79FF
     dc.w $FFFF
     dc.w $FF91
     sub.b d0,(a6)
     dc.w $1600
-    dc.w $002A
+    ori.b #$3C,(0,a2)
     move.l #$3C00004A,d5
-    move.w #$0000,d6
     dc.w $4A79
     dc.w $79FF
     dc.w $FFFF
@@ -13344,10 +12565,8 @@ loc_005AF0:
     dc.w $1232
     move.w #$0000,d1
     dc.w $3C00
-    dc.w $0034
+    ori.b #$FF,(54,a4,a7.l)
     move.w #$FFFF,d2
-    dc.w $3CFF
-    dc.w $FF36
     dc.w $3639
     dc.w $39FF
     dc.w $FFFF
@@ -13361,7 +12580,6 @@ loc_005AF0:
     dc.w $03E2
     dc.w $E24B
     dc.w $4B64
-loc_005B0A:
     bcc.s loc_005B12
     dc.w $0661
     bsr.w loc_00598C
@@ -13374,10 +12592,10 @@ loc_005B12:
     lea (a2),a0
     dc.w $D2FC
     dc.w $FC00
-    dc.w $0020
+    ori.b #$CD,-(a0)
     dc.w $2051
-    dbra d5,loc_005B0A
     dc.w $CDFF
+    dc.w $FFEE
     dc.w $EE4A
     tst.w d4
     dc.w $4466
@@ -13412,19 +12630,15 @@ loc_005B34:
 loc_005B3A:
     dc.w $23FC
     dc.w $FC00
-    dc.w $0002
-    dc.w $023B
-    dc.w $3B44
-    dc.w $44FF
+    ori.b #$44,d2
+    andi.b #$FF,(-111,pc,a7.l)
     dc.w $FFFF
-    dc.w $FF91
     sub.b d0,(a2)
     dc.w $1233
     dc.w $33FC
     dc.w $FC00
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF91
     sub.b d0,(a6)
     dc.w $1633
@@ -13438,8 +12652,7 @@ loc_005B3A:
     dc.w $1820
     move.l #$00005A3A,d0
     dc.w $3C00
-    dc.w $005A
-    dc.w $3A4E
+    ori.w #$3A4E,(a2)+
     jsr loc_00485E
     dc.w $B900
     dc.w $0048
@@ -13462,19 +12675,17 @@ loc_005B62:
     dc.w $FA32
     dc.w $32FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0022
-    dc.w $22FC
-    dc.w $FCFF
+    ori.b #$FC,d0
+    ori.b #$FF,-(a2)
     dc.w $FFFF
     dc.w $FF8F
     or.l d7,(a2)
     sub.b (0,a2,a7.l),d1
     dc.w $32FC
-    dc.w $0040
+    ori.w #$6100,d0
     dc.w $4061
-    bsr.w loc_004A74
     dc.w $00EE
+    dc.w $EEF4
     dc.w $F44C
     dc.w $4CDF
     dc.w $DF03
@@ -13494,12 +12705,10 @@ loc_005B8D:
     move.l (-1,a3,a4.w),d2
     dc.w $FF91
     move.l (0,a2,d3.l),d3
-    dc.w $0234
-    dc.w $3C00
-    or.b (0,a6,d2.l),d0
+    andi.b #$00,(54,a4,a0.w)
+    dc.w $2900
 loc_005BAD:
-    dc.w $0253
-    dc.w $4338
+    andi.w #$4338,(a3)
     dc.w $2900
     dc.w $0453
     dc.w $4408
@@ -13557,16 +12766,13 @@ loc_005C0B:
     dc.w $2C42
     dc.w $4214
     dc.w $194A
-    dc.w $0266
-    dc.w $044A
+    andi.w #$044A,-(a6)
     dc.w $4666
     dc.w $4E0C
-    dc.w $0200
-    dc.w $FA65
+    andi.b #$65,d0
     dc.w $3841
     dc.w $F900
-    dc.w $005C
-    and.b d4,d2
+    ori.w #$C404,(a4)+
     clr.b d0
     dc.w $FAE5
     dc.w $4A20
@@ -13575,12 +12781,11 @@ loc_005C0B:
     add.w d2,d0
     dc.w $4560
     add.b (15368,pc),d4
-    dc.w $0060
-    add.b (15376,pc),d1
-    dc.w $0060
-    and.b (15384,pc),d6
-    dc.w $0060
-    and.b (a3),d3
+    ori.w #$D23A,-(a0)
+    move.w (a0),d6
+    ori.w #$CC3A,-(a0)
+    move.w (a0)+,d6
+    ori.w #$C613,-(a0)
     dc.w $D9FF
     dc.w $FF91
     dc.w $3053
@@ -13632,17 +12837,12 @@ loc_005CB5:
     dc.w $DF07
     dc.w $7F4E
     dc.w $7500
-    dc.w $005C
-    dc.w $4600
-    dc.w $005C
-    tst.b d0
-    dc.w $005C
-    addq.b #8,d0
-    dc.w $005C
-    addq.b #3,d0
-    dc.w $005C
-    addq.b #6,d0
-    dc.w $005C
+    ori.w #$4600,(a4)+
+    ori.w #$4A00,(a4)+
+    ori.w #$5000,(a4)+
+    ori.w #$5600,(a4)+
+    ori.w #$5C00,(a4)+
+    ori.w #$B848,(a4)+
 loc_005CDB:
     dc.w $B848
 loc_005CDC:
@@ -13671,10 +12871,8 @@ loc_005CDC:
     sub.b d0,-(a6)
     move.l (0,a2,d3.l),d3
     move.w #$0002,d1
-    dc.w $0234
+    andi.b #$00,(-29,a4,d0.w)
     move.w (2,a1),d2
-    dc.w $2900
-    dc.w $02E3
 loc_005CFE:
     dc.w $E34A
     dc.w $4A5C
@@ -13682,19 +12880,16 @@ loc_005CFE:
     dc.w $4236
     move.w (2,a1),d3
     dc.w $2900
-    dc.w $0238
+    andi.b #$00,($0453).w
     move.w (4,a1),d4
-    dc.w $2900
-    dc.w $0453
     subq.w #1,d3
     dc.w $4353
     subq.w #1,d4
     dc.w $4433
     dc.w $33FC
     dc.w $FC00
-    dc.w $0006
+    ori.b #$FF,d6
     dc.w $06FF
-    dc.w $FFFF
     dc.w $FF91
     sub.b d0,-(a0)
     dc.w $2008
@@ -13706,9 +12901,8 @@ loc_005CFE:
     dc.w $1030
     move.w (2,a1),d0
     dc.w $2900
-    dc.w $0253
+    andi.w #$40E3,(a3)
     subq.w #1,d0
-    dc.w $40E3
     dc.w $E348
     dc.w $48D1
     add.w d0,($FFFF9120).l
@@ -13726,9 +12920,8 @@ loc_005D2C:
     dc.w $183E
     move.w (2,a1),d7
     dc.w $2900
-    dc.w $0256
+    andi.w #$47E3,(a6)
     addq.w #3,d7
-    dc.w $47E3
     dc.w $E34F
     dc.w $4F30
     move.w (4,a1),d0
@@ -13747,15 +12940,13 @@ loc_005D2C:
 loc_005D4A:
     dc.w $0C51
     subq.b #8,d0
-    dc.w $0001
+    ori.b #$04,d1
     dc.w $0167
-    beq.s loc_005D54
     dc.w $04C3
     dc.w $C342
     dc.w $42C7
     dc.w $C744
     dc.w $4433
-loc_005D54:
     dc.w $33C1
     dc.w $C1FF
     dc.w $FFFF
@@ -13799,10 +12990,8 @@ loc_005D54:
     dc.w $1E34
     move.w (2,a2),d2
     dc.w $2A00
-    dc.w $0236
+    andi.b #$00,(83,a6,d0.w)
     move.w (4,a2),d3
-    dc.w $2A00
-    dc.w $0453
     subq.w #1,d3
     dc.w $4332
     dc.w $32FC
@@ -13815,11 +13004,9 @@ loc_005D92:
     dc.w $32C2
     dc.w $0641
     dc.w $4100
-    dc.w $0080
+    ori.l #$D2C2D2C2,d0
     dc.w $80D2
-    dc.w $D2C2
     dc.w $C2D2
-    dc.w $D2C2
     and.w (a1),d1
     dbra d3,loc_005D92
     dc.w $CBFF
@@ -13859,14 +13046,12 @@ loc_005D92:
     dc.w $1419
     dc.w $190C
     cmpi.b #$FA,d2
-    dc.w $0200
-    dc.w $FA65
+    andi.b #$65,d0
     bcs.s loc_005E08
     dc.w $3841
     lea loc_005E58,a0
     dc.w $F900
-    dc.w $005E
-    addq.b #4,d4
+    ori.w #$5804,(a6)+
     dc.w $0442
     clr.b d0
     dc.w $00FA
@@ -13882,12 +13067,11 @@ loc_005D92:
     dc.w $4560
     dc.w $E03A
     dc.w $3C08
-    dc.w $0060
-    add.b (15376,pc),d5
-    dc.w $0060
-    add.b (15384,pc),d2
-    dc.w $0060
-    and.b (a3),d7
+    ori.w #$DA3A,-(a0)
+    move.w (a0),d6
+    ori.w #$D43A,-(a0)
+    move.w (a0)+,d6
+    ori.w #$CE13,-(a0)
     dc.w $D9FF
     dc.w $FF91
     dc.w $3053
@@ -13971,19 +13155,14 @@ loc_005E2A:
     dc.w $FF4E
     rts
     dc.w $7500
-    dc.w $005D
+    ori.w #$E200,(a5)+
 loc_005E5B:
     dc.w $E200
-    dc.w $005D
-    dc.w $E600
-    dc.w $005D
-    dc.w $EC00
-    dc.w $005D
-    dc.w $F200
-    dc.w $005D
-    dc.w $F800
-    dc.w $005E
-    dc.w $5248
+    ori.w #$E600,(a5)+
+    ori.w #$EC00,(a5)+
+    ori.w #$F200,(a5)+
+    ori.w #$F800,(a5)+
+    ori.w #$5248,(a6)+
 loc_005E70:
     dc.w $48E7
     dc.w $E77F
@@ -14013,12 +13192,9 @@ loc_005E7F:
     dc.w $32FC
     dc.w $FC08
     dc.w $0800
-    dc.w $0032
+    ori.b #$00,(50,a2,d0.w)
     dc.w $32FC
-    dc.w $FC00
-    dc.w $0002
-    dc.w $0232
-    dc.w $32FC
+    ori.b #$FC,d2
     dc.w $FCFF
     dc.w $FFFC
     dc.w $FC32
@@ -14029,12 +13205,9 @@ loc_005E9A:
     dc.w $32FC
     dc.w $FC08
     dc.w $0800
-    dc.w $0032
+    ori.b #$00,(50,a2,d0.w)
     dc.w $32FC
-    dc.w $FC00
-    dc.w $0002
-    dc.w $0232
-    dc.w $32C1
+    ori.b #$C1,d2
     and.b d0,(97,a2,a4.w)
     dc.w $32C2
     bsr.w loc_004A74
@@ -14058,8 +13231,7 @@ loc_005EB0:
     dc.w $4861
     bsr.w loc_00665E
 loc_005EBB:
-    dc.w $0007
-    dc.w $A232
+    ori.b #$32,d7
     dc.w $32C0
     and.b (97,a2,a4.w),d0
     dc.w $32C4
@@ -14078,8 +13250,7 @@ loc_005EBB:
     cmp.w -(a7),d6
     dc.w $1E0C
     dc.w $43C0
-    dc.w $0066
-    dc.w $1830
+    ori.w #$1830,-(a6)
     dc.w $388F
     dc.w $4CE6
     dc.w $4802
@@ -14094,7 +13265,6 @@ loc_005EBB:
     dc.w $4061
     dc.w $00FF
     dc.w $BA4C
-loc_005EF9:
     dc.w $DF00
     dc.w $064E
     dc.w $7548
@@ -14104,8 +13274,7 @@ loc_005EFE:
     dc.w $F4E0
     dc.w $E061
     bsr.w loc_00665E
-    dc.w $0007
-    dc.w $5A32
+    ori.b #$32,d7
     dc.w $3200
     dc.w $00E1
     dc.w $E14D
@@ -14113,13 +13282,11 @@ loc_005EFE:
     dc.w $EB4D
     lea loc_006316,a2
     dc.w $F900
-    dc.w $0063
-    dc.w $1614
+    ori.w #$1614,-(a3)
     dc.w $1432
     dc.w $3260
     bra.w loc_00C016
-    dc.w $0061
-    dc.w $00EB
+    ori.w #$00EB,-(a1)
     dc.w $5422
     dc.w $4884
     dc.w $4584
@@ -14145,8 +13312,7 @@ loc_005F2E:
     cmp.w -(a7),d6
     dc.w $1E0C
     dc.w $43C0
-    dc.w $0066
-    dc.w $1830
+    ori.w #$1830,-(a6)
     dc.w $388F
     dc.w $4CE6
     dc.w $4802
@@ -14158,9 +13324,8 @@ loc_005F2E:
 loc_005F4E:
     dc.w $E648
     dc.w $4802
-    dc.w $0240
+    andi.w #$001F,d0
     dc.w $4000
-    dc.w $001F
     dc.w $1FD4
     add.w d0,d2
     dc.w $4061
@@ -14169,9 +13334,8 @@ loc_005F4E:
     dc.w $A64C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0006
+    ori.b #$75,d6
     dc.w $064E
-    rts
     dc.w $7560
 loc_005F60:
     bra.s loc_005F7C
@@ -14190,22 +13354,19 @@ loc_005F79:
     move.w (0,a3,a7.l),d0
 loc_005F7C:
     dc.w $33FC
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF91
     sub.b d0,($33FC).w
     move.w (0,a3,a7.l),d4
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF91
     dc.w $913C
     move.w (0,a3,a7.l),d6
     dc.w $33FC
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF91
     sub.b d0,(24598,pc)
     dc.w $3A60
@@ -14213,16 +13374,14 @@ loc_005F7C:
 loc_005F96:
     dc.w $33FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$FF,d1
 loc_005F99:
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FF91
     sub.b d0,($33FC).w
     move.w (0,a3,a7.l),d4
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FF91
     dc.w $913C
     move.w (-1,a3,a4.w),d6
@@ -14249,14 +13408,12 @@ loc_005F99:
     dc.w $FF91
     sub.b d0,(0,a6,d6.w)
     dc.w $3661
-    dc.w $0006
+    ori.b #$32,d6
     dc.w $069C
-    sub.b (51,a2,d0.w),d6
     dc.w $3200
+    ori.b #$FF,(-111,a3,a7.l)
     dc.w $33C0
-    dc.w $C0FF
     dc.w $FFFF
-    dc.w $FF91
     sub.b d0,(77,a2,a6.w)
     dc.w $32E1
     lea (19778,a3),a6
@@ -14269,10 +13426,8 @@ loc_005F99:
     dc.w $3445
     dc.w $F900
 loc_005FD8:
-    dc.w $0000
-    dc.w $0063
-    bls.s loc_005FF2
-    dc.w $1661
+    ori.b #$16,d0
+    ori.w #$1661,-(a3)
     bsr.w loc_004A6C
     dc.w $00EA
     or.b -(a6),d7
@@ -14282,38 +13437,31 @@ loc_005FE2:
     dc.w $1419
     dc.w $190C
     cmpi.b #$FF,d2
-    dc.w $0200
-    dc.w $FF67
+    andi.b #$67,d0
     beq.w loc_0060B4
-    dc.w $0000
-    and.b a4,d5
+    ori.b #$0C,d0
     cmpi.b #$5E,d2
-    dc.w $0200
-    dc.w $5E66
+    andi.b #$66,d0
     bne.s loc_005FFA
     dc.w $0834
-loc_005FF2:
     move.w #$0000,d2
     dc.w $3C00
-    dc.w $0060
+    ori.w #$0000,-(a0)
     bra.w loc_0060AA
-    dc.w $0000
     dc.w $B20C
 loc_005FFA:
     cmpi.b #$0D,d2
 loc_005FFB:
-    dc.w $0200
-    dc.w $0D66
+    andi.b #$66,d0
     bne.s loc_006010
     dc.w $1006
     dc.w $0679
     dc.w $7900
-    dc.w $0080
+    ori.l #$FFFF9132,d0
     dc.w $80FF
-    dc.w $FFFF
     dc.w $FF91
-    sub.b d0,(57,a2,d3.w)
     move.w (-1,a2,d3.l),d1
+    dc.w $3239
     dc.w $FFFF
     dc.w $FF91
     sub.b d0,(-46,a2,d6.w)
@@ -14321,8 +13469,7 @@ loc_005FFB:
     add.b a4,d1
 loc_006010:
     cmpi.b #$7E,d2
-    dc.w $0200
-    moveq #102,d7
+    andi.b #$66,d0
     bne.s loc_006020
     dc.w $0A0A
     eori.w #$0040,($FFFF9134).l
@@ -14336,11 +13483,9 @@ loc_00601C:
     and.b a4,d1
 loc_006020:
     cmpi.b #$7C,d2
-    dc.w $0200
-    moveq #103,d6
+    andi.b #$67,d0
     beq.w loc_0060AE
-    dc.w $0000
-    or.w a2,d4
+    ori.b #$4A,d0
     dc.w $4A79
     dc.w $79FF
     dc.w $FFFF
@@ -14348,17 +13493,14 @@ loc_006020:
     dc.w $913C
     dc.w $3C67
     beq.w loc_00608E
-    dc.w $0000
-    dc.w $5E30
+    ori.b #$30,d0
     dc.w $3001
     dc.w $0104
     dc.w $0440
     dc.w $4000
-    dc.w $0080
+    ori.l #$36C00C11,d0
 loc_006037:
     or.b (12,a6,a4.w),d0
-    dc.w $36C0
-    dc.w $0C11
     dc.w $1100
     dc.w $00DE
     add.w -(a6),d7
@@ -14418,9 +13560,8 @@ loc_006072:
     dc.w $FF91
     sub.b d0,($6702).w
     dc.w $3867
-    dc.w $0254
+    andi.w #$40D0,(a4)
     addq.w #2,d0
-    dc.w $40D0
 loc_00607C:
     add.w ($FFFF9136).l,d0
     dc.w $79FF
@@ -14430,29 +13571,25 @@ loc_00607C:
     dc.w $453C
     dc.w $3C04
     dc.w $0402
-    dc.w $0246
+    andi.w #$8000,d6
     dc.w $4680
-    or.b d0,d0
-    dc.w $0080
+    ori.l #$4636C076,d0
     or.w d6,d0
-    dc.w $4636
     dc.w $36C0
-    and.w (22,a6,d0.w),d0
 loc_00608E:
     moveq #0,d3
+    ori.b #$20,(a6)
     dc.w $1632
-    dc.w $3220
     dc.w $2000
     dc.w $000C
     cmpi.b #$A6,d2
-    dc.w $0200
-    dc.w $A66D
+    andi.b #$6D,d0
     blt.s loc_0060A6
     dc.w $0C0C
     cmpi.b #$DD,d2
-    dc.w $0200
-    add.w d6,(1750,a6)
+    andi.b #$6E,d0
     bgt.s loc_0060A6
+    dc.w $06D6
     add.w ($FFFF9134).l,d3
     dc.w $79FF
     dc.w $FF91
@@ -14496,7 +13633,7 @@ loc_0060C0:
     cmp.w -(a7),d6
     dc.w $1E0C
     dc.w $43C0
-    dc.w $0066
+    ori.w #$1830,-(a6)
 loc_0060CF:
     dc.w $1830
 loc_0060D1:
@@ -14517,18 +13654,18 @@ loc_0060DF:
     moveq #76,d3
     dc.w $DF00
 loc_0060EE:
-    dc.w $0006
+    ori.b #$75,d6
     dc.w $064E
-    rts
     dc.w $7548
+    dc.w $48E7
     dc.w $E760
+    bra.w loc_00AB6E
     dc.w $004A
     moveq #-82,d4
     cmp.w -(a7),d6
     dc.w $1E0C
     dc.w $43C0
-    dc.w $0066
-    dc.w $1830
+    ori.w #$1830,-(a6)
     dc.w $388F
     dc.w $4CE6
     dc.w $4802
@@ -14552,42 +13689,71 @@ loc_006156:
     beq.w loc_006174
     dc.w $3006
     dc.w $E548
+loc_00616B:
+    dc.w $4842
     clr.l d2
+    or.b d1,d1
     dc.w $01C2
+    and.w (a3),d1
     subq.l #1,d2
+    dc.w $82CE
     and.l d2,d7
+    dc.w $82E1
 loc_006174:
     dc.w $E14D
+    lea (19809,a3),a6
     dc.w $EB4D
     bsr.w loc_004A6C
+    dc.w $00E8
+    dc.w $F222
     dc.w $2248
+    dc.w $4832
     dc.w $32FC
+    dc.w $FCFF
     dc.w $FFF8
+    dc.w $F832
     dc.w $32C1
+    and.b d0,(48,a2,a4.w)
     dc.w $32C6
     dc.w $3006
+    dc.w $06E3
     dc.w $E348
+    dc.w $48D2
     dc.w $D2C0
+    and.w -(a1),d0
     bsr.w loc_004A74
+    dc.w $00E8
+    dc.w $E653
     subq.w #1,d6
+    dc.w $4642
     clr.w d1
+    dc.w $4114
     dc.w $1407
+    dc.w $0702
 loc_006196:
-    dc.w $0242
-    dc.w $000F
+    andi.w #$000F,d2
+    clr.b d0
+    dc.w $0F66
     bne.w loc_0061B8
+    ori.b #$4A,d0
     tst.w d1
+    dc.w $4167
     beq.w loc_0061B8
+    ori.b #$4A,d0
     tst.l d7
+    or.w d3,-(a6)
     bne.w loc_0061B8
+    ori.b #$34,d0
     dc.w $3404
+    dc.w $0484
     or.w d5,d2
-    dc.w $0242
-    dc.w $E000
-    dc.w $0042
+    dc.w $4502
+    andi.w #$E000,d2
+    dc.w $42E0
+    ori.b #$00,d0
+    ori.w #$0065,d2
 loc_0061B3:
     clr.b d0
-    dc.w $0065
     bcs.s loc_006217
     bra.s loc_0061C0
     dc.w $08D4
@@ -14623,8 +13789,7 @@ loc_0061CE:
     cmp.w -(a7),d6
     dc.w $1E0C
     dc.w $43C0
-    dc.w $0066
-    dc.w $1830
+    ori.w #$1830,-(a6)
     dc.w $388F
     dc.w $4CE6
 loc_0061E3:
@@ -14651,24 +13816,20 @@ loc_006200:
     dc.w $48E7
     dc.w $E740
     dc.w $4000
-    dc.w $0072
+    ori.w #$0032,(78,a2,d0.w)
     moveq #0,d1
-    dc.w $0032
     dc.w $3207
-    dc.w $074E
     jsr loc_006672
     dc.w $B900
-    dc.w $0066
-    moveq #46,d1
+    ori.w #$722E,-(a6)
     dc.w $2E00
     dc.w $004C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0002
+    ori.b #$00,d2
 loc_006217:
-    dc.w $0261
-    bsr.w loc_00665E
-    dc.w $0004
+    andi.w #$0004,-(a1)
+    dc.w $0444
     dc.w $4432
     dc.w $3200
     dc.w $000C
@@ -14676,8 +13837,7 @@ loc_006217:
     dc.w $4600
     dc.w $0867
     beq.w loc_006232
-    dc.w $0000
-    dc.w $0E30
+    ori.b #$30,d0
     dc.w $3006
 loc_006227:
     dc.w $06E5
@@ -14724,34 +13884,27 @@ loc_00623D:
     dc.w $1407
     dc.w $0702
 loc_006254:
-    dc.w $0242
+    andi.w #$000F,d2
     clr.b d0
-    dc.w $000F
     dc.w $0F66
     bne.w loc_006276
-    dc.w $0000
-    dc.w $1C4A
+    ori.b #$4A,d0
     tst.w d1
     dc.w $4167
     beq.w loc_006276
-    dc.w $0000
-    dc.w $164A
+    ori.b #$4A,d0
     tst.l d7
     or.w d3,-(a6)
     bne.w loc_006276
-    dc.w $0000
-    dc.w $1034
+    ori.b #$34,d0
     dc.w $3404
     dc.w $0484
     or.w d5,d2
     dc.w $4502
-    dc.w $0242
+    andi.w #$E000,d2
     dc.w $42E0
-    dc.w $E000
-    dc.w $0000
-    dc.w $0042
-    clr.b d0
-    dc.w $0065
+    ori.b #$00,d0
+    ori.w #$0065,d2
     bcs.s loc_0062D5
     bra.s loc_00627E
     dc.w $08D4
@@ -14783,8 +13936,7 @@ loc_00627E:
     cmp.w -(a7),d6
     dc.w $1E0C
     dc.w $43C0
-    dc.w $0066
-    dc.w $1830
+    ori.w #$1830,-(a6)
     dc.w $388F
     dc.w $4CE6
     dc.w $4802
@@ -14829,40 +13981,32 @@ loc_0062D5:
     dc.w $FF91
     dc.w $3E60
     bra.w loc_006310
-    dc.w $0000
-    dc.w $320C
+    ori.b #$0C,d0
 loc_0062E0:
     cmpi.b #$20,d1
     dc.w $0100
     dc.w $2066
     bne.s loc_00630A
     dc.w $240C
-loc_0062E6:
     dc.w $0C11
     dc.w $1100
-    dc.w $0020
+    ori.b #$00,-(a0)
     dc.w $2066
-    bne.w loc_0062F4
-    dc.w $0000
-    dc.w $08D2
+    ori.b #$D2,d0
+    dc.w $0008
     dc.w $D2FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$F2,d1
     dc.w $0160
-    bra.s loc_0062E6
     dc.w $F236
-loc_0062F4:
     dc.w $3602
-    dc.w $026B
+    andi.w #$0814,(-1024,a3)
     bmi.s loc_006300
-    dc.w $0814
     dc.w $14FC
-    dc.w $FC00
-loc_0062FA:
-    dc.w $0020
+    ori.b #$CB,-(a0)
     dc.w $2051
-    dbra d3,loc_0062FA
     dc.w $CBFF
+    dc.w $FFFA
     dc.w $FA34
 loc_006300:
     move.w #$0007,d2
@@ -14888,22 +14032,14 @@ loc_006310:
     dc.w $0E4E
     rts
     dc.w $7500
-    dc.w $0200
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0065
+    andi.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$65,d0
     dc.w $0102
     dc.w $0304
     dc.w $0506
@@ -14978,38 +14114,22 @@ loc_00635A:
     dc.w $5D5E
     dc.w $5E5F
     subq.b #7,d0
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0080
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$80,d0
     or.l d1,d0
     dc.w $8182
     or.l d3,d1
@@ -15066,38 +14186,22 @@ loc_00635A:
     eor.l d4,(-17476,pc)
     eor.w d6,(27392,a2)
     bpl.s loc_006461
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0048
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.b #$48,d0
 loc_006416:
     dc.w $48E7
     dc.w $E740
@@ -15120,9 +14224,8 @@ loc_006424:
     dc.w $F84C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0202
+    andi.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7533
 loc_006432:
     dc.w $33C1
@@ -15152,10 +14255,8 @@ loc_00644A:
     dc.w $104B
     lea loc_023B00,a5
     dc.w $F900
-    dc.w $023B
-    dc.w $0030
+    andi.b #$30,(78,pc,d5.w)
     dc.w $3056
-    dc.w $564E
     jsr (a0)
     sub.w (a2),d0
     dc.w $5279
@@ -15185,10 +14286,10 @@ loc_006465:
 loc_00646C:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$307C,d0
     dc.w $4030
-    movea.w #$9182,a0
     moveq #-111,d6
+    dc.w $9182
     or.b (0,a0,d3.l),d1
     move.w #$000F,d0
     dc.w $0F4A
@@ -15208,41 +14309,53 @@ loc_00647A:
 loc_006485:
     dc.w $0160
     bra.s loc_00648A
-    dc.w $0270
+    andi.w #$004C,(2,a0,a5.l)
 loc_006488:
     moveq #0,d0
-    dc.w $004C
 loc_00648A:
     dc.w $4CDF
-    dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
+    dc.w $48E7
     dc.w $E700
+    ori.w #$307C,d0
     dc.w $4030
     moveq #-107,d6
+    dc.w $95D8
     add.b (0,a0,d3.l),d4
+    move.w #$000F,d0
     dc.w $0F4A
+    dc.w $4A50
     dc.w $5067
+loc_00649E:
+    beq.s loc_0064AC
     dc.w $0C90
+    dc.w $90FC
     dc.w $FC00
+    dc.w $004A
     dc.w $4A51
+    dbra d0,loc_00649E
     dc.w $C8FF
     dc.w $F670
+    moveq #1,d0
     dc.w $0160
-    dc.w $0270
-    dc.w $004C
-    dc.w $DF02
+    bra.s loc_0064AE
+    andi.w #$004C,(2,a0,a5.l)
+loc_0064AC:
+    moveq #0,d0
+loc_0064AE:
+    dc.w $4CDF
+    andi.b #$75,d0
     dc.w $004E
     dc.w $7548
 loc_0064B4:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$307C,d0
     dc.w $4030
-    movea.w #$9622,a0
     moveq #-106,d6
+    sub.b -(a2),d3
     move.l (0,a0,d3.l),d1
     move.w #$000F,d0
     dc.w $0F4A
@@ -15261,27 +14374,24 @@ loc_0064C2:
     moveq #1,d0
     dc.w $0160
     bra.s loc_0064D2
-    dc.w $0270
+    andi.w #$004C,(2,a0,a5.l)
 loc_0064D0:
     moveq #0,d0
-    dc.w $004C
 loc_0064D2:
     dc.w $4CDF
-    dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
 loc_0064D8:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$307C,d0
     dc.w $4030
-    movea.w #$9A78,a0
     moveq #-102,d6
+    sub.w ($303C).w,d5
     moveq #48,d4
-    move.w #$000F,d0
     dc.w $3C00
+    dc.w $000F
     dc.w $0F4A
     dc.w $4A50
     dc.w $5067
@@ -15298,24 +14408,21 @@ loc_0064E6:
     moveq #1,d0
     dc.w $0160
     bra.s loc_0064F6
-    dc.w $0270
+    andi.w #$004C,(2,a0,a5.l)
 loc_0064F4:
     moveq #0,d0
-    dc.w $004C
 loc_0064F6:
     dc.w $4CDF
-    dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
 loc_0064FC:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$307C,d0
     dc.w $4030
-    movea.w #$9AC2,a0
     moveq #-102,d6
+    dc.w $9AC2
     and.b (0,a0,d3.l),d1
     move.w #$0007,d0
     dc.w $074A
@@ -15334,41 +14441,53 @@ loc_00650A:
     moveq #1,d0
     dc.w $0160
     bra.s loc_00651A
-    dc.w $0270
+    andi.w #$004C,(2,a0,a5.l)
 loc_006518:
     moveq #0,d0
-    dc.w $004C
 loc_00651A:
     dc.w $4CDF
-    dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
+    dc.w $48E7
     dc.w $E700
+    ori.w #$307C,d0
     dc.w $4030
     moveq #-100,d6
+    dc.w $9CC8
     and.b (0,a0,d3.l),d4
+    move.w #$0007,d0
     dc.w $074A
+    dc.w $4A50
     dc.w $5067
+loc_00652E:
+    beq.s loc_00653C
     dc.w $0C90
+    dc.w $90FC
     dc.w $FC00
+    dc.w $004A
     dc.w $4A51
+    dbra d0,loc_00652E
     dc.w $C8FF
     dc.w $F670
+    moveq #1,d0
     dc.w $0160
-    dc.w $0270
-    dc.w $004C
-    dc.w $DF02
+    bra.s loc_00653E
+    andi.w #$004C,(2,a0,a5.l)
+loc_00653C:
+    moveq #0,d0
+loc_00653E:
+    dc.w $4CDF
+    andi.b #$75,d0
     dc.w $004E
     dc.w $7548
 loc_006544:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$307C,d0
     dc.w $4030
-    movea.w #$9D12,a0
     moveq #-99,d6
+    sub.b d6,(a2)
     dc.w $1230
     move.w #$003B,d0
 loc_00654D:
@@ -15389,24 +14508,21 @@ loc_006552:
     moveq #1,d0
     dc.w $0160
     bra.s loc_006562
-    dc.w $0270
+    andi.w #$004C,(2,a0,a5.l)
 loc_006560:
     moveq #0,d0
-    dc.w $004C
 loc_006562:
     dc.w $4CDF
-    dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
 loc_006568:
     dc.w $48E7
     dc.w $E700
-    dc.w $0040
+    ori.w #$307C,d0
     dc.w $4030
-    movea.w #$AE20,a0
     moveq #-82,d6
+    dc.w $AE20
 loc_00656F:
     move.l (0,a0,d3.l),d0
     move.w #$003B,d0
@@ -15426,16 +14542,13 @@ loc_006576:
     moveq #1,d0
     dc.w $0160
     bra.s loc_006586
-    dc.w $0270
+    andi.w #$004C,(2,a0,a5.l)
 loc_006584:
     moveq #0,d0
-    dc.w $004C
 loc_006586:
     dc.w $4CDF
-    dc.w $DF02
-    dc.w $0200
+    andi.b #$75,d0
     dc.w $004E
-    rts
     dc.w $7548
 loc_00658C:
     dc.w $48E7
@@ -15452,9 +14565,8 @@ loc_00658C:
     dc.w $5166
 loc_00659C:
     bne.s loc_0065A0
-    dc.w $0242
+    andi.w #$51D2,d2
     dc.w $4251
-    dc.w $51D2
 loc_0065A0:
     dc.w $D2FC
     dc.w $FC00
@@ -15466,9 +14578,8 @@ loc_0065A5:
     dc.w $F44C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0204
+    andi.b #$75,d4
     dc.w $044E
-    rts
     dc.w $7548
 loc_0065AE:
     dc.w $48E7
@@ -15494,26 +14605,44 @@ loc_0065BE:
     dc.w $CAFF
     dc.w $F670
     moveq #0,d0
-    dc.w $0060
+    ori.w #$0270,-(a0)
     bra.s loc_0065CE
-    dc.w $0270
 loc_0065CC:
     moveq #1,d0
     dc.w $014C
 loc_0065CE:
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0204
+    andi.b #$75,d4
     dc.w $044E
-    rts
     dc.w $750C
+    dc.w $0C6E
     dc.w $6EFF
+    dc.w $FFE0
     dc.w $E000
+    ori.b #$1C,(a0)
     dc.w $106B
 loc_0065DB:
     dc.w $1C0C
+    dc.w $0C6E
     bgt.s loc_0065E0
+    dc.w $0160
     bra.w loc_00764B
+loc_0065E0:
+    ori.b #$14,(a0)
+    dc.w $0C6E
+    dc.w $FFE0
+    dc.w $000C
+    bmi.s loc_0065F8
+    dc.w $0C6E
+    dc.w $0100
+    dc.w $000C
+    bpl.s loc_0065F8
+    moveq #0,d0
+    rts
+loc_0065F8:
+    moveq #1,d0
+    rts
 loc_006640:
     dc.w $48E7
     or.b d0,d0
@@ -15522,25 +14651,23 @@ loc_006640:
     move.l (20,a6),d0
     add.l d0,(12,a6)
     dc.w $4CDF
-    dc.w $0001
-    rts
+    ori.b #$75,d1
+    dc.w $004A
+    ori.w #$48E7,-(a4)
 loc_00665E:
     dc.w $48E7
 loc_00665F:
     dc.w $E760
     bra.w loc_009665
-    dc.w $0030
-    dc.w $03E3
-    lea (a0),a4
+    ori.b #$E3,(-48,a0,d4.l)
     lea (19152,a7),a0
 loc_00666B:
     dc.w $424C
 loc_00666C:
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0006
+    ori.b #$75,d6
     dc.w $064E
-    rts
     dc.w $7548
 loc_006672:
     dc.w $48E7
@@ -15548,10 +14675,8 @@ loc_006672:
     moveq #64,d0
     dc.w $4070
     moveq #0,d0
-    dc.w $0036
+    ori.b #$00,(67,a6,d0.w)
     move.w #$0007,d3
-    dc.w $3C00
-    dc.w $0743
     lea loc_023C44,a1
     dc.w $F900
     dc.w $023C
@@ -15568,9 +14693,8 @@ loc_006686:
     sub.l d2,d1
     or.w (a2),d1
     addq.b #1,d0
-    dc.w $0060
+    ori.w #$F651,-(a0)
     bra.s loc_006686
-    dc.w $F651
 loc_006690:
     dbra d3,loc_006684
     dc.w $CBFF
@@ -15582,11 +14706,9 @@ loc_006690:
     rts
     dc.w $7548
     dc.w $E770
-    dc.w $0070
-    dc.w $0034
+    ori.w #$0034,(0,a0,d3.l)
 loc_0066A0:
     move.w #$0007,d2
-    dc.w $3C00
     dc.w $0726
     dc.w $2600
     dc.w $00E5
@@ -15601,9 +14723,8 @@ loc_0066A6:
     dc.w $01E9
     dc.w $E99B
     dc.w $9B02
-    dc.w $0243
+    andi.w #$000F,d3
     dc.w $4300
-    dc.w $000F
     dc.w $0F53
     subq.b #1,d3
     dc.w $0365
@@ -15634,22 +14755,17 @@ loc_0066CE:
     dc.w $4267
     beq.s loc_0066F4
     dc.w $2202
-    dc.w $0282
+    andi.l #$0000FFFF,d2
     or.b d0,d1
-    dc.w $0000
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FF76
     moveq #0,d3
-    dc.w $0078
+    ori.w #$003A,($3C00).w
     moveq #0,d4
-    dc.w $003A
     move.w #$001F,d5
-    dc.w $3C00
     dc.w $1FE3
     dc.w $E38B
     dc.w $8BE3
-loc_0066E2:
     dc.w $E391
     dc.w $91E3
     dc.w $E394
@@ -15661,11 +14777,9 @@ loc_0066E2:
     or.b a0,d1
     dc.w $08C3
     dc.w $C300
-    dc.w $0000
-    dc.w $0051
-loc_0066F0:
-    dbra d5,loc_0066E2
-    dc.w $CDFF
+    ori.b #$CD,d0
+    ori.w #$CDFF,(a1)
+    dc.w $FFEE
     dc.w $EE22
 loc_0066F4:
     dc.w $2203
@@ -15674,37 +14788,49 @@ loc_0066F4:
     dc.w $044C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0038
+    ori.b #$75,($33F9).w
     dc.w $384E
-    rts
 loc_0066FD:
     dc.w $7533
     dc.w $F9FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AE6C
     dc.w $6CFF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AE6A
     bpl.s loc_00672C
+    dc.w $23FC
     dc.w $FC00
-    dc.w $0067
-    dc.w $12FF
+    ori.b #$12,d0
+    ori.w #$12FF,-(a7)
+    dc.w $FFFF
     dc.w $FF80
+    or.b (a0),d0
     dc.w $1053
+    dc.w $5379
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AE6A
     bpl.s loc_006783
+    bpl.s loc_006720
 loc_006719:
     dc.w $064E
+    jsr loc_004878
     dc.w $B900
     dc.w $0048
     moveq #78,d4
+loc_006720:
+    rts
     dc.w $7548
 loc_006722:
     dc.w $48E7
     dc.w $E740
     dc.w $4000
-    dc.w $0022
+    ori.b #$FF,-(a2)
     dc.w $2239
-    dc.w $39FF
     dc.w $FFFF
     dc.w $FFAE
     dc.w $AE6E
@@ -15744,28 +14870,31 @@ loc_006743:
     bgt.s loc_00679B
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0002
+    ori.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7543
+    lea loc_009012,a1
     dc.w $F890
     dc.w $1245
+    lea loc_023CBC,a2
     dc.w $F900
     dc.w $023C
     dc.w $BC4E
+    jsr loc_00596A
     dc.w $B900
-    dc.w $0059
-    bpl.s loc_006788
+    ori.w #$6A23,(a1)+
+    dc.w $23FC
     dc.w $FC00
-    dc.w $0067
-    moveq #-1,d0
+    ori.b #$70,d0
+    ori.w #$70FF,-(a7)
+    dc.w $FFFF
     dc.w $FF80
+    or.b (a0),d0
     dc.w $104E
+    rts
     dc.w $7548
     dc.w $E740
-    dc.w $0032
-    dc.w $3C81
-    dc.w $0012
+    ori.b #$81,(18,a2,d0.w)
     dc.w $3880
     dc.w $9D00
     dc.w $0100
@@ -15777,13 +14906,10 @@ loc_006783:
     dc.w $C180
     dc.w $9D4C
     dc.w $DF00
-    dc.w $0232
-    dc.w $3C00
-    dc.w $0034
+    andi.b #$00,(52,a2,d0.w)
 loc_006793:
     dc.w $3C00
-    dc.w $0061
-    dc.w $00EC
+    ori.w #$00EC,-(a1)
     dc.w $1C32
 loc_00679B:
     dc.w $3C00
@@ -15791,24 +14917,20 @@ loc_00679B:
     dc.w $3C00
     dc.w $0C36
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C00
-    dc.w $0042
+    ori.b #$00,($0042).w
 loc_0067AB:
     dc.w $4543
     dc.w $F900
     dc.w $023C
     bcc.s loc_006801
     dc.w $B900
-    dc.w $005C
-    add.b (0,a3,a7.l),d6
+    ori.w #$DC33,(a4)+
+    dc.w $FC00
     dc.w $3CFF
     dc.w $FFAE
     moveq #35,d1
     dc.w $FC00
-    dc.w $0067
-loc_0067C5:
-    dc.w $ECFF
+    ori.w #$ECFF,-(a7)
     dc.w $FF80
     dc.w $1021
     dc.w $FCFF
@@ -15822,8 +14944,7 @@ loc_0067C5:
     dc.w $0F91
     dc.w $1820
     dc.w $3C00
-    dc.w $005A
-    dc.w $3A4E
+    ori.w #$3A4E,(a2)+
     dc.w $B900
     dc.w $0048
     dc.w $5E4E
@@ -15832,17 +14953,18 @@ loc_0067C5:
     dc.w $FFAE
     moveq #100,d1
     eori.b #$00,-(a3)
-    dc.w $0068
-    dc.w $00FF
-    dc.w $FF80
+    ori.w #$00FF,(-128,a0)
     dc.w $104E
     dc.w $7521
 loc_006801:
     dc.w $FC00
-    dc.w $023B
-    dc.w $4491
-    dc.w $1231
+loc_006802:
+    ori.b #$44,d2
+    andi.b #$91,(49,pc,d1.w)
+    sub.b d0,(a2)
+    dc.w $31FC
     dc.w $FC00
+    ori.b #$16,d1
     dc.w $0191
     dc.w $1631
 loc_00680E:
@@ -15858,18 +14980,16 @@ loc_00680E:
     moveq #32,d4
     move.l #$00005A3A,d0
     dc.w $3C00
-    dc.w $005A
-    dc.w $3A4E
+    ori.w #$3A4E,(a2)+
     jsr loc_00485E
     dc.w $B900
     dc.w $0048
     dc.w $5E4E
     rts
     dc.w $7561
-    dc.w $001A
-    dc.w $4861
-    dc.w $001A
-    or.b (0,a3,a7.l),d1
+    ori.b #$61,(a2)+
+    ori.b #$33,(a2)+
+    dc.w $FC00
     dc.w $01FF
     dc.w $FF80
     dc.w $0833
@@ -15882,41 +15002,32 @@ loc_006841:
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $0100
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
-    dc.w $0023
-    dc.w $FC00
-    dc.w $0076
-    dc.w $92FF
-    dc.w $FF80
+    ori.b #$11,d0
+    ori.b #$00,-(a3)
+    ori.w #$92FF,(-128,a6,a7.l)
     dc.w $104E
     dc.w $7523
     dc.w $FC00
-    dc.w $0069
+    ori.w #$AAFF,(-128,a1)
 loc_006883:
     dc.w $AAFF
     dc.w $FF80
     dc.w $104E
     dc.w $B900
-    dc.w $005B
-    dc.w $3A20
+    ori.w #$3A20,(a3)+
     dc.w $3C00
     dc.w $010D
     dc.w $AA4E
@@ -15925,20 +15036,19 @@ loc_006883:
     dc.w $5E4E
     dc.w $754E
     dc.w $B900
-    dc.w $0064
-    dc.w $1661
+    ori.w #$1661,-(a4)
     dc.w $000E
     dc.w $EC4E
     dc.w $B900
     dc.w $00C0
     or.b -(a3),d1
     dc.w $FC00
-    dc.w $0068
-    dc.w $BCFF
-    dc.w $FF80
+    ori.w #$BCFF,(-128,a0)
     dc.w $1061
-    dc.w $0016
-    bhi.s loc_006909
+    ori.b #$4E,(a6)
+loc_0068B8:
+    dc.w $1662
+    rts
     dc.w $754E
     dc.w $B900
     dc.w $00C1
@@ -15950,15 +15060,14 @@ loc_006883:
     dc.w $B900
     dc.w $008B
     dc.w $1C61
-    dc.w $0028
-    eori.w #$002D,-(a1)
+    ori.b #$61,(45,a0)
+loc_0068D7:
+    ori.b #$76,(56,a5)
     bhi.s loc_006951
-    dc.w $0038
+    ori.b #$4E,($B900).w
     dc.w $034E
     dc.w $B900
-    dc.w $00B5
-    and.w (52,a2,d0.w),d4
-    dc.w $0112
+    ori.l #$C8720034,(18,a5,d0.w)
     dc.w $2800
     dc.w $0B14
     dc.w $2800
@@ -15967,32 +15076,21 @@ loc_006883:
     dc.w $008F
     dc.w $3C4E
     dc.w $B900
-    dc.w $00B4
-    dc.w $FE4E
-    dc.w $B900
-    dc.w $0096
+    ori.l #$FE4EB900,(-106,a4,d0.w)
     move.w (0,a1,a7.l),d5
     dc.w $01AF
     dc.w $1C4E
-loc_006909:
     dc.w $B900
-    dc.w $00B8
-    moveq #49,d3
+    ori.l #$7631FC00,($00B0).w
 loc_00690E:
     dc.w $31FC
-    dc.w $FC00
-    dc.w $0000
-    dc.w $00B0
-    dc.w $B0DC
+    ori.b #$DC,d0
     add.w a6,d6
     jsr loc_00AC34
     dc.w $B900
-    dc.w $00AC
-    move.w (0,a3,a7.l),d2
+    ori.l #$3433FC00,(511,a4)
     dc.w $33FC
-    dc.w $0001
-    dc.w $01FF
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $FFAE
     dc.w $AEBC
     cmp.b (2,a2,d3.l),d6
@@ -16001,12 +15099,10 @@ loc_00690E:
     jsr loc_00658C
     dc.w $B900
 loc_006929:
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     jsr loc_00646C
     dc.w $B900
-    dc.w $0064
-    bge.s loc_006963
+    ori.w #$6C30,-(a4)
     dc.w $3081
     or.b d0,(-1,a1,a7.l)
     dc.w $31FC
@@ -16034,22 +15130,22 @@ loc_006929:
 loc_00694C:
     jsr loc_0064B4
     dc.w $B900
-    dc.w $0064
+    ori.w #$B430,-(a4)
 loc_006951:
     cmp.b (2,a0,a3.l),d2
     dc.w $30BC
-    dc.w $0276
+    dc.w $BC02
+    andi.w #$4EB9,(0,a6,d0.w)
     moveq #78,d3
-    jsr loc_00C20C
     dc.w $B900
     dc.w $00C2
+    and.b a4,d1
     dc.w $0C4E
     jsr loc_00C1CC
     dc.w $B900
     dc.w $00C1
     and.w a6,d6
     jsr loc_00C10E
-loc_006963:
     dc.w $B900
     dc.w $00C1
     dc.w $0E4E
@@ -16060,12 +15156,9 @@ loc_006963:
     dc.w $23FC
     dc.w $FC00
 loc_006970:
-    dc.w $0000
-    dc.w $006B
-    bmi.s loc_00695E
-    dc.w $EAFF
+    ori.b #$EA,d0
+    ori.w #$EAFF,(-128,a3)
     dc.w $FFFF
-    dc.w $FF80
     or.b (a0),d0
     dc.w $1043
     lea loc_009012,a1
@@ -16073,10 +15166,8 @@ loc_006970:
     dc.w $124E
     jsr loc_0095B0
     dc.w $B900
-    dc.w $0095
-    dc.w $B04E
+    ori.l #$B04EB900,(a5)
     jsr loc_00C060
-    dc.w $B900
     dc.w $00C0
     bra.s loc_0069AA
     dc.w $21FC
@@ -16084,58 +15175,73 @@ loc_006970:
     sub.b (a2),d0
     sub.b d0,(a2)
     dc.w $31FC
-    dc.w $0000
-    sub.b d0,(a6)
+    ori.b #$16,d0
     dc.w $31FC
     dc.w $000F
     sub.b d0,(a0)+
     move.l #$00005A3A,d0
     jsr loc_00485E
     rts
+loc_0069AA:
+    jsr loc_006416
+    dc.w $4278
+    dc.w $8F4C
+    dc.w $4278
+    dc.w $8F4E
+    dc.w $4278
+    or.w d7,(a0)
+    dc.w $4278
+loc_0069BD:
+    moveq #-113,d4
+    or.w d7,(a2)
+    dc.w $524E
+    jsr loc_00C1EC
 loc_0069C1:
     dc.w $B900
     dc.w $00C1
     dc.w $EC0C
+    dc.w $0C79
     dc.w $7900
+    ori.b #$FF,d0
 loc_0069C9:
     dc.w $00FF
     dc.w $FFAE
+    dc.w $AEAC
     dc.w $AC66
+    bne.s loc_0069EE
     dc.w $1E33
+    dc.w $33FC
     dc.w $FC00
+    ori.b #$FF,d1
     dc.w $01FF
     dc.w $FFAE
+    dc.w $AEA6
     dc.w $A633
+    dc.w $33FC
     dc.w $FC01
+    dc.w $015E
     dc.w $5EFF
+    dc.w $FFFF
     dc.w $FFAE
 loc_0069DE:
     dc.w $AEAE
     dc.w $AE33
     dc.w $33FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00FF
-    dc.w $FF31
+    ori.b #$FF,d0
+    ori.b #$31,d0
     dc.w $3156
     dc.w $564E
     jsr loc_00B51E
     dc.w $B900
-    dc.w $00B5
-    dc.w $1E61
+    ori.l #$1E61000D,(35,a5,a2.w)
+loc_0069EE:
     bsr.w loc_007790
-    dc.w $000D
-    dc.w $A023
     dc.w $23FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $006A
-    bpl.s loc_006A0E
-    dc.w $16FF
+    ori.b #$16,d0
+    ori.w #$16FF,(-128,a2)
     dc.w $FFFF
-loc_0069F9:
-    dc.w $FF80
     or.b (a0),d0
     dc.w $1020
     move.l #$00011816,d0
@@ -16150,7 +15256,6 @@ loc_0069F9:
     dc.w $3C00
     dc.w $018D
     or.w a6,d0
-loc_006A0E:
     jsr loc_00485E
     dc.w $B900
     dc.w $0048
@@ -16170,70 +15275,50 @@ loc_006A0E:
     dc.w $FCFF
     dc.w $FFE1
     dc.w $4C61
-    dc.w $0026
-    dc.w $AA61
-    dc.w $002C
-    dc.w $0231
-    dc.w $FC00
+    ori.b #$61,-(a6)
+    ori.b #$31,(-1024,a4)
     dc.w $01AF
     dc.w $1C4E
     dc.w $B900
-    dc.w $00B4
-    dc.w $AE31
-    dc.w $FC00
-    dc.w $00B0
+    ori.l #$AE31FC00,(-80,a4,d0.w)
     add.w a6,d6
     dc.w $B900
-    dc.w $00AC
-    move.w (0,a3,a7.l),d2
-    dc.w $01FF
+    ori.l #$3433FC00,(511,a4)
     dc.w $FFAE
     cmp.b (2,a2,d3.l),d6
     or.w a6,d1
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_006A9B
+    ori.w #$6C30,-(a4)
     or.b d0,(0,a1,a7.l)
     dc.w $01E3
     bhi.s loc_006AA5
     dc.w $3C00
-    dc.w $0034
-    dc.w $3C00
-    dc.w $1736
+    ori.b #$00,(54,a4,d1.w)
     dc.w $3CD0
-    dc.w $0038
-    dc.w $3C81
-    dc.w $003A
+    ori.b #$81,($003A).w
     dc.w $3C00
-    dc.w $0043
-    dc.w $F900
-    dc.w $006B
-    moveq #78,d6
-    dc.w $B900
-    dc.w $005C
-    add.w a6,d6
+    ori.w #$F900,d3
+    ori.w #$7C4E,(-18176,a3)
+    ori.w #$DC4E,(a4)+
     dc.w $B900
     dc.w $00CD
     or.w d3,d1
     dc.w $F890
-loc_006A9B:
     dc.w $124E
     dc.w $B900
-    dc.w $0095
-    dc.w $B04E
-    dc.w $B900
+    ori.l #$B04EB900,(a5)
 loc_006AA5:
     dc.w $00C0
     bra.s loc_006ACC
+loc_006ACC:
+    jsr loc_00485E
+    rts
 loc_006B4A:
-    dc.w $0000
-    dc.w $485E
+    ori.b #$5E,d0
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $AEB2
     move.l #$0000CE82,d0
     jsr loc_00485E
@@ -16308,8 +15393,7 @@ loc_006BC3:
     dc.w $4D4C
     dc.w $4D55
     dc.w $56FF
-    dc.w $0022
-    dc.w $39FF
+    ori.b #$FF,-(a2)
     dc.w $FF80
     dc.w $104A
     dc.w $79FF
@@ -16321,8 +15405,7 @@ loc_006BC3:
     dc.w $A267
     dc.w $064E
     dc.w $F900
-    dc.w $0000
-    moveq #35,d6
+    ori.b #$23,d0
     dc.w $C1FF
     dc.w $FFAE
     dc.w $A236
@@ -16337,18 +15420,14 @@ loc_006BC3:
     dc.w $220C
     dc.w $4100
     dc.w $0166
-    dc.w $0000
-    dc.w $520C
+    ori.b #$0C,d0
 loc_006C27:
     clr.b d0
     dc.w $0166
-    dc.w $0000
-    dc.w $4A70
-    dc.w $0010
-    dc.w $3880
+    ori.b #$70,d0
+    ori.b #$80,(a0)
     sub.b a2,d2
-    dc.w $0000
-    dc.w $1066
+    ori.b #$66,d0
     dc.w $3C52
     dc.w $4333
     dc.w $C3FF
@@ -16361,25 +15440,16 @@ loc_006C27:
     dc.w $FFAE
     moveq #12,d5
     moveq #0,d4
-    dc.w $02B0
-    or.w -(a6),d0
-    dc.w $1020
-    dc.w $3C00
-    dc.w $0072
-    bge.s loc_006CAB
-    dc.w $B900
+    andi.l #$80661020,(0,a0,d3.l)
+    ori.w #$6C4E,(0,a2,a3.l)
     dc.w $0048
     dc.w $5E60
-    dc.w $0002
-    dc.w $E220
+    ori.b #$20,d2
     dc.w $3C00
-    dc.w $0074
-    sub.w a6,d5
-    dc.w $B900
+    ori.w #$9A4E,(0,a4,a3.l)
     dc.w $0048
     dc.w $5E60
-    dc.w $0002
-    add.w a2,d1
+    ori.b #$4A,d2
     dc.w $79FF
     dc.w $FFAE
     and.w -(a7),d2
@@ -16388,12 +15458,9 @@ loc_006C27:
     dc.w $FFAE
     and.b -(a3),d2
     dc.w $FC00
-    dc.w $0070
-    dc.w $0CFF
-    dc.w $FF80
+    ori.w #$0CFF,(-128,a0,a7.l)
     dc.w $1060
-    dc.w $0002
-    dc.w $B64A
+    ori.b #$4A,d2
     dc.w $79FF
 loc_006C95:
     dc.w $FFAE
@@ -16403,13 +15470,9 @@ loc_006C95:
     dc.w $FFAE
     and.b -(a3),d3
     dc.w $FC00
-    dc.w $0070
-    dc.w $C6FF
-    dc.w $FF80
+    ori.w #$C6FF,(-128,a0,a7.l)
     dc.w $1060
-loc_006CAB:
-    dc.w $0002
-    sub.b a4,d5
+    ori.b #$0C,d2
 loc_006CAF:
     moveq #0,d4
     dc.w $01E7
@@ -16430,47 +15493,67 @@ loc_006CB6:
     and.l (32,a0,d6.l),d1
     cmp.w (8252,a2),d0
     dc.w $3C00
-    dc.w $0000
-    dc.w $00A6
-    dc.w $A660
-    bra.s loc_006D1D
+    ori.b #$60,d0
+    ori.l #$604EB900,-(a6)
     jsr loc_00485E
+    dc.w $0048
+    dc.w $5E60
     bra.w loc_006F46
+    ori.b #$0C,d2
+    moveq #0,d4
+    dc.w $02E7
+    moveq #102,d6
+    dc.w $0E42
+    moveq #-25,d4
+    moveq #78,d6
+    dc.w $B900
+    dc.w $00CE
+    dc.w $2260
+    ori.b #$0C,d2
+    moveq #0,d4
+    dc.w $03E7
+    moveq #102,d6
+    ori.b #$42,d0
+loc_006CF6:
+    ori.b #$78,(124,a2,a6.w)
+    moveq #-25,d4
 loc_006CFB:
     moveq #78,d6
+    jsr loc_008F22
     dc.w $B900
     dc.w $008F
     dc.w $224E
+    jsr loc_00B550
     dc.w $B900
-    dc.w $00B5
-    dc.w $504A
-    dc.w $4466
-    dc.w $0000
+    ori.l #$504A4466,(0,a5,d0.w)
+    tst.w d4
+    bne.w loc_006D28
     dc.w $1C31
+    dc.w $31C3
     dc.w $C3F1
+    dc.w $F12A
     dc.w $2A08
+    dc.w $08F8
     dc.w $F800
+    ori.b #$25,d2
     dc.w $02EF
     dc.w $2520
+    move.l #$0001C858,d0
     dc.w $3C00
 loc_006D1A:
-    dc.w $0001
+    ori.b #$58,d1
     dc.w $01C8
-    and.w (a0)+,d4
-loc_006D1D:
     dc.w $584E
     jsr loc_00485E
     dc.w $B900
     dc.w $0048
     dc.w $5E60
     bra.w loc_006F46
-    dc.w $0002
-    dc.w $200C
+    ori.b #$0C,d2
     moveq #0,d4
     dc.w $04E7
     moveq #102,d6
-    dc.w $0000
-    dc.w $3842
+    ori.b #$42,d0
     moveq #-25,d4
 loc_006D35:
     moveq #78,d6
@@ -16478,10 +15561,7 @@ loc_006D35:
     dc.w $008F
     dc.w $224E
     dc.w $B900
-    dc.w $00B5
-    dc.w $504A
-    dc.w $4466
-    dc.w $0000
+    ori.l #$504A4466,(0,a5,d0.w)
     move.l (-15,a1,a4.w),d1
     move.l (0,a1,a7.l),d5
     dc.w $0EF1
@@ -16499,8 +15579,7 @@ loc_006D58:
     dc.w $0048
     dc.w $5E60
     bra.w loc_006F46
-    dc.w $0001
-    dc.w $E04A
+    ori.b #$4A,d1
 loc_006D68:
     dc.w $4A79
     dc.w $79FF
@@ -16510,8 +15589,7 @@ loc_006D68:
 loc_006D6D:
     and.w -(a7),d1
     beq.w loc_006DC4
-    dc.w $0000
-    addq.w #2,d2
+    ori.b #$42,d0
     dc.w $4279
     dc.w $79FF
     dc.w $FFFF
@@ -16536,10 +15614,8 @@ loc_006D6D:
     dc.w $5E20
     move.l #$00006FA0,d0
     dc.w $3C00
-    dc.w $006F
-    dc.w $A04E
+    ori.w #$A04E,(-18176,a7)
     jsr loc_00485E
-    dc.w $B900
     dc.w $0048
     dc.w $5E20
     move.l #$0001C0B4,d0
@@ -16552,10 +15628,8 @@ loc_006D6D:
     dc.w $5E20
     move.l #$00006F48,d0
     dc.w $3C00
-    dc.w $006F
-    dc.w $484E
+    ori.w #$484E,(-18176,a7)
     jsr loc_00485E
-    dc.w $B900
     dc.w $0048
     dc.w $5E20
     move.l #$0000C982,d0
@@ -16567,30 +15641,91 @@ loc_006D6D:
     dc.w $0048
     dc.w $5E60
     bra.w loc_006F46
-    dc.w $0001
-    or.w -(a1),d2
+    ori.b #$61,d1
     dc.w $0009
     bra.s loc_006E2F
-loc_006EB7:
-    dc.w $006F
-    dc.w $484E
+loc_006DF6:
+    jsr loc_00485E
+    bra.w loc_006F46
+loc_006E2F:
+    ori.w #$404E,(0,pc,a3.l)
+loc_006E35:
+    dc.w $0048
+    addq.w #7,d2
+    moveq #-25,d4
+    moveq #96,d6
+    ori.b #$0C,d1
+    moveq #0,d4
+    dc.w $0BE7
+    moveq #102,d6
+    dc.w $2C20
+    dc.w $3C00
+    ori.w #$A04E,(-18176,a7)
+    dc.w $0048
+    dc.w $5E20
+    dc.w $3C00
+    ori.l #$684EB900,(72,a4)
+    dc.w $5E20
+    dc.w $3C00
+    ori.w #$484E,(-18176,a7)
+    dc.w $0048
+    addq.w #7,d2
+    moveq #-25,d4
+    moveq #96,d6
+    ori.b #$4E,d0
+    dc.w $B900
+    ori.w #$2666,(8,a7,d4.l)
+loc_006E7D:
+    dc.w $3800
+    dc.w $0580
+    sub.w d2,-(a7)
+    dc.w $4020
+    dc.w $3C00
+    ori.w #$A04E,(-18176,a7)
+    dc.w $0048
+    dc.w $5E20
+    dc.w $3C00
+    dc.w $008A
+loc_006E94:
+    or.l -(a0),d5
+    dc.w $A04E
+    jsr loc_00485E
     dc.w $B900
     dc.w $0048
-    dc.w $5E60
-    dc.w $0000
-    or.w a6,d2
+    dc.w $5E20
+    move.l #$0001011C,d0
+    dc.w $3C00
+    dc.w $0101
+    dc.w $1C4E
+    jsr loc_00485E
     dc.w $B900
-    dc.w $0077
-    dc.w $2666
-    dc.w $3408
+    dc.w $0048
+    dc.w $5E20
+    move.l #$0000FEAE,d0
+    dc.w $3C00
+    dc.w $00FE
+    dc.w $AE4E
+    jsr loc_00485E
+    dc.w $B900
+    dc.w $0048
+    dc.w $5E20
+    move.l #$00006F48,d0
+    dc.w $3C00
+loc_006EB7:
+    ori.w #$484E,(-18176,a7)
+    jsr loc_00485E
+    dc.w $0048
+    dc.w $5E60
+    bra.w loc_006F46
+    ori.b #$4E,d0
+    dc.w $B900
+    ori.w #$2666,(8,a7,d3.w)
     dc.w $3800
     dc.w $0780
     sub.w d2,-(a7)
     dc.w $2C20
     dc.w $3C00
-    dc.w $006F
-    dc.w $A04E
-    dc.w $B900
+    ori.w #$A04E,(-18176,a7)
     dc.w $0048
     addq.w #7,d2
     dc.w $38E7
@@ -16602,50 +15737,38 @@ loc_006EB7:
     dc.w $0048
     dc.w $5E20
     dc.w $3C00
-    dc.w $006F
-    dc.w $484E
-    dc.w $B900
+    ori.w #$484E,(-18176,a7)
     dc.w $0048
     dc.w $5E60
-    dc.w $0000
-    dc.w $4808
+    ori.b #$08,d0
     dc.w $3800
     dc.w $0680
     sub.w d2,-(a7)
     dc.w $1020
     dc.w $3C00
-    dc.w $0093
-    or.w a6,d7
-    dc.w $B900
+    ori.l #$8E4EB900,(a3)
     dc.w $0048
 loc_006F13:
     dc.w $5E60
 loc_006F14:
     bra.w loc_006F46
-    dc.w $0000
-    dc.w $3042
+    ori.b #$42,d0
     moveq #-81,d4
     dc.w $1C42
     moveq #-30,d4
     dc.w $1821
     dc.w $FC00
-    dc.w $0095
-    sub.l (33,a0,d7.w),d0
+    ori.l #$90B07021,(a5)
     dc.w $FC00
-    dc.w $0095
-    sub.l (33,a0,d7.w),d4
+    ori.l #$98B07421,(a5)
     dc.w $FC00
-    dc.w $0095
-    dc.w $A0B0
-    moveq #33,d4
+    ori.l #$A0B07821,(a5)
     dc.w $FC00
-    dc.w $0095
-    dc.w $A8B0
-    moveq #78,d6
+    ori.l #$A8B07C4E,(a5)
     dc.w $B900
-    dc.w $0094
-    dc.w $224E
-    dc.w $7531
+    ori.l #$224E7531,(a4)
+loc_006F46:
+    rts
     dc.w $FC00
     dc.w $01AF
     dc.w $1C31
@@ -16656,27 +15779,17 @@ loc_006F14:
     dc.w $01E0
     dc.w $E44E
     dc.w $B900
-    dc.w $0090
-    bhi.s loc_006FAF
-    dc.w $B900
-    dc.w $0096
-    dc.w $3A23
-    dc.w $FC00
-    dc.w $006F
-    moveq #-1,d1
-    dc.w $FF80
+    ori.l #$624EB900,(a0)
+    ori.l #$3A23FC00,(a6)
+    ori.w #$72FF,(-128,a7)
     dc.w $104E
     dc.w $7523
     dc.w $FC00
-    dc.w $006F
-    moveq #-1,d7
-    dc.w $FF80
+    ori.w #$7EFF,(-128,a7)
     dc.w $104E
     dc.w $7523
     dc.w $FC00
-    dc.w $006F
-    dc.w $8AFF
-    dc.w $FF80
+    ori.w #$8AFF,(-128,a7)
     dc.w $104E
     dc.w $7532
     dc.w $3C00
@@ -16684,8 +15797,7 @@ loc_006F14:
     move.w d6,-(a0)
     dc.w $004E
     dc.w $B900
-    dc.w $0053
-    dc.w $B44E
+    ori.w #$B44E,(a3)
     dc.w $B900
     dc.w $0048
     moveq #78,d4
@@ -16697,14 +15809,11 @@ loc_006F14:
     dc.w $0C4E
     dc.w $B900
     dc.w $00C1
-loc_006FAF:
     dc.w $A042
     moveq #-30,d4
     dc.w $1823
     dc.w $FC00
-    dc.w $006F
-    dc.w $C0FF
-    dc.w $FF80
+    ori.w #$C0FF,(-128,a7)
     dc.w $104E
     dc.w $7531
     dc.w $FC00
@@ -16712,18 +15821,12 @@ loc_006FC3:
     dc.w $01AF
     dc.w $1E4E
     dc.w $B900
-    dc.w $0096
-    dc.w $3A23
-    dc.w $FC00
-    dc.w $006F
-    dc.w $D8FF
-    dc.w $FF80
+    ori.l #$3A23FC00,(a6)
+    ori.w #$D8FF,(-128,a7)
     dc.w $104E
     dc.w $7523
     dc.w $FC00
-    dc.w $006F
-    dc.w $E4FF
-    dc.w $FF80
+    ori.w #$E4FF,(-128,a7)
     dc.w $104E
     dc.w $754E
     dc.w $B900
@@ -16740,8 +15843,7 @@ loc_006FF2:
     dc.w $E8D2
     add.w -(a6),d1
     bne.w loc_00700A
-    dc.w $0000
-    dc.w $124A
+    ori.b #$4A,d0
     dc.w $4A79
     dc.w $79FF
     dc.w $FFFF
@@ -16749,8 +15851,7 @@ loc_006FF2:
     dc.w $AEC8
     and.w -(a6),d4
     bne.w loc_00700A
-    dc.w $0000
-    dc.w $084E
+    ori.b #$4E,d0
     jsr loc_03310A
     dc.w $B900
     dc.w $0331
@@ -16759,13 +15860,10 @@ loc_00700A:
     rts
     dc.w $7523
     dc.w $FC00
-    dc.w $0070
-    dc.w $1EFF
-    dc.w $FF80
+    ori.w #$1EFF,(-128,a0,a7.l)
     dc.w $104E
     dc.w $B900
-    dc.w $005B
-    dc.w $3A4E
+    ori.w #$3A4E,(a3)+
     dc.w $7543
     dc.w $F900
     dc.w $FF30
@@ -16779,15 +15877,12 @@ loc_00700A:
 loc_007031:
     dc.w $4BD8
     dc.w $FC02
-    dc.w $0020
-    dc.w $53B1
+    ori.b #$B1,-(a0)
     dc.w $FC00
-    dc.w $0000
-    dc.w $0067
+    ori.b #$67,d0
 loc_00703F:
     dc.w $3072
-    dc.w $0012
-    dc.w $2800
+    ori.b #$00,(a2)
     dc.w $010C
     dc.w $4100
     dc.w $0F6C
@@ -16795,18 +15890,14 @@ loc_00703F:
     dc.w $49E5
     tst.w d2
     dc.w $7110
-    dc.w $0013
-    dc.w $A800
-    dc.w $0010
-    dc.w $0142
+    ori.b #$00,(a3)
+    ori.b #$42,(a0)
     moveq #32,d1
-    dc.w $0015
-    dc.w $A800
+    ori.b #$00,(a5)
     dc.w $0720
     dc.w $0142
     moveq #32,d1
-    dc.w $0215
-    dc.w $A800
+    andi.b #$00,(a5)
     dc.w $0820
     dc.w $03D6
     dc.w $FC00
@@ -16816,12 +15907,9 @@ loc_00703F:
     dc.w $FFAE
     dc.w $AC4E
     dc.w $B900
-    dc.w $0064
-    dc.w $1623
+    ori.w #$1623,-(a4)
     dc.w $FC00
-    dc.w $0069
-    dc.w $AAFF
-    dc.w $FF80
+    ori.w #$AAFF,(-128,a1)
     dc.w $100C
     dc.w $7900
     dc.w $14FF
@@ -16854,14 +15942,10 @@ loc_00703F:
     dc.w $FFAE
     moveq #35,d6
     dc.w $FC00
-    dc.w $0070
-    dc.w $E4FF
-    dc.w $FF80
+    ori.w #$E4FF,(-128,a0,a7.l)
     dc.w $1020
     dc.w $3C00
-    dc.w $006F
-    dc.w $484E
-    dc.w $B900
+    ori.w #$484E,(-18176,a7)
     dc.w $0048
     dc.w $5E4E
     dc.w $754A
@@ -16877,26 +15961,20 @@ loc_00703F:
     dc.w $3C00
     dc.w $0B33
     dc.w $FC01
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     and.b d0,d0
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
-    dc.w $0043
-    dc.w $F9FF
+    ori.b #$11,d0
+    ori.w #$F9FF,d3
     dc.w $FFAE
     and.w d5,d5
     dc.w $F900
@@ -16916,8 +15994,7 @@ loc_00703F:
     eor.b d1,(-96,a4,d3.l)
     dc.w $004E
     dc.w $B900
-    dc.w $0053
-    dc.w $B443
+    ori.w #$B443,(a3)
     dc.w $F900
     dc.w $023D
     dc.w $1645
@@ -16925,63 +16002,254 @@ loc_00703F:
     dc.w $92D4
     dc.w $FC00
     bra.s loc_0071AF
+loc_0071AF:
+    dc.w $1231
+    dc.w $FC00
+    ori.l #$1631FC00,(a1)
+    dc.w $0F91
+    dc.w $1821
+    dc.w $FC00
+    ori.w #$CC91,(78,a1,d1.l)
+    dc.w $B900
+    ori.w #$B04E,(a2)+
+    dc.w $754E
+    dc.w $B900
+    ori.w #$1623,-(a4)
+    dc.w $FC00
+    ori.w #$AAFF,(-128,a1)
+    dc.w $104E
+    dc.w $7548
 loc_0071DE:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #74,d7
     dc.w $4A6E
-    dc.w $002A
-    bpl.s loc_007224
-    dc.w $4A6E
-    dc.w $002E
-    bne.s loc_00722C
-    dc.w $536E
-    dc.w $0030
-    bpl.s loc_00722C
-    dc.w $3D7C
-    dc.w $0001
-    dc.w $002E
+    bgt.w loc_009C4F
+    ori.b #$3C,(19054,a2)
+    dc.w $3C4A
+    bgt.w loc_00A051
+    ori.b #$3E,(21358,a6)
+    dc.w $3E53
+    bgt.w loc_00A25B
+    ori.b #$38,(124,a0,d3.l)
+    dc.w $383D
+    moveq #0,d6
+    ori.b #$2E,d1
+    dc.w $0100
+    dc.w $2E4A
     dc.w $4A79
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AE7C
+    moveq #102,d6
     bne.w loc_00722C
+    ori.b #$21,d0
     dc.w $21FC
-    dc.w $0002
-    dc.w $3B44
+    dc.w $FC00
+    ori.b #$44,d2
+    andi.b #$91,(49,pc,d1.w)
     sub.b d0,(a2)
     dc.w $31FC
-    dc.w $0000
-    sub.b d0,(a6)
+    dc.w $FC00
+    ori.b #$16,d0
+    ori.l #$1631FC00,(a1)
     dc.w $31FC
-    dc.w $0007
-    sub.b d0,(a0)+
+    ori.b #$18,d7
+    dc.w $0791
+    dc.w $1842
     dc.w $42B8
+    cmp.l (a1),d4
     sub.b d0,(a2)+
+    dc.w $1A4E
     jsr loc_005AB0
+    dc.w $B900
+    ori.w #$B060,(a2)+
     bra.s loc_00722C
+    dc.w $0853
 loc_007224:
     dc.w $536E
-    dc.w $002A
-    dc.w $536E
-    dc.w $002C
+    bgt.w loc_009C7A
+    ori.b #$6E,(44,a2)
+    bgt.w loc_009E5D
 loc_00722C:
     move.w #$00A4,d1
+    dc.w $3C00
+    dc.w $A434
     move.w (44,a6),d2
+    dc.w $2E00
+    move.l (101,a6,d3.l),d6
     move.w #$6500,d3
+    ori.w #$4443,d2
     clr.w d4
     lea loc_00724C,a1
+    dc.w $F900
+    ori.w #$4C4E,(0,a2,a3.l)
     jsr loc_0050CA
+    ori.w #$CA4C,(a0)
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $7500
+    dc.w $05C0
+    dc.w $0100
+    dc.w $05D0
+    dc.w $0100
+    dc.w $05E0
+    dc.w $0100
+    dc.w $05F0
+    dc.w $0100
+    dc.w $0500
+    dc.w $0100
+    dc.w $0510
+    dc.w $0100
+    dc.w $0520
+    dc.w $0100
+    dc.w $0530
+    ori.b #$00,-(a3)
+    ori.w #$84FF,(-128,a2,a7.l)
+    dc.w $1020
+    dc.w $3C00
+    ori.w #$484E,(-18176,a7)
+    dc.w $0048
+    dc.w $5E4E
+    dc.w $7533
+    dc.w $F9FF
+loc_007287:
+    dc.w $FFAE
+    dc.w $ACFF
+    dc.w $FFAE
+    or.b (0,a1,a7.l),d1
+    dc.w $0DAE
+    dc.w $EC31
+    dc.w $FC00
+    dc.w $0BAE
+    dc.w $EE21
+    dc.w $FC00
+    ori.w #$7EAE,(33,a4,a7.w)
+    dc.w $FC00
+    ori.w #$56AE,(35,a4,a7.l)
+    dc.w $FC00
+    ori.w #$C2FF,(-128,a2,a7.l)
+    dc.w $1020
+    dc.w $3C00
+    dc.w $0088
+    dc.w $124E
+    dc.w $B900
+    dc.w $0048
+    dc.w $5E4E
+    dc.w $7532
+    dc.w $39FF
+    dc.w $FFAE
+    moveq #66,d7
+    dc.w $79FF
+    dc.w $FFAE
+    moveq #8,d7
+    dc.w $3800
+    ori.l #$95662A08,d0
+    dc.w $3800
+    ori.l #$94672833,d0
+    dc.w $C1FF
+    dc.w $FFAE
+    moveq #82,d7
+    dc.w $79FF
+    dc.w $FFAE
+    moveq #12,d7
+    dc.w $7900
+    dc.w $20FF
+    dc.w $FFAE
+    moveq #109,d7
+    dc.w $1230
+    dc.w $39FF
+    dc.w $FFAE
+    moveq #2,d7
+    dc.w $4000
+    dc.w $0766
+    dc.w $0653
+    dc.w $79FF
+    dc.w $FFAE
+    or.b (-1,a2,d3.l),d1
+    dc.w $FFAE
+    or.w d2,d0
+    dc.w $79FF
+    dc.w $FFAE
+    or.b a0,d0
+    dc.w $3800
+    dc.w $0180
+    sub.w d2,-(a6)
+    dc.w $2A08
+    dc.w $3800
+    dc.w $0180
+    sub.w -(a7),d2
+    move.l (-1,a3,a4.w),d4
+    dc.w $FFAE
+    or.w (a2),d0
+loc_007329:
+    dc.w $79FF
+    dc.w $FFAE
+    or.b a4,d0
+    dc.w $7900
+    dc.w $20FF
+    dc.w $FFAE
+    or.w (4656,a5),d0
+    dc.w $39FF
+    dc.w $FFAE
+    or.b d2,d0
+    dc.w $4000
+    dc.w $0766
+    dc.w $0652
+    dc.w $79FF
+    dc.w $FFAE
+    or.b a4,d1
+    dc.w $7900
+    dc.w $00FF
+    dc.w $FFAE
+    or.w (2099,a4),d1
+    dc.w $FC00
+    dc.w $00FF
+    dc.w $FFAE
+    or.b a4,d1
+    dc.w $7900
+    dc.w $12FF
+    dc.w $FFAE
+    or.w (2099,a7),d1
+    dc.w $FC00
+    dc.w $12FF
+    dc.w $FFAE
+    or.b a0,d1
+    dc.w $3800
+    dc.w $0580
+    sub.w d2,-(a7)
+    ori.b #$4E,d0
+    dc.w $B900
+    dc.w $0048
+    moveq #51,d4
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $82FF
+    dc.w $FFAE
 loc_007386:
     dc.w $AEAC
+    dc.w $AC33
     dc.w $33F9
+    dc.w $F9FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEB0
+    dc.w $B0FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEAE
+    dc.w $AE43
     lea loc_FFFFAECA,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    and.w d5,d5
     lea loc_FF3004,a2
+    dc.w $F900
     move.w #$000E,d1
     dc.w $34D9
 loc_0073A4:
@@ -16989,8 +16257,7 @@ loc_0073A4:
     move.w #$0276,d1
     jsr loc_00658C
     dc.w $23FC
-    dc.w $0000
-    bvs.s loc_007362
+    ori.b #$AA,d0
     dc.w $FFFF
     or.b (a0),d0
     jsr loc_005B3A
@@ -16999,6 +16266,8 @@ loc_0073A4:
     move.l #$00006FA0,d0
     jsr loc_00485E
     bra.w loc_007454
+loc_00747C:
+    rts
 loc_007606:
     dc.w $004C
     move.w #$0016,d1
@@ -17019,44 +16288,55 @@ loc_007606:
     dc.w $3038
     dc.w $8F4C
     dc.w $E648
-    dc.w $0240
-    dc.w $003F
+    andi.w #$003F,d0
     add.w d0,d1
     dc.w $3038
     dc.w $8F4E
     dc.w $E648
-    dc.w $0240
-    dc.w $001F
+    andi.w #$001F,d0
     add.w d0,d2
+loc_00764B:
+    dc.w $404E
 loc_00764C:
     jsr loc_006200
+    dc.w $B900
+    ori.w #$004E,-(a2)
 loc_007652:
     rts
+    dc.w $7532
+    dc.w $3C00
+    dc.w $0734
+    dc.w $3C00
+    dc.w $0136
+    dc.w $3CD0
+    ori.b #$00,($103A).w
+    dc.w $3C00
+    dc.w $003C
+    dc.w $3C00
+    dc.w $023E
+    dc.w $39FF
+    dc.w $FFAE
+    or.w a6,d4
+    dc.w $B900
+    ori.w #$004E,-(a2)
+    dc.w $7500
+    eori.b #$C0,d0
+    ori.b #$00,d0
 loc_007683:
-    dc.w $0076
-    dc.w $88FF
-    dc.w $FF00
+    ori.w #$88FF,(0,a6,a7.l)
     dc.w $0100
     dc.w $0153
     ble.s loc_007704
     bgt.s loc_0076F5
     dc.w $FF4E
     dc.w $B900
-    dc.w $0222
-    sub.w a6,d2
+    andi.b #$4E,-(a2)
     dc.w $B900
-    dc.w $0064
-    dc.w $164E
+    ori.w #$164E,-(a4)
     dc.w $B900
-    dc.w $0085
-    add.w a6,d4
-    dc.w $B900
-    dc.w $0086
-    dc.w $0423
-    dc.w $FC00
-    dc.w $0076
-    dc.w $E2FF
-    dc.w $FF80
+    ori.l #$D84EB900,d5
+    ori.l #$0423FC00,d6
+    ori.w #$E2FF,(-128,a6,a7.l)
     dc.w $1020
     dc.w $3C00
     dc.w $010E
@@ -17065,19 +16345,14 @@ loc_007683:
     dc.w $0048
     dc.w $5E20
     dc.w $3C00
-    dc.w $0076
-    add.w a6,d2
-    dc.w $B900
+    ori.w #$D44E,(0,a6,a3.l)
     dc.w $0048
     dc.w $5E4E
     dc.w $B900
-    dc.w $005B
-    dc.w $3A4E
+    ori.w #$3A4E,(a3)+
     dc.w $754E
     dc.w $B900
-    dc.w $0086
-    dc.w $044E
-    dc.w $B900
+    ori.l #$044EB900,d6
     dc.w $0048
     moveq #78,d4
     dc.w $750C
@@ -17086,35 +16361,32 @@ loc_007683:
     moveq #102,d6
     dc.w $1423
     dc.w $FC00
-    dc.w $0069
-    dc.w $AAFF
-    dc.w $FF80
+    ori.w #$AAFF,(-128,a1)
     dc.w $104E
 loc_0076F5:
     dc.w $B900
-    dc.w $005B
-    dc.w $3A60
-    dc.w $0000
-    dc.w $280C
+    ori.w #$3A60,(a3)+
+    ori.b #$0C,d0
     moveq #0,d4
     dc.w $01E7
     moveq #102,d6
+loc_007704:
+    bne.s loc_007714
     dc.w $0E23
+    dc.w $23FC
     dc.w $FC00
-    dc.w $0068
-    moveq #-1,d7
-    dc.w $FF80
+    ori.b #$7E,d0
+    ori.w #$7EFF,(-128,a0)
+    dc.w $FFFF
+    or.b (a0),d0
     dc.w $1060
-    dc.w $0000
-    dc.w $1223
+    bra.w loc_007724
+    ori.b #$23,d0
     dc.w $FC00
-    dc.w $0068
-    dc.w $9CFF
-    dc.w $FF80
+    ori.w #$9CFF,(-128,a0)
     dc.w $104E
     dc.w $B900
-    dc.w $005B
-    dc.w $3A4E
+    ori.w #$3A4E,(a3)+
     dc.w $754A
 loc_007726:
     dc.w $4A79
@@ -17127,9 +16399,8 @@ loc_007726:
     dc.w $1608
     dc.w $0839
     dc.w $3900
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FFAE
     dc.w $AEB7
     eor.w d3,-(a7)
@@ -17145,9 +16416,8 @@ loc_007726:
     dc.w $0470
 loc_007740:
     moveq #0,d0
-    dc.w $0060
+    ori.w #$0270,-(a0)
     bra.s loc_007746
-    dc.w $0270
 loc_007744:
     moveq #1,d0
     dc.w $014A
@@ -17159,15 +16429,12 @@ loc_007746:
 loc_00774A:
     move.w #$0000,d1
     dc.w $3C00
-    dc.w $0034
+    ori.b #$00,(8,a4,d0.w)
     move.w #$0007,d2
-    dc.w $3C00
-    dc.w $0708
     dc.w $0839
     dc.w $3900
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FFAE
     dc.w $AEB7
     eor.w d3,-(a7)
@@ -17186,20 +16453,17 @@ loc_007766:
     dc.w $48E7
     dc.w $E740
     dc.w $4000
-    dc.w $0030
+    ori.b #$FF,(-82,a0,a7.l)
     dc.w $3039
-    dc.w $39FF
     dc.w $FFFF
-    dc.w $FFAE
     dc.w $AEA6
     dc.w $A632
     dc.w $3200
     dc.w $0008
     dc.w $0838
     dc.w $3800
-    dc.w $0004
+    ori.b #$94,d4
     dc.w $0480
-    or.l (a4),d0
     sub.w -(a7),d2
     beq.s loc_007786
     dc.w $0C52
@@ -17207,185 +16471,301 @@ loc_007766:
     dc.w $410C
     cmpi.w #$0002,d1
     dc.w $4100
-    dc.w $026F
+    andi.w #$0432,(15360,a7)
     ble.s loc_007786
-    dc.w $0432
     move.w #$0002,d1
-    dc.w $3C00
-    dc.w $0230
+    andi.b #$4A,(76,a0,d4.w)
 loc_007786:
     dc.w $3001
-    dc.w $014A
     tst.w d0
-    dc.w $404C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0002
+    ori.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7548
+loc_007790:
+    dc.w $48E7
     dc.w $E77F
+    dc.w $7F7E
     moveq #66,d7
+    dc.w $4278
     moveq #-24,d4
+    dc.w $E8D2
     add.w d2,d1
+    dc.w $4279
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEC8
     and.w d3,d4
+    lea loc_FF3004,a1
     dc.w $F900
     dc.w $FF30
     dc.w $0445
+    lea loc_FFFFAECA,a2
     dc.w $F9FF
     dc.w $FFAE
     and.b (0,a2,d3.l),d5
+    move.w #$000E,d1
     dc.w $0E34
+    dc.w $34D9
     add.w d4,(a1)
+loc_0077B0:
+    dbra d1,loc_0077B0
     dc.w $C9FF
     dc.w $FC33
+    dc.w $33F9
     dc.w $F9FF
+    dc.w $FFFF
 loc_0077B7:
     dc.w $FFAE
+    dc.w $AEAE
     dc.w $AEFF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEB0
     dc.w $B041
+    lea loc_000288,a0
     dc.w $F900
-    dc.w $0002
-    or.b (-1,a0,d3.l),d4
+    ori.b #$30,d2
+    dc.w $3039
+    dc.w $39FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEAC
 loc_0077C9:
     dc.w $ACD0
+    add.w d0,d0
     dc.w $4033
+    dc.w $33F0
     dc.w $F000
+    ori.b #$FF,d0
     dc.w $00FF
     dc.w $FFAE
+    dc.w $AEC0
     and.w d3,d0
+    lea loc_FF557C,a1
     dc.w $F900
     dc.w $FF55
     moveq #50,d6
+    move.w #$07FF,d1
     dc.w $3C07
     dc.w $FF42
+    dc.w $4259
     dc.w $5951
+loc_0077E0:
+    dbra d1,loc_0077E0
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF5E7C,a1
     dc.w $F900
     dc.w $FF5E
     moveq #50,d6
+    move.w #$000F,d1
     dc.w $3C00
     dc.w $0F42
+    dc.w $4259
     dc.w $5951
+loc_0077F0:
+    dbra d1,loc_0077F0
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF5E9C,a1
     dc.w $F900
     dc.w $FF5E
     sub.b (0,a2,d3.l),d6
+    move.w #$000F,d1
     dc.w $0F42
+    dc.w $4259
     dc.w $5951
+loc_007800:
+    dbra d1,loc_007800
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF5EBC,a1
     dc.w $F900
     dc.w $FF5E
     cmp.b (0,a2,d3.l),d6
+    move.w #$000F,d1
     dc.w $0F42
+    dc.w $4259
     dc.w $5951
+loc_007810:
+    dbra d1,loc_007810
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF30DA,a1
     dc.w $F900
     dc.w $FF30
     add.b (0,a2,d3.l),d5
+    move.w #$001F,d1
     dc.w $1F42
+    dc.w $4259
     dc.w $5951
+loc_007820:
+    dbra d1,loc_007820
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF3158,a1
     dc.w $F900
     dc.w $FF31
     dc.w $5832
+    move.w #$0008,d1
     dc.w $3C00
     dc.w $0842
+    dc.w $4259
     dc.w $5951
+loc_007830:
+    dbra d1,loc_007830
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF316A,a1
     dc.w $F900
     dc.w $FF31
     bpl.s loc_00786D
+    move.w #$0008,d1
     dc.w $3C00
     dc.w $0842
+    dc.w $4259
     dc.w $5951
+loc_007840:
+    dbra d1,loc_007840
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF517C,a1
     dc.w $F900
     dc.w $FF51
     moveq #50,d6
+    move.w #$00FF,d1
     dc.w $3C00
     dc.w $FF42
+    dc.w $4299
     sub.w d4,(a1)
+loc_007850:
+    dbra d1,loc_007850
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF311A,a1
     dc.w $F900
     dc.w $FF31
     dc.w $1A32
+    move.w #$000E,d1
     dc.w $3C00
     dc.w $0E42
+    dc.w $4299
     sub.w d4,(a1)
+loc_007860:
+    dbra d1,loc_007860
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF5E9C,a1
     dc.w $F900
     dc.w $FF5E
     sub.b (0,a2,d3.l),d6
+    move.w #$000F,d1
 loc_00786D:
     dc.w $0F42
+    dc.w $4259
     dc.w $5951
+loc_007870:
+    dbra d1,loc_007870
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF5EBC,a1
     dc.w $F900
     dc.w $FF5E
     cmp.b (0,a2,d3.l),d6
+    move.w #$000F,d1
     dc.w $0F42
+    dc.w $4259
     dc.w $5951
+loc_007880:
+    dbra d1,loc_007880
     dc.w $C9FF
     dc.w $FC43
+    lea loc_FF317C,a1
     dc.w $F900
     dc.w $FF31
 loc_007889:
     moveq #50,d6
+    move.w #$0FFF,d1
     dc.w $3C0F
     dc.w $FF32
+    dc.w $32FC
     dc.w $FCFF
+loc_007890:
+    dc.w $FFFF
     dc.w $FF51
+    dbra d1,loc_007890
     dc.w $C9FF
     dc.w $FA42
+    dc.w $4278
     moveq #-24,d4
+    dc.w $E8D4
+loc_007899:
     add.w d2,d2
+    dc.w $4278
     moveq #-24,d4
+    dc.w $E8DC
     add.b (-1,a0,d3.l),d6
+    move.w #$FFFF,d0
     dc.w $FF31
+    dc.w $31C0
     dc.w $C0E3
+    dc.w $E3E2
     dc.w $E231
+    dc.w $31C0
     dc.w $C0E3
+    dc.w $E3E6
     dc.w $E631
+    dc.w $31C0
     dc.w $C0E4
+    dc.w $E42A
     move.l (-28,a1,a4.w),d5
+    dc.w $31C0
+    dc.w $E42E
 loc_0078B1:
     dc.w $2E42
+    dc.w $4279
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEB6
     dc.w $B642
+    dc.w $4279
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEBA
     dc.w $BA42
+    dc.w $4279
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEC4
     and.w d2,d2
+    dc.w $4279
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEBE
     dc.w $BE42
+    dc.w $4279
     dc.w $79FF
+    dc.w $FFFF
     dc.w $FFAE
+    dc.w $AEC2
     and.w d2,d1
+    dc.w $4278
     moveq #-24,d4
+    dc.w $E826
     dc.w $2641
+    lea loc_00E842,a0
     dc.w $F8E8
     dc.w $4270
-    dc.w $0020
-    and.b -(a0),d0
+    moveq #0,d0
+    ori.b #$20,-(a0)
+    dc.w $20C0
 loc_0078DC:
     dc.w $20C0
     and.b -(a0),d0
@@ -17397,9 +16777,8 @@ loc_0078DC:
     dc.w $F8F0
     dc.w $4470
     moveq #0,d0
-    dc.w $0020
+    ori.b #$20,-(a0)
     dc.w $20C0
-    and.b -(a0),d0
     dc.w $20C0
     and.b -(a0),d0
     dc.w $20C0
@@ -17442,15 +16821,14 @@ loc_00790F:
     dc.w $2248
     dc.w $4861
     bsr.w loc_007938
-    dc.w $0000
-    move.l (-46,a4,d0.w),d2
+    ori.b #$34,d0
     dc.w $3400
+    dc.w $00D2
     dc.w $D2FC
     dc.w $FC20
     dc.w $2000
-    dc.w $0061
+    ori.w #$0000,-(a1)
     bsr.w loc_007938
-    dc.w $0000
     dc.w $1A84
     or.w d0,d2
     dc.w $404A
@@ -17460,10 +16838,8 @@ loc_00790F:
     dc.w $0C20
     move.l #$000084AC,d0
     dc.w $3C00
-    dc.w $0084
-    dc.w $AC4E
+    ori.l #$AC4EB900,d4
     jsr loc_00485E
-    dc.w $B900
     dc.w $0048
     dc.w $5E4C
 loc_007932:
@@ -17508,10 +16884,10 @@ loc_007948:
     dc.w $0112
     dc.w $12BC
     dc.w $BC00
-    dc.w $0001
+    ori.b #$00,d1
     dc.w $0161
-    bsr.w loc_008240
     dc.w $0008
+    dc.w $08E0
     dc.w $E012
     dc.w $1200
     dc.w $00D4
@@ -17525,9 +16901,8 @@ loc_007948:
     dc.w $AC34
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0008,-(a1)
     bsr.w loc_008240
-    dc.w $0008
     and.b (a2),d6
     dc.w $1200
     dc.w $00D4
@@ -17558,9 +16933,8 @@ loc_007987:
     dc.w $5634
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0008,-(a1)
     bsr.w loc_008240
-    dc.w $0008
     dc.w $A412
     dc.w $1200
     dc.w $00D4
@@ -17589,9 +16963,8 @@ loc_007987:
     dc.w $A634
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0008,-(a1)
     bsr.w loc_008240
-    dc.w $0008
     moveq #18,d6
     dc.w $1200
     dc.w $00D4
@@ -17606,9 +16979,8 @@ loc_0079CF:
     dc.w $AA34
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0008,-(a1)
     bsr.w loc_008240
-    dc.w $0008
     bvc.s loc_0079ED
     dc.w $1200
     dc.w $00D4
@@ -17622,9 +16994,8 @@ loc_0079CF:
     dc.w $AE34
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0008,-(a1)
     bsr.w loc_008240
-    dc.w $0008
 loc_0079ED:
     dc.w $5412
     dc.w $1200
@@ -17665,9 +17036,8 @@ loc_007A05:
     dc.w $0008
     dc.w $464A
     tst.b d0
-    dc.w $0067
+    ori.w #$0000,-(a7)
     beq.w loc_007A2E
-    dc.w $0000
     dc.w $1452
     dc.w $5279
     dc.w $79FF
@@ -17705,9 +17075,8 @@ loc_007A34:
     dc.w $AE8C
     or.b (0,a3,a7.l),d6
     dc.w $33FC
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FFAE
     dc.w $AEAC
     dc.w $AC4E
@@ -17716,13 +17085,11 @@ loc_007A34:
     dc.w $007E
     dc.w $F467
     beq.w loc_007B3A
-    dc.w $0000
-    dc.w $EC52
+    ori.b #$52,d0
     addq.w #1,d1
     dc.w $4161
     bsr.w loc_008206
-    dc.w $0007
-    cmp.b -(a3),d1
+    ori.b #$23,d7
     dc.w $23C8
     dc.w $C8FF
     dc.w $FFFF
@@ -17745,8 +17112,7 @@ loc_007A5C:
     dc.w $3C00
     dc.w $0161
     bsr.w loc_008226
-    dc.w $0007
-    cmp.b (a2),d3
+    ori.b #$12,d7
     dc.w $1200
     dc.w $00D2
     dc.w $D2C2
@@ -17759,9 +17125,8 @@ loc_007A5C:
     dc.w $AC34
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0007,-(a1)
     bsr.w loc_008226
-    dc.w $0007
     dc.w $A212
     dc.w $1200
     dc.w $00D2
@@ -17777,8 +17142,7 @@ loc_007A5C:
     dc.w $3C00
     sub.w -(a1),d5
     bsr.w loc_008226
-    dc.w $0007
-    or.b (a2),d7
+    ori.b #$12,d7
     dc.w $1200
     dc.w $00D2
     dc.w $D2C2
@@ -17791,9 +17155,8 @@ loc_007A5C:
     dc.w $5634
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0007,-(a1)
     bsr.w loc_008226
-    dc.w $0007
     moveq #18,d5
     dc.w $1200
     dc.w $00D2
@@ -17808,8 +17171,7 @@ loc_007A5C:
     move.w #$003C,d2
     dc.w $3C61
     bsr.w loc_008226
-    dc.w $0007
-    bne.s loc_007AD5
+    ori.b #$12,d7
     dc.w $1200
     dc.w $00D2
     dc.w $D2C2
@@ -17822,10 +17184,8 @@ loc_007A5C:
     dc.w $A634
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0007,-(a1)
     bsr.w loc_008226
-    dc.w $0007
-loc_007AD5:
     dc.w $5212
     dc.w $1200
     dc.w $00D2
@@ -17839,9 +17199,8 @@ loc_007AD5:
     dc.w $AA34
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0007,-(a1)
     bsr.w loc_008226
-    dc.w $0007
     move.w (a2),d7
     dc.w $1200
     dc.w $00D2
@@ -17855,9 +17214,8 @@ loc_007AD5:
     dc.w $AE34
     move.w #$0002,d2
     dc.w $3C00
-    dc.w $0261
+    andi.w #$0007,-(a1)
     bsr.w loc_008226
-    dc.w $0007
     move.l (a2),d5
     dc.w $1200
 loc_007AFF:
@@ -17874,8 +17232,7 @@ loc_007AFF:
     dc.w $3C00
     dc.w $0161
     bsr.w loc_008226
-    dc.w $0007
-    dc.w $1612
+    ori.b #$12,d7
     dc.w $1200
     dc.w $004A
     tst.b d1
@@ -17900,10 +17257,8 @@ loc_007AFF:
     dc.w $3420
     move.l #$0000853A,d0
     dc.w $3C00
-    dc.w $0085
-    dc.w $3A4E
+    ori.l #$3A4EB900,d5
     jsr loc_00485E
-    dc.w $B900
     dc.w $0048
     dc.w $5E30
     move.w #$0001,d0
@@ -17917,20 +17272,15 @@ loc_007B3A:
     rts
     dc.w $7523
     dc.w $FC00
-    dc.w $007B
-    moveq #-1,d4
-    dc.w $FF80
+    ori.w #$78FF,(-128,pc,a7.l)
     dc.w $1072
-    dc.w $0061
-    dc.w $0006
+    ori.w #$0006,-(a1)
     cmp.b -(a2),d4
     dc.w $4861
-    dc.w $0000
-    dc.w $EE34
+    ori.b #$34,d0
     dc.w $00D2
     dc.w $FC20
-    dc.w $0061
-    dc.w $0000
+    ori.w #$0000,-(a1)
     dc.w $E484
     dc.w $4067
     dc.w $124E
@@ -17938,9 +17288,7 @@ loc_007B3A:
     dc.w $0048
     moveq #32,d4
     dc.w $3C00
-    dc.w $0084
-    dc.w $AC4E
-    dc.w $B900
+    ori.l #$AC4EB900,d4
     dc.w $0048
     dc.w $5E4E
     dc.w $7531
@@ -17955,9 +17303,7 @@ loc_007B3A:
     and.l (-3006,a6),d2
     cmp.l (-1501,a6),d4
     dc.w $FC00
-    dc.w $007B
-    dc.w $A8FF
-    dc.w $FF80
+    ori.w #$A8FF,(-128,pc,a7.l)
     dc.w $1020
     dc.w $3C00
     dc.w $0088
@@ -17968,32 +17314,26 @@ loc_007B3A:
     dc.w $7510
     dc.w $3880
     dc.w $9502
-    dc.w $0000
-    dc.w $0367
+    ori.b #$67,d0
     dc.w $3A4A
     dc.w $79FF
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $3600
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $000A
     dc.w $7900
     dc.w $01FF
@@ -18007,169 +17347,752 @@ loc_007B3A:
     moveq #54,d0
     dc.w $3C80
     bra.s loc_007C44
+loc_007C44:
+    dc.w $7F7E
+loc_007C45:
+    moveq #66,d7
+    dc.w $4279
+    dc.w $79FF
+    dc.w $FFFF
+    dc.w $FFAE
+    dc.w $AE90
+    sub.b -(a3),d0
+    dc.w $23C9
+    dc.w $C9FF
+    dc.w $FFFF
+    dc.w $FFAE
+    dc.w $AE9C
+    sub.b -(a4),d6
+loc_007C52:
+    dc.w $2479
+    dc.w $79FF
+    dc.w $FFFF
+    dc.w $FFAE
+    dc.w $AE9C
+    sub.w (67,a2,d0.w),d6
+    moveq #0,d1
+    lea loc_FFFFAEA0,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $A034
+    move.w #$0001,d2
+    dc.w $3C00
+    dc.w $0112
+    dc.w $12BC
+    dc.w $BC00
+    ori.b #$00,d1
+    dc.w $0161
+    ori.b #$12,d5
+    dc.w $05D6
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FFFFAEAC,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $AC34
+    move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0005,-(a1)
+    bsr.w loc_008240
+    and.b (a2),d1
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF557C,a1
+    dc.w $F900
+    dc.w $FF55
+    moveq #52,d6
+    move.w #$000D,d2
+    dc.w $3C00
+    dc.w $0D36
+    move.w #$008F,d3
+    dc.w $3C00
+    or.w d7,-(a1)
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D2
+    dc.w $D2FC
+    dc.w $FC00
+    ori.b #$C2,(a0)
+    dc.w $10D4
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w (a1),d1
+    dbra d3,loc_007C96
+    dc.w $CBFF
+    dc.w $F043
+    lea loc_FF3004,a1
+    dc.w $F900
+    dc.w $FF30
+    dc.w $0434
+    move.w #$009A,d2
+    dc.w $3C00
+    sub.w -(a1),d5
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF30DA,a1
+    dc.w $F900
+    dc.w $FF30
+    add.b (0,a4,d3.l),d5
+    move.w #$0040,d2
+    dc.w $4061
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF3158,a1
+    dc.w $F900
+    dc.w $FF31
+    dc.w $5834
+    move.w #$0012,d2
+    dc.w $3C00
+    dc.w $1261
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF316A,a1
+    dc.w $F900
+    dc.w $FF31
+    bpl.s loc_007D1D
+    move.w #$0012,d2
+    dc.w $3C00
+    dc.w $1261
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF5E7C,a1
+    dc.w $F900
+    dc.w $FF5E
+    moveq #52,d6
+    move.w #$0020,d2
+    dc.w $3C00
+    dc.w $2061
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF5E9C,a1
+    dc.w $F900
+    dc.w $FF5E
+    sub.b (0,a4,d3.l),d6
+    move.w #$0020,d2
+    dc.w $2061
+    bsr.w loc_008240
+loc_007D15:
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+loc_007D1D:
+    and.w d3,d1
+    lea loc_FF5EBC,a1
+    dc.w $F900
+    dc.w $FF5E
+    cmp.b (0,a4,d3.l),d6
+    move.w #$0020,d2
+    dc.w $2061
+    bsr.w loc_008240
+    ori.b #$12,d5
+    dc.w $1200
+    dc.w $00D4
+    dc.w $D4C2
+    dc.w $C2D4
+    dc.w $D4C2
+    and.w d3,d1
+    lea loc_FF3156,a1
+    dc.w $F900
+    dc.w $FF31
+    dc.w $5634
+    move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0005,-(a1)
 loc_007D3C:
     bsr.w loc_008240
+    andi.b #$D4,(a2)
     dc.w $1200
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FF309E,a1
+    dc.w $F900
+    dc.w $FF30
+    sub.b (0,a4,d3.l),d7
     move.w #$0040,d2
+    dc.w $4061
     bsr.w loc_008240
+    ori.b #$12,d4
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FF311A,a1
+    dc.w $F900
+    dc.w $FF31
+    dc.w $1A34
     move.w #$003C,d2
+    dc.w $3C00
+    dc.w $3C61
     bsr.w loc_008240
+    ori.b #$12,d4
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEB2,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d1
     move.w #$0002,d2
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    and.b (a2),d3
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00E8D4,a1
+    dc.w $F8E8
+    add.b (0,a4,d3.l),d2
     move.w #$0002,d2
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    cmp.b (a2),d2
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00E8DC,a1
+    dc.w $F8E8
+    add.b (0,a4,d3.l),d6
     move.w #$0002,d2
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    dc.w $A212
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00E0E6,a1
+    dc.w $F8E0
+    dc.w $E634
     move.w #$0066,d2
+    dc.w $3C00
+    bne.s loc_007E10
     bsr.w loc_008240
+    ori.b #$12,d4
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEB6,a1
+    dc.w $F9FF
+loc_007DBB:
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d3
     move.w #$0002,d2
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    moveq #18,d6
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEB4,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d2
     move.w #$0002,d2
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    bvc.s loc_007DED
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEA6,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $A634
     move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+loc_007DED:
+    dc.w $5412
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEAA,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $AA34
     move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    dc.w $4012
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEAE,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $AE34
     move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    move.l (a2),d6
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEB0,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d0
     move.w #$0002,d2
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    dc.w $1812
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00E76A,a1
+    dc.w $F8E7
+    bpl.s loc_007E69
     move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0004,-(a1)
     bsr.w loc_008240
+    dc.w $0612
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAECA,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    and.b (0,a4,d3.l),d5
     move.w #$001E,d2
+    dc.w $1E61
     bsr.w loc_008240
+    ori.b #$12,d3
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00F504,a1
+    dc.w $F8F5
+    dc.w $0434
     move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0003,-(a1)
     bsr.w loc_008240
+    dc.w $E012
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00F044,a1
+loc_007E69:
+    dc.w $F8F0
+    dc.w $4434
     move.w #$0020,d2
+    dc.w $3C00
+    dc.w $2061
     bsr.w loc_008240
+    ori.b #$12,d3
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_00E8E0,a1
+    dc.w $F8E8
+    dc.w $E034
     move.w #$0002,d2
+    dc.w $3C00
+    andi.w #$0003,-(a1)
     bsr.w loc_008240
+    cmp.b (a2),d6
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.w d3,d1
     lea loc_FFFFAEA0,a1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $A034
     move.w #$0001,d2
+    dc.w $3C00
+    dc.w $0144
     dc.w $4441
+    dc.w $4112
     dc.w $1281
+    or.w d0,-(a1)
     bsr.w loc_008240
+    ori.b #$12,d3
     dc.w $1200
+    dc.w $00D4
     dc.w $D4C2
+    dc.w $C2D4
     dc.w $D4C2
+    and.b -(a2),d1
     dc.w $2279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AE9C
+    sub.w -(a1),d6
     bsr.w loc_00825A
+    ori.b #$4A,d3
     tst.b d0
+    ori.w #$0000,-(a7)
     beq.w loc_007EC6
+    dc.w $1452
     dc.w $5279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AE90
+    sub.b a4,d0
     dc.w $0C79
+    dc.w $7900
     dc.w $0008
+    dc.w $08FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AE90
+    sub.w (253,a5),d0
     blt.w loc_007C52
+    or.w a4,d7
 loc_007EC6:
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $7548
 loc_007ECC:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #50,d7
     move.w #$0000,d1
+    dc.w $3C00
+    ori.w #$0003,-(a1)
     bsr.w loc_008206
+    dc.w $3022
     dc.w $2248
+    dc.w $4845
     lea loc_FFFFAEA0,a2
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $A034
     move.w #$0001,d2
+    dc.w $3C00
+    dc.w $0161
     bsr.w loc_008226
+    ori.b #$10,d3
     dc.w $1039
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEA0
+    dc.w $A04C
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $7548
 loc_007EF4:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #82,d7
     addq.w #1,d1
+    dc.w $4161
     bsr.w loc_008206
+    ori.b #$22,d3
     dc.w $2248
+    dc.w $4845
     lea loc_FFFFAEA0,a2
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $A034
     move.w #$0001,d2
+    dc.w $3C00
+    dc.w $0161
     bsr.w loc_008226
+    ori.b #$10,d3
     dc.w $1039
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEA0
+    dc.w $A04C
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $7548
+    dc.w $E77F
+    moveq #66,d7
+    dc.w $79FF
+    dc.w $FFAE
+    sub.w (78,a2,d0.w),d3
+    dc.w $B900
+    ori.l #$0623C8FF,d2
+    dc.w $FFAE
+    sub.w d5,d6
+    dc.w $F900
+    dc.w $FF55
+    moveq #50,d6
+    dc.w $3C03
+    dc.w $FF74
+    ori.b #$51,-(a4)
+    dc.w $C9FF
+    dc.w $FC22
+    dc.w $79FF
+    dc.w $FFAE
+    sub.w (69,a2,d0.w),d6
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $A034
+    dc.w $3C00
+    dc.w $0161
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $AC34
+    dc.w $3C00
+    andi.w #$0002,-(a1)
+    cmp.b (a2),d5
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF55
+    moveq #52,d6
+    dc.w $3C00
+    dc.w $0D36
+    dc.w $3C00
+    or.w d7,-(a1)
+    ori.b #$12,d2
+    dc.w $00D4
+    dc.w $FC00
+    dc.w $10D2
+    dc.w $C2D2
+    and.w (a1),d1
+    dc.w $CBFF
+    dc.w $F045
+    dc.w $F900
+    dc.w $FF30
+    dc.w $0434
+    dc.w $3C00
+    sub.w -(a1),d5
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF30
+    add.b (0,a4,d3.l),d5
+    dc.w $4061
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF31
+    dc.w $5834
+    dc.w $3C00
+    dc.w $1261
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF31
+    bpl.s loc_00800B
+    dc.w $3C00
+    dc.w $1261
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF5E
+    moveq #52,d6
+    dc.w $3C00
+    dc.w $2061
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF5E
+    sub.b (0,a4,d3.l),d6
+    dc.w $2061
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+loc_00800B:
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF5E
+    cmp.b (0,a4,d3.l),d6
+    dc.w $2061
+    ori.b #$12,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF31
+    dc.w $5634
+    dc.w $3C00
+    andi.w #$0001,-(a1)
+    dc.w $FA12
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF30
+    sub.b (0,a4,d3.l),d7
+    dc.w $4061
+    ori.b #$12,d1
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F900
+    dc.w $FF31
+    dc.w $1A34
+    dc.w $3C00
+    dc.w $3C61
+    ori.b #$12,d1
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F9FF
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d1
+    andi.w #$0001,-(a1)
+    cmp.b (a2),d7
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F8E8
+    add.b (0,a4,d3.l),d2
+    andi.w #$0001,-(a1)
+    dc.w $AC12
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F8E8
+    add.b (0,a4,d3.l),d6
+    andi.w #$0001,-(a1)
+    sub.b (a2),d5
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F8E0
+    dc.w $E634
+    dc.w $3C00
+    bne.s loc_0080FE
+    ori.b #$12,d1
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F9FF
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d3
+    andi.w #$0001,-(a1)
+    moveq #18,d2
+    dc.w $00D2
+    dc.w $C2D2
+    and.w d5,d1
+    dc.w $F9FF
+    dc.w $FFAE
+    cmp.b (0,a4,d3.l),d2
+    andi.w #$0001,-(a1)
+    bra.s loc_0080DB
 loc_008206:
     lea loc_200007,a0
     dc.w $D0FC
@@ -18224,7 +18147,52 @@ loc_008260:
     moveq #0,d0
     dc.w $1001
     dc.w $4CDF
-    dc.w $0202
+    andi.b #$75,d2
+    dc.w $48E7
+    dc.w $4040
+    lea loc_200003,a1
+    dc.w $0C11
+    ori.b #$0A,(a2)
+    dc.w $0C29
+    ori.b #$02,(2,a4,d6.w)
+    bra.s loc_0082AA
+loc_0082AA:
+    dc.w $4CDF
+    andi.b #$75,d2
+    dc.w $48E7
+    dc.w $7F7E
+    move.w #$0000,d1
+    bsr.w loc_008206
+    dc.w $2248
+    move.w #$13D8,d1
+    bsr.w loc_008328
+    bsr.w loc_00837E
+    move.w #$0001,d1
+    bsr.w loc_008206
+    dc.w $2248
+    move.w #$01C4,d1
+    bsr.w loc_008328
+    bsr.w loc_00837E
+    move.w #$0002,d1
+    bsr.w loc_008206
+    dc.w $2248
+    move.w #$01C4,d1
+    bsr.w loc_008328
+    bsr.w loc_00837E
+    move.w #$0003,d1
+    bsr.w loc_008206
+    dc.w $2248
+    move.w #$01C4,d1
+    bsr.w loc_008328
+    bsr.w loc_00837E
+    move.w #$0004,d1
+    bsr.w loc_008206
+    dc.w $2248
+    move.w #$01C4,d1
+    bsr.w loc_008328
+    bsr.w loc_00837E
+    dc.w $4CDF
+    moveq #-2,d7
     rts
 loc_0083C6:
     dc.w $48E7
@@ -18252,10 +18220,8 @@ loc_0085D8:
     bsr.w loc_0053B4
     dc.w $23FC
     dc.w $00FF
-    dc.w $0004
-    dc.w $00FF
-    dc.w $0000
-    dc.w $4CDF
+    ori.b #$FF,d4
+    ori.b #$DF,d0
     moveq #-2,d7
     rts
 loc_008604:
@@ -18265,8 +18231,13 @@ loc_008604:
     lea loc_023D16,a1
     jsr loc_00590C
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
+    dc.w $2079
+    dc.w $00FF
+    ori.b #$75,d0
+    dc.w $23C9
+    dc.w $00FF
+    ori.b #$75,d0
 loc_00862E:
     dc.w $48E7
     dc.w $7F7E
@@ -18326,15 +18297,13 @@ loc_00868A:
     subq.w #3,d6
     move.w d1,(2,a2)
 loc_0086A2:
-    dc.w $0002
+    ori.b #$59,d2
     add.w d3,(a1)+
     dbra d6,loc_0086A2
     move.w d1,(4,a2)
     add.w d3,(a1)+
     dc.w $0641
-    dc.w $0080
-    tst.w d5
-    beq.s loc_0086C0
+    ori.l #$4A456708,d0
     cmpi.w #$0001,d2
     beq.s loc_0086C0
     bra.s loc_0086C6
@@ -18387,8 +18356,7 @@ loc_008722:
     dc.w $FFFF
     dc.w $AEFA
     dc.w $B3FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_008738
     jsr (a1)
 loc_008738:
@@ -18413,14 +18381,12 @@ loc_008738:
     dc.w $3038
     dc.w $8F4C
     dc.w $E648
-    dc.w $0240
-    dc.w $003F
+    andi.w #$003F,d0
     add.w d0,d1
     dc.w $3038
     dc.w $8F4E
     dc.w $E648
-    dc.w $0240
-    dc.w $001F
+    andi.w #$001F,d0
     add.w d0,d2
 loc_008776:
     bsr.w loc_00665E
@@ -18434,232 +18400,725 @@ loc_008776:
     dc.w $AF00
     dc.w $2279
     dc.w $00FF
-    dc.w $0000
-    dc.w $32FC
+    ori.b #$FC,d0
     dc.w $FFFF
     dc.w $23C9
     dc.w $00FF
-    dc.w $0000
+    ori.b #$39,d0
 loc_00879A:
     dc.w $3239
+loc_00879B:
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF02
+    andi.b #$FF,(-81,a4,a7.l)
     dc.w $3439
     dc.w $FFFF
     dc.w $AF04
+    dc.w $0461
     bsr.w loc_004A6C
+    dc.w $00C2
+    and.b -(a2),d2
     dc.w $2248
+    dc.w $4836
     dc.w $3639
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEF0
+    dc.w $F024
     dc.w $2479
+    dc.w $7900
     dc.w $00FF
-    dc.w $0000
-    dc.w $34FC
+    dc.w $FF00
+    ori.b #$FC,d0
+    ori.b #$FF,(52,a4,a7.l)
     dc.w $FFFE
     dc.w $34C2
+    and.b (50,a4,a4.w),d1
     dc.w $34C3
     dc.w $32FC
+    dc.w $FCFF
     dc.w $FFF7
+    dc.w $F732
     dc.w $32C2
+    and.b -(a2),d1
     dc.w $22CA
+    and.b (-29,a2,a4.w),d5
     dc.w $32C3
     dc.w $E34B
+    lea (a4),a5
     dc.w $D4C3
+    and.b d1,-(a3)
     dc.w $23CA
+    and.b d0,d5
     dc.w $00FF
-    dc.w $0000
-    dc.w $32FC
+    dc.w $FF00
+    ori.b #$FC,d0
+    ori.b #$FF,(50,a2,a7.l)
     dc.w $FFFD
     dc.w $32C1
+    and.b d0,(50,a2,a4.w)
     dc.w $32C2
     dc.w $32C3
+    and.b d1,(0,a2,a7.l)
     dc.w $32FC
-    dc.w $0001
-    bsr.w loc_004A74
+    ori.b #$00,d1
+    dc.w $0161
+    dc.w $00C2
+    and.l (a0),d1
+    sub.b d6,d0
     dc.w $0679
-    dc.w $0080
-    dc.w $FFFF
-    dc.w $AF02
+    dc.w $7900
+    ori.l #$FFFFAF02,d0
+    dc.w $80FF
+    dc.w $FFAF
+    andi.b #$00,d6
     dc.w $0679
-    dc.w $0080
-    dc.w $FFFF
-    dc.w $AF04
+    ori.l #$FFFFAF04,d0
+    dc.w $80FF
+    dc.w $FFAF
+    dc.w $0453
     dc.w $5379
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF00
+    ori.w #$00FF,-(a6)
     bne.w loc_00879A
+    sub.w d2,d6
     dc.w $4279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEF0
+    dc.w $F042
     dc.w $4279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAE
     dc.w $AEF2
+    dc.w $F24C
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $754E
+    dc.w $B900
+    ori.w #$660C,(0,a7,d4.w)
+    andi.w #$0861,(254,a5)
+    dc.w $0E60
+    ori.b #$22,d2
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $F430
+    dc.w $194A
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $F066
+    dc.w $0633
+    dc.w $C0FF
+    dc.w $FFAE
+    dc.w $F030
+    dc.w $194A
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $F266
+    dc.w $0633
+    dc.w $C0FF
+    dc.w $FFAE
+    dc.w $F233
+    dc.w $D9FF
+    dc.w $FFAE
+    dc.w $FE23
+    dc.w $C9FF
+    dc.w $FFAE
+    dc.w $F432
+    dc.w $3CD0
+    ori.w #$00C2,-(a1)
+    dc.w $0E22
+    dc.w $4834
+    dc.w $39FF
+    dc.w $FFAE
+    dc.w $F253
+    clr.w d2
+    dc.w $4545
+    dc.w $F900
+    dc.w $023D
+    move.w (-1,a6,d3.l),d3
+    dc.w $FFAE
+    dc.w $F8C6
+    dc.w $FC00
+    dc.w $0D32
+    dc.w $FCFF
+    dc.w $F832
+    and.b d0,(-1,a2,a7.l)
+    dc.w $FFAE
+    dc.w $F032
+    dc.w $92D7
+loc_00888B:
+    dc.w $593C
+    dc.w $39FF
+    dc.w $FFAE
+    dc.w $F057
+    dc.w $4632
+    dc.w $AA00
+    dc.w $02D7
+    dc.w $5951
+    dc.w $CEFF
+    dc.w $F832
+    dc.w $AA00
+    dc.w $04D7
+    subq.b #4,d6
+    dc.w $4100
+    or.w a2,d0
+    dc.w $4567
+    dc.w $080C
+    clr.b d0
+    dc.w $0167
+    andi.w #$063A,-(a0)
+    dc.w $3C00
+    dc.w $015C
+    dc.w $4A51
+    dc.w $CAFF
+    and.w -(a1),d0
+    dc.w $00C1
+    cmp.b -(a3),d2
+    dc.w $FC00
+    dc.w $0088
+    dc.w $CEFF
+    dc.w $FF80
+    dc.w $104E
+    dc.w $7524
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $F432
+    dc.w $1A0C
+    dc.w $41FF
+    dc.w $FF67
+    ori.b #$0C,d0
+    dc.w $4100
+    dc.w $0466
+    dc.w $2A22
+    dc.w $5A32
+    dc.w $1934
+    dc.w $1936
+    dc.w $3CD0
+    ori.b #$80,($003A).w
+    dc.w $3C00
+    dc.w $003C
+    dc.w $39FF
+    dc.w $FFAE
+    dc.w $F80C
+    clr.b d0
+    dc.w $0166
+    dc.w $0661
+    dc.w $00D6
+    sub.w -(a0),d1
+    dc.w $0461
+    dc.w $00D6
+    dc.w $5660
+    and.b -(a2),d3
+    dc.w $5A32
+    dc.w $1934
+    dc.w $1936
+    dc.w $3CD0
+    ori.b #$3A,($1961).w
+    dc.w $00D3
+    cmp.w -(a0),d7
+    cmp.b -(a3),d1
+    dc.w $FC00
+    dc.w $0089
+    dc.w $2EFF
+    dc.w $FF80
+    dc.w $104E
+    dc.w $7522
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $FA42
+    dc.w $B9FF
+    dc.w $FFAE
+    dc.w $FAB3
+    dc.w $FC00
+    ori.b #$67,d0
+    dc.w $024E
+    sub.b d0,-(a3)
+    dc.w $FC00
+    dc.w $0089
+    dc.w $50FF
+    dc.w $FF80
+    dc.w $104E
+    dc.w $7533
+    dc.w $FCD0
+    dc.w $00FF
+    dc.w $FFAF
+    andi.b #$FF,(-82,a2,a7.l)
+    dc.w $EC34
+    dc.w $39FF
+    dc.w $FFAE
+    dc.w $EE36
+    dc.w $39FF
+    dc.w $FFAE
+    dc.w $FE4A
+    moveq #-82,d4
+    cmp.w -(a7),d6
+    dc.w $1E0C
+    dc.w $43C0
+    ori.w #$1830,-(a6)
+    dc.w $388F
+    dc.w $4CE6
+    dc.w $4802
+    dc.w $4000
+    dc.w $3FD2
+    dc.w $4030
+    dc.w $388F
+    dc.w $4EE6
+    dc.w $4802
+    dc.w $4000
+    dc.w $1FD4
+    dc.w $4061
+    dc.w $00DC
+    and.b (-1,a3,a4.w),d7
+    dc.w $FFAF
+    dc.w $0433
+    dc.w $F9FF
+    dc.w $FFAE
+    dc.w $F2FF
+    dc.w $FFAF
+    ori.b #$00,-(a2)
+    dc.w $FF00
+    ori.b #$FF,(35,a2,a7.l)
+    dc.w $C900
+    dc.w $FF00
+    ori.b #$00,-(a3)
+    dc.w $0089
+    dc.w $BCFF
+    dc.w $FF80
+    dc.w $1032
+    dc.w $3C00
+    andi.b #$FF,(-82,a3,a7.l)
+    dc.w $E832
+    dc.w $39FF
+    dc.w $FFAF
+    andi.b #$FF,(-81,a4,a7.l)
+    dc.w $0461
+    dc.w $00C0
+    sub.b -(a2),d4
+    dc.w $4836
+    dc.w $39FF
+    dc.w $FFAE
+    dc.w $F024
+    dc.w $7900
+    dc.w $FF00
+    ori.b #$FF,(52,a4,a7.l)
+    and.b (50,a4,a4.w),d1
+    dc.w $FCFF
+    dc.w $F732
+    and.b -(a2),d1
+    and.b (-29,a2,a4.w),d5
+    lea (a4),a5
+    and.b d1,-(a3)
+    and.b d0,d5
+    dc.w $FF00
+    ori.b #$FF,(50,a2,a7.l)
+    and.b d0,(50,a2,a4.w)
+    and.b d1,(0,a2,a7.l)
+    dc.w $0161
+    dc.w $00C0
+    bcc.s loc_008A19
+    dc.w $7900
+    dc.w $80FF
+    dc.w $FFAF
+loc_008A19:
+    andi.b #$00,d6
+    dc.w $80FF
+    dc.w $FFAF
+    dc.w $0453
+    dc.w $79FF
+    dc.w $FFAF
+    ori.w #$1642,-(a6)
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $F042
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $F24E
+    dc.w $B900
+    dc.w $0048
+    moveq #96,d4
+    ori.b #$53,d0
+    dc.w $79FF
+    dc.w $FFAE
+    dc.w $E866
+    dc.w $00FF
+    moveq #78,d7
+    dc.w $7548
 loc_008A4C:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #34,d7
     dc.w $2279
+    dc.w $7900
     dc.w $00FF
-    dc.w $0000
-    dc.w $B3FC
+    dc.w $FF00
+    ori.b #$FC,d0
+    ori.l #$FC00FF00,(99,a3,d0.w)
     dc.w $00FF
-    dc.w $0004
-    bls.s loc_008A9A
+    ori.b #$3C,d4
+    move.w (12,a2,d2.w),d6
 loc_008A5E:
     dc.w $3221
     cmpi.w #$FFFE,d1
+    dc.w $41FF
+    dc.w $FE66
     bne.s loc_008A5E
+    dc.w $F823
     dc.w $23C9
+    dc.w $C900
     dc.w $00FF
-    dc.w $0000
-    dc.w $5449
+    dc.w $FF00
+    ori.b #$49,d0
+    ori.w #$4932,(a4)
     move.w (a1)+,d1
+    dc.w $1934
     move.w (a1)+,d2
+    dc.w $1961
     bsr.w loc_004A6C
+    dc.w $00BF
+    dc.w $F824
     dc.w $2448
+    dc.w $4834
     dc.w $34FC
+    dc.w $FCFF
     dc.w $FFF9
+    dc.w $F934
     dc.w $34C1
+    and.b d0,-(a4)
     dc.w $24C9
+    and.b d4,(34,a4,a4.w)
     dc.w $34C2
     dc.w $224A
+    dc.w $4A61
     bsr.w loc_004A74
+    dc.w $00BF
+    dc.w $EE22
     dc.w $2279
+    dc.w $7900
     dc.w $00FF
-    dc.w $0000
-    dc.w $0C61
+    dc.w $FF00
+    ori.b #$61,d0
+    dc.w $000C
+    dc.w $61FF
     dc.w $FFFF
+    dc.w $FF66
     bne.s loc_008A5E
+    and.b -(a3),d5
     dc.w $23C9
+    dc.w $C900
     dc.w $00FF
-    dc.w $0000
-loc_008A9A:
-    dc.w $4CDF
+    dc.w $FF00
+    ori.b #$DF,d0
+    dc.w $004C
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $754E
+    dc.w $B900
+    ori.w #$660C,(0,a7,d4.w)
+    andi.w #$0661,(255,a5)
+    sub.w -(a0),d7
+    dc.w $5632
+    dc.w $3C00
+    andi.b #$FF,(-82,a3,a7.l)
+    dc.w $EA22
+    dc.w $7900
+    dc.w $FF00
+    ori.l #$FC00FF00,(103,a3,d0.w)
+    ori.b #$32,d0
+    dc.w $210C
+    dc.w $41FF
+    dc.w $FE66
+    dc.w $F823
+    dc.w $C900
+    dc.w $FF00
+    ori.w #$4932,(a4)
+    dc.w $1934
+    dc.w $1961
+    dc.w $00BF
+    or.b -(a4),d5
+    dc.w $4834
+    dc.w $FCFF
+    dc.w $F934
+    and.b d0,-(a4)
+    and.b d4,(34,a4,a4.w)
+    dc.w $4A61
+    dc.w $00BF
+    or.b -(a2),d0
+    dc.w $7900
+    dc.w $FF00
+    dc.w $000C
+    dc.w $61FF
+    dc.w $FF66
+    dc.w $0E23
+    dc.w $C900
+    dc.w $FF00
+    dc.w $004E
+    dc.w $B900
+    dc.w $0048
+    moveq #96,d4
+    eori.w #$79FF,(a3)
+    dc.w $FFAE
+    dc.w $EA66
+    dc.w $00FF
+    dc.w $A44E
+    dc.w $7548
 loc_008B1C:
     dc.w $48E7
+    dc.w $E7FF
     dc.w $FFFE
+    dc.w $FE33
     dc.w $33C1
+    dc.w $C1FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B080
+    or.w -(a1),d0
     bsr.w loc_008BAC
+    ori.b #$33,d0
     dc.w $33FC
+    dc.w $FCFF
     dc.w $FFFF
     dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFB0
     cmp.l ($33FC).w,d0
+    cmp.b (-1,a3,a7.l),d4
     dc.w $FFFF
     dc.w $FFFF
+    dc.w $FFFF
+    dc.w $FFB0
     cmp.l (13308,pc),d0
-    dc.w $0001
-    dc.w $FFFF
+    cmp.b (0,a3,a7.l),d5
+    ori.b #$FF,d1
+    dc.w $01FF
+    dc.w $FFB0
     dc.w $B0C0
+    and.b (0,a3,a7.l),d0
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
+    dc.w $01FF
+    dc.w $FFB0
     dc.w $B0C2
+    and.b (0,a1,a7.l),d1
     dc.w $31FC
-    dc.w $0018
-    dc.w $8F4C
+    ori.b #$4C,(a0)+
+    dc.w $188F
+    dc.w $4C31
     dc.w $31FC
-    dc.w $0018
-    dc.w $8F4E
+    dc.w $FC00
+    ori.b #$4E,(a0)+
+    dc.w $188F
+    dc.w $4E31
     dc.w $31FC
-    dc.w $0018
-    or.w d7,(a0)
+    dc.w $FC00
+    ori.b #$50,(a0)+
+    dc.w $188F
+    dc.w $5031
     dc.w $31FC
-    dc.w $0018
-    or.w d7,(a2)
+    dc.w $FC00
+    ori.b #$52,(a0)+
+    dc.w $188F
+    addq.w #1,d2
     dc.w $4279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (121,a0,d4.w),d0
+    dc.w $B042
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (121,a2,d4.w),d0
+    dc.w $B242
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (121,a4,d4.w),d0
+    dc.w $B442
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (0,a6,d6.w),d0
+    cmp.w -(a1),d3
+    ori.b #$4E,(-18176,a4)
     dc.w $2CFA
     jsr loc_0064B4
+    ori.w #$B430,-(a4)
     dc.w $30BC
-    dc.w $02B0
-    jsr loc_0064B4
+    dc.w $BC02
+    andi.l #$4EB90000,(-76,a0,d6.w)
+    dc.w $B04E
+    dc.w $B900
+    ori.w #$B430,-(a4)
     dc.w $30BC
-    dc.w $02B6
-    jsr loc_0064D8
+    dc.w $BC02
+    andi.l #$4EB90000,(-40,a6,d6.w)
+    dc.w $B64E
+    dc.w $B900
+    ori.w #$D830,-(a4)
     dc.w $30BC
+    dc.w $BC02
     dc.w $02C2
+    and.w a6,d1
     jsr loc_0064D8
+    dc.w $B900
+    ori.w #$D830,-(a4)
     dc.w $30BC
+    dc.w $BC02
     dc.w $02C8
+    and.w a4,d4
     dc.w $4CDF
+    dc.w $DF7F
     dc.w $7FFF
+    dc.w $FF4E
     rts
+    dc.w $7561
 loc_008BAC:
     bsr.w loc_008C2A
+    ori.b #$61,d0
     bsr.w loc_008E02
+    ori.b #$61,d2
     bsr.w loc_008BBA
+    ori.b #$4E,d0
     rts
+    dc.w $7548
 loc_008BBA:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #50,d7
     move.w #$007B,d1
+    dc.w $3C00
+    dc.w $7B34
     move.w #$71E0,d2
+    dc.w $3C71
+    dc.w $E04E
     jsr loc_0053B4
+    dc.w $B900
+    ori.w #$B432,(a3)
     move.w #$007F,d1
+    dc.w $3C00
+    dc.w $7F34
     move.w #$3800,d2
+    dc.w $3C38
+    dc.w $004E
     jsr loc_0053B4
+    dc.w $B900
+    ori.w #$B422,(a3)
     dc.w $2279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0DE
+    add.b a4,d7
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    dc.w $7900
+    ori.b #$FF,d2
+    dc.w $02FF
+    dc.w $FFB0
     dc.w $B080
+    or.w -(a6),d0
     bne.s loc_008C08
+    dc.w $1E32
     move.w (2,a1),d1
+    dc.w $2900
+    andi.b #$39,(78,a4,a2.w)
     move.w #$39A0,d2
     jsr loc_0053B4
+    dc.w $B900
+    ori.w #$B432,(a3)
     move.w (4,a1),d1
+    dc.w $2900
+    dc.w $0434
     move.w #$4620,d2
+    dc.w $3C46
+    dc.w $204E
     jsr loc_0053B4
+    dc.w $B900
+    ori.w #$B460,(a3)
     bra.s loc_008C24
+    dc.w $1C32
 loc_008C08:
     move.w (6,a1),d1
+    dc.w $2900
+    dc.w $0634
     move.w #$39A0,d2
+    dc.w $3C39
+    dc.w $A04E
     jsr loc_0053B4
+    dc.w $B900
+    ori.w #$B432,(a3)
     move.w (8,a1),d1
+    dc.w $2900
+    dc.w $0834
     move.w #$55C0,d2
+    dc.w $3C55
+    and.w a6,d0
     jsr loc_0053B4
+    dc.w $B900
+    ori.w #$B44C,(a3)
 loc_008C24:
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $7548
 loc_008C2A:
     dc.w $48E7
+    dc.w $E7FF
     dc.w $FFFE
+    dc.w $FE43
     lea loc_023E96,a1
+    dc.w $F900
+    dc.w $023E
+    sub.b (-82,a2,d3.l),d3
     dc.w $3238
     dc.w $AEAC
+    dc.w $ACE5
     dc.w $E549
+    dc.w $4922
     dc.w $2271
+    dc.w $7110
     dc.w $1000
+    ori.b #$FF,(-80,a3,a7.l)
     dc.w $33D9
     dc.w $FFFF
     dc.w $B082
+    or.b (-1,a3,a5.l),d1
     dc.w $33D9
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08A
+    or.b (-1,a3,a5.l),d5
     dc.w $33D9
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08C
+    or.b -(a3),d6
     dc.w $23C9
+    dc.w $C9FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08E
+    or.w d3,d7
     lea loc_023EE6,a1
+    dc.w $F900
+    dc.w $023E
     dc.w $3238
     dc.w $AEAC
     dc.w $E349
@@ -18671,12 +19130,10 @@ loc_008C2A:
     dc.w $3239
     dc.w $FFFF
     dc.w $B084
-loc_008C76:
     cmp.w (a1),d1
     beq.s loc_008C80
     dc.w $D2FC
-    dc.w $0012
-    bra.s loc_008C76
+    ori.b #$F6,(a2)
 loc_008C80:
     dc.w $23C9
     dc.w $FFFF
@@ -18686,49 +19143,54 @@ loc_008C80:
     dc.w $FFFF
     dc.w $B086
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
+loc_008C93:
+    dc.w $FFB0
     cmp.l (a0)+,d0
+    sub.b (0,a3,a7.l),d4
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
+    dc.w $02FF
+    dc.w $FFB0
     cmp.l (a2)+,d0
+    sub.b (0,a3,a7.l),d5
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
+    dc.w $02FF
+    dc.w $FFB0
     cmp.l (a4)+,d0
+    sub.b (0,a3,a7.l),d6
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
+    dc.w $02FF
+    dc.w $FFB0
     cmp.l (a6)+,d0
+    sub.w a2,d7
     dc.w $4A78
+    moveq #-29,d4
     dc.w $E360
+    bra.s loc_008D1A
     beq.s loc_008CCE
     dc.w $33FC
-    dc.w $0004
-    dc.w $FFFF
+    ori.b #$FF,d4
     cmp.l (a6)+,d0
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     beq.s loc_008CCE
     dc.w $33FC
-    dc.w $0004
-    dc.w $FFFF
+    ori.b #$FF,d4
     cmp.l (a6)+,d0
 loc_008CCE:
     dc.w $33FC
-    dc.w $0014
-    dc.w $FFFF
+    ori.b #$FF,(a4)
     cmp.l (a4),d0
     dc.w $33FC
     dc.w $000C
     dc.w $FFFF
     cmp.l (a6),d0
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     beq.s loc_008CF8
     dc.w $33FC
@@ -18755,6 +19217,7 @@ loc_008CF8:
     dc.w $FFFF
     dc.w $B08C
     sub.w ($FFFFB094).l,d3
+loc_008D1A:
     sub.w ($FFFFB096).l,d4
     add.w ($FFFFB09C).l,d3
     add.w ($FFFFB09E).l,d4
@@ -18776,12 +19239,10 @@ loc_008CF8:
     dc.w $FFFF
     dc.w $B0CE
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B0D4
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B0D6
     dc.w $3039
     dc.w $FFFF
@@ -18806,29 +19267,24 @@ loc_008CF8:
     dc.w $FFFF
     dc.w $B0D2
     dc.w $33FC
-    dc.w $0010
-    dc.w $FFFF
+    ori.b #$FF,(a0)
     cmp.l -(a0),d0
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     cmp.l -(a2),d0
     dc.w $33FC
     dc.w $0008
     dc.w $FFFF
     cmp.l -(a4),d0
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     beq.s loc_008DCC
     dc.w $33FC
-    dc.w $0018
-    dc.w $FFFF
+    ori.b #$FF,(a0)+
     cmp.l -(a0),d0
     dc.w $33FC
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     cmp.l -(a2),d0
     dc.w $33FC
     dc.w $0008
@@ -18837,451 +19293,946 @@ loc_008CF8:
 loc_008DCC:
     move.w #$0040,d1
     sub.w ($FFFFB08A).l,d1
+loc_008DD1:
+    dc.w $79FF
+    dc.w $FFB0
+    dc.w $8AE2
     dc.w $E249
+    dc.w $4933
     dc.w $33C1
+    dc.w $C1FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (12860,a0),d0
-    dc.w $0040
-    sub.w ($FFFFB08C).l,d1
+    dc.w $A832
+    dc.w $3C00
+    ori.w #$9279,d0
+    dc.w $4092
+    dc.w $79FF
+    dc.w $FFFF
+    dc.w $FFB0
+    dc.w $B08C
+    dc.w $8CE2
     dc.w $E249
+    dc.w $4933
     dc.w $33C1
+    dc.w $C1FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (20153,a2),d0
-    dc.w $0000
-    or.w a2,d7
+    dc.w $AA4E
+    dc.w $B900
+    ori.b #$4A,d0
+    dc.w $008E
+    tst.w d2
     dc.w $4279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (a2),d0
+    sub.w a4,d1
     dc.w $4CDF
+    dc.w $DF7F
     dc.w $7FFF
+    dc.w $FF4E
     rts
+    dc.w $7561
 loc_008E02:
     bsr.w loc_008E36
+    ori.b #$4E,d0
     jsr loc_0064B4
+    dc.w $B900
+    ori.w #$B430,-(a4)
     dc.w $30BC
+    dc.w $BC02
     dc.w $02CE
+    and.b (1,a1,d7.l),d7
     dc.w $317C
     dc.w $0180
+    or.b d0,d0
     dc.w $0008
+    dc.w $0842
     dc.w $4268
+    bvc.w loc_00983A
     dc.w $000A
     dc.w $217C
-    dc.w $0002
-    dc.w $3E7A
-    dc.w $0004
-    dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    moveq #0,d6
+    ori.b #$7A,d2
+    dc.w $023E
+    moveq #0,d5
+    ori.b #$79,d4
+    dc.w $040C
+    dc.w $7900
+    ori.b #$FF,d2
+    dc.w $02FF
+    dc.w $FFB0
     dc.w $B080
+    or.w -(a7),d0
     beq.s loc_008E34
+    dc.w $0821
     dc.w $217C
-    dc.w $0002
-    dc.w $3E7E
-    dc.w $0004
+    moveq #0,d6
+    ori.b #$7E,d2
+    dc.w $023E
+    moveq #0,d7
+    ori.b #$75,d4
+    dc.w $044E
 loc_008E34:
     rts
+    dc.w $7548
 loc_008E36:
     dc.w $48E7
+    dc.w $E740
     dc.w $4000
+    ori.b #$02,(78,a2,a4.l)
     move.w #$02CE,d1
     jsr loc_00658C
+    dc.w $B900
+    ori.w #$8C4C,-(a5)
     dc.w $4CDF
-    dc.w $0002
-    rts
+    dc.w $DF00
+    ori.b #$75,d2
+    dc.w $024E
+    dc.w $7548
 loc_008E4A:
     dc.w $48E7
+    dc.w $E7FF
     dc.w $FFFE
+    dc.w $FE33
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    dc.w $FC00
+    ori.b #$FF,d1
+    dc.w $01FF
+    dc.w $FFAF
     dc.w $AF06
+    dc.w $0633
     dc.w $33FC
-    dc.w $0040
-    dc.w $FFFF
+    dc.w $FC00
+    ori.w #$FFFF,d0
+    dc.w $40FF
+    dc.w $FFAF
     dc.w $AF08
+    dc.w $080C
     dc.w $0C79
-    dc.w $0001
-    dc.w $FFFF
+    dc.w $7900
+    ori.b #$FF,d1
+    dc.w $01FF
+    dc.w $FFB0
     dc.w $B082
+    or.w -(a7),d1
     beq.s loc_008E78
+    dc.w $1033
     dc.w $33FC
-    dc.w $0040
-    dc.w $FFFF
+    dc.w $FC00
+    ori.w #$FFFF,d0
+    dc.w $40FF
+    dc.w $FFAF
     dc.w $AF06
+    dc.w $0633
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    dc.w $FC00
+    ori.b #$FF,d1
+    dc.w $01FF
+    dc.w $FFAF
     dc.w $AF08
+    dc.w $0822
 loc_008E78:
     dc.w $2279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08E
+    or.w d5,d7
     lea loc_FFFFB0E4,a2
+    dc.w $F9FF
+    dc.w $FFB0
+    dc.w $E472
     moveq #0,d1
+    ori.b #$FF,(-80,a4,a7.l)
     dc.w $3439
     dc.w $FFFF
     dc.w $B08C
+    or.w (a3),d6
     subq.w #1,d2
+    dc.w $4236
     dc.w $3639
+    dc.w $39FF
 loc_008E90:
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08A
+    or.w (a3),d5
     subq.w #1,d3
+    dc.w $4326
     dc.w $264A
+    dc.w $4A18
     dc.w $1819
+    dc.w $190C
 loc_008E9A:
     cmpi.b #$FE,d4
+    dc.w $0400
+    dc.w $FE66
     bne.s loc_008EA6
+    dc.w $0612
     dc.w $1219
+    dc.w $1953
     subq.b #1,d1
+    dc.w $0118
     dc.w $1819
+    dc.w $1916
 loc_008EA6:
     dc.w $1684
+    or.w a2,d2
     tst.b d1
+    dc.w $0167
     beq.s loc_008EB0
+    dc.w $0453
     subq.b #1,d1
+    dc.w $0153
     dc.w $5349
+    lea (a6),a4
 loc_008EB0:
     dc.w $D6F9
+    dc.w $F9FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF06
+    dc.w $0651
     dbra d3,loc_008E9A
+    dc.w $CBFF
+    dc.w $E0D4
     dc.w $D4F9
+    dc.w $F9FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF08
+    dc.w $0851
     dbra d2,loc_008E90
+    dc.w $CAFF
+    and.w a4,d6
     dc.w $4CDF
+    dc.w $DF7F
     dc.w $7FFF
+    dc.w $FF4E
     rts
+    dc.w $7532
 loc_008ECA:
     dc.w $3239
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08A
+    or.b (-1,a4,d3.l),d5
     dc.w $3439
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B08C
+    or.w a6,d6
     rts
+    dc.w $7548
 loc_008ED8:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_008F1C
+    dc.w $4043
+    dc.w $F9FF
+    dc.w $FFB0
+    dc.w $E4ED
+    dc.w $4AD2
+    dc.w $4270
+    ori.b #$10,(a0)
+    ori.b #$00,d2
+    dc.w $7F22
+    dc.w $79FF
+    dc.w $FFB0
+    or.b (a0),d3
+    dc.w $3100
+    dc.w $004C
+    dc.w $DF02
+    dc.w $064E
+    dc.w $7548
 loc_008F00:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_008F44
+    dc.w $4043
+    dc.w $F9FF
+    dc.w $FFB0
+    dc.w $E4ED
+    dc.w $4AD2
+    dc.w $4270
+    ori.b #$10,(a0)
+    ori.w #$0470,(352,a2)
+    andi.w #$004C,(2,a0,a5.l)
 loc_008F1C:
     dc.w $4CDF
-    dc.w $0206
-    rts
+    andi.b #$75,d6
+    dc.w $064E
+    dc.w $7532
 loc_008F22:
     dc.w $3239
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l ($3439).w,d0
+    cmp.b (-1,a4,d3.l),d4
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (-11655,pc),d0
+    dc.w $BAD2
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0C0
+    dc.w $C0D4
     add.w ($FFFFB0C2).l,d2
+    dc.w $79FF
+    dc.w $FFB0
+    and.w a6,d1
     rts
+    dc.w $7548
 loc_008F3C:
     dc.w $48E7
+    dc.w $E7FF
     dc.w $FFFE
+    dc.w $FE36
     dc.w $3639
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFB0
 loc_008F44:
     cmp.l ($3839).w,d0
+    cmp.b ($39FF).w,d4
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (-28093,pc),d0
+    cmp.l (a2),d5
+    dc.w $4394
     sub.w d4,d2
+    dc.w $443A
     dc.w $3A39
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (a4),d0
+    sub.b #$39FF,d2
     dc.w $3C39
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (a6),d0
+    dc.w $96E2
     dc.w $E24D
+    dc.w $4DE2
     dc.w $E24E
+    dc.w $4E53
     subq.w #1,d5
+    dc.w $4553
     subq.w #1,d6
+    dc.w $4692
     sub.w d5,d1
+    dc.w $4594
     sub.w d6,d2
+    dc.w $46D6
     add.w d1,d3
+    dc.w $41D8
     add.w d2,d4
+    dc.w $4232
     dc.w $3205
+    dc.w $0534
     dc.w $3406
+    dc.w $06B6
     cmp.w ($FFFFB0C4).l,d3
+    dc.w $79FF
+    dc.w $FFB0
+    and.w (3120,a4),d2
     bge.s loc_008F84
     dc.w $3039
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0C4
+    and.l (a0),d2
     sub.w d3,d0
+    dc.w $4392
     sub.w d0,d1
+    dc.w $40D6
     add.w d0,d3
+    dc.w $40B8
 loc_008F84:
     cmp.w ($FFFFB0C6).l,d4
+    dc.w $79FF
+    dc.w $FFB0
+    and.w (3120,a4),d3
     bge.s loc_008F98
     dc.w $3039
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0C6
+    and.l (a0),d3
     sub.w d4,d0
+    dc.w $4494
     sub.w d0,d2
+    dc.w $40D8
     add.w d0,d4
+    dc.w $40B6
 loc_008F98:
     cmp.w ($FFFFB0C8).l,d3
+    dc.w $79FF
+    dc.w $FFB0
+    and.w (3120,a7),d4
     ble.s loc_008FAC
     dc.w $3003
+    dc.w $0390
     sub.w ($FFFFB0C8).l,d0
+    dc.w $79FF
+    dc.w $FFB0
+    dc.w $C8D2
     add.w d0,d1
+    dc.w $4096
     sub.w d0,d3
+    dc.w $40B8
 loc_008FAC:
     cmp.w ($FFFFB0CA).l,d4
+    dc.w $79FF
+    dc.w $FFB0
+    and.w (3120,a7),d5
     ble.s loc_008FC0
     dc.w $3004
+    dc.w $0490
     sub.w ($FFFFB0CA).l,d0
+    dc.w $79FF
+    dc.w $FFB0
+    dc.w $CAD4
     add.w d0,d2
+    dc.w $4098
     sub.w d0,d4
+    dc.w $4033
 loc_008FC0:
     dc.w $33C1
+    dc.w $C1FF
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0C0
+    and.b (-1,a3,a4.w),d0
     dc.w $33C2
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0C2
+    and.b (-1,a3,a4.w),d1
     dc.w $33C3
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l ($33C4).w,d0
+    cmp.b (-1,a3,a4.w),d4
     dc.w $FFFF
+    dc.w $FFB0
     cmp.l (19679,pc),d0
+    dc.w $BA4C
+    dc.w $DF7F
     dc.w $7FFF
+    dc.w $FF4E
     rts
+    dc.w $7532
+    dc.w $39FF
+    dc.w $FFE1
+    dc.w $5034
+    dc.w $39FF
+    dc.w $FFE1
+    dc.w $524E
+    dc.w $B900
+    dc.w $008F
+    dc.w $3C4E
+    dc.w $B900
+    ori.l #$3A23FC00,(a6)
+    ori.l #$02FFFF80,(a0)
+    dc.w $104E
+    dc.w $754E
+    dc.w $B900
+    dc.w $0048
+    moveq #78,d4
+    dc.w $7541
 loc_00900A:
     lea loc_024180,a0
+    dc.w $F900
+    andi.w #$8030,d1
     dc.w $3001
+    dc.w $01E3
     dc.w $E348
+    dc.w $4830
     move.w (0,a0,d0.w),d0
+    dc.w $3000
+    dc.w $004E
     rts
+    dc.w $7532
+    dc.w $39FF
+    dc.w $FFB0
+    and.b (-1,a0,d3.l),d0
+    dc.w $FFB0
+    dc.w $A0C2
+    and.b (-44,a4,d0.w),d0
+    dc.w $404E
+    dc.w $7548
 loc_00902E:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_009072
+    dc.w $4043
+    dc.w $F9FF
+    dc.w $FFB0
+    dc.w $E4ED
+    dc.w $4AD2
+    clr.b d2
+    dc.w $3100
+    dc.w $7F10
+    dc.w $004C
+    dc.w $DF02
+    dc.w $064E
+    dc.w $7548
 loc_009048:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_00908C
+    dc.w $4043
+    dc.w $F9FF
+    dc.w $FFB0
+    dc.w $E4ED
+    dc.w $4AD2
+    clr.b d0
+    dc.w $3100
+    or.b (a0),d0
+    dc.w $004C
+    dc.w $DF02
+    dc.w $064E
+    dc.w $7548
 loc_009062:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_0090A6
+    dc.w $4043
+    dc.w $F9FF
+    dc.w $FFB0
+    dc.w $E432
+    dc.w $3C00
+    dc.w $3F24
+    dc.w $3C7F
 loc_009072:
     dc.w $7F7F
     dc.w $7F7F
+    dc.w $7F7F
+    dc.w $7FC5
     and.l d2,(a1)+
+    dc.w $99C5
 loc_009078:
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
 loc_00908C:
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    dc.w $99C5
     and.l d2,(a1)+
+    sub.w d4,(a1)
     dbra d1,loc_009078
+    dc.w $C9FF
+    add.w a4,d7
     dc.w $4CDF
-    dc.w $0206
-    rts
+    dc.w $DF02
+    andi.b #$75,d6
+    dc.w $064E
+    dc.w $7548
 loc_0090A0:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_0090E4
+    dc.w $4043
+    dc.w $F9FF
 loc_0090A6:
     dc.w $FFFF
+    dc.w $FFB0
     dc.w $B0E4
+    dc.w $E432
     move.w #$003F,d1
+    dc.w $3C00
+    dc.w $3F24
     move.l #$80808080,d2
+    dc.w $3C80
+    or.l d0,d0
+    or.l d5,d0
     or.l d2,(a1)+
+    dc.w $9985
 loc_0090B6:
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    dc.w $9985
     or.l d2,(a1)+
+    sub.w d4,(a1)
     dbra d1,loc_0090B6
+    dc.w $C9FF
+    add.w a4,d7
     dc.w $4CDF
-    dc.w $0206
-    rts
+    dc.w $DF02
+    andi.b #$75,d6
+    dc.w $064E
+    dc.w $754E
 loc_0090DE:
     jsr loc_009062
+    dc.w $B900
+    ori.l #$624E7548,(a0)
 loc_0090E4:
     rts
 loc_0090E6:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #67,d7
     lea loc_FF517C,a1
+    dc.w $F900
+    dc.w $FF51
+    moveq #72,d6
     dc.w $48C1
+    dc.w $C1ED
     dc.w $ED89
+    dc.w $89D2
     dc.w $D2C1
+    and.b d0,-(a2)
     dc.w $2251
+    dc.w $51B2
     dc.w $B2FC
-    dc.w $0000
-    beq.w loc_0091D4
+    dc.w $FC00
+    ori.b #$00,d0
+    ori.w #$0000,-(a7)
+    dc.w $00D6
+    add.w (18,a2,d0.w),d3
     moveq #0,d1
     dc.w $1229
-    dc.w $0000
-    jsr loc_00B61E
+    dc.w $2900
+    ori.b #$B9,d0
+    dc.w $004E
+    dc.w $B900
+    ori.b #$1E,d0
+    ori.l #$1E302800,(12,a6,d7.w)
     move.w (112,a0),d0
     dc.w $0C29
+    dc.w $2900
     dc.w $0009
-    dc.w $0004
-    bne.s loc_00911A
+    dc.w $0900
+    ori.b #$02,d4
+    dc.w $0466
+    andi.w #$4033,(a2)+
     addq.w #5,d0
-loc_00911A:
     dc.w $33C0
+    dc.w $C0FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0E
+    dc.w $0E72
     moveq #0,d1
+    ori.b #$12,(0,a4,d2.l)
     dc.w $3401
     dc.w $1229
     dc.w $000B
+    dc.w $0B14
     dc.w $1429
+    dc.w $2900
     dc.w $000C
+    dc.w $0C94
     sub.w ($FFFFAF0E).l,d2
+    dc.w $79FF
+    dc.w $FFAF
+    dc.w $0E33
     dc.w $33C1
+    dc.w $C1FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0A
+    eori.b #$FF,(-81,a3,a7.l)
     dc.w $33C2
     dc.w $FFFF
     dc.w $AF0C
+    dc.w $0C38
     dc.w $3839
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0E
+    dc.w $0EE3
     dc.w $E34C
+    dc.w $4C32
 loc_009146:
     dc.w $3239
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0A
+    eori.b #$FF,(-81,a4,a7.l)
     dc.w $3439
     dc.w $FFFF
     dc.w $AF0C
+    dc.w $0C36
     dc.w $3639
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0E
+    dc.w $0E4A
     tst.w d1
+    dc.w $416B
 loc_00915A:
     bmi.s loc_009176
+    dc.w $1A4A
     tst.w d2
+    dc.w $426B
     bmi.s loc_009176
+    dc.w $16B2
     cmp.w ($FFFFB08A).l,d1
+    dc.w $79FF
+    dc.w $FFB0
+    or.w (3764,a4),d5
     bge.s loc_009176
     cmp.w ($FFFFB08C).l,d2
+    dc.w $79FF
+    dc.w $FFB0
+    or.w (1614,a4),d6
     bge.s loc_009176
     jsr loc_009048
+    dc.w $B900
+    ori.l #$48524152,(a0)
 loc_009176:
     addq.w #1,d1
     addq.w #1,d2
+    dc.w $4251
     dbra d3,loc_00915A
+    dc.w $CBFF
+    add.w (a3),d6
     subq.w #1,d4
+    dc.w $446B
     bmi.w loc_0091D4
+    ori.b #$52,d0
     dc.w $5279
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0C
+    dc.w $0C32
     dc.w $3239
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0A
+    eori.b #$FF,(-81,a4,a7.l)
     dc.w $3439
     dc.w $FFFF
     dc.w $AF0C
+    dc.w $0C36
     dc.w $3639
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0E
+    dc.w $0E53
     subq.w #1,d3
+    dc.w $434A
     tst.w d1
+    dc.w $416B
 loc_0091A0:
     bmi.s loc_0091BC
+    dc.w $1A4A
     tst.w d2
+    dc.w $426B
     bmi.s loc_0091BC
+    dc.w $16B2
     cmp.w ($FFFFB08A).l,d1
+    dc.w $79FF
+    dc.w $FFB0
+    or.w (3764,a4),d5
     bge.s loc_0091BC
     cmp.w ($FFFFB08C).l,d2
+    dc.w $79FF
+    dc.w $FFB0
+    or.w (1614,a4),d6
     bge.s loc_0091BC
     jsr loc_009048
+    dc.w $B900
+    ori.l #$48524152,(a0)
 loc_0091BC:
     addq.w #1,d1
     addq.w #1,d2
+    dc.w $4251
     dbra d3,loc_0091A0
+    dc.w $CBFF
+    add.w (a3),d6
     subq.w #1,d4
+    dc.w $446B
     bmi.w loc_0091D4
+    ori.b #$53,d0
     dc.w $5379
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF0A
+    eori.w #$00FF,-(a0)
     bra.w loc_009146
+    moveq #76,d2
 loc_0091D4:
     dc.w $4CDF
+    dc.w $DF7E
     moveq #-2,d7
+    dc.w $FE4E
     rts
+    dc.w $7548
 loc_0091DA:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7E
+    moveq #74,d7
     dc.w $4A79
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF1C
+    dc.w $1C66
     bne.w loc_0092AE
+    ori.b #$4A,d0
     dc.w $4A79
+    dc.w $79FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF1E
+    dc.w $1E66
     bne.s loc_009234
+    dc.w $4436
     dc.w $3639
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF10
+    dc.w $1038
     dc.w $3839
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF12
+    dc.w $124E
     jsr loc_008F22
+    dc.w $B900
+    dc.w $008F
+    move.l (-1,a3,a4.w),d1
     dc.w $33C1
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF10
+    dc.w $1033
     dc.w $33C2
+    dc.w $C2FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF12
+    dc.w $12B6
     dc.w $B641
+    dc.w $4166
     bne.s loc_009218
+    dc.w $06B8
     dc.w $B842
+    dc.w $4266
     bne.s loc_009218
+    andi.w #$604E,-(a0)
     bra.s loc_009278
 loc_009218:
     jsr loc_008F22
+    dc.w $B900
+    dc.w $008F
+    dc.w $224E
     jsr loc_00B550
+    dc.w $B900
+    ori.l #$50675213,(-1,a5,a4.w)
     beq.s loc_009278
     dc.w $13C3
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF1B
-    dc.w $0079
-    dc.w $0001
-    dc.w $FFFF
-    dc.w $AF1E
+    dc.w $1B00
+    ori.w #$0001,($FFFFAF1E).l
+    dc.w $7900
+    dc.w $01FF
+    dc.w $FFAF
+    dc.w $1E30
 loc_009234:
     dc.w $3039
+    dc.w $39FF
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF78
+    moveq #-128,d4
     or.w ($FFFFAF7A).l,d0
+    dc.w $79FF
+    dc.w $FFAF
+    moveq #-128,d5
     or.w ($FFFFAF7C).l,d0
+    dc.w $79FF
+    dc.w $FFAF
+    moveq #-128,d6
     or.w ($FFFFAF7E).l,d0
+    dc.w $79FF
+    dc.w $FFAF
+    moveq #102,d7
     bne.s loc_009278
+    dc.w $2A4E
     jsr loc_009062
+    dc.w $B900
+    ori.l #$623239FF,(a0)
     dc.w $3239
     dc.w $FFFF
+    dc.w $FFAF
     dc.w $AF1A
+    dc.w $1A4E
     jsr loc_0090E6
     jsr loc_00963A
     dc.w $4279
@@ -19299,8 +20250,7 @@ loc_009278:
     dc.w $AF14
     lea loc_023DF4,a1
     dc.w $0839
-    dc.w $0005
-    dc.w $FFFF
+    ori.b #$FF,d5
     dc.w $AF15
     bne.w loc_009296
     lea loc_023E34,a1
@@ -19324,18 +20274,15 @@ loc_0092B4:
     bsr.w loc_00A154
     bne.w loc_009388
     dc.w $0C79
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B084
     beq.w loc_0092E8
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B084
     beq.w loc_0092E8
     dc.w $0C79
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $B084
     beq.w loc_0092E8
     bra.w loc_009388
@@ -19349,8 +20296,7 @@ loc_0092E8:
     cmpi.w #$0014,d0
     blt.w loc_009388
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B0E2
     dc.w $5279
     dc.w $FFFF
@@ -19361,8 +20307,7 @@ loc_0092E8:
     jsr loc_004A6C
     dc.w $2248
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     bne.w loc_009358
     move.w #$001A,d1
@@ -19374,8 +20319,7 @@ loc_0092E8:
     dc.w $FFFF
     dc.w $AF20
     dc.w $82FC
-    dc.w $0003
-    dc.w $4841
+    ori.b #$41,d3
     dc.w $C2FC
     dc.w $0500
     dc.w $D4C1
@@ -19385,19 +20329,17 @@ loc_0092E8:
     dc.w $39A0
     dc.w $22CA
     dc.w $32FC
-    dc.w $0280
-    bra.w loc_009382
+    andi.l #$6000002C,d0
 loc_009358:
     moveq #0,d1
     dc.w $3239
     dc.w $FFFF
     dc.w $AF20
     dc.w $82FC
-    dc.w $0003
-    dc.w $4841
+    ori.b #$41,d3
     dc.w $0641
-    dc.w $001B
-    jsr loc_0058E2
+    ori.b #$B9,(a3)+
+    ori.b #$E2,d0
     dc.w $2448
     dc.w $584A
     dc.w $32FC
@@ -19407,7 +20349,6 @@ loc_009358:
     dc.w $22CA
     dc.w $32FC
     dc.w $05A0
-loc_009382:
     jsr loc_004A74
 loc_009388:
     dc.w $4CDF
@@ -19415,8 +20356,7 @@ loc_009388:
     rts
 loc_009422:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E14E
     bsr.w loc_008F22
     dc.w $3A01
@@ -19557,34 +20497,30 @@ loc_009570:
     jsr loc_00485E
     bsr.w loc_00A41C
     dc.w $4CDF
-    dc.w $0080
+    ori.l #$30074E75,d0
 loc_00958C:
     dc.w $3007
     rts
 loc_009590:
     dc.w $0838
-    dc.w $0002
-    or.l (a4),d0
+    ori.b #$94,d2
     rts
 loc_009598:
     dc.w $0838
-    dc.w $0003
-    or.l (a4),d0
+    ori.b #$94,d3
     rts
 loc_0095A0:
     dc.w $0838
-    dc.w $0000
-    or.l (a4),d0
+    ori.b #$94,d0
     rts
 loc_0095A8:
     dc.w $0838
-    dc.w $0001
-    or.l (a4),d0
+    ori.b #$94,d1
     rts
 loc_0095B0:
     dc.w $48E7
-    dc.w $0020
-    lea loc_0095C4,a2
+    ori.b #$F9,-(a0)
+    ori.b #$C4,d0
     bsr.w loc_00596A
     dc.w $4CDF
     dc.w $0400
@@ -19599,8 +20535,7 @@ loc_0095D2:
     move.w #$0003,d1
     jsr loc_00590C
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
 loc_0095FC:
     dc.w $48E7
     dc.w $4040
@@ -19608,8 +20543,7 @@ loc_0095FC:
     move.w #$0003,d1
     jsr loc_00590C
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
 loc_009616:
     dc.w $48E7
     dc.w $4040
@@ -19619,14 +20553,12 @@ loc_009616:
     move.w #$0003,d1
     jsr loc_00590C
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
 loc_00963A:
     dc.w $48E7
     dc.w $4000
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     bne.s loc_009650
     jsr loc_009684
@@ -19635,8 +20567,7 @@ loc_009650:
     jsr loc_009ADA
 loc_009656:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B0E2
     dc.w $4279
     dc.w $FFFF
@@ -19647,25 +20578,20 @@ loc_009665:
     dc.w $BC4E
     jsr loc_00658C
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     jsr loc_00646C
     dc.w $B900
-    dc.w $0064
-    bge.s loc_0096A5
+    ori.w #$6C30,-(a4)
     dc.w $3081
     dc.w $8142
     dc.w $4268
     bvc.w loc_00C0BB
-    dc.w $002A
-    dc.w $4268
+    ori.b #$68,(44,a2)
     bvc.w loc_00C2C9
-    dc.w $002C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0002
+    ori.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7548
 loc_009684:
     dc.w $48E7
@@ -19674,11 +20600,9 @@ loc_009684:
     moveq #67,d7
     lea loc_0099AE,a1
     dc.w $F900
-    dc.w $0099
-    dc.w $AE30
+    ori.l #$AE30196B,(a1)+
 loc_00968E:
     move.w (a1)+,d0
-    dc.w $196B
     bmi.s loc_0096AA
     dc.w $1832
     move.w (a1)+,d1
@@ -19698,16 +20622,13 @@ loc_00968E:
     dc.w $FFB0
     sub.w -(a6),d1
     bne.s loc_00968E
-loc_0096A5:
     dc.w $E861
     bsr.w loc_0096D6
-    dc.w $0000
-    dc.w $2E43
+    ori.b #$43,d0
 loc_0096AA:
     lea loc_009A20,a1
     dc.w $F900
-    dc.w $009A
-    move.l (107,a0,d1.l),d0
+    ori.l #$2030196B,(a2)+
 loc_0096B0:
     move.w (a1)+,d0
     bmi.s loc_0096D0
@@ -19725,15 +20646,13 @@ loc_0096B0:
     dc.w $FFB0
     sub.w -(a6),d1
     bne.s loc_0096C8
-    dc.w $0260
+    andi.w #$E84E,-(a0)
     bra.s loc_0096B0
-    dc.w $E84E
 loc_0096C8:
     jsr (a0)
     sub.w -(a1),d0
     bsr.w loc_009730
-    dc.w $0000
-    bcc.s loc_00972F
+    ori.b #$60,d0
     bra.s loc_0096B0
     dc.w $E04C
 loc_0096D0:
@@ -19763,8 +20682,7 @@ loc_0096D6:
     dc.w $D4C6
     and.w -(a1),d3
     bsr.w loc_009704
-    dc.w $0000
-    dc.w $1843
+    ori.b #$43,d0
     lea loc_FFFFCFE4,a1
     dc.w $F9FF
     dc.w $FFCF
@@ -19776,8 +20694,7 @@ loc_0096D6:
     dc.w $D4C6
     and.w -(a1),d3
     bsr.w loc_009704
-    dc.w $0000
-    dc.w $084C
+    ori.b #$4C,d0
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -19804,9 +20721,8 @@ loc_00970E:
 loc_009714:
     dc.w $29B3
     addq.b #8,d0
-    dc.w $0050
+    ori.w #$00D6,(a0)
     addq.b #8,d0
-    dc.w $00D6
     dc.w $D6C3
     dc.w $C3D8
     dc.w $D8C3
@@ -19826,7 +20742,6 @@ loc_009714:
     moveq #-2,d7
     dc.w $FE4E
     rts
-loc_00972F:
     dc.w $7548
 loc_009730:
     dc.w $48E7
@@ -19893,7 +20808,6 @@ loc_009730:
     dc.w $D6C5
     dc.w $C5D8
     dc.w $D8C5
-loc_00977D:
     and.b d2,-(a3)
     dc.w $23CB
     dc.w $CBFF
@@ -19948,8 +20862,7 @@ loc_0097AE:
     dc.w $AF26
     dc.w $266B
     bmi.w loc_00992A
-    dc.w $0001
-    moveq #-80,d2
+    ori.b #$B0,d1
     cmp.w ($FFFFB08A).l,d0
     dc.w $79FF
     dc.w $FFB0
@@ -19963,63 +20876,66 @@ loc_0097AE:
     dc.w $AF2A
     dc.w $2A6B
     bmi.w loc_00992A
-    dc.w $0001
-    bra.s loc_00977D
+    ori.b #$B0,d1
     cmp.w ($FFFFB08C).l,d0
+    dc.w $79FF
+    dc.w $FFB0
+    or.w (1,a4),d6
     bge.w loc_00992A
+    dc.w $5672
     moveq #0,d1
+    ori.b #$34,(a2)
     dc.w $121B
     move.w #$41CD,d2
+    dc.w $3C41
+    dc.w $CD4A
     tst.b d1
+    dc.w $016A
     bpl.s loc_0097EA
+    dc.w $0834
     move.w #$61CD,d2
-    dc.w $0201
-    dc.w $007F
+    dc.w $3C61
+    dc.w $CD02
+    andi.b #$7F,d1
+    dc.w $0100
+    dc.w $7FD2
 loc_0097EA:
     add.w d1,d1
+    lea (a2),a0
     add.w d1,d1
+    lea (a2),a0
     add.w d2,d1
+    dc.w $423B
     dc.w $3B41
-    dc.w $0000
+    dc.w $4100
+    ori.b #$41,d0
 loc_0097F3:
-    dc.w $0052
-    addq.w #1,d1
-    dc.w $413B
+    ori.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d2
+    andi.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52413B41,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4100
-    dc.w $0082
+    ori.l #$52417200,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $4172
-    moveq #0,d1
     dc.w $003D
     dc.w $3D41
     dc.w $4100
-    dc.w $0000
+    ori.b #$41,d0
     dc.w $003D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0002
+    ori.b #$41,d2
     dc.w $023D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$3D410082,d0
     dc.w $803D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0082
     or.w (52,a2,d0.w),d1
     moveq #0,d1
     dc.w $3401
@@ -20029,8 +20945,7 @@ loc_0097F3:
     dc.w $141C
     dc.w $1C6B
     bmi.w loc_00995C
-    dc.w $0001
-    dc.w $3841
+    ori.b #$41,d1
     lea loc_FF517C,a0
     dc.w $F900
     dc.w $FF51
@@ -20047,33 +20962,25 @@ loc_0097F3:
     dc.w $0008
     dc.w $0828
     dc.w $2800
-    dc.w $0001
+    ori.b #$02,d1
     dc.w $0100
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0001,-(a6)
     bne.w loc_00995C
-    dc.w $0001
     dc.w $1E08
     dc.w $0828
     dc.w $2800
-    dc.w $0006
+    ori.b #$02,d6
     dc.w $0600
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0001,-(a6)
     bne.w loc_00995C
-    dc.w $0001
     dc.w $1472
     moveq #0,d1
-    dc.w $0012
+    ori.b #$00,(a2)
     dc.w $1228
-    dc.w $2800
-    dc.w $0000
-    dc.w $0004
-    dc.w $0441
-    dc.w $4100
-    dc.w $0041
+    ori.b #$41,d0
+    ori.b #$00,d4
+    ori.w #$E549,d1
     dc.w $41E5
-    dc.w $E549
     dc.w $4906
     dc.w $0641
     dc.w $4104
@@ -20081,14 +20988,11 @@ loc_0097F3:
     dc.w $400C
     dc.w $0C28
     dc.w $2800
-    dc.w $0041
+    ori.w #$0000,d1
     dc.w $4100
-    dc.w $0000
-    dc.w $006C
+    ori.w #$0C72,(18,a4)
     bge.s loc_00986E
-    dc.w $0C72
     moveq #0,d1
-    dc.w $0012
     dc.w $1228
     dc.w $2800
     dc.w $0009
@@ -20110,48 +21014,40 @@ loc_00986E:
     dc.w $5C08
     dc.w $0828
     dc.w $2800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d0
+    ori.b #$66,d0
     bne.s loc_0098D2
     dc.w $5408
     dc.w $0828
     dc.w $2800
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d2
+    andi.b #$66,d0
     bne.s loc_0098D2
     dc.w $4C08
     dc.w $0828
     dc.w $2800
-    dc.w $0005
+    ori.b #$02,d5
     dc.w $0500
-    dc.w $0002
-    dc.w $0266
+    andi.w #$4408,-(a6)
     bne.s loc_0098D2
-    dc.w $4408
     dc.w $0828
     dc.w $2800
-    dc.w $0004
+    ori.b #$02,d4
     dc.w $0400
-    dc.w $0002
-    dc.w $0266
+    andi.w #$3C48,-(a6)
     bne.s loc_0098D2
-    dc.w $3C48
     dc.w $48E7
     dc.w $E700
-    dc.w $0020
+    ori.b #$F9,-(a0)
     dc.w $2045
-    lea loc_FF5E7C,a2
     dc.w $F900
+    dc.w $00FF
     dc.w $FF5E
+    dc.w $5E7C
     moveq #112,d6
     moveq #0,d0
-    dc.w $0010
+    ori.b #$00,(a0)
     dc.w $1028
-    dc.w $2800
     dc.w $0009
     dc.w $09E3
     dc.w $E348
@@ -20176,9 +21072,8 @@ loc_00986E:
     dc.w $0A0C
     dc.w $0C28
     dc.w $2800
-    dc.w $0007
+    ori.b #$09,d7
     dc.w $0700
-    dc.w $0009
     dc.w $096F
     ble.s loc_0098CE
     eori.w #$0C0C,-(a0)
@@ -20186,9 +21081,8 @@ loc_00986E:
 loc_0098C6:
     dc.w $0C28
     dc.w $2800
-    dc.w $0007
+    ori.b #$09,d7
     dc.w $0700
-    dc.w $0009
     dc.w $096F
     ble.s loc_0098D2
     dc.w $0406
@@ -20196,35 +21090,27 @@ loc_0098CE:
     dc.w $0641
     dc.w $4101
     dc.w $0100
-    dc.w $0030
+    ori.b #$20,(8,a0,d0.w)
 loc_0098D2:
     move.w #$2000,d0
-    dc.w $3C20
-    dc.w $0008
     dc.w $0828
     dc.w $2800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d0
+    ori.b #$66,d0
     bne.s loc_0098EA
     dc.w $0C08
     dc.w $0828
     dc.w $2800
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d2
+    andi.b #$66,d0
     bne.s loc_0098EA
     dc.w $0430
     move.w #$0000,d0
     dc.w $3C00
-    dc.w $0082
+    ori.l #$400C2800,d2
 loc_0098EA:
     or.w d0,d1
-    dc.w $400C
     dc.w $0C28
-    dc.w $2800
     dc.w $0008
     dc.w $0800
     dc.w $0009
@@ -20237,54 +21123,41 @@ loc_0098EA:
     dc.w $413D
     dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52413D41,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $413D
+    dc.w $4100
+    ori.b #$41,d2
+    andi.w #$413D,(a2)
     dc.w $3D41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413D
-    dc.w $3D41
-    dc.w $4100
-    dc.w $0082
+    ori.l #$52416050,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $4160
-    bra.s loc_00995C
     addq.b #8,d0
 loc_00990C:
-    dc.w $0041
+    ori.w #$0800,d1
     dc.w $4108
-    dc.w $0800
     dc.w $003D
     dc.w $3D41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413D
+    ori.b #$41,d2
+    andi.w #$413D,(a2)
     dc.w $3D41
     dc.w $4100
-    dc.w $0082
+    ori.l #$52413C81,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $413C
-    dc.w $3C81
     or.w d0,(a2)
     addq.w #1,d1
     dc.w $413D
     dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52416000,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $4160
-    bra.w loc_00995C
-    dc.w $0000
-    dc.w $3452
+    ori.b #$52,d0
+    ori.b #$4B,(76,a4,d5.w)
 loc_00992A:
     dc.w $524B
     dc.w $4B54
@@ -20294,45 +21167,33 @@ loc_00992A:
     dc.w $3C41
     and.b (0,pc,d4.w),d0
     dc.w $3B41
-    dc.w $0000
-    dc.w $0052
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d0
+    ori.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d2
+    andi.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52413B41,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4100
-    dc.w $0082
+    ori.l #$52417200,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $4172
-    moveq #0,d1
     dc.w $003D
     dc.w $3D41
     dc.w $4100
-    dc.w $0000
+    ori.b #$41,d0
     dc.w $003D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0002
+    ori.b #$41,d2
     dc.w $023D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$3D410082,d0
     dc.w $803D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0082
     or.w (a0)+,d1
 loc_00995C:
     dc.w $584D
@@ -20372,9 +21233,8 @@ loc_00995C:
     dc.w $DCFC
     dc.w $FC01
     dc.w $0100
-    dc.w $0023
+    ori.b #$FF,-(a3)
     dc.w $23CD
-    dc.w $CDFF
     dc.w $FFFF
     dc.w $FFAF
     dc.w $AF32
@@ -20387,15 +21247,12 @@ loc_00995C:
     dc.w $36D2
     dc.w $D2FC
     dc.w $FC00
-    dc.w $0040
+    ori.w #$D4FC,d0
     dc.w $40D4
-    dc.w $D4FC
     dc.w $FC00
-    dc.w $0080
+    ori.l #$5279FFFF,d0
     or.w (a2),d0
-    dc.w $5279
     dc.w $79FF
-    dc.w $FFFF
     dc.w $FFAF
     dc.w $AF2A
     dc.w $2A53
@@ -20418,22 +21275,18 @@ loc_00995C:
     dc.w $1500
     dc.w $0E00
     dc.w $0401
-    dc.w $0000
-    or.b d0,d3
+    ori.b #$00,d0
     or.b d0,d1
-    dc.w $0200
-    dc.w $1500
+    andi.b #$00,d0
     dc.w $0EFF
     dc.w $FC01
-    dc.w $0000
-    add.b d0,d1
+    ori.b #$00,d0
     add.b d0,d3
     dc.w $0400
     dc.w $1600
     dc.w $0D00
     dc.w $0401
-    dc.w $0001
-    or.b d0,d1
+    ori.b #$00,d1
     or.b d0,d1
     dc.w $0800
     dc.w $1600
@@ -20446,8 +21299,7 @@ loc_00995C:
     dc.w $1500
     dc.w $0D00
     dc.w $0401
-    dc.w $0001
-    or.b d0,d3
+    ori.b #$00,d1
     or.b d0,d1
     dc.w $0900
     dc.w $1500
@@ -20460,8 +21312,7 @@ loc_00995C:
     dc.w $1500
     dc.w $0D00
     dc.w $0401
-    dc.w $0001
-    or.b d0,d1
+    ori.b #$00,d1
     or.b d0,d3
     eori.b #$00,d0
     dc.w $0D00
@@ -20470,22 +21321,13 @@ loc_00995C:
     or.b a5,d1
     dc.w $86FF
     dc.w $FF00
-    dc.w $0000
-    dc.w $009A
+    ori.b #$9A,d0
     dc.w $4000
     dc.w $0100
-    dc.w $009A
-    moveq #0,d6
-    dc.w $0200
-    dc.w $009A
-    addq.b #7,d0
-    dc.w $0400
-    dc.w $009A
-    dc.w $BA00
-    dc.w $0800
-    dc.w $009A
-    dc.w $9CFF
-    dc.w $FF32
+    ori.l #$7C000200,(a2)+
+    ori.l #$5E000400,(a2)+
+    ori.l #$BA000800,(a2)+
+    ori.l #$9CFFFF32,(a2)+
     dc.w $39FF
     dc.w $FFB0
     cmp.b (-1,a4,d3.l),d4
@@ -20567,8 +21409,7 @@ loc_009ADA:
     moveq #67,d7
     lea loc_009F24,a1
     dc.w $F900
-    dc.w $009F
-    move.l (107,a0,d1.l),d2
+    ori.l #$2430196B,(a7)+
 loc_009AE4:
     move.w (a1)+,d0
     bmi.s loc_009B00
@@ -20592,13 +21433,11 @@ loc_009AE4:
     bne.s loc_009AE4
     dc.w $E861
     bsr.w loc_009B2C
-    dc.w $0000
-    dc.w $2E43
+    ori.b #$43,d0
 loc_009B00:
     lea loc_009F96,a1
     dc.w $F900
-    dc.w $009F
-    sub.b (107,a0,d1.l),d3
+    ori.l #$9630196B,(a7)+
 loc_009B06:
     move.w (a1)+,d0
     bmi.s loc_009B26
@@ -20616,15 +21455,13 @@ loc_009B06:
     dc.w $FFB0
     sub.w -(a6),d1
     bne.s loc_009B1E
-    dc.w $0260
+    andi.w #$E84E,-(a0)
     bra.s loc_009B06
-    dc.w $E84E
 loc_009B1E:
     jsr (a0)
     sub.w -(a1),d0
     bsr.w loc_009B9E
-    dc.w $0000
-    moveq #96,d6
+    ori.b #$60,d0
     bra.s loc_009B06
     dc.w $E04C
 loc_009B26:
@@ -20654,8 +21491,7 @@ loc_009B2C:
     dc.w $D4C6
     and.w -(a1),d3
     bsr.w loc_009B5A
-    dc.w $0000
-    dc.w $1843
+    ori.b #$43,d0
     lea loc_FFFFCFE4,a1
     dc.w $F9FF
     dc.w $FFCF
@@ -20667,8 +21503,7 @@ loc_009B2C:
     dc.w $D4C6
     and.w -(a1),d3
     bsr.w loc_009B5A
-    dc.w $0000
-    dc.w $084C
+    ori.b #$4C,d0
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -20693,22 +21528,18 @@ loc_009B66:
     dc.w $38DB
     dc.w $D6FC
     dc.w $FC00
-    dc.w $007A
+    ori.w #$D8FC,(122,pc)
     moveq #-40,d5
-    dc.w $D8FC
     dc.w $FC00
-    dc.w $007A
     moveq #40,d5
     dc.w $28DB
     add.b d5,($DBD6).w
     dc.w $38DB
     dc.w $D6FC
     dc.w $FC00
-    dc.w $007A
+    ori.w #$D8FC,(122,pc)
     moveq #-40,d5
-    dc.w $D8FC
     dc.w $FC00
-    dc.w $007A
     moveq #40,d5
     dc.w $28DB
     add.b d5,($DB96).w
@@ -20867,8 +21698,7 @@ loc_009C1C:
     dc.w $AF3E
     dc.w $3E6B
     bmi.w loc_009E6E
-    dc.w $0002
-    dc.w $4AB0
+    ori.b #$B0,d2
     cmp.w ($FFFFB08A).l,d0
     dc.w $79FF
     dc.w $FFB0
@@ -20882,30 +21712,29 @@ loc_009C1C:
     dc.w $AF42
     dc.w $426B
     bmi.w loc_009E6E
-    dc.w $0002
-    move.w d3,(-1,a0,d7.l)
+    ori.b #$B0,d2
     cmp.w ($FFFFB08C).l,d0
+    dc.w $79FF
     dc.w $FFB0
     or.w (2,a4),d6
     bge.w loc_009E6E
     dc.w $2C72
     moveq #0,d1
-    dc.w $0012
+    ori.b #$34,(a2)
     dc.w $121B
-    dc.w $1B34
     move.w #$41CD,d2
     dc.w $3C41
     dc.w $CD4A
     tst.b d1
     dc.w $016A
     bpl.s loc_009C58
+loc_009C4F:
     dc.w $0834
     move.w #$61CD,d2
     dc.w $3C61
     dc.w $CD02
-    dc.w $0201
+    andi.b #$7F,d1
     dc.w $0100
-    dc.w $007F
     dc.w $7F36
 loc_009C58:
     dc.w $3601
@@ -20918,52 +21747,40 @@ loc_009C58:
     dc.w $423B
     dc.w $3B41
     dc.w $4100
-    dc.w $0000
-    dc.w $0052
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d0
+    ori.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d2
+    andi.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0004
+    ori.b #$41,d4
     dc.w $0452
-    addq.w #1,d1
     dc.w $413B
     dc.w $3B41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52413B41,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4100
-    dc.w $0082
+loc_009C7A:
+    ori.l #$52413B41,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4100
-    dc.w $0084
+    ori.l #$52413B41,d4
     or.w (a2),d2
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4101
     dc.w $0100
-    dc.w $0052
+    ori.w #$413B,(a2)
     addq.w #1,d1
-    dc.w $413B
     dc.w $3B41
     dc.w $4101
     dc.w $0102
-    dc.w $0252
+    andi.w #$413B,(a2)
     addq.w #1,d1
-    dc.w $413B
     dc.w $3B41
     dc.w $4101
     dc.w $0104
@@ -20974,31 +21791,24 @@ loc_009C58:
     dc.w $003D
     dc.w $3D41
     dc.w $4100
-    dc.w $0000
+    ori.b #$41,d0
     dc.w $003D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0002
+    ori.b #$41,d2
     dc.w $023D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0004
+    ori.b #$41,d4
     dc.w $043D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$3D410082,d0
     dc.w $803D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0082
     dc.w $823D
     dc.w $3D41
     dc.w $4100
-    dc.w $0084
+    ori.l #$3D410100,d4
     dc.w $843D
-    dc.w $3D41
     dc.w $4101
-    dc.w $0100
     dc.w $003D
     dc.w $3D41
     dc.w $4101
@@ -21009,17 +21819,15 @@ loc_009C58:
     dc.w $0104
     dc.w $0472
     moveq #0,d1
-    dc.w $0034
+    ori.b #$12,(20,a4,d1.l)
     dc.w $3401
-    dc.w $0112
     dc.w $121C
-    dc.w $1C14
     dc.w $141C
     dc.w $1C6B
     bmi.w loc_009ED2
-    dc.w $0002
-    cmpi.w #$F900,d1
+    ori.b #$41,d2
     lea loc_FF517C,a0
+    dc.w $F900
     dc.w $FF51
     moveq #-23,d6
     dc.w $E949
@@ -21034,33 +21842,25 @@ loc_009C58:
     dc.w $0008
     dc.w $0828
     dc.w $2800
-    dc.w $0001
+    ori.b #$02,d1
     dc.w $0100
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0001,-(a6)
     bne.w loc_009ED2
-    dc.w $0001
     dc.w $F208
     dc.w $0828
     dc.w $2800
-    dc.w $0006
+    ori.b #$02,d6
     dc.w $0600
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0001,-(a6)
     bne.w loc_009ED2
-    dc.w $0001
     dc.w $E872
     moveq #0,d1
-    dc.w $0012
+    ori.b #$00,(a2)
     dc.w $1228
-    dc.w $2800
-    dc.w $0000
-    dc.w $0004
-    dc.w $0441
-    dc.w $4100
-    dc.w $0041
+    ori.b #$41,d0
+    ori.b #$00,d4
+    ori.w #$E549,d1
     dc.w $41E5
-    dc.w $E549
     dc.w $4906
     dc.w $0641
     dc.w $4104
@@ -21068,14 +21868,11 @@ loc_009C58:
     dc.w $400C
     dc.w $0C28
     dc.w $2800
-    dc.w $0041
+    ori.w #$0000,d1
     dc.w $4100
-    dc.w $0000
-    dc.w $006C
+    ori.w #$0C72,(18,a4)
     bge.s loc_009D10
-    dc.w $0C72
     moveq #0,d1
-    dc.w $0012
     dc.w $1228
     dc.w $2800
     dc.w $0009
@@ -21097,48 +21894,40 @@ loc_009D10:
     dc.w $5C08
     dc.w $0828
     dc.w $2800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d0
+    ori.b #$66,d0
     bne.s loc_009D74
     dc.w $5408
     dc.w $0828
     dc.w $2800
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d2
+    andi.b #$66,d0
     bne.s loc_009D74
     dc.w $4C08
     dc.w $0828
     dc.w $2800
-    dc.w $0005
+    ori.b #$02,d5
     dc.w $0500
-    dc.w $0002
-    dc.w $0266
+    andi.w #$4408,-(a6)
     bne.s loc_009D74
-    dc.w $4408
     dc.w $0828
     dc.w $2800
-    dc.w $0004
+    ori.b #$02,d4
     dc.w $0400
-    dc.w $0002
-    dc.w $0266
+    andi.w #$3C48,-(a6)
     bne.s loc_009D74
-    dc.w $3C48
     dc.w $48E7
     dc.w $E700
-    dc.w $0020
+    ori.b #$F9,-(a0)
     dc.w $2045
-    lea loc_FF5E7C,a2
     dc.w $F900
+    dc.w $00FF
     dc.w $FF5E
+    dc.w $5E7C
     moveq #112,d6
     moveq #0,d0
-    dc.w $0010
+    ori.b #$00,(a0)
     dc.w $1028
-    dc.w $2800
     dc.w $0009
     dc.w $09E3
     dc.w $E348
@@ -21163,9 +21952,8 @@ loc_009D10:
     dc.w $0A0C
     dc.w $0C28
     dc.w $2800
-    dc.w $0007
+    ori.b #$09,d7
     dc.w $0700
-    dc.w $0009
     dc.w $096F
     ble.s loc_009D70
     eori.w #$0C0C,-(a0)
@@ -21173,9 +21961,8 @@ loc_009D10:
 loc_009D68:
     dc.w $0C28
     dc.w $2800
-    dc.w $0007
+    ori.b #$09,d7
     dc.w $0700
-    dc.w $0009
     dc.w $096F
     ble.s loc_009D74
     dc.w $0406
@@ -21183,35 +21970,27 @@ loc_009D70:
     dc.w $0641
     dc.w $4101
     dc.w $0100
-    dc.w $0030
+    ori.b #$20,(8,a0,d0.w)
 loc_009D74:
     move.w #$2000,d0
-    dc.w $3C20
-    dc.w $0008
     dc.w $0828
     dc.w $2800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d0
+    ori.b #$66,d0
     bne.s loc_009D8C
     dc.w $0C08
     dc.w $0828
     dc.w $2800
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d2
+    andi.b #$66,d0
     bne.s loc_009D8C
     dc.w $0430
     move.w #$0000,d0
     dc.w $3C00
-    dc.w $0082
+    ori.l #$400C2800,d2
 loc_009D8C:
     or.w d0,d1
-    dc.w $400C
     dc.w $0C28
-    dc.w $2800
     dc.w $0008
     dc.w $0800
     dc.w $0009
@@ -21224,62 +22003,46 @@ loc_009D8C:
     dc.w $413D
     dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52413D41,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $413D
+    dc.w $4100
+    ori.b #$41,d2
+    andi.w #$413D,(a2)
     dc.w $3D41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413D
-    dc.w $3D41
-    dc.w $4100
-    dc.w $0082
+    ori.l #$5241601A,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $4160
-    bra.s loc_009DC8
     dc.w $1A00
 loc_009DAE:
-    dc.w $0041
+    ori.w #$0800,d1
     dc.w $4108
-    dc.w $0800
     dc.w $003D
     dc.w $3D41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413D
+    ori.b #$41,d2
+    andi.w #$413D,(a2)
     dc.w $3D41
     dc.w $4100
-    dc.w $0082
+    ori.l #$52413C81,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $413C
-    dc.w $3C81
     or.w d0,(a2)
     addq.w #1,d1
     dc.w $413D
     dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$5241343C,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $4134
-loc_009DC8:
-    move.w #$0000,d2
     dc.w $3C00
-    dc.w $0010
-    dc.w $1028
-    dc.w $2800
+    ori.b #$28,d0
+    ori.b #$00,(a0)
     dc.w $0009
     dc.w $090C
     cmpi.b #$08,d0
-    dc.w $0000
-    dc.w $086D
+    ori.b #$6D,d0
     blt.s loc_009DDA
     dc.w $0434
     move.w #$0010,d2
@@ -21287,15 +22050,14 @@ loc_009DC8:
     dc.w $1072
 loc_009DDA:
     moveq #0,d1
-    dc.w $0012
+    ori.b #$00,(a2)
     dc.w $1228
-    dc.w $2800
-    dc.w $0003
+    ori.b #$00,d3
     dc.w $0367
-    beq.w loc_009DEE
-    dc.w $0000
-    cmpi.b #$00,d6
+    ori.b #$06,d0
+    dc.w $000C
     dc.w $0641
+    dc.w $4100
     dc.w $00FF
     dc.w $FFD2
     add.w d2,d1
@@ -21304,25 +22066,22 @@ loc_009DDA:
     dc.w $4101
     dc.w $0104
     dc.w $042F
-loc_009DEE:
     dc.w $2F0A
     eori.w #$F900,d5
     lea loc_FF5E7C,a2
     dc.w $FF5E
     moveq #112,d6
     moveq #0,d0
-    dc.w $0010
+    ori.b #$00,(a0)
     dc.w $1028
-    dc.w $2800
     dc.w $0009
     dc.w $09D0
     add.w d0,d0
     dc.w $4030
     move.w (0,a2,d0.w),d0
     dc.w $3200
-    dc.w $0024
+    ori.b #$0C,-(a4)
     dc.w $245F
-    dc.w $5F0C
     cmpi.w #$0001,d0
     dc.w $4000
     dc.w $0166
@@ -21338,36 +22097,28 @@ loc_009DEE:
 loc_009E14:
     dc.w $0828
     dc.w $2800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d0
+    ori.b #$66,d0
     bne.s loc_009E36
     dc.w $1A08
     dc.w $0828
     dc.w $2800
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0266
+    ori.b #$02,d2
+    andi.b #$66,d0
     bne.s loc_009E36
     dc.w $1208
     dc.w $0828
     dc.w $2800
-    dc.w $0005
+    ori.b #$02,d5
     dc.w $0500
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0A08,-(a6)
     bne.s loc_009E36
-    dc.w $0A08
     dc.w $0828
     dc.w $2800
-    dc.w $0004
+    ori.b #$02,d4
     dc.w $0400
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0260,-(a6)
     bne.s loc_009E36
-    dc.w $0260
     bra.s loc_009E40
     eori.b #$01,(-46,a2,d0.l)
     dc.w $423D
@@ -21385,15 +22136,14 @@ loc_009E14:
     moveq #18,d2
     move.w (a0),d0
     dc.w $004C
+loc_009E5D:
     dc.w $DF01
-    dc.w $0006
-    dc.w $4101
+    ori.b #$01,d6
     dc.w $0BD2
     dc.w $423D
     dc.w $4100
     or.w -(a0),d2
-    dc.w $0000
-    bne.s loc_009EC1
+    ori.b #$52,d0
 loc_009E6E:
     dc.w $524B
     dc.w $4B54
@@ -21403,52 +22153,39 @@ loc_009E6E:
     dc.w $3C41
     and.b (0,pc,d4.w),d2
     dc.w $3B41
-    dc.w $0000
-    dc.w $0052
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d0
+    ori.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0002
-    dc.w $0252
-    addq.w #1,d1
-    dc.w $413B
+    ori.b #$41,d2
+    andi.w #$413B,(a2)
     dc.w $3B41
     dc.w $4100
-    dc.w $0004
+    ori.b #$41,d4
     dc.w $0452
-    addq.w #1,d1
     dc.w $413B
     dc.w $3B41
     dc.w $4100
-    dc.w $0080
+    ori.l #$52413B41,d0
     or.w (a2),d0
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4100
-    dc.w $0082
+    ori.l #$52413B41,d2
     or.w (a2),d1
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4100
-    dc.w $0084
+    ori.l #$52413B41,d4
     or.w (a2),d2
-    addq.w #1,d1
     dc.w $413B
-    dc.w $3B41
     dc.w $4101
     dc.w $0100
-    dc.w $0052
+    ori.w #$413B,(a2)
     addq.w #1,d1
-    dc.w $413B
     dc.w $3B41
     dc.w $4101
     dc.w $0102
-    dc.w $0252
+    andi.w #$413B,(a2)
     addq.w #1,d1
-    dc.w $413B
     dc.w $3B41
     dc.w $4101
     dc.w $0104
@@ -21459,32 +22196,24 @@ loc_009E6E:
     dc.w $003D
     dc.w $3D41
     dc.w $4100
-    dc.w $0000
+    ori.b #$41,d0
     dc.w $003D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0002
+    ori.b #$41,d2
     dc.w $023D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0004
+    ori.b #$41,d4
     dc.w $043D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0080
+    ori.l #$3D410082,d0
     dc.w $803D
-    dc.w $3D41
     dc.w $4100
-    dc.w $0082
-loc_009EC1:
     dc.w $823D
     dc.w $3D41
     dc.w $4100
-    dc.w $0084
+    ori.l #$3D410100,d4
     dc.w $843D
-    dc.w $3D41
     dc.w $4101
-    dc.w $0100
     dc.w $003D
     dc.w $3D41
     dc.w $4101
@@ -21546,11 +22275,8 @@ loc_009ED2:
     dc.w $AF4E
     jmp (a2)
     dc.w $D2FC
-    dc.w $0040
-    dc.w $D4FC
-    dc.w $0080
-    dc.w $5279
-    dc.w $FFFF
+    ori.w #$D4FC,d0
+    ori.l #$5279FFFF,d0
     dc.w $AF42
     dc.w $5379
     dc.w $FFFF
@@ -21563,13 +22289,11 @@ loc_00A04E:
     dc.w $48E7
     dc.w $4040
     dc.w $4A6E
-    dc.w $002A
-    bne.w loc_00A0C8
+    ori.b #$00,(112,a2)
     bsr.w loc_00A154
     bne.w loc_00A0C8
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B0E2
     bsr.w loc_004A6C
     dc.w $2248
@@ -21586,8 +22310,7 @@ loc_00A04E:
     dc.w $3238
     or.w d7,(a0)
     dc.w $0441
-    dc.w $0018
-    dc.w $48C1
+    ori.b #$C1,(a0)+
     dc.w $3039
     dc.w $FFFF
     dc.w $B080
@@ -21595,14 +22318,12 @@ loc_00A04E:
     dc.w $83C0
     dc.w $4841
     dc.w $0641
-    dc.w $0018
-    dc.w $31C1
+    ori.b #$C1,(a0)+
     or.w d7,(a0)
     dc.w $3238
     or.w d7,(a2)
     dc.w $0441
-    dc.w $0018
-    dc.w $48C1
+    ori.b #$C1,(a0)+
     dc.w $3039
     dc.w $FFFF
     dc.w $B080
@@ -21610,21 +22331,17 @@ loc_00A04E:
     dc.w $83C0
     dc.w $4841
     dc.w $0641
-    dc.w $0018
-    dc.w $31C1
+    ori.b #$C1,(a0)+
     or.w d7,(a2)
     dc.w $3D7C
-    dc.w $0001
-    dc.w $002A
+    ori.b #$2A,d1
 loc_00A0C8:
     dc.w $4A6E
-    dc.w $002C
-    bne.w loc_00A13E
+    ori.b #$00,(112,a4)
     bsr.w loc_00A154
     bne.w loc_00A13E
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $B0E2
     bsr.w loc_004A6C
     dc.w $2248
@@ -21641,8 +22358,7 @@ loc_00A0C8:
     dc.w $3238
     dc.w $8F4C
     dc.w $0441
-    dc.w $0018
-    dc.w $48C1
+    ori.b #$C1,(a0)+
     dc.w $3039
     dc.w $FFFF
     dc.w $B080
@@ -21650,14 +22366,12 @@ loc_00A0C8:
     dc.w $83C0
     dc.w $4841
     dc.w $0641
-    dc.w $0018
-    dc.w $31C1
+    ori.b #$C1,(a0)+
     dc.w $8F4C
     dc.w $3238
     dc.w $8F4E
     dc.w $0441
-    dc.w $0018
-    dc.w $48C1
+    ori.b #$C1,(a0)+
     dc.w $3039
     dc.w $FFFF
     dc.w $B080
@@ -21665,12 +22379,10 @@ loc_00A0C8:
     dc.w $83C0
     dc.w $4841
     dc.w $0641
-    dc.w $0018
-    dc.w $31C1
+    ori.b #$C1,(a0)+
     dc.w $8F4E
     dc.w $3D7C
-    dc.w $0001
-    dc.w $002C
+    ori.b #$2C,d1
 loc_00A13E:
     move.w (42,a6),d0
     add.w (44,a6),d0
@@ -21679,8 +22391,7 @@ loc_00A13E:
     dc.w $4256
 loc_00A14E:
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
 loc_00A154:
     dc.w $3039
     dc.w $FFFF
@@ -21701,8 +22412,7 @@ loc_00A184:
     dc.w $48E7
     dc.w $7F7E
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     bne.w loc_00A2A8
     dc.w $33FC
@@ -21732,20 +22442,16 @@ loc_00A184:
     move.w #$000F,d5
     jsr loc_00B5C8
 loc_00A1D2:
-    dc.w $0000
-    dc.w $B5C8
+    ori.b #$C8,d0
     dc.w $2648
     dc.w $B7FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.w loc_00A29E
     dc.w $082B
-    dc.w $0001
-    dc.w $0002
+    ori.b #$02,d1
     bne.w loc_00A29E
     dc.w $082B
-    dc.w $0006
-    dc.w $0002
+    ori.b #$02,d6
     bne.w loc_00A29E
     moveq #0,d1
     dc.w $3401
@@ -21777,20 +22483,17 @@ loc_00A256:
     dc.w $C747
     moveq #0,d3
     dc.w $162B
-    dc.w $0005
-    dc.w $1632
+    ori.b #$32,d5
     dc.w $3000
     add.w d6,d3
     dc.w $0643
     dc.w $010B
     dc.w $48E7
-    dc.w $0040
-    moveq #0,d0
+    ori.w #$7000,d0
     dc.w $1019
     dc.w $0640
-    dc.w $0080
-    add.w d2,d0
-    add.w ($8CC0).w,d0
+    ori.l #$D042D078,d0
+    dc.w $8CC0
     dc.w $3CC0
     dc.w $1CD9
     dc.w $5238
@@ -21801,13 +22504,11 @@ loc_00A256:
     moveq #0,d0
     dc.w $1019
     dc.w $0640
-    dc.w $0080
-    add.w d1,d0
-    add.w ($8CBE).w,d0
+    ori.l #$D041D078,d0
+    dc.w $8CBE
     dc.w $3CC0
     dc.w $4CDF
-    dc.w $0200
-    dc.w $C747
+    andi.b #$47,d0
 loc_00A29E:
     addq.w #1,d3
     dbra d5,loc_00A1D2
@@ -21842,8 +22543,7 @@ loc_00A2AE:
     lea loc_00A408,a1
     lea loc_023D92,a2
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $B080
     beq.s loc_00A2FE
     lea loc_00A40C,a1
@@ -21865,8 +22565,8 @@ loc_00A2FE:
     add.w d7,d0
     add.w d0,d0
     dc.w $1630
-    dc.w $0000
-    bmi.w loc_00A3FE
+    ori.b #$00,d0
+    dc.w $00D0
     dc.w $ED4B
     lea loc_FF517C,a4
     dc.w $D8C3
@@ -21877,12 +22577,10 @@ loc_00A340:
     beq.w loc_00A3FE
     dc.w $2640
     dc.w $082B
-    dc.w $0001
-    dc.w $0002
+    ori.b #$02,d1
     bne.s loc_00A33E
     dc.w $082B
-    dc.w $0006
-    dc.w $0002
+    ori.b #$02,d6
     bne.s loc_00A33E
     moveq #0,d1
     dc.w $3401
@@ -21908,8 +22606,7 @@ loc_00A340:
     add.w ($FFFFB0B6).l,d2
     dc.w $3A38
     or.b d4,d0
-    dc.w $0245
-    dc.w $000C
+    andi.w #$000C,d5
     dc.w $E44D
     dc.w $4A2B
     dc.w $000A
@@ -21928,9 +22625,8 @@ loc_00A3CA:
     moveq #0,d0
     dc.w $1019
     dc.w $0640
-    dc.w $0080
-    add.w d2,d0
-    add.w ($8CC0).w,d0
+    ori.l #$D042D078,d0
+    dc.w $8CC0
     dc.w $3CC0
     dc.w $1CD9
     dc.w $5238
@@ -21941,9 +22637,8 @@ loc_00A3CA:
     moveq #0,d0
     dc.w $1019
     dc.w $0640
-    dc.w $0080
-    add.w d1,d0
-    add.w ($8CBE).w,d0
+    ori.l #$D041D078,d0
+    dc.w $8CBE
     dc.w $3CC0
     dc.w $2247
     dbra d6,loc_00A340
@@ -21971,8 +22666,7 @@ loc_00A41C:
 loc_00A43C:
     move.w #$0000,d1
     dc.w $0838
-    dc.w $0004
-    or.l (a4),d0
+    ori.b #$94,d4
     beq.s loc_00A456
     move.w #$0001,d1
     bra.s loc_00A456
@@ -22020,8 +22714,7 @@ loc_00A460:
     dc.w $FFFF
     dc.w $AF76
     dc.w $23FC
-    dc.w $0000
-    dc.w $A4B0
+    ori.b #$B0,d0
     dc.w $FFFF
     or.b (a0),d0
     dc.w $3239
@@ -22093,15 +22786,14 @@ loc_00A53E:
     dc.w $5379
     dc.w $FFFF
     cmp.l ($323C).w,d0
-    dc.w $0002
-    dc.w $4A79
+    ori.b #$79,d2
     dc.w $FFFF
     dc.w $AF7C
     bmi.s loc_00A566
     dc.w $5479
     dc.w $FFFF
     cmp.l ($323C).w,d0
-    dc.w $0001
+    ori.b #$79,d1
 loc_00A566:
     dc.w $4A79
     dc.w $FFFF
@@ -22118,7 +22810,7 @@ loc_00A566:
     dc.w $5479
     dc.w $FFFF
     cmp.l (13372,pc),d0
-    dc.w $0004
+    ori.b #$79,d4
 loc_00A58A:
     dc.w $4279
     dc.w $FFFF
@@ -22143,8 +22835,7 @@ loc_00A9AA:
     dc.w $000C
     jsr loc_00B600
     dc.w $23FC
-    dc.w $0000
-    dc.w $A6B6
+    ori.b #$B6,d0
     dc.w $FFFF
     or.b (a0),d0
     bra.w loc_00A9D4
@@ -22159,8 +22850,7 @@ loc_00AAF6:
     beq.s loc_00AB0C
     bmi.s loc_00AB3E
     dc.w $0838
-    dc.w $0003
-    or.b d5,d0
+    ori.b #$05,d3
     bne.s loc_00AB3E
 loc_00AB0C:
     dc.w $3239
@@ -22171,8 +22861,7 @@ loc_00AB0C:
     cmp.l -(a0),d0
     add.w ($FFFFB0B0).l,d1
     dc.w $3D41
-    dc.w $0010
-    dc.w $3239
+    ori.b #$39,(a0)
     dc.w $FFFF
     dc.w $B0C2
     dc.w $C2F9
@@ -22188,6 +22877,13 @@ loc_00AB3E:
     dc.w $4CDF
     dc.w $7FFF
     rts
+loc_00AB6E:
+    move.w #$02D4,d1
+    jsr loc_0065AE
+    bne.s loc_00AB80
+    jsr loc_004878
+loc_00AB80:
+    rts
 loc_00AC34:
     dc.w $48E7
     dc.w $7F7E
@@ -22195,21 +22891,18 @@ loc_00AC34:
     dc.w $FFFF
     dc.w $B0DC
     dc.w $0C79
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $B080
     beq.s loc_00AC4A
     addq.w #8,d1
 loc_00AC4A:
     dc.w $0838
-    dc.w $0000
-    dc.w $AEB7
+    ori.b #$B7,d0
     beq.s loc_00AC54
     addq.w #4,d1
 loc_00AC54:
     dc.w $0641
-    dc.w $00A1
-    move.w #$3000,d2
+    ori.l #$343C3000,-(a1)
     jsr loc_0053B4
     dc.w $4CDF
     moveq #-2,d7
@@ -22226,8 +22919,7 @@ loc_00AFBA:
     cmp.b -(a2),d0
     beq.s loc_00AFDC
     dc.w $0838
-    dc.w $0002
-    or.b d5,d0
+    ori.b #$05,d2
     bne.w loc_00B018
 loc_00AFDC:
     dc.w $2078
@@ -22243,10 +22935,9 @@ loc_00AFDC:
     add.w d2,d2
     add.w d7,d2
     dc.w $0641
-    dc.w $0018
-    dc.w $0642
-    dc.w $0020
-    move.w #$8020,d3
+    ori.b #$42,(a0)+
+    ori.b #$3C,-(a0)
+    or.b -(a0),d0
     lea loc_00B0D2,a1
     dc.w $48E7
     bra.s loc_00B06E
@@ -22267,10 +22958,9 @@ loc_00B01C:
     add.w d2,d2
     add.w d7,d2
     dc.w $0641
-    dc.w $0018
-    dc.w $0642
-    dc.w $0020
-    move.w #$8006,d3
+    ori.b #$42,(a0)+
+    ori.b #$3C,-(a0)
+    or.b d6,d0
     lea loc_00B0D6,a1
     dc.w $48E7
     bra.s loc_00B0AC
@@ -22289,20 +22979,16 @@ loc_00B06E:
     add.w d2,d2
     add.w d7,d2
     dc.w $0641
-    dc.w $0018
-    dc.w $0642
-    dc.w $0020
-    dc.w $48E7
+    ori.b #$42,(a0)+
+    ori.b #$E7,-(a0)
     bra.s loc_00B0E4
 loc_00B0AC:
     add.w d6,d1
     add.w d2,d2
     add.w d7,d2
     dc.w $0641
-    dc.w $0018
-    dc.w $0642
-    dc.w $0020
-    dc.w $48E7
+    ori.b #$42,(a0)+
+    ori.b #$E7,-(a0)
     bra.s loc_00B11E
 loc_00B0E4:
     jsr loc_004878
@@ -22361,107 +23047,19 @@ loc_00B1E6:
     move.w (a2)+,d4
     subq.w #1,d4
     move.w (a2)+,d1
+loc_00B20C:
     move.w (a2)+,d2
     add.w d1,d1
     add.w d6,d1
     add.w d2,d2
     add.w d7,d2
     dc.w $0641
-    dc.w $0060
-    dc.w $0642
-    dc.w $0028
-    dc.w $48E7
-    bra.s loc_00B282
-loc_00B282:
-    dc.w $48E7
-    dc.w $7F7E
-    jsr loc_004A6C
-    dc.w $2248
-    dc.w $32FC
-    dc.w $FFF9
-    dc.w $32C1
-    dc.w $22FC
-    dc.w $FFFF
-    dc.w $C0E4
-    dc.w $32FC
-    dc.w $1000
-    jsr loc_004A74
-    lea loc_FFFFC0E4,a1
-    move.w #$01FF,d1
-    move.l #$BBBBBBBB,d2
-    dc.w $22C2
-loc_00B2B6:
-    dc.w $22C2
-    dc.w $22C2
-    dc.w $22C2
-    dbra d1,loc_00B2B6
-    move.w #$0040,d3
-    dc.w $3803
-    bsr.w loc_008ECA
-    sub.w d1,d3
-    sub.w d2,d4
-    dc.w $E24B
-    dc.w $E24C
-    dc.w $E74B
-    dc.w $EF4C
-    add.w d4,d3
-    lea loc_FFFFC0E4,a1
-    dc.w $D2C3
-    dc.w $3001
-    dc.w $E448
-    subq.w #1,d0
-    dc.w $33C0
-    dc.w $FFFF
-    cmp.w -(a2),d0
-    dc.w $3002
-    dc.w $E448
-    subq.w #1,d0
-    dc.w $33C0
-    dc.w $FFFF
-    cmp.w -(a4),d0
-    lea loc_FFFFB0E4,a4
-    dc.w $3839
-    dc.w $FFFF
-    cmp.w -(a4),d0
-    dc.w $2049
-loc_00B306:
-    move.w #$0003,d5
-    dc.w $244C
-loc_00B30C:
-    dc.w $2A48
-    dc.w $3C39
-    dc.w $FFFF
-    cmp.w -(a2),d0
-    dc.w $2C4D
-loc_00B316:
-    move.w #$0003,d7
-    dc.w $121A
-loc_00B31C:
-    dc.w $0241
-    dc.w $007F
-    dc.w $2679
-    dc.w $FFFF
-    dc.w $B086
-    dc.w $1233
-    dc.w $1000
-    lea loc_02419E,a3
-    dc.w $1D73
-    dc.w $1000
-    dc.w $0004
-    dc.w $1CF3
-    dc.w $1000
-    dbra d7,loc_00B31C
-    dc.w $DAFC
-    dc.w $0020
-    dbra d6,loc_00B316
-    dc.w $D8FC
-    dc.w $0040
-    dc.w $D0FC
-    dc.w $0008
-    dbra d5,loc_00B30C
-    dc.w $D2FC
-    dc.w $0200
-    dbra d4,loc_00B306
+    ori.w #$0642,-(a0)
+    ori.b #$E7,(24672,a0)
+    jsr loc_004FDA
+    dc.w $4CDF
+    dc.w $0606
+    dbra d4,loc_00B20C
     dc.w $4CDF
     moveq #-2,d7
     rts
@@ -22475,18 +23073,126 @@ loc_00B382:
     dc.w $E14D
     dc.w $EB4D
     or.w d5,d4
-    dc.w $0044
-    or.b d0,d0
+    ori.w #$8000,d4
     moveq #0,d5
     lea loc_00B3B2,a1
     jsr loc_005CDC
     addq.w #8,d2
     dc.w $0644
 loc_00B3A4:
-    dc.w $0080
-    jsr loc_005CDC
+    ori.l #$4EB90000,d0
+    dc.w $5CDC
     dc.w $4CDF
-    dc.w $0234
+    andi.b #$75,(2,a4,d0.w)
+    ori.b #$08,(a0)
+    dc.w $FA00
+    dc.w $1020
+    dc.w $3040
+    dc.w $5060
+    moveq #1,d0
+    dc.w $1121
+    dc.w $3141
+    dc.w $5161
+    dc.w $7102
+    dc.w $1222
+    dc.w $3242
+    dc.w $5262
+    moveq #3,d1
+    dc.w $1323
+    dc.w $3343
+    dc.w $5363
+    dc.w $7304
+    dc.w $1424
+    dc.w $3444
+    dc.w $5464
+    moveq #5,d2
+    dc.w $1525
+    dc.w $3545
+    dc.w $5565
+    dc.w $7506
+    dc.w $1626
+    dc.w $3646
+    dc.w $5666
+    moveq #7,d3
+    dc.w $1727
+    dc.w $3747
+    dc.w $5767
+    dc.w $7708
+    dc.w $1828
+    dc.w $3848
+    dc.w $5868
+    moveq #9,d4
+    dc.w $1929
+    dc.w $3949
+    dc.w $5969
+    dc.w $790A
+    dc.w $1A2A
+    dc.w $3A4A
+    dc.w $5A6A
+    moveq #11,d5
+    dc.w $1B2B
+    dc.w $3B4B
+    dc.w $5B6B
+    dc.w $7B0C
+    dc.w $1C2C
+    dc.w $3C4C
+    dc.w $5C6C
+    moveq #13,d6
+    dc.w $1D2D
+    dc.w $3D4D
+    dc.w $5D6D
+    dc.w $7D0E
+    dc.w $1E2E
+    dc.w $3E4E
+    dc.w $5E6E
+    moveq #15,d7
+    dc.w $1F2F
+    dc.w $3F4F
+    dc.w $5F6F
+    dc.w $7FFF
+    dc.w $4279
+    dc.w $FFFF
+    cmp.w -(a6),d0
+    dc.w $23FC
+    ori.b #$4A,d0
+    dc.w $FFFF
+    or.b (a0),d0
+    dc.w $5279
+    dc.w $FFFF
+    cmp.w -(a6),d0
+    jsr loc_007766
+    cmpi.w #$0002,d0
+    beq.s loc_00B4A0
+    dc.w $0838
+    ori.b #$94,d4
+    bne.s loc_00B4A0
+    dc.w $0839
+    ori.b #$FF,d3
+    cmp.w -(a7),d0
+    bne.s loc_00B474
+    bsr.w loc_00AC34
+    bra.s loc_00B496
+loc_00B474:
+    jsr loc_004A6C
+    dc.w $2248
+    dc.w $32FC
+    dc.w $FFFC
+    dc.w $32FC
+    dc.w $3000
+    dc.w $32FC
+    ori.b #$FC,d0
+    andi.b #$FC,d0
+    ori.b #$B9,d1
+    ori.b #$74,d0
+loc_00B496:
+    dc.w $0C79
+    ori.b #$FF,-(a0)
+    cmp.w -(a6),d0
+    blt.s loc_00B4AC
+loc_00B4A0:
+    jsr loc_00AC34
+    jsr loc_004878
+loc_00B4AC:
     rts
 loc_00B4AE:
     dc.w $33FC
@@ -22498,8 +23204,7 @@ loc_00B4B8:
     lea loc_FFFFE0E0,a0
 loc_00B4BE:
     dc.w $D0FC
-    dc.w $0006
-    dc.w $4A50
+    ori.b #$50,d6
     bpl.s loc_00B4BE
     dc.w $30C1
     dc.w $30C2
@@ -22531,8 +23236,8 @@ loc_00B518:
     rts
 loc_00B51E:
     dc.w $48E7
-    dc.w $0060
-    lea loc_02ABC6,a1
+    ori.w #$43F9,-(a0)
+    ori.b #$C6,d2
     lea loc_FF3004,a2
 loc_00B52E:
     move.w (a1)+,d0
@@ -22567,8 +23272,7 @@ loc_00B56C:
     dc.w $2459
 loc_00B572:
     dc.w $B5FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00B588
     cmp.b (11,a2),d1
     bne.s loc_00B588
@@ -22605,8 +23309,7 @@ loc_00B5C8:
     dc.w $2050
     moveq #0,d0
     dc.w $B1FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00B5F8
     cmpi.b #$FF,d5
 loc_00B5EA:
@@ -22616,12 +23319,10 @@ loc_00B5ED:
     dc.w $0A08
     dc.w $0828
     dc.w $2800
-    dc.w $0001
+    ori.b #$02,d1
     dc.w $0100
-    dc.w $0002
-    dc.w $0266
+    andi.w #$0270,-(a6)
     bne.s loc_00B5F8
-    dc.w $0270
     moveq #1,d0
     dc.w $014A
 loc_00B5F8:
@@ -22629,24 +23330,21 @@ loc_00B5F8:
     dc.w $404C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0038
+    ori.b #$75,($48E7).w
     dc.w $384E
-    rts
     dc.w $7548
 loc_00B600:
     dc.w $48E7
     dc.w $E760
     bra.w loc_00F7FD
-    dc.w $0041
-    dc.w $F900
+    ori.w #$F900,d1
     dc.w $FF31
     moveq #-19,d6
     dc.w $4AD2
     dc.w $42E3
     dc.w $4911
     or.b d1,(a0)
-    dc.w $0011
-    or.b (a0),d2
+    ori.b #$10,(a1)
     dc.w $014C
     dc.w $DF00
     dc.w $064E
@@ -22674,17 +23372,16 @@ loc_00B62C:
     move.w #$000F,d5
     move.w #$0000,d4
 loc_00B640:
-    dc.w $0000
+    ori.b #$3C,d0
     move.w #$000F,d6
+    dc.w $000F
     dc.w $2459
 loc_00B648:
     dc.w $B5FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00B668
     dc.w $082A
-    dc.w $0001
-    dc.w $0002
+    ori.b #$02,d1
     bne.s loc_00B668
     moveq #0,d1
     dc.w $3401
@@ -22713,8 +23410,7 @@ loc_00B6D6:
 loc_00B6E6:
     dc.w $3001
     dc.w $0440
-    dc.w $0041
-    dc.w $E548
+    ori.w #$E548,d1
     dc.w $0640
     dc.w $0440
 loc_00B6F2:
@@ -22728,11 +23424,9 @@ loc_00B78E:
     move.w #$0004,d4
     move.w #$0059,d5
     move.w (a1)+,d1
-loc_00B7AA:
     jsr loc_005696
     dc.w $0642
-    dc.w $0080
-    dbra d5,loc_00B7AA
+    ori.l #$51CDFFF2,d0
     dc.w $4CDF
     dc.w $063E
     rts
@@ -22758,9 +23452,7 @@ loc_00B844:
     dc.w $C545
 loc_00B864:
     dc.w $0642
-    dc.w $0080
-    dc.w $0645
-    dc.w $0080
+    ori.l #$06450080,d0
     dbra d6,loc_00B844
     dc.w $4CDF
     dc.w $1EFE
@@ -22777,15 +23469,12 @@ loc_00B876:
     move.w #$000F,d6
     lea loc_02C48C,a4
     dc.w $2652
-loc_00B8A0:
     dc.w $B7FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00B8CC
     moveq #0,d1
     dc.w $122B
-    dc.w $0000
-    add.w d1,d1
+    ori.b #$41,d0
     move.w (0,a4,d1.w),d1
     move.w #$0000,d3
     jsr loc_005696
@@ -22795,12 +23484,10 @@ loc_00B8A0:
     dc.w $C545
 loc_00B8CC:
     dc.w $0642
-    dc.w $0080
-    dc.w $0645
-    dc.w $0080
+    ori.l #$06450080,d0
     dc.w $D4FC
-    dc.w $0040
-    dbra d6,loc_00B8A0
+    ori.w #$51CE,d0
+    dc.w $FFC4
     move.w #$005E,d1
     move.w #$8800,d2
     move.w #$A800,d5
@@ -22808,17 +23495,16 @@ loc_00B8CC:
     move.w #$0019,d6
     move.w #$0000,d3
 loc_00B8F2:
-    dc.w $0000
+    ori.b #$B9,d0
     jsr loc_005696
+    ori.b #$96,d0
     dc.w $C545
     move.w #$0004,d3
     jsr loc_005696
     dc.w $C545
     addq.w #1,d1
     dc.w $0642
-    dc.w $0080
-    dc.w $0645
-    dc.w $0080
+    ori.l #$06450080,d0
     dbra d6,loc_00B8F2
     dc.w $32FC
     dc.w $FFF7
@@ -22867,8 +23553,7 @@ loc_00BBE0:
     dc.w $48E7
     bra.s loc_00BBE6
 loc_00BBE6:
-    dc.w $0000
-    dc.w $4F86
+    ori.b #$86,d0
     dc.w $4CDF
     dc.w $4006
     rts
@@ -22900,16 +23585,14 @@ loc_00C016:
     dc.w $23FF
 loc_00C036:
     dc.w $48E7
-    dc.w $0060
-    dc.w $2449
+    ori.w #$2449,-(a0)
     lea loc_02AC8C,a1
     dc.w $3002
     add.w d2,d0
     add.w d2,d0
     add.w d0,d0
     dc.w $2271
-    dc.w $0002
-    dc.w $3001
+    ori.b #$01,d2
     dc.w $EB48
     dc.w $D4C0
     jsr loc_005928
@@ -22918,8 +23601,8 @@ loc_00C036:
     rts
 loc_00C060:
     dc.w $48E7
-    dc.w $0020
-    lea loc_00C074,a2
+    ori.b #$F9,-(a0)
+    ori.b #$74,d0
     bsr.w loc_00596A
     dc.w $4CDF
     dc.w $0400
@@ -22945,8 +23628,7 @@ loc_00C0C6:
     dc.w $2248
     dc.w $4861
     bsr.w loc_00665E
-    dc.w $00A5
-    or.b (-27,a2,d0.w),d6
+    ori.l #$8C3200E5,-(a5)
     dc.w $3200
     dc.w $E54C
     dc.w $4C06
@@ -22995,16 +23677,15 @@ loc_00C0C6:
     bgt.s loc_00C155
     dc.w $4CDF
     dc.w $DF02
-    dc.w $021E
+    andi.b #$75,(a6)+
     dc.w $1E4E
-    rts
     dc.w $754E
 loc_00C10E:
     jsr loc_0064B4
     dc.w $B900
-    dc.w $0064
-    cmp.b (3,a0,a3.l),d2
+    ori.w #$B430,-(a4)
     dc.w $30BC
+    dc.w $BC03
     dc.w $039C
     sub.w a6,d6
     rts
@@ -23047,10 +23728,9 @@ loc_00C155:
     dc.w $4808
     dc.w $3900
 loc_00C15E:
-    dc.w $0000
+    ori.b #$FF,d0
 loc_00C15F:
     dc.w $00FF
-    dc.w $FFFF
     dc.w $FFE2
     dc.w $E217
     dc.w $1766
@@ -23063,9 +23743,8 @@ loc_00C15F:
     dc.w $32FC
     dc.w $FCA0
     dc.w $A000
-    dc.w $0022
+    ori.b #$00,-(a2)
     dc.w $22FC
-    dc.w $FC00
     dc.w $00FF
     dc.w $FF10
     dc.w $1004
@@ -23073,9 +23752,8 @@ loc_00C15F:
     dc.w $32FC
     dc.w $FC10
     dc.w $1000
-    dc.w $0060
+    ori.w #$1432,-(a0)
     bra.s loc_00C18E
-    dc.w $1432
 loc_00C17A:
     dc.w $32FC
     dc.w $FCFF
@@ -23085,36 +23763,31 @@ loc_00C17D:
     dc.w $32FC
     dc.w $FC80
     or.b d0,d0
-    dc.w $0032
+    ori.b #$A0,(50,a2,d0.w)
     dc.w $32FC
-    dc.w $FCA0
     dc.w $A000
-    dc.w $0032
     dc.w $32FC
     dc.w $FC20
     dc.w $2000
 loc_00C189:
-    dc.w $0032
+    ori.b #$00,(78,a2,d0.w)
     dc.w $32FC
-    dc.w $FC00
-    dc.w $0001
-    dc.w $014E
+    ori.b #$B9,d1
 loc_00C18E:
     jsr loc_004A74
     dc.w $B900
+    ori.b #$74,d0
     dc.w $004A
     moveq #49,d2
     dc.w $31FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$E2,d1
     dc.w $01B0
-    dc.w $B0E2
     dc.w $E24C
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0206
+    andi.b #$75,d6
     dc.w $064E
-    rts
     dc.w $7548
 loc_00C1A0:
     dc.w $48E7
@@ -23134,37 +23807,30 @@ loc_00C1A0:
     dc.w $32FC
     dc.w $FC80
     or.b d0,d0
-    dc.w $0032
+    ori.b #$A0,(50,a2,d0.w)
     dc.w $32FC
-    dc.w $FCA0
     dc.w $A000
-    dc.w $0032
     dc.w $32FC
     dc.w $FC20
     dc.w $2000
-    dc.w $0032
+    ori.b #$00,(78,a2,d0.w)
     dc.w $32FC
-    dc.w $FC00
-    dc.w $0001
-    dc.w $014E
-    jsr loc_004A74
+    ori.b #$B9,d1
     dc.w $B900
+    ori.b #$74,d0
     dc.w $004A
     moveq #76,d2
     dc.w $4CDF
     dc.w $DF02
-    dc.w $0202
+    andi.b #$75,d2
     dc.w $024E
-    rts
     dc.w $7548
 loc_00C1CC:
     dc.w $48E7
 loc_00C1CD:
     dc.w $E760
     bra.w loc_00F40C
-    dc.w $0032
-    dc.w $3C00
-    dc.w $1234
+    ori.b #$00,(52,a2,d1.w)
     dc.w $3C00
     dc.w $974E
     dc.w $B900
@@ -23181,9 +23847,7 @@ loc_00C1EC:
     dc.w $48E7
     dc.w $E760
     bra.w loc_00F42C
-    dc.w $0032
-    dc.w $3C00
-    dc.w $1234
+    ori.b #$00,(52,a2,d1.w)
     dc.w $3C00
     dc.w $004E
     dc.w $B900
@@ -23199,16 +23863,12 @@ loc_00C1EC:
 loc_00C20C:
     move.w #$0000,d1
     dc.w $3C00
-    dc.w $0034
+    ori.b #$00,(54,a4,d1.w)
     move.w #$0017,d2
-    dc.w $3C00
-    dc.w $1736
     move.w #$D000,d3
     dc.w $3CD0
-    dc.w $0038
+    ori.b #$81,($0042).w
     move.w #$8100,d4
-    dc.w $3C81
-    dc.w $0042
     clr.w d5
     dc.w $4543
     lea loc_02F2C2,a1
@@ -23217,8 +23877,7 @@ loc_00C20C:
     and.w a6,d1
     jsr loc_005CDC
     dc.w $B900
-    dc.w $005C
-    add.w a6,d6
+    ori.w #$DC4E,(a4)+
     jsr loc_00D104
     dc.w $B900
     dc.w $00D1
@@ -23241,9 +23900,8 @@ loc_00C233:
     dc.w $317C
 loc_00C253:
     moveq #0,d6
-    dc.w $0050
+    ori.w #$0010,(a0)
     addq.b #8,d0
-    dc.w $0010
     dc.w $1031
     dc.w $317C
     moveq #0,d6
@@ -23265,8 +23923,7 @@ loc_00C260:
     dc.w $E362
     bhi.s loc_00C2D1
     bne.w loc_00C398
-    dc.w $0001
-    move.l (-1,a3,a4.w),d6
+    ori.b #$33,d1
     dc.w $33C1
 loc_00C26F:
     dc.w $C1FF
@@ -23288,8 +23945,7 @@ loc_00C26F:
     dc.w $00DE
     add.w -(a6),d1
     bne.w loc_00C398
-    dc.w $0001
-    dc.w $124E
+    ori.b #$4E,d1
     jsr loc_008F22
     dc.w $B900
     dc.w $008F
@@ -23306,8 +23962,7 @@ loc_00C26F:
     bne.s loc_00C2A2
     dc.w $0460
     bra.w loc_00C398
-    dc.w $0000
-    dc.w $F833
+    ori.b #$33,d0
 loc_00C2A2:
     dc.w $33C1
     dc.w $C1FF
@@ -23322,12 +23977,9 @@ loc_00C2A2:
     sub.w a6,d5
     jsr loc_00B550
     dc.w $B900
-    dc.w $00B5
-    dc.w $5033
+    ori.l #$5033C3FF,(-29,a5,a7.l)
     dc.w $33C3
-    dc.w $C3FF
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E384
     or.b (-1,a3,a4.w),d2
     dc.w $33C4
@@ -23338,8 +23990,7 @@ loc_00C2A2:
     tst.w d0
     dc.w $4067
     beq.w loc_00C362
-    dc.w $0000
-    sub.b -(a3),d7
+    ori.b #$23,d0
     dc.w $23C8
     dc.w $C8FF
     dc.w $FFFF
@@ -23349,39 +24000,32 @@ loc_00C2C9:
     or.b (a3),d5
     dc.w $13E8
     dc.w $E800
-    dc.w $0000
+    ori.b #$FF,d0
     dc.w $00FF
-    dc.w $FFFF
 loc_00C2D1:
     dc.w $FFE3
     dc.w $E37B
     dc.w $7B13
     dc.w $13E8
     dc.w $E800
-    dc.w $0005
+    ori.b #$FF,d5
     dc.w $05FF
-    dc.w $FFFF
     dc.w $FFE3
     dc.w $E381
     or.b d0,(a3)
     dc.w $13E8
     dc.w $E800
-    dc.w $0007
+    ori.b #$FF,d7
     dc.w $07FF
-    dc.w $FFFF
     dc.w $FFE3
     dc.w $E383
     or.w d1,($004E).w
     moveq #0,d4
     jsr loc_00B5C8
     dc.w $B900
-    dc.w $00B5
-    and.b (a3),d4
+    ori.l #$C813E800,(-1,a5,d0.w)
     dc.w $13E8
-    dc.w $E800
-    dc.w $0001
-    dc.w $01FF
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $FFE3
     dc.w $E37D
     dc.w $7D32
@@ -23393,12 +24037,9 @@ loc_00C2D1:
     moveq #78,d5
     jsr loc_00B61E
     dc.w $B900
-    dc.w $00B6
-    dc.w $1E23
+    ori.l #$1E23C8FF,(-29,a6,a7.l)
     dc.w $23C8
-    dc.w $C8FF
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E38E
     or.b (-1,a6,d3.l),d7
     dc.w $3639
@@ -23409,40 +24050,29 @@ loc_00C2D1:
     moveq #0,d4
     jsr loc_00B5C8
     dc.w $B900
-    dc.w $00B5
-    and.b -(a2),d4
+    ori.l #$C8224872,(18,a5,d0.w)
     dc.w $2248
-    dc.w $4872
     moveq #0,d1
-    dc.w $0012
     dc.w $1229
     dc.w $2900
-    dc.w $0000
+    ori.b #$B9,d0
     dc.w $004E
-    jsr loc_00B61E
     dc.w $B900
-    dc.w $00B6
-    dc.w $1E3A
+    ori.b #$1E,d0
+    ori.l #$1E3A2800,(12,a6,d7.w)
     move.w (112,a0),d5
-    dc.w $2800
-    moveq #12,d0
     dc.w $0C29
     dc.w $2900
     dc.w $0009
     dc.w $0900
-    dc.w $0004
+    ori.b #$02,d4
     dc.w $0466
-    bne.s loc_00C330
-    dc.w $025A
+    andi.w #$4576,(a2)+
     addq.w #5,d5
-    dc.w $4576
-loc_00C330:
     moveq #0,d3
-    dc.w $0038
+    ori.b #$16,($2900).w
     dc.w $3803
-    dc.w $0316
     dc.w $1629
-    dc.w $2900
     dc.w $000B
     dc.w $0B18
     dc.w $1829
@@ -23461,16 +24091,14 @@ loc_00C330:
     sub.w d3,d1
     dc.w $436A
     bpl.s loc_00C34E
-    dc.w $0244
+    andi.w #$4194,d4
     dc.w $4441
-    dc.w $4194
 loc_00C34E:
     sub.w d4,d2
     dc.w $446A
     bpl.s loc_00C354
-    dc.w $0244
+    andi.w #$42D2,d4
     dc.w $4442
-    dc.w $42D2
 loc_00C354:
     add.w d2,d1
     dc.w $42B2
@@ -23480,9 +24108,8 @@ loc_00C354:
     dc.w $0833
     dc.w $33FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FFE3
     dc.w $E388
     or.w a6,d4
@@ -23553,10 +24180,8 @@ loc_00C3B0:
     dc.w $48E7
     dc.w $E770
     moveq #0,d0
-    dc.w $0032
+    ori.b #$00,(52,a2,d0.w)
     move.w #$0000,d1
-    dc.w $3C00
-    dc.w $0034
     move.w #$0017,d2
     dc.w $3C00
     dc.w $1736
@@ -23589,9 +24214,7 @@ loc_00C3D2:
     dc.w $3400
     dc.w $3600
     dc.w $0641
-    dc.w $0080
-    dc.w $0642
-    dc.w $0100
+    ori.l #$06420100,d0
     dc.w $0643
     dc.w $0180
     move.w #$001E,d4
@@ -23611,9 +24234,8 @@ loc_00C416:
     and.b d0,-(a2)
     dc.w $22FC
     dc.w $FC00
-    dc.w $0002
+    ori.b #$A4,d2
     dc.w $02F3
-    dc.w $F3A4
     dc.w $A432
     dc.w $32C4
     and.b (-1,a2,a7.l),d2
@@ -23624,9 +24246,8 @@ loc_00C416:
     and.b -(a2),d1
     dc.w $22FC
     dc.w $FC00
-    dc.w $0002
+    ori.b #$A4,d2
     dc.w $02F3
-    dc.w $F3A4
     dc.w $A432
     dc.w $32C4
     and.b (-1,a2,a7.l),d2
@@ -23637,16 +24258,15 @@ loc_00C416:
     and.b d1,-(a2)
     dc.w $22FC
     dc.w $FC00
-    dc.w $0002
+    ori.b #$A4,d2
     dc.w $02F3
-    dc.w $F3A4
     dc.w $A432
     dc.w $32FC
     dc.w $FC00
-    dc.w $001E
+    ori.b #$B9,(a6)+
     dc.w $1E4E
-    jsr loc_004A74
     dc.w $B900
+    ori.b #$74,d0
     dc.w $004A
     moveq #78,d2
     rts
@@ -23668,8 +24288,7 @@ loc_00C44A:
     dc.w $E384
     jsr loc_00B6D6
     dc.w $3600
-    dc.w $0043
-    or.b d0,d0
+    ori.w #$8000,d3
     move.w #$0050,d1
     move.w #$00C8,d2
     lea loc_00C4B2,a1
@@ -23679,96 +24298,48 @@ loc_00C44A:
     dc.w $E38A
     moveq #0,d3
     dc.w $1629
-    dc.w $0004
-    beq.s loc_00C4AC
+    ori.b #$1A,d4
     dc.w $E54B
     dc.w $0643
     or.b d0,(a4)+
     move.w #$0040,d1
-loc_00C499:
-    dc.w $3C00
-    dc.w $4034
     move.w #$00C8,d2
-    dc.w $3C00
-    and.w d3,d4
     lea loc_00C4B2,a1
-    dc.w $F900
-    dc.w $00C4
-    dc.w $B24E
     jsr loc_004FDA
-    dc.w $B900
-    dc.w $004F
-    add.w a4,d5
 loc_00C4AC:
     dc.w $4CDF
-    dc.w $DF06
     dc.w $061E
-    dc.w $1E4E
     rts
-    dc.w $7500
-    dc.w $0500
-    dc.w $004A
 loc_00C4B6:
     dc.w $4A39
-    dc.w $39FF
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E385
-    or.w d2,(0,a3)
     bmi.w loc_00C518
-    dc.w $5A72
     moveq #0,d1
-    dc.w $0032
     dc.w $3239
-    dc.w $39FF
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E37A
-    moveq #67,d5
     lea loc_02B80A,a1
-    dc.w $F900
-    dc.w $02B8
-    dc.w $0AE9
     dc.w $E949
-    lea (a3),a4
     dc.w $D3C1
-    and.b d0,(-1,a2,d3.l)
     dc.w $3239
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E392
-    sub.b (-1,a4,d3.l),d1
     dc.w $3439
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E394
-    sub.b d6,d2
     dc.w $0641
-    dc.w $4100
     dc.w $000C
-    dc.w $0C54
     addq.w #2,d2
-    dc.w $4236
     dc.w $3639
-    dc.w $39FF
     dc.w $FFFF
-    dc.w $FFE3
     dc.w $E396
-    sub.b ($3C80).w,d3
     move.w #$8000,d4
-    dc.w $003A
     move.w #$0000,d5
-    dc.w $3C00
-    dc.w $007C
     moveq #0,d6
-    dc.w $004E
     jsr loc_005F60
-    dc.w $B900
-    dc.w $005F
-    bra.s loc_00C501
     dc.w $0641
-    dc.w $0000
-    dc.w $0642
+    ori.b #$42,d0
     dc.w $FFFF
     lea loc_02B33A,a1
     dc.w $3039
@@ -23807,8 +24378,7 @@ loc_00C536:
 loc_00C564:
     dc.w $2602
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $48C2
     dc.w $84FC
     dc.w $000A
@@ -23834,14 +24404,12 @@ loc_00C580:
     dc.w $E38A
     clr.w d0
     dc.w $102B
-    dc.w $0004
-    add.w d0,d0
+    ori.b #$40,d4
     lea loc_02BE5A,a3
     add.w (0,a3,d0.w),d2
     dc.w $2602
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $48C2
     dc.w $84FC
     dc.w $000A
@@ -23872,8 +24440,8 @@ loc_00C5C8:
     jsr loc_00B5C8
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (120,a0),d1
     dc.w $0641
     or.b (a0),d0
@@ -23892,14 +24460,12 @@ loc_00C604:
     dc.w $E38A
     clr.w d0
     dc.w $102B
-    dc.w $0004
-    add.w d0,d0
+    ori.b #$40,d4
     lea loc_02BE6E,a3
     add.w (0,a3,d0.w),d2
     dc.w $2602
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $48C2
     dc.w $84FC
     dc.w $000A
@@ -23930,8 +24496,8 @@ loc_00C64A:
     jsr loc_00B5C8
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (122,a0),d1
     dc.w $0641
     or.b (a0),d0
@@ -23945,11 +24511,9 @@ loc_00C686:
     dc.w $E38A
     moveq #0,d2
     dc.w $1428
-    dc.w $0003
-    dc.w $2602
+    ori.b #$02,d3
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $48C2
     dc.w $84FC
     dc.w $000A
@@ -23971,11 +24535,9 @@ loc_00C6B4:
     dc.w $E38A
     moveq #0,d2
     dc.w $1428
-    dc.w $0006
-    dc.w $2602
+    ori.b #$02,d6
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $48C2
     dc.w $84FC
     dc.w $000A
@@ -24025,8 +24587,8 @@ loc_00C70A:
     dc.w $FFFF
     dc.w $E21A
     dc.w $32FC
-    dc.w $0018
-    jsr loc_004A74
+    ori.b #$B9,(a0)+
+    ori.b #$74,d0
 loc_00C748:
     rts
 loc_00C77A:
@@ -24052,9 +24614,7 @@ loc_00C77A:
     move.w #$8010,d4
     move.w #$0000,d5
     move.w #$0002,d6
-    dc.w $0287
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d7
     jsr loc_006156
     addq.w #2,d1
     move.w #$8005,d4
@@ -24096,9 +24656,7 @@ loc_00C77A:
     addq.w #2,d1
     addq.w #1,d2
     dc.w $0641
-    dc.w $007A
-    dc.w $32C1
-    dc.w $32C2
+    ori.w #$32C1,(12994,pc)
     addq.w #2,d1
     addq.w #1,d2
     dc.w $32C1
@@ -24149,17 +24707,14 @@ loc_00C88E:
     dc.w $FFFF
     dc.w $E394
     dc.w $0641
-    dc.w $0020
-    addq.w #3,d2
+    ori.b #$42,-(a0)
     dc.w $3639
     dc.w $FFFF
     dc.w $E396
     move.w #$8010,d4
     move.w #$0000,d5
     move.w #$0002,d6
-    dc.w $0287
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d7
     jsr loc_006156
     moveq #0,d1
     dc.w $3238
@@ -24174,17 +24729,14 @@ loc_00C88E:
     dc.w $FFFF
     dc.w $E394
     dc.w $0641
-    dc.w $0015
-    addq.w #3,d2
+    ori.b #$42,(a5)
     dc.w $3639
     dc.w $FFFF
     dc.w $E396
     move.w #$8010,d4
     move.w #$0000,d5
     move.w #$0002,d6
-    dc.w $0287
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d7
     jsr loc_006156
 loc_00C906:
     dc.w $4CDF
@@ -24212,8 +24764,7 @@ loc_00C924:
     dc.w $FFFF
     dc.w $E394
     dc.w $0641
-    dc.w $001C
-    addq.w #2,d2
+    ori.b #$42,(a4)+
     dc.w $3639
     dc.w $FFFF
     dc.w $E396
@@ -24245,8 +24796,7 @@ loc_00CD82:
     dc.w $AEAC
     dc.w $E549
     dc.w $0838
-    dc.w $0000
-    dc.w $AEB7
+    ori.b #$B7,d0
     bne.s loc_00CDDC
     move.w (0,a1,d1.w),d1
     dc.w $4A79
@@ -24261,24 +24811,18 @@ loc_00CD82:
 loc_00CDB2:
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_00CDBA:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_00CDBA
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13C0
-    dc.w $00A0
-    dc.w $1FFF
-    dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$1FFF33FC,-(a0)
+    ori.b #$A1,d0
     dc.w $1100
 loc_00CDDA:
     bra.s loc_00CE1C
@@ -24296,29 +24840,22 @@ loc_00CDDC:
 loc_00CDF4:
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_00CDFC:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_00CDFC
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13C0
-    dc.w $00A0
-    dc.w $1FFF
-    dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$1FFF33FC,-(a0)
+    ori.b #$A1,d0
     dc.w $1100
 loc_00CE1C:
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
 loc_00CE22:
     dc.w $48E7
     bra.s loc_00CE66
@@ -24378,15 +24915,13 @@ loc_00D170:
     dc.w $32FC
     dc.w $027F
     dc.w $32FC
-    dc.w $0001
-    bra.s loc_00D1C4
+    ori.b #$26,d1
 loc_00D19E:
     subq.w #1,d1
     dc.w $C2FC
-    dc.w $0280
-    dc.w $3401
-    move.w #$0083,d1
-    jsr loc_0058E2
+    andi.l #$3401323C,d0
+    ori.l #$4EB90000,d3
+    dc.w $58E2
     dc.w $2448
     dc.w $584A
     dc.w $D4C2
@@ -24397,7 +24932,6 @@ loc_00D19E:
     dc.w $22CA
     dc.w $32FC
     dc.w $013F
-loc_00D1C4:
     jsr loc_004A74
 loc_00D1CA:
     dc.w $4CDF
@@ -24470,8 +25004,7 @@ loc_00D25E:
 loc_00D262:
     addq.w #1,d1
     dc.w $3005
-    dc.w $0240
-    dc.w $0007
+    andi.w #$0007,d0
     beq.s loc_00D26E
     dc.w $34C1
 loc_00D26E:
@@ -24493,8 +25026,7 @@ loc_00D282:
 loc_00D292:
     dc.w $264A
     dc.w $D6FC
-    dc.w $0040
-    dc.w $32FC
+    ori.w #$32FC,d0
     dc.w $FFF9
     move.w #$0FCC,d1
     move.w #$0060,d0
@@ -24503,11 +25035,9 @@ loc_00D292:
     dc.w $32C1
     dc.w $22CB
     dc.w $32FC
-    dc.w $0004
-    dc.w $264A
+    ori.b #$4A,d4
     dc.w $3205
-    dc.w $0241
-    dc.w $0007
+    andi.w #$0007,d1
     dc.w $E749
     dc.w $D6C1
     dc.w $32FC
@@ -24519,8 +25049,7 @@ loc_00D292:
     dc.w $32C1
     dc.w $22CB
     dc.w $32FC
-    dc.w $0004
-    dc.w $32FC
+    ori.b #$FC,d4
     dc.w $FFF9
     dc.w $32C3
     dc.w $22F9
@@ -24609,8 +25138,7 @@ loc_00D8A4:
     dc.w $48E7
     dc.w $7F7E
     dc.w $33FC
-    dc.w $0258
-    dc.w $FFFF
+    andi.w #$FFFF,(a0)+
     dc.w $E6DA
     dc.w $4279
     dc.w $FFFF
@@ -24628,16 +25156,12 @@ loc_00D8A4:
     dc.w $FFFF
     dc.w $E412
     dc.w $33FC
-    dc.w $0028
-    dc.w $FFFF
-    dc.w $E6D0
+    ori.b #$FF,(-6448,a0)
     dc.w $33FC
-    dc.w $0025
-    dc.w $FFFF
+    ori.b #$FF,-(a5)
     dc.w $E3F8
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $E440
     dc.w $3239
     dc.w $FFFF
@@ -24678,8 +25202,7 @@ loc_00D8A4:
     dc.w $FFFF
     dc.w $E3DA
     dc.w $13E8
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E3DB
     dc.w $2079
     dc.w $FFFF
@@ -24688,8 +25211,7 @@ loc_00D8A4:
     dc.w $FFFF
     dc.w $E422
     dc.w $13E8
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E423
     dc.w $4A79
     dc.w $FFFF
@@ -24721,12 +25243,10 @@ loc_00D97A:
     dc.w $FFFF
     dc.w $E3CE
     dc.w $13E8
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $E3CD
     dc.w $13E8
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $E3CF
     dc.w $2079
     dc.w $FFFF
@@ -24738,12 +25258,10 @@ loc_00D97A:
     dc.w $FFFF
     dc.w $E416
     dc.w $13E8
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $E415
     dc.w $13E8
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $E417
     dc.w $3639
     dc.w $FFFF
@@ -24754,8 +25272,7 @@ loc_00D97A:
     dc.w $FFFF
     dc.w $E3D0
     dc.w $13E8
-    dc.w $0007
-    dc.w $FFFF
+    ori.b #$FF,d7
     dc.w $E3D1
     dc.w $3639
     dc.w $FFFF
@@ -24766,25 +25283,21 @@ loc_00D97A:
     dc.w $FFFF
     dc.w $E418
     dc.w $13E8
-    dc.w $0007
-    dc.w $FFFF
+    ori.b #$FF,d7
     dc.w $E419
     dc.w $3239
     dc.w $FFFF
     dc.w $E3DA
     jsr loc_00B61E
     dc.w $33E8
-    dc.w $0006
-    dc.w $FFFF
+    ori.b #$FF,d6
     dc.w $E3BE
     dc.w $33E8
     dc.w $0008
     dc.w $FFFF
     dc.w $E3C0
     dc.w $33E8
-    dc.w $0076
-    dc.w $FFFF
-    dc.w $E3C2
+    ori.w #$FFFF,(-62,a6,a6.w)
     dc.w $3239
     dc.w $FFFF
     dc.w $E3BA
@@ -24794,8 +25307,7 @@ loc_00D97A:
     jsr loc_00B550
     moveq #0,d1
     dc.w $1228
-    dc.w $0004
-    add.w d1,d1
+    ori.b #$41,d4
     lea loc_02BE5A,a1
     lea loc_02BE6E,a2
     move.w (0,a1,d1.w),d0
@@ -24807,17 +25319,14 @@ loc_00D97A:
     dc.w $E422
     jsr loc_00B61E
     dc.w $33E8
-    dc.w $0006
-    dc.w $FFFF
+    ori.b #$FF,d6
     dc.w $E406
     dc.w $33E8
     dc.w $0008
     dc.w $FFFF
     dc.w $E408
     dc.w $33E8
-    dc.w $0076
-    dc.w $FFFF
-    dc.w $E40A
+    ori.w #$FFFF,(10,a6,a6.w)
     dc.w $3239
     dc.w $FFFF
     dc.w $E402
@@ -24827,8 +25336,7 @@ loc_00D97A:
     jsr loc_00B550
     moveq #0,d1
     dc.w $1228
-    dc.w $0004
-    add.w d1,d1
+    ori.b #$41,d4
     lea loc_02BE5A,a1
     lea loc_02BE6E,a2
     move.w (0,a1,d1.w),d0
@@ -24861,20 +25369,17 @@ loc_00DACC:
     dc.w $E3DC
 loc_00DAE4:
     dc.w $33FC
-    dc.w $001E
-    dc.w $FFFF
+    ori.b #$FF,(a6)+
     dc.w $E3C6
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E3C8
     dc.w $3239
     dc.w $FFFF
     dc.w $E3DA
     jsr loc_00B61E
     dc.w $0C68
-    dc.w $0003
-    dc.w $0000
+    ori.b #$00,d3
     beq.s loc_00DB36
     dc.w $3239
     dc.w $FFFF
@@ -24892,8 +25397,7 @@ loc_00DAE4:
     dc.w $E3DC
     add.w d0,d0
     dc.w $33F0
-    dc.w $0046
-    dc.w $FFFF
+    ori.w #$FFFF,d6
     dc.w $E3C8
 loc_00DB36:
     dc.w $3039
@@ -24922,20 +25426,17 @@ loc_00DB50:
     dc.w $E424
 loc_00DB68:
     dc.w $33FC
-    dc.w $001E
-    dc.w $FFFF
+    ori.b #$FF,(a6)+
     dc.w $E40E
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E410
     dc.w $3239
     dc.w $FFFF
     dc.w $E422
     jsr loc_00B61E
     dc.w $0C68
-    dc.w $0003
-    dc.w $0000
+    ori.b #$00,d3
     beq.s loc_00DBBA
     dc.w $3239
     dc.w $FFFF
@@ -24953,8 +25454,7 @@ loc_00DB68:
     dc.w $E424
     add.w d0,d0
     dc.w $33F0
-    dc.w $0046
-    dc.w $FFFF
+    ori.w #$FFFF,d6
     dc.w $E410
 loc_00DBBA:
     dc.w $3239
@@ -25009,8 +25509,7 @@ loc_00DBBA:
     dc.w $FFFF
     dc.w $E3E8
     dc.w $13E8
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E3E9
     dc.w $3639
     dc.w $FFFF
@@ -25028,8 +25527,7 @@ loc_00DBBA:
     dc.w $FFFF
     dc.w $E430
     dc.w $13E8
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E431
     dc.w $4279
     dc.w $FFFF
@@ -25067,29 +25565,22 @@ loc_00DCAE:
     moveq #0,d1
     dc.w $2248
     dc.w $1229
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (112,a0),d0
     dc.w $0C29
     dc.w $0009
-    dc.w $0004
-    bne.s loc_00DCCC
+    ori.b #$02,d4
     addq.w #5,d0
-loc_00DCCC:
     dc.w $B400
     bgt.s loc_00DCE8
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E400
     dc.w $33E8
-    dc.w $0078
-    dc.w $FFFF
-    dc.w $E3EC
+    ori.w #$FFFF,($E3EC).w
     dc.w $33E8
-    dc.w $007A
-    dc.w $FFFF
-    dc.w $E3EE
+    ori.w #$FFFF,(-7186,pc)
 loc_00DCE8:
     dc.w $4279
     dc.w $FFFF
@@ -25127,29 +25618,22 @@ loc_00DD2C:
     moveq #0,d1
     dc.w $2248
     dc.w $1229
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (112,a0),d0
     dc.w $0C29
     dc.w $0009
-    dc.w $0004
-    bne.s loc_00DD4A
+    ori.b #$02,d4
     addq.w #5,d0
-loc_00DD4A:
     dc.w $B400
     bgt.s loc_00DD66
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E448
     dc.w $33E8
-    dc.w $0078
-    dc.w $FFFF
-    dc.w $E434
+    ori.w #$FFFF,($E434).w
     dc.w $33E8
-    dc.w $007A
-    dc.w $FFFF
-    dc.w $E436
+    ori.w #$FFFF,(-7114,pc)
 loc_00DD66:
     lea loc_00FBE2,a1
     dc.w $3239
@@ -25234,8 +25718,7 @@ loc_00DE1A:
     dc.w $4221
     dbra d1,loc_00DE1A
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E6DE
     moveq #0,d0
     dc.w $0C79
@@ -25274,8 +25757,7 @@ loc_00DE58:
     dc.w $E422
     jsr loc_00B61E
     or.w (118,a0),d2
-    dc.w $0242
-    dc.w $0003
+    andi.w #$0003,d2
     cmpi.w #$0003,d2
     beq.w loc_00DEAE
     dc.w $3239
@@ -25292,8 +25774,7 @@ loc_00DE58:
     bra.w loc_00DEB6
 loc_00DEAE:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E6DE
 loc_00DEB6:
     dc.w $4279
@@ -25332,8 +25813,8 @@ loc_00DEC8:
     lea loc_02F402,a1
     lea loc_009092,a2
     dc.w $D4FC
-    dc.w $0020
-    jsr loc_005928
+    ori.b #$B9,-(a0)
+    ori.b #$28,d0
     lea loc_00FD74,a1
     dc.w $3239
     dc.w $FFFF
@@ -25353,8 +25834,8 @@ loc_00DEC8:
     dc.w $FFFF
     dc.w $E3DA
     dc.w $0641
-    dc.w $001D
-    move.w #$97A0,d2
+    ori.b #$3C,(a5)+
+    sub.l d3,-(a0)
     move.w #$0000,d3
     move.w #$0004,d4
     jsr loc_005696
@@ -25362,8 +25843,8 @@ loc_00DEC8:
     dc.w $FFFF
     dc.w $E422
     dc.w $0641
-    dc.w $001D
-    move.w #$9820,d2
+    ori.b #$3C,(a5)+
+    sub.b -(a0),d4
     move.w #$0000,d3
     move.w #$0004,d4
     jsr loc_005696
@@ -25372,13 +25853,8 @@ loc_00DEC8:
     rts
 loc_00DF9E:
     dc.w $536E
-    dc.w $002A
-    bne.s loc_00DFAC
-    dc.w $206E
-    dc.w $002C
-    jsr (a0)
-    dc.w $4256
-loc_00DFAC:
+    ori.b #$08,(8302,a2)
+    ori.b #$90,(16982,a4)
     rts
 loc_00DFAE:
     dc.w $48E7
@@ -25413,10 +25889,8 @@ loc_00E27A:
     dc.w $E349
     move.w d2,(0,a1,d1.w)
     dc.w $426A
-    dc.w $0022
-    dc.w $08AA
-    dc.w $0000
-    dc.w $0022
+    ori.b #$AA,-(a2)
+    ori.b #$22,d0
     dc.w $3239
     dc.w $FFFF
     dc.w $E3BA
@@ -25425,15 +25899,11 @@ loc_00E27A:
     dc.w $E3BC
     jsr loc_00B550
     dc.w $426A
-    dc.w $002C
-    dc.w $1568
-    dc.w $0003
-    dc.w $002D
-    dc.w $3579
-    dc.w $FFFF
+    ori.b #$68,(3,a4)
+    ori.b #$79,(-1,a5)
     dc.w $E3C2
-    dc.w $0030
-    jsr loc_00646C
+    ori.b #$B9,(0,a0,d0.w)
+    bcc.s loc_00E338
     dc.w $2448
     dc.w $3239
     dc.w $FFFF
@@ -25441,10 +25911,8 @@ loc_00E27A:
     dc.w $E349
     move.w d2,(0,a1,d1.w)
     dc.w $426A
-    dc.w $0022
-    dc.w $08EA
-    dc.w $0000
-    dc.w $0022
+    ori.b #$EA,-(a2)
+    ori.b #$22,d0
     dc.w $3239
     dc.w $FFFF
     dc.w $E402
@@ -25453,26 +25921,17 @@ loc_00E27A:
     dc.w $E404
     jsr loc_00B550
     dc.w $426A
-    dc.w $002C
-    dc.w $1568
-    dc.w $0003
-    dc.w $002D
-    dc.w $3579
-    dc.w $FFFF
+    ori.b #$68,(3,a4)
+    ori.b #$79,(-1,a5)
     dc.w $E40A
-    dc.w $0030
-    dc.w $4CDF
-    moveq #-2,d7
+    ori.b #$DF,(-2,a0,d7.l)
     rts
 loc_00E30E:
     dc.w $48E7
     moveq #64,d0
     dc.w $4A6E
-    dc.w $0028
-    beq.s loc_00E378
-    dc.w $326E
-    dc.w $0028
-    move.l (14,a1),d1
+    ori.b #$60,(12910,a0)
+    ori.b #$29,(14,a0)
     move.l (18,a1),d2
     move.l (14,a6),d4
     sub.l d1,d4
@@ -25482,15 +25941,17 @@ loc_00E32E:
     cmp.l (22,a6),d4
     blt.s loc_00E350
     dc.w $08AE
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
+loc_00E338:
+    ori.b #$2E,-(a2)
     move.l (22,a6),d3
+    ori.b #$AE,(a6)
     cmp.l (14,a6),d1
+    dc.w $000E
     bgt.s loc_00E34C
     dc.w $4483
     dc.w $08EE
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
 loc_00E34C:
     add.l d3,(14,a6)
 loc_00E350:
@@ -25530,15 +25991,13 @@ loc_00E39C:
     cmp.l (22,a6),d0
     blt.s loc_00E3BE
     dc.w $08AE
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
     move.l (22,a6),d3
     cmp.l (14,a6),d1
     bgt.s loc_00E3BA
     dc.w $4483
     dc.w $08EE
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
 loc_00E3BA:
     add.l d3,(14,a6)
 loc_00E3BE:
@@ -25561,13 +26020,11 @@ loc_00E3DE:
     dc.w $42AE
     dc.w $000E
     dc.w $42AE
-    dc.w $0012
-    dc.w $3D6E
-    dc.w $0006
-    dc.w $000E
+    ori.b #$6E,(a2)
+    ori.b #$0E,d6
     dc.w $3D6E
     dc.w $0008
-    dc.w $0012
+    ori.b #$DF,(a2)
 loc_00E3FA:
     dc.w $4CDF
     dc.w $020E
@@ -25579,35 +26036,27 @@ loc_00E444:
     dc.w $48C2
     dc.w $E18A
     dc.w $2D41
-    dc.w $0016
-    dc.w $2D42
-    dc.w $001A
-    move.l (22,a6),d1
-    move.l (26,a6),d2
-    add.l d1,(14,a6)
+    ori.b #$42,(a6)
+    ori.b #$2E,(a2)+
+    ori.b #$2E,(a6)
+    ori.b #$AE,(a2)+
+    dc.w $000E
     add.l d2,(18,a6)
     dc.w $326E
-    dc.w $0028
-    dc.w $08AE
-    dc.w $0006
-    dc.w $0022
-    dc.w $4A6E
-    dc.w $0016
-    bpl.s loc_00E476
+    ori.b #$AE,(6,a0)
+    ori.b #$6E,-(a2)
+    ori.b #$06,(a6)
     dc.w $08EE
-    dc.w $0006
-    dc.w $0022
-loc_00E476:
+    ori.b #$22,d6
     dc.w $4CDF
-    dc.w $0206
-    rts
+    andi.b #$75,d6
 loc_00E47C:
     move.w (18,a6),d0
     cmp.w (8,a6),d0
     blt.s loc_00E48C
     dc.w $3D6E
     dc.w $0008
-    dc.w $0012
+    ori.b #$75,(a2)
 loc_00E48C:
     rts
 loc_00E48E:
@@ -25615,17 +26064,14 @@ loc_00E48E:
     moveq #0,d0
     moveq #0,d3
     dc.w $0C6E
-    dc.w $0010
-    dc.w $000E
+    ori.b #$0E,(a0)
     bge.s loc_00E4AC
     moveq #1,d3
     dc.w $082E
-    dc.w $0006
-    dc.w $0023
+    ori.b #$23,d6
     beq.s loc_00E4AC
     dc.w $3D7C
-    dc.w $0010
-    dc.w $000E
+    ori.b #$0E,(a0)
 loc_00E4AC:
     dc.w $0C6E
     dc.w $0130
@@ -25633,8 +26079,7 @@ loc_00E4AC:
     ble.s loc_00E4C4
     moveq #1,d3
     dc.w $082E
-    dc.w $0006
-    dc.w $0023
+    ori.b #$23,d6
     beq.s loc_00E4C4
     dc.w $3D7C
     dc.w $0130
@@ -25653,21 +26098,19 @@ loc_00E4E0:
     ble.s loc_00E4FC
     moveq #1,d3
     dc.w $082E
-    dc.w $0006
-    dc.w $0023
+    ori.b #$23,d6
     beq.s loc_00E4FC
     dc.w $3D6E
     dc.w $000A
     dc.w $000E
     dc.w $3D6E
     dc.w $000C
-    dc.w $0012
+    ori.b #$43,(a2)
 loc_00E4FC:
     tst.w d3
     bne.s loc_00E506
     dc.w $08EE
-    dc.w $0006
-    dc.w $0023
+    ori.b #$23,d6
 loc_00E506:
     dc.w $3003
     dc.w $4CDF
@@ -25678,64 +26121,50 @@ loc_00E50E:
     bra.w loc_015512
 loc_00E556:
     dc.w $48E7
-    dc.w $0040
-    dc.w $4A6E
-    dc.w $0028
-    beq.w loc_00E590
+    ori.w #$4A6E,d0
+    ori.b #$00,(48,a0)
     dc.w $326E
-    dc.w $0028
-    dc.w $0829
-    dc.w $0002
-    dc.w $0022
+    ori.b #$29,(2,a0)
+    ori.b #$00,-(a2)
+    ori.b #$29,(a6)+
+    ori.b #$22,d3
     bne.w loc_00E58C
     dc.w $0829
-    dc.w $0003
-    dc.w $0022
-    bne.w loc_00E58C
-    dc.w $0829
-    dc.w $0001
-    dc.w $0022
+    ori.b #$22,d1
     bne.w loc_00E58C
     jsr loc_00E844
     beq.s loc_00E590
 loc_00E58C:
     dc.w $426E
-    dc.w $0028
+    ori.b #$DF,(512,a0)
 loc_00E590:
     dc.w $4CDF
-    dc.w $0200
+    andi.b #$75,d0
     rts
 loc_00E596:
     dc.w $48E7
-    dc.w $0040
-    dc.w $4A6E
-    dc.w $0028
-    beq.w loc_00E5BE
+    ori.w #$4A6E,d0
+    ori.b #$00,(30,a0)
     dc.w $326E
-    dc.w $0028
+    ori.b #$29,(2,a0)
+    ori.b #$00,-(a2)
+    dc.w $000C
     dc.w $0829
-    dc.w $0002
-    dc.w $0022
-    bne.w loc_00E5BA
-    dc.w $0829
-    dc.w $0003
-    dc.w $0022
+    ori.b #$22,d3
     beq.w loc_00E5BE
-loc_00E5BA:
     dc.w $426E
-    dc.w $0028
+    ori.b #$DF,(512,a0)
 loc_00E5BE:
     dc.w $4CDF
-    dc.w $0200
+    andi.b #$75,d0
     rts
 loc_00E5C4:
     dc.w $4A6E
-    dc.w $0028
-    bne.w loc_00E5D8
+    ori.b #$00,(14,a0)
     jsr loc_00E5DA
     beq.s loc_00E5D8
     dc.w $3D48
-    dc.w $0028
+    ori.b #$75,(18663,a0)
 loc_00E5D8:
     rts
 loc_00E5DA:
@@ -25743,10 +26172,9 @@ loc_00E5DA:
     dc.w $7F7E
     moveq #0,d1
     dc.w $122E
-    dc.w $0022
-    dc.w $0201
-    dc.w $0001
-    lea loc_009182,a1
+    ori.b #$01,-(a2)
+    ori.b #$F8,d1
+    dc.w $9182
     dc.w $D2FC
     dc.w $0B90
     lea loc_000000,a2
@@ -25757,43 +26185,30 @@ loc_00E5DA:
 loc_00E602:
     beq.w loc_00E692
     dc.w $1029
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $B001
+    ori.b #$00,-(a2)
+    ori.b #$01,d1
     beq.w loc_00E692
     dc.w $0829
-    dc.w $0002
-    dc.w $0022
+    ori.b #$22,d2
     bne.w loc_00E692
     dc.w $0829
-    dc.w $0003
-    dc.w $0022
+    ori.b #$22,d3
     bne.w loc_00E692
     dc.w $0829
-    dc.w $0001
-    dc.w $0022
+    ori.b #$22,d1
     bne.w loc_00E692
     dc.w $0829
-    dc.w $0005
-    dc.w $0022
+    ori.b #$22,d5
     bne.w loc_00E692
     jsr loc_00E844
     bne.w loc_00E692
     dc.w $BCE9
-    dc.w $0028
-    bne.s loc_00E652
-    move.w #$0003,d5
-    bra.s loc_00E662
-loc_00E652:
+    ori.b #$06,(14908,a0)
+    ori.b #$10,d3
     dc.w $4A69
-    dc.w $0028
-    bne.s loc_00E65E
-    move.w #$0002,d5
-    bra.s loc_00E662
-loc_00E65E:
+    ori.b #$06,(14908,a0)
+    ori.b #$04,d2
     move.w #$0001,d5
-loc_00E662:
     move.w (14,a6),d0
     sub.w (14,a1),d0
     bpl.s loc_00E66E
@@ -25821,8 +26236,7 @@ loc_00E692:
     moveq #0,d0
     dc.w $204A
     dc.w $B1FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00E6A8
     moveq #1,d0
 loc_00E6A8:
@@ -25835,10 +26249,9 @@ loc_00E6B0:
     dc.w $7F7E
     moveq #0,d1
     dc.w $122E
-    dc.w $0022
-    dc.w $0201
-    dc.w $0001
-    lea loc_009182,a1
+    ori.b #$01,-(a2)
+    ori.b #$F8,d1
+    dc.w $9182
     dc.w $D2FC
     dc.w $0B90
     lea loc_000000,a2
@@ -25848,26 +26261,20 @@ loc_00E6B0:
 loc_00E6D4:
     beq.w loc_00E72A
     dc.w $1029
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $B001
+    ori.b #$00,-(a2)
+    ori.b #$01,d1
     beq.w loc_00E72A
     dc.w $0829
-    dc.w $0002
-    dc.w $0022
+    ori.b #$22,d2
     bne.w loc_00E72A
     dc.w $0829
-    dc.w $0003
-    dc.w $0022
+    ori.b #$22,d3
     bne.w loc_00E72A
     dc.w $0829
-    dc.w $0001
-    dc.w $0022
+    ori.b #$22,d1
     bne.w loc_00E72A
     dc.w $0829
-    dc.w $0005
-    dc.w $0022
+    ori.b #$22,d5
     bne.w loc_00E72A
     jsr loc_00E844
     bne.w loc_00E72A
@@ -25885,8 +26292,7 @@ loc_00E72A:
     moveq #0,d0
     dc.w $204A
     dc.w $B1FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00E740
     moveq #1,d0
 loc_00E740:
@@ -25899,10 +26305,9 @@ loc_00E748:
     dc.w $7F7E
     moveq #0,d1
     dc.w $122E
-    dc.w $0022
-    dc.w $0201
-    dc.w $0001
-    lea loc_009182,a1
+    ori.b #$01,-(a2)
+    ori.b #$F8,d1
+    dc.w $9182
     dc.w $D2FC
     dc.w $0B90
     lea loc_000000,a2
@@ -25912,22 +26317,17 @@ loc_00E748:
 loc_00E76C:
     beq.w loc_00E7AE
     dc.w $1029
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $B001
+    ori.b #$00,-(a2)
+    ori.b #$01,d1
     beq.w loc_00E7AE
     dc.w $0829
-    dc.w $0002
-    dc.w $0022
+    ori.b #$22,d2
     bne.w loc_00E7AE
     dc.w $0829
-    dc.w $0003
-    dc.w $0022
+    ori.b #$22,d3
     bne.w loc_00E7AE
     dc.w $0829
-    dc.w $0005
-    dc.w $0022
+    ori.b #$22,d5
     bne.w loc_00E7AE
     dc.w $C34E
     jsr loc_00EA8A
@@ -25943,8 +26343,7 @@ loc_00E7AE:
     moveq #0,d0
     dc.w $204A
     dc.w $B1FC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     beq.s loc_00E7C4
     moveq #1,d0
 loc_00E7C4:
@@ -25958,10 +26357,9 @@ loc_00E7CC:
     dc.w $2649
     moveq #0,d1
     dc.w $122E
-    dc.w $0022
-    dc.w $0201
-    dc.w $0001
-    lea loc_009182,a1
+    ori.b #$01,-(a2)
+    ori.b #$F8,d1
+    dc.w $9182
     dc.w $D2FC
     dc.w $0B90
     lea loc_000000,a2
@@ -25970,22 +26368,17 @@ loc_00E7CC:
 loc_00E7EE:
     beq.w loc_00E820
     dc.w $1029
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $B001
+    ori.b #$00,-(a2)
+    ori.b #$01,d1
     beq.w loc_00E820
     dc.w $0829
-    dc.w $0002
-    dc.w $0022
+    ori.b #$22,d2
     bne.w loc_00E820
     dc.w $0829
-    dc.w $0003
-    dc.w $0022
+    ori.b #$22,d3
     bne.w loc_00E820
     dc.w $0829
-    dc.w $0005
-    dc.w $0022
+    ori.b #$22,d5
     bne.w loc_00E820
     dc.w $36C9
 loc_00E820:
@@ -26000,27 +26393,22 @@ loc_00E820:
     rts
 loc_00E834:
     dc.w $082E
-    dc.w $0004
-    dc.w $0023
+    ori.b #$23,d4
     bne.s loc_00E842
     dc.w $08EE
-    dc.w $0004
-    dc.w $0022
+    ori.b #$22,d4
 loc_00E842:
     rts
 loc_00E844:
     moveq #0,d0
     dc.w $082E
-    dc.w $0004
-    dc.w $0022
+    ori.b #$22,d4
     beq.s loc_00E860
     dc.w $0829
-    dc.w $0004
-    dc.w $0023
+    ori.b #$23,d4
     bne.s loc_00E85E
     dc.w $0829
-    dc.w $0004
-    dc.w $0022
+    ori.b #$22,d4
     beq.s loc_00E860
 loc_00E85E:
     moveq #1,d0
@@ -26029,15 +26417,12 @@ loc_00E860:
     rts
 loc_00E864:
     dc.w $08AE
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     bne.s loc_00E878
     dc.w $08EE
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
 loc_00E878:
     rts
 loc_00E87A:
@@ -26045,11 +26430,9 @@ loc_00E87A:
     moveq #64,d6
     moveq #0,d5
     dc.w $4A6E
-    dc.w $0028
-    beq.w loc_00E8B4
+    ori.b #$00,(46,a0)
     dc.w $326E
-    dc.w $0028
-    move.w (14,a6),d1
+    ori.b #$2E,(14,a0)
     dc.w $3401
     add.w (36,a6),d1
     add.w (38,a6),d2
@@ -26069,127 +26452,61 @@ loc_00E8B4:
     rts
 loc_00E8BC:
     dc.w $48E7
-    dc.w $0040
-    jsr loc_00E87A
+    ori.w #$4EB9,d0
+    ori.b #$7A,d0
     beq.s loc_00E8E0
     dc.w $326E
-    dc.w $0028
-    dc.w $306E
-    dc.w $0036
+    ori.b #$6E,(54,a0)
     move.w d6,(12,a0)
     dc.w $3069
-    dc.w $0036
-    move.w d1,(12,a0)
+    ori.b #$A8,(12,a6,d0.w)
     dc.w $334E
-    dc.w $0028
+    ori.b #$DF,(512,a0)
 loc_00E8E0:
     dc.w $4CDF
-    dc.w $0200
+    andi.b #$75,d0
     rts
 loc_00E8E6:
     dc.w $48E7
     moveq #96,d4
     dc.w $4A6E
-    dc.w $0028
-    beq.w loc_00E9CA
+    ori.b #$00,(218,a0)
     dc.w $346E
-    dc.w $0028
-    dc.w $4A79
-    dc.w $FFFF
+    ori.b #$79,(-1,a0)
     or.b a0,d0
     beq.s loc_00E928
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_00E906:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_00E906
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13FC
-    dc.w $0028
-    dc.w $00A0
-    dc.w $1FFF
+    ori.b #$A0,(8191,a0)
     dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
 loc_00E928:
     jsr loc_006722
     dc.w $0800
-    dc.w $0000
-    beq.s loc_00E960
+    ori.b #$2C,d0
     dc.w $0800
-    dc.w $0001
-    beq.s loc_00E94C
+    ori.b #$12,d1
     dc.w $306E
-    dc.w $0036
-    move.w d6,(30,a0)
+    ori.b #$A8,(30,a6,d0.w)
     dc.w $306A
-    dc.w $0036
-    move.w d2,(0,a0)
+    ori.b #$A8,(0,a6,d0.w)
     bra.s loc_00E95C
-loc_00E94C:
-    dc.w $306A
-    dc.w $0036
-    move.w d2,(30,a0)
-    dc.w $306E
-    dc.w $0036
-    move.w d6,(0,a0)
 loc_00E95C:
     bra.w loc_00E9C2
-loc_00E960:
-    jsr loc_00E834
-    dc.w $C54E
-    jsr loc_00E834
-    dc.w $C54E
-    jsr loc_00ED54
-    dc.w $082A
-    dc.w $0007
-    dc.w $0022
-    bne.s loc_00E996
-    tst.w d1
-    beq.s loc_00E996
-    dc.w $306E
-    dc.w $0036
-    move.w d6,(24,a0)
-    jsr loc_00F4D4
-    dc.w $426E
-    dc.w $0032
-    bra.s loc_00E99E
-loc_00E996:
-    dc.w $306E
-    dc.w $0036
-    move.w d6,(0,a0)
-loc_00E99E:
-    dc.w $C54E
-    tst.w d2
-    beq.s loc_00E9B8
-    dc.w $306E
-    dc.w $0036
-    move.w d6,(24,a0)
-    jsr loc_00F4D4
-    dc.w $426E
-    dc.w $0032
-    bra.s loc_00E9C0
-loc_00E9B8:
-    dc.w $306E
-    dc.w $0036
-    move.w d6,(0,a0)
-loc_00E9C0:
-    dc.w $C54E
 loc_00E9C2:
     dc.w $426E
-    dc.w $0028
-    dc.w $426A
-    dc.w $0028
-loc_00E9CA:
+    ori.b #$6A,(40,a0)
     dc.w $4CDF
     dc.w $061E
     rts
@@ -26200,36 +26517,29 @@ loc_00EA0E:
     dc.w $48E7
     moveq #0,d0
     dc.w $082E
-    dc.w $0001
-    dc.w $0022
+    ori.b #$22,d1
     beq.s loc_00EA2A
     jsr loc_00E9D0
     beq.s loc_00EA2A
     dc.w $306E
-    dc.w $0036
-    move.w d6,(48,a0)
+    ori.b #$A8,(48,a6,d0.w)
 loc_00EA2A:
     dc.w $4CDF
     dc.w $000E
     rts
 loc_00EA30:
     dc.w $4A6E
-    dc.w $0028
-    bne.s loc_00EA52
-    dc.w $3C81
+    ori.b #$1C,(15489,a0)
     tst.w d2
     bmi.s loc_00EA52
     dc.w $102E
-    dc.w $0023
-    dc.w $E148
+    ori.b #$48,-(a3)
     dc.w $102E
-    dc.w $0022
-    dc.w $05C0
+    ori.b #$C0,-(a2)
     dc.w $1D40
-    dc.w $0022
-    dc.w $E048
+    ori.b #$48,-(a2)
     dc.w $1D40
-    dc.w $0023
+    ori.b #$75,-(a3)
 loc_00EA52:
     rts
 loc_00EA54:
@@ -26239,16 +26549,13 @@ loc_00EA54:
     tst.w d2
     bmi.s loc_00EA78
     dc.w $102E
-    dc.w $0023
-    dc.w $E148
+    ori.b #$48,-(a3)
     dc.w $102E
-    dc.w $0022
-    dc.w $05C0
+    ori.b #$C0,-(a2)
     dc.w $1D40
-    dc.w $0022
-    dc.w $E048
+    ori.b #$48,-(a2)
     dc.w $1D40
-    dc.w $0023
+    ori.b #$75,-(a3)
 loc_00EA78:
     rts
 loc_00EA7A:
@@ -26262,10 +26569,9 @@ loc_00EA8A:
     dc.w $7F7E
     moveq #0,d1
     dc.w $122E
-    dc.w $0022
-    dc.w $0201
-    dc.w $0001
-    lea loc_009182,a1
+    ori.b #$01,-(a2)
+    ori.b #$F8,d1
+    dc.w $9182
     dc.w $D2FC
     dc.w $0B90
     move.w #$003B,d2
@@ -26274,27 +26580,20 @@ loc_00EA8A:
 loc_00EAAA:
     beq.w loc_00EAE2
     dc.w $1029
-    dc.w $0022
-    dc.w $0200
-    dc.w $0001
-    dc.w $B001
+    ori.b #$00,-(a2)
+    ori.b #$01,d1
     beq.w loc_00EAE2
     dc.w $0829
-    dc.w $0002
-    dc.w $0022
+    ori.b #$22,d2
     bne.w loc_00EAE2
     dc.w $0829
-    dc.w $0003
-    dc.w $0022
+    ori.b #$22,d3
     bne.w loc_00EAE2
     dc.w $0829
-    dc.w $0001
-    dc.w $0022
+    ori.b #$22,d1
     bne.w loc_00EAE2
     dc.w $BCE9
-    dc.w $0028
-    bne.s loc_00EAE2
-    addq.w #1,d3
+    ori.b #$02,(21059,a0)
 loc_00EAE2:
     dc.w $D2FC
     dc.w $004A
@@ -26306,25 +26605,21 @@ loc_00EAE2:
 loc_00EAF2:
     move.w #$030F,d0
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     beq.s loc_00EB02
     move.w #$03C2,d0
 loc_00EB02:
     dc.w $082E
-    dc.w $0000
-    dc.w $0023
+    ori.b #$23,d0
     beq.s loc_00EB1C
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     bne.w loc_00EB28
     eori.w #$0800,d0
     bra.w loc_00EB28
 loc_00EB1C:
     dc.w $082E
-    dc.w $0006
-    dc.w $0022
+    ori.b #$22,d6
     beq.s loc_00EB28
     eori.w #$0800,d0
 loc_00EB28:
@@ -26334,63 +26629,51 @@ loc_00EB2A:
     dc.w $4000
     moveq #0,d1
     move.w (48,a6),d0
-    dc.w $0240
-    dc.w $0008
+    andi.w #$0008,d0
     beq.s loc_00EB6C
     move.w (50,a6),d0
-    dc.w $0240
-    dc.w $0004
+    andi.w #$0004,d0
     beq.s loc_00EB6C
     dc.w $08EE
-    dc.w $0003
-    dc.w $0023
+    ori.b #$23,d3
     dc.w $3D7C
     dc.w $3A6A
-    dc.w $0004
-    move.w #$0202,d1
-    dc.w $082E
-    dc.w $0004
-    dc.w $0020
+    ori.b #$3C,d4
+    andi.b #$2E,d2
+    ori.b #$20,d4
     beq.s loc_00EB60
     move.w #$020B,d1
 loc_00EB60:
     jsr loc_00EAF2
-    dc.w $0240
-    dc.w $1800
+    andi.w #$1800,d0
     or.w d0,d1
 loc_00EB6C:
     dc.w $3001
     dc.w $4CDF
-    dc.w $0002
-    rts
+    ori.b #$75,d2
 loc_00EB74:
     dc.w $48E7
     dc.w $4000
     moveq #0,d1
     move.w (48,a6),d0
-    dc.w $0240
-    dc.w $0008
+    andi.w #$0008,d0
     beq.s loc_00EBAA
     move.w (50,a6),d0
-    dc.w $0240
-    dc.w $0004
+    andi.w #$0004,d0
     beq.s loc_00EBAA
     dc.w $08EE
-    dc.w $0003
-    dc.w $0023
+    ori.b #$23,d3
     dc.w $3D7C
     dc.w $3A6E
-    dc.w $0004
-    move.w #$0214,d1
-    jsr loc_00EAF2
-    dc.w $0240
-    dc.w $1800
+    ori.b #$3C,d4
+    andi.b #$B9,(a4)
+    ori.b #$F2,d0
+    andi.w #$1800,d0
     or.w d0,d1
 loc_00EBAA:
     dc.w $3001
     dc.w $4CDF
-    dc.w $0002
-    rts
+    ori.b #$75,d2
 loc_00EBB2:
     dc.w $48E7
     bra.w loc_011FE4
@@ -26419,8 +26702,7 @@ loc_00EBFA:
     dc.w $3851
     dc.w $3A53
     dc.w $082D
-    dc.w $0005
-    dc.w $0023
+    ori.b #$23,d5
     bne.s loc_00EC14
     move.w (18,a4),d0
     cmp.w (18,a5),d0
@@ -26446,37 +26728,30 @@ loc_00EC32:
     bge.w loc_00EC90
     dc.w $3C5B
     dc.w $306E
-    dc.w $0002
-    jsr (a0)
+    ori.b #$90,d2
     dc.w $3600
     jsr loc_00EAF2
     dc.w $082E
-    dc.w $0003
-    dc.w $0023
+    ori.b #$23,d3
     bne.s loc_00EC5E
     dc.w $3200
-    dc.w $0240
-    dc.w $1800
-    dc.w $0241
-    dc.w $E7FF
+    andi.w #$1800,d0
+    andi.w #$E7FF,d1
     add.w d1,d3
     dc.w $B143
 loc_00EC5E:
     dc.w $326E
-    dc.w $0004
-    move.w (14,a6),d1
+    ori.b #$2E,d4
+    dc.w $000E
     jsr loc_00EA7A
     dc.w $48E7
-    dc.w $0040
-    jsr loc_00EBB2
+    ori.w #$4EB9,d0
+    ori.b #$B2,d0
     dc.w $3400
     dc.w $4CDF
-    dc.w $0200
-    dc.w $0641
-    dc.w $0000
-    dc.w $0642
-    dc.w $0000
-    moveq #0,d4
+    andi.b #$41,d0
+    ori.b #$42,d0
+    ori.b #$00,d0
     jsr loc_0050CA
     bra.w loc_00EC32
 loc_00EC90:
@@ -26530,8 +26805,7 @@ loc_00EC96:
     lea loc_00ED30,a6
     jsr loc_00ED54
 loc_00ECF8:
-    dc.w $0000
-    dc.w $ED54
+    ori.b #$54,d0
     tst.w d1
     beq.s loc_00ED02
     subq.w #1,d3
@@ -26553,8 +26827,7 @@ loc_00ED0C:
     lea loc_00ED31,a6
     jsr loc_00ED54
 loc_00ED26:
-    dc.w $0000
-    dc.w $ED54
+    ori.b #$54,d0
     tst.w d1
     beq.s loc_00ED30
     subq.w #1,d3
@@ -26589,8 +26862,7 @@ loc_00ED54:
     moveq #0,d2
     dc.w $3400
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $3239
     dc.w $FFFF
     dc.w $E40E
@@ -26598,21 +26870,15 @@ loc_00ED54:
     dc.w $B441
     blt.w loc_00EE18
     jsr loc_006722
-    dc.w $0280
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d0
     dc.w $80FC
-    dc.w $0024
-    dc.w $4840
+    ori.b #$40,-(a4)
     tst.w d0
     beq.w loc_00EE10
     jsr loc_006722
-    dc.w $0280
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d0
     dc.w $80FC
-    dc.w $0024
-    dc.w $4840
+    ori.b #$40,-(a4)
     tst.w d0
     beq.w loc_00EE18
     dc.w $3239
@@ -26624,15 +26890,11 @@ loc_00ED54:
     dc.w $FFFF
     dc.w $E3EA
     dc.w $C4FC
-    dc.w $0003
-    dc.w $0642
-    dc.w $0032
-    move.w #$0064,d3
+    ori.b #$42,d3
+    ori.b #$3C,(100,a2,d0.w)
     sub.w d2,d3
     jsr loc_006722
-    dc.w $0280
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d0
     dc.w $80C3
     dc.w $4840
     add.w d0,d2
@@ -26640,8 +26902,7 @@ loc_00ED54:
     dc.w $000A
     dc.w $C2C2
     dc.w $82FC
-    dc.w $0064
-    dc.w $3439
+    ori.w #$3439,-(a4)
     dc.w $FFFF
     dc.w $E408
     add.w ($FFFFE436).l,d2
@@ -26650,16 +26911,14 @@ loc_00ED54:
     blt.w loc_00EE18
 loc_00EE10:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E3A8
 loc_00EE18:
     jsr loc_006722
     moveq #0,d2
     dc.w $3400
     dc.w $84FC
-    dc.w $0064
-    dc.w $4842
+    ori.w #$4842,-(a4)
     dc.w $3239
     dc.w $FFFF
     dc.w $E3C6
@@ -26667,21 +26926,15 @@ loc_00EE18:
     dc.w $B441
     blt.w loc_00EECC
     jsr loc_006722
-    dc.w $0280
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d0
     dc.w $80FC
-    dc.w $0024
-    dc.w $4840
+    ori.b #$40,-(a4)
     tst.w d0
     beq.w loc_00EEC4
     jsr loc_006722
-    dc.w $0280
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d0
     dc.w $80FC
-    dc.w $0024
-    dc.w $4840
+    ori.b #$40,-(a4)
     tst.w d0
     beq.w loc_00EECC
     dc.w $3239
@@ -26693,15 +26946,11 @@ loc_00EE18:
     dc.w $FFFF
     dc.w $E432
     dc.w $C4FC
-    dc.w $0003
-    dc.w $0642
-    dc.w $0032
-    move.w #$0064,d3
+    ori.b #$42,d3
+    ori.b #$3C,(100,a2,d0.w)
     sub.w d2,d3
     jsr loc_006722
-    dc.w $0280
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d0
     dc.w $80C3
     dc.w $4840
     add.w d0,d2
@@ -26709,8 +26958,7 @@ loc_00EE18:
     dc.w $000A
     dc.w $C2C2
     dc.w $82FC
-    dc.w $0064
-    dc.w $3439
+    ori.w #$3439,-(a4)
     dc.w $FFFF
     dc.w $E3C0
     add.w ($FFFFE3EE).l,d2
@@ -26719,8 +26967,7 @@ loc_00EE18:
     blt.w loc_00EECC
 loc_00EEC4:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E3AA
 loc_00EECC:
     dc.w $3239
@@ -26730,8 +26977,7 @@ loc_00EECC:
     dc.w $FFFF
     dc.w $E3A8
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     beq.w loc_00EEE4
     dc.w $C342
 loc_00EEE4:
@@ -26751,26 +26997,20 @@ loc_00EF02:
     beq.w loc_00EF32
     dc.w $34C9
     dc.w $34BC
-    dc.w $0000
-    dc.w $0829
-    dc.w $0000
-    dc.w $0022
+    ori.b #$29,d0
+    ori.b #$22,d0
     beq.w loc_00EF1A
     dc.w $34BC
-    dc.w $0001
+    ori.b #$4A,d1
 loc_00EF1A:
     dc.w $544A
     dc.w $34D1
     dc.w $34E9
-    dc.w $0028
+    ori.b #$E9,(34,a0)
     dc.w $34E9
-    dc.w $0022
-    dc.w $34E9
-    dc.w $0002
-    dc.w $34E9
-    dc.w $0004
-    dc.w $34E9
-    dc.w $0042
+    ori.b #$E9,d2
+    ori.b #$E9,d4
+    ori.w #$D2FC,d2
 loc_00EF32:
     dc.w $D2FC
     dc.w $004A
@@ -26786,8 +27026,7 @@ loc_00EF48:
     dc.w $48E7
     dc.w $7F7E
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     bne.w loc_00EFEA
     dc.w $5279
     dc.w $FFFF
@@ -26809,24 +27048,18 @@ loc_00EF6A:
     beq.s loc_00EFAA
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_00EF8A:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_00EF8A
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13C1
-    dc.w $00A0
-    dc.w $1FFF
-    dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$1FFF33FC,-(a0)
+    ori.b #$A1,d0
     dc.w $1100
 loc_00EFAA:
     dc.w $3239
@@ -26873,24 +27106,18 @@ loc_00EFFE:
     beq.s loc_00F03E
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_00F01E:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_00F01E
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13C1
-    dc.w $00A0
-    dc.w $1FFF
-    dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$1FFF33FC,-(a0)
+    ori.b #$A1,d0
     dc.w $1100
 loc_00F03E:
     dc.w $3239
@@ -26940,8 +27167,7 @@ loc_00F080:
     lea loc_00F32A,a4
     lea loc_00F26C,a5
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     beq.s loc_00F0F8
     dc.w $3639
     dc.w $FFFF
@@ -26963,34 +27189,31 @@ loc_00F080:
 loc_00F0F8:
     moveq #0,d1
     dc.w $122A
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     moveq #0,d1
     move.w (102,a0),d1
     add.w d1,(a3)
     moveq #0,d1
     dc.w $1229
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (124,a0),d1
     dc.w $E749
     cmp.w (a3),d1
     bgt.s loc_00F186
     dc.w $0C29
     dc.w $000A
-    dc.w $0001
-    bge.s loc_00F142
+    ori.b #$18,d1
     lea loc_02C404,a2
     moveq #0,d2
     dc.w $1429
-    dc.w $0000
-    dc.w $E54A
+    ori.b #$4A,d0
     dc.w $0CB2
     dc.w $FFFF
     dc.w $FFFF
     dc.w $2000
     bne.s loc_00F14E
-loc_00F142:
     dc.w $0C29
     dc.w $0009
     dc.w $0008
@@ -27005,15 +27228,12 @@ loc_00F14E:
     dc.w $30BC
     dc.w $3A72
     dc.w $4268
-    dc.w $002A
-    dc.w $214C
-    dc.w $002C
+    ori.b #$4C,(44,a2)
     dc.w $214D
-    dc.w $0030
-    lea loc_FFFFE432,a2
+    ori.b #$F9,(-1,a0,a7.l)
+    dc.w $E432
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     beq.s loc_00F17E
     lea loc_FFFFE3EA,a2
 loc_00F17E:
@@ -27084,27 +27304,19 @@ loc_00F20E:
     rts
 loc_00F3A0:
     dc.w $526E
-    dc.w $002A
-    dc.w $226E
-    dc.w $002C
+    ori.b #$6E,(44,a2)
     dc.w $082E
-    dc.w $0000
-    dc.w $002B
+    ori.b #$2B,d0
     beq.s loc_00F3BE
     dc.w $226E
-    dc.w $0030
-    dc.w $0C6E
-    dc.w $005A
-    dc.w $002A
-    blt.s loc_00F3BE
-    dc.w $4256
+    ori.b #$6E,(90,a0,d0.w)
+    ori.b #$02,(16982,a2)
 loc_00F3BE:
     jsr (a1)
     rts
 loc_00F3C2:
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     bne.s loc_00F3D4
     dc.w $5279
     dc.w $FFFF
@@ -27118,8 +27330,7 @@ loc_00F3DA:
     rts
 loc_00F3DC:
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     bne.s loc_00F3F2
     dc.w $33F9
     dc.w $FFFF
@@ -27144,11 +27355,9 @@ loc_00F3FE:
     dc.w $E3BC
     jsr loc_00B550
 loc_00F40C:
-    dc.w $0000
-    eor.w d2,(a0)
+    ori.b #$50,d0
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E3D4
     dc.w $3039
     dc.w $FFFF
@@ -27156,9 +27365,8 @@ loc_00F40C:
     cmp.b (3,a0),d0
     blt.s loc_00F434
     dc.w $4228
-    dc.w $0003
-    dc.w $33FC
-    dc.w $0001
+    ori.b #$FC,d3
+    ori.b #$FF,d1
 loc_00F42C:
     dc.w $FFFF
     dc.w $E3D4
@@ -27174,8 +27382,7 @@ loc_00F438:
     dc.w $E404
     jsr loc_00B550
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E41C
     dc.w $3039
     dc.w $FFFF
@@ -27183,10 +27390,8 @@ loc_00F438:
     cmp.b (3,a0),d0
     blt.s loc_00F46E
     dc.w $4228
-    dc.w $0003
-    dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FC,d3
+    ori.b #$FF,d1
     dc.w $E41C
     bra.w loc_00F472
 loc_00F46E:
@@ -27208,8 +27413,7 @@ loc_00F474:
     dc.w $1179
     dc.w $FFFF
     dc.w $E3D1
-    dc.w $0007
-    dc.w $3239
+    ori.b #$39,d7
     dc.w $FFFF
     dc.w $E402
     dc.w $3439
@@ -27221,15 +27425,13 @@ loc_00F474:
     dc.w $1179
     dc.w $FFFF
     dc.w $E419
-    dc.w $0007
-    dc.w $4CDF
+    ori.b #$DF,d7
     moveq #-2,d7
     rts
 loc_00F4C2:
     move.w #$0001,d0
     dc.w $082E
-    dc.w $0000
-    dc.w $0022
+    ori.b #$22,d0
     beq.s loc_00F4D0
     dc.w $4440
 loc_00F4D0:
@@ -27237,17 +27439,14 @@ loc_00F4D0:
     rts
 loc_00F4D4:
     dc.w $082E
-    dc.w $0004
-    dc.w $0023
+    ori.b #$23,d4
     beq.s loc_00F4E4
     dc.w $0C6E
-    dc.w $0001
-    dc.w $002C
+    ori.b #$2C,d1
     bgt.s loc_00F4EA
 loc_00F4E4:
     dc.w $08EE
-    dc.w $0002
-    dc.w $0022
+    ori.b #$22,d2
 loc_00F4EA:
     rts
 loc_00F4EC:
@@ -27308,17 +27507,14 @@ loc_00F7FD:
     dc.w $FC00
     dc.w $0A4E
     dc.w $B900
-    dc.w $0062
-    dc.w $0054
+    ori.w #$0054,-(a2)
     dc.w $4138
     dc.w $3C80
     dc.w $054E
     dc.w $B900
-    dc.w $005E
-    dc.w $B04E
+    ori.w #$B04E,(a6)+
     dc.w $B900
-    dc.w $0064
-    bge.s loc_00F859
+    ori.w #$6C30,-(a4)
     dc.w $BC03
     dc.w $A831
     moveq #0,d6
@@ -27342,24 +27538,21 @@ loc_00F7FD:
     dc.w $3C00
     dc.w $1436
     dc.w $3CC0
-loc_00F859:
-    dc.w $0038
-    dc.w $3C84
-    dc.w $C542
+    ori.b #$84,($C542).w
     dc.w $4543
     dc.w $F900
     dc.w $00FB
     add.w a6,d0
     dc.w $B900
-    dc.w $005C
-    add.b (0,a2,d3.l),d6
+    ori.w #$DC32,(a4)+
+    dc.w $3C00
     dc.w $1634
     dc.w $3C00
     dc.w $1536
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C85
-    eori.b #$00,(60,pc)
+    ori.b #$85,($0A3A).w
+    dc.w $3C00
+    dc.w $003C
     dc.w $3C00
     dc.w $023E
     dc.w $39FF
@@ -27369,21 +27562,20 @@ loc_00F859:
     dc.w $FFE3
     and.w a6,d4
     dc.w $B900
-    dc.w $0062
-    dc.w $0054
+    ori.w #$0054,-(a2)
     dc.w $4138
     dc.w $3C80
     dc.w $054E
     dc.w $B900
-    dc.w $005E
-    cmp.b (0,a2,d3.l),d0
+    ori.w #$B032,(a6)+
+    dc.w $3C00
     dc.w $0F34
     dc.w $3C00
     dc.w $1536
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C85
-    eori.b #$00,(60,pc)
+    ori.b #$85,($0A3A).w
+    dc.w $3C00
+    dc.w $003C
     dc.w $3C00
     dc.w $023E
     dc.w $39FF
@@ -27393,14 +27585,12 @@ loc_00F859:
     dc.w $FFE4
     dc.w $104E
     dc.w $B900
-    dc.w $0062
-    dc.w $0054
+    ori.w #$0054,-(a2)
     dc.w $4138
     dc.w $3C80
     dc.w $054E
     dc.w $B900
-    dc.w $005E
-    dc.w $B04C
+    ori.w #$B04C,(a6)+
     dc.w $DF7E
     dc.w $FE4E
     dc.w $7548
@@ -27412,32 +27602,26 @@ loc_00F8DE:
     tst.w d7
     dc.w $4767
     beq.w loc_00F906
-    dc.w $0000
-    dc.w $2048
+    ori.b #$48,d0
     dc.w $48E7
     dc.w $E708
     dc.w $0800
-    dc.w $0038
+    ori.b #$80,($0B4E).w
     move.w #$800B,d4
-    dc.w $3C80
-    dc.w $0B4E
     jsr loc_005EB0
     dc.w $B900
-    dc.w $005E
-    dc.w $B04C
+    ori.w #$B04C,(a6)+
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0010
+    ori.b #$41,(a0)
     dc.w $1052
-    addq.w #1,d1
     dc.w $413C
     move.w #$0001,d6
     dc.w $3C00
     dc.w $014E
     jsr loc_006200
     dc.w $B900
-    dc.w $0062
-    dc.w $004C
+    ori.w #$004C,-(a2)
 loc_00F906:
     dc.w $4CDF
     dc.w $DF7E
@@ -27458,14 +27642,11 @@ loc_00F90C:
     dc.w $484E
     jsr loc_00665E
     dc.w $B900
-    dc.w $0066
-    dc.w $5E32
+    ori.w #$5E32,-(a6)
     dc.w $3200
-    dc.w $0030
+    ori.b #$E7,(-40,a0,d4.l)
     dc.w $3004
-    dc.w $04E7
     dc.w $E74C
-    dc.w $4CD8
     add.w d0,d4
     dc.w $4006
     dc.w $0644
@@ -27548,9 +27729,8 @@ loc_00F939:
     moveq #76,d2
     dc.w $4CDF
     dc.w $DF02
-    dc.w $021E
+    andi.b #$75,(a6)+
     dc.w $1E4E
-    rts
     dc.w $7548
 loc_00F984:
     dc.w $48E7
@@ -27577,17 +27757,15 @@ loc_00F984:
     dc.w $1136
     move.w #$C000,d3
     dc.w $3CC0
-    dc.w $0042
+    ori.w #$4543,d2
     clr.w d5
-    dc.w $4543
     lea loc_00FB96,a1
     dc.w $F900
     dc.w $00FB
     sub.w a6,d3
     jsr loc_005CDC
     dc.w $B900
-    dc.w $005C
-    add.w a4,d6
+    ori.w #$DC4C,(a4)+
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -27635,9 +27813,7 @@ loc_00F9B6:
     rts
     dc.w $75F8
     dc.w $05F8
-    dc.w $0031
-    dc.w $FC00
-    dc.w $1DAE
+    ori.b #$00,(-82,a1,d1.l)
     dc.w $EC31
     dc.w $FC00
     dc.w $14AE
@@ -27652,9 +27828,7 @@ loc_00F9B6:
     dc.w $00FA
     move.l d6,(-1458,a6)
     dc.w $B900
-    dc.w $0086
-    dc.w $2E4E
-    dc.w $7500
+    ori.l #$2E4E7500,d6
     eori.b #$C0,d0
     dc.w $00FF
     dc.w $FF36
@@ -27663,46 +27837,35 @@ loc_00F9B6:
     dc.w $E042
     dc.w $444E
     dc.w $B900
-    dc.w $00B5
-    and.b -(a4),d4
-    dc.w $4842
-    dc.w $4112
+    ori.l #$C8244842,(18,a5,d4.w)
     dc.w $2A00
     dc.w $0143
     dc.w $F900
-    dc.w $02B3
-    dc.w $3AE9
-    lea (a2),a4
-    and.b d0,(0,a2,d3.l)
+    andi.l #$3AE949D2,(50,a3,a4.w)
+    dc.w $3C00
     dc.w $0134
     dc.w $3C00
     dc.w $0136
     dc.w $3CD0
-    dc.w $0038
-    dc.w $3C80
-    dc.w $003A
+    ori.b #$80,($003A).w
     dc.w $3C00
     dc.w $003C
     dc.w $3C00
     dc.w $004E
     dc.w $B900
-    dc.w $005F
-    sub.b (0,a2,d3.l),d3
+    ori.w #$9632,(a7)+
+    dc.w $3C00
     dc.w $0334
     dc.w $3C00
-    dc.w $0243
-    dc.w $F900
+    andi.w #$F900,d3
     dc.w $00FA
     sub.w a6,d7
     dc.w $B900
-    dc.w $005F
-    moveq #50,d6
+    ori.w #$7C32,(a7)+
     dc.w $3C00
     dc.w $0534
     dc.w $3C00
-    dc.w $0238
-    dc.w $3C80
-    dc.w $103C
+    andi.b #$80,($103C).w
     dc.w $3C00
     dc.w $023E
     dc.w $39FF
@@ -27710,13 +27873,10 @@ loc_00F9B6:
     dc.w $EA52
     dc.w $474E
     dc.w $B900
-    dc.w $0062
-    dc.w $004E
+    ori.w #$004E,-(a2)
     dc.w $754C
     dc.w $56FF
-    dc.w $0031
-    dc.w $FC00
-    dc.w $01AE
+    ori.b #$00,(-82,a1,d0.w)
     dc.w $EC31
     dc.w $FC00
     dc.w $14AE
@@ -27731,9 +27891,7 @@ loc_00F9B6:
     dc.w $00FA
     add.l (-1458,a6),d5
     dc.w $B900
-    dc.w $0086
-    dc.w $2E4E
-    dc.w $7500
+    ori.l #$2E4E7500,d6
     eori.b #$C0,d0
     dc.w $00FF
     dc.w $FF36
@@ -27742,46 +27900,35 @@ loc_00F9B6:
     dc.w $2842
     dc.w $444E
     dc.w $B900
-    dc.w $00B5
-    and.b -(a4),d4
-    dc.w $4842
-    dc.w $4112
+    ori.l #$C8244842,(18,a5,d4.w)
     dc.w $2A00
     dc.w $0143
     dc.w $F900
-    dc.w $02B3
-    dc.w $3AE9
-    lea (a2),a4
-    and.b d0,(0,a2,d3.l)
+    andi.l #$3AE949D2,(50,a3,a4.w)
+    dc.w $3C00
     dc.w $0134
     dc.w $3C00
     dc.w $0136
     dc.w $3CD0
-    dc.w $0038
-    dc.w $3C80
-    dc.w $003A
+    ori.b #$80,($003A).w
     dc.w $3C00
     dc.w $003C
     dc.w $3C00
     dc.w $004E
     dc.w $B900
-    dc.w $005F
-    sub.b (0,a2,d3.l),d3
+    ori.w #$9632,(a7)+
+    dc.w $3C00
     dc.w $0334
     dc.w $3C00
-    dc.w $0243
-    dc.w $F900
+    andi.w #$F900,d3
     dc.w $00FB
     dc.w $4C4E
     dc.w $B900
-    dc.w $005F
-    moveq #50,d6
+    ori.w #$7C32,(a7)+
     dc.w $3C00
     dc.w $0534
     dc.w $3C00
-    dc.w $0238
-    dc.w $3C80
-    dc.w $103C
+    andi.b #$80,($103C).w
     dc.w $3C00
     dc.w $023E
     dc.w $39FF
@@ -27789,8 +27936,7 @@ loc_00F9B6:
     dc.w $3252
     dc.w $474E
     dc.w $B900
-    dc.w $0062
-    dc.w $004E
+    ori.w #$004E,-(a2)
     dc.w $754C
     dc.w $56FF
     dc.w $0048
@@ -27807,11 +27953,11 @@ loc_00FB50:
     dc.w $1336
     move.w #$C000,d3
     dc.w $3CC0
-    dc.w $0038
+    ori.b #$85,($0A3A).w
     move.w #$850A,d4
-    dc.w $3C85
-    eori.b #$00,(60,pc)
     move.w #$0000,d5
+    dc.w $3C00
+    dc.w $003C
     move.w #$0002,d6
     dc.w $3C00
     dc.w $023E
@@ -27823,8 +27969,7 @@ loc_00FB50:
     dc.w $EA4E
     jsr loc_006200
     dc.w $B900
-    dc.w $0062
-    dc.w $0032
+    ori.w #$0032,-(a2)
     move.w #$000C,d1
     dc.w $3C00
     dc.w $0C34
@@ -27839,8 +27984,7 @@ loc_00FB50:
     dc.w $324E
     jsr loc_006200
     dc.w $B900
-    dc.w $0062
-    dc.w $004C
+    ori.w #$004C,-(a2)
     dc.w $4CDF
     dc.w $DF7E
     moveq #-2,d7
@@ -27848,8 +27992,7 @@ loc_00FB50:
     rts
     dc.w $75F0
     dc.w $05F8
-    dc.w $0000
-    dc.w $0200
+    ori.b #$00,d0
     eori.b #$FA,d0
     dc.w $000A
     dc.w $1401
@@ -27867,8 +28010,7 @@ loc_00FB50:
     dc.w $1C09
     dc.w $131D
     dc.w $FF00
-    dc.w $0200
-    dc.w $1000
+    andi.b #$00,d0
     dc.w $03FA
     dc.w $FE15
     bcs.s loc_00FBE8
@@ -27877,8 +28019,8 @@ loc_00FB50:
     dc.w $26FE
     dc.w $1565
     dc.w $FF00
-    dc.w $0200
-    eori.b #$FA,d0
+    andi.b #$00,d0
+    dc.w $02FA
     dc.w $FE08
     dc.w $1250
     dc.w $5251
@@ -27891,53 +28033,41 @@ loc_00FB50:
 loc_00FBE8:
     dc.w $FC1E
     dc.w $1E00
-    dc.w $0000
+    ori.b #$22,d0
     dc.w $00FC
-    dc.w $FC22
 loc_00FBED:
     dc.w $2200
-    dc.w $0000
+    ori.b #$26,d0
     dc.w $00FC
-    dc.w $FC26
     dc.w $2600
-    dc.w $0000
+    ori.b #$36,d0
     dc.w $00FC
-    dc.w $FC36
     dc.w $3600
-    dc.w $0000
+    ori.b #$3A,d0
     dc.w $00FC
-    dc.w $FC3A
     dc.w $3A00
-    dc.w $0000
+    ori.b #$3E,d0
     dc.w $00FC
-    dc.w $FC3E
     dc.w $3E00
-    dc.w $0000
+    ori.b #$4E,d0
     dc.w $00FC
-    dc.w $FC4E
     dc.w $4E00
-    dc.w $0000
+    ori.b #$5E,d0
     dc.w $00FC
-    dc.w $FC5E
     addq.b #7,d0
-    dc.w $0000
+    ori.b #$6E,d0
     dc.w $00FC
-    dc.w $FC6E
     bgt.w loc_00FD07
-    dc.w $0000
-    dc.w $FC7E
+    ori.b #$7E,d0
     moveq #0,d7
-    dc.w $0000
+    ori.b #$82,d0
     dc.w $00FC
-    dc.w $FC82
     or.b d0,d1
-    dc.w $0000
+    ori.b #$8E,d0
     dc.w $00FC
-    dc.w $FC8E
     or.b d0,d7
-    dc.w $0000
+    ori.b #$92,d0
     dc.w $00FC
-    dc.w $FC92
     dc.w $92FF
     dc.w $FFFF
     dc.w $FF00
@@ -27945,68 +28075,50 @@ loc_00FBED:
     dc.w $0EFF
     dc.w $FFFF
     dc.w $FF00
-    dc.w $0005
+    ori.b #$FF,d5
     dc.w $05FF
-    dc.w $FFFF
     dc.w $FF00
-    dc.w $0000
-    dc.w $0000
-    dc.w $0003
+    ori.b #$03,d0
+    ori.b #$00,d0
+    ori.b #$0B,d3
     dc.w $0300
-    dc.w $0003
-    dc.w $0300
-    dc.w $000B
     dc.w $0B00
-    dc.w $0003
+    ori.b #$0A,d3
     dc.w $0300
-    dc.w $000A
     eori.b #$FF,d0
-    dc.w $0003
-    dc.w $FFFF
+    ori.b #$FF,d3
     dc.w $FF00
-    dc.w $0004
+    ori.b #$FF,d4
     dc.w $04FF
-    dc.w $FFFF
     dc.w $FF00
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FF00
-    dc.w $0002
-    dc.w $0200
-    dc.w $0006
+    ori.b #$06,d2
+    andi.b #$00,d0
+    ori.b #$07,d6
     dc.w $0600
-    dc.w $0006
-    dc.w $0600
-    dc.w $0007
     dc.w $0700
-    dc.w $0006
+    ori.b #$0B,d6
     dc.w $0600
-    dc.w $000B
     dc.w $0B00
-    dc.w $0006
+    ori.b #$FF,d6
     dc.w $06FF
-    dc.w $FFFF
     dc.w $FF00
-    dc.w $0007
+    ori.b #$06,d7
     dc.w $0700
-    dc.w $0006
     dc.w $0600
-    dc.w $0006
+    ori.b #$07,d6
     dc.w $0600
-    dc.w $0007
     dc.w $0700
-    dc.w $0006
+    ori.b #$0B,d6
     dc.w $0600
-    dc.w $000B
     dc.w $0B00
-    dc.w $0006
+    ori.b #$FF,d6
     dc.w $06FF
-    dc.w $FFFF
     dc.w $FF00
-    dc.w $0007
+    ori.b #$08,d7
     dc.w $0700
-    dc.w $0008
     dc.w $0800
     dc.w $000A
     eori.b #$00,d0
@@ -28037,13 +28149,11 @@ loc_00FBED:
     dc.w $FF00
     dc.w $000D
     dc.w $0D00
-    dc.w $0006
+    ori.b #$08,d6
     dc.w $0600
-    dc.w $0008
     dc.w $0800
-    dc.w $0007
+    ori.b #$08,d7
     dc.w $0700
-    dc.w $0008
     dc.w $08FF
     dc.w $FFFF
     dc.w $FF00
@@ -28055,51 +28165,37 @@ loc_00FBED:
     dc.w $0FFF
     dc.w $FFFF
     dc.w $FF00
-    dc.w $0010
+    ori.b #$30,(a0)
     dc.w $1000
-    dc.w $0030
     dc.w $3000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0038
-    dc.w $38FF
+    ori.b #$38,d0
+    ori.b #$FF,d0
     dc.w $FFF5
     dc.w $F500
-    dc.w $0040
+    ori.w #$FFEA,d0
     dc.w $40FF
-    dc.w $FFEA
     dc.w $EA00
     dc.w $0048
     dc.w $4800
-    dc.w $0000
-    dc.w $0000
-    dc.w $0050
-    dc.w $50FF
+    ori.b #$50,d0
+    ori.b #$FF,d0
     dc.w $FFF5
     dc.w $F500
-    dc.w $0058
+    ori.w #$FFEA,(a0)+
     dc.w $58FF
-    dc.w $FFEA
     dc.w $EA00
-    dc.w $0060
+    ori.w #$0000,-(a0)
     bra.w loc_00FCB1
-    dc.w $0000
 loc_00FCB1:
-    dc.w $0000
-    dc.w $0068
-    dc.w $68FF
-    dc.w $FFF5
+    ori.b #$FF,d0
+    ori.w #$FFF5,(112,a0)
     dc.w $F500
-    dc.w $0070
     moveq #-1,d0
     dc.w $FFEA
     dc.w $EA00
-    dc.w $0078
+    ori.w #$0000,($0000).w
     moveq #0,d4
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0015
+    ori.b #$15,d0
     dc.w $156E
     bgt.s loc_00FCD8
     dc.w $156E
@@ -28289,93 +28385,66 @@ loc_00FD25:
     dc.w $AE0F
     dc.w $0FE4
     dc.w $E400
-    dc.w $0000
-    dc.w $0000
-    dc.w $001E
-    dc.w $1E00
-    dc.w $001F
+    ori.b #$1E,d0
+    ori.b #$00,d0
+    ori.b #$20,(a7)+
     dc.w $1F00
-    dc.w $0020
     dc.w $2000
-    dc.w $0021
+    ori.b #$22,-(a1)
     dc.w $2100
-    dc.w $0022
     dc.w $2200
-    dc.w $0023
+    ori.b #$24,-(a3)
     dc.w $2300
-    dc.w $0024
     dc.w $2400
-    dc.w $0025
+    ori.b #$26,-(a5)
     dc.w $2500
-    dc.w $0026
     dc.w $2600
-    dc.w $0027
+    ori.b #$28,-(a7)
     dc.w $2700
-    dc.w $0028
     dc.w $2800
-    dc.w $0029
+    ori.b #$2A,(43,a1)
     dc.w $2900
-    dc.w $002A
     dc.w $2A00
-    dc.w $002B
     dc.w $2B00
-    dc.w $002C
+    ori.b #$2D,(46,a4)
     dc.w $2C00
-    dc.w $002D
     dc.w $2D00
-    dc.w $002E
     dc.w $2E00
-    dc.w $002F
+    ori.b #$30,(49,a7)
     dc.w $2F00
-    dc.w $0030
     dc.w $3000
-    dc.w $0031
     dc.w $3100
-    dc.w $0032
+    ori.b #$33,(52,a2,d0.w)
     dc.w $3200
-    dc.w $0033
     dc.w $3300
-    dc.w $0034
     dc.w $3400
-    dc.w $0035
+    ori.b #$36,(55,a5,d0.w)
     dc.w $3500
-    dc.w $0036
     dc.w $3600
-    dc.w $0037
     dc.w $3700
-    dc.w $0038
+    ori.b #$39,($003A).w
     dc.w $3800
-    dc.w $0039
     dc.w $3900
-    dc.w $003A
     dc.w $3A00
-    dc.w $003B
+    ori.b #$3C,(61,pc,d0.w)
     dc.w $3B00
-    dc.w $003C
     dc.w $3C00
-    dc.w $003D
     dc.w $3D00
-    dc.w $0036
+    ori.b #$3F,(64,a6,d0.w)
     dc.w $3600
-    dc.w $003F
     dc.w $3F00
-    dc.w $0040
     dc.w $4000
-    dc.w $0041
+    ori.w #$0042,d1
     dc.w $4100
-    dc.w $0042
     clr.b d0
-    dc.w $0043
+    ori.w #$0044,d3
     dc.w $4300
-    dc.w $0044
     dc.w $4400
-    dc.w $0045
+    ori.w #$0046,d5
     dc.w $4500
-    dc.w $0046
     dc.w $4600
-    dc.w $0047
+    ori.w #$0048,d7
     dc.w $4700
-    dc.w $0048
     dc.w $4800
     dc.w $0049
     dc.w $4900
@@ -28391,82 +28460,64 @@ loc_00FD25:
     dc.w $4E00
     dc.w $004F
     dc.w $4F00
-    dc.w $0050
+    ori.w #$0051,(a0)
     addq.b #8,d0
-    dc.w $0051
     subq.b #8,d0
-    dc.w $0052
+    ori.w #$0053,(a2)
     addq.b #1,d0
-    dc.w $0053
     subq.b #1,d0
-    dc.w $0054
+    ori.w #$0055,(a4)
     addq.b #2,d0
-    dc.w $0055
     subq.b #2,d0
-    dc.w $0056
+    ori.w #$0057,(a6)
     addq.b #3,d0
-    dc.w $0057
     subq.b #3,d0
-    dc.w $0058
+    ori.w #$0059,(a0)+
     addq.b #4,d0
-    dc.w $0059
     subq.b #4,d0
-    dc.w $005A
+    ori.w #$005B,(a2)+
     addq.b #5,d0
-    dc.w $005B
     subq.b #5,d0
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $0000
-    dc.w $005E
+    ori.b #$00,d0
+    ori.b #$00,d0
+    ori.w #$005F,(a6)+
     addq.b #7,d0
-    dc.w $005F
     subq.b #7,d0
-    dc.w $0060
+    ori.w #$0061,-(a0)
     bra.w loc_015EFD
-    dc.w $0061
-    dc.w $0062
-    dc.w $0063
-    dc.w $0064
-    dc.w $0065
-    dc.w $0000
-    dc.w $0000
-    dc.w $0068
-    dc.w $0069
-    dc.w $006A
-    dc.w $006B
-    dc.w $006C
-    dc.w $006D
-    dc.w $006E
-    dc.w $006F
-    dc.w $0070
-    dc.w $0071
-    dc.w $0072
-    dc.w $0073
-    dc.w $0074
-    dc.w $0075
-    dc.w $0076
-    dc.w $0077
+    ori.w #$0063,-(a2)
+    ori.w #$0065,-(a4)
+    ori.b #$00,d0
+    ori.w #$0069,(106,a0)
+    ori.w #$006C,(109,a3)
+    ori.w #$006F,(112,a6)
+    ori.w #$0072,(115,a1,d0.w)
+    ori.w #$0075,(118,a4,d0.w)
+    ori.w #$48E7,(96,a7,d6.w)
 loc_00FE2A:
     dc.w $48E7
     bra.s loc_00FE8E
+    move.w #$0002,d1
+    move.w #$0000,d2
+    jsr loc_0053B4
+    move.w #$0003,d1
+    move.w #$2000,d2
+    jsr loc_0053B4
+    lea loc_009012,a1
+    lea loc_00FE60,a2
+    jsr loc_00596A
+    dc.w $4CDF
+    dc.w $0606
+    rts
 loc_00FE8E:
-    dc.w $0000
-    dc.w $0888
-    dc.w $0000
-    dc.w $0026
-    dc.w $0002
-    eori.w #$0600,d0
-    dc.w $006A
-    dc.w $0008
-    dc.w $0060
-    dc.w $0020
-    dc.w $0808
-    dc.w $0202
-    dc.w $0200
-    dc.w $0000
-    dc.w $0666
+    ori.b #$88,d0
+    ori.b #$26,d0
+    ori.b #$40,d2
+    dc.w $0600
+    ori.w #$0008,(96,a2)
+    ori.b #$08,-(a0)
+    andi.b #$00,d2
+    ori.b #$66,d0
     jsr loc_004878
     jsr loc_008F22
     jsr loc_00B550
@@ -28481,12 +28532,10 @@ loc_00FE8E:
     dc.w $FFFF
     dc.w $E70E
     dc.w $13E8
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E78B
     dc.w $13E8
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E789
     dc.w $13E8
     dc.w $000A
@@ -28496,28 +28545,23 @@ loc_00FE8E:
     dc.w $000A
     bne.s loc_00FF0A
     dc.w $31FC
-    dc.w $0012
-    dc.w $AEEC
+    ori.b #$EC,(a2)
     dc.w $31FC
-    dc.w $0005
-    dc.w $AEEE
+    ori.b #$EE,d5
     dc.w $21FC
-    dc.w $0003
-    dc.w $0CF6
+    ori.b #$F6,d3
     dc.w $AEF4
     bra.s loc_00FF20
 loc_00FF0A:
     bra.s loc_00FF3C
 loc_00FF20:
     dc.w $21FC
-    dc.w $0000
-    dc.w $FF3E
+    ori.b #$3E,d0
     dc.w $AEFA
     move.l #$00008812,d0
     jsr loc_00485E
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E70C
 loc_00FF3C:
     rts
@@ -28530,8 +28574,7 @@ loc_01014D:
     dc.w $1E0C
     dc.w $4300
     dc.w $086D
-    dc.w $0001
-    dc.w $4E60
+    ori.b #$60,d1
     dc.w $1C21
     dc.w $FC00
     dc.w $030D
@@ -28549,12 +28592,10 @@ loc_010160:
     dc.w $E780
     or.w -(a0),d0
     bra.w loc_01021C
-    dc.w $0000
-    dc.w $AE0C
+    ori.b #$0C,d0
     dc.w $4300
     dc.w $086C
-    dc.w $0001
-    dc.w $3042
+    ori.b #$42,d1
     dc.w $79FF
     dc.w $FFE7
     or.b (a3),d4
@@ -28592,30 +28633,25 @@ loc_010160:
     dc.w $2800
     dc.w $0208
     dc.w $0500
-    dc.w $0066
+    ori.w #$1408,-(a6)
 loc_0101C4:
     bne.s loc_0101DA
-    dc.w $1408
     dc.w $0805
     dc.w $0500
-    dc.w $0004
+    ori.b #$00,d4
     dc.w $0466
-    bne.w loc_0101DA
-    dc.w $0000
-    dc.w $0E08
+    ori.b #$08,d0
+    dc.w $000E
     dc.w $0805
 loc_0101CF:
     dc.w $0500
-    dc.w $0005
+    ori.b #$06,d5
     dc.w $0566
-    bne.s loc_0101DA
     dc.w $0608
     dc.w $0805
     dc.w $0500
-    dc.w $0002
-    dc.w $0267
-    beq.s loc_0101E2
-    dc.w $0813
+    ori.b #$08,d2
+    andi.w #$0813,-(a7)
 loc_0101DA:
     dc.w $13FC
     dc.w $FC00
@@ -28625,7 +28661,6 @@ loc_0101DA:
     dc.w $FFE7
     dc.w $E780
     or.w -(a0),d0
-loc_0101E2:
     bra.s loc_01021C
     dc.w $3843
     dc.w $F900
@@ -28641,28 +28676,23 @@ loc_0101E2:
     dc.w $2800
     dc.w $0208
     dc.w $0500
-    dc.w $0066
-    dc.w $0000
+    ori.w #$0000,-(a6)
     bhi.s loc_01020D
     dc.w $0500
     dc.w $0466
-    dc.w $0000
-    dc.w $5A08
+    ori.b #$08,d0
 loc_01020D:
     dc.w $0500
     dc.w $0566
-    dc.w $0000
-    dc.w $5208
+    ori.b #$08,d0
     dc.w $0500
-    dc.w $0266
-    dc.w $0000
+    andi.w #$0000,-(a6)
     dc.w $4A23
 loc_01021C:
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$40,d1
     dc.w $0102
-    dc.w $0240
     dc.w $40FF
     dc.w $FFFF
     dc.w $FF80
@@ -28673,9 +28703,8 @@ loc_01021C:
     dc.w $AEFA
     dc.w $33FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FFE7
     dc.w $E77A
     moveq #32,d5
@@ -28722,10 +28751,7 @@ loc_01021C:
     dc.w $0C67
     dc.w $0C31
     dc.w $FC00
-    dc.w $02AE
-    dc.w $EC31
-    dc.w $FC00
-    dc.w $0BAE
+    andi.l #$EC31FC00,(2990,a6)
     dc.w $EE21
     dc.w $FC00
     dc.w $030D
@@ -28796,17 +28822,15 @@ loc_01021C:
     dc.w $0167
     dc.w $180C
     dc.w $4500
-    dc.w $0267
-    dc.w $0000
+    andi.w #$0000,-(a7)
     dc.w $360C
     dc.w $4500
     dc.w $0367
-    dc.w $0000
-    dc.w $0A0C
+    ori.b #$0C,d0
     dc.w $4500
     dc.w $0467
-    dc.w $0000
-    move.w (-1,a3,a7.l),d2
+    ori.b #$33,d0
+    dc.w $F9FF
     dc.w $FFE7
     moveq #-1,d7
     dc.w $FFE7
@@ -28827,10 +28851,8 @@ loc_01021C:
     dc.w $39FF
     dc.w $FFE7
     dc.w $0E67
-    dc.w $0001
-    and.w -(a0),d2
-    dc.w $0001
-    dc.w $1431
+    ori.b #$60,d1
+    ori.b #$31,d1
     dc.w $FC00
     dc.w $01E2
     dc.w $1832
@@ -28839,8 +28861,7 @@ loc_01021C:
     dc.w $3C7D
     dc.w $204E
     dc.w $B900
-    dc.w $0053
-    dc.w $B442
+    ori.w #$B442,(a3)
     dc.w $39FF
     dc.w $FFE7
     or.b (0,a1,a7.l),d0
@@ -28942,26 +28963,21 @@ loc_010426:
     dc.w $4932
     move.w (2,a1,d1.w),d1
     dc.w $3110
-    dc.w $0255
+    andi.w #$416B,(a5)
     subq.w #2,d1
-    dc.w $416B
     bmi.s loc_010446
     dc.w $1638
     move.w #$0001,d4
     dc.w $3C00
     dc.w $0161
     bsr.w loc_00B5C8
-    dc.w $00B1
-    sub.b (a1),d1
+    ori.l #$921179FF,(-25,a1,a7.l)
     dc.w $1179
-    dc.w $79FF
     dc.w $FFFF
-    dc.w $FFE7
     dc.w $E77F
     dc.w $7F00
-    dc.w $0005
+    ori.b #$44,d5
     dc.w $0552
-    addq.w #1,d4
     dc.w $4451
     dbra d1,loc_010436
     dc.w $C9FF
@@ -28969,9 +28985,8 @@ loc_010426:
 loc_010446:
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$6A,d1
     dc.w $0104
-    dc.w $046A
     dc.w $6AFF
     dc.w $FFFF
     dc.w $FF80
@@ -29060,8 +29075,7 @@ loc_010446:
     dc.w $300C
     dc.w $4500
     dc.w $0167
-    dc.w $0000
-    dc.w $0233
+    ori.b #$33,d0
     dc.w $FC00
     dc.w $06FF
     dc.w $FFE7
@@ -29107,10 +29121,7 @@ loc_010446:
     dc.w $39FF
     dc.w $FFE7
     or.w -(a1),d4
-    dc.w $00B0
-    and.w d2,d4
-    dc.w $474A
-    moveq #112,d0
+    ori.l #$C842474A,(112,a0,d7.w)
     bvc.s loc_0105CA
     dc.w $0454
     dc.w $4760
@@ -29141,8 +29152,7 @@ loc_010446:
 loc_0105CA:
     beq.s loc_0105F6
     dc.w $23FC
-    dc.w $0001
-    dc.w $0332
+    ori.b #$32,d1
     dc.w $FFFF
     or.b (a0),d0
     dc.w $33FC
@@ -29169,11 +29179,9 @@ loc_0105F6:
     dc.w $7532
     move.w (-28594,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_010639
+    ori.w #$6C30,-(a4)
     cmp.b (-28639,pc),d6
     moveq #0,d6
     dc.w $030F
@@ -29181,37 +29189,178 @@ loc_0105F6:
     dc.w $0431
     moveq #-128,d6
     bra.w loc_010E5B
+loc_010E5B:
+    dc.w $0048
+    dc.w $5E20
+    dc.w $3C00
+    dc.w $008A
+    dc.w $A04E
+    dc.w $B900
+    dc.w $0048
+    dc.w $5E3A
+    dc.w $39FF
+    dc.w $FFE7
+    moveq #12,d7
+    dc.w $4500
+    dc.w $0467
+    dc.w $0C32
+    dc.w $39FF
+    dc.w $FFE7
+    moveq #78,d7
+    dc.w $B900
+    ori.w #$344E,(30002,pc)
+    dc.w $3C00
+    andi.b #$00,(54,a4,d0.w)
+    dc.w $3CD0
+    dc.w $004E
+    dc.w $B900
+    ori.l #$C6504243,d3
+    dc.w $F900
+    dc.w $0311
+    dc.w $2838
+    dc.w $3C80
+    ori.b #$00,(78,pc)
+    dc.w $B900
+    ori.w #$604E,(a7)+
+    dc.w $7532
+    dc.w $3C00
+    andi.b #$00,(54,a4,d0.w)
+    dc.w $3CD0
+    dc.w $004E
+    dc.w $B900
+    ori.l #$C64E7533,d3
+    dc.w $FC00
+    dc.w $00FF
+    dc.w $FFE7
+    moveq #49,d5
+    dc.w $FC00
+    dc.w $0CAE
+    dc.w $EC31
+    dc.w $FC00
+    dc.w $09AE
+    dc.w $EE21
+    dc.w $FC00
+    dc.w $0311
+    dc.w $5EAE
+    dc.w $F423
+    dc.w $FC00
+    dc.w $010E
+    dc.w $FEFF
+    dc.w $FF80
+    dc.w $1021
+    dc.w $FC00
+    ori.b #$AE,d0
+    dc.w $FA20
+    dc.w $3C00
+    dc.w $0088
+    dc.w $124E
+    dc.w $B900
+    dc.w $0048
+    dc.w $5E4E
+    dc.w $7523
+    dc.w $FC00
+    dc.w $010F
+    dc.w $46FF
+    dc.w $FF80
+    dc.w $1043
+    dc.w $F900
+    dc.w $0311
+    dc.w $4623
+    dc.w $C9FF
+    dc.w $FFE7
+    or.b (0,a1,a7.l),d1
+    dc.w $00E8
+    dc.w $224E
+    dc.w $B900
+    dc.w $007E
+    and.w -(a6),d6
+    eori.b #$00,(a3)
+    dc.w $04FF
+    dc.w $FFE7
+    or.w -(a0),d0
+    dc.w $0642
+    dc.w $39FF
+    dc.w $FFE7
+    or.w d2,d0
+    dc.w $79FF
+    dc.w $FFE7
+    moveq #32,d7
+    dc.w $3C00
+    dc.w $00FF
+    moveq #78,d5
+    dc.w $B900
+    dc.w $0048
+    dc.w $5E4E
+    dc.w $7533
+    dc.w $F9FF
+    dc.w $FFE7
+    moveq #-1,d7
+    dc.w $FFE7
+    moveq #78,d6
+    dc.w $B900
+    dc.w $0048
+    moveq #32,d4
+    dc.w $3C00
+    dc.w $008A
+    dc.w $A04E
+    dc.w $B900
+    dc.w $0048
+    dc.w $5E4E
+    dc.w $7548
 loc_010F64:
     dc.w $48E7
+    dc.w $E77F
     dc.w $7F7C
+    moveq #83,d6
     subq.w #1,d6
+    dc.w $464A
     dc.w $4A78
+    moveq #-82,d4
     dc.w $AEB6
+    cmp.w -(a7),d3
     beq.s loc_010F76
+    dc.w $0636
     move.w #$0008,d3
+    dc.w $3C00
+    dc.w $0860
     bra.s loc_010F78
+    andi.w #$4342,d2
 loc_010F76:
     clr.w d3
 loc_010F78:
     clr.w d4
+    dc.w $4443
     lea loc_FFFFE71A,a1
+    dc.w $F9FF
+    dc.w $FFE7
+    dc.w $1A61
     bsr.w loc_00B5C8
+    ori.l #$4622C852,-(a6)
 loc_010F82:
     dc.w $A646
     dc.w $22C8
     addq.w #1,d3
+    dc.w $4351
     dbra d6,loc_010F82
+    dc.w $CEFF
+    dc.w $F64C
     dc.w $4CDF
+    dc.w $DF3E
     dc.w $3EFE
+    dc.w $FE4E
     rts
+    dc.w $7548
 loc_010F92:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_010FF6
+    bra.s loc_010FD4
 loc_010FB2:
     dc.w $48E7
     bra.s loc_011016
 loc_010FD2:
     dc.w $48E7
+loc_010FD4:
     bra.s loc_011036
 loc_010FF6:
     lea loc_FFFFE7B6,a1
@@ -29223,8 +29372,7 @@ loc_010FFE:
     cmpi.w #$0003,d1
     bne.s loc_01101E
     dc.w $31FC
-    dc.w $0000
-    dc.w $E14C
+    ori.b #$4C,d0
     bsr.w loc_014DE4
 loc_011016:
     jsr loc_004878
@@ -29270,15 +29418,14 @@ loc_011036:
     dc.w $FFFF
     dc.w $E7D0
     dc.w $2279
-loc_011088:
     dc.w $FFFF
     dc.w $E79E
     dc.w $3806
     dc.w $E54C
     move.l d3,(0,a1,d4.w)
     dc.w $D6FC
-    dc.w $0004
-    dbra d6,loc_011088
+    ori.b #$CE,d4
+    dc.w $FFEC
     dc.w $21FC
     dc.w $FFFF
     dc.w $E7D2
@@ -29306,521 +29453,13 @@ loc_0110BB:
     moveq #50,d3
     move.w (-23986,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_01110F
+    ori.w #$6C30,-(a4)
     cmp.b (-24031,pc),d6
     moveq #0,d6
     dc.w $0312
     bra.w loc_01152B
-loc_01110F:
-    dc.w $0842
-    bvc.w loc_011B55
-    moveq #-24,d4
-    sub.b (0,a3,a7.l),d6
-    dc.w $60FF
-    dc.w $FFE7
-    dc.w $AC33
-    dc.w $FC00
-    dc.w $C8FF
-    dc.w $FFE7
-    dc.w $AE23
-    dc.w $FC00
-    dc.w $0111
-    dc.w $40FF
-    dc.w $FF80
-    dc.w $1020
-    dc.w $3C00
-    dc.w $00AF
-    dc.w $184E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7523
-    dc.w $FC00
-    dc.w $0111
-    dc.w $A2FF
-    dc.w $FF80
-    dc.w $1031
-    dc.w $FC00
-    dc.w $13AE
-    dc.w $EC42
-    moveq #-25,d4
-    or.b (0,a1,a7.l),d5
-    dc.w $02AE
-    dc.w $EE21
-    dc.w $FC00
-    dc.w $0311
-    dc.w $E6AE
-    dc.w $F421
-    dc.w $FC00
-    dc.w $0111
-    or.l (-1469,a6),d4
-    dc.w $F890
-    sub.w a6,d1
-    dc.w $B900
-    dc.w $0059
-    move.w (0,a1,a7.l),d5
-    dc.w $01E2
-    dc.w $1820
-    dc.w $3C00
-    dc.w $0088
-    dc.w $124E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7532
-    dc.w $3C00
-    dc.w $0234
-    dc.w $3C00
-    dc.w $0236
-    dc.w $3CD0
-    dc.w $0038
-    dc.w $38E7
-    or.b (15360,pc),d5
-    dc.w $0061
-    dc.w $0013
-    dc.w $F24E
-    dc.w $7532
-    dc.w $3C00
-    dc.w $0234
-    dc.w $3C00
-    dc.w $1836
-    dc.w $3CD0
-    dc.w $0038
-    dc.w $3C81
-    dc.w $003A
-    dc.w $3C00
-    dc.w $0043
-    dc.w $F900
-    dc.w $0314
-    add.w a6,d3
-    dc.w $B900
-    dc.w $005C
-    add.b -(a3),d6
-    dc.w $FC00
-    dc.w $0111
-    dc.w $DAFF
-    dc.w $FF80
-    dc.w $1020
-    dc.w $3C00
-    dc.w $0115
-    dc.w $AC4E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $754A
-    moveq #-24,d4
-    bhi.s loc_011245
-    dc.w $0000
-    cmp.b -(a3),d6
-    dc.w $FC00
-    dc.w $0111
-    dc.w $A2FF
-    dc.w $FF80
-    dc.w $1032
-    dc.w $39FF
-    dc.w $FFE7
-    and.b a0,d5
-    dc.w $0100
-    dc.w $0F66
-    dc.w $0000
-    move.w (0,a2,d3.l),d0
-    dc.w $0234
-    dc.w $3C00
-    dc.w $1836
-    dc.w $3CD0
-    dc.w $0038
-    dc.w $3C81
-    dc.w $103A
-    dc.w $3C00
-    dc.w $0043
-    dc.w $F900
-    dc.w $0314
-    add.w a6,d3
-    dc.w $B900
-    dc.w $005C
-    add.b -(a0),d6
-    dc.w $3C00
-    dc.w $0113
-    dc.w $224E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7532
-    dc.w $39FF
-    dc.w $FFE7
-    and.b a0,d5
-    dc.w $8100
-    dc.w $0F33
-    dc.w $C1FF
-    dc.w $FFE7
-    and.w d5,d5
-    dc.w $F8E7
-    dc.w $1A47
-    dc.w $F9FF
-    dc.w $FFE7
-    dc.w $B6E3
-    dc.w $493A
-loc_011245:
-    dc.w $3310
-    dc.w $00E3
-    dc.w $4926
-    moveq #16,d1
-    dc.w $0032
-    dc.w $38E8
-    dc.w $2C0B
-    or.b d0,(-24,a1,a4.w)
-    dc.w $2C42
-    dc.w $4134
-    dc.w $0112
-    dc.w $2B00
-    dc.w $0B14
-    dc.w $2B00
-    cmpi.w #$4316,d2
-    dc.w $2B00
-    dc.w $094E
-    dc.w $B900
-    dc.w $00B1
-    dc.w $384D
-    dc.w $F900
-    dc.w $FF31
-    moveq #-19,d6
-    dc.w $4AD2
-    dc.w $42E3
-    dc.w $4918
-    dc.w $3C00
-    dc.w $FF1D
-    or.b (a0),d2
-    dc.w $001D
-    or.b (a0),d2
-    dc.w $0132
-    dc.w $3CFF
-    dc.w $FF17
-    dc.w $4100
-    dc.w $0B17
-    dc.w $4100
-    dc.w $0C17
-    moveq #0,d6
-    dc.w $0200
-    dc.w $024E
-    dc.w $7532
-    move.w (-23986,pc),d6
-    dc.w $B900
-    dc.w $0065
-    or.b (58,a2,d3.l),d6
-    sub.w a6,d6
-    dc.w $B900
-    dc.w $0065
-    or.w d2,d6
-    moveq #-31,d4
-    dc.w $4C4E
-    dc.w $B900
-    dc.w $0048
-    moveq #32,d4
-    dc.w $3C00
-    dc.w $0112
-    dc.w $E04E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E20
-    dc.w $3C00
-    dc.w $00B0
-    add.w a6,d5
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E20
-    dc.w $3C00
-    dc.w $008A
-    dc.w $A04E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7532
-    dc.w $3C00
-    dc.w $0034
-    dc.w $3C00
-    dc.w $1736
-    dc.w $3CD0
-    dc.w $0038
-    dc.w $3C81
-    dc.w $003A
-    dc.w $3C00
-    dc.w $0043
-    dc.w $F900
-    dc.w $006B
-    moveq #78,d6
-    dc.w $B900
-    dc.w $005C
-    add.b -(a3),d6
-    dc.w $FC00
-    dc.w $0113
-    dc.w $0CFF
-    dc.w $FF80
-    dc.w $104E
-    dc.w $7532
-    dc.w $3C00
-    dc.w $0334
-    dc.w $3C20
-    dc.w $004E
-    dc.w $B900
-    dc.w $0053
-    dc.w $B44E
-    dc.w $B900
-    dc.w $0048
-    moveq #78,d4
-    dc.w $7531
-    dc.w $FC00
-    dc.w $01B0
-    dc.w $2223
-    dc.w $FC00
-    dc.w $0113
-    dc.w $56FF
-    dc.w $FF80
-    dc.w $1042
-    dc.w $79FF
-    dc.w $FFE7
-    dc.w $B043
-    dc.w $F900
-    dc.w $0312
-    bcc.s loc_011362
-    dc.w $C9FF
-    dc.w $FFE7
-    dc.w $A23A
-    dc.w $39FF
-    dc.w $FFE7
-    add.w (a3),d0
-    dc.w $453C
-    dc.w $39FF
-    dc.w $FFE7
-    cmp.w -(a0),d0
-    dc.w $0000
-    bgt.s loc_011399
-    moveq #-24,d4
-    sub.b (14847,pc),d6
-    dc.w $FFE7
-    add.w (a3),d0
-    dc.w $453C
-    dc.w $39FF
-    dc.w $FFE7
-    dc.w $B008
-    dc.w $3800
-    dc.w $0080
-    sub.w d2,-(a6)
-    dc.w $0000
-    dc.w $1608
-    dc.w $3800
-    dc.w $0380
-    sub.w d2,-(a6)
-    dc.w $0000
-    dc.w $0C08
-    dc.w $3800
-    dc.w $0680
-    sub.w d2,-(a7)
-    dc.w $0000
-    dc.w $184A
-    dc.w $4667
-    dc.w $0E53
-    dc.w $4632
-    dc.w $38E8
-    dc.w $2C0D
-    dc.w $0167
-    dc.w $0000
-    dc.w $AE60
-    dc.w $EE3C
-loc_011399:
-    dc.w $0560
-    dc.w $F008
-    dc.w $3800
-    dc.w $0180
-    sub.w d2,-(a6)
-    dc.w $0000
-    dc.w $1608
-    dc.w $3800
-    dc.w $0280
-    sub.w d2,-(a6)
-    dc.w $0000
-    dc.w $0C08
-    dc.w $3800
-    dc.w $0480
-    sub.w d2,-(a7)
-    dc.w $0000
-    dc.w $1ABC
-    dc.w $4567
-    dc.w $0000
-    dc.w $1052
-    dc.w $4632
-    dc.w $38E8
-    dc.w $2C0D
-    dc.w $0167
-    dc.w $0000
-    moveq #96,d4
-    dc.w $EC42
-    dc.w $4660
-    dc.w $F008
-    dc.w $3800
-    dc.w $0580
-    sub.w d2,-(a7)
-    bvc.s loc_01140D
-    dc.w $39FF
-    dc.w $FFE7
-    and.b (-1,a4,d3.l),d3
-    dc.w $FFE7
-    and.w -(a1),d4
-    dc.w $00A1
-    bvc.s loc_011451
-    dc.w $563A
-    dc.w $38E8
-    dc.w $2C0D
-    and.b d2,(-24,a1,a4.w)
-    dc.w $2C45
-    dc.w $F8E7
-    dc.w $1A47
-    dc.w $F9FF
-    dc.w $FFE7
-    cmp.b (14847,pc),d3
-    dc.w $FFE7
-    dc.w $CAE3
-    dc.w $4D37
-    or.w (a0),d3
-    dc.w $00E3
-loc_01140D:
-    dc.w $4D26
-    moveq #80,d1
-    dc.w $0017
-    dc.w $4100
-    dc.w $0B17
-    clr.b d0
-    dc.w $0C17
-    moveq #0,d6
-    dc.w $0000
-    dc.w $0242
-    dc.w $4316
-    dc.w $2B00
-    dc.w $094E
-    dc.w $B900
-    dc.w $00B1
-    dc.w $1E61
-    dc.w $003A
-    move.w (0,a1,a7.l),d0
-    dc.w $00B0
-    dc.w $224E
-    dc.w $B900
-    dc.w $0048
-    moveq #78,d4
-    dc.w $7552
-    moveq #-25,d4
-    moveq #51,d3
-    dc.w $C6FF
-    dc.w $FFE7
-    cmp.b (34,a2,d0.w),d0
-    dc.w $79FF
-    dc.w $FFE7
-    sub.b (-80,a1,a4.w),d7
-    dc.w $1C3C
-    dc.w $39FF
-    dc.w $FFE7
-    add.w (a3),d0
-    dc.w $469C
-    dc.w $41E5
-    dc.w $4E33
-    dc.w $F160
-    dc.w $00FF
-    dc.w $FFE7
-    and.b (96,a3,a7.w),d3
-    dc.w $02FF
-    dc.w $FFE7
-    and.w d2,d4
-    moveq #-25,d4
-    moveq #78,d3
-    dc.w $753C
-    dc.w $38E7
-    moveq #-35,d4
-    moveq #-25,d4
-    dc.w $144B
-    dc.w $F900
-    dc.w $FF31
-    dc.w $5822
-    dc.w $79FF
-    dc.w $FFE7
-    sub.b #$2900,d7
-    dc.w $3E53
-    dc.w $464A
-    moveq #-25,d4
-    moveq #102,d4
-    dc.w $0C32
-    dc.w $3C00
-    dc.w $0036
-    dc.w $3CD0
-    dc.w $0060
-    dc.w $0000
-    eori.b #$AE,(54,a2,a6.l)
-    dc.w $3CC0
-    dc.w $002F
-    dc.w $0654
-    dc.w $412F
-    dc.w $0134
-    dc.w $38E7
-    dc.w $143A
-    dc.w $3C00
-    dc.w $00E5
-    dc.w $4E32
-    dc.w $3160
-    dc.w $0002
-    dc.w $8100
-    dc.w $00FF
-    dc.w $FF4E
-    dc.w $B900
-    dc.w $0066
-    moveq #62,d1
-    dc.w $003C
-    dc.w $3C00
-    dc.w $0238
-    dc.w $3C80
-    dc.w $1022
-    dc.w $1F56
-    dc.w $412C
-    dc.w $1F2F
-    dc.w $062F
-    dc.w $01E5
-    dc.w $4E32
-    dc.w $3160
-    dc.w $0202
-    dc.w $8100
-    dc.w $00FF
-    dc.w $FF4E
-    dc.w $B900
-    dc.w $0066
-    moveq #62,d1
-    dc.w $0022
-    dc.w $1F3C
-    dc.w $3C00
-    dc.w $022C
-    dc.w $1F54
-    moveq #-25,d4
-    dc.w $1451
-    dc.w $CEFF
-    sub.b (-1,a1,a7.l),d0
-    dc.w $FFE7
-    moveq #78,d3
-    dc.w $7532
-    dc.w $39FF
-    dc.w $FFE7
-    cmp.w (a2),d0
-    dc.w $4122
-    dc.w $79FF
-    dc.w $FFE7
-    sub.b (-1,a4,d3.l),d7
-    dc.w $FFE7
-    add.l (a4),d0
-    dc.w $41E3
-    dc.w $4A31
-    dc.w $FC00
-    dc.w $04E7
-    dc.w $144E
-    dc.w $B900
 loc_01152B:
     dc.w $0048
     moveq #78,d4
@@ -29832,9 +29471,242 @@ loc_01152B:
     moveq #-35,d4
     moveq #-25,d4
     dc.w $144B
+    dc.w $F900
+    dc.w $FF31
+    addq.w #4,d5
+    dc.w $F8E7
+    dc.w $1A3C
+    dc.w $38E7
+    bpl.s loc_0115A0
+    dc.w $4642
+    dc.w $4348
+    dc.w $E7FE
+    dc.w $F0E5
+    dc.w $4B26
+    moveq #48,d1
+    ori.w #$461C,d2
+    dc.w $2B00
+    dc.w $01E9
+    dc.w $4E49
+    dc.w $F900
+    andi.l #$3A224CD2,(74,a3,a4.w)
+    moveq #-25,d4
+    moveq #102,d4
+    dc.w $0C32
+    dc.w $3C00
+    ori.b #$D0,(96,a6,d0.w)
+    ori.b #$32,d0
+    move.w d4,(-5066,a6)
+    dc.w $3CC0
+    ori.w #$4134,(a4)
+    dc.w $38E7
+    dc.w $1438
+    dc.w $3C80
+    ori.b #$00,(78,pc)
+    dc.w $B900
+    ori.w #$6050,(a7)+
+    dc.w $414C
+    dc.w $DF0F
+    dc.w $7F52
+    dc.w $4354
+    moveq #-25,d4
+    dc.w $1451
+    dc.w $CEFF
+    dc.w $A84E
+    dc.w $7542
+    moveq #-24,d4
+    bhi.s loc_0115F3
+    moveq #-25,d4
+    moveq #35,d3
+    dc.w $FC00
+    dc.w $0115
+    dc.w $D2FF
+    dc.w $FF80
+    dc.w $1045
+    dc.w $F8E7
+    dc.w $1A3A
+    dc.w $38E7
+    bpl.s loc_01161A
+    dc.w $453C
+    dc.w $39FF
+    dc.w $FFE7
+    and.w -(a0),d5
+    ori.b #$45,d0
+    dc.w $F8E7
+    dc.w $1A3A
+    dc.w $38E7
+    bpl.s loc_01162E
+    dc.w $453C
+    dc.w $39FF
+    dc.w $FFE7
+    and.b a0,d5
+    dc.w $3800
+    andi.l #$95670000,d0
+    dc.w $244A
+    dc.w $4667
+    dc.w $100C
+    dc.w $4600
+loc_0115F3:
+    dc.w $0867
+    dc.w $1253
+    dc.w $4660
+    ori.b #$4A,d0
+    dc.w $4666
+loc_0115FF:
+    dc.w $F63C
+    dc.w $3C00
+    dc.w $0860
+    ori.b #$3C,d0
+    dc.w $0560
+    ori.b #$08,d0
+    dc.w $3800
+    dc.w $0380
+    sub.w d2,-(a7)
+    dc.w $1EBC
+    dc.w $4567
+    dc.w $120C
+    dc.w $4600
+    dc.w $0867
+    dc.w $0652
+    dc.w $4660
+    ori.b #$42,d0
+    dc.w $4660
+    ori.b #$3C,d0
+    dc.w $3C00
+    dc.w $0860
+    ori.b #$08,d0
+    dc.w $3800
+    dc.w $0580
+    sub.w d2,-(a7)
+    dc.w $320C
+    dc.w $4600
+    dc.w $0866
+    dc.w $1C32
+    dc.w $39FF
+    dc.w $FFE7
+    dc.w $A64E
+    dc.w $B900
+    dc.w $013E
+    bcc.s loc_0115FF
+    moveq #-25,d4
+    bpl.s loc_0116C0
+    ori.b #$31,d0
+    dc.w $FC00
+    dc.w $01E8
+    bhi.s loc_0116BD
+    dc.w $340D
+    dc.w $39FF
+    dc.w $FFE7
+    dc.w $A666
+    dc.w $460D
+    dc.w $F9FF
+    dc.w $FFE7
+    dc.w $A660
+    dc.w $2408
+    dc.w $3800
+    dc.w $0480
+    sub.w d2,-(a7)
+    dc.w $240C
+    dc.w $4600
+    dc.w $0867
+    dc.w $1E0D
+    dc.w $39FF
+    dc.w $FFE7
+    dc.w $A667
+    dc.w $280D
+    dc.w $B9FF
+    dc.w $FFE7
+    dc.w $A600
+    dc.w $7980
+    dc.w $00FF
+    dc.w $FFE7
+    and.w a6,d5
+    dc.w $B900
+    dc.w $0048
+    moveq #78,d4
+    dc.w $7508
+    dc.w $3800
+    dc.w $0780
+    sub.w d2,-(a7)
+    dc.w $0A3C
+    dc.w $3C00
+    dc.w $0860
+    sub.w (a2),d5
+    moveq #-25,d4
+    moveq #74,d3
+    moveq #-25,d4
+    moveq #103,d3
+    ori.b #$33,d0
+    dc.w $C6FF
+    dc.w $FFE7
+    and.b a4,d5
+    dc.w $4600
+loc_0116BD:
+    dc.w $0866
+    dc.w $0636
+    dc.w $3C00
+    dc.w $2460
+    bhi.s loc_01170E
+    dc.w $F9FF
+    dc.w $FFE7
+    dc.w $B6E3
+    dc.w $4E31
+    dc.w $F360
+    ori.l #$1C47F900,(48,a0,a7.l)
+    dc.w $DAE3
+    dc.w $4E32
+    dc.w $3C00
+    dc.w $1534
+    dc.w $3C00
+    dc.w $0436
+    dc.w $3CC0
+    dc.w $004A
+    moveq #-82,d4
+    cmp.w -(a7),d6
+    dc.w $1E0C
+    dc.w $43C0
+    ori.w #$1830,-(a6)
+    dc.w $388F
+    dc.w $4CE6
+    dc.w $4802
+    dc.w $4000
+    dc.w $3FD2
+    dc.w $4030
+    dc.w $388F
+    dc.w $4EE6
+    dc.w $4802
+    dc.w $4000
+    dc.w $1FD4
+    dc.w $4038
+    dc.w $3360
+    ori.b #$00,(97,pc)
+    dc.w $000E
+    moveq #-30,d5
+    dc.w $4E43
+    dc.w $F900
+    dc.w $0314
+    dc.w $F236
+    dc.w $3160
+    ori.b #$00,d6
+    dc.w $0C38
+    dc.w $3C00
+    dc.w $19E7
+    dc.w $4BE7
+    dc.w $4C33
+    dc.w $C3FF
+    dc.w $FFE7
+    dc.w $AC33
+    dc.w $C4FF
+    dc.w $FFE7
+    dc.w $AE42
+    moveq #-25,d4
+    moveq #78,d3
+    dc.w $7548
 loc_011742:
     dc.w $48E7
+    dc.w $E760
     bra.s loc_0117A6
+    bra.s loc_011784
 loc_011762:
     dc.w $48E7
     bra.s loc_0117C6
@@ -29845,9 +29717,8 @@ loc_01178E:
     move.w #$000C,d3
     dc.w $E74B
     dc.w $3D43
-    dc.w $0010
-    move.w #$0019,d4
-    dc.w $E74C
+    ori.b #$3C,(a0)
+    ori.b #$4C,(a1)+
     dc.w $3D44
 loc_0117A6:
     dc.w $000C
@@ -29855,20 +29726,16 @@ loc_0117A6:
     lea loc_00E71A,a2
     lea loc_FF3004,a4
     dc.w $3D43
-loc_0117B6:
-    dc.w $0010
-    dc.w $225A
+    ori.b #$5A,(a0)
     dc.w $2F01
     moveq #0,d7
     dc.w $1E29
-    dc.w $0001
-    dc.w $E34F
+    ori.b #$4F,d1
     move.w (0,a4,d7.w),d1
 loc_0117C6:
     moveq #0,d0
     bsr.w loc_00B6D6
-    dc.w $0040
-    or.b d0,d0
+    ori.w #$8000,d0
     dc.w $0539
     dc.w $FFFF
     dc.w $E7A6
@@ -29886,12 +29753,11 @@ loc_0117DC:
     dc.w $0E3E
     addq.w #1,d2
     dc.w $0643
-    dc.w $0018
-    dbra d1,loc_0117B6
+    ori.b #$C9,(a0)+
+    dc.w $FFBC
     dc.w $3D7C
     dc.w $0120
-    dc.w $0010
-    dc.w $3D7C
+    ori.b #$7C,(a0)
     or.b d0,-(a0)
     dc.w $0008
     dc.w $48E7
@@ -29913,12 +29779,9 @@ loc_011FE4:
     dc.w $FFFF
     dc.w $E82C
     dc.w $33FC
-    dc.w $0070
-    dc.w $FFFF
-    dc.w $E822
+    ori.w #$FFFF,(34,a0,a6.l)
     dc.w $23FC
-    dc.w $0001
-    dc.w $2022
+    ori.b #$22,d1
     dc.w $FFFF
     or.b (a0),d0
     dc.w $4A79
@@ -29954,15 +29817,13 @@ loc_012022:
     dc.w $1000
     beq.s loc_01207C
     dc.w $23FC
-    dc.w $0001
-    dc.w $2088
+    ori.b #$88,d1
     dc.w $FFFF
     or.b (a0),d0
     bra.s loc_012086
 loc_01207C:
     dc.w $23FC
-    dc.w $0001
-    dc.w $20DA
+    ori.b #$DA,d1
     dc.w $FFFF
     or.b (a0),d0
 loc_012086:
@@ -29970,8 +29831,7 @@ loc_012086:
 loc_012216:
     jsr loc_013D0A
     dc.w $23FC
-    dc.w $0001
-    dc.w $1FF4
+    ori.b #$F4,d1
     dc.w $FFFF
     or.b (a0),d0
     rts
@@ -30175,8 +30035,7 @@ loc_012D10:
     dc.w $FFFF
     dc.w $E81E
     dc.w $0C79
-    dc.w $0258
-    dc.w $FFFF
+    andi.w #$FFFF,(a0)+
     dc.w $E81E
     blt.s loc_012D78
     dc.w $4A79
@@ -30185,31 +30044,22 @@ loc_012D10:
     beq.s loc_012D52
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_012D30:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_012D30
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13FC
     dc.w $0009
-    dc.w $00A0
-    dc.w $1FFF
-    dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.l #$1FFF33FC,-(a0)
+    ori.b #$A1,d0
     dc.w $1100
 loc_012D52:
-    dc.w $0079
-    dc.w $01FE
-    dc.w $00FF
-    dc.w $3156
+    ori.w #$01FE,($00FF3156).l
     dc.w $4279
     dc.w $FFFF
     dc.w $E81E
@@ -30225,15 +30075,13 @@ loc_012D52:
     dc.w $000E
 loc_012D78:
     dc.w $0838
-    dc.w $0000
-    or.l (a5),d0
+    ori.b #$95,d0
     beq.w loc_012DA8
     cmpi.w #$0004,d6
     blt.w loc_012DA8
     subq.w #4,d6
     dc.w $0839
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E823
     bne.w loc_012F0E
     dc.w $3238
@@ -30244,8 +30092,7 @@ loc_012D78:
     bra.w loc_012F0E
 loc_012DA8:
     dc.w $0838
-    dc.w $0001
-    or.l (a5),d0
+    ori.b #$95,d1
     beq.s loc_012DE6
     cmpi.w #$0003,d6
     bgt.w loc_012DE6
@@ -30258,8 +30105,7 @@ loc_012DA8:
     bra.s loc_012DE6
 loc_012DCA:
     dc.w $0839
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E823
     bne.w loc_012F0E
     dc.w $3238
@@ -30270,8 +30116,7 @@ loc_012DCA:
     bra.w loc_012F0E
 loc_012DE6:
     dc.w $0838
-    dc.w $0003
-    or.l (a5),d0
+    ori.b #$95,d3
     beq.s loc_012E1A
 loc_012DEE:
     addq.w #1,d6
@@ -30280,8 +30125,7 @@ loc_012DEE:
     move.w #$0000,d6
 loc_012DF8:
     dc.w $0839
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E823
     bne.w loc_012F0E
     dc.w $3238
@@ -30304,12 +30148,10 @@ loc_012EAB:
     dc.w $03FF
     dc.w $FFE8
     dc.w $2366
-    dc.w $0000
-    moveq #50,d5
+    ori.b #$32,d0
     move.w (-8626,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w d2,d6
+    ori.w #$8C42,-(a5)
     moveq #-25,d4
     dc.w $AC42
     moveq #-25,d4
@@ -30348,52 +30190,38 @@ loc_012F0E:
     move.l (1,a3,a7.l),d5
     dc.w $33FC
     dc.w $0100
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A111
-    dc.w $1100
+    ori.b #$11,d0
+    ori.l #$11000839,-(a1)
     dc.w $0008
 loc_012F1E:
     dc.w $0839
     dc.w $3900
-    dc.w $0000
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A111
+    ori.b #$A1,d0
+    ori.b #$11,d0
     dc.w $1100
-    dc.w $0066
+    ori.w #$F613,-(a6)
     bne.s loc_012F1E
-    dc.w $F613
     dc.w $13FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00A0
-    dc.w $A01F
+    ori.b #$A0,d0
+    ori.b #$1F,d0
     dc.w $1FFE
     dc.w $FE13
     dc.w $13FC
     dc.w $FC00
-    dc.w $0036
+    ori.b #$A0,(-1,a6,d1.l)
     dc.w $3600
-    dc.w $00A0
     dc.w $A01F
-    dc.w $1FFF
     dc.w $FF33
     dc.w $33FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $00A1
-    dc.w $A111
+    ori.b #$A1,d0
+    ori.b #$11,d0
     dc.w $1100
-    dc.w $0031
+    ori.b #$00,(-25,a1,d0.w)
 loc_012F40:
     dc.w $31FC
-    dc.w $FC00
-    dc.w $0001
-    dc.w $01E7
-    dc.w $E776
+    ori.b #$76,d1
     moveq #49,d3
     dc.w $31C6
     dc.w $C6E7
@@ -30407,19 +30235,16 @@ loc_012F40:
     dc.w $0E36
     move.w (0,a1,d6.w),d3
     dc.w $3160
-    dc.w $0038
+    ori.b #$60,($0248).w
     move.w (2,a1,d6.w),d4
-    dc.w $3160
-    dc.w $0248
     dc.w $48E7
     dc.w $E77E
     moveq #0,d7
     dc.w $0008
     dc.w $0839
     dc.w $3900
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FFE8
     dc.w $E823
     dc.w $2366
@@ -30427,18 +30252,17 @@ loc_012F40:
     dc.w $0C08
     dc.w $0839
     dc.w $3900
-    dc.w $0002
+    ori.b #$FF,d2
     dc.w $02FF
-    dc.w $FFFF
 loc_012F6D:
     dc.w $FFE8
     dc.w $E823
     dc.w $2367
     beq.w loc_013004
-    dc.w $0000
-    sub.b #$38E7,d1
+    ori.b #$3C,d0
 loc_012F74:
     dc.w $3C38
+    dc.w $38E7
     dc.w $E7CA
     dc.w $CA3E
     dc.w $3E06
@@ -30460,9 +30284,8 @@ loc_012F74:
     moveq #8,d4
     dc.w $0839
     dc.w $3900
-    dc.w $0001
+    ori.b #$FF,d1
     dc.w $01FF
-    dc.w $FFFF
     dc.w $FFE8
     dc.w $E823
     dc.w $2366
@@ -30481,22 +30304,17 @@ loc_012F9C:
     dc.w $48E7
     dc.w $E714
     dc.w $1400
-    dc.w $0036
+    ori.b #$C0,(58,a6,d0.w)
     move.w #$C000,d3
-    dc.w $3CC0
-    dc.w $003A
     move.w #$0002,d5
     dc.w $3C00
-    dc.w $0261
+    andi.w #$00F5,-(a1)
     bsr.w loc_012590
-    dc.w $00F5
     dc.w $E24C
     dc.w $4CDF
     dc.w $DF00
-    dc.w $0028
+    ori.b #$39,(-1,a0)
     move.l (-1,a2,d3.l),d4
-    dc.w $3239
-    dc.w $FFFF
     dc.w $FFE8
     dc.w $E840
     dc.w $404E
@@ -30508,35 +30326,29 @@ loc_012F9C:
     move.w (-11698,pc),d6
     jsr loc_00658C
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     jsr loc_00646C
     dc.w $B900
-    dc.w $0064
-    bge.s loc_013001
+    ori.w #$6C30,-(a4)
     dc.w $30BC
     cmp.b (-11743,pc),d6
     dc.w $3AD2
     dc.w $217C
     moveq #0,d6
-    dc.w $0003
+    ori.b #$2E,d3
     dc.w $031B
-    dc.w $1B2E
     dc.w $2E00
-    dc.w $0004
+    ori.b #$FC,d4
     dc.w $0433
-    dc.w $33FC
     dc.w $FC00
-    dc.w $0007
+    ori.b #$FF,d7
     dc.w $07FF
-    dc.w $FFFF
     dc.w $FFE8
     dc.w $E82C
     move.l (0,a3,a7.l),d6
     dc.w $33FC
-    dc.w $0018
+    ori.b #$FF,(a0)+
     dc.w $18FF
-    dc.w $FFFF
     dc.w $FFE8
     dc.w $E832
     move.w (0,a3,a7.l),d1
@@ -30548,9 +30360,9 @@ loc_012F9C:
     dc.w $E834
     dc.w $3461
     bsr.w loc_0136C6
-    dc.w $0006
-    add.w (116,a2,d1.l),d0
+    ori.b #$72,d6
     moveq #30,d1
+    dc.w $1E74
     moveq #18,d2
     dc.w $1261
     bsr.w loc_012AA0
@@ -30558,7 +30370,6 @@ loc_012F9C:
     dc.w $A242
 loc_013000:
     dc.w $4278
-loc_013001:
     moveq #-24,d4
     dc.w $E8A0
     dc.w $A04C
@@ -30587,8 +30398,7 @@ loc_01300F:
     dc.w $E826
     dc.w $2667
     beq.w loc_013074
-    dc.w $0000
-    dc.w $5821
+    ori.b #$21,d0
     dc.w $21FC
     dc.w $FCFF
     dc.w $FFFF
@@ -30599,9 +30409,8 @@ loc_01300F:
     dc.w $1231
     dc.w $31FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$16,d1
     dc.w $0191
-    sub.b d0,(a6)
     dc.w $1631
     dc.w $31FC
     dc.w $FC00
@@ -30618,12 +30427,11 @@ loc_01300F:
     dc.w $12D4
     dc.w $D4FC
     dc.w $FC00
-    dc.w $0040
+    ori.w #$4EB9,d0
     dc.w $404E
-    jsr loc_005928
     dc.w $B900
-    dc.w $0059
-    dc.w $2843
+    ori.b #$28,d0
+    ori.w #$2843,(a1)+
     lea loc_0316CA,a1
     dc.w $F900
     dc.w $0316
@@ -30632,9 +30440,9 @@ loc_01300F:
     dc.w $034E
     jsr loc_00590C
     dc.w $B900
-    dc.w $0059
-    cmpi.w #$F890,d3
+    ori.w #$0C43,(a1)+
     lea loc_009012,a1
+    dc.w $F890
     dc.w $1242
     clr.w d2
     dc.w $424E
@@ -30644,8 +30452,7 @@ loc_01300F:
     dc.w $3620
     move.l #$00005A3A,d0
     dc.w $3C00
-    dc.w $005A
-    dc.w $3A4E
+    ori.w #$3A4E,(a2)+
     jsr loc_00485E
     dc.w $B900
     dc.w $0048
@@ -30670,11 +30477,9 @@ loc_013074:
     bhi.s loc_0130B7
     move.w (-25522,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_0130C5
+    ori.w #$6C30,-(a4)
     cmp.b (-25567,pc),d6
     moveq #0,d6
     dc.w $030F
@@ -30690,28 +30495,226 @@ loc_0130B7:
     dc.w $0C34
     dc.w $3C00
     dc.w $1336
-loc_0130C5:
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C80
-    dc.w $003A
+    ori.b #$80,($003A).w
     dc.w $3C00
     dc.w $024E
     dc.w $B900
-    dc.w $005F
-    bra.s loc_0130FA
-loc_0130FA:
-    beq.s loc_013108
-    cmpi.w #$000B,d6
-    beq.s loc_013110
-    subq.w #1,d6
+    ori.w #$6023,(a7)+
+    dc.w $FC00
+    dc.w $0130
+    dc.w $E2FF
+    dc.w $FF80
+    dc.w $104E
+    dc.w $753A
+    dc.w $38E7
+    bpl.s loc_01313A
+    dc.w $453C
+    dc.w $38E7
+    and.b a0,d5
+    dc.w $3800
+    ori.l #$95670000,d0
+    dc.w $220C
+    dc.w $4600
+    dc.w $0167
+    dc.w $0C0C
+    dc.w $4600
+    dc.w $0B67
+    dc.w $0E53
+    dc.w $4660
+    ori.b #$3C,d1
+    dc.w $3C00
+    dc.w $0B60
+    ori.b #$3C,d1
+    dc.w $0560
+    ori.b #$08,d1
+    dc.w $3800
+    dc.w $0180
+    sub.w d2,-(a7)
+    dc.w $20BC
+    dc.w $4567
+    dc.w $0C0C
+    dc.w $4600
+    dc.w $0B67
+    dc.w $0E52
+    dc.w $4660
+    ori.b #$3C,d1
+    dc.w $3C00
+    dc.w $0B60
+    ori.b #$3C,d1
+    dc.w $3C00
+    dc.w $0160
+loc_01313A:
     bra.w loc_013256
+    ori.b #$08,d1
+    dc.w $3800
+    dc.w $0380
+    sub.w d2,-(a7)
+    dc.w $1632
+    dc.w $065C
+    dc.w $410C
+    dc.w $4100
+    dc.w $0B67
+    dc.w $06B2
+    dc.w $456E
+    ori.b #$3C,d1
+    dc.w $0160
+    ori.b #$08,d0
+    dc.w $3800
+    andi.l #$95671C32,d0
+    dc.w $065D
+    dc.w $4167
+    ori.b #$6B,d0
+    ori.b #$B2,d0
+    dc.w $456E
+    dc.w $063C
+    dc.w $0160
+    ori.b #$3C,d0
+    dc.w $0560
+    ori.b #$08,d0
+    dc.w $3800
+    dc.w $0580
+    sub.w d2,-(a7)
+    dc.w $360C
+    dc.w $4600
+    dc.w $0B67
+    ori.b #$42,d0
+    dc.w $4132
+    dc.w $38E7
+    dc.w $A64E
+    dc.w $B900
+    dc.w $013E
+    bcc.s loc_0131E0
+    dc.w $F900
+    dc.w $031A
+    and.b (-82,a4,d3.l),d6
+    dc.w $AC12
+    dc.w $3120
+    ori.l #$01670001,(50,a0,a3.l)
+    dc.w $38E7
+    dc.w $A60D
+    and.b d0,(-25,a1,a4.w)
+    dc.w $A660
+    ori.b #$08,d0
+    dc.w $3800
+    dc.w $0480
+    sub.w d2,-(a7)
+    ori.b #$4A,d0
+    dc.w $4667
+    ori.b #$0C,d1
+    dc.w $4600
+    dc.w $0B67
+    ori.b #$32,d1
+    dc.w $38E7
+    dc.w $A60D
+    dc.w $0167
+    ori.b #$0D,d1
+loc_0131E0:
+    dc.w $0D81
+    or.b d0,(-25,a1,a4.w)
+    dc.w $31C1
+    dc.w $E7A6
+    dc.w $A608
+    dc.w $08F8
+    dc.w $F800
+    ori.b #$CA,d7
+    dc.w $07E7
+    and.w a6,d5
+    jsr loc_013E64
+    dc.w $B900
+    dc.w $013E
+    bcc.s loc_013225
+    dc.w $3238
+    dc.w $38E7
+    dc.w $E712
+    dc.w $1234
+    dc.w $3438
+    dc.w $38E7
+    dc.w $E714
+    dc.w $1452
+    addq.w #1,d2
+    dc.w $420C
+    cmpi.w #$0003,d0
+    dc.w $4000
+    dc.w $036F
+    ble.s loc_013206
+    dc.w $0406
+    dc.w $0642
+    clr.b d0
+    ori.b #$40,(a4)
+    dc.w $1402
+    dc.w $4000
+    ori.b #$FC,d3
+    dc.w $03C0
+    dc.w $FC00
+    dc.w $0009
+    dc.w $09D2
+    add.w d0,d1
+    dc.w $4043
+    lea loc_03169C,a1
+    dc.w $F900
+    dc.w $0316
+    sub.b (-32,a6,d3.l),d6
+    move.w #$E000,d3
+    ori.b #$80,($003A).w
+    move.w #$8000,d4
+    move.w #$0002,d5
+    dc.w $3C00
+    dc.w $024E
+    jsr loc_005F60
+    dc.w $B900
+loc_013225:
+    ori.w #$6060,(a7)+
+    bra.w loc_013294
+    ori.b #$08,d0
+    dc.w $3800
+    dc.w $0780
+    sub.w d2,-(a7)
+    bra.s loc_013268
+loc_013268:
+    ori.b #$A1,d0
+    dc.w $1100
+    bne.s loc_013266
+    dc.w $13FC
+    ori.b #$A0,d0
+    dc.w $1FFE
+    dc.w $13FC
+    ori.b #$A0,(-1,a6,d1.l)
+    dc.w $33FC
+    ori.b #$A1,d0
+    dc.w $1100
+    cmpi.w #$000B,d6
+    beq.s loc_013294
+    dc.w $31FC
+    ori.b #$76,d1
+loc_013294:
+    dc.w $31C6
+    dc.w $E7CA
+    dc.w $E54E
+    lea loc_03166C,a1
+    move.w (0,a1,d6.w),d3
+    move.w (2,a1,d6.w),d4
+    dc.w $E44E
+    dc.w $48E7
+    moveq #0,d7
+    clr.w d1
+    dc.w $3E01
+    lea loc_FF3004,a1
+loc_0132B8:
+    move.w (a1)+,d5
+    cmpi.w #$FFFF,d5
+    beq.s loc_0132C6
+    dc.w $B246
+    beq.s loc_0132CA
+    addq.w #1,d1
+loc_0132C6:
+    addq.w #1,d7
+    bra.s loc_0132B8
 loc_0135EC:
     move.w #$0009,d6
     lea loc_02BDBA,a1
     dc.w $D2FC
-    dc.w $0010
-    dc.w $3239
+    ori.b #$39,(a0)
     dc.w $FFFF
     dc.w $E836
     addq.w #2,d1
@@ -30749,8 +30752,7 @@ loc_01361E:
 loc_01364A:
     move.l (a7)+,d0
     dc.w $D2FC
-    dc.w $0010
-    addq.w #1,d7
+    ori.b #$47,(a0)
     dbra d6,loc_01361E
     rts
 loc_013658:
@@ -30809,9 +30811,7 @@ loc_0138E7:
     dc.w $06E3
     dc.w $4A34
     dc.w $3120
-    dc.w $0032
-    dc.w $38E7
-    dc.w $CAE3
+    ori.b #$E7,(-29,a2,a4.l)
     dc.w $4943
     dc.w $F9FF
     dc.w $FFE8
@@ -30825,13 +30825,11 @@ loc_0138E7:
     dc.w $79FF
     dc.w $FFE8
     dc.w $2267
-    dc.w $0000
-    dc.w $5408
+    ori.b #$08,d0
     dc.w $3800
     dc.w $0480
     sub.w d2,-(a7)
-    dc.w $0000
-    dc.w $4A33
+    ori.b #$33,d0
     dc.w $FCFF
     dc.w $FFFF
     dc.w $FFE8
@@ -30853,15 +30851,14 @@ loc_013D0A:
     clr.w d3
     move.w #$0010,d2
 loc_013D2E:
-    dc.w $0010
+    ori.b #$4A,(a0)
     dc.w $E54A
     dc.w $C4C3
     dc.w $3803
     dc.w $E34C
     move.w (2,a4,d4.w),d0
     dc.w $39BC
-    dc.w $0001
-    dc.w $4002
+    ori.b #$02,d1
     dc.w $3800
     subq.w #2,d4
     bmi.s loc_013D68
@@ -30872,12 +30869,10 @@ loc_013D4E:
     dc.w $2A72
     moveq #0,d0
     dc.w $25BC
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     moveq #0,d0
     dc.w $1B7C
-    dc.w $0000
-    dc.w $0000
+    ori.b #$00,d0
     addq.w #4,d5
     dbra d4,loc_013D4E
 loc_013D68:
@@ -30899,20 +30894,16 @@ loc_013D68:
     subq.w #1,d1
     lea loc_02BFC4,a1
 loc_013D8E:
-    dc.w $0002
-    dc.w $BFC4
+    ori.b #$C4,d2
     dc.w $265A
     clr.w d2
     dc.w $142B
-    dc.w $0000
-    dc.w $EB4A
+    ori.b #$4A,d0
     dc.w $0642
-    dc.w $0010
-    dc.w $D2C2
+    ori.b #$C2,(a0)
     move.w #$0007,d7
     dc.w $33FC
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $E85E
     dc.w $3639
     dc.w $FFFF
@@ -30946,13 +30937,10 @@ loc_013DB6:
     dc.w $1746
     dc.w $0009
     dc.w $1744
-    dc.w $0000
-    dc.w $177C
+    ori.b #$7C,d0
     dc.w $000A
-    dc.w $0003
-    dc.w $177C
-    dc.w $0002
-    dc.w $0002
+    ori.b #$7C,d3
+    ori.b #$02,d2
     dc.w $5279
     dc.w $FFFF
     dc.w $E85E
@@ -30981,13 +30969,10 @@ loc_013E42:
     move.w #$00FF,d1
     lea loc_FF557C,a3
     dc.w $142B
-loc_013E52:
-    dc.w $0000
-    beq.s loc_013E5E
+    ori.b #$08,d0
     dc.w $D6FC
-    dc.w $0010
-    dbra d1,loc_013E52
-loc_013E5E:
+    ori.b #$C9,(a0)
+    dc.w $FFF4
     dc.w $4CDF
     dc.w $00FE
     rts
@@ -31065,24 +31050,20 @@ loc_013FAC:
     lea loc_FF3004,a4
     cmpi.w #$0004,d2
 loc_013FD6:
-    dc.w $0004
+    ori.b #$0E,d4
     bne.s loc_013FE8
     dc.w $3638
     dc.w $E712
     dc.w $E74B
     dc.w $0644
-    dc.w $00A0
-    dc.w $3D44
-    dc.w $000C
+    ori.l #$3D44000C,-(a0)
 loc_013FE8:
     dc.w $3D43
-    dc.w $0010
-    dc.w $2F01
+    ori.b #$01,(a0)
     clr.w d7
     dc.w $225A
     dc.w $1E29
-    dc.w $0001
-    dc.w $3007
+    ori.b #$07,d1
     dc.w $E548
     dc.w $0640
     dc.w $0400
@@ -31118,14 +31099,13 @@ loc_014022:
     dc.w $00FF
     dc.w $3156
     dc.w $3D43
-    dc.w $0010
-    clr.w d3
+    ori.b #$43,(a0)
     dc.w $3E39
     dc.w $FFFF
     dc.w $E82A
     cmpi.w #$0005,d3
 loc_014050:
-    dc.w $0005
+    ori.b #$18,d5
     bne.s loc_01406C
     dc.w $3039
     dc.w $FFFF
@@ -31134,8 +31114,7 @@ loc_014050:
     dc.w $000B
     dc.w $E748
     dc.w $3D40
-    dc.w $0010
-    dc.w $3839
+    ori.b #$39,(a0)
     dc.w $FFFF
     dc.w $E838
     dc.w $E74C
@@ -31163,8 +31142,7 @@ loc_014082:
     dc.w $4CDF
     dc.w $0E7E
     dc.w $0644
-    dc.w $0010
-    addq.w #1,d3
+    ori.b #$43,(a0)
 loc_0140A2:
     addq.w #1,d2
     dbra d6,loc_014050
@@ -31193,23 +31171,19 @@ loc_0140AE:
     lea loc_00E71A,a1
     cmpi.w #$0004,d7
 loc_0140D8:
-    dc.w $0004
+    ori.b #$10,d4
     bne.s loc_0140EC
     dc.w $3638
     dc.w $E712
     addq.w #2,d3
     dc.w $E74B
     dc.w $0644
-    dc.w $00A0
-    dc.w $3D44
-    dc.w $000C
+    ori.l #$3D44000C,-(a0)
 loc_0140EC:
     dc.w $3D43
-    dc.w $0010
-    dc.w $2459
+    ori.b #$59,(a0)
     dc.w $1A2A
-    dc.w $0004
-    beq.s loc_014112
+    ori.b #$1A,d4
     move.w #$011C,d0
     dc.w $E54D
     add.w d5,d0
@@ -31220,7 +31194,6 @@ loc_0140EC:
     jsr loc_004F86
     dc.w $4CDF
     dc.w $0E7E
-loc_014112:
     dc.w $0643
     dc.w $0048
     addq.w #1,d7
@@ -31238,8 +31211,7 @@ loc_014122:
     dc.w $0009
     dc.w $E74B
     dc.w $3D43
-    dc.w $0010
-    clr.w d2
+    ori.b #$42,(a0)
     lea loc_FF3004,a1
     dc.w $3838
     dc.w $E714
@@ -31273,9 +31245,10 @@ loc_01416A:
     dc.w $0E7E
     addq.w #1,d2
     dc.w $0644
-    dc.w $0010
+    ori.b #$C9,(a0)
 loc_014182:
     dbra d1,loc_01414E
+    dc.w $FFC8
     dc.w $4CDF
     dc.w $7FFF
     rts
@@ -31308,10 +31281,10 @@ loc_0141B4:
     dc.w $E712
     dc.w $E74B
     dc.w $0644
-    dc.w $00A0
+    ori.l #$3D430010,-(a0)
 loc_0141CE:
     dc.w $3D43
-    dc.w $0010
+    ori.b #$44,(a0)
     dc.w $3D44
     dc.w $000C
     dc.w $3007
@@ -31380,15 +31353,11 @@ loc_014238:
     dc.w $3D44
     dc.w $000C
     dc.w $3D43
-loc_014276:
-    dc.w $0010
-    dc.w $2459
+    ori.b #$59,(a0)
     clr.w d2
     dc.w $142A
-    dc.w $0000
-    dc.w $0442
-    dc.w $0041
-    dc.w $E54A
+    ori.b #$42,d0
+    ori.w #$E54A,d1
     dc.w $0642
     or.w d0,d2
     dc.w $3D42
@@ -31399,8 +31368,8 @@ loc_014276:
     dc.w $4CDF
     dc.w $0E3E
     dc.w $0643
-    dc.w $0010
-    dbra d1,loc_014276
+    ori.b #$C9,(a0)
+    dc.w $FFD2
 loc_0142A4:
     dc.w $4CDF
     dc.w $7FFF
@@ -31422,26 +31391,24 @@ loc_0142AA:
     addq.w #4,d3
     dc.w $E74B
     dc.w $3D43
-    dc.w $0010
-    clr.l d5
+    ori.b #$85,(a0)
     clr.l d6
     clr.l d7
     cmpi.w #$0004,d5
 loc_0142D4:
-    dc.w $0004
+    ori.b #$10,d4
     bne.s loc_0142E8
     dc.w $3638
     dc.w $E712
     addq.w #4,d3
     dc.w $E74B
     dc.w $0644
-    dc.w $00A0
-    dc.w $3D44
-    dc.w $000C
+    ori.l #$3D44000C,-(a0)
 loc_0142E8:
     dc.w $3D43
-    dc.w $0010
-    lea loc_FF3158,a1
+    ori.b #$F9,(a0)
+    dc.w $00FF
+    dc.w $3158
     move.w (2,a1,d7.w),d1
     subq.w #1,d1
     beq.s loc_01432C
@@ -31453,10 +31420,8 @@ loc_0142E8:
     dc.w $2451
     clr.w d0
     dc.w $102A
-    dc.w $0000
-    dc.w $0440
-    dc.w $0041
-    dc.w $E548
+    ori.b #$40,d0
+    ori.w #$E548,d1
     dc.w $0640
     dc.w $0440
     dc.w $3D40
@@ -31469,9 +31434,7 @@ loc_0142E8:
 loc_01432C:
     dc.w $48E7
     dc.w $7F00
-    dc.w $0281
-    dc.w $0000
-    dc.w $FFFF
+    andi.l #$0000FFFF,d1
     jsr loc_006672
     dc.w $3E00
     dc.w $3203
@@ -31513,8 +31476,7 @@ loc_014386:
     subq.w #2,d3
     dc.w $E74B
     dc.w $3D43
-    dc.w $0010
-    clr.w d2
+    ori.b #$42,(a0)
     lea loc_FFFFE852,a1
     dc.w $3839
     dc.w $FFFF
@@ -31525,8 +31487,7 @@ loc_0143B4:
     dc.w $000C
     move.w (a1)+,d0
     dc.w $0440
-    dc.w $0041
-    dc.w $E548
+    ori.w #$E548,d1
     dc.w $3C39
     dc.w $FFFF
     dc.w $E82C
@@ -31547,8 +31508,7 @@ loc_0143D2:
     dc.w $4CDF
     dc.w $0E3E
     dc.w $0644
-    dc.w $0018
-    addq.w #1,d2
+    ori.b #$42,(a0)+
     dbra d1,loc_0143B4
 loc_0143EE:
     dc.w $4CDF
@@ -31583,14 +31543,12 @@ loc_014492:
     cmpi.w #$0044,d7
     blt.s loc_0144A2
     dc.w $33FC
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $E8A8
     bra.s loc_0144AA
 loc_0144A2:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E8A8
 loc_0144AA:
     lea loc_FF316A,a4
@@ -31610,11 +31568,11 @@ loc_0144B4:
     dc.w $2F01
     move.w (6,a1),d1
     dc.w $1741
-    dc.w $0004
-    move.w (0,a1),d1
-    dc.w $1741
-    dc.w $0001
-    lea loc_FF30DA,a0
+    ori.b #$29,d4
+    ori.b #$41,d0
+    ori.b #$F9,d1
+    dc.w $00FF
+    dc.w $30DA
     dc.w $3405
     dc.w $E54A
     dc.w $3181
@@ -31626,28 +31584,23 @@ loc_0144B4:
     dc.w $E8A8
     beq.s loc_014516
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $E8A8
     beq.s loc_01450E
     dc.w $31BC
-    dc.w $0002
-    dc.w $2000
+    ori.b #$00,d2
     bra.s loc_01452E
 loc_01450E:
     dc.w $31BC
-    dc.w $0003
-    dc.w $2000
+    ori.b #$00,d3
     bra.s loc_01452E
 loc_014516:
     dc.w $31BC
-    dc.w $0001
-    dc.w $2000
+    ori.b #$00,d1
     lea loc_FF311A,a0
     clr.w d2
     dc.w $142B
-    dc.w $0001
-    dc.w $E54A
+    ori.b #$4A,d1
     dc.w $218B
     dc.w $2000
 loc_01452E:
@@ -31664,23 +31617,20 @@ loc_014869:
     dc.w $2900
     dc.w $0E17
     dc.w $4400
-    dc.w $0017
-    moveq #0,d6
+    ori.b #$00,(a7)
     eori.b #$17,d0
     dc.w $4500
     dc.w $0917
     dc.w $4600
     eori.b #$00,(a7)
-    dc.w $0200
-    dc.w $0252
+    andi.b #$52,d0
     dc.w $4654
     dc.w $4351
     dc.w $CAFF
     add.w (a2),d4
     lea (a3),a3
     dc.w $FC00
-    dc.w $0000
-    dc.w $1E51
+    ori.b #$51,d0
     dc.w $C9FF
     move.l #$38AEAC43,d7
     dc.w $F900
@@ -31700,9 +31650,8 @@ loc_0148A4:
     dc.w $4E32
     move.w (0,a2,d6.w),d1
     dc.w $3260
-    dc.w $0067
+    ori.w #$0001,-(a7)
     beq.w loc_014A3A
-    dc.w $0001
     dc.w $80D3
     add.w d1,($E76A).w
     moveq #-25,d4
@@ -31712,8 +31661,7 @@ loc_0148A4:
     dc.w $2271
     dc.w $7160
     bra.w loc_018EBF
-    dc.w $0045
-    dc.w $F900
+    ori.w #$F900,d5
     dc.w $FF31
     dc.w $583E
     dc.w $12D3
@@ -31757,12 +31705,10 @@ loc_0148A4:
     dc.w $0817
     moveq #0,d6
     or.b d0,d0
-    dc.w $0260
-    dc.w $0617
+    andi.w #$0617,-(a0)
     moveq #0,d6
     or.b d0,d2
-    dc.w $0217
-    dc.w $4100
+    andi.b #$00,(a7)
     dc.w $013A
     dc.w $C10C
     dc.w $4100
@@ -31774,26 +31720,20 @@ loc_0148A4:
     dc.w $2900
     dc.w $023D
     or.b d2,(a0)
-    dc.w $0017
-    dc.w $4500
-    dc.w $0032
-    dc.w $054E
-    dc.w $B900
-    dc.w $00B6
-    dc.w $1E3A
-    dc.w $E800
-    moveq #50,d1
+    ori.b #$00,(a7)
+    ori.b #$4E,(0,a2,a3.l)
+    ori.l #$1E3AE800,(50,a6,d7.w)
     dc.w $2800
-    dc.w $0217
-    dc.w $4100
+    andi.b #$00,(a7)
     dc.w $0332
     dc.w $2800
     dc.w $0417
     dc.w $4100
     dc.w $0617
     moveq #0,d6
-    dc.w $0000
-    eori.b #$17,(18176,pc)
+    ori.b #$3A,d0
+    dc.w $0717
+    dc.w $4700
     dc.w $0932
     dc.w $2900
     dc.w $0417
@@ -31820,11 +31760,10 @@ loc_0148A4:
     or.w a2,d0
     dc.w $2B00
     eori.w #$2270,-(a6)
-    dc.w $0010
-    dc.w $2B00
+    ori.b #$00,(a0)
     dc.w $010C
-    dc.w $0000
-    eori.w #$0000,(5697,a4)
+    ori.b #$6C,d0
+    ori.b #$41,d0
     dc.w $F900
     dc.w $FF30
     dc.w $9EE5
@@ -31847,8 +31786,7 @@ loc_0148A4:
     dc.w $4952
     dc.w $423B
     or.b (a0),d1
-    dc.w $0055
-    dc.w $4236
+    ori.w #$4236,(a5)
     dc.w $3C00
     dc.w $0E3C
     dc.w $3C00
@@ -31862,8 +31800,7 @@ loc_0148A4:
     and.b d5,($2900).w
     dc.w $0E17
     dc.w $4400
-    dc.w $0017
-    moveq #0,d6
+    ori.b #$00,(a7)
     eori.b #$17,d0
     dc.w $4500
     dc.w $0917
@@ -31875,29 +31812,23 @@ loc_0148A4:
     dc.w $0817
     moveq #0,d6
     or.b d0,d1
-    dc.w $0260
-    dc.w $0617
+    andi.w #$0617,-(a0)
     moveq #0,d6
     or.b d0,d3
-    dc.w $0252
-    dc.w $4654
+    andi.w #$4654,(a2)
     dc.w $4351
     dc.w $CAFF
     and.w (a2),d4
     lea (a3),a3
     dc.w $FC00
-    dc.w $0000
-    dc.w $1E51
+    ori.b #$51,d0
     dc.w $C9FE
     and.w a6,d0
 loc_014A3A:
     jsr loc_00B876
     dc.w $B900
-    dc.w $00B8
-    moveq #78,d3
+    ori.l #$764EB900,($00B6).w
     jsr loc_00B62C
-    dc.w $B900
-    dc.w $00B6
     dc.w $2C42
     dc.w $4279
     dc.w $79FF
@@ -31907,9 +31838,8 @@ loc_014A3A:
     dc.w $A223
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$56,d1
     dc.w $014A
-    dc.w $4A56
     dc.w $56FF
     dc.w $FFFF
     dc.w $FF80
@@ -31929,9 +31859,8 @@ loc_014A3A:
     dc.w $2A23
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$7C,d1
     dc.w $014A
-    dc.w $4A7C
     moveq #-1,d6
     dc.w $FFFF
     dc.w $FF80
@@ -31995,9 +31924,8 @@ loc_014AAE:
     dc.w $23FC
 loc_014AC3:
     dc.w $FC00
-    dc.w $0001
+    ori.b #$CC,d1
     dc.w $014A
-    dc.w $4ACC
     dc.w $CCFF
     dc.w $FFFF
     dc.w $FF80
@@ -32005,8 +31933,7 @@ loc_014AC3:
     dc.w $104E
     jsr loc_00963A
     dc.w $B900
-    dc.w $0096
-    move.w (-1,a2,d3.l),d5
+    ori.l #$3A3239FF,(a6)
     dc.w $3239
     dc.w $FFFF
     dc.w $FFE8
@@ -32022,9 +31949,8 @@ loc_014AC3:
     dc.w $2A23
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$FA,d1
     dc.w $014A
-    dc.w $4AFA
     dc.w $FAFF
     dc.w $FFFF
     dc.w $FF80
@@ -32057,9 +31983,8 @@ loc_014B0C:
     bhi.s loc_014B34
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$28,d1
     dc.w $014B
-    dc.w $4B28
     dc.w $28FF
     dc.w $FFFF
     dc.w $FF80
@@ -32142,10 +32067,8 @@ loc_014B6F:
     dc.w $42E3
     dc.w $4A34
     dc.w $3120
-    dc.w $0255
-    dc.w $426B
-    dc.w $0001
-    dc.w $1033
+    andi.w #$426B,(a5)
+    ori.b #$33,d1
     dc.w $C2FF
     dc.w $FFE8
     sub.w d3,d7
@@ -32176,18 +32099,15 @@ loc_014B6F:
     dc.w $008F
     dc.w $3C4E
     dc.w $B900
-    dc.w $0096
-    dc.w $3A42
-    dc.w $79FF
+    ori.l #$3A4279FF,(a6)
     dc.w $FFE8
 loc_014BD0:
     dc.w $E89C
     sub.b -(a3),d6
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$DC,d1
     dc.w $014B
-    dc.w $4BDC
     dc.w $DCFF
     dc.w $FFFF
     dc.w $FF80
@@ -32223,10 +32143,8 @@ loc_014BDC:
     dc.w $031B
     sub.b (112,a2,d3.w),d1
     move.w (0,a4,d7.w),d1
-    dc.w $0034
+    ori.b #$70,(-46,a4,d3.w)
     move.w (48,a4,d7.w),d2
-    dc.w $3470
-    dc.w $30D2
     add.w d3,d1
     lea (a4),a1
     add.w d4,d2
@@ -32234,15 +32152,13 @@ loc_014BDC:
     dc.w $3A01
     dc.w $013C
     dc.w $3C02
-    dc.w $0261
+    andi.w #$0002,-(a1)
     bsr.w loc_014E2E
-    dc.w $0002
     dc.w $224A
     tst.w d0
     dc.w $406B
     bmi.w loc_014CA2
-    dc.w $0000
-    sub.w a6,d0
+    ori.b #$4E,d0
     jsr loc_008ED8
     dc.w $B900
     dc.w $008E
@@ -32256,18 +32172,14 @@ loc_014BDC:
     dc.w $5112
     dc.w $122B
     dc.w $2B00
-    dc.w $0000
+    ori.b #$B9,d0
     dc.w $004E
-    jsr loc_00B61E
     dc.w $B900
-    dc.w $00B6
-    dc.w $1E34
+    ori.b #$1E,d0
+    ori.l #$1E343020,(107,a6,d2.l)
     move.w (40,a0,d2.w),d2
-    dc.w $3020
-    dc.w $286B
     bmi.w loc_014CA2
-    dc.w $0000
-    moveq #23,d0
+    ori.b #$17,d0
     dc.w $1745
     dc.w $4500
     dc.w $000B
@@ -32278,22 +32190,17 @@ loc_014BDC:
     dc.w $0C08
     dc.w $08AB
     dc.w $AB00
-    dc.w $0001
+    ori.b #$02,d1
     dc.w $0100
-    dc.w $0002
-    dc.w $0261
+    andi.w #$0002,-(a1)
     bsr.w loc_014E5E
-    dc.w $0002
     dc.w $1A4E
     jsr loc_00963A
     dc.w $B900
-    dc.w $0096
-    dc.w $3AD2
+    ori.l #$3AD2FC00,(a6)
     dc.w $D2FC
-    dc.w $FC00
-    dc.w $0004
+    ori.b #$C9,d4
     dc.w $0423
-    dc.w $23C9
     dc.w $C9FF
     dc.w $FFFF
     dc.w $FFE8
@@ -32321,21 +32228,16 @@ loc_014BDC:
     sub.w a6,d7
     jsr loc_007766
     dc.w $B900
-    dc.w $0077
-    bne.s loc_014C7D
+    ori.w #$660C,(0,a7,d4.w)
     cmpi.w #$0002,d0
-    dc.w $4000
-    dc.w $0267
+    andi.w #$1823,-(a7)
     beq.s loc_014C8E
-    dc.w $1823
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$82,d1
     dc.w $014C
-    dc.w $4C82
     dc.w $82FF
     dc.w $FFFF
-loc_014C7D:
     dc.w $FF80
     or.b (a0),d0
     dc.w $104E
@@ -32350,9 +32252,8 @@ loc_014C7D:
 loc_014C8E:
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$DC,d1
     dc.w $014B
-    dc.w $4BDC
     dc.w $DCFF
     dc.w $FFFF
     dc.w $FF80
@@ -32391,9 +32292,7 @@ loc_014CA2:
     dc.w $4FE5
     dc.w $4922
     dc.w $7110
-    dc.w $0032
-    dc.w $3270
-    dc.w $0031
+    ori.b #$70,(49,a2,d0.w)
     dc.w $C1E7
     bpl.s loc_014D1A
     dc.w $F900
@@ -32409,28 +32308,43 @@ loc_014CA2:
     dc.w $FF30
     dc.w $0428
     dc.w $4A3C
+loc_014CEE:
+    dc.w $3C07
     dc.w $07ED
+    dc.w $ED4E
     dc.w $4ED8
+    dc.w $D8C6
     and.w -(a1),d3
+    bsr.w loc_013E42
     dc.w $00F1
     dc.w $4C28
+    dc.w $28CB
     and.b d5,(306,a7)
+    dc.w $2F01
+    move.w (6,a1),d1
     dc.w $2900
     dc.w $0617
+    dc.w $1741
     dc.w $4100
+    ori.b #$29,d4
     dc.w $0432
     dc.w $2900
+    ori.b #$41,d0
     dc.w $000C
     dc.w $4100
+    dc.w $000A
     eori.w #$0A04,(16640,a5)
+    blt.s loc_014D18
+    dc.w $0441
+    dc.w $000A
     eori.b #$00,(a7)
+    dc.w $177C
+    ori.l #$00021741,d0
     or.b d0,d0
-    dc.w $0217
-    dc.w $4100
+    andi.b #$00,(a7)
 loc_014D1A:
-    dc.w $0001
+    ori.b #$C1,d1
     dc.w $013A
-    dc.w $3AC1
     and.b d0,(0,a2,d2.l)
     move.w (2,a1),d1
     dc.w $023C
@@ -32438,38 +32352,31 @@ loc_014D1A:
     and.b d0,(a7)
     dc.w $1741
     dc.w $4100
-    dc.w $0000
+    ori.b #$B9,d0
     dc.w $004E
-    jsr loc_00B61E
     dc.w $B900
-    dc.w $00B6
-    dc.w $1E3A
+    ori.b #$1E,d0
+    ori.l #$1E3AE800,(50,a6,d7.w)
     dc.w $3AE8
-    dc.w $E800
-    dc.w $0072
-    moveq #50,d1
-    move.w (2,a0),d1
+    ori.w #$3228,(2,a2,d0.w)
     dc.w $2800
-    dc.w $0217
+    andi.b #$00,(a7)
     dc.w $1741
-    dc.w $4100
-    dc.w $0003
+    ori.b #$28,d3
     dc.w $0332
-    move.w (4,a0),d1
     dc.w $2800
+    ori.b #$41,d4
     dc.w $0417
-    dc.w $1741
     dc.w $4100
-    dc.w $0006
+    ori.b #$7C,d6
     dc.w $0617
-    dc.w $177C
     moveq #0,d6
-    dc.w $0000
-    dc.w $0000
-    dc.w $000A
-    eori.b #$17,(17664,pc)
+    ori.b #$0A,d0
+    ori.b #$3A,d0
     dc.w $3A07
+    dc.w $0717
     dc.w $1745
+    dc.w $4500
     dc.w $0009
     dc.w $0932
     move.w (4,a1),d1
@@ -32493,8 +32400,7 @@ loc_014D1A:
     dc.w $000C
     dc.w $0C61
     bsr.w loc_014E5E
-    dc.w $0000
-    dc.w $F634
+    ori.b #$34,d0
     move.w (12,a1),d2
     dc.w $2900
     dc.w $0C2F
@@ -32515,9 +32421,8 @@ loc_014D1A:
     dc.w $3B82
     or.b (a0),d1
     dc.w $1000
-    dc.w $0055
+    ori.w #$4236,(a5)
     subq.w #2,d2
-    dc.w $4236
     move.w #$000E,d3
     dc.w $3C00
     dc.w $0E3C
@@ -32530,6 +32435,8 @@ loc_014D1A:
     dc.w $1F61
     bsr.w loc_013E42
     dc.w $00F0
+loc_014D92:
+    dc.w $F0B0
     cmp.b (-13512,a0),d0
     dc.w $28CB
     move.w (14,a1),d4
@@ -32537,14 +32444,11 @@ loc_014D1A:
     dc.w $0E17
     dc.w $1744
     dc.w $4400
-    dc.w $0000
-    dc.w $0017
-    dc.w $177C
-    moveq #0,d6
+    ori.b #$7C,d0
+    ori.b #$00,(a7)
     dc.w $000A
     eori.b #$17,d0
-    dc.w $0003
-    dc.w $1745
+    ori.b #$45,d3
     dc.w $4500
     dc.w $0009
     dc.w $0917
@@ -32553,10 +32457,8 @@ loc_014D1A:
     dc.w $000A
     eori.b #$00,(a7)
     dc.w $177C
-    dc.w $0002
-    dc.w $0200
-    dc.w $0002
-    dc.w $0230
+    ori.b #$02,d2
+    andi.b #$30,d0
     move.w (0,a1),d0
     dc.w $2900
     dc.w $000C
@@ -32565,13 +32467,11 @@ loc_014D1A:
     eori.w #$0608,(-5376,a5)
     blt.s loc_014DC2
     dc.w $08EB
-    dc.w $0007
+    ori.b #$02,d7
     dc.w $0700
-    dc.w $0002
-    dc.w $0252
+    andi.w #$4654,(a2)
 loc_014DC2:
     addq.w #1,d6
-    dc.w $4654
     addq.w #2,d3
     dc.w $4351
     dbra d2,loc_014D92
@@ -32581,20 +32481,15 @@ loc_014DC2:
     lea (a3),a3
     dc.w $D3FC
     dc.w $FC00
-    dc.w $0000
-    dc.w $0000
-    dc.w $001E
-    dc.w $1E51
+    ori.b #$1E,d0
+    ori.b #$51,d0
     dbra d1,loc_014CEE
     dc.w $C9FF
     dc.w $184E
     jsr loc_00B876
     dc.w $B900
-    dc.w $00B8
-    moveq #78,d3
+    ori.l #$764EB900,($0096).w
     jsr loc_00963A
-    dc.w $B900
-    dc.w $0096
     dc.w $3A4E
     rts
     dc.w $7532
@@ -32611,9 +32506,8 @@ loc_014DE4:
     dc.w $2271
     dc.w $7110
     dc.w $1000
-    dc.w $0045
+    ori.w #$F900,d5
     lea loc_FF3158,a2
-    dc.w $F900
     dc.w $FF31
     dc.w $5832
     move.w (a2),d1
@@ -32628,17 +32522,13 @@ loc_014DE4:
     moveq #38,d6
     dc.w $2652
     dc.w $5208
-loc_014E08:
     dc.w $08AB
     dc.w $AB00
-    dc.w $0001
+    ori.b #$02,d1
     dc.w $0100
-    dc.w $0002
-    dc.w $0234
+    andi.b #$17,(0,a4,d4.w)
     move.w (a1)+,d2
-    dc.w $1917
     dc.w $1742
-    clr.b d0
     dc.w $000B
     dc.w $0B34
     move.w (a1)+,d2
@@ -32648,21 +32538,18 @@ loc_014E08:
     dc.w $000C
     dc.w $0C61
     bsr.w loc_014E5E
-    dc.w $0000
-    dc.w $42D4
+    ori.b #$D4,d0
     dc.w $D4FC
     dc.w $FC00
-    dc.w $0040
+    ori.w #$51C9,d0
     dc.w $4051
-    dbra d1,loc_014E08
     dc.w $C9FF
+    dc.w $FFE2
     dc.w $E24E
     jsr loc_00963A
     dc.w $B900
-    dc.w $0096
-    dc.w $3A4E
+    ori.l #$3A4E7548,(a6)
     rts
-    dc.w $7548
 loc_014E2E:
     dc.w $48E7
     dc.w $E77F
@@ -32673,11 +32560,9 @@ loc_014E2E:
     bmi.s loc_014E54
     dc.w $1E38
     dc.w $3802
-    dc.w $026B
+    andi.w #$1A4E,(-18176,a3)
     bmi.s loc_014E54
-    dc.w $1A4E
     jsr loc_008ECA
-    dc.w $B900
     dc.w $008E
     and.l (108,a6,d4.w),d5
     dc.w $B641
@@ -32693,13 +32578,10 @@ loc_014E2E:
     dc.w $044E
     jsr loc_00B55A
     dc.w $B900
-    dc.w $00B5
-    dc.w $5A67
+    ori.l #$5A670430,(-1,a5,d3.l)
     beq.s loc_014E58
-    dc.w $0430
 loc_014E54:
     move.w #$FFFF,d0
-    dc.w $3CFF
     dc.w $FF4C
 loc_014E58:
     dc.w $4CDF
@@ -32714,11 +32596,9 @@ loc_014E5E:
     moveq #16,d4
     dc.w $1072
     moveq #0,d1
-    dc.w $0034
+    ori.b #$36,(56,a4,d0.w)
     dc.w $3401
-    dc.w $0136
     dc.w $3601
-    dc.w $0138
     dc.w $3801
     dc.w $0112
     dc.w $122B
@@ -32739,12 +32619,9 @@ loc_014E5E:
     dc.w $0A4E
     jsr loc_00B600
     dc.w $B900
-    dc.w $00B6
-    dc.w $004C
+    ori.l #$004CDF08,(78,a6,d1.l)
     dc.w $4CDF
-    dc.w $DF08
     dc.w $081E
-    dc.w $1E4E
     rts
     dc.w $7523
     dc.w $FC00
@@ -32754,9 +32631,7 @@ loc_014E8B:
     dc.w $FF80
     dc.w $1020
     dc.w $3C00
-    dc.w $006F
-    dc.w $484E
-    dc.w $B900
+    ori.w #$484E,(-18176,a7)
     dc.w $0048
     dc.w $5E4E
     dc.w $7523
@@ -32779,8 +32654,7 @@ loc_014E8B:
     dc.w $00E5
     lea (a2),a4
     and.b d0,(107,a2,d1.w)
-    dc.w $0000
-    dc.w $A831
+    ori.b #$31,d0
     dc.w $FC00
     dc.w $03AE
     dc.w $EC31
@@ -32834,11 +32708,7 @@ loc_014E8B:
     dc.w $2900
     dc.w $024E
     dc.w $B900
-    dc.w $00B9
-    dc.w $3466
-    dc.w $0000
-    dc.w $A621
-    dc.w $FC00
+    ori.l #$34660000,($A621FC00).l
     dc.w $0330
     moveq #-82,d1
     dc.w $F421
@@ -32869,27 +32739,22 @@ loc_014E8B:
     dc.w $FF31
     dc.w $1A22
     dc.w $7110
-    dc.w $0013
-    moveq #0,d6
+    ori.b #$00,(a3)
     dc.w $0900
     dc.w $084E
     dc.w $B900
     dc.w $0048
     moveq #32,d4
     dc.w $3C00
-    dc.w $006F
-    dc.w $A04E
-    dc.w $B900
+    ori.w #$A04E,(-18176,a7)
     dc.w $0048
     dc.w $5E4E
     dc.w $7532
     move.w (-7090,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_014FDD
+    ori.w #$6C30,-(a4)
     cmp.b (-7135,pc),d6
     moveq #0,d6
     dc.w $031B
@@ -32897,121 +32762,6 @@ loc_014E8B:
     dc.w $0431
     moveq #-128,d6
     bra.w loc_0157FF
-loc_014FDD:
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7521
-    dc.w $FC00
-    dc.w $0330
-    cmp.l (-3039,a6),d0
-    dc.w $FC00
-    dc.w $0153
-    move.l d4,(-1501,a6)
-    dc.w $FC00
-    dc.w $0150
-    dc.w $ACFF
-    dc.w $FF80
-    dc.w $1020
-    dc.w $3C00
-    dc.w $0088
-    dc.w $124E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7508
-    dc.w $3800
-    dc.w $07E7
-    moveq #103,d7
-    dc.w $1E08
-    dc.w $B800
-    dc.w $07E7
-    moveq #35,d7
-    dc.w $FC00
-    dc.w $014F
-    dc.w $C2FF
-    dc.w $FF80
-    dc.w $1020
-    dc.w $3C00
-    dc.w $0151
-    or.w a6,d3
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $7561
-    dc.w $0001
-    move.l (-1,a2,d3.l),d5
-    dc.w $FFE8
-    dc.w $B0E5
-    dc.w $4943
-    dc.w $F900
-    dc.w $FF31
-    dc.w $1A22
-    dc.w $7110
-    dc.w $0013
-    clr.b d0
-    dc.w $0013
-    moveq #0,d6
-    dc.w $0100
-    dc.w $08E2
-    dc.w $4943
-    dc.w $F900
-    dc.w $FF30
-    dc.w $0433
-    or.b (a0),d1
-    dc.w $0023
-    dc.w $FC00
-    dc.w $0150
-    dc.w $98FF
-    dc.w $FF80
-    dc.w $1032
-    move.w (-7090,pc),d6
-    dc.w $B900
-    dc.w $0065
-    or.b -(a0),d6
-    dc.w $3C00
-    dc.w $006F
-    dc.w $A04E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E20
-    dc.w $3C00
-    dc.w $008A
-    dc.w $A04E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E20
-    dc.w $3C00
-    dc.w $008A
-    dc.w $A04E
-    dc.w $B900
-    dc.w $0048
-    dc.w $5E4E
-    dc.w $754E
-    dc.w $B900
-    dc.w $0048
-    moveq #78,d4
-    dc.w $B900
-    dc.w $00B8
-    moveq #78,d3
-    dc.w $B900
-    dc.w $0096
-    dc.w $3A4E
-    dc.w $7532
-    move.w (-5554,pc),d6
-    dc.w $B900
-    dc.w $0065
-    or.w a6,d6
-    dc.w $B900
-    dc.w $0064
-    bge.s loc_0150ED
-    cmp.b (-5599,pc),d6
-    moveq #0,d6
-    dc.w $031B
-    dc.w $2E00
-    dc.w $0431
-    moveq #-128,d6
-    bra.w loc_01590F
 loc_0153CE:
     dc.w $48E7
     dc.w $FFFE
@@ -33023,9 +32773,7 @@ loc_0153CE:
     dc.w $E74A
     move.w #$0001,d7
     dc.w $3D41
-loc_0153F0:
-    dc.w $0010
-    dc.w $3D42
+    ori.b #$42,(a0)
     dc.w $000C
     move.w #$8500,d5
     tst.w d7
@@ -33040,8 +32788,8 @@ loc_015400:
     dc.w $4CDF
     dc.w $0EFE
     dc.w $0642
-    dc.w $0018
-    dbra d7,loc_0153F0
+    ori.b #$CF,(a0)+
+    dc.w $FFD6
     dc.w $4CDF
     dc.w $7FFF
     rts
@@ -33055,8 +32803,7 @@ loc_015420:
     add.w ($FFFFE8B6).l,d2
     dc.w $E74A
     dc.w $3D41
-    dc.w $0010
-    dc.w $3D42
+    ori.b #$42,(a0)
     dc.w $000C
     dc.w $3D7C
     dc.w $8500
@@ -33068,12 +32815,9 @@ loc_015420:
 loc_0154A2:
     dc.w $2A09
     dc.w $0805
-    dc.w $0000
-    beq.s loc_0154B0
+    ori.b #$06,d0
     dc.w $D3FC
-    dc.w $0000
-    dc.w $0001
-loc_0154B0:
+    ori.b #$01,d0
     move.w (a1)+,d4
     bpl.s loc_0154B8
     bra.w loc_015824
@@ -33091,25 +32835,19 @@ loc_015512:
     bra.s loc_015562
 loc_015562:
     dc.w $1A2C
-    dc.w $0002
-    dc.w $0805
-    dc.w $0001
-    beq.s loc_0155A6
+    ori.b #$05,d2
+    ori.b #$3A,d1
     dc.w $0C79
-    dc.w $0002
-    dc.w $FFFF
+    ori.b #$FF,d2
     dc.w $E8D6
     beq.w loc_015824
 loc_015578:
     dc.w $2449
     dc.w $2A09
     dc.w $0805
-    dc.w $0000
-    beq.s loc_015588
+    ori.b #$06,d0
     dc.w $D5FC
-    dc.w $0000
-    dc.w $0001
-loc_015588:
+    ori.b #$01,d0
     move.w (a2),d5
     cmpi.b #$FF,d5
     beq.w loc_0154A2
@@ -33141,8 +32879,7 @@ loc_0155A6:
     dc.w $31C1
     cmp.w (12738,a4),d0
     cmp.w (9212,a6),d0
-    dc.w $0001
-    dc.w $561A
+    ori.b #$1A,d1
     dc.w $FFFF
     or.b (a0),d0
     move.l #$0000B43A,d0
@@ -33152,8 +32889,7 @@ loc_0155A6:
     rts
 loc_0155F6:
     dc.w $23FC
-    dc.w $0001
-    dc.w $561A
+    ori.b #$1A,d1
     dc.w $FFFF
     or.b (a0),d0
     jsr loc_008F3C
@@ -33162,8 +32898,7 @@ loc_0155F6:
     jsr loc_00485E
     rts
 loc_0157FF:
-    dc.w $0000
-    dc.w $013C
+    ori.b #$3C,d0
     dc.w $116B
     dc.w $1E23
     dc.w $C9FF
@@ -33184,9 +32919,8 @@ loc_0157FF:
 loc_015824:
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$40,d1
     dc.w $0158
-    addq.w #4,d0
     dc.w $40FF
     dc.w $FFFF
     dc.w $FF80
@@ -33209,8 +32943,7 @@ loc_015824:
     dc.w $F890
     sub.w a6,d1
     dc.w $B900
-    dc.w $0059
-    addq.w #1,d2
+    ori.w #$5242,(a1)+
     dc.w $434A
     moveq #-82,d4
     cmp.w -(a7),d3
@@ -33238,8 +32971,7 @@ loc_015824:
     dc.w $0008
     dc.w $2C00
     dc.w $0100
-    dc.w $0267
-    dc.w $0452
+    andi.w #$0452,-(a7)
     dc.w $4360
     add.w d2,d7
     dc.w $4142
@@ -33251,12 +32983,9 @@ loc_015824:
     dc.w $01AF
     dc.w $1E4E
     dc.w $B900
-    dc.w $0002
-    cmp.b (0,a1,a7.l),d0
-    dc.w $00AF
-    dc.w $1C4E
-    dc.w $B900
-    dc.w $0048
+    ori.b #$31,d2
+    dc.w $FC00
+    ori.l #$1C4EB900,(72,a7)
     moveq #32,d4
     dc.w $39FF
     dc.w $FF80
@@ -33272,12 +33001,9 @@ loc_015824:
     dc.w $E77F
     dc.w $FE32
     dc.w $3C00
-    dc.w $0234
-    dc.w $3C00
-    dc.w $0236
+    andi.b #$00,(54,a4,d0.w)
     dc.w $3CD0
-    dc.w $0022
-    dc.w $79FF
+    ori.b #$FF,-(a2)
     dc.w $FFE8
     dc.w $BA42
     dc.w $454A
@@ -33300,43 +33026,416 @@ loc_015824:
     dc.w $4CE9
     dc.w $4C43
     dc.w $F900
-    dc.w $02B3
-    dc.w $3AD2
-    and.b (-48,a6,d3.l),d2
-    dc.w $005E
-    dc.w $4238
+    andi.l #$3AD2C436,(-48,a3,d3.l)
+    ori.w #$4238,(a6)+
     dc.w $3C80
-loc_01590F:
-    dc.w $003A
+    ori.b #$00,(78,pc)
+    dc.w $B900
+    ori.w #$BE4E,-(a2)
+    dc.w $B900
+    ori.w #$604C,(a7)+
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
     dc.w $3C00
-    dc.w $004E
+    andi.b #$00,(-46,a4,d0.w)
+    moveq #-82,d4
+    dc.w $ECD4
+    moveq #-82,d4
+    dc.w $EE22
+    dc.w $79FF
+    dc.w $FFE8
+    cmp.b (2312,a2),d5
+    dc.w $0500
+    ori.w #$06D3,-(a7)
+    dc.w $FC00
+    ori.b #$38,d0
+    dc.w $196A
+    dc.w $0C33
+    dc.w $FC00
+    dc.w $01FF
+    dc.w $FFE8
+    and.w -(a0),d2
+    ori.b #$0C,d0
+    dc.w $4400
+    dc.w $506D
+    dc.w $0804
+    dc.w $4400
+    dc.w $5060
+    ori.b #$3A,d0
+    dc.w $0445
+    dc.w $F900
+    dc.w $FF30
+    dc.w $DAE5
+    dc.w $4C33
+    dc.w $F240
+    dc.w $02FF
+    dc.w $FFE8
+    and.b ($3240).w,d3
+    ori.w #$1E49,(-1792,a3)
+    dc.w $FF51
+    moveq #-19,d6
+    dc.w $4D28
+    moveq #80,d2
+    dc.w $004A
+    dc.w $79FF
+    dc.w $FFE8
+    add.w -(a7),d3
+    move.w (a2)+,d3
+    dc.w $2C00
+    dc.w $0208
+    dc.w $0500
+    dc.w $0167
+    dc.w $2C24
+    dc.w $492A
+    dc.w $0908
+    dc.w $0500
+    ori.w #$06D5,-(a7)
+    dc.w $FC00
+    ori.b #$3A,d0
+    dc.w $120C
+    dc.w $0500
+    dc.w $FF67
+    or.b (a2)+,d3
+    dc.w $190C
+    dc.w $0500
+    dc.w $FF66
+    dc.w $F81A
+    dc.w $190C
+    dc.w $0500
+    dc.w $FF66
+    dc.w $F860
+    dc.w $00FF
+    moveq #72,d2
+    dc.w $E760
+    ori.w #$4142,d2
+    dc.w $424A
+    dc.w $79FF
+    dc.w $FFE8
+    and.w -(a7),d3
+    dc.w $0812
+    dc.w $190C
+    dc.w $0100
+    dc.w $FF66
+    dc.w $F812
+    dc.w $2C00
+    dc.w $0B14
+    dc.w $2C00
+    dc.w $0C4E
     dc.w $B900
-    dc.w $0062
-    dc.w $BE4E
+    dc.w $008F
+    dc.w $3C4C
+    dc.w $DF00
+    dc.w $0623
+    dc.w $C9FF
+    dc.w $FFE8
+    dc.w $BA4E
     dc.w $B900
-    dc.w $005F
-    bra.s loc_01596D
+    dc.w $00BF
+    dc.w $4CE9
+    dc.w $4C43
+    dc.w $F900
+    andi.l #$3AD2C436,(-64,a3,d3.l)
+    ori.w #$4238,(a4)+
+    dc.w $3C80
+    ori.b #$00,(78,pc)
+    dc.w $B900
+    ori.w #$BE4E,-(a2)
+    dc.w $B900
+    ori.w #$604C,(a7)+
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $3C00
+    dc.w $0434
+    dc.w $3C00
+    dc.w $0936
+    dc.w $3CC0
+    ori.b #$80,($6542).w
+    dc.w $4543
+    dc.w $F900
+    dc.w $015A
+    dc.w $564E
+    dc.w $B900
+    ori.w #$DC4C,(a4)+
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7500
+    andi.b #$00,d0
+    dc.w $08FA
+    dc.w $FEF0
+    dc.w $00FF
+    dc.w $0048
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    dc.w $0866
+    dc.w $080C
+    moveq #0,d4
+    dc.w $03AE
+    cmp.w -(a7),d1
+    dc.w $0630
+    dc.w $3C00
+    ori.w #$144A,-(a0)
+    moveq #-82,d4
+    cmp.w -(a7),d1
+    dc.w $F430
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0833
+    dc.w $C1FF
+    dc.w $FFE8
+    add.w a4,d2
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    dc.w $0966
+    dc.w $244A
+    moveq #-29,d4
+    dc.w $E667
+    dc.w $1E0C
+    moveq #0,d4
+    dc.w $03E3
+    dc.w $E266
+    dc.w $164A
+    moveq #-28,d4
+    dc.w $2E66
+    dc.w $1030
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0933
+    dc.w $C1FF
+    dc.w $FFE8
+    add.w -(a0),d2
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    dc.w $0966
+    dc.w $080C
+    moveq #0,d4
+    dc.w $01AE
+    cmp.w -(a7),d1
+    dc.w $0630
+    dc.w $3C00
+    ori.w #$144A,-(a0)
+    moveq #-82,d4
+    cmp.w -(a7),d3
+    dc.w $F430
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0933
+    dc.w $C1FF
+    dc.w $FFE8
+    add.w a4,d2
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    andi.w #$3843,-(a6)
+    dc.w $F900
+    dc.w $FF51
+    moveq #-45,d6
+    dc.w $FC00
+    ori.b #$45,d2
+    dc.w $F900
+    dc.w $FF31
+    bpl.s loc_015B67
+    dc.w $2A00
+    andi.w #$4224,(a5)
+    dc.w $5916
+    dc.w $2A00
+    dc.w $0208
+    dc.w $0300
+    dc.w $0167
+    dc.w $1451
+    dc.w $CAFF
+    dc.w $F230
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    andi.b #$FF,(-24,a3,a7.l)
+    add.w -(a0),d2
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+loc_015B67:
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    dc.w $0666
+    dc.w $1E4A
+    moveq #-80,d4
+    dc.w $0C66
+    dc.w $180C
+    moveq #0,d4
+    dc.w $08B0
+    eori.w #$1030,-(a6)
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0633
+    dc.w $C1FF
+    dc.w $FFE8
+    add.w -(a0),d2
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    dc.w $0C66
+    dc.w $3C43
+    dc.w $F900
+    dc.w $FF51
+    moveq #-45,d6
+    dc.w $FC00
+    ori.b #$24,d2
+    dc.w $5114
+    dc.w $2A00
+    dc.w $0208
+    andi.b #$67,d0
+    move.l (a4),d2
+    dc.w $2A00
+    dc.w $0B0C
+    andi.b #$66,d0
+    dc.w $1A14
+    dc.w $2A00
+    dc.w $0C0C
+    andi.b #$66,d0
+    dc.w $1030
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0C33
+    dc.w $C1FF
+    dc.w $FFE8
+    add.w -(a0),d2
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE3C
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0600
+    dc.w $0E66
+    move.w (0,a2,d3.l),d0
+    dc.w $0D34
+    dc.w $3C00
+    dc.w $104E
+    dc.w $B900
+    ori.l #$5067200C,(0,a5,d4.w)
+    dc.w $086D
+    dc.w $1A14
+    dc.w $2800
+    dc.w $0208
+    andi.b #$67,d0
+    dc.w $1030
+    dc.w $3C00
+    dc.w $0108
+    and.b d0,d3
+    dc.w $0E33
+    dc.w $C6FF
+    dc.w $FFE8
+    add.w -(a0),d2
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    ori.w #$080C,-(a6)
+    moveq #0,d4
+    dc.w $01AE
+    cmp.w -(a7),d1
+    dc.w $0630
+    dc.w $3C00
+    ori.w #$144A,-(a0)
+    moveq #-82,d4
+    cmp.w -(a7),d1
+    dc.w $F430
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    ori.b #$FF,(-24,a3,a7.l)
+    add.w a4,d2
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d2
+    dc.w $0100
+    dc.w $0166
 loc_015DD4:
     dc.w $2451
 loc_015DD6:
     dc.w $142A
-    dc.w $0002
-    dc.w $0802
-    dc.w $0001
-    beq.s loc_015DFA
+    ori.b #$02,d2
+    ori.b #$1A,d1
     dc.w $D3FC
-    dc.w $0000
-    dc.w $0040
+    ori.b #$40,d0
     dbra d1,loc_015DD6
     move.w #$0001,d0
     dc.w $08C3
-    dc.w $0006
-    dc.w $33C3
+    ori.b #$C3,d6
     dc.w $FFFF
     dc.w $E8D4
     bra.s loc_015DFE
-loc_015DFA:
-    move.w #$0000,d0
 loc_015DFE:
     dc.w $4CDF
     dc.w $7FFE
@@ -33368,12 +33467,10 @@ loc_015EFD:
     dc.w $FF51
     moveq #36,d6
     dc.w $7130
-    dc.w $0042
-    dc.w $4214
+    ori.w #$4214,d2
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     move.l (0,a0,d3.l),d4
     dc.w $0113
     dc.w $EA00
@@ -33407,12 +33504,8 @@ loc_015EFD:
     dc.w $0466
     dc.w $080C
     moveq #0,d4
-    dc.w $02AE
-    cmp.w -(a7),d1
-    dc.w $0630
-    dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    andi.l #$B2670630,(15360,a6)
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
@@ -33432,24 +33525,20 @@ loc_015EFD:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -33495,21 +33584,17 @@ loc_015EFD:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $080C
+    andi.w #$080C,-(a6)
     moveq #0,d4
     dc.w $05AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $0E30
+    ori.w #$0E30,-(a0)
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -33531,8 +33616,7 @@ loc_015EFD:
     and.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $0E30
+    ori.w #$0E30,-(a0)
     dc.w $3C00
     dc.w $0108
     dc.w $C100
@@ -33555,8 +33639,7 @@ loc_015EFD:
     dc.w $FF51
     moveq #-45,d6
     dc.w $FC00
-    dc.w $0002
-    dc.w $0045
+    ori.b #$45,d2
     dc.w $F900
     dc.w $FF31
     bpl.s loc_0160EF
@@ -33565,12 +33648,10 @@ loc_015EFD:
     dc.w $5114
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1AD3
     dc.w $FC00
-    dc.w $0000
-    dc.w $4051
+    ori.b #$51,d0
     dc.w $C9FF
     dc.w $EC30
     dc.w $3C00
@@ -33593,8 +33674,7 @@ loc_0160EF:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0267
-    dc.w $3408
+    andi.w #$3408,-(a7)
     dc.w $0100
     dc.w $0566
     move.l (-25,a4,d3.l),d7
@@ -33630,39 +33710,23 @@ loc_0160EF:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
-loc_01615E:
-    dc.w $AEB2
     cmp.w -(a7),d1
-    beq.s loc_016156
     dc.w $F430
-    move.w #$0001,d0
     dc.w $3C00
     dc.w $0108
-    dc.w $08C1
     dc.w $C100
-    dc.w $0000
-    dc.w $0033
-    dc.w $33C1
-    dc.w $C1FF
-    dc.w $FFFF
-    dc.w $FFE8
-    dc.w $E8D4
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
-    dc.w $4CDF
     dc.w $DF7F
-    dc.w $7FFE
     dc.w $FE4E
-    rts
     dc.w $7548
     dc.w $E77F
     dc.w $FE32
@@ -33705,29 +33769,21 @@ loc_01615E:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $2C43
+    andi.w #$2C43,-(a6)
     dc.w $F900
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_0161D7
-    dc.w $0042
-loc_0161D7:
-    dc.w $4214
+    ori.w #$4214,d2
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1608
     dc.w $AA00
     dc.w $0100
-    dc.w $0230
-    dc.w $3C00
-    dc.w $0108
+    andi.b #$00,(8,a0,d0.w)
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -33748,8 +33804,7 @@ loc_0161D7:
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
@@ -33776,8 +33831,7 @@ loc_0161D7:
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
@@ -33797,24 +33851,20 @@ loc_0161D7:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -33860,26 +33910,20 @@ loc_0161D7:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $2643
+    andi.w #$2643,-(a6)
     dc.w $F900
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_01630B
-    dc.w $0042
-loc_01630B:
-    dc.w $4214
+    ori.w #$4214,d2
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -33898,15 +33942,23 @@ loc_01630B:
     moveq #0,d4
     dc.w $04AE
     cmp.w -(a7),d1
+    dc.w $0630
+    dc.w $3C00
+    ori.w #$144A,-(a0)
+    moveq #-82,d4
+    cmp.w -(a7),d1
+    dc.w $F430
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0333
+    dc.w $C1FF
+    dc.w $FFE8
 loc_016EF3:
     dc.w $080C
     moveq #0,d4
-    dc.w $02AE
-    cmp.w -(a7),d1
-    dc.w $0630
-    dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    andi.l #$B2670630,(15360,a6)
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
@@ -33926,24 +33978,20 @@ loc_016EF3:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -33960,17 +34008,15 @@ loc_016EF3:
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_016F6F
-    dc.w $0014
+    ori.b #$00,(a4)
 loc_016F6F:
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0067
+    andi.b #$67,d0
     dc.w $1A14
     dc.w $2A00
     dc.w $0B0C
-    dc.w $0200
-    dc.w $166E
+    andi.b #$6E,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -33991,30 +34037,25 @@ loc_016F6F:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $2E43
+    andi.w #$2E43,-(a6)
     dc.w $F900
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_016FB7
-    dc.w $0014
+    ori.b #$00,(a4)
 loc_016FB7:
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0067
+    andi.b #$67,d0
     dc.w $1A14
     dc.w $2A00
     dc.w $0B0C
-    dc.w $0200
-    dc.w $0C6E
+    andi.b #$6E,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -34042,8 +34083,7 @@ loc_017005:
     dc.w $4214
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34120,27 +34160,22 @@ loc_017098:
     dc.w $2471
     dc.w $7120
     dc.w $2000
-    dc.w $0042
+    ori.w #$4214,d2
     clr.w d2
-    dc.w $4214
     dc.w $142A
     dc.w $2A00
-    dc.w $0002
+    ori.b #$02,d2
     dc.w $0208
-    dc.w $0802
-    dc.w $0200
-    dc.w $0001
-    dc.w $0167
-    beq.s loc_0170BC
+    andi.b #$67,d0
+    ori.b #$10,d1
     dc.w $1030
     move.w #$0001,d0
     dc.w $3C00
     dc.w $0108
     dc.w $08C1
     dc.w $C100
-    dc.w $0006
+    ori.b #$C1,d6
     dc.w $0633
-    dc.w $33C1
     dc.w $C1FF
     dc.w $FFFF
     dc.w $FFE8
@@ -34165,13 +34200,12 @@ loc_017098:
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_0170E1
-    dc.w $0042
+    ori.w #$4214,d2
 loc_0170E1:
     dc.w $4214
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
 loc_0170EC:
     move.w #$0001,d0
@@ -34179,9 +34213,8 @@ loc_0170EC:
     dc.w $0108
     dc.w $08C1
     dc.w $C100
-    dc.w $0007
+    ori.b #$C1,d7
     dc.w $0733
-    dc.w $33C1
     dc.w $C1FF
     dc.w $FFFF
     dc.w $FFE8
@@ -34206,22 +34239,19 @@ loc_0170EC:
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_017121
-    dc.w $0014
+    ori.b #$00,(a4)
 loc_017121:
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0067
+    andi.b #$67,d0
     move.l (a4),d2
     dc.w $2A00
     dc.w $0B0C
-    dc.w $0200
-    dc.w $046E
+    andi.b #$6E,d0
     dc.w $1A14
     dc.w $2A00
     dc.w $0C0C
-    dc.w $0200
-    dc.w $1A6D
+    andi.b #$6D,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34245,12 +34275,8 @@ loc_017121:
     dc.w $0966
     dc.w $080C
     moveq #0,d4
-    dc.w $02AE
-    cmp.w -(a7),d1
-    dc.w $0630
-    dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    andi.l #$B2670630,(15360,a6)
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
@@ -34270,24 +34296,20 @@ loc_017121:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -34304,10 +34326,7 @@ loc_017121:
     dc.w $3C00
     dc.w $184E
     dc.w $B900
-    dc.w $00B5
-    dc.w $5067
-    dc.w $2A0C
-    dc.w $4300
+    ori.l #$50672A0C,(0,a5,d4.w)
     dc.w $086C
     dc.w $244A
     dc.w $4466
@@ -34316,8 +34335,7 @@ loc_017121:
     dc.w $E214
     dc.w $2800
     dc.w $0208
-    dc.w $0200
-    dc.w $0067
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34338,8 +34356,8 @@ loc_017121:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    move.w (-1,a2,d3.l),d5
+    andi.w #$3A32,-(a6)
+    dc.w $39FF
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
@@ -34362,9 +34380,7 @@ loc_017121:
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -34384,13 +34400,12 @@ loc_017121:
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_01728B
-    dc.w $0042
+    ori.w #$4214,d2
 loc_01728B:
     dc.w $4214
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34411,24 +34426,20 @@ loc_01728B:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -34474,14 +34485,12 @@ loc_01728B:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0300
-    dc.w $0266
-    dc.w $3C43
+    andi.w #$3C43,-(a6)
     dc.w $F900
     dc.w $FF51
     moveq #-45,d6
     dc.w $FC00
-    dc.w $0002
-    dc.w $0045
+    ori.b #$45,d2
     dc.w $F900
     dc.w $FF31
     bpl.s loc_017383
@@ -34490,20 +34499,16 @@ loc_01728B:
     dc.w $5114
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1AD3
     dc.w $FC00
-    dc.w $0000
-    dc.w $4051
+    ori.b #$51,d0
     dc.w $C9FF
     dc.w $EC30
     dc.w $3C00
     dc.w $0108
     dc.w $C300
-    dc.w $0233
-    dc.w $C3FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -34518,24 +34523,20 @@ loc_017383:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -34595,8 +34596,7 @@ loc_017383:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $2C4A
+    andi.w #$2C4A,-(a6)
     moveq #-29,d4
     dc.w $E666
     dc.w $080C
@@ -34614,9 +34614,7 @@ loc_017383:
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -34636,13 +34634,10 @@ loc_017383:
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_01747F
-    dc.w $0042
-loc_01747F:
-    dc.w $4214
+    ori.w #$4214,d2
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34663,24 +34658,20 @@ loc_01747F:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -34726,8 +34717,7 @@ loc_01747F:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $2C4A
+    andi.w #$2C4A,-(a6)
     moveq #-29,d4
     dc.w $E666
     dc.w $080C
@@ -34745,9 +34735,7 @@ loc_01747F:
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -34767,13 +34755,10 @@ loc_01747F:
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_017583
-    dc.w $0042
-loc_017583:
-    dc.w $4214
+    ori.w #$4214,d2
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34819,24 +34804,20 @@ loc_017583:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0066
-    dc.w $080C
+    ori.w #$080C,-(a6)
     moveq #0,d4
     dc.w $01AE
     cmp.w -(a7),d1
     dc.w $0630
     dc.w $3C00
-    dc.w $0060
-    dc.w $144A
+    ori.w #$144A,-(a0)
     moveq #-82,d4
     cmp.w -(a7),d1
     dc.w $F430
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0033
-    dc.w $C1FF
-    dc.w $FFE8
+    ori.b #$FF,(-24,a3,a7.l)
     add.w a4,d2
     dc.w $DF7F
     dc.w $FE4E
@@ -34882,26 +34863,20 @@ loc_017583:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0266
-    dc.w $2643
+    andi.w #$2643,-(a6)
     dc.w $F900
     dc.w $FF51
     moveq #36,d6
     bvs.s loc_017673
-    dc.w $0042
-loc_017673:
-    dc.w $4214
+    ori.w #$4214,d2
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
     dc.w $C100
-    dc.w $0233
-    dc.w $C1FF
-    dc.w $FFE8
+    andi.b #$FF,(-24,a3,a7.l)
     add.w -(a0),d2
     dc.w $0430
     dc.w $3C00
@@ -34915,8 +34890,7 @@ loc_017673:
     dc.w $FFE8
     add.b a0,d2
     dc.w $0100
-    dc.w $0267
-    dc.w $2C08
+    andi.w #$2C08,-(a7)
     dc.w $0100
     dc.w $0366
     dc.w $2643
@@ -34928,8 +34902,7 @@ loc_017673:
     dc.w $4214
     dc.w $2A00
     dc.w $0208
-    dc.w $0200
-    dc.w $0167
+    andi.b #$67,d0
     dc.w $1030
     dc.w $3C00
     dc.w $0108
@@ -34950,8 +34923,7 @@ loc_017673:
     dc.w $FFE8
     add.b a0,d6
     dc.w $0100
-    dc.w $0066
-    dc.w $3643
+    ori.w #$3643,-(a6)
     dc.w $F900
     dc.w $FF31
     dc.w $1A24
@@ -34959,6 +34931,103 @@ loc_017673:
     dc.w $2C24
     clr.w d2
     dc.w $4214
+    dc.w $2A00
+    dc.w $0208
+    andi.b #$66,d0
+    dc.w $0608
+    andi.b #$67,d0
+    dc.w $1830
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    ori.b #$FF,(-24,a3,a7.l)
+    add.b (a3),d6
+    dc.w $EA00
+    dc.w $09FF
+    dc.w $FFE8
+    add.w d7,-(a0)
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d6
+    dc.w $0100
+    dc.w $0166
+    dc.w $3243
+    dc.w $F900
+    dc.w $FF31
+    dc.w $1A24
+    dc.w $2900
+    dc.w $0467
+    dc.w $2624
+    clr.w d2
+    dc.w $4214
+    dc.w $2A00
+    dc.w $0208
+    andi.b #$67,d0
+    dc.w $1830
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    dc.w $0133
+    dc.w $C1FF
+    dc.w $FFE8
+    add.b (a3),d6
+    dc.w $EA00
+    dc.w $09FF
+    dc.w $FFE8
+    add.w d7,-(a0)
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d6
+    dc.w $0100
+    andi.w #$3243,-(a6)
+    dc.w $F900
+    dc.w $FF31
+    dc.w $1A24
+    dc.w $2900
+    dc.w $0867
+    dc.w $2624
+    clr.w d2
+    dc.w $4214
+    dc.w $2A00
+    dc.w $0208
+    andi.b #$67,d0
+    dc.w $1830
+    dc.w $3C00
+    dc.w $0108
+    dc.w $C100
+    andi.b #$FF,(-24,a3,a7.l)
+    add.b (a3),d6
+    dc.w $EA00
+    dc.w $09FF
+    dc.w $FFE8
+    add.w d7,-(a0)
+    dc.w $0430
+    dc.w $3C00
+    dc.w $004C
+    dc.w $DF7F
+    dc.w $FE4E
+    dc.w $7548
+    dc.w $E77F
+    dc.w $FE32
+    dc.w $39FF
+    dc.w $FFE8
+    add.b a0,d6
 loc_018547:
     dc.w $3900
     dc.w $FF31
@@ -35252,8 +35321,7 @@ loc_018547:
     dc.w $01ED
     dc.w $4924
     dc.w $7110
-    dc.w $0015
-    moveq #0,d6
+    ori.b #$00,(a5)
     dc.w $0300
     dc.w $040C
     clr.b d0
@@ -35264,8 +35332,8 @@ loc_018547:
     and.w -(a0),d7
     bvc.s loc_0187B7
     clr.b d0
-    dc.w $0266
-    eori.b #$00,-(a1)
+    andi.w #$0A21,-(a6)
+    dc.w $FC00
     dc.w $0380
     dc.w $5EE8
 loc_0187B7:
@@ -35337,8 +35405,8 @@ loc_0187B7:
     and.w -(a0),d7
     bvc.s loc_018855
     clr.b d0
-    dc.w $0266
-    eori.b #$00,-(a1)
+    andi.w #$0A21,-(a6)
+    dc.w $FC00
     dc.w $0381
     dc.w $54E8
 loc_018855:
@@ -35466,11 +35534,9 @@ loc_018EBF:
     bvc.w loc_019901
     move.w (-4018,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_018F11
+    ori.w #$6C30,-(a4)
     cmp.b (-4063,pc),d6
     moveq #0,d6
     dc.w $031B
@@ -35484,51 +35550,39 @@ loc_018EF1:
     dc.w $11E5
     dc.w $4806
     dc.w $4084
-    dc.w $0031
-    dc.w $4000
-    dc.w $0842
+    ori.b #$00,(66,a1,d0.l)
     dc.w $8143
     dc.w $F900
     dc.w $031A
     and.b (-82,a4,d3.l),d6
     dc.w $AC12
     dc.w $3120
-loc_018F11:
     dc.w $004E
     dc.w $B900
-    dc.w $0066
-    moveq #62,d1
-    dc.w $0032
-    dc.w $3C00
-    dc.w $0734
+    ori.w #$723E,-(a6)
+    ori.b #$00,(52,a2,d0.w)
     dc.w $3C00
     dc.w $163C
     dc.w $3C00
     dc.w $0136
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C80
-    dc.w $103A
+    ori.b #$80,($103A).w
     dc.w $3C00
     dc.w $024E
     dc.w $B900
-    dc.w $0061
-    dc.w $5653
+    ori.w #$5653,-(a1)
     dc.w $4138
     dc.w $3C80
     dc.w $003C
     dc.w $3C00
     dc.w $2A4E
     dc.w $B900
-    dc.w $005E
-    dc.w $FE32
+    ori.w #$FE32,(a6)+
     move.w (-946,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
-    dc.w $0064
-    bge.s loc_018F89
+    ori.w #$6C30,-(a4)
     cmp.b (-991,pc),d6
     moveq #0,d6
     dc.w $031B
@@ -35547,14 +35601,9 @@ loc_018F11:
     dc.w $F6E3
     dc.w $493E
     move.w (a0),d1
-    dc.w $0036
-    dc.w $C7E3
-    dc.w $4922
-loc_018F89:
+    ori.b #$E3,(34,a6,d4.l)
     dc.w $7110
-    dc.w $0032
-    dc.w $3C00
-    dc.w $1634
+    ori.b #$00,(52,a2,d1.w)
     dc.w $3C00
     dc.w $173C
     dc.w $3C00
@@ -35572,28 +35621,22 @@ loc_018F89:
     dc.w $E701
     dc.w $0048
     dc.w $E740
-    dc.w $0072
-    dc.w $0032
-    dc.w $2900
+    ori.w #$0032,(0,a2,d2.l)
     dc.w $0C4E
     dc.w $B900
-    dc.w $0066
-    moveq #76,d1
+    ori.w #$724C,-(a6)
     dc.w $DF00
     dc.w $023E
-    dc.w $0067
-    dc.w $064E
+    ori.w #$064E,-(a7)
     dc.w $B900
-    dc.w $0061
-    dc.w $564C
+    ori.w #$564C,-(a1)
     dc.w $DF00
     or.b (0,a6,a6.l),d0
     dc.w $0836
     dc.w $E900
     eori.w #$41D3,(a2)+
     dc.w $FC00
-    dc.w $0000
-    dc.w $1E51
+    ori.b #$51,d0
     dc.w $CFFF
     cmp.b -(a3),d5
     dc.w $FC00
@@ -35619,11 +35662,9 @@ loc_018F89:
     dc.w $FC00
     dc.w $404E
     dc.w $B900
-    dc.w $0059
-    dc.w $2820
+    ori.w #$2820,(a1)+
     dc.w $3C00
-    dc.w $005A
-    dc.w $3A4E
+    ori.w #$3A4E,(a2)+
     dc.w $B900
     dc.w $0048
     dc.w $5E4E
@@ -35681,13 +35722,8 @@ loc_018F89:
     dc.w $008C
     dc.w $2A4E
     dc.w $B900
-    dc.w $0095
-    dc.w $FC20
-    dc.w $3C00
-    dc.w $00B1
-    dc.w $5A4E
-    dc.w $B900
-    dc.w $0048
+    ori.l #$FC203C00,(a5)
+    ori.l #$5A4EB900,(72,a1,d0.w)
     dc.w $5E4E
     dc.w $754A
     dc.w $3880
@@ -35699,10 +35735,7 @@ loc_018F89:
     dc.w $FF80
     dc.w $1020
     dc.w $3C00
-    dc.w $00B2
-    dc.w $3E4E
-    dc.w $B900
-    dc.w $0048
+    ori.l #$3E4EB900,(72,a2,d0.w)
     dc.w $5E4E
     dc.w $7523
     dc.w $FC00
@@ -35711,34 +35744,26 @@ loc_018F89:
     dc.w $FF80
     dc.w $1021
     dc.w $FC00
-    dc.w $023B
-    dc.w $4491
-    dc.w $1231
+    andi.b #$91,(49,pc,d1.w)
     dc.w $FC00
-    dc.w $0091
-    dc.w $1631
-    dc.w $FC00
+    ori.l #$1631FC00,(a1)
     dc.w $0F91
     dc.w $1820
     dc.w $3C00
-    dc.w $005A
-    dc.w $3A4E
+    ori.w #$3A4E,(a2)+
     dc.w $B900
     dc.w $0048
     dc.w $5E4E
     dc.w $7532
     move.w (-2482,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.b (58,a2,d3.l),d6
-    dc.w $F04E
+    ori.w #$8C32,-(a5)
+    move.w (-4018,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.b (58,a2,d3.l),d6
-    dc.w $FC4E
+    ori.w #$8C32,-(a5)
+    move.w (-946,pc),d6
     dc.w $B900
-    dc.w $0065
-    or.w a6,d6
+    ori.w #$8C4E,-(a5)
     dc.w $B900
     dc.w $0048
     moveq #78,d4
@@ -35754,26 +35779,21 @@ loc_018F89:
     dc.w $3C00
     dc.w $0E33
     dc.w $FC01
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     and.b d0,d0
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
-    dc.w $0042
-    cmp.l (-1470,a6),d4
+    ori.b #$11,d0
+    ori.w #$B8AE,d2
+    dc.w $FA42
     dc.w $79FF
     dc.w $FFE8
     dc.w $F44E
@@ -35783,36 +35803,27 @@ loc_018F89:
     or.b d0,(56,a4,d3.l)
     dc.w $004E
     dc.w $B900
-    dc.w $0053
-    cmp.b -(a3),d2
+    ori.w #$B423,(a3)
     dc.w $FC00
     dc.w $0191
     dc.w $88FF
     dc.w $FF80
     dc.w $1032
     dc.w $3CE0
-    dc.w $0034
-    dc.w $3C40
-    bcs.s loc_0191CF
+    ori.b #$40,(78,a4,d6.w)
     dc.w $B900
-    dc.w $005E
-    moveq #78,d0
+    ori.w #$704E,(a6)+
     dc.w $7532
     dc.w $3C00
-    dc.w $0034
-    dc.w $3C00
-    dc.w $0036
+    ori.b #$00,(54,a4,d0.w)
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C41
-    and.b (15360,pc),d0
-    dc.w $0043
-    dc.w $F900
+    ori.b #$41,($C03A).w
+    dc.w $3C00
+    ori.w #$F900,d3
     dc.w $039A
     dc.w $FA4E
     dc.w $B900
-    dc.w $005C
-    add.b -(a3),d6
+    ori.w #$DC23,(a4)+
     dc.w $FC00
     dc.w $0191
     dc.w $B4FF
@@ -35824,12 +35835,9 @@ loc_018F89:
     dc.w $3C00
     dc.w $0336
     dc.w $3CC0
-    dc.w $0038
-    dc.w $3C80
-    dc.w $003A
+    ori.b #$80,($003A).w
     dc.w $3C00
-    dc.w $0243
-    dc.w $F900
+    andi.w #$F900,d3
     dc.w $039A
     bra.s loc_01921D
 loc_019838:
@@ -35856,9 +35864,8 @@ loc_019854:
     dc.w $000C
     dc.w $3D43
 loc_01988A:
-    dc.w $0010
-    move.w (2,a1),d0
-    dc.w $E548
+    ori.b #$29,(a0)
+    ori.b #$48,d2
     dc.w $0640
     or.b d0,d2
     dc.w $3D40
@@ -35870,10 +35877,8 @@ loc_01989C:
     dc.w $4CDF
     dc.w $0EFE
     dc.w $0643
-    dc.w $0010
-    dc.w $D3FC
-    dc.w $0000
-    dc.w $001E
+    ori.b #$FC,(a0)
+    ori.b #$1E,d0
     dbra d1,loc_01988A
 loc_0198B6:
     dc.w $4CDF
@@ -35896,22 +35901,16 @@ loc_0198BC:
     subq.w #1,d1
     move.w #$0090,d3
     dc.w $3D7C
-    dc.w $00B0
-    dc.w $000C
-    clr.w d5
-    cmpi.w #$0004,d5
+    ori.l #$000C4245,(69,a0,d0.l)
 loc_0198F4:
-    dc.w $0004
-    bne.s loc_019902
+    ori.b #$0A,d4
     move.w #$0090,d3
     dc.w $3D7C
     dc.w $00C0
     dc.w $000C
-loc_019902:
     dc.w $3D43
-    dc.w $0010
-    move.w (0,a1),d2
-    dc.w $E34A
+    ori.b #$29,(a0)
+    ori.b #$4A,d0
     move.w (0,a3,d2.w),d0
     dc.w $E548
     dc.w $0640
@@ -35924,14 +35923,13 @@ loc_019902:
     dc.w $4CDF
     dc.w $0EFE
     dc.w $0643
-    dc.w $0010
-    dc.w $4A69
+    ori.b #$69,(a0)
     dc.w $000C
     beq.s loc_019952
 loc_019932:
     dc.w $3D43
-    dc.w $0010
-    move.w (14,a1),d0
+    ori.b #$29,(a0)
+    dc.w $000E
     dc.w $E548
     dc.w $0640
     or.b d0,d2
@@ -35944,11 +35942,9 @@ loc_019932:
     dc.w $0EFE
 loc_019952:
     dc.w $0643
-    dc.w $0018
-    addq.w #1,d5
+    ori.b #$45,(a0)+
     dc.w $D3FC
-    dc.w $0000
-    dc.w $001E
+    ori.b #$1E,d0
     dbra d1,loc_0198F4
     dc.w $4CDF
     dc.w $7FFF
@@ -35969,8 +35965,7 @@ loc_019968:
     clr.w d7
 loc_01998E:
     dc.w $3D43
-    dc.w $0010
-    dc.w $3D44
+    ori.b #$44,(a0)
     dc.w $000C
     dc.w $48E7
     dc.w $1800
@@ -35978,19 +35973,15 @@ loc_01998E:
     clr.w d4
     jsr loc_00B5C8
     dc.w $4CDF
-    dc.w $0018
-    dc.w $1E28
-    dc.w $0002
-    dc.w $0807
-    dc.w $0001
-    bne.s loc_019A26
+    ori.b #$28,(a0)+
+    ori.b #$07,d2
+    ori.b #$74,d1
     dc.w $2F01
     clr.w d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B6D6
-    dc.w $0040
-    dc.w $0000
+    ori.b #$B9,d0
+    ori.b #$D6,d0
+    ori.w #$0000,d0
     dc.w $3D40
     dc.w $0008
     dc.w $48E7
@@ -36009,18 +36000,15 @@ loc_01998E:
     move.w #$0001,d4
     jsr loc_00B5C8
     dc.w $4CDF
-    dc.w $0018
-    clr.w d1
+    ori.b #$41,(a0)+
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B6D6
-    dc.w $0040
-    dc.w $0000
+    ori.b #$B9,d0
+    ori.b #$D6,d0
+    ori.w #$0000,d0
     dc.w $3D40
     dc.w $0008
     dc.w $066E
-    dc.w $0018
-    dc.w $0010
+    ori.b #$10,(a0)+
     dc.w $48E7
     moveq #112,d6
     jsr loc_004F86
@@ -36029,9 +36017,7 @@ loc_01998E:
 loc_019A20:
     move.l (a7)+,d1
     dc.w $0644
-    dc.w $0010
-loc_019A26:
-    addq.w #1,d2
+    ori.b #$42,(a0)
     dbra d1,loc_01998E
     dc.w $4CDF
     dc.w $7FFF
@@ -36053,34 +36039,29 @@ loc_019A48:
     dc.w $4000
     bpl.s loc_019A68
     dc.w $3D7C
-    dc.w $0078
-    dc.w $0010
-    dc.w $48E7
+    ori.w #$0010,($48E7).w
     moveq #64,d7
     jsr loc_004F86
     dc.w $4CDF
     dc.w $027E
 loc_019A68:
     dc.w $0731
-loc_019A6A:
     dc.w $4001
     beq.s loc_019A8A
     dc.w $3D45
-    dc.w $0010
-    dc.w $48E7
+    ori.b #$E7,(a0)
     moveq #64,d7
     jsr loc_004F86
     dc.w $4CDF
     dc.w $027E
     addq.w #1,d3
     dc.w $0645
-    dc.w $0010
-    dbra d2,loc_019A6A
+    ori.b #$CA,(a0)
+    dc.w $FFE0
 loc_019A8A:
     move.w #$0090,d5
     dc.w $0646
-    dc.w $0010
-    addq.w #2,d4
+    ori.b #$44,(a0)
 loc_019A94:
     dbra d1,loc_019A48
     dc.w $4CDF
@@ -36093,8 +36074,7 @@ loc_019A9E:
     jsr loc_00B550
     beq.w loc_019B06
     dc.w $13E8
-    dc.w $0000
-    dc.w $FFFF
+    ori.b #$FF,d0
     dc.w $F02D
     dc.w $33C1
     dc.w $FFFF
@@ -36105,19 +36085,18 @@ loc_019A9E:
     lea loc_FFFFED1C,a1
     bsr.w loc_019B10
     dc.w $32FC
-    dc.w $0001
-    dc.w $32C1
+    ori.b #$C1,d1
     dc.w $32C2
     dc.w $13FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $EF24
     bsr.w loc_01AC9A
     beq.s loc_019B06
     dc.w $1ABC
-    dc.w $0001
+    ori.b #$00,d1
 loc_019AE6:
     bsr.w loc_019B32
+    dc.w $004A
 loc_019AEA:
     dc.w $5239
     dc.w $FFFF
@@ -36174,20 +36153,75 @@ loc_019B6C:
     bsr.w loc_01AC9A
     bne.s loc_019B7E
     dc.w $4C9F
-    dc.w $009F
-    rts
-loc_019B7E:
-    dc.w $4A15
+    ori.l #$4E754A15,(a7)+
     beq.s loc_019B88
     dc.w $4C9F
-    dc.w $009F
-    rts
+    ori.l #$4E754EB9,(a7)+
+    ori.b #$50,d0
+    beq.s loc_019BDA
+    dc.w $48A7
+    moveq #0,d4
+    dc.w $3239
+    dc.w $FFFF
+    dc.w $F028
+    dc.w $3439
+    dc.w $FFFF
+    dc.w $F02A
+    jsr loc_00B550
+    dc.w $33C3
+    dc.w $FFFF
+    dc.w $E918
+    dc.w $33C4
+    dc.w $FFFF
+    dc.w $E91A
+    dc.w $4C9F
+    ori.b #$A7,(a6)+
+    dc.w $0600
+    dc.w $3A39
+    dc.w $FFFF
+    dc.w $E918
+    dc.w $3C39
+    dc.w $FFFF
+    dc.w $E91A
+    bsr.w loc_01A914
+    dc.w $4C9F
+    ori.w #$6706,-(a0)
+    dc.w $08C7
+    ori.b #$04,d6
+    dc.w $08C7
+    ori.b #$00,d5
+    dc.w $00DE
+    beq.s loc_019C18
+    dc.w $1239
+    dc.w $FFFF
+    dc.w $EF24
+    andi.w #$001F,d1
+    add.b d0,d1
+    cmpi.w #$001F,d1
+    blt.s loc_019C06
+    dc.w $1239
+    dc.w $FFFF
+    dc.w $EF24
+    or.b d7,d1
+    ori.b #$1F,d1
+    dc.w $1A81
+    dc.w $4C9F
+    ori.l #$4E751239,(a7)+
+    dc.w $FFFF
+    dc.w $EF24
+    add.b d0,d1
+    or.b d7,d1
+    dc.w $1A81
+    dc.w $4C9F
+    ori.l #$4E753E3C,(a7)+
+    ori.b #$87,(a7)+
+    dc.w $4C9F
+    ori.l #$4E7548A7,(a7)+
 loc_019C24:
     dc.w $48A7
     dc.w $FE00
     dc.w $0C39
-    dc.w $001F
-    dc.w $FFFF
+    ori.b #$FF,(a7)+
     dc.w $EF24
     beq.w loc_019CB4
     lea loc_FFFFED1C,a4
@@ -36213,8 +36247,7 @@ loc_019C66:
     moveq #31,d4
     dc.w $1C1D
 loc_019C6C:
-    dc.w $0246
-    dc.w $003F
+    andi.w #$003F,d6
     dc.w $B606
     bne.s loc_019CA2
     addq.w #1,d0
@@ -36240,8 +36273,8 @@ loc_019CE2:
     jsr loc_00B550
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (10,a0),d0
     addq.w #1,d0
     move.w (a7)+,d1
@@ -36256,11 +36289,9 @@ loc_019D1A:
 loc_019D20:
     beq.s loc_019D4C
     dc.w $0815
-    dc.w $0005
-    bne.s loc_019D4C
+    ori.b #$24,d5
     dc.w $1C15
-    dc.w $0246
-    dc.w $003F
+    andi.w #$003F,d6
     dc.w $B006
     blt.s loc_019D4C
     dc.w $3E05
@@ -36270,12 +36301,10 @@ loc_019D20:
     add.w d4,d7
     blt.s loc_019D4C
     dc.w $08B6
-    dc.w $0007
-    moveq #0,d0
+    ori.b #$00,d7
 loc_019D4C:
     dc.w $DAFC
-    dc.w $0001
-    addq.w #1,d4
+    ori.b #$44,d1
     dbra d3,loc_019D20
     addq.w #1,d5
     dbra d2,loc_019D1A
@@ -36293,8 +36322,8 @@ loc_019D62:
     dc.w $F030
     dc.w $2449
     dc.w $D4FC
-    dc.w $0002
-    jsr loc_00B550
+    ori.b #$B9,d2
+    ori.b #$50,d0
     dc.w $2648
     bne.s loc_019D88
     dc.w $4CDF
@@ -36302,20 +36331,17 @@ loc_019D62:
     rts
 loc_019D88:
     dc.w $0828
-    dc.w $0004
-    dc.w $0002
+    ori.b #$02,d4
     bne.w loc_019EBC
     dc.w $3C03
     dc.w $3E04
     tst.w d4
     bne.s loc_019DD6
     dc.w $0C28
-    dc.w $0002
-    dc.w $0005
+    ori.b #$05,d2
     beq.s loc_019DAA
     dc.w $0C28
-    dc.w $0004
-    dc.w $0005
+    ori.b #$05,d4
     bne.s loc_019DC4
 loc_019DAA:
     dc.w $48A7
@@ -36333,24 +36359,19 @@ loc_019DD6:
     cmpi.w #$0007,d3
     bgt.s loc_019E1E
     dc.w $0828
-    dc.w $0007
-    dc.w $0002
+    ori.b #$02,d7
     bne.s loc_019E1E
     dc.w $0C28
-    dc.w $0001
-    dc.w $0005
+    ori.b #$05,d1
     beq.w loc_019F5A
     dc.w $0C28
-    dc.w $0002
-    dc.w $0005
+    ori.b #$05,d2
     beq.w loc_019EBC
     dc.w $0C28
-    dc.w $0004
-    dc.w $0005
+    ori.b #$05,d4
     beq.w loc_019F5A
     dc.w $0C28
-    dc.w $0003
-    dc.w $0005
+    ori.b #$05,d3
     bne.s loc_019E3C
     dc.w $22BC
     dc.w $FFFF
@@ -36360,23 +36381,20 @@ loc_019DD6:
     rts
 loc_019E1E:
     dc.w $0C28
-    dc.w $0004
-    dc.w $0005
+    ori.b #$05,d4
     beq.w loc_019F5A
     dc.w $0C2B
-    dc.w $0001
-    dc.w $0005
+    ori.b #$05,d1
     beq.w loc_019F5A
     dc.w $0C2B
-    dc.w $0002
-    dc.w $0005
+    ori.b #$05,d2
     beq.w loc_019EBC
 loc_019E3C:
     dc.w $3F01
     moveq #0,d1
     dc.w $122B
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (10,a0),d0
     addq.w #2,d0
     move.w (a7)+,d1
@@ -36398,8 +36416,8 @@ loc_019EBC:
     dc.w $3F01
     moveq #0,d1
     dc.w $122B
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (10,a0),d0
     addq.w #2,d0
     move.w (a7)+,d1
@@ -36411,11 +36429,9 @@ loc_019EBC:
     jsr loc_00B5C8
     dc.w $0C28
     dc.w $000A
-    dc.w $0003
-    beq.s loc_019EF4
+    ori.b #$06,d3
     bsr.w loc_01BCC8
     bne.s loc_019F00
-loc_019EF4:
     dc.w $3606
     bsr.w loc_01BC2E
     cmpi.w #$FFFF,d3
@@ -36459,8 +36475,8 @@ loc_019F5A:
     dc.w $3F01
     moveq #0,d1
     dc.w $122B
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (10,a0),d0
     addq.w #2,d0
     move.w (a7)+,d1
@@ -36508,8 +36524,8 @@ loc_019FE6:
     rts
 loc_01A0D2:
     dc.w $48E7
-    dc.w $0080
-    jsr loc_00B5C8
+    ori.l #$4EB90000,d0
+    dc.w $B5C8
     bne.s loc_01A0E4
     dc.w $4CDF
     dc.w $0100
@@ -36521,43 +36537,10 @@ loc_01A422:
     dc.w $3404
     jsr loc_00B550
     dc.w $4CDF
-    dc.w $001E
-    beq.s loc_01A43E
+    ori.b #$08,(a6)+
     dc.w $22BC
     dc.w $FFFF
     dc.w $FFFF
-    rts
-loc_01A43E:
-    dc.w $48E7
-    dc.w $F8E0
-    dc.w $2449
-    dc.w $D4FC
-    dc.w $0002
-    dc.w $48A7
-    moveq #0,d4
-    jsr loc_00B550
-    moveq #0,d1
-    dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
-    move.w (10,a0),d0
-    addq.w #2,d0
-    dc.w $4C9F
-    dc.w $001E
-    bsr.w loc_019A9E
-    bsr.w loc_01A490
-    dc.w $B4C9
-    beq.s loc_01A486
-    move.w (-6,a1),d1
-    move.w (-4,a1),d2
-    bsr.w loc_01AF7C
-    dc.w $4CDF
-    dc.w $071F
-    rts
-loc_01A486:
-    bsr.w loc_01AF7C
-    dc.w $4CDF
-    dc.w $071F
     rts
 loc_01A490:
     dc.w $48E7
@@ -36576,25 +36559,15 @@ loc_01A490:
     dc.w $2A48
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     dc.w $2648
     dc.w $4C9F
-    dc.w $001A
-    cmp.w ($F028).w,d3
+    ori.b #$78,(a2)+
+    dc.w $F028
     bne.s loc_01A4D8
     cmp.w ($F02A).w,d4
     bne.s loc_01A4D8
-    dc.w $32FC
-    dc.w $FFFF
-    dc.w $4CDF
-    dc.w $3CFF
-    rts
-loc_01A4D8:
-    dc.w $3203
-    dc.w $3404
-    bsr.w loc_01AC9A
-    bne.s loc_01A4EC
     dc.w $32FC
     dc.w $FFFF
     dc.w $4CDF
@@ -36619,8 +36592,7 @@ loc_01A808:
     dc.w $FFFF
     dc.w $F03C
     dc.w $4C9F
-    dc.w $001F
-    addq.w #1,d1
+    ori.b #$41,(a7)+
     cmp.w ($B08A).w,d1
     bgt.s loc_01A85E
     jsr loc_00B550
@@ -36635,8 +36607,8 @@ loc_01A808:
     dc.w $F03C
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    beq.w loc_01A8E8
+    ori.w #$6700,-(a0)
+    dc.w $008C
 loc_01A85E:
     dc.w $3206
     dc.w $3407
@@ -36654,8 +36626,8 @@ loc_01A85E:
     dc.w $F03C
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    beq.w loc_01A8E8
+    ori.w #$6700,-(a0)
+    ori.w #$3206,-(a0)
 loc_01A88A:
     dc.w $3206
     dc.w $3407
@@ -36674,8 +36646,8 @@ loc_01A88A:
     dc.w $F03C
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    beq.w loc_01A8E8
+    ori.w #$6700,-(a0)
+    ori.b #$06,(7,a0,d3.w)
 loc_01A8BA:
     dc.w $3206
     dc.w $3407
@@ -36693,13 +36665,10 @@ loc_01A8BA:
     dc.w $F03C
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    beq.s loc_01A8E8
+    ori.w #$6704,-(a0)
 loc_01A8E4:
     moveq #1,d0
     bra.s loc_01A8EA
-loc_01A8E8:
-    moveq #0,d0
 loc_01A8EA:
     dc.w $4C9F
     dc.w $00FF
@@ -36724,15 +36693,12 @@ loc_01A914:
     dc.w $3806
     jsr loc_00B5C8
     dc.w $4C9F
-    dc.w $0018
-    dc.w $0828
-    dc.w $0004
-    dc.w $0002
+    ori.b #$28,(a0)+
+    ori.b #$02,d4
     bne.s loc_01A976
     jsr loc_00B5C8
     dc.w $0828
-    dc.w $0002
-    dc.w $0002
+    ori.b #$02,d2
     bne.s loc_01A96E
     dc.w $33C3
     dc.w $FFFF
@@ -36787,7 +36753,84 @@ loc_01AA22:
 loc_01AA26:
     dc.w $3004
     dc.w $4C9F
-    dc.w $001E
+    ori.b #$75,(a6)+
+    dc.w $48A7
+    dc.w $8F00
+    dc.w $33FC
+    dc.w $000A
+    dc.w $FFFF
+    dc.w $F068
+    dc.w $33C1
+    dc.w $FFFF
+    dc.w $F06A
+    dc.w $3238
+    dc.w $F028
+    dc.w $3438
+    dc.w $F02A
+    jsr loc_00B550
+    dc.w $33C3
+    dc.w $FFFF
+    dc.w $F064
+    dc.w $33C4
+    dc.w $FFFF
+    dc.w $F066
+    move.w #$000F,d3
+    move.w #$001F,d5
+    move.w #$FFFF,d6
+    dc.w $3E06
+    moveq #0,d4
+loc_01AA6A:
+    jsr loc_00B5C8
+    beq.s loc_01AAD4
+    dc.w $48A7
+    dc.w $0600
+    dc.w $3A39
+    dc.w $FFFF
+    dc.w $F064
+    dc.w $3C39
+    dc.w $FFFF
+    dc.w $F066
+    bsr.w loc_01A914
+    dc.w $4C9F
+    ori.w #$6748,-(a0)
+    moveq #0,d0
+    moveq #0,d1
+    moveq #0,d2
+    dc.w $1228
+    dc.w $000B
+    dc.w $1428
+    dc.w $000C
+    dc.w $1028
+    ori.b #$A7,d3
+    dc.w $F800
+    dc.w $3638
+    dc.w $F028
+    dc.w $3838
+    dc.w $F02A
+    bsr.w loc_01AA0E
+    dc.w $3400
+    dc.w $3239
+    dc.w $FFFF
+    dc.w $F06A
+    jsr loc_01BE6E
+    dc.w $4C9F
+    ori.b #$12,(a7)+
+    cmp.w ($FFFFF068).l,d0
+    bhi.s loc_01AAD4
+    dc.w $33C0
+    dc.w $FFFF
+    dc.w $F068
+    dc.w $3C01
+    dc.w $3E02
+loc_01AAD4:
+    dbra d3,loc_01AA6A
+    dc.w $3206
+    dc.w $3407
+    dc.w $3639
+    dc.w $FFFF
+    dc.w $F068
+    dc.w $4C9F
+    dc.w $00F1
     rts
 loc_01AC72:
     dc.w $48E7
@@ -36802,8 +36845,11 @@ loc_01AC72:
     bge.s loc_01AC92
     moveq #1,d0
     dc.w $4CDF
-    dc.w $0001
-    rts
+    ori.b #$75,d1
+loc_01AC92:
+    moveq #0,d0
+    dc.w $4CDF
+    ori.b #$75,d1
 loc_01AC9A:
     dc.w $48A7
     bra.w loc_01F6DF
@@ -36842,8 +36888,7 @@ loc_01ACF0:
     dc.w $FFFF
     dc.w $F082
     dc.w $4C9F
-    dc.w $001E
-    dc.w $33FC
+    ori.b #$FC,(a6)+
     dc.w $000F
     dc.w $FFFF
     dc.w $F07C
@@ -36886,8 +36931,7 @@ loc_01AD76:
     dc.w $F082
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0078
-    bne.w loc_01AF52
+    ori.w #$6600,($01B6).w
     dc.w $3238
     dc.w $F028
     dc.w $3438
@@ -37158,8 +37202,7 @@ loc_01AFD0:
     lea loc_FFFFF084,a2
     dc.w $2849
     dc.w $0828
-    dc.w $0004
-    dc.w $0002
+    ori.b #$02,d4
     bne.w loc_01B092
     jsr loc_007726
     beq.s loc_01B092
@@ -37177,12 +37220,10 @@ loc_01AFD0:
     moveq #0,d4
     jsr loc_00B5C8
     dc.w $0C28
-    dc.w $0001
-    dc.w $0005
+    ori.b #$05,d1
     beq.s loc_01B082
     dc.w $0C28
-    dc.w $0004
-    dc.w $0005
+    ori.b #$05,d4
     bne.s loc_01B092
     dc.w $22BC
     dc.w $FFFF
@@ -37198,8 +37239,7 @@ loc_01B05C:
     dc.w $F0AC
     beq.s loc_01B092
     dc.w $0C2E
-    dc.w $0001
-    dc.w $0005
+    ori.b #$05,d1
     beq.s loc_01B082
     dc.w $3639
     dc.w $FFFF
@@ -37207,8 +37247,7 @@ loc_01B05C:
     moveq #0,d4
     jsr loc_00B5C8
     dc.w $0C28
-    dc.w $0004
-    dc.w $0005
+    ori.b #$05,d4
     bne.s loc_01B092
 loc_01B082:
     dc.w $22BC
@@ -37237,8 +37276,7 @@ loc_01B092:
     dc.w $F0AC
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    bne.s loc_01B0E4
+    ori.w #$6624,-(a0)
     moveq #1,d0
     dc.w $3639
     dc.w $FFFF
@@ -37273,8 +37311,7 @@ loc_01B0E4:
     dc.w $F0AC
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    bne.s loc_01B13A
+    ori.w #$6628,-(a0)
     move.l #$0000FFFF,d0
     dc.w $3639
     dc.w $FFFF
@@ -37309,8 +37346,7 @@ loc_01B13A:
     dc.w $F0AC
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    bne.s loc_01B190
+    ori.w #$6628,-(a0)
     move.l #$00010000,d0
     dc.w $3639
     dc.w $FFFF
@@ -37345,8 +37381,7 @@ loc_01B190:
     dc.w $F0AC
     bsr.w loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    bne.s loc_01B1E6
+    ori.w #$6628,-(a0)
     move.l #$FFFF0000,d0
     dc.w $3639
     dc.w $FFFF
@@ -37393,20 +37428,15 @@ loc_01B1E6:
 loc_01B22C:
     dc.w $32D2
     dc.w $32EA
-    dc.w $0002
-    dc.w $32EA
+    ori.b #$EA,d2
     dc.w $0008
     dc.w $32EA
     dc.w $000A
     dc.w $32EA
-    dc.w $0010
-    dc.w $32EA
-    dc.w $0012
-    dc.w $32EA
-    dc.w $0018
-    dc.w $32EA
-    dc.w $001A
-    dc.w $32FC
+    ori.b #$EA,(a0)
+    ori.b #$EA,(a2)
+    ori.b #$EA,(a0)+
+    ori.b #$FC,(a2)+
     dc.w $FFFF
     dc.w $0C54
     dc.w $FFFF
@@ -37534,8 +37564,14 @@ loc_01B258:
     dc.w $F0B6
     moveq #1,d0
     dc.w $4CDF
-    dc.w $0060
-    rts
+    ori.w #$4E75,-(a0)
+loc_01B38A:
+    move.w #$FFFF,d3
+    move.w #$FFFF,d4
+    moveq #0,d1
+    moveq #0,d2
+    dc.w $4CDF
+    ori.w #$4E75,-(a0)
 loc_01B39C:
     dc.w $48E7
     dc.w $F970
@@ -37663,17 +37699,14 @@ loc_01B49E:
     bra.s loc_01B49E
 loc_01B4AA:
     dc.w $0C79
-    dc.w $0007
-    dc.w $FFFF
+    ori.b #$FF,d7
     dc.w $F0EC
     bgt.s loc_01B4C4
     dc.w $082B
-    dc.w $0007
-    dc.w $0002
+    ori.b #$02,d7
     beq.s loc_01B4CE
     dc.w $0C78
-    dc.w $0001
-    dc.w $AEB4
+    ori.b #$B4,d1
     beq.s loc_01B4CE
 loc_01B4C4:
     dc.w $3639
@@ -37708,6 +37741,69 @@ loc_01B4EE:
     beq.s loc_01B50E
     move.w #$0002,d1
     bra.s loc_01B518
+loc_01B8D2:
+    dc.w $48E7
+    dc.w $FBC4
+    dc.w $3C03
+    dc.w $3E04
+    jsr loc_00B550
+    dc.w $2248
+    dc.w $3206
+    dc.w $3407
+    bsr.w loc_01AC9A
+    beq.s loc_01B90E
+    dc.w $4A15
+    beq.s loc_01B90E
+    moveq #0,d1
+    dc.w $1229
+    ori.b #$B9,d0
+    ori.b #$1E,d0
+    move.w (10,a0),d1
+    addq.w #1,d1
+    cmp.b (a5),d1
+    blt.s loc_01B90E
+    moveq #1,d0
+    dc.w $4CDF
+    dc.w $23DF
+    rts
+loc_01B90E:
+    moveq #0,d0
+    dc.w $4CDF
+    dc.w $23DF
+    rts
+loc_01B916:
+    dc.w $48E7
+    dc.w $F880
+    dc.w $3238
+    dc.w $F028
+    dc.w $3438
+    dc.w $F02A
+    jsr loc_00B550
+    tst.w d4
+    beq.s loc_01B95E
+    moveq #0,d4
+    jsr loc_00B5C8
+    moveq #0,d3
+    moveq #0,d4
+    dc.w $1628
+    dc.w $000B
+    dc.w $1828
+    dc.w $000C
+    moveq #0,d1
+    dc.w $1228
+    ori.b #$B9,d0
+    ori.b #$1E,d0
+    move.w (112,a0),d5
+    dc.w $3206
+    dc.w $3407
+    bsr.w loc_01AA0E
+    dc.w $B045
+    bgt.s loc_01B95E
+    moveq #0,d0
+loc_01B95E:
+    dc.w $4CDF
+    dc.w $011F
+    rts
 loc_01B964:
     dc.w $48E7
     dc.w $E000
@@ -37718,15 +37814,31 @@ loc_01B964:
     move.l (4,a2),d2
     move.l d2,(a3)
     dc.w $256B
-    dc.w $0004
-    dc.w $0004
+    ori.b #$04,d4
     dc.w $2681
     dc.w $2742
-    dc.w $0004
-loc_01B986:
-    dc.w $4CDF
-    dc.w $0007
-    rts
+    ori.b #$DF,d4
+    ori.b #$75,d7
+    dc.w $48E7
+    dc.w $FC00
+    moveq #0,d4
+    moveq #0,d5
+    jsr loc_00B5C8
+    moveq #0,d1
+    dc.w $1228
+    ori.b #$B9,d0
+    ori.b #$1E,d0
+loc_01B9A6:
+    dc.w $4A70
+    dc.w $5068
+    bmi.s loc_01B9BE
+    move.w (104,a0,d5.w),d1
+    beq.s loc_01B9BA
+    bsr.s loc_01B9C4
+    bmi.s loc_01B9BA
+    dc.w $3381
+    ori.b #$45,d0
+    bra.s loc_01B9A6
 loc_01BA06:
     dc.w $48A7
     dc.w $7F00
@@ -37734,7 +37846,6 @@ loc_01BA06:
     move.w #$000F,d3
     moveq #0,d4
     moveq #0,d1
-loc_01BA16:
     moveq #0,d2
     dc.w $48A7
     dc.w $1800
@@ -37749,8 +37860,8 @@ loc_01BA16:
     dc.w $3F01
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     move.w (112,a0),d7
     dc.w $33C7
     dc.w $FFFF
@@ -37811,8 +37922,8 @@ loc_01BAAC:
     bra.s loc_01BA58
 loc_01BABC:
     dc.w $4C9F
-    dc.w $0018
-    dbra d3,loc_01BA16
+    ori.b #$CB,(a0)+
+    dc.w $FF52
     dc.w $4C9F
     dc.w $00FE
     rts
@@ -37831,16 +37942,13 @@ loc_01BAE2:
     jsr loc_00B5C8
     beq.s loc_01BAFE
     dc.w $0828
-    dc.w $0007
-    dc.w $0002
+    ori.b #$02,d7
     beq.s loc_01BAF8
     dc.w $1159
-    dc.w $0005
-    bra.s loc_01BAFE
+    ori.b #$06,d5
 loc_01BAF8:
     dc.w $117C
-    dc.w $0000
-    dc.w $0005
+    ori.b #$05,d0
 loc_01BAFE:
     addq.w #1,d3
     cmpi.w #$0008,d3
@@ -37851,19 +37959,16 @@ loc_01BB06:
     jsr loc_00B5C8
     beq.s loc_01BB1C
     dc.w $1159
-    dc.w $0005
-    addq.w #1,d3
+    ori.b #$43,d5
     bra.s loc_01BB06
 loc_01BB1C:
     dc.w $4CDF
-    dc.w $021F
-    rts
+    andi.b #$75,(a7)+
 loc_01BB22:
     dc.w $48A7
     dc.w $FC00
     dc.w $0838
-    dc.w $0000
-    dc.w $AEB7
+    ori.b #$B7,d0
     beq.s loc_01BB36
     move.w #$000F,d3
     bra.w loc_01BB3A
@@ -37876,12 +37981,10 @@ loc_01BB40:
     dc.w $0008
     jsr loc_00B5C8
 loc_01BB44:
-    dc.w $0000
-    dc.w $B5C8
+    ori.b #$C8,d0
     beq.s loc_01BB50
     dc.w $08A8
-    dc.w $0000
-    dc.w $0002
+    ori.b #$02,d0
 loc_01BB50:
     dbra d4,loc_01BB44
     subq.w #1,d3
@@ -37894,8 +37997,7 @@ loc_01BB64:
     dc.w $48E7
     dc.w $FF60
     dc.w $0838
-    dc.w $0000
-    dc.w $AEB7
+    ori.b #$B7,d0
     beq.s loc_01BB7A
     move.w #$000F,d3
     move.w #$0007,d5
@@ -37910,8 +38012,8 @@ loc_01BB82:
     dc.w $2248
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     dc.w $2448
     move.w (116,a2),d6
     jsr loc_006722
@@ -37923,15 +38025,13 @@ loc_01BB82:
     cmp.b (13,a0),d7
     blt.s loc_01BBC2
     dc.w $08A9
-    dc.w $0005
-    dc.w $0002
+    ori.b #$02,d5
 loc_01BBC2:
     jsr loc_006722
     dc.w $B006
     bge.s loc_01BBD2
     dc.w $08A9
-    dc.w $0004
-    dc.w $0002
+    ori.b #$02,d4
 loc_01BBD2:
     dbra d4,loc_01BB88
     subq.w #1,d3
@@ -37949,11 +38049,10 @@ loc_01BBE2:
     jsr loc_00B5C8
     lea (2,a0),a0
     dc.w $0890
-    dc.w $0003
+    ori.b #$9F,d3
 loc_01BC02:
     dc.w $4C9F
-    dc.w $0018
-    rts
+    ori.b #$75,(a0)+
 loc_01BC08:
     dc.w $48A7
     dc.w $1800
@@ -37962,18 +38061,15 @@ loc_01BC08:
 loc_01BC10:
     jsr loc_00B5C8
 loc_01BC12:
-    dc.w $0000
-    dc.w $B5C8
+    ori.b #$C8,d0
     beq.w loc_01BC20
     dc.w $08E8
-    dc.w $0003
-    dc.w $0002
+    ori.b #$02,d3
 loc_01BC20:
     dbra d4,loc_01BC12
     dbra d3,loc_01BC10
     dc.w $4C9F
-    dc.w $0018
-    rts
+    ori.b #$75,(a0)+
 loc_01BC2E:
     dc.w $48E7
     dc.w $E740
@@ -38000,8 +38096,8 @@ loc_01BC2E:
     dc.w $F11C
 loc_01BC64:
     dc.w $0C51
-    dc.w $0041
-    beq.w loc_01BCB6
+    ori.w #$6700,d1
+    dc.w $004C
     dc.w $3606
     dc.w $3807
     add.w (a1)+,d3
@@ -38034,7 +38130,6 @@ loc_01BC64:
     dc.w $33C0
     dc.w $FFFF
     dc.w $F11C
-loc_01BCB6:
     dc.w $3639
     dc.w $FFFF
     dc.w $F118
@@ -38068,11 +38163,9 @@ loc_01BCC8:
     dc.w $F02A
     bsr.w loc_01B8D2
     dc.w $4C9F
-    dc.w $001E
-    beq.s loc_01BD06
+    ori.b #$06,(a6)+
     bsr.w loc_01A808
     bne.s loc_01BD78
-loc_01BD06:
     dc.w $3206
     dc.w $3407
     subq.w #1,d1
@@ -38086,11 +38179,9 @@ loc_01BD06:
     dc.w $F02A
     bsr.w loc_01B8D2
     dc.w $4C9F
-    dc.w $001E
-    beq.s loc_01BD2C
+    ori.b #$06,(a6)+
     bsr.w loc_01A808
     bne.s loc_01BD78
-loc_01BD2C:
     dc.w $3206
     dc.w $3407
     addq.w #1,d2
@@ -38104,11 +38195,9 @@ loc_01BD2C:
     dc.w $F02A
     bsr.w loc_01B8D2
     dc.w $4C9F
-    dc.w $001E
-    beq.s loc_01BD52
+    ori.b #$06,(a6)+
     bsr.w loc_01A808
     bne.s loc_01BD78
-loc_01BD52:
     dc.w $3206
     dc.w $3407
     subq.w #1,d2
@@ -38122,8 +38211,7 @@ loc_01BD52:
     dc.w $F02A
     bsr.w loc_01B8D2
     dc.w $4C9F
-    dc.w $001E
-    beq.s loc_01BD82
+    ori.b #$10,(a6)+
     bsr.w loc_01A808
     beq.s loc_01BD82
 loc_01BD78:
@@ -38131,6 +38219,42 @@ loc_01BD78:
     dc.w $3802
     dc.w $4CDF
     dc.w $02C7
+    rts
+loc_01BDC4:
+    dc.w $48A7
+    dc.w $7F00
+    dc.w $3C01
+    dc.w $3E02
+    dc.w $3238
+    dc.w $F028
+    dc.w $3438
+    dc.w $F02A
+    jsr loc_00B550
+    beq.s loc_01BE00
+    moveq #0,d1
+    dc.w $1228
+    ori.b #$B9,d0
+    ori.b #$1E,d0
+    dc.w $0C68
+    ori.b #$00,d3
+    bne.s loc_01BDF4
+    moveq #0,d0
+    bra.s loc_01BE12
+loc_01BDF4:
+    dc.w $0C68
+    ori.b #$00,d4
+    bne.s loc_01BE00
+    moveq #50,d0
+    bra.s loc_01BE12
+loc_01BE00:
+    dc.w $3206
+    dc.w $3407
+    jsr loc_008ED8
+    dc.w $3200
+    jsr loc_00900A
+loc_01BE12:
+    dc.w $4C9F
+    dc.w $00FE
     rts
 loc_01BE6E:
     dc.w $48E7
@@ -38149,8 +38273,7 @@ loc_01BE8E:
     moveq #0,d1
 loc_01BE90:
     dc.w $4CDF
-    dc.w $0202
-    rts
+    andi.b #$75,d2
 loc_01BE96:
     dc.w $48E7
     moveq #0,d4
@@ -38171,14 +38294,12 @@ loc_01BE96:
     dc.w $1028
     dc.w $0008
     dc.w $80FC
-    dc.w $0005
-    tst.w d0
+    ori.b #$40,d5
     beq.s loc_01BEC8
     moveq #1,d0
 loc_01BEC8:
     dc.w $4CDF
-    dc.w $001E
-    rts
+    ori.b #$75,(a6)+
 loc_01BECE:
     dc.w $48E7
     moveq #0,d4
@@ -38192,8 +38313,7 @@ loc_01BECE:
     dc.w $F120
     beq.s loc_01BF02
     dc.w $0C78
-    dc.w $0010
-    dc.w $F120
+    ori.b #$20,(a0)
     beq.s loc_01BF02
     dc.w $3638
     dc.w $F12A
@@ -38203,11 +38323,10 @@ loc_01BECE:
     dc.w $1028
     dc.w $0008
     dc.w $80FC
-    dc.w $0005
+    ori.b #$DF,d5
 loc_01BF02:
     dc.w $4CDF
-    dc.w $001E
-    rts
+    ori.b #$75,(a6)+
 loc_01BF08:
     dc.w $48E7
     moveq #-128,d4
@@ -38228,7 +38347,7 @@ loc_01BF08:
     dc.w $1028
     dc.w $0008
     dc.w $80FC
-    dc.w $0005
+    ori.b #$DF,d5
 loc_01BF34:
     dc.w $4CDF
     dc.w $011E
@@ -38244,50 +38363,33 @@ loc_01BF3A:
 loc_01C070:
     moveq #0,d0
     dc.w $0801
-    dc.w $0000
-    beq.s loc_01C07A
+    ori.b #$02,d0
     addq.w #1,d0
-loc_01C07A:
     dc.w $0801
-    dc.w $0001
-    beq.s loc_01C082
+    ori.b #$02,d1
     addq.w #1,d0
-loc_01C082:
     dc.w $0801
-    dc.w $0002
-    beq.s loc_01C08A
+    ori.b #$02,d2
     addq.w #1,d0
-loc_01C08A:
     dc.w $0801
-    dc.w $0003
-    beq.s loc_01C092
+    ori.b #$02,d3
     addq.w #1,d0
-loc_01C092:
     dc.w $0801
-    dc.w $0004
-    beq.s loc_01C09A
+    ori.b #$02,d4
     addq.w #1,d0
-loc_01C09A:
     dc.w $0801
-    dc.w $0005
-    beq.s loc_01C0A2
+    ori.b #$02,d5
     addq.w #1,d0
-loc_01C0A2:
     dc.w $0801
-    dc.w $0006
-    beq.s loc_01C0AA
+    ori.b #$02,d6
     addq.w #1,d0
-loc_01C0AA:
     dc.w $0801
-    dc.w $0007
-    beq.s loc_01C0B2
+    ori.b #$02,d7
     addq.w #1,d0
-loc_01C0B2:
     rts
 loc_01C178:
     dc.w $0C78
-    dc.w $0004
-    dc.w $F120
+    ori.b #$20,d4
     bne.s loc_01C1E0
     dc.w $48E7
     bra.s loc_01C1E4
@@ -38307,17 +38409,15 @@ loc_01C1E4:
     bsr.w loc_01BECE
     add.w d0,d3
     dc.w $21E9
-    dc.w $0000
-    dc.w $F122
+    ori.b #$22,d0
     dc.w $4CDF
-    dc.w $0202
-    jsr loc_01C2B0
+    andi.b #$B9,d2
+    ori.b #$B0,d1
     move.w (a7)+,d3
     rts
 loc_01C214:
     dc.w $0C78
-    dc.w $0004
-    dc.w $F120
+    ori.b #$20,d4
     bne.s loc_01C27C
     dc.w $48E7
     bra.s loc_01C280
@@ -38337,11 +38437,10 @@ loc_01C280:
     bsr.w loc_01BECE
     add.w d0,d3
     dc.w $21E9
-    dc.w $0000
-    dc.w $F122
+    ori.b #$22,d0
     dc.w $4CDF
-    dc.w $0202
-    jsr loc_01C2B0
+    andi.b #$B9,d2
+    ori.b #$B0,d1
     move.w (a7)+,d3
     rts
 loc_01C2B0:
@@ -38504,8 +38603,7 @@ loc_01C4A0:
     dc.w $48A7
     dc.w $7F06
     dc.w $0C78
-    dc.w $0006
-    dc.w $F120
+    ori.b #$20,d6
     bne.s loc_01C4B0
     bsr.w loc_01F448
 loc_01C4B0:
@@ -38523,8 +38621,8 @@ loc_01C4B0:
     dc.w $3A04
     moveq #0,d1
     dc.w $1228
-    dc.w $0000
-    jsr loc_00B61E
+    ori.b #$B9,d0
+    ori.b #$1E,d0
     dc.w $2A48
     dc.w $48E7
     moveq #0,d4
@@ -38540,8 +38638,7 @@ loc_01C4B0:
     dc.w $FFFF
     dc.w $F3BA
     dc.w $4CDF
-    dc.w $001E
-    dc.w $48A7
+    ori.b #$A7,(a6)+
     dc.w $0600
     dc.w $3A39
     dc.w $FFFF
@@ -38551,12 +38648,10 @@ loc_01C4B0:
     dc.w $F3BA
     jsr loc_01A914
     dc.w $4C9F
-    dc.w $0060
-    bne.w loc_01C582
-    lea loc_00F12E,a0
+    ori.w #$6600,-(a0)
+    ori.w #$41F8,(-3794,a0)
     dc.w $0830
-    dc.w $0000
-    dc.w $3000
+    ori.b #$00,d0
     bne.w loc_01C582
     dc.w $3238
     dc.w $F120
@@ -38577,8 +38672,7 @@ loc_01C554:
     sub.b d1,(3,a6)
     bgt.s loc_01C57A
     dc.w $1D7C
-    dc.w $0000
-    dc.w $0003
+    ori.b #$03,d0
     dc.w $34C6
     dc.w $34C7
     dc.w $34BC
@@ -38622,8 +38716,7 @@ loc_01C822:
     dc.w $000F
     rts
 loc_01CF74:
-    dc.w $0001
-    dc.w $CF7C
+    ori.b #$7C,d1
     dc.w $FFFF
     or.b (a0),d0
     move.w #$400E,d1
@@ -38661,29 +38754,49 @@ loc_01D4BA:
     beq.s loc_01D4EA
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_01D4C8:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_01D4C8
     dc.w $13F8
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13FC
-    dc.w $0028
-    dc.w $00A0
-    dc.w $1FFF
+    ori.b #$A0,(8191,a0)
     dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
 loc_01D4EA:
     dc.w $4CDF
-    dc.w $0206
+    andi.b #$75,d6
+    move.w #$00B1,d1
+    move.w #$A000,d2
+    jsr loc_0053B4
+    lea loc_00F234,a1
+loc_01D502:
+    move.w (a1)+,d1
+    bmi.s loc_01D510
+    move.w (a1)+,d2
+    jsr loc_01D546
+    bra.s loc_01D502
+loc_01D510:
+    move.w #$3B54,d1
+    jsr loc_0065AE
+    beq.s loc_01D534
+    dc.w $5379
+    dc.w $FFFF
+    dc.w $F404
+    bmi.s loc_01D534
+    move.w #$0020,d1
+    move.w #$0008,d2
+    jsr loc_006432
+    rts
+loc_01D534:
+    move.w #$3B54,d1
+    jsr loc_00658C
+    jsr loc_004878
     rts
 loc_01D546:
     dc.w $48E7
@@ -38693,29 +38806,51 @@ loc_01D58A:
     beq.s loc_01D5B8
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_01D596:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_01D596
     dc.w $13F8
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13FC
-    dc.w $0032
-    dc.w $00A0
-    dc.w $1FFF
+    ori.b #$A0,(-1,a2,d1.l)
     dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
 loc_01D5B8:
     dc.w $4CDF
-    dc.w $0206
+    andi.b #$75,d6
+    move.w #$0078,d1
+    move.w #$3200,d2
+    jsr loc_0053B4
+    dc.w $0C78
+    ori.b #$20,d4
+    bne.s loc_01D5DA
+    lea loc_00F13E,a1
+    bra.s loc_01D5DE
+loc_01D5DA:
+    lea loc_00F1E2,a1
+loc_01D5DE:
+    move.w (a1)+,d1
+    bmi.s loc_01D602
+    move.w (a1)+,d2
+    jsr loc_00B550
+    beq.s loc_01D5DE
+    dc.w $3A38
+    dc.w $F12A
+    moveq #0,d6
+    jsr loc_01A914
+    bne.s loc_01D5DE
+    jsr loc_01D7E2
+    bra.s loc_01D5DE
+loc_01D602:
+    dc.w $23FC
+    ori.b #$0E,d1
+    dc.w $FFFF
+    or.b (a0),d0
     rts
 loc_01D7E2:
     dc.w $48E7
@@ -38738,14 +38873,12 @@ loc_01E676:
     moveq #0,d4
     jsr loc_00B5C8
     dc.w $0C28
-    dc.w $0006
-    dc.w $0004
+    ori.b #$04,d6
     bne.s loc_01E690
     addq.w #2,d1
 loc_01E690:
     dc.w $4CDF
-    dc.w $0018
-    rts
+    ori.b #$75,(a0)+
 loc_01E696:
     dc.w $48E7
     dc.w $1800
@@ -38754,14 +38887,56 @@ loc_01E696:
     moveq #0,d4
     jsr loc_00B5C8
     dc.w $0C28
-    dc.w $0007
-    dc.w $0004
+    ori.b #$04,d7
     bne.s loc_01E6B0
     addq.w #2,d1
 loc_01E6B0:
     dc.w $4CDF
-    dc.w $0018
+    ori.b #$75,(a0)+
+    move.w #$0001,d1
+    lea loc_03B2D0,a1
+    lea loc_00F1E2,a2
+    bsr.w loc_01E7FA
+    dc.w $0C78
+    ori.b #$2C,d1
+    bmi.s loc_01E72E
+    move.w #$0004,d1
+    lea loc_03B2D4,a1
+    bsr.w loc_01E7FA
+    dc.w $0C78
+    ori.b #$2C,d2
+    bmi.s loc_01E72E
+    move.w #$0008,d1
+    lea loc_03B2E4,a1
+    bsr.w loc_01E7FA
+    dc.w $0C78
+    ori.b #$2C,d3
+    bmi.s loc_01E72E
+    move.w #$000C,d1
+    lea loc_03B304,a1
+    bsr.w loc_01E7FA
+    dc.w $0C78
+    ori.b #$2C,d4
+    bmi.s loc_01E72E
+    move.w #$0010,d1
+    lea loc_03B334,a1
+    bsr.w loc_01E7FA
+    move.w #$0028,d1
+    move.w #$003C,d2
+    jsr loc_006432
+loc_01E72E:
+    dc.w $34BC
+    dc.w $FFFF
+    dc.w $23FC
+    ori.b #$4A,d1
+    dc.w $FFFF
+    or.b (a0),d0
+    move.l #$0001D74E,d0
+    jsr loc_00485E
     rts
+loc_01E7FA:
+    dc.w $48E7
+    bra.s loc_01E83E
 loc_01EFBE:
     dc.w $48E7
     moveq #64,d4
@@ -38799,8 +38974,7 @@ loc_01F004:
     dc.w $3203
     dc.w $3404
     dc.w $4CDF
-    dc.w $0018
-    dc.w $3600
+    ori.b #$00,(a0)+
     jsr loc_007726
     beq.s loc_01F032
     move.w #$0007,d3
@@ -38810,15 +38984,13 @@ loc_01F004:
     dc.w $3800
     bsr.w loc_01F0A0
     dc.w $4CDF
-    dc.w $021E
-    rts
+    andi.b #$75,(a6)+
 loc_01F032:
     bsr.w loc_01F042
     dc.w $3800
     bsr.w loc_01F274
     dc.w $4CDF
-    dc.w $021E
-    rts
+    andi.b #$75,(a6)+
 loc_01F042:
     dc.w $48E7
     moveq #0,d0
@@ -38845,6 +39017,11 @@ loc_01F06A:
     blt.s loc_01F074
     addq.w #4,d3
     bra.s loc_01F06A
+loc_01F074:
+    move.w (-2,a0,d3.w),d0
+    dc.w $4CDF
+    dc.w $000E
+    rts
 loc_01F07E:
     dc.w $48E7
     dc.w $1840
@@ -38858,8 +39035,11 @@ loc_01F082:
     bne.s loc_01F082
     moveq #1,d0
     dc.w $4CDF
-    dc.w $0218
-    rts
+    andi.b #$75,(a0)+
+loc_01F098:
+    moveq #0,d0
+    dc.w $4CDF
+    andi.b #$75,(a0)+
 loc_01F0A0:
     dc.w $48E7
     moveq #112,d7
@@ -38883,8 +39063,8 @@ loc_01F0A0:
     dc.w $1428
     dc.w $000C
     dc.w $4CDF
-    dc.w $0018
-    lea loc_03B424,a0
+    ori.b #$F9,(a0)+
+    ori.b #$24,d3
     dc.w $E54C
     dc.w $2470
     dc.w $4000
@@ -38919,8 +39099,7 @@ loc_01F114:
     dc.w $FFFF
     dc.w $F4F6
     dc.w $4C9F
-    dc.w $0018
-    sub.w d1,d3
+    ori.b #$41,(a0)+
     bpl.w loc_01F1CE
     sub.w d2,d4
     bpl.s loc_01F17C
@@ -38951,17 +39130,14 @@ loc_01F14E:
     dc.w $32BC
     dc.w $FFFF
     dc.w $48E7
-    dc.w $0040
-    dc.w $224B
+    ori.w #$224B,d0
     bsr.w loc_01F07E
     dc.w $4CDF
-    dc.w $0200
-    bne.s loc_01F172
+    andi.b #$08,d0
     dc.w $32F8
     dc.w $F126
     dc.w $32F8
     dc.w $F128
-loc_01F172:
     dc.w $32FC
     dc.w $FFFF
     dc.w $4CDF
@@ -38994,17 +39170,14 @@ loc_01F1A0:
     dc.w $32BC
     dc.w $FFFF
     dc.w $48E7
-    dc.w $0040
-    dc.w $224B
+    ori.w #$224B,d0
     bsr.w loc_01F07E
     dc.w $4CDF
-    dc.w $0200
-    bne.s loc_01F1C4
+    andi.b #$08,d0
     dc.w $32F8
     dc.w $F126
     dc.w $32F8
     dc.w $F128
-loc_01F1C4:
     dc.w $32FC
     dc.w $FFFF
     dc.w $4CDF
@@ -39039,17 +39212,14 @@ loc_01F1F6:
     dc.w $32BC
     dc.w $FFFF
     dc.w $48E7
-    dc.w $0040
-    dc.w $224B
+    ori.w #$224B,d0
     bsr.w loc_01F07E
     dc.w $4CDF
-    dc.w $0200
-    bne.s loc_01F21A
+    andi.b #$08,d0
     dc.w $32F8
     dc.w $F126
     dc.w $32F8
     dc.w $F128
-loc_01F21A:
     dc.w $32FC
     dc.w $FFFF
     dc.w $4CDF
@@ -39096,8 +39266,8 @@ loc_01F274:
     dc.w $1428
     dc.w $000C
     dc.w $4CDF
-    dc.w $0018
-    lea loc_03B424,a0
+    ori.b #$F9,(a0)+
+    ori.b #$24,d3
     dc.w $E54C
     dc.w $2470
     dc.w $4000
@@ -39132,8 +39302,7 @@ loc_01F2E8:
     dc.w $FFFF
     dc.w $F4FE
     dc.w $4C9F
-    dc.w $0018
-    sub.w d1,d3
+    ori.b #$41,(a0)+
     bpl.w loc_01F3A2
     sub.w d2,d4
     bpl.s loc_01F350
@@ -39161,17 +39330,14 @@ loc_01F322:
     dc.w $32BC
     dc.w $FFFF
     dc.w $48E7
-    dc.w $0040
-    dc.w $224B
+    ori.w #$224B,d0
     bsr.w loc_01F07E
     dc.w $4CDF
-    dc.w $0200
-    bne.s loc_01F346
+    andi.b #$08,d0
     dc.w $32F8
     dc.w $F126
     dc.w $32F8
     dc.w $F128
-loc_01F346:
     dc.w $32FC
     dc.w $FFFF
     dc.w $4CDF
@@ -39192,6 +39358,27 @@ loc_01F350:
     add.w d2,d6
     dc.w $32C6
     bra.s loc_01F350
+loc_01F374:
+    dc.w $3238
+    dc.w $F126
+    dc.w $3438
+    dc.w $F128
+    dc.w $32BC
+    dc.w $FFFF
+    dc.w $48E7
+    ori.w #$224B,d0
+    bsr.w loc_01F07E
+    dc.w $4CDF
+    andi.b #$08,d0
+    dc.w $32F8
+    dc.w $F126
+    dc.w $32F8
+    dc.w $F128
+    dc.w $32FC
+    dc.w $FFFF
+    dc.w $4CDF
+    dc.w $0E7E
+    rts
 loc_01F3A2:
     sub.w d2,d4
     bpl.s loc_01F3F8
@@ -39210,6 +39397,41 @@ loc_01F3A6:
     add.w d2,d6
     dc.w $32C6
     bra.s loc_01F3A6
+loc_01F3CA:
+    dc.w $3238
+    dc.w $F126
+    dc.w $3438
+    dc.w $F128
+    dc.w $32BC
+    dc.w $FFFF
+    dc.w $48E7
+    ori.w #$224B,d0
+    bsr.w loc_01F07E
+    dc.w $4CDF
+    andi.b #$08,d0
+    dc.w $32F8
+    dc.w $F126
+    dc.w $32F8
+    dc.w $F128
+    dc.w $32FC
+    dc.w $FFFF
+    dc.w $4CDF
+    dc.w $0E7E
+    rts
+loc_01F3F8:
+    moveq #0,d5
+    moveq #0,d6
+    dc.w $1A1A
+    dc.w $1C1A
+    cmp.w ($FFFFF4FC).l,d5
+    bgt.s loc_01F41A
+    cmp.w ($FFFFF4FE).l,d6
+    bgt.s loc_01F41A
+    add.w d1,d5
+    dc.w $32C5
+    add.w d2,d6
+    dc.w $32C6
+    bra.s loc_01F3F8
 loc_01F448:
     dc.w $48E7
     dc.w $7300
@@ -39244,8 +39466,7 @@ loc_01F47E:
 loc_01F48E:
     jsr loc_006722
     dc.w $0800
-    dc.w $0001
-    bne.s loc_01F49E
+    ori.b #$04,d1
     moveq #0,d0
     rts
 loc_01F6DF:
@@ -39258,8 +39479,8 @@ loc_01F6DF:
     dc.w $2737
     dc.w $4757
     beq.s loc_01F768
-    dc.w $0010
-    move.l (80,a0,d4.w),d0
+    ori.b #$30,(a0)
+    dc.w $4050
     bra.s loc_01F769
 loc_01F757:
     bhi.s loc_01F7CB
@@ -39289,13 +39510,10 @@ loc_01F769:
     beq.s loc_01F7E8
     dc.w $77FF
     dc.w $FF00
-    dc.w $0002
-    dc.w $0200
-    dc.w $0020
-    dc.w $2000
-    dc.w $0010
+    ori.b #$20,d2
+    andi.b #$00,d0
+    ori.b #$08,(a0)
     dc.w $10FA
-    dc.w $FA08
     dc.w $0818
     dc.w $1828
     dc.w $2838
@@ -39826,13 +40044,10 @@ loc_01F978:
     dc.w $7FFF
 loc_01F979:
     dc.w $FF00
-    dc.w $0002
-    dc.w $0200
-    dc.w $0020
-    dc.w $2000
-    dc.w $0002
+    ori.b #$20,d2
+    andi.b #$00,d0
+    ori.b #$80,d2
     dc.w $02FA
-    dc.w $FA80
     or.l d4,d0
     or.l d1,d2
     dc.w $8185
@@ -39938,38 +40153,29 @@ loc_01F9DB:
     dc.w $EE32
     dc.w $32FC
     dc.w $FC00
-    dc.w $0020
+    ori.b #$FC,-(a0)
 loc_01F9E7:
     move.l (0,a2,a7.l),d0
-    dc.w $32FC
-    dc.w $0001
+    ori.b #$B9,d1
     dc.w $014E
-loc_01F9EC:
-    jsr loc_004A74
     dc.w $B900
+    ori.b #$74,d0
     dc.w $004A
     moveq #50,d2
     move.w #$E000,d1
     dc.w $3CE0
-    dc.w $0034
+    ori.b #$00,(78,a4,d0.l)
     move.w #$000F,d2
-    dc.w $3C00
-loc_01F9F9:
-    dc.w $0F4E
     jsr loc_005E70
     dc.w $B900
-    dc.w $005E
-    moveq #50,d0
+    ori.w #$7032,(a6)+
     move.w #$0002,d1
     dc.w $3C00
-    dc.w $0234
+    andi.b #$00,(78,a4,d0.w)
     move.w #$0000,d2
-    dc.w $3C00
-    dc.w $004E
     jsr loc_0053B4
     dc.w $B900
-    dc.w $0053
-    dc.w $B442
+    ori.w #$B442,(a3)
     dc.w $4279
     dc.w $79FF
     dc.w $FFFF
@@ -39977,9 +40183,8 @@ loc_01F9F9:
     dc.w $F50A
     eori.b #$00,-(a3)
     dc.w $23FC
-    dc.w $0001
+    ori.b #$1E,d1
     dc.w $01FA
-    dc.w $FA1E
     dc.w $1EFF
     dc.w $FFFF
     dc.w $FF80
@@ -39987,9 +40192,8 @@ loc_01F9F9:
     dc.w $1023
     dc.w $23FC
     dc.w $FC00
-    dc.w $0001
+    ori.b #$36,d1
     dc.w $01FA
-    dc.w $FA36
     dc.w $36FF
     dc.w $FFFF
     dc.w $FF80
@@ -40050,18 +40254,14 @@ loc_01F9F9:
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
 loc_01FA9B:
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $FD00
@@ -40069,17 +40269,11 @@ loc_01FA9B:
 loc_01FAB3:
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
-    dc.w $0021
+    ori.b #$11,d0
+    ori.b #$00,-(a1)
+    andi.b #$91,(49,pc,d1.w)
     dc.w $FC00
-    dc.w $023B
-    dc.w $4491
-    dc.w $1231
-    dc.w $FC00
-    dc.w $0291
-    dc.w $1631
-    dc.w $FC00
+    andi.l #$1631FC00,(a1)
     dc.w $0F91
     dc.w $1821
     dc.w $FC00
@@ -40087,8 +40281,7 @@ loc_01FAB3:
     dc.w $E091
     dc.w $1A4E
     dc.w $B900
-    dc.w $005A
-    dc.w $B04E
+    ori.w #$B04E,(a2)+
     dc.w $7523
     dc.w $FC00
     dc.w $01FA
@@ -40099,45 +40292,31 @@ loc_01FAB3:
     dc.w $5AAE
     bge.s loc_01FB11
     dc.w $3C00
-    dc.w $0066
-    dc.w $FE4E
+    ori.w #$FE4E,-(a6)
     dc.w $B900
     dc.w $0048
     dc.w $5E4E
     dc.w $7532
     dc.w $3CC0
-    dc.w $0034
-    dc.w $3C00
-    dc.w $004E
+    ori.b #$00,(78,a4,d0.w)
     dc.w $B900
-    dc.w $005E
-    moveq #50,d0
+    ori.w #$7032,(a6)+
     dc.w $3CE0
-    dc.w $0034
-loc_01FB11:
-    dc.w $3C00
-    dc.w $004E
+    ori.b #$00,(78,a4,d0.w)
     dc.w $B900
-    dc.w $005E
-    moveq #78,d0
+    ori.w #$704E,(a6)+
     dc.w $B900
-    dc.w $0064
-    dc.w $164E
+    ori.w #$164E,-(a4)
     dc.w $F900
-    dc.w $0045
-    dc.w $004E
+    ori.w #$004E,d5
     dc.w $B900
     dc.w $0048
     moveq #78,d4
     dc.w $7521
     dc.w $FC00
-    dc.w $023B
-    dc.w $4491
-    dc.w $1231
+    andi.b #$91,(49,pc,d1.w)
     dc.w $FC00
-    dc.w $0291
-    dc.w $1631
-    dc.w $FC00
+    andi.l #$1631FC00,(a1)
     dc.w $0F91
     dc.w $1821
     dc.w $FC00
@@ -40145,99 +40324,112 @@ loc_01FB11:
     dc.w $5291
     dc.w $1A4E
     dc.w $B900
-    dc.w $005A
-    dc.w $B04E
+    ori.w #$B04E,(a2)+
     dc.w $754A
     dc.w $79FF
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
-    dc.w $0200
-    dc.w $A01F
+    andi.b #$1F,d0
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $004E
     dc.w $B900
-    dc.w $0064
-    dc.w $1632
+    ori.w #$1632,-(a4)
     dc.w $3C00
     eor.b d3,(48,a4,d3.l)
     dc.w $004E
     dc.w $B900
+    ori.w #$B432,(a3)
+    dc.w $3C00
+    cmp.b (65,a4,d3.l),d4
+    dc.w $004E
+    dc.w $B900
+    ori.w #$B432,(a3)
+    dc.w $3C00
+    eor.b d4,(95,a4,d3.l)
+    dc.w $004E
+    dc.w $B900
+    ori.w #$B432,(a3)
+    dc.w $3C00
+    cmp.b (127,a4,d3.l),d5
+    dc.w $004E
+    dc.w $B900
+    ori.w #$B432,(a3)
+    dc.w $3CC0
+    ori.b #$00,(78,a4,d0.w)
+    dc.w $B900
+    ori.w #$704E,(a6)+
+    dc.w $B900
+    ori.w #$4466,-(a5)
+    ori.b #$30,d0
+    dc.w $BC44
+    dc.w $1E21
+    moveq #0,d6
+    dc.w $03B5
+    or.b d0,d7
+    dc.w $0431
+    moveq #2,d6
+    dc.w $E800
+    dc.w $0842
+    bvc.w loc_020610
+    moveq #-1,d6
+    dc.w $F800
+    ori.b #$21,d0
+    moveq #-1,d6
+    or.b d0,d0
+    ori.b #$21,d0
+    moveq #-1,d6
 loc_0200D6:
     dc.w $06AE
     dc.w $FFFF
     and.b d0,d0
-    dc.w $0010
-    dc.w $06AE
-    dc.w $0000
-    dc.w $4000
-    dc.w $0018
-    dc.w $31EE
-    dc.w $0010
-    dc.w $8F4C
+    ori.b #$AE,(a0)
+    ori.b #$00,d0
+    ori.b #$EE,(a0)+
+    ori.b #$4C,(a0)
     dc.w $31EE
     dc.w $000C
     dc.w $8F4E
     rts
 loc_0200F4:
     dc.w $0C6E
-    dc.w $0015
-    dc.w $0030
+    ori.b #$30,(a5)
     beq.w loc_020148
     dc.w $06AE
-    dc.w $0000
-    or.b d0,d0
-    dc.w $0010
-    dc.w $31EE
-    dc.w $0010
-    or.w d7,(a0)
+    ori.b #$00,d0
+    ori.b #$EE,(a0)
+    ori.b #$50,(a0)
     dc.w $31EE
     dc.w $000C
     or.w d7,(a2)
     dc.w $0C6E
     dc.w $0100
-    dc.w $0028
-    bne.w loc_020142
+    ori.b #$00,(40,a0)
     dc.w $246E
-    dc.w $002A
-    dc.w $225A
-    dc.w $2D4A
-    dc.w $002A
-    move.w (46,a6),d1
-    dc.w $0241
-    dc.w $003F
+    ori.b #$5A,(11594,a2)
+    ori.b #$2E,(46,a2)
+    andi.w #$003F,d1
     dc.w $066E
-    dc.w $0010
-    dc.w $002E
+    ori.b #$2E,(a0)
     jsr loc_0209B0
     dc.w $426E
-    dc.w $0028
+    ori.b #$6E,(48,a0)
     dc.w $526E
-    dc.w $0030
-loc_020142:
-    dc.w $526E
-    dc.w $0028
-    rts
+    ori.b #$75,(13308,a0)
 loc_020148:
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $F50A
     dc.w $4256
     rts
@@ -40245,14 +40437,10 @@ loc_020154:
     dc.w $06AE
     dc.w $FFFF
     and.b d0,d0
-    dc.w $0010
-    dc.w $06AE
-    dc.w $0000
-    dc.w $4000
-    dc.w $0018
-    dc.w $31EE
-    dc.w $0010
-    dc.w $8F4C
+    ori.b #$AE,(a0)
+    ori.b #$00,d0
+    ori.b #$EE,(a0)+
+    ori.b #$4C,(a0)
     dc.w $31EE
     dc.w $000C
     dc.w $8F4E
@@ -40260,81 +40448,52 @@ loc_020154:
 loc_020172:
     dc.w $0C6E
     dc.w $000B
-    dc.w $0030
-    bge.w loc_0201C4
+    ori.b #$00,(74,a0,d0.w)
     dc.w $06AE
-    dc.w $0000
-    dc.w $4000
+    ori.b #$00,d0
     dc.w $000C
     dc.w $31EE
-    dc.w $0010
-    or.w d7,(a0)
+    ori.b #$50,(a0)
     dc.w $31EE
     dc.w $000C
     or.w d7,(a2)
     dc.w $0C6E
     dc.w $0100
-    dc.w $0028
-    bne.w loc_0201BE
+    ori.b #$00,(38,a0)
     dc.w $246E
-    dc.w $002A
-    dc.w $225A
-    dc.w $2D4A
-    dc.w $002A
-    move.w (46,a6),d2
-    dc.w $0242
-    dc.w $001F
+    ori.b #$5A,(11594,a2)
+    ori.b #$2E,(46,a2)
+    andi.w #$001F,d2
     dc.w $506E
-    dc.w $002E
-    jsr loc_0204AA
+    ori.b #$B9,(2,a6)
+    dc.w $04AA
     dc.w $426E
-    dc.w $0028
+    ori.b #$6E,(48,a0)
     dc.w $526E
-    dc.w $0030
-loc_0201BE:
-    dc.w $526E
-    dc.w $0028
-    rts
-loc_0201C4:
-    dc.w $0C6E
+    ori.b #$75,(3182,a0)
     dc.w $0180
-    dc.w $0028
-    beq.s loc_0201E6
-    dc.w $06AE
-    dc.w $0000
-    dc.w $4000
+    ori.b #$1A,(1710,a0)
+    ori.b #$00,d0
     dc.w $000C
     dc.w $31EE
-    dc.w $0010
-    or.w d7,(a0)
+    ori.b #$50,(a0)
     dc.w $31EE
     dc.w $000C
     or.w d7,(a2)
     dc.w $526E
-    dc.w $0028
-    rts
-loc_0201E6:
-    dc.w $3CBC
+    ori.b #$75,(15548,a0)
     lea (15740,pc),a1
     dc.w $FDA8
-    dc.w $0028
-    rts
+    ori.b #$75,(19054,a0)
 loc_0201F2:
     dc.w $4A6E
-    dc.w $0028
-    bgt.s loc_0201FE
-    dc.w $526E
-    dc.w $0028
-    rts
-loc_0201FE:
-    dc.w $0838
-    dc.w $0007
-    or.l (a5),d0
+    ori.b #$06,(21102,a0)
+    ori.b #$75,(2104,a0)
+    ori.b #$95,d7
     beq.s loc_020210
     dc.w $4256
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $F50A
 loc_020210:
     rts
@@ -40342,16 +40501,14 @@ loc_020212:
     dc.w $48E7
     dc.w $7F7E
     dc.w $06AE
-    dc.w $0000
-    dc.w $2000
+    ori.b #$00,d0
     dc.w $000C
     dc.w $0C6E
     dc.w $00F0
     dc.w $000C
     bne.s loc_02022E
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $F50A
 loc_02022E:
     jsr loc_00502A
@@ -40362,140 +40519,92 @@ loc_02023A:
     dc.w $48E7
     dc.w $7F7E
     move.w (40,a6),d0
-    dc.w $0240
-    dc.w $000F
+    andi.w #$000F,d0
     bne.s loc_020276
     jsr loc_006544
     bne.w loc_020276
     dc.w $30BC
     dc.w $440C
     dc.w $217C
-    dc.w $00B8
-    dc.w $0000
-    dc.w $000C
-    dc.w $217C
-    dc.w $00A0
-    dc.w $0000
-    dc.w $0010
+    ori.l #$0000000C,($217C).w
+    ori.l #$00000010,-(a0)
     bsr.w loc_020368
     dc.w $217C
-    dc.w $0003
-    eor.l d2,(a2)+
-    dc.w $0036
-    dc.w $42A8
-    dc.w $003A
+    ori.b #$9A,d3
+    ori.b #$A8,(58,a6,d0.w)
 loc_020276:
     move.w (40,a6),d0
     addq.w #2,d0
-    dc.w $0240
-    dc.w $000F
+    andi.w #$000F,d0
     bne.s loc_0202B0
     jsr loc_006544
     bne.w loc_0202B0
     dc.w $30BC
     dc.w $440C
     dc.w $217C
-    dc.w $00B8
-    dc.w $0000
-    dc.w $000C
-    dc.w $217C
-    dc.w $0070
-    dc.w $0000
-    dc.w $0010
+    ori.l #$0000000C,($217C).w
+    ori.w #$0000,(16,a0,d0.w)
     bsr.w loc_020368
     dc.w $217C
-    dc.w $0003
-    eor.l d2,(a2)+
-    dc.w $0036
-    dc.w $42A8
-    dc.w $003A
+    ori.b #$9A,d3
+    ori.b #$A8,(58,a6,d0.w)
 loc_0202B0:
     move.w (40,a6),d0
     addq.w #4,d0
-    dc.w $0240
-    dc.w $000F
+    andi.w #$000F,d0
     bne.s loc_0202EA
     jsr loc_006544
     bne.w loc_0202EA
     dc.w $30BC
     dc.w $440C
     dc.w $217C
-    dc.w $00B8
-    dc.w $0000
-    dc.w $000C
+    ori.l #$0000000C,($217C).w
+    ori.l #$00000010,(0,a5,d6.w)
+    dc.w $008C
     dc.w $217C
-    dc.w $00B5
-    dc.w $0000
-    dc.w $0010
-    bsr.w loc_020368
-    dc.w $217C
-    dc.w $0003
-    eor.l d2,(a2)+
-    dc.w $0036
-    dc.w $42A8
-    dc.w $003A
+    ori.b #$9A,d3
+    ori.b #$A8,(58,a6,d0.w)
 loc_0202EA:
     move.w (40,a6),d0
     addq.w #6,d0
-    dc.w $0240
-    dc.w $000F
+    andi.w #$000F,d0
     bne.s loc_020324
     jsr loc_006544
     bne.w loc_020324
     dc.w $30BC
     dc.w $440C
     dc.w $217C
-    dc.w $00B8
-    dc.w $0000
-    dc.w $000C
-    dc.w $217C
-    dc.w $0085
-    dc.w $0000
-    dc.w $0010
+    ori.l #$0000000C,($217C).w
+    ori.l #$00000010,d5
     bsr.w loc_020368
     dc.w $217C
-    dc.w $0003
-    eor.l d2,(a2)+
-    dc.w $0036
-    dc.w $42A8
-    dc.w $003A
+    ori.b #$9A,d3
+    ori.b #$A8,(58,a6,d0.w)
 loc_020324:
     move.w (40,a6),d0
     addq.w #8,d0
-    dc.w $0240
-    dc.w $000F
+    andi.w #$000F,d0
     bne.s loc_02035E
     jsr loc_006544
     bne.w loc_02035E
     dc.w $30BC
     dc.w $440C
     dc.w $217C
-    dc.w $00B8
-    dc.w $0000
-    dc.w $000C
-    dc.w $217C
+    ori.l #$0000000C,($217C).w
     dc.w $00D0
-    dc.w $0000
-    dc.w $0010
+    ori.b #$10,d0
     bsr.w loc_020368
     dc.w $217C
-    dc.w $0003
-    eor.l d2,(a2)+
-    dc.w $0036
-    dc.w $42A8
-    dc.w $003A
+    ori.b #$9A,d3
+    ori.b #$A8,(58,a6,d0.w)
 loc_02035E:
     dc.w $526E
-    dc.w $0028
-    dc.w $4CDF
-    moveq #-2,d7
+    ori.b #$DF,(32510,a0)
     rts
 loc_020368:
     dc.w $546E
-    dc.w $002A
-    move.w (42,a6),d0
-    dc.w $0240
-    dc.w $000E
+    ori.b #$2E,(42,a2)
+    andi.w #$000E,d0
     lea loc_02039C,a1
     move.w (0,a1,d0.w),d1
     add.w d1,(16,a0)
@@ -40503,12 +40612,26 @@ loc_020368:
     dc.w $E340
     move.l (0,a2,d0.w),d1
     dc.w $2141
-    dc.w $0018
-    dc.w $217C
+    ori.b #$7C,(a0)+
     dc.w $FFFF
     or.b d0,d0
-    dc.w $0014
-    rts
+    ori.b #$75,(a4)
+    ori.b #$FD,d5
+    ori.b #$02,d1
+    dc.w $FFFC
+    ori.b #$03,d4
+    dc.w $FFFB
+    ori.b #$00,d0
+    dc.w $FFFF
+    add.b d0,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    dc.w $FFFF
+    and.b d0,d0
+    ori.b #$00,d0
+    ori.b #$00,d0
+    dc.w $FFFF
+    dc.w $B000
 loc_0203CC:
     dc.w $48E7
     dc.w $7F7E
@@ -40536,14 +40659,9 @@ loc_0203F6:
     dc.w $E000
     dc.w $000C
     dc.w $0C6E
-    dc.w $0078
-    dc.w $000C
-    bgt.s loc_020416
+    ori.w #$000C,($6E06).w
     dc.w $3D7C
-    dc.w $0078
-    dc.w $000C
-loc_020416:
-    dc.w $4CDF
+    ori.w #$000C,($4CDF).w
     moveq #-2,d7
     rts
 loc_02041C:
@@ -40555,8 +40673,7 @@ loc_02041C:
     dc.w $000C
     jsr loc_00502A
     dc.w $3D6E
-    dc.w $0014
-    dc.w $000C
+    ori.b #$0C,(a4)
     dc.w $4CDF
     moveq #-2,d7
     rts
@@ -40572,16 +40689,13 @@ loc_02044E:
     dc.w $7F7E
     jsr loc_00502A
     dc.w $066E
-    dc.w $0020
-    dc.w $000C
+    ori.b #$0C,-(a0)
     jsr loc_00502A
     dc.w $066E
-    dc.w $0020
-    dc.w $000C
+    ori.b #$0C,-(a0)
     jsr loc_00502A
     dc.w $3D6E
-    dc.w $0014
-    dc.w $000C
+    ori.b #$0C,(a4)
     dc.w $4CDF
     moveq #-2,d7
     rts
@@ -40590,20 +40704,15 @@ loc_02047C:
     dc.w $7F7E
     dc.w $3D7C
     dc.w $0009
-    dc.w $002A
-    jsr loc_00502A
-loc_02048C:
+    ori.b #$B9,(0,a2)
+    dc.w $502A
     dc.w $066E
-    dc.w $0020
-    dc.w $0010
+    ori.b #$10,-(a0)
     jsr loc_00502A
     dc.w $066E
     dc.w $FFFF
-    dc.w $002A
-    bne.s loc_02048C
-    dc.w $42AE
-    dc.w $0010
-    dc.w $4CDF
+    ori.b #$EC,(17070,a2)
+    ori.b #$DF,(a0)
     moveq #-2,d7
     rts
 loc_0204AA:
@@ -40637,25 +40746,20 @@ loc_022294:
     beq.s loc_0222D8
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_0222B6:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_0222B6
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13FC
-    dc.w $0001
-    dc.w $00A0
+    ori.b #$A0,d1
     dc.w $1FFF
     dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
 loc_0222D8:
     dc.w $48E7
@@ -40663,16 +40767,13 @@ loc_0222D8:
     move.w #$8100,d1
     dc.w $1238
     or.l (a5)+,d0
-    dc.w $0201
-    dc.w $00BF
+    andi.b #$BF,d1
     dc.w $33C1
     dc.w $00C0
-    dc.w $0004
-    dc.w $11C1
+    ori.b #$C1,d4
     or.l (a5)+,d0
     dc.w $4CDF
-    dc.w $0002
-    dc.w $48E7
+    ori.b #$E7,d2
     dc.w $FFFE
     jsr loc_004AB6
     dc.w $4CDF
@@ -40680,111 +40781,76 @@ loc_0222D8:
     dc.w $2F08
     lea loc_00809C,a0
     dc.w $D0FC
-    dc.w $0002
-    dc.w $10BC
-    dc.w $0028
-    dc.w $558F
-    dc.w $1EBC
-    dc.w $0002
-    dc.w $1F7C
-    dc.w $0028
-    dc.w $0001
-    dc.w $0057
+    ori.b #$BC,d2
+    ori.b #$8F,(7868,a0)
+    ori.b #$7C,d2
+    ori.b #$01,(87,a0)
     or.b d0,d0
     dc.w $33DF
     dc.w $00C0
-    dc.w $0004
-    dc.w $205F
+    ori.b #$5F,d4
     dc.w $2F08
     lea loc_00809C,a0
     dc.w $D0FC
-    dc.w $0004
-    dc.w $10BC
-    dc.w $0006
-    dc.w $558F
+    ori.b #$BC,d4
+    ori.b #$8F,d6
     dc.w $1EBC
-    dc.w $0004
-    dc.w $1F7C
-    dc.w $0006
-    dc.w $0001
-    dc.w $0057
-    or.b d0,d0
+    ori.b #$7C,d4
+    ori.b #$01,d6
+    ori.w #$8000,(a7)
     dc.w $33DF
     dc.w $00C0
-    dc.w $0004
-    dc.w $205F
+    ori.b #$5F,d4
     dc.w $2F08
     lea loc_00809C,a0
     dc.w $D0FC
-    dc.w $0010
-    dc.w $10BC
-    dc.w $0011
-    dc.w $558F
+    ori.b #$BC,(a0)
+    ori.b #$8F,(a1)
     dc.w $1EBC
-    dc.w $0010
-    dc.w $1F7C
-    dc.w $0011
-    dc.w $0001
-    dc.w $0057
-    or.b d0,d0
+    ori.b #$7C,(a0)
+    ori.b #$01,(a1)
+    ori.w #$8000,(a7)
     dc.w $33DF
     dc.w $00C0
-    dc.w $0004
-    dc.w $205F
+    ori.b #$5F,d4
     dc.w $2F08
     lea loc_00809C,a0
     dc.w $D0FC
     dc.w $000B
     dc.w $10BC
-    dc.w $0004
-    dc.w $558F
+    ori.b #$8F,d4
     dc.w $1EBC
     dc.w $000B
     dc.w $1F7C
-    dc.w $0004
-    dc.w $0001
-    dc.w $0057
-    or.b d0,d0
+    ori.b #$01,d4
+    ori.w #$8000,(a7)
     dc.w $33DF
     dc.w $00C0
-    dc.w $0004
-    dc.w $205F
+    ori.b #$5F,d4
     dc.w $2F08
     lea loc_00809C,a0
     dc.w $D0FC
-    dc.w $0011
-    dc.w $10BC
-    dc.w $0000
-    dc.w $558F
+    ori.b #$BC,(a1)
+    ori.b #$8F,d0
     dc.w $1EBC
-    dc.w $0011
-    dc.w $1F7C
-    dc.w $0000
-    dc.w $0001
-    dc.w $0057
-    or.b d0,d0
+    ori.b #$7C,(a1)
+    ori.b #$01,d0
+    ori.w #$8000,(a7)
     dc.w $33DF
     dc.w $00C0
-    dc.w $0004
-    dc.w $205F
+    ori.b #$5F,d4
     dc.w $2F08
     lea loc_00809C,a0
     dc.w $D0FC
-    dc.w $0012
-    dc.w $10BC
-    dc.w $0000
-    dc.w $558F
+    ori.b #$BC,(a2)
+    ori.b #$8F,d0
     dc.w $1EBC
-    dc.w $0012
-    dc.w $1F7C
-    dc.w $0000
-    dc.w $0001
-    dc.w $0057
-    or.b d0,d0
+    ori.b #$7C,(a2)
+    ori.b #$01,d0
+    ori.w #$8000,(a7)
     dc.w $33DF
     dc.w $00C0
-    dc.w $0004
-    dc.w $205F
+    ori.b #$5F,d4
     dc.w $2F08
     dc.w $3079
     dc.w $FFFF
@@ -40795,14 +40861,12 @@ loc_0222D8:
     jsr loc_0235B4
 loc_0223FC:
     dc.w $30FC
-    dc.w $0002
-    dc.w $30FC
+    ori.b #$FC,d2
     dc.w $1000
     dc.w $30FC
     dc.w $A000
     dc.w $30FC
-    dc.w $0000
-    dc.w $30FC
+    ori.b #$FC,d0
     dc.w $01D0
     dc.w $33C8
     dc.w $FFFF
@@ -40818,14 +40882,12 @@ loc_0223FC:
     jsr loc_0235B4
 loc_02242C:
     dc.w $30FC
-    dc.w $0002
-    dc.w $30FC
+    ori.b #$FC,d2
     dc.w $1000
     dc.w $30FC
     and.b d0,d0
     dc.w $30FC
-    dc.w $0000
-    dc.w $30FC
+    ori.b #$FC,d0
     dc.w $01D0
     dc.w $33C8
     dc.w $FFFF
@@ -40846,8 +40908,7 @@ loc_022462:
     dc.w $42B8
     dc.w $B0F8
     dc.w $31FC
-    dc.w $021C
-    dc.w $B000
+    andi.b #$00,(a4)+
     dc.w $4278
     dc.w $B002
     dc.w $4278
@@ -41031,14 +41092,8 @@ loc_022462:
     jmp (2,pc)
 loc_02286A:
     dc.w $536E
-    dc.w $0014
-    bmi.s loc_022872
+    ori.b #$02,(a4)
     rts
-loc_022872:
-    dc.w $4256
-    dc.w $206E
-    dc.w $0006
-    jmp (a0)
 loc_022B06:
     dc.w $4A78
     dc.w $B104
@@ -41083,41 +41138,53 @@ loc_022B58:
     rts
 loc_022BD0:
     dc.w $0C6E
-    dc.w $0064
-    dc.w $0012
+    ori.w #$0012,-(a4)
     blt.s loc_022BE0
     dc.w $4256
     dc.w $31FC
-    dc.w $0001
-    dc.w $B100
+    ori.b #$00,d1
 loc_022BE0:
     dc.w $5D78
     dc.w $B0FC
     dc.w $0C6E
-    dc.w $0028
-    dc.w $0012
-    blt.s loc_022BFA
+    ori.b #$12,(27918,a0)
     lea loc_00B058,a0
     moveq #19,d0
     dc.w $5750
 loc_022BF4:
     dc.w $5848
     dbra d0,loc_022BF4
-loc_022BFA:
     dc.w $5978
     dc.w $B0FE
     dc.w $526E
-    dc.w $0012
+    ori.b #$75,(a2)
+    lea loc_023B44,a1
+    moveq #1,d1
+    moveq #4,d2
+    moveq #0,d3
+    dc.w $48E7
+    dc.w $FFFE
+    jsr (1988,pc)
+    dc.w $4CDF
+    dc.w $7FFF
+    lea loc_023B44,a1
+    moveq #1,d1
+    moveq #4,d2
+    moveq #1,d3
+    dc.w $48E7
+    dc.w $FFFE
+    jsr (1964,pc)
+    dc.w $4CDF
+    dc.w $7FFF
     rts
 loc_022DD6:
     dc.w $206E
-    dc.w $0006
-    moveq #0,d7
+    ori.b #$00,d6
     dc.w $1E18
     bmi.s loc_022DEA
     dc.w $2D48
-    dc.w $0006
-    sub.w d7,($B0FA).w
+    ori.b #$78,d6
+    dc.w $B0FA
     rts
 loc_022DEA:
     dc.w $4256
@@ -41126,9 +41193,7 @@ loc_023057:
     dc.w $DF7F
     dc.w $FF48
     dc.w $E740
-    dc.w $0032
-    dc.w $3C81
-    dc.w $0012
+    ori.b #$81,(18,a2,d0.w)
     dc.w $3880
     dc.w $9D00
     dc.w $0100
@@ -41139,8 +41204,7 @@ loc_023057:
     dc.w $C180
     dc.w $9D4C
     dc.w $DF00
-    dc.w $0241
-    dc.w $FAE5
+    andi.w #$FAE5,d1
     and.w a6,d6
     dc.w $BA02
     dc.w $FC41
@@ -41148,9 +41212,7 @@ loc_023057:
     dc.w $E44E
     dc.w $BA03
     eori.w #$F900,d1
-    dc.w $023B
-    dc.w $444E
-    dc.w $BA03
+    andi.b #$4E,(3,pc,a3.l)
     dc.w $1641
     dc.w $FAE5
     moveq #78,d1
@@ -41161,25 +41223,20 @@ loc_023057:
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $2900
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0048
     dc.w $E7FF
     dc.w $FE4E
@@ -41192,25 +41249,20 @@ loc_023057:
     dc.w $FF80
     dc.w $0867
     move.l (1,a3,a7.l),d5
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0008
     dc.w $3900
-    dc.w $0000
-    dc.w $A111
-    dc.w $0066
-    dc.w $F613
+    ori.b #$11,d0
+    ori.w #$F613,-(a6)
     dc.w $FC00
-    dc.w $0000
-    dc.w $A01F
+    ori.b #$1F,d0
     dc.w $FE13
     dc.w $FC00
     dc.w $1000
     dc.w $A01F
     dc.w $FF33
     dc.w $FC00
-    dc.w $0000
-    dc.w $A111
+    ori.b #$11,d0
     dc.w $0048
     dc.w $E7FF
     dc.w $FE4E
@@ -41220,16 +41272,10 @@ loc_023057:
     dc.w $FF4E
     dc.w $7546
     dc.w $FC27
-    dc.w $0070
-    dc.w $0022
-    dc.w $0024
-    dc.w $0026
-    dc.w $0028
-    dc.w $002A
-    dc.w $002C
-    dc.w $002E
-    dc.w $0020
-    dc.w $4022
+    ori.w #$0022,(36,a0,d0.w)
+    ori.b #$28,-(a6)
+    ori.b #$2C,(46,a2)
+    ori.b #$22,-(a0)
     dc.w $4024
     dc.w $4026
     dc.w $4028
@@ -41253,21 +41299,18 @@ loc_023170:
 loc_02317C:
     dc.w $526E
     bgt.w loc_0243BD
-    dc.w $0012
-    move.w (18,a6),d7
+    ori.b #$2E,(a2)
     dc.w $2E00
+    ori.b #$FC,(a2)
     dc.w $128E
-    dc.w $8EFC
     dc.w $FC00
-    dc.w $0007
+    ori.b #$47,d7
     dc.w $0748
-    dc.w $4847
     dc.w $474A
     tst.w d7
     dc.w $4766
     bne.w loc_0231B2
-    dc.w $0000
-    dc.w $2443
+    ori.b #$43,d0
     lea (-4094,pc),a1
     dc.w $FAF0
     dc.w $024E
@@ -41303,8 +41346,7 @@ loc_0231B2:
 loc_0231C4:
     dc.w $1E38
     or.l (a4),d0
-    dc.w $0207
-    dc.w $00F0
+    andi.b #$F0,d7
     bne.s loc_0231D6
     dc.w $3E38
     dc.w $B002
@@ -41312,8 +41354,7 @@ loc_0231C4:
     rts
 loc_0231D6:
     dc.w $31FC
-    dc.w $0001
-    dc.w $B004
+    ori.b #$04,d1
     rts
 loc_0231E8:
     dc.w $3E38
@@ -41322,31 +41363,26 @@ loc_0231E8:
 loc_0231EE:
     dc.w $1E38
     or.l (a5),d0
-    dc.w $0207
-    dc.w $00F0
+    andi.b #$F0,d7
     bne.s loc_023228
     dc.w $1E38
     or.l (a0)+,d0
-    dc.w $0207
-    dc.w $0040
+    andi.b #$40,d7
     beq.s loc_02320E
     dc.w $1E38
     or.l (a0)+,d0
-    dc.w $0207
-    dc.w $0020
+    andi.b #$20,d7
     beq.s loc_02320E
     bra.s loc_023214
 loc_02320E:
     dc.w $31FC
-    dc.w $021C
-    dc.w $B000
+    andi.b #$00,(a4)+
 loc_023214:
     dc.w $5378
     dc.w $B000
     bpl.s loc_023222
     dc.w $31FC
-    dc.w $0001
-    dc.w $B002
+    ori.b #$02,d1
     bra.s loc_023228
 loc_023222:
     rts
@@ -41362,16 +41398,13 @@ loc_023228:
     move.w #$8100,d1
     dc.w $1238
     or.l (a5)+,d0
-    dc.w $0201
-    dc.w $00BF
+    andi.b #$BF,d1
     dc.w $33C1
     dc.w $00C0
-    dc.w $0004
-    dc.w $11C1
+    ori.b #$C1,d4
     or.l (a5)+,d0
     dc.w $4CDF
-    dc.w $0002
-    dc.w $48E7
+    ori.b #$E7,d2
     dc.w $FFFE
     jsr (1720,pc)
     jsr loc_00496E
@@ -41389,25 +41422,20 @@ loc_023228:
     beq.s loc_0232A8
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
+    ori.l #$11000839,-(a1)
 loc_023286:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_023286
     dc.w $13FC
-    dc.w $0000
-    dc.w $00A0
+    ori.b #$A0,d0
     dc.w $1FFE
     dc.w $13FC
-    dc.w $0010
-    dc.w $00A0
+    ori.b #$A0,(a0)
     dc.w $1FFF
     dc.w $33FC
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
 loc_0232A8:
     dc.w $4E73
@@ -41416,11 +41444,10 @@ loc_0232A8:
     and.b d1,(a2)+
     beq.s loc_0232B6
     dc.w $2D47
-    dc.w $0006
+    ori.b #$6E,d6
 loc_0232B6:
     dc.w $206E
-    dc.w $0006
-    dc.w $3278
+    ori.b #$78,d6
     dc.w $8F46
     lea loc_008F46,a3
     dc.w $1038
@@ -41492,13 +41519,11 @@ loc_02341E:
     cmp.w (28,a6),d7
     bne.w loc_0234EE
     dc.w $206E
-    dc.w $0014
-    move.w (26,a6),d7
-    dc.w $EB4F
+    ori.b #$2E,(a4)
+    ori.b #$4F,(a2)+
     dc.w $D0C7
     dc.w $226E
-    dc.w $0020
-    moveq #15,d0
+    ori.b #$0F,-(a0)
     dc.w $B149
 loc_02343E:
     bne.s loc_023456
@@ -41508,80 +41533,66 @@ loc_02343E:
     cmp.w (24,a6),d7
     beq.w loc_0234F4
     dc.w $3D47
-    dc.w $001A
+    ori.b #$6E,(a2)+
 loc_023456:
     dc.w $206E
-    dc.w $0014
-    move.w (26,a6),d7
-    dc.w $EB4F
+    ori.b #$2E,(a4)
+    ori.b #$4F,(a2)+
     dc.w $D0C7
     dc.w $226E
-    dc.w $0020
-    moveq #15,d0
+    ori.b #$0F,-(a0)
     move.w (a0),d1
 loc_02346A:
     move.w (a1),d2
     dc.w $3601
     dc.w $3802
-    dc.w $0243
-    dc.w $000E
-    dc.w $0244
-    dc.w $000E
+    andi.w #$000E,d3
+    andi.w #$000E,d4
     dc.w $B843
     bgt.s loc_023488
     beq.s loc_023490
     addq.w #2,d4
-    dc.w $0242
-    dc.w $0EE0
+    andi.w #$0EE0,d2
     or.w d4,d2
     bra.s loc_023490
 loc_023488:
     subq.w #2,d4
-    dc.w $0242
-    dc.w $0EE0
+    andi.w #$0EE0,d2
     or.w d4,d2
 loc_023490:
     dc.w $3601
     dc.w $3802
-    dc.w $0243
-    dc.w $00E0
-    dc.w $0244
-    dc.w $00E0
+    andi.w #$00E0,d3
+    andi.w #$00E0,d4
     dc.w $B843
     bgt.s loc_0234AE
     beq.s loc_0234B8
     dc.w $0644
-    dc.w $0020
-    dc.w $0242
+    ori.b #$42,-(a0)
     dc.w $0E0E
     or.w d4,d2
     bra.s loc_0234B8
 loc_0234AE:
     dc.w $0444
-    dc.w $0020
-    dc.w $0242
+    ori.b #$42,-(a0)
     dc.w $0E0E
     or.w d4,d2
 loc_0234B8:
     dc.w $3601
     dc.w $3802
-    dc.w $0243
-    dc.w $0E00
-    dc.w $0244
-    dc.w $0E00
+    andi.w #$0E00,d3
+    andi.w #$0E00,d4
     dc.w $B843
     bgt.s loc_0234D6
     beq.s loc_0234E0
     dc.w $0644
-    dc.w $0200
-    dc.w $0242
+    andi.b #$42,d0
     dc.w $00EE
     or.w d4,d2
     bra.s loc_0234E0
 loc_0234D6:
     dc.w $0444
-    dc.w $0200
-    dc.w $0242
+    andi.b #$42,d0
     dc.w $00EE
     or.w d4,d2
 loc_0234E0:
@@ -41589,47 +41600,39 @@ loc_0234E0:
     dc.w $32C2
     dbra d0,loc_02346A
     dc.w $426E
-    dc.w $001E
-    bra.s loc_0234F2
+    ori.b #$04,(a6)+
 loc_0234EE:
     dc.w $526E
-    dc.w $001E
-loc_0234F2:
-    rts
+    ori.b #$75,(a6)+
 loc_0234F4:
     dc.w $4256
     rts
 loc_02355A:
     dc.w $526E
-    dc.w $0012
-    moveq #0,d7
+    ori.b #$00,(a2)
     move.w (18,a6),d7
     dc.w $8EEE
-    dc.w $0016
-    dc.w $4847
+    ori.b #$47,(a6)
     tst.w d7
     beq.s loc_023570
     rts
 loc_023570:
     dc.w $206E
-    dc.w $0006
-    moveq #0,d7
+    ori.b #$00,d6
     dc.w $1E18
     beq.s loc_0235A8
     dc.w $2D48
-    dc.w $0006
-    add.w (24,a6),d7
-    jsr loc_004A6C
+    ori.b #$6E,d6
+    ori.b #$B9,(a0)+
+    ori.b #$6C,d0
     dc.w $30FC
     dc.w $FFF8
     move.w (20,a6),d6
     dc.w $30C6
     addq.w #2,d6
     dc.w $3D46
-    dc.w $0014
-    dc.w $30FC
-    dc.w $0001
-    dc.w $30C7
+    ori.b #$FC,(a4)
+    ori.b #$C7,d1
     dc.w $2248
     jsr loc_004A74
     rts
@@ -41649,13 +41652,10 @@ loc_0235B6:
     dc.w $2700
     dc.w $33FC
     dc.w $0100
-    dc.w $00A1
-    dc.w $1100
-    dc.w $3038
+    ori.l #$11003038,-(a1)
     dc.w $B106
     dc.w $0800
-    dc.w $0000
-    bne.s loc_0235F8
+    ori.b #$2A,d0
     dc.w $3C40
     lea loc_0235F0,a0
     lea loc_C00000,a1
@@ -41663,21 +41663,17 @@ loc_0235B6:
     lea loc_00B108,a3
 loc_0235E6:
     dc.w $0839
-    dc.w $0000
-    dc.w $00A1
+    ori.b #$A1,d0
     dc.w $1100
     bne.s loc_0235E6
     dc.w $BCFC
     dc.w $B10A
     bhi.s loc_02361C
     beq.s loc_0235FA
-loc_0235F8:
     nop
 loc_0235FA:
     dc.w $4279
-    dc.w $00A1
-    dc.w $1100
-    dc.w $31FC
+    ori.l #$110031FC,-(a1)
     dc.w $B10A
     dc.w $B106
     move.w #$8100,d0
@@ -41719,8 +41715,7 @@ loc_0243BD:
     dc.w $1212
     dc.w $0D00
     dc.w $0602
-    dc.w $0004
-    dc.w $0606
+    ori.b #$06,d4
     dc.w $070D
     dc.w $1212
     dc.w $120D
@@ -41751,8 +41746,7 @@ loc_0243BD:
     dc.w $0409
     dc.w $120D
     dc.w $0506
-    dc.w $0212
-    dc.w $1214
+    andi.b #$14,(a2)
     dc.w $100C
     dc.w $1212
     dc.w $1410
@@ -41794,8 +41788,7 @@ loc_0243BD:
     dc.w $120D
     eori.b #$0C,(a0)
     dc.w $0D0D
-    dc.w $0006
-    dc.w $0404
+    ori.b #$04,d6
     dc.w $0912
     dc.w $0D0D
     dc.w $0506
@@ -41826,8 +41819,7 @@ loc_0243BD:
     dc.w $0C14
     dc.w $0C14
     dc.w $160D
-    dc.w $0006
-    dc.w $0406
+    ori.b #$06,d6
     dc.w $090A
     cmpi.b #$04,d3
     dc.w $0700
@@ -41859,10 +41851,8 @@ loc_0243BD:
     dc.w $0D00
     dc.w $0604
     dc.w $0406
-    dc.w $0212
-    dc.w $1416
-    dc.w $0006
-    dc.w $0404
+    andi.b #$16,(a2)
+    ori.b #$04,d6
     dc.w $0602
     dc.w $0D12
     dc.w $0D0A
@@ -41891,8 +41881,7 @@ loc_0243BD:
     dc.w $0D05
     dc.w $0604
     dc.w $0604
-    dc.w $0212
-    dc.w $0D0D
+    andi.b #$0D,(a2)
     dc.w $0506
     dc.w $0406
     dc.w $0402
@@ -41910,8 +41899,7 @@ loc_0243BD:
     dc.w $0102
     dc.w $120D
     dc.w $2A00
-    dc.w $0212
-    dc.w $0DFE
+    andi.b #$FE,(a2)
     dc.w $042F
     dc.w $FE04
     dc.w $31FE
@@ -41919,26 +41907,22 @@ loc_0243BD:
     dc.w $0D00
     dc.w $020D
     dc.w $1212
-    dc.w $0002
-    dc.w $2A06
+    ori.b #$06,d2
     dc.w $0606
-    dc.w $0212
-    dc.w $0D05
+    andi.b #$05,(a2)
     dc.w $0601
     dc.w $020D
     dc.w $FE0A
     dc.w $312F
     dc.w $0D00
     dc.w $0606
-    dc.w $0200
-    dc.w $0106
+    andi.b #$06,d0
     dc.w $0712
     dc.w $FE04
     dc.w $0601
     dc.w $01FE
     dc.w $0406
-    dc.w $0229
-    move.l (-508,a1),d7
+    andi.b #$29,(-508,a1)
     dc.w $3129
     move.l (1,a1),d7
     dc.w $FE08
@@ -41996,8 +41980,7 @@ loc_0243BD:
     dc.w $0421
     dc.w $09FE
     dc.w $042F
-    dc.w $0006
-    dc.w $0912
+    ori.b #$12,d6
     dc.w $0D0D
     dc.w $122A
     dc.w $120C
@@ -42145,8 +42128,7 @@ loc_0243BD:
     dc.w $0D2F
     dc.w $0E0E
     dc.w $0D0D
-    dc.w $0002
-    dc.w $0001
+    ori.b #$01,d2
     dc.w $0125
     dc.w $1010
     dc.w $1D16
@@ -42168,8 +42150,7 @@ loc_0243BD:
     dc.w $1130
     dc.w $1212
     dc.w $0D12
-    dc.w $0002
-    dc.w $0D12
+    ori.b #$12,d2
     dc.w $1214
     dc.w $1023
     dc.w $2510
@@ -42192,20 +42173,35 @@ loc_0243BD:
     dc.w $1516
     dc.w $2F0E
     dc.w $0E12
-    dc.w $0006
-    dc.w $0912
+    ori.b #$12,d6
     dc.w $0D0D
     dc.w $0D1D
     dc.w $1630
     dc.w $120D
     dc.w $0D0D
-    dc.w $0006
-    dc.w $0606
+    ori.b #$06,d6
     dc.w $0808
     dc.w $0102
     dc.w $0D0D
     dc.w $0D2F
     dc.w $2F0E
+    dc.w $0E0E
+    dc.w $1212
+    dc.w $0507
+    dc.w $0D0D
+    dc.w $1212
+    dc.w $0D16
+    move.w (a2),d0
+    dc.w $1200
+    dc.w $0101
+    dc.w $0609
+    dc.w $0309
+    dc.w $2F0E
+    dc.w $1818
+    dc.w $18FE
+    dc.w $060E
+    dc.w $0D00
+    dc.w $0106
 loc_03310A:
     dc.w $48E7
     dc.w $7FFE
@@ -42217,8 +42213,7 @@ loc_03310A:
     dc.w $E8D8
     bne.w loc_03318C
     dc.w $0C78
-    dc.w $0000
-    dc.w $AEAC
+    ori.b #$AC,d0
     beq.s loc_033154
     lea loc_0335B8,a2
 loc_03312C:
@@ -42231,16 +42226,14 @@ loc_03312C:
     cmpi.w #$0000,d0
     beq.s loc_03314C
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E8B8
     dc.w $265A
     jsr (a3)
     bra.s loc_03318C
 loc_03314C:
     dc.w $D5FC
-    dc.w $0000
-    dc.w $0004
+    ori.b #$04,d0
     bra.s loc_03312C
 loc_033154:
     lea loc_033198,a1
@@ -42259,16 +42252,14 @@ loc_033164:
     cmpi.w #$0000,d0
     beq.s loc_033184
     dc.w $33FC
-    dc.w $0001
-    dc.w $FFFF
+    ori.b #$FF,d1
     dc.w $E8B8
     dc.w $265A
     jsr (a3)
     bra.s loc_033164
 loc_033184:
     dc.w $D5FC
-    dc.w $0000
-    dc.w $0004
+    ori.b #$04,d0
     bra.s loc_033164
 loc_03318C:
     dc.w $3039
