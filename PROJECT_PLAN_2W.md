@@ -19,7 +19,7 @@ This plan turns current milestone status into a focused two-week implementation 
 - M0 (tooling): 100%
 - M1 (vector ownership): 0%
 - M2 (code/data separation): 0%
-- M3 (symbol map growth): 0%
+- M3 (symbol map growth): 8%
 - M4 (disasm hardening): 66%
 - M5 (subsystem tests): 34%
 - M6 (parity): 0%
@@ -144,3 +144,10 @@ Expected overall project completion after this plan: ~38–45% (conservative).
 - Claimed and documented concrete handler ownership for reset/default exception/H-Blank/V-Blank targets (`$450A`, `$4500`, `$483E`, `$482E`) and normalized null TRAP/reserved vectors to `v_null`.
 - Next in plan order: split the shared `$4500` exception target into verified per-exception handler labels and add first subsystem-level deterministic fixture work.
 
+
+
+### 2026-03-09 (iteration 27)
+
+- Completed a Week 1/2 crossover symbol-quality slice: bootstrap exports now constrain vector ingestion to the canonical 64-entry 68000 table and emit semantic vector labels instead of `vec_###` placeholders in `open/symbols.csv`.
+- Added regression coverage in `tests/test_romkit.py` to lock in named vector-symbol output and row count expectations.
+- Current full-pass quality check remains stable (`unknown_words: 17,072`; `known_instructions: 19,146`), so next focus returns to vector-file template ownership and subsystem fixture additions.
