@@ -17,6 +17,15 @@ def _signed_word(value: int) -> int:
     return value - 0x10000 if value & 0x8000 else value
 
 
+def _decode_indexed_brief(ext: int, base: str) -> str:
+    idx_is_addr = bool(ext & 0x8000)
+    idx_reg = (ext >> 12) & 0x7
+    idx_size = "l" if (ext & 0x0800) else "w"
+    disp = (ext & 0xFF) - 0x100 if ext & 0x80 else (ext & 0xFF)
+    idx_prefix = "a" if idx_is_addr else "d"
+    return f"({disp},{base},{idx_prefix}{idx_reg}.{idx_size})"
+
+
 def _decode_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
     mode = (op >> 3) & 0x7
     reg = op & 0x7
@@ -29,12 +38,21 @@ def _decode_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None
     if mode == 5 and _in_rom(addr, 4, len(data)):
         disp = _signed_word(_be16(data, addr + 2))
         return f"({disp},a{reg})", 4
+    if mode == 6 and _in_rom(addr, 4, len(data)):
+        ext = _be16(data, addr + 2)
+        return _decode_indexed_brief(ext, f"a{reg}"), 4
     if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
         abs_word = _be16(data, addr + 2)
         return f"(${abs_word:04X}).w", 4
     if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
         abs_long = _be32(data, addr + 2)
         return f"(${abs_long:08X}).l", 6
+    if mode == 7 and reg == 2 and _in_rom(addr, 4, len(data)):
+        disp = _signed_word(_be16(data, addr + 2))
+        return f"({disp},pc)", 4
+    if mode == 7 and reg == 3 and _in_rom(addr, 4, len(data)):
+        ext = _be16(data, addr + 2)
+        return _decode_indexed_brief(ext, "pc"), 4
     return None
 
 
@@ -103,6 +121,34 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         src = op & 0x7
         disp = _signed_word(_be16(data, addr + 2))
         return Instruction(addr, 4, f"move.l ({disp},a{src}),d{dst}", [])
+
+    # MOVE indexed and PC-relative forms to data register.
+    if (op & 0xF1F8) == 0x3030 and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        ext = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"move.w {_decode_indexed_brief(ext, f'a{src}')},d{dst}", [])
+    if (op & 0xF1F8) == 0x2030 and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        ext = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"move.l {_decode_indexed_brief(ext, f'a{src}')},d{dst}", [])
+    if (op & 0xF1FF) == 0x303A and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        disp = _signed_word(_be16(data, addr + 2))
+        return Instruction(addr, 4, f"move.w ({disp},pc),d{dst}", [])
+    if (op & 0xF1FF) == 0x203A and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        disp = _signed_word(_be16(data, addr + 2))
+        return Instruction(addr, 4, f"move.l ({disp},pc),d{dst}", [])
+    if (op & 0xF1FF) == 0x303B and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        ext = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"move.w {_decode_indexed_brief(ext, 'pc')},d{dst}", [])
+    if (op & 0xF1FF) == 0x203B and _in_rom(addr, 4, len(data)):
+        dst = (op >> 9) & 0x7
+        ext = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"move.l {_decode_indexed_brief(ext, 'pc')},d{dst}", [])
 
     # MOVE data register to memory destination.
     if (op & 0xF1C0) in (0x3080, 0x2080):
