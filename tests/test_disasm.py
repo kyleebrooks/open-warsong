@@ -55,6 +55,16 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(word.text, "move.w #$1234,d1")
         self.assertEqual(longw.text, "move.l #$89ABCDEF,d2")
 
+    def test_decode_move_address_indirect_to_dn(self) -> None:
+        move_w = decode_instruction(bytes.fromhex("3412"), 0)
+        move_l = decode_instruction(bytes.fromhex("2616"), 0)
+        move_w_post = decode_instruction(bytes.fromhex("3218"), 0)
+        move_l_post = decode_instruction(bytes.fromhex("2419"), 0)
+        self.assertEqual(move_w.text, "move.w (a2),d2")
+        self.assertEqual(move_l.text, "move.l (a6),d3")
+        self.assertEqual(move_w_post.text, "move.w (a0)+,d1")
+        self.assertEqual(move_l_post.text, "move.l (a1)+,d2")
+
     def test_decode_clr_tst_dn(self) -> None:
         clr = decode_instruction(bytes.fromhex("4282"), 0)
         tst = decode_instruction(bytes.fromhex("4A40"), 0)
@@ -68,6 +78,24 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(b.text, "cmpi.b #$7F,d2")
         self.assertEqual(w.text, "cmpi.w #$0123,d3")
         self.assertEqual(l.text, "cmpi.l #$DEADBEEF,d4")
+
+
+    def test_decode_cmp_address_indirect_to_dn(self) -> None:
+        cmp_w = decode_instruction(bytes.fromhex("B452"), 0)
+        cmp_l = decode_instruction(bytes.fromhex("B696"), 0)
+        cmp_w_post = decode_instruction(bytes.fromhex("B258"), 0)
+        cmp_l_post = decode_instruction(bytes.fromhex("B499"), 0)
+        self.assertEqual(cmp_w.text, "cmp.w (a2),d2")
+        self.assertEqual(cmp_l.text, "cmp.l (a6),d3")
+        self.assertEqual(cmp_w_post.text, "cmp.w (a0)+,d1")
+        self.assertEqual(cmp_l_post.text, "cmp.l (a1)+,d2")
+
+    def test_decode_dbcc(self) -> None:
+        dbne = decode_instruction(bytes.fromhex("56CBFFFC"), 0)
+        dbra = decode_instruction(bytes.fromhex("51C80006"), 0)
+        self.assertEqual(dbne.text, "dbne d3,loc_000000")
+        self.assertEqual(dbne.flow_targets, [0])
+        self.assertEqual(dbra.text, "dbra d0,loc_00000A")
 
 
     def test_decode_jsr_jmp_abs_word(self) -> None:
