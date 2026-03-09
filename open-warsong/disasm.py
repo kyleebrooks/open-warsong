@@ -317,6 +317,16 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 ea_text, ins_size = decoded
                 return Instruction(addr, ins_size, f"{mnemonic}.{size_to_ea} d{src_or_dst},{ea_text}", [])
 
+    # EOR Dn,<ea> subset over decoded memory EA families.
+    if (op & 0xF100) == 0xB100:
+        reg = (op >> 9) & 0x7
+        size = {0: "b", 1: "w", 2: "l"}.get((op >> 6) & 0x3)
+        if size is not None:
+            decoded = _decode_memory_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"eor.{size} d{reg},{ea_text}", [])
+
     # JSR/JMP control-addressing forms.
     if (op & 0xFFC0) == 0x4E80:
         decoded = _decode_control_ea(op, data, addr)
