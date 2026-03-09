@@ -30,6 +30,16 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
     if op == 0x4E71:
         return Instruction(addr, 2, "nop", [])
 
+    # MOVE immediate to data register.
+    if (op & 0xF1FF) == 0x303C and _in_rom(addr, 4, len(data)):
+        reg = (op >> 9) & 0x7
+        imm = _be16(data, addr + 2)
+        return Instruction(addr, 4, f"move.w #${imm:04X},d{reg}", [])
+    if (op & 0xF1FF) == 0x203C and _in_rom(addr, 6, len(data)):
+        reg = (op >> 9) & 0x7
+        imm = _be32(data, addr + 2)
+        return Instruction(addr, 6, f"move.l #${imm:08X},d{reg}", [])
+
     # MOVEQ #imm,Dn
     if (op & 0xF100) == 0x7000:
         reg = (op >> 9) & 0x7
@@ -47,6 +57,34 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
             reg = op & 0x7
             mn = "subq" if (op & 0x0100) else "addq"
             return Instruction(addr, 2, f"{mn}.{sz} #{val},d{reg}", [])
+
+    # CLR/TST Dn direct.
+    if (op & 0xFF38) == 0x4200:
+        size_bits = (op >> 6) & 0x3
+        sz = {0: 'b', 1: 'w', 2: 'l'}.get(size_bits)
+        if sz is not None:
+            reg = op & 0x7
+            return Instruction(addr, 2, f"clr.{sz} d{reg}", [])
+    if (op & 0xFF38) == 0x4A00:
+        size_bits = (op >> 6) & 0x3
+        sz = {0: 'b', 1: 'w', 2: 'l'}.get(size_bits)
+        if sz is not None:
+            reg = op & 0x7
+            return Instruction(addr, 2, f"tst.{sz} d{reg}", [])
+
+    # CMPI #imm,Dn direct.
+    if (op & 0xFF38) == 0x0C00:
+        size_bits = (op >> 6) & 0x3
+        reg = op & 0x7
+        if size_bits == 0 and _in_rom(addr, 4, len(data)):
+            imm = _be16(data, addr + 2) & 0x00FF
+            return Instruction(addr, 4, f"cmpi.b #${imm:02X},d{reg}", [])
+        if size_bits == 1 and _in_rom(addr, 4, len(data)):
+            imm = _be16(data, addr + 2)
+            return Instruction(addr, 4, f"cmpi.w #${imm:04X},d{reg}", [])
+        if size_bits == 2 and _in_rom(addr, 6, len(data)):
+            imm = _be32(data, addr + 2)
+            return Instruction(addr, 6, f"cmpi.l #${imm:08X},d{reg}", [])
     if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
         return Instruction(addr, 4, f"link a6,#${imm:04X}", [])
