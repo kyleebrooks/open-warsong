@@ -57,25 +57,25 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 77%
+- **% Complete:** 81%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added `eor Dn,<ea>` decoding over shared memory EA families and refreshed full-pass disassembly metrics against the root ROM (`known_instructions`: 10,345 / `unknown_words`: 29,655 @ 40,000 decoded); next focus is adding remaining ALU/control families and label derivation for control-transfer targets.
+- **Notes / Next action:** Added `eori #imm,<ea>` decoding across data-alterable EA families (including extension-word memory forms) and refreshed full-pass disassembly metrics against the root ROM (`known_instructions`: 10,473 / `unknown_words`: 29,527 @ 40,000 decoded); next focus is adding remaining immediate/bit-operation families and target label derivation for control-transfer ops.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 43%
+- **% Complete:** 47%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added deterministic tests for `eor Dn,<ea>` across representative memory addressing forms and validated full suite stability plus disassembly-pass run on the root ROM; continue broadening ALU/control coverage and then group opcode tests into subsystem behavior suites.
+- **Notes / Next action:** Added deterministic tests for `eori #imm,<ea>` across register, displacement, and absolute-long forms, and validated full suite stability plus disassembly-pass run on the root ROM; continue broadening immediate/bit-op coverage and then group opcode tests into subsystem behavior suites.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -295,3 +295,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   2. Improve control-transfer target labeling when derivable to aid symbol growth and reviewability.
   3. Track unknown-word trend deltas per iteration to quantify decoding ROI.
 
+
+
+### Update 2026-03-09 (iteration 13)
+
+- **Summary:** Added `eori #imm,<ea>` decoding across data-alterable EA forms by introducing extension-offset aware memory EA decoding, then refreshed pass-1 ROM metrics with a small additional reduction in unknown fallback words.
+- **Milestones advanced:**
+  - M4: from 77% → 81%
+  - M5: from 43% → 47%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`, `open/disasm/code_pass1.asm`, `open/disasm/summary.json`
+  - Tests/checks run: `pytest -q` (32 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 10,473 / `unknown_words`: 29,527)
+- **Risks / blockers:** Decoder coverage remains partial; unknown fallback words are still substantial despite the incremental drop in this iteration.
+- **Next planned actions (ordered):**
+  1. Add remaining immediate/bit-operation families (`andi`, `ori`, `btst`/bit-manip) using the new extension-offset EA path.
+  2. Improve control-transfer target annotation/labeling when absolute/relative targets are derivable.
+  3. Continue periodic full ROM disassembly-pass runs to quantify unknown-word trend deltas per iteration.
