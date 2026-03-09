@@ -263,6 +263,36 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 ea_text, ins_size = decoded
                 return Instruction(addr, ins_size, f"{unary_family}.{size} {ea_text}", [])
 
+    # NBCD/TAS <ea> over data-alterable effective-address forms.
+    if (op & 0xFFC0) == 0x4800:
+        decoded = _decode_data_alterable_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"nbcd.b {ea_text}", [])
+    if (op & 0xFFC0) == 0x4AC0:
+        decoded = _decode_data_alterable_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"tas.b {ea_text}", [])
+
+    # SWAP/EXT register forms.
+    if (op & 0xFFF8) == 0x4840:
+        reg = op & 0x7
+        return Instruction(addr, 2, f"swap d{reg}", [])
+    if (op & 0xFFF8) == 0x4880:
+        reg = op & 0x7
+        return Instruction(addr, 2, f"ext.w d{reg}", [])
+    if (op & 0xFFF8) == 0x48C0:
+        reg = op & 0x7
+        return Instruction(addr, 2, f"ext.l d{reg}", [])
+
+    # PEA control-addressing forms.
+    if (op & 0xFFC0) == 0x4840:
+        decoded = _decode_control_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"pea {ea_text}", [])
+
     # ADDI/SUBI/CMPI #imm,<ea> subset across data-alterable EA families.
     imm_arith_family = {
         0x0400: "subi",

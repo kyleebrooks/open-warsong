@@ -107,6 +107,22 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(neg_mem.text, "neg.w (a0)")
         self.assertEqual(not_abs.text, "not.l ($1234).w")
 
+    def test_decode_nbcd_tas_data_alterable_forms(self) -> None:
+        nbcd_dn = decode_instruction(bytes.fromhex("4802"), 0)
+        tas_disp = decode_instruction(bytes.fromhex("4AE8FFF8"), 0)
+        self.assertEqual(nbcd_dn.text, "nbcd.b d2")
+        self.assertEqual(tas_disp.text, "tas.b (-8,a0)")
+
+    def test_decode_swap_ext_and_pea_forms(self) -> None:
+        swap = decode_instruction(bytes.fromhex("4843"), 0)
+        ext_w = decode_instruction(bytes.fromhex("4881"), 0)
+        ext_l = decode_instruction(bytes.fromhex("48C6"), 0)
+        pea_pc = decode_instruction(bytes.fromhex("487A0010"), 0)
+        self.assertEqual(swap.text, "swap d3")
+        self.assertEqual(ext_w.text, "ext.w d1")
+        self.assertEqual(ext_l.text, "ext.l d6")
+        self.assertEqual(pea_pc.text, "pea (16,pc)")
+
     def test_decode_cmpi_dn(self) -> None:
         b = decode_instruction(bytes.fromhex("0C02007F"), 0)
         w = decode_instruction(bytes.fromhex("0C430123"), 0)
