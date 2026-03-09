@@ -284,6 +284,30 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         imm = imm8 - 0x100 if imm8 & 0x80 else imm8
         return Instruction(addr, 2, f"moveq #{imm},d{reg}", [])
 
+    # Register and memory shift/rotate families.
+    if (op & 0xF000) == 0xE000:
+        shift_family = ("as", "ls", "rox", "ro")
+        direction = "l" if (op & 0x0100) else "r"
+        family = shift_family[(op >> 3) & 0x3]
+
+        # Register forms: <mnemonic>.<size> {#n|Dm},Dn
+        size_bits = (op >> 6) & 0x3
+        size = {0: "b", 1: "w", 2: "l"}.get(size_bits)
+        if size is not None:
+            count_field = (op >> 9) & 0x7
+            count_src = f"d{count_field}" if (op & 0x0020) else f"#{8 if count_field == 0 else count_field}"
+            dst = op & 0x7
+            return Instruction(addr, 2, f"{family}{direction}.{size} {count_src},d{dst}", [])
+
+        # Memory forms: <mnemonic>.w <ea>
+        if size_bits == 0x3:
+            decoded = _decode_memory_ea(op, data, addr)
+            mode = (op >> 3) & 0x7
+            reg = op & 0x7
+            if decoded is not None and mode not in (0, 1) and not (mode == 7 and reg > 1):
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"{family}{direction}.w {ea_text}", [])
+
     # ADDQ/SUBQ <ea> (subset: Dn direct)
     if (op & 0xF000) == 0x5000 and (op & 0x0038) == 0x0000:
         val = (op >> 9) & 0x7
