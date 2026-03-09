@@ -164,6 +164,18 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(sub_b_idx.text, "sub.b (4,a0,d1.w),d4")
 
 
+
+    def test_decode_addi_subi_cmpi_data_alterable_forms(self) -> None:
+        subi_b_dn = decode_instruction(bytes.fromhex("0402007F"), 0)
+        addi_w_disp = decode_instruction(bytes.fromhex("066800101234"), 0)
+        cmpi_l_abs = decode_instruction(bytes.fromhex("0CB90000112212345678"), 0)
+        self.assertEqual(subi_b_dn.text, "subi.b #$7F,d2")
+        self.assertEqual(subi_b_dn.size, 4)
+        self.assertEqual(addi_w_disp.text, "addi.w #$0010,(4660,a0)")
+        self.assertEqual(addi_w_disp.size, 6)
+        self.assertEqual(cmpi_l_abs.text, "cmpi.l #$00001122,($12345678).l")
+        self.assertEqual(cmpi_l_abs.size, 10)
+
     def test_decode_immediate_logic_forms(self) -> None:
         ori_b_dn = decode_instruction(bytes.fromhex("0002007F"), 0)
         andi_w_mem = decode_instruction(bytes.fromhex("026800101234"), 0)

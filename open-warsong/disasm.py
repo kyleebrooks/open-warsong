@@ -241,19 +241,32 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
             reg = op & 0x7
             return Instruction(addr, 2, f"tst.{sz} d{reg}", [])
 
-    # CMPI #imm,Dn direct.
-    if (op & 0xFF38) == 0x0C00:
+    # ADDI/SUBI/CMPI #imm,<ea> subset across data-alterable EA families.
+    imm_arith_family = {
+        0x0400: "subi",
+        0x0600: "addi",
+        0x0C00: "cmpi",
+    }.get(op & 0xFF00)
+    if imm_arith_family is not None:
         size_bits = (op >> 6) & 0x3
-        reg = op & 0x7
         if size_bits == 0 and _in_rom(addr, 4, len(data)):
             imm = _be16(data, addr + 2) & 0x00FF
-            return Instruction(addr, 4, f"cmpi.b #${imm:02X},d{reg}", [])
+            decoded = _decode_data_alterable_ea(op, data, addr, ext_offset=4)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, max(ins_size, 4), f"{imm_arith_family}.b #${imm:02X},{ea_text}", [])
         if size_bits == 1 and _in_rom(addr, 4, len(data)):
             imm = _be16(data, addr + 2)
-            return Instruction(addr, 4, f"cmpi.w #${imm:04X},d{reg}", [])
+            decoded = _decode_data_alterable_ea(op, data, addr, ext_offset=4)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, max(ins_size, 4), f"{imm_arith_family}.w #${imm:04X},{ea_text}", [])
         if size_bits == 2 and _in_rom(addr, 6, len(data)):
             imm = _be32(data, addr + 2)
-            return Instruction(addr, 6, f"cmpi.l #${imm:08X},d{reg}", [])
+            decoded = _decode_data_alterable_ea(op, data, addr, ext_offset=6)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, max(ins_size, 6), f"{imm_arith_family}.l #${imm:08X},{ea_text}", [])
 
     # ORI/ANDI/EORI #imm,<ea> subset across data-alterable EA families.
     imm_family = {
