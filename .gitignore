@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+open/chunks/
+open/*.md
+open/verify/
+Warsong (USA).md
+mods/*.ips
