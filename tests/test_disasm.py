@@ -164,14 +164,14 @@ class DisasmTests(unittest.TestCase):
         self.assertEqual(sub_b_idx.text, "sub.b (4,a0,d1.w),d4")
 
 
-    def test_decode_eori_immediate_forms(self) -> None:
-        eori_b_dn = decode_instruction(bytes.fromhex("0A02007F"), 0)
-        eori_w_mem = decode_instruction(bytes.fromhex("0A6800101234"), 0)
+    def test_decode_immediate_logic_forms(self) -> None:
+        ori_b_dn = decode_instruction(bytes.fromhex("0002007F"), 0)
+        andi_w_mem = decode_instruction(bytes.fromhex("026800101234"), 0)
         eori_l_abs = decode_instruction(bytes.fromhex("0AB90000112212345678"), 0)
-        self.assertEqual(eori_b_dn.text, "eori.b #$7F,d2")
-        self.assertEqual(eori_b_dn.size, 4)
-        self.assertEqual(eori_w_mem.text, "eori.w #$0010,(4660,a0)")
-        self.assertEqual(eori_w_mem.size, 6)
+        self.assertEqual(ori_b_dn.text, "ori.b #$7F,d2")
+        self.assertEqual(ori_b_dn.size, 4)
+        self.assertEqual(andi_w_mem.text, "andi.w #$0010,(4660,a0)")
+        self.assertEqual(andi_w_mem.size, 6)
         self.assertEqual(eori_l_abs.text, "eori.l #$00001122,($12345678).l")
         self.assertEqual(eori_l_abs.size, 10)
 
