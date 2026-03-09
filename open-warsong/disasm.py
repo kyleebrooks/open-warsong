@@ -26,7 +26,7 @@ def _decode_indexed_brief(ext: int, base: str) -> str:
     return f"({disp},{base},{idx_prefix}{idx_reg}.{idx_size})"
 
 
-def _decode_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
+def _decode_memory_ea(op: int, data: bytes, addr: int, ext_offset: int = 2) -> tuple[str, int] | None:
     mode = (op >> 3) & 0x7
     reg = op & 0x7
     if mode == 2:
@@ -35,24 +35,24 @@ def _decode_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None
         return f"(a{reg})+", 2
     if mode == 4:
         return f"-(a{reg})", 2
-    if mode == 5 and _in_rom(addr, 4, len(data)):
-        disp = _signed_word(_be16(data, addr + 2))
-        return f"({disp},a{reg})", 4
-    if mode == 6 and _in_rom(addr, 4, len(data)):
-        ext = _be16(data, addr + 2)
-        return _decode_indexed_brief(ext, f"a{reg}"), 4
-    if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
-        abs_word = _be16(data, addr + 2)
-        return f"(${abs_word:04X}).w", 4
-    if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
-        abs_long = _be32(data, addr + 2)
-        return f"(${abs_long:08X}).l", 6
-    if mode == 7 and reg == 2 and _in_rom(addr, 4, len(data)):
-        disp = _signed_word(_be16(data, addr + 2))
-        return f"({disp},pc)", 4
-    if mode == 7 and reg == 3 and _in_rom(addr, 4, len(data)):
-        ext = _be16(data, addr + 2)
-        return _decode_indexed_brief(ext, "pc"), 4
+    if mode == 5 and _in_rom(addr, ext_offset + 2, len(data)):
+        disp = _signed_word(_be16(data, addr + ext_offset))
+        return f"({disp},a{reg})", ext_offset + 2
+    if mode == 6 and _in_rom(addr, ext_offset + 2, len(data)):
+        ext = _be16(data, addr + ext_offset)
+        return _decode_indexed_brief(ext, f"a{reg}"), ext_offset + 2
+    if mode == 7 and reg == 0 and _in_rom(addr, ext_offset + 2, len(data)):
+        abs_word = _be16(data, addr + ext_offset)
+        return f"(${abs_word:04X}).w", ext_offset + 2
+    if mode == 7 and reg == 1 and _in_rom(addr, ext_offset + 4, len(data)):
+        abs_long = _be32(data, addr + ext_offset)
+        return f"(${abs_long:08X}).l", ext_offset + 4
+    if mode == 7 and reg == 2 and _in_rom(addr, ext_offset + 2, len(data)):
+        disp = _signed_word(_be16(data, addr + ext_offset))
+        return f"({disp},pc)", ext_offset + 2
+    if mode == 7 and reg == 3 and _in_rom(addr, ext_offset + 2, len(data)):
+        ext = _be16(data, addr + ext_offset)
+        return _decode_indexed_brief(ext, "pc"), ext_offset + 2
     return None
 
 
@@ -96,6 +96,14 @@ def _decode_control_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | Non
         ext = _be16(data, addr + 2)
         return _decode_indexed_brief(ext, "pc"), 4
     return None
+
+
+def _decode_data_alterable_ea(op: int, data: bytes, addr: int, ext_offset: int = 2) -> tuple[str, int] | None:
+    mode = (op >> 3) & 0x7
+    reg = op & 0x7
+    if mode == 0:
+        return f"d{reg}", 2
+    return _decode_memory_ea(op, data, addr, ext_offset)
 
 
 @dataclass
@@ -246,6 +254,28 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         if size_bits == 2 and _in_rom(addr, 6, len(data)):
             imm = _be32(data, addr + 2)
             return Instruction(addr, 6, f"cmpi.l #${imm:08X},d{reg}", [])
+
+    # EORI #imm,<ea> subset across data-alterable EA families.
+    if (op & 0xFF00) == 0x0A00:
+        size_bits = (op >> 6) & 0x3
+        if size_bits == 0 and _in_rom(addr, 4, len(data)):
+            imm = _be16(data, addr + 2) & 0x00FF
+            decoded = _decode_data_alterable_ea(op, data, addr, ext_offset=4)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, max(ins_size, 4), f"eori.b #${imm:02X},{ea_text}", [])
+        if size_bits == 1 and _in_rom(addr, 4, len(data)):
+            imm = _be16(data, addr + 2)
+            decoded = _decode_data_alterable_ea(op, data, addr, ext_offset=4)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, max(ins_size, 4), f"eori.w #${imm:04X},{ea_text}", [])
+        if size_bits == 2 and _in_rom(addr, 6, len(data)):
+            imm = _be32(data, addr + 2)
+            decoded = _decode_data_alterable_ea(op, data, addr, ext_offset=6)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, max(ins_size, 6), f"eori.l #${imm:08X},{ea_text}", [])
 
     # DBcc Dn,<disp16>
     if (op & 0xF0F8) == 0x50C8 and _in_rom(addr, 4, len(data)):
