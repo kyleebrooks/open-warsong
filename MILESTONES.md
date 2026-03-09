@@ -57,25 +57,25 @@ Use this checklist on every project update to track progress from tooling to ful
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 24%
+- **% Complete:** 37%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Expand decoder coverage further (common arithmetic/data-move instructions) and reduce unknown-word count in pass output.
+- **Notes / Next action:** Added address-register indirect `move`/`cmp` and `dbcc` decoding; next focus is more ALU/data movement modes to continue lowering fallback words.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 12%
+- **% Complete:** 19%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Keep adding deterministic tests for newly decoded instruction groups and eventually promote toward subsystem-level behavior tests.
+- **Notes / Next action:** Continue adding deterministic decoder tests as opcode families are added, then start grouping them into subsystem-level behavior suites.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -151,3 +151,35 @@ Use this checklist on every project update to track progress from tooling to ful
   1. Add decoding for address-register indirect `move` forms used in startup and engine loops.
   2. Add compare/branch idioms (`cmp`, `dbcc`) to improve control-flow readability.
   3. Run full disassembly pass on ROM and compare unknown-word trend against prior summary output.
+
+
+### Update 2026-03-09 (iteration 4)
+
+- **Summary:** Added decoding for address-register indirect and post-increment `move` forms into data registers, plus `dbcc` loop-control instructions, with focused unit tests.
+- **Milestones advanced:**
+  - M4: from 24% → 32%
+  - M5: from 12% → 16%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (19 passed)
+- **Risks / blockers:** ROM image is not present in this environment, so a fresh full-run unknown-word trend from `scripts/disasm_pass.py` could not be produced in this iteration.
+- **Next planned actions (ordered):**
+  1. Add `cmp` memory/register forms commonly paired with branch conditions.
+  2. Expand ALU and data-movement decoding coverage in high-frequency startup/engine paths.
+  3. Re-run `scripts/disasm_pass.py` once ROM is available and record unknown-word trend deltas.
+
+
+### Update 2026-03-09 (iteration 5)
+
+- **Summary:** Added `cmp` address-register indirect and post-increment decoding forms plus decoder cleanup for DBcc mnemonic lookup constants, with expanded unit tests.
+- **Milestones advanced:**
+  - M4: from 32% → 37%
+  - M5: from 16% → 19%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (20 passed)
+- **Risks / blockers:** Full-pass metric refresh still blocked until the ROM image is present at the expected local path.
+- **Next planned actions (ordered):**
+  1. Add `cmp`/ALU destination forms that target memory addressing modes beyond `(An)` and `(An)+`.
+  2. Expand branch/loop decoding fidelity for additional control-flow idioms found in startup and engine routines.
+  3. Re-run `scripts/disasm_pass.py` once ROM path is available and record unknown-word trend deltas.

@@ -6,6 +6,13 @@ from pathlib import Path
 from romkit import _be16, _be32
 
 
+# DBcc condition mnemonic lookup indexed by condition field.
+DBCC_MNEMONICS = (
+    "dbt", "dbra", "dbhi", "dbls", "dbcc", "dbcs", "dbne", "dbeq",
+    "dbvc", "dbvs", "dbpl", "dbmi", "dbge", "dblt", "dbgt", "dble",
+)
+
+
 @dataclass
 class Instruction:
     addr: int
@@ -39,6 +46,26 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         reg = (op >> 9) & 0x7
         imm = _be32(data, addr + 2)
         return Instruction(addr, 6, f"move.l #${imm:08X},d{reg}", [])
+
+    # MOVE address-register indirect to data register.
+    if (op & 0xF1F8) == 0x3010:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"move.w (a{src}),d{dst}", [])
+    if (op & 0xF1F8) == 0x2010:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"move.l (a{src}),d{dst}", [])
+
+    # MOVE post-increment address-register indirect to data register.
+    if (op & 0xF1F8) == 0x3018:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"move.w (a{src})+,d{dst}", [])
+    if (op & 0xF1F8) == 0x2018:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"move.l (a{src})+,d{dst}", [])
 
     # MOVEQ #imm,Dn
     if (op & 0xF100) == 0x7000:
@@ -85,6 +112,35 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         if size_bits == 2 and _in_rom(addr, 6, len(data)):
             imm = _be32(data, addr + 2)
             return Instruction(addr, 6, f"cmpi.l #${imm:08X},d{reg}", [])
+
+    # DBcc Dn,<disp16>
+    if (op & 0xF0F8) == 0x50C8 and _in_rom(addr, 4, len(data)):
+        cond = (op >> 8) & 0xF
+        reg = op & 0x7
+        disp = _be16(data, addr + 2)
+        if disp & 0x8000:
+            disp -= 0x10000
+        target = (addr + 4 + disp) & 0xFFFFFFFF
+        mnemonic = DBCC_MNEMONICS[cond]
+        return Instruction(addr, 4, f"{mnemonic} d{reg},loc_{target:06X}", [target])
+    # CMP (An)/(An)+,Dn subset.
+    if (op & 0xF1F8) == 0xB050:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"cmp.w (a{src}),d{dst}", [])
+    if (op & 0xF1F8) == 0xB090:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"cmp.l (a{src}),d{dst}", [])
+    if (op & 0xF1F8) == 0xB058:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"cmp.w (a{src})+,d{dst}", [])
+    if (op & 0xF1F8) == 0xB098:
+        dst = (op >> 9) & 0x7
+        src = op & 0x7
+        return Instruction(addr, 2, f"cmp.l (a{src})+,d{dst}", [])
+
     if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
         return Instruction(addr, 4, f"link a6,#${imm:04X}", [])
