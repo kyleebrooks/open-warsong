@@ -17,16 +17,24 @@ def _signed_word(value: int) -> int:
     return value - 0x10000 if value & 0x8000 else value
 
 
-def _decode_an_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
+def _decode_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
     mode = (op >> 3) & 0x7
     reg = op & 0x7
     if mode == 2:
         return f"(a{reg})", 2
     if mode == 3:
         return f"(a{reg})+", 2
+    if mode == 4:
+        return f"-(a{reg})", 2
     if mode == 5 and _in_rom(addr, 4, len(data)):
         disp = _signed_word(_be16(data, addr + 2))
         return f"({disp},a{reg})", 4
+    if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
+        abs_word = _be16(data, addr + 2)
+        return f"(${abs_word:04X}).w", 4
+    if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
+        abs_long = _be32(data, addr + 2)
+        return f"(${abs_long:08X}).l", 6
     return None
 
 
@@ -100,7 +108,7 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
     if (op & 0xF1C0) in (0x3080, 0x2080):
         src = (op >> 9) & 0x7
         size = "w" if (op & 0xF1C0) == 0x3080 else "l"
-        decoded = _decode_an_memory_ea(op, data, addr)
+        decoded = _decode_memory_ea(op, data, addr)
         if decoded is not None:
             ea_text, ins_size = decoded
             return Instruction(addr, ins_size, f"move.{size} d{src},{ea_text}", [])
@@ -160,32 +168,15 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         mnemonic = DBCC_MNEMONICS[cond]
         return Instruction(addr, 4, f"{mnemonic} d{reg},loc_{target:06X}", [target])
     # CMP (An)/(An)+,Dn subset.
-    if (op & 0xF1F8) == 0xB050:
-        dst = (op >> 9) & 0x7
-        src = op & 0x7
-        return Instruction(addr, 2, f"cmp.w (a{src}),d{dst}", [])
-    if (op & 0xF1F8) == 0xB090:
-        dst = (op >> 9) & 0x7
-        src = op & 0x7
-        return Instruction(addr, 2, f"cmp.l (a{src}),d{dst}", [])
-    if (op & 0xF1F8) == 0xB058:
-        dst = (op >> 9) & 0x7
-        src = op & 0x7
-        return Instruction(addr, 2, f"cmp.w (a{src})+,d{dst}", [])
-    if (op & 0xF1F8) == 0xB098:
-        dst = (op >> 9) & 0x7
-        src = op & 0x7
-        return Instruction(addr, 2, f"cmp.l (a{src})+,d{dst}", [])
-    if (op & 0xF1F8) == 0xB0A8 and _in_rom(addr, 4, len(data)):
-        dst = (op >> 9) & 0x7
-        src = op & 0x7
-        disp = _signed_word(_be16(data, addr + 2))
-        return Instruction(addr, 4, f"cmp.l ({disp},a{src}),d{dst}", [])
-    if (op & 0xF1F8) == 0xB068 and _in_rom(addr, 4, len(data)):
-        dst = (op >> 9) & 0x7
-        src = op & 0x7
-        disp = _signed_word(_be16(data, addr + 2))
-        return Instruction(addr, 4, f"cmp.w ({disp},a{src}),d{dst}", [])
+    if (op & 0xF000) == 0xB000:
+        opmode = (op >> 6) & 0x7
+        size = {0: "b", 1: "w", 2: "l"}.get(opmode)
+        if size is not None:
+            dst = (op >> 9) & 0x7
+            decoded = _decode_memory_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                return Instruction(addr, ins_size, f"cmp.{size} {ea_text},d{dst}", [])
 
     # ADD/SUB Dn,<ea> subset for common memory destinations.
     op_class = op & 0xF000
@@ -194,7 +185,7 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
         size = {4: "b", 5: "w", 6: "l"}.get(opmode)
         if size is not None:
             src = (op >> 9) & 0x7
-            decoded = _decode_an_memory_ea(op, data, addr)
+            decoded = _decode_memory_ea(op, data, addr)
             if decoded is not None:
                 ea_text, ins_size = decoded
                 mnemonic = "sub" if op_class == 0x9000 else "add"
