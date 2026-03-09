@@ -137,3 +137,10 @@ Expected overall project completion after this plan: ~38–45% (conservative).
 - Completed another Week 1 decoder-throughput slice by adding shift/rotate instruction-family coverage in `open-warsong/disasm.py` with deterministic tests.
 - Refreshed full-pass quality metrics: `known_instructions` improved to `19,147` and `unknown_words` reduced to `17,072` (`max_instructions: 40,000`).
 - Next in plan order: begin Week 2 Priority 1 by validating and claiming the first vector handlers, then add the first true subsystem fixture to unblock meaningful M5 movement.
+
+### 2026-03-09 (iteration 26)
+
+- Started Week 2 Priority 1 (vector ownership kickoff) by replacing placeholder vector labels with explicit owned targets in `open/vectors_68k.asm`.
+- Claimed and documented concrete handler ownership for reset/default exception/H-Blank/V-Blank targets (`$450A`, `$4500`, `$483E`, `$482E`) and normalized null TRAP/reserved vectors to `v_null`.
+- Next in plan order: split the shared `$4500` exception target into verified per-exception handler labels and add first subsystem-level deterministic fixture work.
+
