@@ -56,6 +56,48 @@ def _decode_memory_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None
     return None
 
 
+def _decode_data_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
+    decoded = _decode_memory_ea(op, data, addr)
+    if decoded is not None:
+        return decoded
+    mode = (op >> 3) & 0x7
+    reg = op & 0x7
+    if mode == 0:
+        return f"d{reg}", 2
+    if mode == 1:
+        return f"a{reg}", 2
+    if mode == 7 and reg == 4 and _in_rom(addr, 4, len(data)):
+        imm = _be16(data, addr + 2)
+        return f"#${imm:04X}", 4
+    return None
+
+
+def _decode_control_ea(op: int, data: bytes, addr: int) -> tuple[str, int] | None:
+    mode = (op >> 3) & 0x7
+    reg = op & 0x7
+    if mode == 2:
+        return f"(a{reg})", 2
+    if mode == 5 and _in_rom(addr, 4, len(data)):
+        disp = _signed_word(_be16(data, addr + 2))
+        return f"({disp},a{reg})", 4
+    if mode == 6 and _in_rom(addr, 4, len(data)):
+        ext = _be16(data, addr + 2)
+        return _decode_indexed_brief(ext, f"a{reg}"), 4
+    if mode == 7 and reg == 0 and _in_rom(addr, 4, len(data)):
+        abs_word = _be16(data, addr + 2)
+        return f"loc_{abs_word:06X}", 4
+    if mode == 7 and reg == 1 and _in_rom(addr, 6, len(data)):
+        abs_long = _be32(data, addr + 2)
+        return f"loc_{abs_long:06X}", 6
+    if mode == 7 and reg == 2 and _in_rom(addr, 4, len(data)):
+        disp = _signed_word(_be16(data, addr + 2))
+        return f"({disp},pc)", 4
+    if mode == 7 and reg == 3 and _in_rom(addr, 4, len(data)):
+        ext = _be16(data, addr + 2)
+        return _decode_indexed_brief(ext, "pc"), 4
+    return None
+
+
 @dataclass
 class Instruction:
     addr: int
@@ -237,6 +279,18 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
                 mnemonic = "sub" if op_class == 0x9000 else "add"
                 return Instruction(addr, ins_size, f"{mnemonic}.{size} d{src},{ea_text}", [])
 
+    # ADD/SUB <ea>,Dn subset (supports indexed and PC-relative forms).
+    if op_class in (0x9000, 0xD000):
+        opmode = (op >> 6) & 0x7
+        size = {0: "b", 1: "w", 2: "l"}.get(opmode)
+        if size is not None:
+            dst = (op >> 9) & 0x7
+            decoded = _decode_data_ea(op, data, addr)
+            if decoded is not None:
+                ea_text, ins_size = decoded
+                mnemonic = "sub" if op_class == 0x9000 else "add"
+                return Instruction(addr, ins_size, f"{mnemonic}.{size} {ea_text},d{dst}", [])
+
     if op == 0x4E56 and _in_rom(addr, 4, len(data)):
         imm = _be16(data, addr + 2)
         return Instruction(addr, 4, f"link a6,#${imm:04X}", [])
@@ -256,6 +310,14 @@ def decode_instruction(data: bytes, addr: int) -> Instruction:
     if op == 0x4EF8 and _in_rom(addr, 4, len(data)):
         target = _be16(data, addr + 2)
         return Instruction(addr, 4, f"jmp loc_{target:06X}", [target], True)
+
+    # LEA control-addressing forms.
+    if (op & 0xF1C0) == 0x41C0:
+        reg = (op >> 9) & 0x7
+        decoded = _decode_control_ea(op, data, addr)
+        if decoded is not None:
+            ea_text, ins_size = decoded
+            return Instruction(addr, ins_size, f"lea {ea_text},a{reg}", [])
 
     # LEA absolute forms.
     if (op & 0xF1FF) == 0x41F9 and _in_rom(addr, 6, len(data)):
