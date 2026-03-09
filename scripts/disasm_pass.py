@@ -7,7 +7,7 @@ from open_warsong_path import ensure_import_path
 ensure_import_path()
 from romkit import GenesisRom
 from analysis import scan_absolute_control_flow
-from disasm import walk_code, render_asm
+from disasm import walk_code, render_asm, disasm_stats
 
 
 def main() -> None:
@@ -29,9 +29,9 @@ def main() -> None:
 
     summary = {
         "entry_points": len(entry_points),
-        "decoded_instructions": len(visited),
         "labels": len(labels),
         "max_instructions": args.max_insn,
+        **disasm_stats(visited),
     }
     out.mkdir(parents=True, exist_ok=True)
     (out / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
