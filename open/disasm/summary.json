@@ -3,7 +3,7 @@
   "labels": 2501,
   "max_instructions": 40000,
   "decoded_instructions": 40000,
-  "known_instructions": 17339,
-  "unknown_words": 22661,
-  "terminal_instructions": 744
+  "known_instructions": 17395,
+  "unknown_words": 22605,
+  "terminal_instructions": 746
 }

@@ -63,7 +63,7 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added `ori/andi/eori` control-register variants (`ccr`/`sr`) and refreshed full-pass metrics against the root ROM (`known_instructions`: 17,339 / `unknown_words`: 22,661 @ 40,000 decoded); next focus is extending remaining compare/control variants and additional derivable control-target annotation paths.
+- **Notes / Next action:** Added `ori/andi/eori` control-register variants (`ccr`/`sr`) plus `scc` condition-code byte forms (`st`/`sf`/etc.) and refreshed full-pass metrics against the root ROM (`known_instructions`: 17,395 / `unknown_words`: 22,605 @ 40,000 decoded); next focus is additional control/data-movement opcode families and richer target annotation paths.
 
 ## Milestone 5 — Subsystem correctness tests
 
@@ -75,7 +75,7 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added `ori/andi/eori` control-register variants and deterministic tests, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,339 / `unknown_words`: 22,661 @ 40,000 decoded); next focus is remaining compare/control opcode families and more derivable target annotation coverage.
+- **Notes / Next action:** Added `ori/andi/eori` control-register variants and `scc` forms with deterministic tests, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,395 / `unknown_words`: 22,605 @ 40,000 decoded); next focus is remaining control/dataflow opcode families and more derivable target annotation coverage.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -436,3 +436,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   2. Extend derivable control-transfer target annotation for more non-speculative forms.
   3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
 
+
+
+### Update 2026-03-09 (iteration 12)
+
+- **Summary:** Added support for `scc` condition-code instructions over data-alterable effective addresses and validated coverage with focused unit tests.
+- **Milestones advanced:**
+  - M4: from 99% → 99%
+  - M5: from 75% → 76%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`
+  - Tests/checks run: `pytest -q` (40 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md"` (`known_instructions`: 17,395 / `unknown_words`: 22,605 @ 40,000 decoded)
+- **Risks / blockers:** Remaining unknown fallback words are still high because many mid-frequency opcode families and advanced addressing combinations remain undecoded.
+- **Next planned actions (ordered):**
+  1. Add additional single-byte condition/control instruction families and coverage tests.
+  2. Expand move/control-transfer opcode handling that appears frequently in pass-1 unknown output.
+  3. Continue symbol promotion for newly stabilized routines.
