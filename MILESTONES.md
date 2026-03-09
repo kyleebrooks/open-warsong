@@ -57,25 +57,25 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
 ## Milestone 4 — Pass-1 disassembly hardening
 
 - **Status:** 🔄 In progress
-- **% Complete:** 97%
+- **% Complete:** 98%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Replace `dc.w` fallback areas in `open/disasm/code_pass1.asm` with hand-verified instructions and control flow.
 - **Tracking metrics:**
   - Number of fallback lines replaced this update
   - Number of new validated functions/blocks
-- **Notes / Next action:** Added `cmpa.{w,l} <ea>,An` decoding over shared data EA helpers and refreshed full-pass metrics against the root ROM (`known_instructions`: 16,412 / `unknown_words`: 23,588 @ 40,000 decoded); next focus is extending remaining ALU/control variants and additional derivable control-target annotation paths.
+- **Notes / Next action:** Added `addi/subi/cmpi #imm,<ea>` decoding over shared data-alterable EA helpers and refreshed full-pass metrics against the root ROM (`known_instructions`: 17,288 / `unknown_words`: 22,712 @ 40,000 decoded); next focus is extending remaining compare/control variants and additional derivable control-target annotation paths.
 
 ## Milestone 5 — Subsystem correctness tests
 
 - **Status:** 🔄 In progress
-- **% Complete:** 69%
+- **% Complete:** 72%
 - **Last Updated:** 2026-03-09
 - **Definition of done:** Add deterministic tests for battle calculations, map scripts, AI behavior, and other decoded subsystems.
 - **Tracking metrics:**
   - Test count by subsystem
   - Pass rate
   - Regression bugs caught
-- **Notes / Next action:** Added `cmpa.{w,l} <ea>,An` decoding and deterministic tests, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 16,412 / `unknown_words`: 23,588 @ 40,000 decoded); next focus is remaining control/immediate opcode families and more derivable target annotation coverage.
+- **Notes / Next action:** Added `addi/subi/cmpi #imm,<ea>` decoding and deterministic tests, then revalidated full disassembly metrics against the root ROM (`known_instructions`: 17,288 / `unknown_words`: 22,712 @ 40,000 decoded); next focus is remaining compare/control opcode families and more derivable target annotation coverage.
 
 ## Milestone 6 — Rebuild and behavioral parity target
 
@@ -405,3 +405,19 @@ IMPORTANT NOTE: THE ROM FILE IS LOCTED IN THE ROOT REPO LOCATION Warsong (USA).m
   1. Add remaining compare/control/immediate variants that can reuse current EA decoding helpers.
   2. Extend derivable control-transfer target annotation for more non-speculative forms.
   3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
+
+### Update 2026-03-09 (iteration 20)
+
+- **Summary:** Added `addi/subi/cmpi #imm,<ea>` decoding across data-alterable effective-address forms using extension-offset aware helpers, expanded unit tests, and refreshed full-pass ROM metrics with a substantial unknown-word reduction.
+- **Milestones advanced:**
+  - M4: from 97% → 98%
+  - M5: from 69% → 72%
+- **Evidence produced:**
+  - Files changed: `open-warsong/disasm.py`, `tests/test_disasm.py`, `MILESTONES.md`, `open/disasm/code_pass1.asm`, `open/disasm/summary.json`
+  - Tests/checks run: `pytest -q` (38 passed); `python scripts/disasm_pass.py --rom "Warsong (USA).md" --out open/disasm --max-insn 40000` (`known_instructions`: 17,288 / `unknown_words`: 22,712)
+- **Risks / blockers:** Decoder coverage is still incomplete for additional control/compare opcode families, so fallback words remain substantial despite the larger improvement this iteration.
+- **Next planned actions (ordered):**
+  1. Add remaining compare/control and immediate variants that can reuse shared EA decode helpers.
+  2. Extend derivable control-transfer target annotation for more non-speculative forms.
+  3. Continue full ROM disassembly-pass runs each iteration to track known/unknown trend deltas.
+
