@@ -151,3 +151,10 @@ Expected overall project completion after this plan: ~38–45% (conservative).
 - Completed a Week 1/2 crossover symbol-quality slice: bootstrap exports now constrain vector ingestion to the canonical 64-entry 68000 table and emit semantic vector labels instead of `vec_###` placeholders in `open/symbols.csv`.
 - Added regression coverage in `tests/test_romkit.py` to lock in named vector-symbol output and row count expectations.
 - Current full-pass quality check remains stable (`unknown_words: 17,072`; `known_instructions: 19,146`), so next focus returns to vector-file template ownership and subsystem fixture additions.
+
+
+### 2026-03-09 (iteration 28)
+
+- Continued Week 2 Priority 1 by splitting shared `$4500` vector usage into explicit per-vector ownership labels in `open/vectors_68k.asm` (bus/address/illegal/divide/CHK/TRAPV/privilege/trace/line-A/line-F/reserved/spurious/IRQ1/2/3/5/7).
+- Re-ran full pass metrics to confirm no regression while advancing vector ownership granularity (`known_instructions: 19,146`; `unknown_words: 17,072`; `decoded_instructions: 36,218`).
+- Next in plan order: carve first truly distinct handler entry labels from `$4500` shared body and add the first deterministic subsystem behavior fixture.
