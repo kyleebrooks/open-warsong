@@ -1,9 +1,9 @@
 {
   "entry_points": 318,
-  "labels": 2502,
+  "labels": 2501,
   "max_instructions": 40000,
   "decoded_instructions": 40000,
-  "known_instructions": 17288,
-  "unknown_words": 22712,
+  "known_instructions": 17339,
+  "unknown_words": 22661,
   "terminal_instructions": 744
 }
